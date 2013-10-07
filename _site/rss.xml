@@ -5,10 +5,26 @@
         <description>Jekyll Bootstrap - Name Lastname</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2013-10-07T12:00:24+02:00</lastBuildDate>
-        <pubDate>2013-10-07T12:00:24+02:00</pubDate>
+        <lastBuildDate>2013-10-07T12:16:12+02:00</lastBuildDate>
+        <pubDate>2013-10-07T12:16:12+02:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Test Post</title>
+                <description>&lt;p&gt;This Jekyll introduction will outline specifically what Jekyll is and why you would want to use it. Directly following the intro we&amp;#8217;ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
+
+&lt;h2 id='overview'&gt;Overview&lt;/h2&gt;
+
+&lt;h3 id='what_is_jekyll'&gt;What is Jekyll?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;#8220;a simple, blog aware, static site generator&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;</description>
+                <link>http://username.github.io/lessons/2013/10/07/test-post</link>
+                <guid>http://username.github.io/lessons/2013/10/07/test-post</guid>
+                <pubDate>2013-10-07T00:00:00+02:00</pubDate>
+        </item>
 
         <item>
                 <title>Jekyll Introduction</title>
