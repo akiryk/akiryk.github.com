@@ -3,6 +3,7 @@
     <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
   </header>
 </section>
+<h2>This is a Portfolio Item</h2>
 
 <section>
   {{ page.date | date_to_long_string }}
@@ -11,7 +12,7 @@
 
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
+      Categories
       {% assign categories_list = page.categories %}
       {% include JB/categories_list %}
     </ul>
@@ -19,7 +20,7 @@
 
   {% unless page.tags == empty %}
     <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
+      Tags
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>

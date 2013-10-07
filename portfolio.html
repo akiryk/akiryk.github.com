@@ -9,9 +9,10 @@ group: navigation
 
 {% for portfolio in site.categories.portfolio %} 
   <p>
+    <a href="{{ BASE_PATH }}{{ portfolio.url }}">
+      <img src="{{ site.url }}/assets/images/{{ portfolio.hero }}" title="{{ portfolio.hero-title }}">
+    </a>
     <a href="{{ BASE_PATH }}{{ portfolio.url }}">{{ portfolio.title }}</a>
   </p>
-
-
 {% endfor %}
 
