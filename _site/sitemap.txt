@@ -1,12 +1,12 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
+http://akiryk.github.io/archive.html
+http://akiryk.github.io/atom.xml
+http://akiryk.github.io/categories.html
+http://akiryk.github.io/index.html
+http://akiryk.github.io/pages.html
+http://akiryk.github.io/portfolio.html
+http://akiryk.github.io/rss.xml
+http://akiryk.github.io/sitemap.txt
+http://akiryk.github.io/tags.html
 
-http://username.github.io/lessons/2013/10/07/test-post
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://akiryk.github.io/portfolio/2013/10/07/comic-ux

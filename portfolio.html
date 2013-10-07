@@ -1,0 +1,17 @@
+---
+layout: page
+title: Portfolio
+header: Portfolio Posts
+group: navigation
+---
+{% include JB/setup %}
+
+
+{% for portfolio in site.categories.portfolio %} 
+  <p>
+    <a href="{{ BASE_PATH }}{{ portfolio.url }}">{{ portfolio.title }}</a>
+  </p>
+
+
+{% endfor %}
+
