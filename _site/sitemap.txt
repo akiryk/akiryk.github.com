@@ -1,4 +1,5 @@
 
+http://akiryk.github.io/about.html
 http://akiryk.github.io/archive.html
 http://akiryk.github.io/atom.xml
 http://akiryk.github.io/categories.html
@@ -9,4 +10,6 @@ http://akiryk.github.io/rss.xml
 http://akiryk.github.io/sitemap.txt
 http://akiryk.github.io/tags.html
 
-http://akiryk.github.io/portfolio/2013/10/07/comic-ux
+http://akiryk.github.io/blog/2013/10/07/book-browsing
+http://akiryk.github.io/blog/2013/09/21/comic-ux
+http://akiryk.github.io/portfolio/2013/08/18/portfolio-sample

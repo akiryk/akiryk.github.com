@@ -5,10 +5,64 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-10-07T14:06:18+02:00</lastBuildDate>
-        <pubDate>2013-10-07T14:06:18+02:00</pubDate>
+        <lastBuildDate>2013-10-07T14:57:32+02:00</lastBuildDate>
+        <pubDate>2013-10-07T14:57:32+02:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Better Book Browsing Online</title>
+                <description>&lt;h3 id='synopsis'&gt;Synopsis:&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;#8217;s a problem I&amp;#8217;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#8217;ll present some mockups of what that improved experience could look like.&lt;/p&gt;
+
+&lt;h3 id='to_begin'&gt;To Begin&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#8217;m talking about the experience of looking for something you don&amp;#8217;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#8217;s an experience that&amp;#8217;s been notably absent from the world of digital book-shopping.&lt;/p&gt;
+
+&lt;p&gt;Why? Well, I&amp;#8217;m not sure, but I suppose it&amp;#8217;s because the big digital booksellers don&amp;#8217;t think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the &amp;#8216;buy&amp;#8217; button. I think that&amp;#8217;s a mistake.&lt;/p&gt;
+
+&lt;p&gt;As more and more people purchase and read digital books, it&amp;#8217;s critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what&amp;#8217;s left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world.&lt;/p&gt;
+
+&lt;p&gt;Perhaps you disagree. Perhaps you think digital book-browsing is just fine as is. (An aside: let me try to think of a less awful and cumbersome term than &amp;#8216;digital book-browsing.&amp;#8217; e-Book shopping? Browsing for books in the digital space? Ugh. Forget it. From now on, when I say &amp;#8216;browsing,&amp;#8217; I mean browsing for books either online or in an app. If I want to talk about browsing in the real world, I&amp;#8217;ll be explicit about it).&lt;/p&gt;
+
+&lt;p&gt;Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and browse through listings like these (see example from the iBook store)? It isn&amp;#8217;t, I don&amp;#8217;t think. It&amp;#8217;s repetitive. Nothing stands out (except for the orange buy buttons). Everything is presented as equally important. You have to squint to see the artwork. It feels less like browsing and more like research, or worse, data-entry.&lt;/p&gt;
+
+&lt;h3 id='imagine_a_better_way'&gt;Imagine a Better Way&lt;/h3&gt;
+
+&lt;p&gt;Imagine there&amp;#8217;s a new digital bookseller in town, and they want to provide a better way to browse. They think their customers will be happier with their purchases if they&amp;#8217;ve spent enough time to find the right books — and they&amp;#8217;ll be more satisfied overall if the process of exploring for those right books is enjoyable. How would I approach the problem? What would I suggest? Why would I suggest it?&lt;/p&gt;
+
+&lt;h3 id='inspirations'&gt;Inspirations&lt;/h3&gt;
+
+&lt;p&gt;The first thing I&amp;#8217;d do is examine what it&amp;#8217;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s a thought — they do it because it&amp;#8217;s pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop&amp;#8217;s barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn&amp;#8217;t replicate those things very easily in a digital experience. You wouldn&amp;#8217;t want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure).&lt;/p&gt;
+
+&lt;p&gt;You could take inspiration from those things, perhaps. I believe you should seek inspiration from any and all of the good things about real-world browsing. Let&amp;#8217;s look at some of them, briefly, and decide what could be useful and what could be discarded.&lt;/p&gt;
+
+&lt;p&gt;Serendipity. You&amp;#8217;re casually walking from one part of the store to another when something catches your eye. A book cover, perhaps, or an author&amp;#8217;s name, and it draws you to something new and worthwhile. A good thing.&lt;/p&gt;
+
+&lt;p&gt;Quirkiness. I love bookstores that stock tables with &amp;#8220;what we&amp;#8217;re reading now&amp;#8221; or &amp;#8220;our favorite beach reads.&amp;#8221; Some flavor of the people who work in the store and the things they like. I don&amp;#8217;t necessarily end up buying from these tables, but they tell me something about the character of the store (e.g. libertarian hippy-hangout in Arcata, California or literary-haven in Nashville, Tennessee). Who wants every bookstore to be the same? Surprise me.&lt;/p&gt;
+
+&lt;p&gt;Localization. No, not GPS-enabled services. I simply mean the way many bookstores relate to their local environments. In St. Johnsbury, Vermont, the Boxcar &amp;amp; Caboose bookshop has a section of work by Vermont writers and a shelf full of books about Vermont. At the Harvard Coop (actually Barnes &amp;amp; Noble), there&amp;#8217;s a section about Boston and New England — but perhaps more apt are the tables featuring academically-flavored books more likely to appeal to a PhD. literary theorist than a casual reader. That&amp;#8217;s what I mean by relating to the local environment.&lt;/p&gt;
+
+&lt;p&gt;Rhythm. In most bookstores, the books are arranged with a certain uneven but pleasing rhythm. Some are neatly lined up, spine facing out, alphabetically, like in a library. But then one breaks the flow, its cover facing you and grabbing your attention. Compare that to the rhythm you find in the iTunes bookstore, where it&amp;#8217;s just an endless march of thumbnail book covers, titles and buy-buttons.&lt;/p&gt;
+
+&lt;p&gt;At your fingertips. It&amp;#8217;s so easy to pick up and scan through a book, putting it down again and moving on if it doesn&amp;#8217;t appeal. I have to say, this idea has been pretty well emulated and developed by the digital bookstores, but they still lack something. Maybe it has to do with unpredictability. When I pick up a book in a store, I may see a pull-quote from another author, a blurb by the publisher, or an excerpt from the work itself. It depends on whether I open the cover, flip to the back, turn to a random page — or whether the publisher has decided to feature one thing or another. With Amazon and iTunes, in contrast, it&amp;#8217;s always the same thing, always a product description, always presented in the same visual way.&lt;/p&gt;
+
+&lt;p&gt;Book design. This is an obvious one, shouldn&amp;#8217;t it count for something? Yes, the cover art is dutifully rendered (in a tiny, thumbnail size), but everything else is lost. The back cover. The spine. The front and back inner-flaps. True, Amazon shows you this stuff for most books with its &amp;#8220;Look Inside&amp;#8221; feature. But it&amp;#8217;s a literal interpretation of the experience of looking in a book — they just show you photographs of a limited number of pages. Could there be a more nuanced way of conveying a book&amp;#8217;s design sensibility, something optimized for digital experiences?&lt;/p&gt;
+
+&lt;p&gt;Curation. Bookstores organize, sure, but what makes a bookstore good is when it curates well. When browsing, you don&amp;#8217;t want to see everything, you just want to see a good selection. Paradox of choice and all that. I expect any bookseller to curate in a way that aims to sell more books — they&amp;#8217;ll highlight the popular or best-selling stuff, sure — but digital booksellers take this to an extreme. There doesn&amp;#8217;t seem to be a middle ground between looking through top-sellers in non-fiction and browsing an alphabetical list of all books under History &amp;gt; United States.&lt;/p&gt;
+
+&lt;p&gt;Meandering. When you&amp;#8217;re in a bookstore, you&amp;#8217;re in a physical space, a space defined by aisles, sections, nooks, corners, windows and tables. If you&amp;#8217;re browsing, you almost by definition follow a meandering path — pausing and picking up again depending on whether something catches your eye.&lt;/p&gt;
+
+&lt;h3 id='is_any_of_this_attainable_in_a_digital_bookstore'&gt;Is any of this attainable in a digital bookstore?&lt;/h3&gt;
+
+&lt;p&gt;I think so. I think it should be possible to design an experience that encourages serendipitous finds, enables a feeling of pleasant meandering, and allows a meaningful personality to emerge. I don&amp;#8217;t know precisely what it should look like, but it should have the following characteristics.&lt;/p&gt;</description>
+                <link>http://akiryk.github.io/blog/2013/10/07/book-browsing</link>
+                <guid>http://akiryk.github.io/blog/2013/10/07/book-browsing</guid>
+                <pubDate>2013-10-07T00:00:00+02:00</pubDate>
+        </item>
 
         <item>
                 <title>Comic Stripping for UX</title>
@@ -63,9 +117,19 @@
 &lt;p&gt;So, could cartooning be an effective approach to guiding UX? Of course. In my case, we were struggling to get everyone on the same page. A few little examples like this helped reveal that we didn&amp;#8217;t agree about some fundamental things. They helped us articulate those differences and come up with some next steps for us to explore. I&amp;#8217;d say that made it a successful exploration. I probably wouldn&amp;#8217;t take it a lot farther than I did here, because it doesn&amp;#8217;t take much to make the key points. But — simply by surprising people with a hopefully funny way to tackle a problem — it can get folk&amp;#8217;s attention and possibly encourage them to think in a new way. It did that for us.&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;</description>
-                <link>http://akiryk.github.io/portfolio/2013/10/07/comic-ux</link>
-                <guid>http://akiryk.github.io/portfolio/2013/10/07/comic-ux</guid>
-                <pubDate>2013-10-07T00:00:00+02:00</pubDate>
+                <link>http://akiryk.github.io/blog/2013/09/21/comic-ux</link>
+                <guid>http://akiryk.github.io/blog/2013/09/21/comic-ux</guid>
+                <pubDate>2013-09-21T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>A Sample Portfolio Item</title>
+                <description>&lt;p&gt;I thought this was a &lt;a href='http://uxmas.com/2012/ux-design-role-playing-and-micromoments'&gt;pretty interesting approach to UI design&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;The idea is to role play a &amp;#8216;conversation&amp;#8217; with the user-interface you&amp;#8217;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&amp;#8217;s definitely memorable — imagine role play&lt;/p&gt;</description>
+                <link>http://akiryk.github.io/portfolio/2013/08/18/portfolio-sample</link>
+                <guid>http://akiryk.github.io/portfolio/2013/08/18/portfolio-sample</guid>
+                <pubDate>2013-08-18T00:00:00+02:00</pubDate>
         </item>
 
 
