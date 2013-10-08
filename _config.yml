@@ -122,3 +122,7 @@ JB :
 
   tags_list :
     provider : "custom" 
+
+AK:
+  # Custom list of pages to include in navigation
+  primary_nav : [["/index.html", "Blog"], ["/portfolio.html", "Portfolio"], ["/about.html", "About"]]

@@ -1,35 +1,17 @@
 {% comment %}<!--
-  This is a big hack until I learn how to handle arrays with Jekyll. 
-  If we want to add another element to the navigation, that element will have to be manually added below.
-  We'll also need to manually check for every nav item to see if it's active. Obviously, there's a better way.
+  Loop through a predefined set of pages and turn them into links in the primary navigation.
+  The predefined set of pages is created in _config.yml under the JB namespace
 -->{% endcomment %}
+{% assign links = site.AK.primary_nav %}
 
-{% if page.url == "/index.html" %}
-  <li class="active">
-    <a href="/index.html">Blog</a>
-  </li>
-{% else %}
-  <li>
-    <a href="/index.html">Blog</a>
-  </li>
-{% endif %}
-
-{% if page.url == "/portfolio.html" %}
-  <li class="active">
-    <a href="/portfolio.html">Portfolio</a>
-  </li>
-{% else %}
-  <li>
-    <a href="/portfolio.html">Portfolio</a>
-  </li>
-{% endif %}
-
-{% if page.url == "/about.html" %}
-  <li class="active">
-    <a href="/about.html">About</a>
-  </li>
-{% else %}
-  <li>
-    <a href="/about.html">About</a>
-  </li>
-{% endif %}
+<ul>
+{% for link in links %}
+  {% if page.url == link[0] %}
+    <li class="active">
+  {% else %}
+    <li>
+  {% endif %}
+      <a href="{{ link[0] }}">{{ link[1] }}</a>
+    </li>
+{% endfor %}
+</ul>
