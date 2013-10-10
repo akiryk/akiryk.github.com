@@ -4,7 +4,7 @@ This is a jekyll blog website for Adam Kiryk
 I'm currently using a custom theme called none. It is literally an undesigned theme; totally spare. Find the pieces in themes/none. To update, I could change the theme, or more likely change to a different theme by changing the theme in _layouts files. 
 
 ###Plugins
-I was having trouble getting plugins to work (I kept getting maruku errors), so I installed a couple of other markdown interpreters and discovered that this made a difference. To do this, install the right gem:
+Note: plugins only work locally until I figure out how to push compiled site to github pages. It might not be that important for me to use plugins, so will postpone this task. Just FYI: Locally, I was having trouble getting plugins to work (I kept getting maruku errors), so I installed a couple of other markdown interpreters and discovered that this made a difference. To do this, install the right gem:
 
     gem install redcarpet
 

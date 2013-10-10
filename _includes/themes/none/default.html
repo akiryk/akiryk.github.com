@@ -92,18 +92,12 @@
     .highlight .vi { color: #008080 } /* Name.Variable.Instance */
     .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 </style>
-
   </head>
-
   <body>
     <section>
       <header>
         <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        <nav>
-          {% assign pages_list = site.pages %}
-          {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
-        </nav>
+        <nav>{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include JB/pages_list %}</nav>
       </header>
     </section>
 
