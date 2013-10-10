@@ -1,6 +1,8 @@
 {% comment %}<!--
-  Loop through a predefined set of pages and turn them into links in the primary navigation.
-  The predefined set of pages is created in _config.yml under the JB namespace
+  Loop through a predefined set of pages and turn them into primary navigation.
+  The predefined set of pages is created in _config.yml under the AK namespace. 
+  Note that this file is called from the Jekyll Bootstrap pages_list file, which knows
+  there is a custom version to call based on config.yml settings. 
 -->{% endcomment %}
 {% assign links = site.AK.primary_nav %}
 

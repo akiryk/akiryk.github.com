@@ -29,6 +29,71 @@
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
+    <style>
+    pre { white-space: pre-wrap; }
+    img { max-width: 100%;}
+    .highlight  { background: #ffffff; }
+    .highlight .c { color: #999988; font-style: italic } /* Comment */
+    .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+    .highlight .k { font-weight: bold } /* Keyword */
+    .highlight .o { font-weight: bold } /* Operator */
+    .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+    .highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+    .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+    .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+    .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+    .highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+    .highlight .ge { font-style: italic } /* Generic.Emph */
+    .highlight .gr { color: #aa0000 } /* Generic.Error */
+    .highlight .gh { color: #999999 } /* Generic.Heading */
+    .highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+    .highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+    .highlight .go { color: #888888 } /* Generic.Output */
+    .highlight .gp { color: #555555 } /* Generic.Prompt */
+    .highlight .gs { font-weight: bold } /* Generic.Strong */
+    .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+    .highlight .gt { color: #aa0000 } /* Generic.Traceback */
+    .highlight .kc { font-weight: bold } /* Keyword.Constant */
+    .highlight .kd { font-weight: bold } /* Keyword.Declaration */
+    .highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+    .highlight .kr { font-weight: bold } /* Keyword.Reserved */
+    .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+    .highlight .m { color: #009999 } /* Literal.Number */
+    .highlight .s { color: #d14 } /* Literal.String */
+    .highlight .na { color: #008080 } /* Name.Attribute */
+    .highlight .nb { color: #0086B3 } /* Name.Builtin */
+    .highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+    .highlight .no { color: #008080 } /* Name.Constant */
+    .highlight .ni { color: #800080 } /* Name.Entity */
+    .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+    .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+    .highlight .nn { color: #555555 } /* Name.Namespace */
+    .highlight .nt { color: #000080 } /* Name.Tag */
+    .highlight .nv { color: #008080 } /* Name.Variable */
+    .highlight .ow { font-weight: bold } /* Operator.Word */
+    .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+    .highlight .mf { color: #009999 } /* Literal.Number.Float */
+    .highlight .mh { color: #009999 } /* Literal.Number.Hex */
+    .highlight .mi { color: #009999 } /* Literal.Number.Integer */
+    .highlight .mo { color: #009999 } /* Literal.Number.Oct */
+    .highlight .sb { color: #d14 } /* Literal.String.Backtick */
+    .highlight .sc { color: #d14 } /* Literal.String.Char */
+    .highlight .sd { color: #d14 } /* Literal.String.Doc */
+    .highlight .s2 { color: #d14 } /* Literal.String.Double */
+    .highlight .se { color: #d14 } /* Literal.String.Escape */
+    .highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+    .highlight .si { color: #d14 } /* Literal.String.Interpol */
+    .highlight .sx { color: #d14 } /* Literal.String.Other */
+    .highlight .sr { color: #009926 } /* Literal.String.Regex */
+    .highlight .s1 { color: #d14 } /* Literal.String.Single */
+    .highlight .ss { color: #990073 } /* Literal.String.Symbol */
+    .highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+    .highlight .vc { color: #008080 } /* Name.Variable.Class */
+    .highlight .vg { color: #008080 } /* Name.Variable.Global */
+    .highlight .vi { color: #008080 } /* Name.Variable.Instance */
+    .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+</style>
+
   </head>
 
   <body>
@@ -84,57 +149,70 @@
 <section>
   21 September 2013
 
-  <p>I thought this was a <a href='http://uxmas.com/2012/ux-design-role-playing-and-micromoments'>pretty interesting approach to UI design</a>,</p>
+  <p>I thought this was a <a href="http://uxmas.com/2012/ux-design-role-playing-and-micromoments">pretty interesting approach to UI design</a>, </p>
 
-<p>The idea is to role play a &#8216;conversation&#8217; with the user-interface you&#8217;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&#8217;s definitely memorable — imagine role playing a conversation with a client&#8217;s web site along with your client. You&#8217;d make your point hit home, most likely.</p>
+<p>The idea is to role play a &#39;conversation&#39; with the user-interface you&#39;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&#39;s definitely memorable — imagine role playing a conversation with a client&#39;s web site along with your client. You&#39;d make your point hit home, most likely. </p>
 
-<p>Anyway, it got me thinking about a related exercise. Something less theatrical that could be used to encourage a client or a team to think about what is most important in a given interaction. I&#8217;ll take you through what I did and why.</p>
+<p>Anyway, it got me thinking about a related exercise. Something less theatrical that could be used to encourage a client or a team to think about what is most important in a given interaction. I&#39;ll take you through what I did and why. </p>
 
-<p>The clients were struggling to understand the relative importance of various elements of a public radio station&#8217;s web site home page. We&#8217;d agreed to work mobile first and were therefore in the (desirable) position of starting with only what was necessary and making every new piece of content or functionality justify itself. But that didn&#8217;t mean there weren&#8217;t people advocating for their own pet elements.</p>
+<p>The clients were struggling to understand the relative importance of various elements of a public radio station&#39;s web site home page. We&#39;d agreed to work mobile first and were therefore in the (desirable) position of starting with only what was necessary and making every new piece of content or functionality justify itself. But that didn&#39;t mean there weren&#39;t people advocating for their own pet elements.</p>
 
-<p>For example, there was pressure to add space and attention to a branded masthead (Make the logo bigger! Add a tagline!); we couldn&#8217;t neglect the &#8220;Donate Now&#8221; button; we&#8217;d obviously need underwriting (an ad); listen to the live stream had to be prominent; what if the station was having a pledge drive? We&#8217;d need a big promotional unit. And what about regular old content — you know, news stories, interviews, first listens to new music… Yup, we&#8217;d need that to be important, too.</p>
+<p>For example, there was pressure to add space and attention to a branded masthead (Make the logo bigger! Add a tagline!); we couldn&#39;t neglect the &quot;Donate Now&quot; button; we&#39;d obviously need underwriting (an ad); listen to the live stream had to be prominent; what if the station was having a pledge drive? We&#39;d need a big promotional unit. And what about regular old content — you know, news stories, interviews, first listens to new music… Yup, we&#39;d need that to be important, too.</p>
 
-<p>Since we&#8217;re doing this mobile-first, let&#8217;s start to think about how to handle all of those elements at a very small screen size.</p>
+<p>Since we&#39;re doing this mobile-first, let&#39;s start to think about how to handle all of those elements at a very small screen size.  </p>
 
-<p><img alt='A basic wireframe' src='/assets/images/comic-ux/comic-wireframe-1.jpg' /></p>
+<p><img src="/assets/images/comic-ux/comic-wireframe-1.jpg" alt="A basic wireframe"></p>
 
-<p>Lots of room for improvement, sure, but it&#8217;s a start, a way to display the priorities that the clients were pushing for. I decided to create a cartoon conversation that would reveal a few key points about this arrangement. Read on&#8230;</p>
+<p>Lots of room for improvement, sure, but it&#39;s a start, a way to display the priorities that the clients were pushing for. I decided to create a cartoon conversation that would reveal a few key points about this arrangement. Read on...</p>
 
-<p><img alt='Illustration of a site-visitor' src='/assets/images/comic-ux/comic-1.png' /></p>
+<p><img src="/assets/images/comic-ux/comic-1.png" alt="Illustration of a site-visitor"></p>
 
-<p>He&#8217;s perfect because he&#8217;s totally generic. Thats&#8217;s the point. The first time someone visits our site&#8217;s home page, we really don&#8217;t know very much about them or what they&#8217;re after. We have to give them a default set of choices.</p>
+<p>He&#39;s perfect because he&#39;s totally generic. Thats&#39;s the point. The first time someone visits our site&#39;s home page, we really don&#39;t know very much about them or what they&#39;re after. We have to give them a default set of choices. </p>
 
-<p><img alt='Comic of a guy representing a computer screen' src='/assets/images/comic-ux/comic-2.png' /></p>
+<p><img src="/assets/images/comic-ux/comic-2.png" alt="Comic of a guy representing a computer screen"></p>
 
-<p>The bearded guy represents the website. He&#8217;s got a bow tie, he&#8217;s got a little personality. That&#8217;s fine — the website will have some personality.</p>
+<p>The bearded guy represents the website. He&#39;s got a bow tie, he&#39;s got a little personality. That&#39;s fine — the website will have some personality. </p>
 
-<p>However, it&#8217;s still just a website. No artificial intelligence. No supernatural abilities to perceive what a particular site visitor wants. So no matter that the user &#8216;says&#8217; in response to this initial greeting, the site&#8217;s response is going to be the same. If we display a branded masthead with big logo and tagline at the top, front and center, then we might agree that this is what the site says to our hypothetical user&#8217;s first comment:</p>
+<p>However, it&#39;s still just a website. No artificial intelligence. No supernatural abilities to perceive what a particular site visitor wants. So no matter that the user &#39;says&#39; in response to this initial greeting, the site&#39;s response is going to be the same. If we display a branded masthead with big logo and tagline at the top, front and center, then we might agree that this is what the site says to our hypothetical user&#39;s first comment:</p>
 
-<p><img alt='Comic of a person speaking to a computer screen' src='/assets/images/comic-ux/comic-3.png' /></p>
+<p><img src="/assets/images/comic-ux/comic-3.png" alt="Comic of a person speaking to a computer screen"></p>
 
-<p>The point is: we&#8217;d better all agree that this first statement makes sense. And maybe it does. Or maybe it suggests to us that we want our welcome statement to be a little less one-track. It&#8217;s an important thing to consider, and it becomes obvious to clients and the team when presented in this way.</p>
+<p>The point is: we&#39;d better all agree that this first statement makes sense. And maybe it does. Or maybe it suggests to us that we want our welcome statement to be a little less one-track. It&#39;s an important thing to consider, and it becomes obvious to clients and the team when presented in this way. </p>
 
-<p>Moving onto a more specific type of user… Let&#8217;s see how the conversation goes with a user who&#8217;s interested in reading local news, given that our prioritization puts the logo/brand first above listen; listen is above underwriting/pledge; news is last.</p>
+<p>Moving onto a more specific type of user… Let&#39;s see how the conversation goes with a user who&#39;s interested in reading local news, given that our prioritization puts the logo/brand first above listen; listen is above underwriting/pledge; news is last.</p>
 
-<p><img alt='Conversation between person and computer screen' src='/assets/images/comic-ux/comic-4.png' /></p>
+<p><img src="/assets/images/comic-ux/comic-4.png" alt="Conversation between person and computer screen"></p>
 
-<p>Is that the right experience? It might be. Perhaps the point of this site isn&#8217;t to serve readers of local news. But if that&#8217;s true, let&#8217;s make sure we all understand it and agree to the principle.</p>
+<p>Is that the right experience? It might be. Perhaps the point of this site isn&#39;t to serve readers of local news. But if that&#39;s true, let&#39;s make sure we all understand it and agree to the principle. </p>
 
-<p>Let&#8217;s say we talk about it, though, and agree to a different conversation, one that feels like the right one we should be having…</p>
+<p>Let&#39;s say we talk about it, though, and agree to a different conversation, one that feels like the right one we should be having…</p>
 
-<p><img alt='Conversation between person and computer screen' src='/assets/images/comic-ux/comic-5.png' /></p>
+<p><img src="/assets/images/comic-ux/comic-5.png" alt="Conversation between person and computer screen"></p>
 
-<p>It&#8217;s not perfect for the reader, but it&#8217;s reasonably smooth. If listening is the primary purpose for this site, then we can probably live with it. We&#8217;ll need to adjust our set of priorities in our wireframe a bit, shift some content/functionality around, possibly adjust the visual weight of certain elements. We might come up with something like the following. The logo/brand gets damped town a little — we remove the tagline, say; the sequence of where we see the ad and the pledge announcement changes; news comes up.</p>
+<p>It&#39;s not perfect for the reader, but it&#39;s reasonably smooth. If listening is the primary purpose for this site, then we can probably live with it. We&#39;ll need to adjust our set of priorities in our wireframe a bit, shift some content/functionality around, possibly adjust the visual weight of certain elements. We might come up with something like the following. The logo/brand gets damped town a little — we remove the tagline, say; the sequence of where we see the ad and the pledge announcement changes; news comes up. </p>
 
-<p><img alt='A basic wireframe' src='/assets/images/comic-ux/comic-wireframe-2.jpg' /></p>
+<p><img src="/assets/images/comic-ux/comic-wireframe-2.jpg" alt="A basic wireframe"></p>
 
-<p>Again, a fairly loose wireframe, but a flow that&#8217;s much improved over the first example — and one that our stakeholders have agreed to. It gives us a good starting point for refinement, prototyping, and testing with real users.</p>
+<p>Again, a fairly loose wireframe, but a flow that&#39;s much improved over the first example — and one that our stakeholders have agreed to. It gives us a good starting point for refinement, prototyping, and testing with real users.</p>
 
-<h3 id='results'>Results</h3>
+<h3>Results</h3>
 
-<p>So, could cartooning be an effective approach to guiding UX? Of course. In my case, we were struggling to get everyone on the same page. A few little examples like this helped reveal that we didn&#8217;t agree about some fundamental things. They helped us articulate those differences and come up with some next steps for us to explore. I&#8217;d say that made it a successful exploration. I probably wouldn&#8217;t take it a lot farther than I did here, because it doesn&#8217;t take much to make the key points. But — simply by surprising people with a hopefully funny way to tackle a problem — it can get folk&#8217;s attention and possibly encourage them to think in a new way. It did that for us.</p>
+<p>So, could cartooning be an effective approach to guiding UX? Of course. In my case, we were struggling to get everyone on the same page. A few little examples like this helped reveal that we didn&#39;t agree about some fundamental things. They helped us articulate those differences and come up with some next steps for us to explore. I&#39;d say that made it a successful exploration. I probably wouldn&#39;t take it a lot farther than I did here, because it doesn&#39;t take much to make the key points. But — simply by surprising people with a hopefully funny way to tackle a problem — it can get folk&#39;s attention and possibly encourage them to think in a new way. It did that for us.</p>
 
-<p>#</p>
+<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">foo</span>
+<span class="lineno">2</span>   <span class="nb">puts</span> <span class="s1">&#39;foo&#39;</span>
+<span class="lineno">3</span> <span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span> <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="lineno">2</span>   <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span> 
+<span class="lineno">3</span>     <span class="nx">print</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span>
+<span class="lineno">4</span>     <span class="c1">// comment; This is a really long comment. Question is will it break or what will happen?</span>
+<span class="lineno">5</span>     <span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;twp&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">,</span> <span class="s1">&#39;fourteen&#39;</span><span class="p">,</span> <span class="s1">&#39;hiehglish&#39;</span><span class="p">,</span> <span class="s1">&#39;sdljfsljf&#39;</span><span class="p">];</span>
+<span class="lineno">6</span>   <span class="p">}</span>
+<span class="lineno">7</span> <span class="p">}</span>
+</code></pre></div>
+
 
   
     <ul class="tag_box inline">
@@ -171,7 +249,7 @@
 
 
    
-    <li><a href="/tags.html#ux-ref">ux</a> <span>(3)</span></li>
+    <li><a href="/tags.html#ux-ref">ux</a> <span>(4)</span></li>
    
     <li><a href="/tags.html#role-playing-ref">role-playing</a> <span>(1)</span></li>
   
@@ -188,7 +266,7 @@
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/portfolio/2012/11/19/CMS-for-NPR" title="Content Management for NPR Stations">&larr; Previous</a></li>
+        <li class="prev"><a href="/portfolio/2013/02/09/facebook-project" title="NPR Stations on Facebook">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       

@@ -4,7 +4,7 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2013-10-08T07:59:48+02:00</updated>
+ <updated>2013-10-10T08:33:28+02:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
@@ -17,53 +17,60 @@
    <link href="http://akiryk.github.io/blog/2013/10/07/book-browsing"/>
    <updated>2013-10-07T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/blog/2013/10/07/book-browsing</id>
-   <content type="html">&lt;h3 id='synopsis'&gt;Synopsis:&lt;/h3&gt;
+   <content type="html">&lt;h3&gt;Synopsis:&lt;/h3&gt;
 
-&lt;p&gt;Here&amp;#8217;s a problem I&amp;#8217;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#8217;ll present some mockups of what that improved experience could look like.&lt;/p&gt;
+&lt;p&gt;Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like. &lt;/p&gt;
 
-&lt;h3 id='to_begin'&gt;To Begin&lt;/h3&gt;
+&lt;h3&gt;To Begin&lt;/h3&gt;
 
-&lt;p&gt;I&amp;#8217;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#8217;m talking about the experience of looking for something you don&amp;#8217;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#8217;s an experience that&amp;#8217;s been notably absent from the world of digital book-shopping.&lt;/p&gt;
+&lt;style&gt;.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}&lt;/style&gt;
 
-&lt;p&gt;Why? Well, I&amp;#8217;m not sure, but I suppose it&amp;#8217;s because the big digital booksellers don&amp;#8217;t think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the &amp;#8216;buy&amp;#8217; button. I think that&amp;#8217;s a mistake.&lt;/p&gt;
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/B4g4zTF5lDo?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
-&lt;p&gt;As more and more people purchase and read digital books, it&amp;#8217;s critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what&amp;#8217;s left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world.&lt;/p&gt;
+&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/12345678 &quot; frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Perhaps you disagree. Perhaps you think digital book-browsing is just fine as is. (An aside: let me try to think of a less awful and cumbersome term than &amp;#8216;digital book-browsing.&amp;#8217; e-Book shopping? Browsing for books in the digital space? Ugh. Forget it. From now on, when I say &amp;#8216;browsing,&amp;#8217; I mean browsing for books either online or in an app. If I want to talk about browsing in the real world, I&amp;#8217;ll be explicit about it).&lt;/p&gt;
+&lt;p&gt;I&amp;#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#39;m talking about the experience of looking for something you don&amp;#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#39;s an experience that&amp;#39;s been notably absent from the world of digital book-shopping. &lt;/p&gt;
 
-&lt;p&gt;Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and browse through listings like these (see example from the iBook store)? It isn&amp;#8217;t, I don&amp;#8217;t think. It&amp;#8217;s repetitive. Nothing stands out (except for the orange buy buttons). Everything is presented as equally important. You have to squint to see the artwork. It feels less like browsing and more like research, or worse, data-entry.&lt;/p&gt;
+&lt;p&gt;Why? Well, I&amp;#39;m not sure, but I suppose it&amp;#39;s because the big digital booksellers don&amp;#39;t think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the &amp;#39;buy&amp;#39; button. I think that&amp;#39;s a mistake. &lt;/p&gt;
 
-&lt;h3 id='imagine_a_better_way'&gt;Imagine a Better Way&lt;/h3&gt;
+&lt;p&gt;As more and more people purchase and read digital books, it&amp;#39;s critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what&amp;#39;s left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. &lt;/p&gt;
 
-&lt;p&gt;Imagine there&amp;#8217;s a new digital bookseller in town, and they want to provide a better way to browse. They think their customers will be happier with their purchases if they&amp;#8217;ve spent enough time to find the right books — and they&amp;#8217;ll be more satisfied overall if the process of exploring for those right books is enjoyable. How would I approach the problem? What would I suggest? Why would I suggest it?&lt;/p&gt;
+&lt;p&gt;Perhaps you disagree. Perhaps you think digital book-browsing is just fine as is. (An aside: let me try to think of a less awful and cumbersome term than &amp;#39;digital book-browsing.&amp;#39; e-Book shopping? Browsing for books in the digital space? Ugh. Forget it. From now on, when I say &amp;#39;browsing,&amp;#39; I mean browsing for books either online or in an app. If I want to talk about browsing in the real world, I&amp;#39;ll be explicit about it). &lt;/p&gt;
 
-&lt;h3 id='inspirations'&gt;Inspirations&lt;/h3&gt;
+&lt;p&gt;Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and browse through listings like these (see example from the iBook store)? It isn&amp;#39;t, I don&amp;#39;t think. It&amp;#39;s repetitive. Nothing stands out (except for the orange buy buttons). Everything is presented as equally important. You have to squint to see the artwork. It feels less like browsing and more like research, or worse, data-entry. &lt;/p&gt;
 
-&lt;p&gt;The first thing I&amp;#8217;d do is examine what it&amp;#8217;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
+&lt;h3&gt;Imagine a Better Way&lt;/h3&gt;
 
-&lt;p&gt;Here&amp;#8217;s a thought — they do it because it&amp;#8217;s pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop&amp;#8217;s barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn&amp;#8217;t replicate those things very easily in a digital experience. You wouldn&amp;#8217;t want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure).&lt;/p&gt;
+&lt;p&gt;Imagine there&amp;#39;s a new digital bookseller in town, and they want to provide a better way to browse. They think their customers will be happier with their purchases if they&amp;#39;ve spent enough time to find the right books — and they&amp;#39;ll be more satisfied overall if the process of exploring for those right books is enjoyable. How would I approach the problem? What would I suggest? Why would I suggest it?&lt;/p&gt;
 
-&lt;p&gt;You could take inspiration from those things, perhaps. I believe you should seek inspiration from any and all of the good things about real-world browsing. Let&amp;#8217;s look at some of them, briefly, and decide what could be useful and what could be discarded.&lt;/p&gt;
+&lt;h3&gt;Inspirations&lt;/h3&gt;
 
-&lt;p&gt;Serendipity. You&amp;#8217;re casually walking from one part of the store to another when something catches your eye. A book cover, perhaps, or an author&amp;#8217;s name, and it draws you to something new and worthwhile. A good thing.&lt;/p&gt;
+&lt;p&gt;The first thing I&amp;#39;d do is examine what it&amp;#39;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
 
-&lt;p&gt;Quirkiness. I love bookstores that stock tables with &amp;#8220;what we&amp;#8217;re reading now&amp;#8221; or &amp;#8220;our favorite beach reads.&amp;#8221; Some flavor of the people who work in the store and the things they like. I don&amp;#8217;t necessarily end up buying from these tables, but they tell me something about the character of the store (e.g. libertarian hippy-hangout in Arcata, California or literary-haven in Nashville, Tennessee). Who wants every bookstore to be the same? Surprise me.&lt;/p&gt;
+&lt;p&gt;Here&amp;#39;s a thought — they do it because it&amp;#39;s pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop&amp;#39;s barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn&amp;#39;t replicate those things very easily in a digital experience. You wouldn&amp;#39;t want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure). &lt;/p&gt;
 
-&lt;p&gt;Localization. No, not GPS-enabled services. I simply mean the way many bookstores relate to their local environments. In St. Johnsbury, Vermont, the Boxcar &amp;amp; Caboose bookshop has a section of work by Vermont writers and a shelf full of books about Vermont. At the Harvard Coop (actually Barnes &amp;amp; Noble), there&amp;#8217;s a section about Boston and New England — but perhaps more apt are the tables featuring academically-flavored books more likely to appeal to a PhD. literary theorist than a casual reader. That&amp;#8217;s what I mean by relating to the local environment.&lt;/p&gt;
+&lt;p&gt;You could take inspiration from those things, perhaps. I believe you should seek inspiration from any and all of the good things about real-world browsing. Let&amp;#39;s look at some of them, briefly, and decide what could be useful and what could be discarded.&lt;/p&gt;
 
-&lt;p&gt;Rhythm. In most bookstores, the books are arranged with a certain uneven but pleasing rhythm. Some are neatly lined up, spine facing out, alphabetically, like in a library. But then one breaks the flow, its cover facing you and grabbing your attention. Compare that to the rhythm you find in the iTunes bookstore, where it&amp;#8217;s just an endless march of thumbnail book covers, titles and buy-buttons.&lt;/p&gt;
+&lt;p&gt;Serendipity. You&amp;#39;re casually walking from one part of the store to another when something catches your eye. A book cover, perhaps, or an author&amp;#39;s name, and it draws you to something new and worthwhile. A good thing.&lt;/p&gt;
 
-&lt;p&gt;At your fingertips. It&amp;#8217;s so easy to pick up and scan through a book, putting it down again and moving on if it doesn&amp;#8217;t appeal. I have to say, this idea has been pretty well emulated and developed by the digital bookstores, but they still lack something. Maybe it has to do with unpredictability. When I pick up a book in a store, I may see a pull-quote from another author, a blurb by the publisher, or an excerpt from the work itself. It depends on whether I open the cover, flip to the back, turn to a random page — or whether the publisher has decided to feature one thing or another. With Amazon and iTunes, in contrast, it&amp;#8217;s always the same thing, always a product description, always presented in the same visual way.&lt;/p&gt;
+&lt;p&gt;Quirkiness. I love bookstores that stock tables with &amp;quot;what we&amp;#39;re reading now&amp;quot; or &amp;quot;our favorite beach reads.&amp;quot; Some flavor of the people who work in the store and the things they like. I don&amp;#39;t necessarily end up buying from these tables, but they tell me something about the character of the store (e.g. libertarian hippy-hangout in Arcata, California or literary-haven in Nashville, Tennessee). Who wants every bookstore to be the same? Surprise me. &lt;/p&gt;
 
-&lt;p&gt;Book design. This is an obvious one, shouldn&amp;#8217;t it count for something? Yes, the cover art is dutifully rendered (in a tiny, thumbnail size), but everything else is lost. The back cover. The spine. The front and back inner-flaps. True, Amazon shows you this stuff for most books with its &amp;#8220;Look Inside&amp;#8221; feature. But it&amp;#8217;s a literal interpretation of the experience of looking in a book — they just show you photographs of a limited number of pages. Could there be a more nuanced way of conveying a book&amp;#8217;s design sensibility, something optimized for digital experiences?&lt;/p&gt;
+&lt;p&gt;Localization. No, not GPS-enabled services. I simply mean the way many bookstores relate to their local environments. In St. Johnsbury, Vermont, the Boxcar &amp;amp; Caboose bookshop has a section of work by Vermont writers and a shelf full of books about Vermont. At the Harvard Coop (actually Barnes &amp;amp; Noble), there&amp;#39;s a section about Boston and New England — but perhaps more apt are the tables featuring academically-flavored books more likely to appeal to a PhD. literary theorist than a casual reader. That&amp;#39;s what I mean by relating to the local environment. &lt;/p&gt;
 
-&lt;p&gt;Curation. Bookstores organize, sure, but what makes a bookstore good is when it curates well. When browsing, you don&amp;#8217;t want to see everything, you just want to see a good selection. Paradox of choice and all that. I expect any bookseller to curate in a way that aims to sell more books — they&amp;#8217;ll highlight the popular or best-selling stuff, sure — but digital booksellers take this to an extreme. There doesn&amp;#8217;t seem to be a middle ground between looking through top-sellers in non-fiction and browsing an alphabetical list of all books under History &amp;gt; United States.&lt;/p&gt;
+&lt;p&gt;Rhythm. In most bookstores, the books are arranged with a certain uneven but pleasing rhythm. Some are neatly lined up, spine facing out, alphabetically, like in a library. But then one breaks the flow, its cover facing you and grabbing your attention. Compare that to the rhythm you find in the iTunes bookstore, where it&amp;#39;s just an endless march of thumbnail book covers, titles and buy-buttons. &lt;/p&gt;
 
-&lt;p&gt;Meandering. When you&amp;#8217;re in a bookstore, you&amp;#8217;re in a physical space, a space defined by aisles, sections, nooks, corners, windows and tables. If you&amp;#8217;re browsing, you almost by definition follow a meandering path — pausing and picking up again depending on whether something catches your eye.&lt;/p&gt;
+&lt;p&gt;At your fingertips. It&amp;#39;s so easy to pick up and scan through a book, putting it down again and moving on if it doesn&amp;#39;t appeal. I have to say, this idea has been pretty well emulated and developed by the digital bookstores, but they still lack something. Maybe it has to do with unpredictability. When I pick up a book in a store, I may see a pull-quote from another author, a blurb by the publisher, or an excerpt from the work itself. It depends on whether I open the cover, flip to the back, turn to a random page — or whether the publisher has decided to feature one thing or another. With Amazon and iTunes, in contrast, it&amp;#39;s always the same thing, always a product description, always presented in the same visual way.&lt;/p&gt;
 
-&lt;h3 id='is_any_of_this_attainable_in_a_digital_bookstore'&gt;Is any of this attainable in a digital bookstore?&lt;/h3&gt;
+&lt;p&gt;Book design. This is an obvious one, shouldn&amp;#39;t it count for something? Yes, the cover art is dutifully rendered (in a tiny, thumbnail size), but everything else is lost. The back cover. The spine. The front and back inner-flaps. True, Amazon shows you this stuff for most books with its &amp;quot;Look Inside&amp;quot; feature. But it&amp;#39;s a literal interpretation of the experience of looking in a book — they just show you photographs of a limited number of pages. Could there be a more nuanced way of conveying a book&amp;#39;s design sensibility, something optimized for digital experiences? &lt;/p&gt;
 
-&lt;p&gt;I think so. I think it should be possible to design an experience that encourages serendipitous finds, enables a feeling of pleasant meandering, and allows a meaningful personality to emerge. I don&amp;#8217;t know precisely what it should look like, but it should have the following characteristics.&lt;/p&gt;</content>
+&lt;p&gt;Curation. Bookstores organize, sure, but what makes a bookstore good is when it curates well. When browsing, you don&amp;#39;t want to see everything, you just want to see a good selection. Paradox of choice and all that. I expect any bookseller to curate in a way that aims to sell more books — they&amp;#39;ll highlight the popular or best-selling stuff, sure — but digital booksellers take this to an extreme. There doesn&amp;#39;t seem to be a middle ground between looking through top-sellers in non-fiction and browsing an alphabetical list of all books under History &amp;gt; United States.&lt;/p&gt;
+
+&lt;p&gt;Meandering. When you&amp;#39;re in a bookstore, you&amp;#39;re in a physical space, a space defined by aisles, sections, nooks, corners, windows and tables. If you&amp;#39;re browsing, you almost by definition follow a meandering path — pausing and picking up again depending on whether something catches your eye. &lt;/p&gt;
+
+&lt;h3&gt;Is any of this attainable in a digital bookstore?&lt;/h3&gt;
+
+&lt;p&gt;I think so. I think it should be possible to design an experience that encourages serendipitous finds, enables a feeling of pleasant meandering, and allows a meaningful personality to emerge. I don&amp;#39;t know precisely what it should look like, but it should have the following characteristics. &lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -71,57 +78,98 @@
    <link href="http://akiryk.github.io/blog/2013/09/21/comic-ux"/>
    <updated>2013-09-21T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/blog/2013/09/21/comic-ux</id>
-   <content type="html">&lt;p&gt;I thought this was a &lt;a href='http://uxmas.com/2012/ux-design-role-playing-and-micromoments'&gt;pretty interesting approach to UI design&lt;/a&gt;,&lt;/p&gt;
+   <content type="html">&lt;p&gt;I thought this was a &lt;a href=&quot;http://uxmas.com/2012/ux-design-role-playing-and-micromoments&quot;&gt;pretty interesting approach to UI design&lt;/a&gt;, &lt;/p&gt;
 
-&lt;p&gt;The idea is to role play a &amp;#8216;conversation&amp;#8217; with the user-interface you&amp;#8217;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&amp;#8217;s definitely memorable — imagine role playing a conversation with a client&amp;#8217;s web site along with your client. You&amp;#8217;d make your point hit home, most likely.&lt;/p&gt;
+&lt;p&gt;The idea is to role play a &amp;#39;conversation&amp;#39; with the user-interface you&amp;#39;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&amp;#39;s definitely memorable — imagine role playing a conversation with a client&amp;#39;s web site along with your client. You&amp;#39;d make your point hit home, most likely. &lt;/p&gt;
 
-&lt;p&gt;Anyway, it got me thinking about a related exercise. Something less theatrical that could be used to encourage a client or a team to think about what is most important in a given interaction. I&amp;#8217;ll take you through what I did and why.&lt;/p&gt;
+&lt;p&gt;Anyway, it got me thinking about a related exercise. Something less theatrical that could be used to encourage a client or a team to think about what is most important in a given interaction. I&amp;#39;ll take you through what I did and why. &lt;/p&gt;
 
-&lt;p&gt;The clients were struggling to understand the relative importance of various elements of a public radio station&amp;#8217;s web site home page. We&amp;#8217;d agreed to work mobile first and were therefore in the (desirable) position of starting with only what was necessary and making every new piece of content or functionality justify itself. But that didn&amp;#8217;t mean there weren&amp;#8217;t people advocating for their own pet elements.&lt;/p&gt;
+&lt;p&gt;The clients were struggling to understand the relative importance of various elements of a public radio station&amp;#39;s web site home page. We&amp;#39;d agreed to work mobile first and were therefore in the (desirable) position of starting with only what was necessary and making every new piece of content or functionality justify itself. But that didn&amp;#39;t mean there weren&amp;#39;t people advocating for their own pet elements.&lt;/p&gt;
 
-&lt;p&gt;For example, there was pressure to add space and attention to a branded masthead (Make the logo bigger! Add a tagline!); we couldn&amp;#8217;t neglect the &amp;#8220;Donate Now&amp;#8221; button; we&amp;#8217;d obviously need underwriting (an ad); listen to the live stream had to be prominent; what if the station was having a pledge drive? We&amp;#8217;d need a big promotional unit. And what about regular old content — you know, news stories, interviews, first listens to new music… Yup, we&amp;#8217;d need that to be important, too.&lt;/p&gt;
+&lt;p&gt;For example, there was pressure to add space and attention to a branded masthead (Make the logo bigger! Add a tagline!); we couldn&amp;#39;t neglect the &amp;quot;Donate Now&amp;quot; button; we&amp;#39;d obviously need underwriting (an ad); listen to the live stream had to be prominent; what if the station was having a pledge drive? We&amp;#39;d need a big promotional unit. And what about regular old content — you know, news stories, interviews, first listens to new music… Yup, we&amp;#39;d need that to be important, too.&lt;/p&gt;
 
-&lt;p&gt;Since we&amp;#8217;re doing this mobile-first, let&amp;#8217;s start to think about how to handle all of those elements at a very small screen size.&lt;/p&gt;
+&lt;p&gt;Since we&amp;#39;re doing this mobile-first, let&amp;#39;s start to think about how to handle all of those elements at a very small screen size.  &lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='A basic wireframe' src='/assets/images/comic-ux/comic-wireframe-1.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-wireframe-1.jpg&quot; alt=&quot;A basic wireframe&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Lots of room for improvement, sure, but it&amp;#8217;s a start, a way to display the priorities that the clients were pushing for. I decided to create a cartoon conversation that would reveal a few key points about this arrangement. Read on&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Lots of room for improvement, sure, but it&amp;#39;s a start, a way to display the priorities that the clients were pushing for. I decided to create a cartoon conversation that would reveal a few key points about this arrangement. Read on...&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Illustration of a site-visitor' src='/assets/images/comic-ux/comic-1.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-1.png&quot; alt=&quot;Illustration of a site-visitor&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;He&amp;#8217;s perfect because he&amp;#8217;s totally generic. Thats&amp;#8217;s the point. The first time someone visits our site&amp;#8217;s home page, we really don&amp;#8217;t know very much about them or what they&amp;#8217;re after. We have to give them a default set of choices.&lt;/p&gt;
+&lt;p&gt;He&amp;#39;s perfect because he&amp;#39;s totally generic. Thats&amp;#39;s the point. The first time someone visits our site&amp;#39;s home page, we really don&amp;#39;t know very much about them or what they&amp;#39;re after. We have to give them a default set of choices. &lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Comic of a guy representing a computer screen' src='/assets/images/comic-ux/comic-2.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-2.png&quot; alt=&quot;Comic of a guy representing a computer screen&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;The bearded guy represents the website. He&amp;#8217;s got a bow tie, he&amp;#8217;s got a little personality. That&amp;#8217;s fine — the website will have some personality.&lt;/p&gt;
+&lt;p&gt;The bearded guy represents the website. He&amp;#39;s got a bow tie, he&amp;#39;s got a little personality. That&amp;#39;s fine — the website will have some personality. &lt;/p&gt;
 
-&lt;p&gt;However, it&amp;#8217;s still just a website. No artificial intelligence. No supernatural abilities to perceive what a particular site visitor wants. So no matter that the user &amp;#8216;says&amp;#8217; in response to this initial greeting, the site&amp;#8217;s response is going to be the same. If we display a branded masthead with big logo and tagline at the top, front and center, then we might agree that this is what the site says to our hypothetical user&amp;#8217;s first comment:&lt;/p&gt;
+&lt;p&gt;However, it&amp;#39;s still just a website. No artificial intelligence. No supernatural abilities to perceive what a particular site visitor wants. So no matter that the user &amp;#39;says&amp;#39; in response to this initial greeting, the site&amp;#39;s response is going to be the same. If we display a branded masthead with big logo and tagline at the top, front and center, then we might agree that this is what the site says to our hypothetical user&amp;#39;s first comment:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Comic of a person speaking to a computer screen' src='/assets/images/comic-ux/comic-3.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-3.png&quot; alt=&quot;Comic of a person speaking to a computer screen&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;The point is: we&amp;#8217;d better all agree that this first statement makes sense. And maybe it does. Or maybe it suggests to us that we want our welcome statement to be a little less one-track. It&amp;#8217;s an important thing to consider, and it becomes obvious to clients and the team when presented in this way.&lt;/p&gt;
+&lt;p&gt;The point is: we&amp;#39;d better all agree that this first statement makes sense. And maybe it does. Or maybe it suggests to us that we want our welcome statement to be a little less one-track. It&amp;#39;s an important thing to consider, and it becomes obvious to clients and the team when presented in this way. &lt;/p&gt;
 
-&lt;p&gt;Moving onto a more specific type of user… Let&amp;#8217;s see how the conversation goes with a user who&amp;#8217;s interested in reading local news, given that our prioritization puts the logo/brand first above listen; listen is above underwriting/pledge; news is last.&lt;/p&gt;
+&lt;p&gt;Moving onto a more specific type of user… Let&amp;#39;s see how the conversation goes with a user who&amp;#39;s interested in reading local news, given that our prioritization puts the logo/brand first above listen; listen is above underwriting/pledge; news is last.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Conversation between person and computer screen' src='/assets/images/comic-ux/comic-4.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-4.png&quot; alt=&quot;Conversation between person and computer screen&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Is that the right experience? It might be. Perhaps the point of this site isn&amp;#8217;t to serve readers of local news. But if that&amp;#8217;s true, let&amp;#8217;s make sure we all understand it and agree to the principle.&lt;/p&gt;
+&lt;p&gt;Is that the right experience? It might be. Perhaps the point of this site isn&amp;#39;t to serve readers of local news. But if that&amp;#39;s true, let&amp;#39;s make sure we all understand it and agree to the principle. &lt;/p&gt;
 
-&lt;p&gt;Let&amp;#8217;s say we talk about it, though, and agree to a different conversation, one that feels like the right one we should be having…&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s say we talk about it, though, and agree to a different conversation, one that feels like the right one we should be having…&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Conversation between person and computer screen' src='/assets/images/comic-ux/comic-5.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-5.png&quot; alt=&quot;Conversation between person and computer screen&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;It&amp;#8217;s not perfect for the reader, but it&amp;#8217;s reasonably smooth. If listening is the primary purpose for this site, then we can probably live with it. We&amp;#8217;ll need to adjust our set of priorities in our wireframe a bit, shift some content/functionality around, possibly adjust the visual weight of certain elements. We might come up with something like the following. The logo/brand gets damped town a little — we remove the tagline, say; the sequence of where we see the ad and the pledge announcement changes; news comes up.&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s not perfect for the reader, but it&amp;#39;s reasonably smooth. If listening is the primary purpose for this site, then we can probably live with it. We&amp;#39;ll need to adjust our set of priorities in our wireframe a bit, shift some content/functionality around, possibly adjust the visual weight of certain elements. We might come up with something like the following. The logo/brand gets damped town a little — we remove the tagline, say; the sequence of where we see the ad and the pledge announcement changes; news comes up. &lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='A basic wireframe' src='/assets/images/comic-ux/comic-wireframe-2.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-wireframe-2.jpg&quot; alt=&quot;A basic wireframe&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Again, a fairly loose wireframe, but a flow that&amp;#8217;s much improved over the first example — and one that our stakeholders have agreed to. It gives us a good starting point for refinement, prototyping, and testing with real users.&lt;/p&gt;
+&lt;p&gt;Again, a fairly loose wireframe, but a flow that&amp;#39;s much improved over the first example — and one that our stakeholders have agreed to. It gives us a good starting point for refinement, prototyping, and testing with real users.&lt;/p&gt;
 
-&lt;h3 id='results'&gt;Results&lt;/h3&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
 
-&lt;p&gt;So, could cartooning be an effective approach to guiding UX? Of course. In my case, we were struggling to get everyone on the same page. A few little examples like this helped reveal that we didn&amp;#8217;t agree about some fundamental things. They helped us articulate those differences and come up with some next steps for us to explore. I&amp;#8217;d say that made it a successful exploration. I probably wouldn&amp;#8217;t take it a lot farther than I did here, because it doesn&amp;#8217;t take much to make the key points. But — simply by surprising people with a hopefully funny way to tackle a problem — it can get folk&amp;#8217;s attention and possibly encourage them to think in a new way. It did that for us.&lt;/p&gt;
+&lt;p&gt;So, could cartooning be an effective approach to guiding UX? Of course. In my case, we were struggling to get everyone on the same page. A few little examples like this helped reveal that we didn&amp;#39;t agree about some fundamental things. They helped us articulate those differences and come up with some next steps for us to explore. I&amp;#39;d say that made it a successful exploration. I probably wouldn&amp;#39;t take it a lot farther than I did here, because it doesn&amp;#39;t take much to make the key points. But — simply by surprising people with a hopefully funny way to tackle a problem — it can get folk&amp;#39;s attention and possibly encourage them to think in a new way. It did that for us.&lt;/p&gt;
 
-&lt;p&gt;#&lt;/p&gt;</content>
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt;     &lt;span class=&quot;nx&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;// comment; This is a really long comment. Question is will it break or what will happen?&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt;     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;one&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;twp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;three&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;fourteen&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;hiehglish&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;sdljfsljf&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>NPR Stations on Facebook</title>
+   <link href="http://akiryk.github.io/portfolio/2013/02/09/facebook-project"/>
+   <updated>2013-02-09T00:00:00+01:00</updated>
+   <id>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</id>
+   <content type="html">&lt;p&gt;In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a &lt;a href=&quot;http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&amp;amp;hq_m=2040998&amp;amp;hq_l=1&amp;amp;hq_v=437cc910b2&quot;&gt;big success&lt;/a&gt;. For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). 
+–From the &lt;a href=&quot;http://digitalservices.npr.org/post/how-were-experimenting-member-station-content-nprs-facebook-page&quot;&gt;NPR DS blog&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To build on that success, we decided to assemble a small team including me (design and front-end developer), a backend developer, and an editor to build a tool that would make it easier for stations to pitch stories to NPR. Working over a few weeks, we build a tool that is focused and easy to use. You paste the url to a story you want to pitch, make any edits inline, and then engage in a community-wide vetting process to select the best posts.&lt;/p&gt;
+
+&lt;p&gt;The thirty or so stations that use it spend a lot of time looking at the different posts, responding to comments and trying to get their own stories accepted. We just enabled a notifications system (visible in the videos) because we learned that journalists were keeping the window open all day long and wanted an easier way to learn when others had commented on their posts.&lt;/p&gt;
+
+&lt;p&gt;The first video shows what NPR editors see — it’s mostly the same as station journalists, but they can choose whether to accept or reject a given pitch. The site is responsive since so many of the users are working off of tablets and phones. The second video shows what stations see.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/61651125&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; &gt; &lt;/iframe&gt;
+
+&lt;p&gt;Some content
+&lt;iframe src=&quot;//player.vimeo.com/video/61651127&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+More content
+&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/VlOxlSOr3_M&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+&lt;div&gt;&lt;b&gt;hello&lt;/b&gt;&lt;/div&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
