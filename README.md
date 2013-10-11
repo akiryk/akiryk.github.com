@@ -3,8 +3,14 @@ This is a jekyll blog website for Adam Kiryk
 ###The Theme
 I'm currently using a custom theme called none. It is literally an undesigned theme; totally spare. Find the pieces in themes/none. To update, I could change the theme, or more likely change to a different theme by changing the theme in _layouts files. 
 
+###Publishing Updates
+Do work in the source branch -- not the master branch. After you've made and committed changes and want to publish, go into command line, go to akiryk.github.com folder and 
+    rake publish
+This will generate the site and then copy and push the generated site into the master branch. The master branch is what github pages will serve up. 
+
 ###Plugins
-Note: plugins only work locally until I figure out how to push compiled site to github pages. It might not be that important for me to use plugins, so will postpone this task. Just FYI: Locally, I was having trouble getting plugins to work (I kept getting maruku errors), so I installed a couple of other markdown interpreters and discovered that this made a difference. To do this, install the right gem:
+Plugins won't work on github pages and I'd like to use github pages, at least for now. In order to get them to work, you need to put the generated site files in the top level directory (rather than having github run jekyll on the out-of-the-box directory structure). I followed a tutorial here: http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html. Basically, I made a directory called _rake and put a file in it called publish.rake. Then I copied the appropriate code from tutorial above into that file. This enables me to run rake publish from the command line.
+Note: I was having trouble getting plugins to work (I kept getting maruku errors), so I installed a couple of other markdown interpreters and discovered that this made a difference. To do this, install the right gem:
 
     gem install redcarpet
 

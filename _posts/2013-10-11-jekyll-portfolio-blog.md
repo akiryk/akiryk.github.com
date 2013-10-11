@@ -5,7 +5,7 @@ teaser: Are you a web designer/developer who's comfortable in the command line a
 category : blog
 tags : [development, jekyll, cms]
 ---
-{% vimeo 12345678 %}
+{% youtube B4g4zTF5lDo 480 360 %}
 The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:
 
 *Using jekyll bootstrap as a basis. Creating a new theme. 

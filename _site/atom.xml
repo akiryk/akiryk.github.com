@@ -4,7 +4,7 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2013-10-11T17:42:35+02:00</updated>
+ <updated>2013-10-11T18:01:41+02:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
@@ -59,7 +59,9 @@ etc.&lt;/p&gt;
    <link href="http://akiryk.github.io/blog/2013/10/11/jekyll-portfolio-blog"/>
    <updated>2013-10-11T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/blog/2013/10/11/jekyll-portfolio-blog</id>
-   <content type="html">&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/12345678 &quot; frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
+   <content type="html">&lt;style&gt;.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}&lt;/style&gt;
+
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/B4g4zTF5lDo?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;#39;ve discovered and should write about are:&lt;/p&gt;
 
