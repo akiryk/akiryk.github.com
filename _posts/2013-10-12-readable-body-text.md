@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Making a Blog/Portfolio Site with Jekyll
+title: Readable Body Text
 teaser: Are you a web designer/developer who's comfortable in the command line and wants to create a new site using Jekyll? Read on. 
 category : blog
 tags : [development, jekyll, cms]

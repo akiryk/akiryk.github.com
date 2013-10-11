@@ -5,13 +5,13 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-10-11T17:25:01+02:00</lastBuildDate>
-        <pubDate>2013-10-11T17:25:01+02:00</pubDate>
+        <lastBuildDate>2013-10-11T17:42:35+02:00</lastBuildDate>
+        <pubDate>2013-10-11T17:42:35+02:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Making a Blog/Portfolio Site with Jekyll</title>
+                <title>Readable Body Text</title>
                 <description>&lt;p&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;#39;ve discovered and should write about are:&lt;/p&gt;
 
 &lt;p&gt;*Using jekyll bootstrap as a basis. Creating a new theme. &lt;/p&gt;
@@ -54,7 +54,9 @@ etc.&lt;/p&gt;
 
         <item>
                 <title>Making a Blog/Portfolio Site with Jekyll</title>
-                <description>&lt;p&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;#39;ve discovered and should write about are:&lt;/p&gt;
+                <description>&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/12345678 &quot; frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;#39;ve discovered and should write about are:&lt;/p&gt;
 
 &lt;p&gt;*Using jekyll bootstrap as a basis. Creating a new theme. &lt;/p&gt;
 
