@@ -1,12 +1,18 @@
 <section>
   <header>
+    <div class="title-meta">
+      {% if page.author %}
+        {{ page.author }},
+      {% else %}
+        {{ site.author.name }},
+      {% endif %}
+      {{ page.date | date: "%B %d, %Y" }}
+    </div>
     <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
   </header>
 </section>
 
 <section>
-  {{ page.date | date_to_long_string }}
-
   {{ content }}
 
   {% unless page.categories == empty %}

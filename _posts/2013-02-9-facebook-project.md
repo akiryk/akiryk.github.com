@@ -8,7 +8,9 @@ category : portfolio
 tags : [ux, cms, npr, design]
 ---
 
-In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a [big success](http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&hq_m=2040998&hq_l=1&hq_v=437cc910b2). For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.
+<p class="intro">
+  In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a [big success](http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&hq_m=2040998&hq_l=1&hq_v=437cc910b2). For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.
+</p>
 
 >During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). 
 >–From the [NPR DS blog](http://digitalservices.npr.org/post/how-were-experimenting-member-station-content-nprs-facebook-page)

@@ -10,6 +10,9 @@ http://akiryk.github.io/rss.xml
 http://akiryk.github.io/sitemap.txt
 http://akiryk.github.io/tags.html
 
+http://akiryk.github.io/blog/2013/10/12/readable-body-text
+http://akiryk.github.io/blog/2013/10/12/personal-site-process
+http://akiryk.github.io/blog/2013/10/11/jekyll-portfolio-blog
 http://akiryk.github.io/blog/2013/10/07/book-browsing
 http://akiryk.github.io/blog/2013/09/21/comic-ux
 http://akiryk.github.io/portfolio/2013/02/09/facebook-project

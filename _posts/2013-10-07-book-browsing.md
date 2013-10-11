@@ -8,15 +8,13 @@ category : blog
 tags : [ux, design, making-stuff-better]
 ---
 
-
-###Synopsis:
-Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. 
+<p class="intro"><strong>Synopsis:</strong> Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. </p>
 
 ###To Begin:
 
 I'm not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I'm talking about the experience of looking for something you don't know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It's an experience that's been notably absent from the world of digital book-shopping. 
 
-Why? Well, I'm not sure, but I suppose it's because the big digital booksellers don't think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the 'buy' button. I think that's a mistake. 
+Why? Well, I'm not sure, but I suppose it's because the big digital booksellers don't think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the 'buy' button. I think that's a mistake.
 
 As more and more people purchase and read digital books, it's critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what's left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. 
 

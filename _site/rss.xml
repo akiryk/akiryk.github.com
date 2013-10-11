@@ -5,22 +5,87 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-10-10T09:32:04+02:00</lastBuildDate>
-        <pubDate>2013-10-10T09:32:04+02:00</pubDate>
+        <lastBuildDate>2013-10-11T12:38:35+02:00</lastBuildDate>
+        <pubDate>2013-10-11T12:38:35+02:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Better Book Browsing Online</title>
-                <description>&lt;h3&gt;Synopsis:&lt;/h3&gt;
+                <title>Making a Blog/Portfolio Site with Jekyll</title>
+                <description>&lt;p&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;#39;ve discovered and should write about are:&lt;/p&gt;
 
-&lt;p&gt;Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like. &lt;/p&gt;
+&lt;p&gt;*Using jekyll bootstrap as a basis. Creating a new theme. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Handling Navigation: making custom nav list&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Handling plugins&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here&amp;#39;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&amp;#39;s free, fast, and easy to use — plus, hosting is free if you use github pages.&lt;/p&gt;
+
+&lt;p&gt;Using jekyll bootstrap. Copy the themes and make your own.&lt;/p&gt;
+
+&lt;p&gt;Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&amp;#39;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &amp;quot;hightlight: true.&amp;quot; It displays only these items. Then I put the full bunch on a different page without pagination. &lt;/p&gt;
+
+&lt;p&gt;Handling plugins. &lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2013/10/12/readable-body-text</link>
+                <guid>http://akiryk.github.io/blog/2013/10/12/readable-body-text</guid>
+                <pubDate>2013-10-12T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>How I did it</title>
+                <description>&lt;p&gt;I grew frustrated with Wordpress because load times seemed too slow for my liking. I could live with it in the US but experienced it in Africa and parts of Europe. No good. So decdied to work with a static site generator tool, Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s the process I used. I started by creating loose mockups for my home page and post pages. I didn&amp;#39;t mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work. &lt;/p&gt;
+
+&lt;p&gt;This revealed some issues I had to figure out: handling post and portfolio categories separately. 
+Plugins not working on github pages. 
+etc.&lt;/p&gt;
+
+&lt;p&gt;Then I put in some content and n&lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2013/10/12/personal-site-process</link>
+                <guid>http://akiryk.github.io/blog/2013/10/12/personal-site-process</guid>
+                <pubDate>2013-10-12T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Making a Blog/Portfolio Site with Jekyll</title>
+                <description>&lt;p&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;#39;ve discovered and should write about are:&lt;/p&gt;
+
+&lt;p&gt;*Using jekyll bootstrap as a basis. Creating a new theme. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Handling Navigation: making custom nav list&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Handling plugins&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here&amp;#39;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&amp;#39;s free, fast, and easy to use — plus, hosting is free if you use github pages.&lt;/p&gt;
+
+&lt;p&gt;Using jekyll bootstrap. Copy the themes and make your own.&lt;/p&gt;
+
+&lt;p&gt;Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&amp;#39;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &amp;quot;hightlight: true.&amp;quot; It displays only these items. Then I put the full bunch on a different page without pagination. &lt;/p&gt;
+
+&lt;p&gt;Handling plugins. &lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2013/10/11/jekyll-portfolio-blog</link>
+                <guid>http://akiryk.github.io/blog/2013/10/11/jekyll-portfolio-blog</guid>
+                <pubDate>2013-10-11T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Better Book Browsing Online</title>
+                <description>&lt;p class=&quot;intro&quot;&gt;&lt;strong&gt;Synopsis:&lt;/strong&gt; Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. &lt;/p&gt;
 
 &lt;h3&gt;To Begin:&lt;/h3&gt;
 
 &lt;p&gt;I&amp;#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#39;m talking about the experience of looking for something you don&amp;#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#39;s an experience that&amp;#39;s been notably absent from the world of digital book-shopping. &lt;/p&gt;
 
-&lt;p&gt;Why? Well, I&amp;#39;m not sure, but I suppose it&amp;#39;s because the big digital booksellers don&amp;#39;t think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the &amp;#39;buy&amp;#39; button. I think that&amp;#39;s a mistake. &lt;/p&gt;
+&lt;p&gt;Why? Well, I&amp;#39;m not sure, but I suppose it&amp;#39;s because the big digital booksellers don&amp;#39;t think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the &amp;#39;buy&amp;#39; button. I think that&amp;#39;s a mistake.&lt;/p&gt;
 
 &lt;p&gt;As more and more people purchase and read digital books, it&amp;#39;s critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what&amp;#39;s left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. &lt;/p&gt;
 
@@ -138,7 +203,9 @@
 
         <item>
                 <title>NPR Stations on Facebook</title>
-                <description>&lt;p&gt;In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a &lt;a href=&quot;http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&amp;amp;hq_m=2040998&amp;amp;hq_l=1&amp;amp;hq_v=437cc910b2&quot;&gt;big success&lt;/a&gt;. For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.&lt;/p&gt;
+                <description>&lt;p class=&quot;intro&quot;&gt;
+  In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a [big success](http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&amp;hq_m=2040998&amp;hq_l=1&amp;hq_v=437cc910b2). For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.
+&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). 
