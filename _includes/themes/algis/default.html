@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>About</title>
-    
-    <meta name="author" content="Adam Kiryk">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="/assets/themes/algis/stylesheets/screen.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/stylesheets/screen.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -27,8 +26,8 @@
   -->
 
     <!-- atom & rss feed -->
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
     <style>
     pre { white-space: pre-wrap; }
@@ -98,86 +97,21 @@
   <body>
     <section>
       <header>
-        <a class="brand" href="/">Adam Kiryk</a>
-        <nav>
-
-
-  
-<ul>
-    <li>
-  
-      <a href="/index.html">Blog</a>
-    </li>
-
-    <li>
-  
-      <a href="/portfolio.html">Portfolio</a>
-    </li>
-
-    <li class="active">
-  
-      <a href="/about.html">About</a>
-    </li>
-
-</ul>
-
-
-</nav>
+        <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+        <nav>{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include JB/pages_list %}</nav>
       </header>
     </section>
 
     <section>
       <div class="content">
-        
-<section>
-  <header>
-    <h1>About </h1>
-  </header>
-</section>
-
-<p>This is some about information.</p>
-
-<blockquote>
-<p>This is a blockquote.</p>
-
-<p>This is the second paragraph in the blockquote.</p>
-
-<h2>This is an H2 in a blockquote</h2>
-</blockquote>
-
-<p>Some of these words <em>are emphasized</em>.</p>
-
-<p>Use two asterisks for <strong>strong emphasis</strong>.</p>
-
-<div class="figcaption">
-  <div style="float: right"><img src="/assets/images/book-browsing-hero.jpg" /></div>
-  <div class="caption">Caption text here</div>
-</div>
-
-<p><img src="/assets/images/comic-hero.png" alt="alt text" title="Title"></p>
-
-<ul>
-<li>  Candy.</li>
-<li>  Gum.</li>
-<li>  Booze.</li>
-</ul>
-
-<p>This is an <a href="http://example.com/">example link</a>.</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;script&gt;&lt;/script&gt;
-&lt;div class=&quot;whatever&quot;&gt;
-&lt;/div&gt;
-</code></pre></div>
-
-
-
+        {{ content }}
       </div>
     </section>
 
     <footer>
-        <p>&copy; 2013 Adam Kiryk</p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
     </footer>
 
-    
+    {% include JB/analytics %}
   </body>
 </html>
-
