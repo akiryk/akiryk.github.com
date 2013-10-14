@@ -5,8 +5,8 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-10-14T17:32:30+02:00</lastBuildDate>
-        <pubDate>2013-10-14T17:32:30+02:00</pubDate>
+        <lastBuildDate>2013-10-14T17:38:08+02:00</lastBuildDate>
+        <pubDate>2013-10-14T17:38:08+02:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -237,7 +237,8 @@ More content
 
         <item>
                 <title>Content Management for NPR Stations</title>
-                <description></description>
+                <description>&lt;p&gt;This is some new content.&lt;/p&gt;
+</description>
                 <link>http://akiryk.github.io/portfolio/2012/11/19/CMS-for-NPR</link>
                 <guid>http://akiryk.github.io/portfolio/2012/11/19/CMS-for-NPR</guid>
                 <pubDate>2012-11-19T00:00:00+01:00</pubDate>

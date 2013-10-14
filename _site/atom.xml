@@ -4,7 +4,7 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2013-10-14T17:32:30+02:00</updated>
+ <updated>2013-10-14T17:38:08+02:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
@@ -242,7 +242,8 @@ More content
    <link href="http://akiryk.github.io/portfolio/2012/11/19/CMS-for-NPR"/>
    <updated>2012-11-19T00:00:00+01:00</updated>
    <id>http://akiryk.github.io/portfolio/2012/11/19/CMS-for-NPR</id>
-   <content type="html"></content>
+   <content type="html">&lt;p&gt;This is some new content.&lt;/p&gt;
+</content>
  </entry>
  
  
