@@ -1,12 +1,18 @@
-// Set the global compass vars.
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
-$legacy-support-for-ie8: true;
-$legacy-support-for-mozilla: false;
-// Import the normalize plugin
-@import "normalize";
+/**
+ * Screen.scss
+ * Import all modules and files that will be turned into css.
+ *
+ * 
+ */
+
+@import "modules/normalize";
 @import "vars";
 
 @import "modules/mixins";
+@import "modules/headings";
+@import "modules/marginalia";
+@import "modules/code";
 @import "base";
 @import "layout";
+
+

@@ -1,0 +1,66 @@
+/**
+ * Marginalia.scss
+ * Enable notes in the margins
+ *
+ * In order to do this, you need to follow a particular bit of markup. 
+ 
+  <div class="marginator">
+    <p>
+      Your paragraph text goes here...
+    </p>
+    <div class="marginalia">
+      Your marginalia text goes here...
+    </div>
+  </div>
+ * 
+ */
+
+.marginalia {
+  color: #555;
+  font-style: italic;
+  &:before {
+    content: '(';
+  }
+  &:after {
+    content: ')';
+  }
+}
+
+@include media-query(desk) {
+  .marginator {
+
+    margin-top: -1em;
+    width: 44em;
+
+    // handle all p's inside this class
+    & > p {
+      float: left;
+      width: 32em;
+    }
+
+    // handle the p following this class
+    & + p {
+      clear: left;
+    }
+  }
+
+  .marginalia {
+    float: left;
+    margin: 24px 0 19px 3em;
+    font-size: 14px;
+    font-family: helvetica;
+    font-style: normal;
+    width: 12em;
+
+    .margin-heading {
+      color: red;
+      display: block;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+    }
+  }
+
+}

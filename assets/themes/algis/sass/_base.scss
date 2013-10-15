@@ -1,7 +1,16 @@
-body {
-  font-family: Georgia, Times, serif;
-  font-size: 1.1875em;
-  line-height: 1.5;
-  max-width: 32em;
-  margin: 2em auto;
+/**
+ * Base.scss
+ * Handle base html styles (body, p, a, etc). 
+ * Note that in many cases, there is a separate module to 
+ * handle a particular type of body element. For example,
+ * h1, h2, etc are handled in _headings.scss. 
+ *
+ * 
+ */
+
+ body {
+  color: #333;
+  font: 125%/1.6 Georgia,Palatino,Times,"Times New Roman",serif; 
+  text-rendering:optimizeLegibility; // helps with kerning and ligatures
 }
+
