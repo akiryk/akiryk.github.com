@@ -6,6 +6,18 @@
  */
 
 .content-wrapper {
-  max-width: 32em;
-  margin: 0 auto;
+  max-width: $desk-content-width;
+  margin: 0 2em;
+}
+
+@include media-query(lap-and-up){
+  .content-wrapper {
+    margin: 0 4em;
+  }
+}
+@include media-query(desk-wide) {
+  .content-wrapper {
+    max-width: $desk-content-width;
+    margin: 0 auto;
+  }
 }

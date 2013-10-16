@@ -426,6 +426,21 @@ table {
  *
  * 
  */
+/*
+Modular scale
+7.64    // 12.36 / 1.618
+12.36   // 20 / 1.618
+14.16  // 60 scale
+20      //  20 * 1
+22.92  // 60 scale
+32.36  //   20 * 1.618
+37.083  // 60 / 1.618
+52.36  // 32.36 * 1.618
+60    // 60 scale
+84.72  // 52.36 * 1.618
+97.08  // 60 scale
+137.07 // 84.72 * 1.618 
+*/
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
@@ -547,15 +562,96 @@ table {
  * 
  */
 /* line 9, ../sass/modules/_headings.scss */
-h1, .alpha {
-  font-size: 2em;
-  margin-bottom: 0.73684em;
+.wf-active h1, .wf-active .alpha, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
 }
 
-/* line 16, ../sass/modules/_headings.scss */
+/* line 13, ../sass/modules/_headings.scss */
+.wf-loading h1, .wf-loading .alpha {
+  color: #eee;
+  font-family: Georgia, Times, serif;
+}
+
+/* line 19, ../sass/modules/_headings.scss */
+.wf-loading h1, .wf-loading .alpha {
+  font-size: 2.85em;
+  line-height: 1.29825em;
+  margin-bottom: 0.49123em;
+  margin-top: 0.38596em;
+}
+
+/* line 30, ../sass/modules/_headings.scss */
+.wf-active h1, .wf-active .alpha {
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 0.53333em;
+  margin-top: 0.36667em;
+}
+
+/* line 43, ../sass/modules/_headings.scss */
 h3, .gamma {
-  font-size: 1.5em;
+  font-size: 1.146em;
   margin-bottom: 0.96552em;
+}
+
+/**
+ * Images.scss
+ * Handle image sizes
+ *
+ */
+/* line 7, ../sass/modules/_images.scss */
+.large-pic {
+  width: 100%;
+}
+
+/* line 11, ../sass/modules/_images.scss */
+body {
+  background-color: white;
+}
+
+@media only screen and (min-width: 50em) and (max-width: 64em) {
+  /* line 16, ../sass/modules/_images.scss */
+  body {
+    background-color: yellow;
+  }
+
+  /* line 19, ../sass/modules/_images.scss */
+  .large-pic {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  /* line 25, ../sass/modules/_images.scss */
+  body {
+    background-color: orange;
+  }
+
+  /* line 28, ../sass/modules/_images.scss */
+  .large-pic {
+    width: 47em;
+  }
+}
+@media only screen and (min-width: 78em) {
+  /* line 34, ../sass/modules/_images.scss */
+  .large-pic {
+    margin-left: -2em;
+  }
+
+  /* line 37, ../sass/modules/_images.scss */
+  body {
+    background-color: red;
+  }
+}
+/**
+ * metatext.scss
+ * Handle meta text such as author name, date, etc.
+ *
+ * 
+ */
+/* line 9, ../sass/modules/_metatext.scss */
+.title-meta {
+  color: #888;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /**
@@ -588,16 +684,16 @@ h3, .gamma {
   content: ')';
 }
 
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 64em) {
   /* line 30, ../sass/modules/_marginalia.scss */
   .marginator {
     margin-top: -1em;
-    width: 44em;
+    width: 45em;
   }
   /* line 36, ../sass/modules/_marginalia.scss */
   .marginator > p {
     float: left;
-    width: 32em;
+    width: 30em;
   }
   /* line 42, ../sass/modules/_marginalia.scss */
   .marginator + p {
@@ -607,18 +703,20 @@ h3, .gamma {
   /* line 47, ../sass/modules/_marginalia.scss */
   .marginalia {
     float: left;
-    margin: 24px 0 19px 3em;
-    font-size: 14px;
-    font-family: helvetica;
+    margin: 24px 0 19px 2.85714em;
+    font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.7em;
+    font-weight: 300;
     font-style: normal;
-    width: 12em;
+    width: 18.57143em;
   }
-  /* line 55, ../sass/modules/_marginalia.scss */
+  /* line 57, ../sass/modules/_marginalia.scss */
   .marginalia .margin-heading {
-    color: red;
+    color: #d52800;
     display: block;
+    font-weight: 700;
   }
-  /* line 61, ../sass/modules/_marginalia.scss */
+  /* line 64, ../sass/modules/_marginalia.scss */
   .marginalia:before, .marginalia:after {
     content: '';
   }
@@ -1023,6 +1121,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* line 17, ../sass/_base.scss */
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
 /**
  * Layout.scss
  * Handle the big picture layout. 
@@ -1031,6 +1135,20 @@ body {
  */
 /* line 8, ../sass/_layout.scss */
 .content-wrapper {
-  max-width: 32em;
-  margin: 0 auto;
+  max-width: 30em;
+  margin: 0 2em;
+}
+
+@media only screen and (min-width: 50em) {
+  /* line 14, ../sass/_layout.scss */
+  .content-wrapper {
+    margin: 0 4em;
+  }
+}
+@media only screen and (min-width: 78em) {
+  /* line 19, ../sass/_layout.scss */
+  .content-wrapper {
+    max-width: 30em;
+    margin: 0 auto;
+  }
 }

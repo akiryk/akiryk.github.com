@@ -26,6 +26,10 @@ As more and more people purchase and read digital books, it's critical to keep t
 
 Perhaps you disagree. Perhaps you think digital book-browsing is just fine as is. (An aside: let me try to think of a less awful and cumbersome term than 'digital book-browsing.' e-Book shopping? Browsing for books in the digital space? Ugh. Forget it. From now on, when I say 'browsing,' I mean browsing for books either online or in an app. If I want to talk about browsing in the real world, I'll be explicit about it). 
 
+<div class="large-pic">
+  <img src="{{ site.url }}/assets/images/random/flowers.jpg" title="Flowers Image">
+</div>
+
 Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and browse through listings like these (see example from the iBook store)? It isn't, I don't think. It's repetitive. Nothing stands out (except for the orange buy buttons). Everything is presented as equally important. You have to squint to see the artwork. It feels less like browsing and more like research, or worse, data-entry. 
 
 ###Imagine a Better Way

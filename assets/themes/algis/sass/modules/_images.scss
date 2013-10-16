@@ -1,0 +1,40 @@
+/**
+ * Images.scss
+ * Handle image sizes
+ *
+ */
+
+.large-pic {
+  width: 100%;
+}
+
+body {
+    background-color: white;
+  }
+
+@include media-query(lap) {
+  body {
+    background-color: yellow;
+  }
+  .large-pic {
+    width: 100%;
+  }
+}
+
+@include media-query(desk) {
+  body {
+    background-color: orange;
+  }
+  .large-pic {
+    width: 47em;
+  }
+}
+
+@include media-query(desk-wide) {
+  .large-pic {
+    margin-left: -2em;
+  }
+  body {
+    background-color: red;
+  }
+}

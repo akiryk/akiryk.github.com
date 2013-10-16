@@ -4,14 +4,38 @@
  * 
  */
 
- $base-line-height: 28px;
+$base-line-size: 20; // 20px
 
-$h1-size: 2em;
-$h2-size: 1.5em;
-$h3-size: 1.5em;
+$desk-content-width: 30em;
+
+$marginaliaSize: 14; // 14px
+
+$h1-size: 3em; // 60px
+$h2-size: 1.618em; // 32.36px;
+$h3-size: 1.146em; //22.92px;
 $h4-size: 1.5em;
 $h5-size: 1.5em;
 $h6-size: 1.5em;
 
-$lap-start: 40em;
-$desk-start: 80em;
+$lap-start: 50em;
+$desk-start: 64em;
+$desk-wide-start: 78em;
+
+// Colors
+$red: #d52800;
+
+/*
+Modular scale
+7.64    // 12.36 / 1.618
+12.36   // 20 / 1.618
+14.16  // 60 scale
+20      //  20 * 1
+22.92  // 60 scale
+32.36  //   20 * 1.618
+37.083  // 60 / 1.618
+52.36  // 32.36 * 1.618
+60    // 60 scale
+84.72  // 52.36 * 1.618
+97.08  // 60 scale
+137.07 // 84.72 * 1.618 
+*/

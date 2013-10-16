@@ -30,12 +30,12 @@
   .marginator {
 
     margin-top: -1em;
-    width: 44em;
+    width: 45em;
 
     // handle all p's inside this class
     & > p {
       float: left;
-      width: 32em;
+      width: $desk-content-width;
     }
 
     // handle the p following this class
@@ -46,15 +46,18 @@
 
   .marginalia {
     float: left;
-    margin: 24px 0 19px 3em;
-    font-size: 14px;
-    font-family: helvetica;
+    margin: 24px 0 19px (40/$marginaliaSize) + em;
+    // font-size: $marginaliaSizepx;
+    font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: ($marginaliaSize/20) + em;
+    font-weight: 300;
     font-style: normal;
-    width: 12em;
+    width: (260/$marginaliaSize) + em; // 260px
 
     .margin-heading {
-      color: red;
+      color: $red;
       display: block;
+      font-weight: 700;
     }
 
     &:before,

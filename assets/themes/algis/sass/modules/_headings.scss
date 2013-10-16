@@ -6,23 +6,54 @@
  * 
  */
 
-h1,.alpha{
-  font-size: $h1-size;
-  margin-bottom: (28/38) + em;
+%typekit {
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
 }
+
+%notypekit {
+  color: #eee;
+  font-family: Georgia, Times, serif;
+}
+
+.wf-loading { 
+  h1,.alpha{
+    @extend %notypekit;
+    $load-size: 57;
+    font-size: ($load-size/20) + em; // 56px
+    line-height: (74/$load-size) + em; // 72px
+    margin-bottom: (28/$load-size) + em; // should be equivalent to 32px
+    margin-top: (22/$load-size) + em;
+  }
+}
+
+.wf-active {
+  h1,.alpha{
+    @extend %typekit;
+    font-size: $h1-size; // 60px
+    line-height: 1.2; // 72px
+    margin-bottom: (32/60) + em; // should be equivalent to 32px
+    margin-top: (22/60) + em;
+  }
+}
+
 h2,.beta{
+  @extend %typekit;
   @include font-size($h2-size);
 }
 h3,.gamma{
+  @extend %typekit;
   font-size: $h3-size;
   margin-bottom: (28/29) + em;
 }
 h4,.delta{
+  @extend %typekit;
   @include font-size($h4-size);
 }
 h5,.epsilon{
+  @extend %typekit;
   @include font-size($h5-size);
 }
 h6,.zeta{
+  @extend %typekit;
   @include font-size($h6-size);
 }
