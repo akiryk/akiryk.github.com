@@ -7,24 +7,28 @@
  */
 
 %typekit {
+  color: #333;
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
 }
 
 %notypekit {
-  color: #eee;
-  font-family: Georgia, Times, serif;
+  color: #fff;
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
 }
 
-.wf-loading { 
   h1,.alpha{
     @extend %notypekit;
-    $load-size: 57;
+    $load-size: 60;
     font-size: ($load-size/20) + em; // 56px
-    line-height: (74/$load-size) + em; // 72px
-    margin-bottom: (28/$load-size) + em; // should be equivalent to 32px
+    line-height: (72/$load-size) + em; // 72px
+    margin-bottom: (32/$load-size) + em; // should be equivalent to 32px
     margin-top: (22/$load-size) + em;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
   }
-}
+
 
 .wf-active {
   h1,.alpha{

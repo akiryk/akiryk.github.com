@@ -9,12 +9,12 @@
 }
 
 body {
-    background-color: white;
+   
   }
 
 @include media-query(lap) {
   body {
-    background-color: yellow;
+   
   }
   .large-pic {
     width: 100%;
@@ -23,7 +23,7 @@ body {
 
 @include media-query(desk) {
   body {
-    background-color: orange;
+   
   }
   .large-pic {
     width: 47em;
@@ -35,6 +35,6 @@ body {
     margin-left: -2em;
   }
   body {
-    background-color: red;
+    
   }
 }

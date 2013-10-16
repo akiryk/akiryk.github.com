@@ -13,9 +13,10 @@
   </header>
 </section>
 
-<section>
+<article>
   {{ content }}
-
+</article>
+<section>
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       Categories
@@ -49,5 +50,4 @@
     </div>
     <hr>
     {% include JB/comments %}
-
 </section>

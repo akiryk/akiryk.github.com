@@ -6,18 +6,36 @@
  */
 
 .content-wrapper {
-  max-width: $desk-content-width;
-  margin: 0 1em;
+  margin: 2em auto;
+  width: 90%;
 }
 
-@include media-query(lap-and-up){
+@include media-query(lap) {
   .content-wrapper {
-    margin: 0 4em;
+    margin: 2em auto;
+    max-width: $desk-content-width;
+    width: 75%;
+  }
+}
+
+@include media-query(desk){
+  .content-wrapper {
+    margin: 2em auto auto 2em;
+    width: $desk-content-width;
   }
 }
 @include media-query(desk-wide) {
+
+  .masthead {
+    background-color: white;
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    width: (260/$base-line-size) + em;
+  }
+
   .content-wrapper {
-    max-width: $desk-content-width;
-    margin: 0 auto;
+    width: $desk-content-width;
+    margin-left: (340/$base-line-size) + em;
   }
 }

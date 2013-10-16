@@ -28,7 +28,6 @@
 
 @include media-query(desk) {
   .marginator {
-
     margin-top: -1em;
     width: 45em;
 
@@ -45,11 +44,12 @@
   }
 
   .marginalia {
+    background-color: white;
     float: left;
-    margin: 24px 0 19px (40/$marginaliaSize) + em;
+    margin: 24px 0 19px ( (2*$base-line-size) /$marginaliaSize) + em;
     // font-size: $marginaliaSizepx;
     font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: ($marginaliaSize/20) + em;
+    font-size: ($marginaliaSize/$base-line-size) + em;
     font-weight: 300;
     font-style: normal;
     width: (260/$marginaliaSize) + em; // 260px
@@ -57,7 +57,6 @@
     .margin-heading {
       color: $red;
       display: block;
-      font-weight: 700;
     }
 
     &:before,
