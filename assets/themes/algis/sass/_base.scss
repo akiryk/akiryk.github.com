@@ -8,9 +8,11 @@
  * 
  */
 
- body {
+body {
   color: #333;
-  font: 125%/1.6 Georgia,Palatino,Times,"Times New Roman",serif; 
+  font-family: Georgia,Palatino,Times,"Times New Roman",serif; 
+  font-size: 125%;
+  line-height: 1.25;
   text-rendering:optimizeLegibility; // helps with kerning and ligatures
 }
 
@@ -18,3 +20,10 @@ img {
   width: 100%;
   max-width: 100%;
 }
+
+@include media-query(lap-and-up){
+  body {
+    line-height: 1.6; 
+  }
+}
+

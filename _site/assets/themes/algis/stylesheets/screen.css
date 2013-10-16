@@ -1117,16 +1117,24 @@ img {
 /* line 11, ../sass/_base.scss */
 body {
   color: #333;
-  font: 125%/1.6 Georgia, Palatino, Times, "Times New Roman", serif;
+  font-family: Georgia,Palatino,Times,"Times New Roman",serif;
+  font-size: 125%;
+  line-height: 1.25;
   text-rendering: optimizeLegibility;
 }
 
-/* line 17, ../sass/_base.scss */
+/* line 19, ../sass/_base.scss */
 img {
   width: 100%;
   max-width: 100%;
 }
 
+@media only screen and (min-width: 50em) {
+  /* line 25, ../sass/_base.scss */
+  body {
+    line-height: 1.6;
+  }
+}
 /**
  * Layout.scss
  * Handle the big picture layout. 
@@ -1136,7 +1144,7 @@ img {
 /* line 8, ../sass/_layout.scss */
 .content-wrapper {
   max-width: 30em;
-  margin: 0 0.75em;
+  margin: 0 1em;
 }
 
 @media only screen and (min-width: 50em) {
