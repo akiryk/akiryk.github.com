@@ -7,7 +7,7 @@
 
 .content-wrapper {
   max-width: $desk-content-width;
-  margin: 0 2em;
+  margin: 0 0.75em;
 }
 
 @include media-query(lap-and-up){
