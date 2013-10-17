@@ -1,0 +1,19 @@
+/**
+ * Lists
+ *
+ * Ordered and unordered lists
+ * 
+ */
+
+.main-content {
+  ul,
+  ol {
+    font-size: 1em;
+    padding-left: 2em;
+  }
+}
+
+ul.posts {
+  list-style-type: none;
+  padding: 0;
+}

@@ -8,33 +8,26 @@
   width: 100%;
 }
 
-body {
-   
-  }
+.no-resize {
+  width: auto;
+}
 
 @include media-query(lap) {
-  body {
-   
-  }
   .large-pic {
     width: 100%;
   }
 }
 
 @include media-query(desk) {
-  body {
-   
-  }
   .large-pic {
-    width: 47em;
+    width: $content-width + $column-width;
   }
 }
 
 @include media-query(desk-wide) {
   .large-pic {
-    margin-left: -2em;
+    margin-left: -$gutter;
+    width: $content-width + $column-width + $gutter;
   }
-  body {
-    
-  }
+
 }

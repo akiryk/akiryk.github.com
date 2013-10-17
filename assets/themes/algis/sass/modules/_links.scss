@@ -1,0 +1,27 @@
+/**
+ * Links
+ *
+ * 
+ */
+
+a {
+  color: $blue;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    color: $normal-color;
+  }
+}
+
+.plain {
+  text-decoration: none;
+  color: $normal-color;
+
+  &:hover {
+    color: $blue;
+  }
+}

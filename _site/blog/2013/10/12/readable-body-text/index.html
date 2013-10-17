@@ -32,7 +32,7 @@
 
   <!-- typekit fonts -->
   <script type="text/javascript">
-  (function() {
+    (function() {
     var config = {
       kitId: 'sfd3xhj',
       scriptTimeout: 3000
@@ -41,16 +41,22 @@
     })();
   </script>
 
+
   </head>
   <body>
-    <section>
-      <header class="masthead">
-        <a class="brand" href="/">Adam Kiryk</a>
-        <nav>
+    <header class="masthead cf">
+  <div class="logo-wrapper">
+    <a class="logo" href="/" title="Ready Lab Home">
+      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+    </a>
+    <a href="#main" class="screenreaders">Skip navigation</a>
+    <div id="toggle">Toggle</div>
+  </div><!-- .logo-wrapper -->
+  <nav id="menu" class="">
 
 
   
-<ul>
+<ul class="primary-nav">
     <li>
   
       <a href="/index.html">Blog</a>
@@ -70,10 +76,9 @@
 
 
 </nav>
-      </header>
-    </section>
+</header>
 
-    <section class="content-wrapper">
+    <section id="main" class="content-wrapper">
         
 <section>
   <header>
@@ -88,16 +93,10 @@
   </header>
 </section>
 
-<article>
-  <p>The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&#39;ve discovered and should write about are:</p>
+<article class="main-content">
+  <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
 
-<p>*Using jekyll bootstrap as a basis. Creating a new theme. </p>
-
-<ul>
-<li><p>Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. </p></li>
-<li><p>Handling Navigation: making custom nav list</p></li>
-<li><p>Handling plugins</p></li>
-</ul>
+<p>Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins</p>
 
 <p>Here&#39;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&#39;s free, fast, and easy to use — plus, hosting is free if you use github pages.</p>
 
@@ -201,6 +200,33 @@
     <footer>
         <p>&copy; 2013 Adam Kiryk</p>
     </footer>
+
+   
+    <script src="/assets/themes/algis/js/jquery.min.js"></script>
+    <script>
+      // $(function(){
+        // $('#toggle').click(function(){
+        //   $('#menu').toggleClass("expanded");
+        // });
+     // });
+    </script>
+
+    <script>
+      (function(){
+        var toggle = document.getElementById("toggle");
+        var menu = document.getElementById("menu");
+        var expanded = false;
+        toggle.onclick = function(){ 
+          if (expanded) {
+            expanded = false;
+            menu.className="closed";
+          } else {
+            expanded = true;
+            menu.className="expanded";
+          }
+        }
+      })();
+    </script>
 
     
   </body>

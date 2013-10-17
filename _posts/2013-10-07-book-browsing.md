@@ -8,7 +8,12 @@ category : blog
 tags : [ux, design, making-stuff-better]
 ---
 
-<p class="intro"><strong>Synopsis:</strong> Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. </p>
+<div class="marginator">
+  <p class="intro"><strong>Synopsis:</strong> Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. </p>
+  <div class="marginalia">
+    <p><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
+    </p></div>
+</div>
 
 ###To Begin:
 
@@ -18,7 +23,9 @@ I'm not talking about the process of finding and buying a book online. Simply fi
   <p>
     Why? Well, I'm not sure, but I suppose it's because the big digital booksellers don't think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the 'buy' button. I think that's a mistake.
   </p>
-  <div class="marginalia"><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...</div>
+  <div class="marginalia">
+    <p><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
+    </p></div>
 </div>
 
 

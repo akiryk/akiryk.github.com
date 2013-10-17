@@ -6,15 +6,9 @@ category : blog
 tags : [development, jekyll, cms]
 ---
 
-The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:
+<p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
 
-*Using jekyll bootstrap as a basis. Creating a new theme. 
-
-* Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. 
-
-* Handling Navigation: making custom nav list
-
-* Handling plugins
+Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins
 
 Here's a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It's free, fast, and easy to use — plus, hosting is free if you use github pages.
 

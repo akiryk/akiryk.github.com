@@ -1,0 +1,162 @@
+/**
+ * Masthead
+ *
+ * 
+ */
+
+.masthead {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.logo-wrapper {
+  border-bottom: 1px solid #ccc;
+  margin-top: 1em;
+  padding-bottom: .5em;
+}
+
+.logo {
+  float: left;
+  margin-right: 1em;
+}
+
+#menu {
+  display: none;
+
+  &.expanded {
+    display: block;
+  }
+}
+
+#toggle {
+  background: transparent url(../images/toggle.gif) no-repeat center center;
+  float: right;
+  height: 41px;
+  width: 31px;
+  text-indent: -999em;
+}
+
+.primary-nav{
+    list-style:none;
+    padding-left:0;
+    @extend .cf;
+
+    a {
+      font-size: 0.8em;
+    }
+
+    > li{
+
+        &,
+        > a{
+            color: #666;
+            color: rgba(0,0,0,0.4);
+            display:inline-block;
+           *display:inline;
+            text-decoration: none;
+            text-transform: uppercase;
+            zoom:1;
+        }
+    }
+}
+
+
+@include media-query(palm) {
+
+  .logo-wrapper {
+    margin-top: .5em;
+    padding-bottom: .25em;
+  }
+
+  .primary-nav{
+    margin: 0;
+
+    // Stack the nav items
+    > li{
+        border-bottom: 1px solid white;
+        display:list-item;
+        > a{
+            line-height: 3em;
+            background-color: #eee;
+            color: #333;
+            display:block;
+            padding-left: 1em;
+
+            &:active {
+              background-color: #ccc;
+            }
+        }
+    }
+
+    li.active a {
+      background-color: #999;
+      color: white;
+    }
+  }
+
+}
+
+@include media-query(lap-and-up) {
+  #toggle {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .primary-nav {
+    margin: .25em 0 0 0;
+    > li {
+      margin-right: 2em;
+    }
+  }
+
+  .masthead {
+    margin: 0 2em;
+    max-width: $content-width + $column-width;
+    position: relative;
+    width: auto;
+  }
+}
+
+
+@include media-query(desk-wide) {
+  #menu {
+    position: static;
+  }
+
+  .masthead {
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    top: 5em;
+    left: $gutter;
+    width: $column-width - $gutter;
+  }
+
+  .logo {
+    display: block;
+    float: none;
+    
+  } 
+
+  .primary-nav{
+    list-style:none;
+    margin-left:0;
+    margin-top: 1em;
+
+    > li{
+        display:list-item;
+        padding-bottom: 1em;
+        > a{
+            display:block;
+        }
+    }
+  }
+
+}
+

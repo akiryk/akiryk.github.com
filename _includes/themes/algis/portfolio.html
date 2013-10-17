@@ -3,9 +3,8 @@
     <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
   </header>
 </section>
-<h2>This is a Portfolio Item</h2>
 
-<section>
+<article class="main-content">
   {{ page.date | date_to_long_string }}
 
   {{ content }}

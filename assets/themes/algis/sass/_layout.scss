@@ -13,29 +13,21 @@
 @include media-query(lap) {
   .content-wrapper {
     margin: 2em auto;
-    max-width: $desk-content-width;
+    max-width: $content-width;
     width: 75%;
   }
 }
 
 @include media-query(desk){
   .content-wrapper {
-    margin: 2em auto auto 2em;
-    width: $desk-content-width;
+    margin: 2em auto auto $gutter;
+    width: $content-width;
   }
 }
 @include media-query(desk-wide) {
 
-  .masthead {
-    background-color: white;
-    position: fixed;
-    top: 2em;
-    left: 2em;
-    width: (260/$base-line-size) + em;
-  }
-
   .content-wrapper {
-    width: $desk-content-width;
-    margin-left: (340/$base-line-size) + em;
+    width: $content-width;
+    margin-left: $column-width + $gutter;
   }
 }

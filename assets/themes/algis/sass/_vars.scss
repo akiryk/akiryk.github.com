@@ -6,7 +6,10 @@
 
 $base-line-size: 20; // 20px
 
-$desk-content-width: 30em;
+$overall-width: 64em;
+$content-width: 32em;
+$column-width: 15em;
+$gutter: 2em;
 
 $marginaliaSize: 14; // 14px
 
@@ -23,6 +26,8 @@ $desk-wide-start: 80em;
 
 // Colors
 $red: #d52800;
+$normal-color: #333;
+$blue: #1b60a7;
 
 /*
 Modular scale

@@ -32,7 +32,7 @@
 
   <!-- typekit fonts -->
   <script type="text/javascript">
-  (function() {
+    (function() {
     var config = {
       kitId: 'sfd3xhj',
       scriptTimeout: 3000
@@ -41,16 +41,22 @@
     })();
   </script>
 
+
   </head>
   <body>
-    <section>
-      <header class="masthead">
-        <a class="brand" href="/">Adam Kiryk</a>
-        <nav>
+    <header class="masthead cf">
+  <div class="logo-wrapper">
+    <a class="logo" href="/" title="Ready Lab Home">
+      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+    </a>
+    <a href="#main" class="screenreaders">Skip navigation</a>
+    <div id="toggle">Toggle</div>
+  </div><!-- .logo-wrapper -->
+  <nav id="menu" class="">
 
 
   
-<ul>
+<ul class="primary-nav">
     <li>
   
       <a href="/index.html">Blog</a>
@@ -70,10 +76,9 @@
 
 
 </nav>
-      </header>
-    </section>
+</header>
 
-    <section class="content-wrapper">
+    <section id="main" class="content-wrapper">
         
 <section>
   <header>
@@ -88,10 +93,10 @@
   </header>
 </section>
 
-<article>
-  <p>I thought this was a <a href="http://uxmas.com/2012/ux-design-role-playing-and-micromoments">pretty interesting approach to researching UI design</a>, </p>
-
-<p>The idea is to role play a &#39;conversation&#39; with the user-interface you&#39;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&#39;s definitely memorable — imagine role playing a conversation with a client&#39;s web site along with your client. You&#39;d make your point hit home, most likely. </p>
+<article class="main-content">
+  <p>I thought this was a <a href="http://uxmas.com/2012/ux-design-role-playing-and-micromoments">pretty interesting approach to researching UI design</a>, 
+&lt;!--more Read on!--&gt;
+The idea is to role play a &#39;conversation&#39; with the user-interface you&#39;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&#39;s definitely memorable — imagine role playing a conversation with a client&#39;s web site along with your client. You&#39;d make your point hit home, most likely. </p>
 
 <p>Anyway, it got me thinking about a related exercise. Something less theatrical that could be used to encourage a client or a team to think about what is most important in a given interaction. I&#39;ll take you through what I did and why. </p>
 
@@ -245,6 +250,33 @@
     <footer>
         <p>&copy; 2013 Adam Kiryk</p>
     </footer>
+
+   
+    <script src="/assets/themes/algis/js/jquery.min.js"></script>
+    <script>
+      // $(function(){
+        // $('#toggle').click(function(){
+        //   $('#menu').toggleClass("expanded");
+        // });
+     // });
+    </script>
+
+    <script>
+      (function(){
+        var toggle = document.getElementById("toggle");
+        var menu = document.getElementById("menu");
+        var expanded = false;
+        toggle.onclick = function(){ 
+          if (expanded) {
+            expanded = false;
+            menu.className="closed";
+          } else {
+            expanded = true;
+            menu.className="expanded";
+          }
+        }
+      })();
+    </script>
 
     
   </body>

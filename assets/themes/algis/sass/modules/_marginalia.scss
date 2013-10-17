@@ -29,12 +29,12 @@
 @include media-query(desk) {
   .marginator {
     margin-top: -1em;
-    width: 45em;
+    width: $content-width + $column-width;
 
     // handle all p's inside this class
     & > p {
       float: left;
-      width: $desk-content-width;
+      width: $content-width;
     }
 
     // handle the p following this class
@@ -46,13 +46,14 @@
   .marginalia {
     background-color: white;
     float: left;
-    margin: 24px 0 19px ( (2*$base-line-size) /$marginaliaSize) + em;
-    // font-size: $marginaliaSizepx;
-    font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: ($marginaliaSize/$base-line-size) + em;
-    font-weight: 300;
-    font-style: normal;
-    width: (260/$marginaliaSize) + em; // 260px
+    margin: 24px 0 19px $gutter;
+    width: $column-width - $gutter; // 260px
+    p {
+      font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      font-size: ($marginaliaSize/$base-line-size) + em;
+      font-weight: 300;
+      font-style: normal;
+    }
 
     .margin-heading {
       color: $red;

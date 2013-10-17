@@ -32,7 +32,7 @@
 
   <!-- typekit fonts -->
   <script type="text/javascript">
-  (function() {
+    (function() {
     var config = {
       kitId: 'sfd3xhj',
       scriptTimeout: 3000
@@ -41,16 +41,22 @@
     })();
   </script>
 
+
   </head>
   <body>
-    <section>
-      <header class="masthead">
-        <a class="brand" href="/">Adam Kiryk</a>
-        <nav>
+    <header class="masthead cf">
+  <div class="logo-wrapper">
+    <a class="logo" href="/" title="Ready Lab Home">
+      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+    </a>
+    <a href="#main" class="screenreaders">Skip navigation</a>
+    <div id="toggle">Toggle</div>
+  </div><!-- .logo-wrapper -->
+  <nav id="menu" class="">
 
 
   
-<ul>
+<ul class="primary-nav">
     <li>
   
       <a href="/index.html">Blog</a>
@@ -70,10 +76,9 @@
 
 
 </nav>
-      </header>
-    </section>
+</header>
 
-    <section class="content-wrapper">
+    <section id="main" class="content-wrapper">
         
 <section>
   <header>
@@ -116,11 +121,39 @@
 
 
 
+
     </section>
 
     <footer>
         <p>&copy; 2013 Adam Kiryk</p>
     </footer>
+
+   
+    <script src="/assets/themes/algis/js/jquery.min.js"></script>
+    <script>
+      // $(function(){
+        // $('#toggle').click(function(){
+        //   $('#menu').toggleClass("expanded");
+        // });
+     // });
+    </script>
+
+    <script>
+      (function(){
+        var toggle = document.getElementById("toggle");
+        var menu = document.getElementById("menu");
+        var expanded = false;
+        toggle.onclick = function(){ 
+          if (expanded) {
+            expanded = false;
+            menu.className="closed";
+          } else {
+            expanded = true;
+            menu.className="expanded";
+          }
+        }
+      })();
+    </script>
 
     
   </body>

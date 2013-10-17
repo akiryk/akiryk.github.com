@@ -16,18 +16,17 @@
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
 }
 
-  h1,.alpha{
-    @extend %notypekit;
-    $load-size: 60;
-    font-size: ($load-size/20) + em; // 56px
-    line-height: (72/$load-size) + em; // 72px
-    margin-bottom: (32/$load-size) + em; // should be equivalent to 32px
-    margin-top: (22/$load-size) + em;
-    -moz-transition:all 1s;
-    -webkit-transition:all 1s;
-    -o-transition:all 1s;
-    transition:all 1s;
-  }
+h1,.alpha{
+  @extend %notypekit;
+  font-size: $h1-size; // 60px
+  line-height: 1.2; // 72px
+  margin-bottom: (32/60) + em; // should be equivalent to 32px
+  margin-top: (22/60) + em;
+  -moz-transition:all 1s;
+  -webkit-transition:all 1s;
+  -o-transition:all 1s;
+  transition:all 1s;
+}
 
 
 .wf-active {
@@ -40,9 +39,14 @@
   }
 }
 
+.wf-inactive {
+  h1,.alpha{
+    color: #333;
+  }
+}
+
 h2,.beta{
   @extend %typekit;
-  @include font-size($h2-size);
 }
 h3,.gamma{
   @extend %typekit;
@@ -51,13 +55,39 @@ h3,.gamma{
 }
 h4,.delta{
   @extend %typekit;
-  @include font-size($h4-size);
 }
 h5,.epsilon{
   @extend %typekit;
-  @include font-size($h5-size);
 }
 h6,.zeta{
   @extend %typekit;
-  @include font-size($h6-size);
+}
+
+@include media-query(palm){
+  .wf-active {
+    h1,.alpha{
+      color: #333;
+      font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+      font-size: 1.5em;
+      line-height: 1.2; // 72px
+      margin-bottom: (32/60) + em; // should be equivalent to 32px
+      margin-top: (22/60) + em;
+    }
+  }
+}
+
+#homepage h1 {
+  font-size: 2.1em;
+  line-height: 1.35;
+}
+
+.slug {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: -2em;
+  line-height: 1.25;
+}
+
+.introduction {
+  margin-bottom: 3em;
 }

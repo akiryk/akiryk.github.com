@@ -4,7 +4,7 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2013-10-16T21:17:29+02:00</updated>
+ <updated>2013-10-17T20:56:15+02:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
@@ -17,15 +17,9 @@
    <link href="http://akiryk.github.io/blog/2013/10/12/readable-body-text"/>
    <updated>2013-10-12T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/blog/2013/10/12/readable-body-text</id>
-   <content type="html">&lt;p&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;#39;ve discovered and should write about are:&lt;/p&gt;
+   <content type="html">&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:&lt;/p&gt;
 
-&lt;p&gt;*Using jekyll bootstrap as a basis. Creating a new theme. &lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. &lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Handling Navigation: making custom nav list&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Handling plugins&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins&lt;/p&gt;
 
 &lt;p&gt;Here&amp;#39;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&amp;#39;s free, fast, and easy to use — plus, hosting is free if you use github pages.&lt;/p&gt;
 
@@ -88,7 +82,12 @@ etc.&lt;/p&gt;
    <link href="http://akiryk.github.io/blog/2013/10/07/book-browsing"/>
    <updated>2013-10-07T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/blog/2013/10/07/book-browsing</id>
-   <content type="html">&lt;p class=&quot;intro&quot;&gt;&lt;strong&gt;Synopsis:&lt;/strong&gt; Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. &lt;/p&gt;
+   <content type="html">&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p class=&quot;intro&quot;&gt;&lt;strong&gt;Synopsis:&lt;/strong&gt; Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;An Aside&lt;/span&gt; This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3&gt;To Begin:&lt;/h3&gt;
 
@@ -98,7 +97,9 @@ etc.&lt;/p&gt;
   &lt;p&gt;
     Why? Well, I'm not sure, but I suppose it's because the big digital booksellers don't think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the 'buy' button. I think that's a mistake.
   &lt;/p&gt;
-  &lt;div class=&quot;marginalia&quot;&gt;&lt;span class=&quot;margin-heading&quot;&gt;An Aside&lt;/span&gt; This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...&lt;/div&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;An Aside&lt;/span&gt; This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
+    &lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;As more and more people purchase and read digital books, it&amp;#39;s critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what&amp;#39;s left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. &lt;/p&gt;
@@ -150,9 +151,9 @@ etc.&lt;/p&gt;
    <link href="http://akiryk.github.io/blog/2013/09/21/comic-ux"/>
    <updated>2013-09-21T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/blog/2013/09/21/comic-ux</id>
-   <content type="html">&lt;p&gt;I thought this was a &lt;a href=&quot;http://uxmas.com/2012/ux-design-role-playing-and-micromoments&quot;&gt;pretty interesting approach to researching UI design&lt;/a&gt;, &lt;/p&gt;
-
-&lt;p&gt;The idea is to role play a &amp;#39;conversation&amp;#39; with the user-interface you&amp;#39;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&amp;#39;s definitely memorable — imagine role playing a conversation with a client&amp;#39;s web site along with your client. You&amp;#39;d make your point hit home, most likely. &lt;/p&gt;
+   <content type="html">&lt;p&gt;I thought this was a &lt;a href=&quot;http://uxmas.com/2012/ux-design-role-playing-and-micromoments&quot;&gt;pretty interesting approach to researching UI design&lt;/a&gt;, 
+&amp;lt;!--more Read on!--&amp;gt;
+The idea is to role play a &amp;#39;conversation&amp;#39; with the user-interface you&amp;#39;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&amp;#39;s definitely memorable — imagine role playing a conversation with a client&amp;#39;s web site along with your client. You&amp;#39;d make your point hit home, most likely. &lt;/p&gt;
 
 &lt;p&gt;Anyway, it got me thinking about a related exercise. Something less theatrical that could be used to encourage a client or a team to think about what is most important in a given interaction. I&amp;#39;ll take you through what I did and why. &lt;/p&gt;
 
@@ -222,13 +223,14 @@ etc.&lt;/p&gt;
    <updated>2013-02-09T00:00:00+01:00</updated>
    <id>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</id>
    <content type="html">&lt;p class=&quot;intro&quot;&gt;
-  In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a [big success](http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&amp;hq_m=2040998&amp;hq_l=1&amp;hq_v=437cc910b2). For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.
+  In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a &lt;a href=&quot;http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&amp;hq_m=2040998&amp;hq_l=1&amp;hq_v=437cc910b2&quot;&gt;big success&lt;/a&gt; For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.
 &lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). 
-–From the &lt;a href=&quot;http://digitalservices.npr.org/post/how-were-experimenting-member-station-content-nprs-facebook-page&quot;&gt;NPR DS blog&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;callout&quot;&gt;
+  Here's something important I'd like to say. Really like to say, really.
+&lt;/p&gt;
+
+&lt;p&gt;During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). From the &lt;a href=&quot;http://digitalservices.npr.org/post/how-were-experimenting-member-station-content-nprs-facebook-page&quot;&gt;NPR DS blog&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;To build on that success, we decided to assemble a small team including me (design and front-end developer), a backend developer, and an editor to build a tool that would make it easier for stations to pitch stories to NPR. Working over a few weeks, we build a tool that is focused and easy to use. You paste the url to a story you want to pitch, make any edits inline, and then engage in a community-wide vetting process to select the best posts.&lt;/p&gt;
 

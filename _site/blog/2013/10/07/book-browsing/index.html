@@ -32,7 +32,7 @@
 
   <!-- typekit fonts -->
   <script type="text/javascript">
-  (function() {
+    (function() {
     var config = {
       kitId: 'sfd3xhj',
       scriptTimeout: 3000
@@ -41,16 +41,22 @@
     })();
   </script>
 
+
   </head>
   <body>
-    <section>
-      <header class="masthead">
-        <a class="brand" href="/">Adam Kiryk</a>
-        <nav>
+    <header class="masthead cf">
+  <div class="logo-wrapper">
+    <a class="logo" href="/" title="Ready Lab Home">
+      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+    </a>
+    <a href="#main" class="screenreaders">Skip navigation</a>
+    <div id="toggle">Toggle</div>
+  </div><!-- .logo-wrapper -->
+  <nav id="menu" class="">
 
 
   
-<ul>
+<ul class="primary-nav">
     <li>
   
       <a href="/index.html">Blog</a>
@@ -70,10 +76,9 @@
 
 
 </nav>
-      </header>
-    </section>
+</header>
 
-    <section class="content-wrapper">
+    <section id="main" class="content-wrapper">
         
 <section>
   <header>
@@ -88,8 +93,13 @@
   </header>
 </section>
 
-<article>
+<article class="main-content">
+  <div class="marginator">
   <p class="intro"><strong>Synopsis:</strong> Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. </p>
+  <div class="marginalia">
+    <p><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
+    </p></div>
+</div>
 
 <h3>To Begin:</h3>
 
@@ -99,7 +109,9 @@
   <p>
     Why? Well, I'm not sure, but I suppose it's because the big digital booksellers don't think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the 'buy' button. I think that's a mistake.
   </p>
-  <div class="marginalia"><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...</div>
+  <div class="marginalia">
+    <p><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
+    </p></div>
 </div>
 
 <p>As more and more people purchase and read digital books, it&#39;s critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what&#39;s left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. </p>
@@ -238,6 +250,33 @@
     <footer>
         <p>&copy; 2013 Adam Kiryk</p>
     </footer>
+
+   
+    <script src="/assets/themes/algis/js/jquery.min.js"></script>
+    <script>
+      // $(function(){
+        // $('#toggle').click(function(){
+        //   $('#menu').toggleClass("expanded");
+        // });
+     // });
+    </script>
+
+    <script>
+      (function(){
+        var toggle = document.getElementById("toggle");
+        var menu = document.getElementById("menu");
+        var expanded = false;
+        toggle.onclick = function(){ 
+          if (expanded) {
+            expanded = false;
+            menu.className="closed";
+          } else {
+            expanded = true;
+            menu.className="expanded";
+          }
+        }
+      })();
+    </script>
 
     
   </body>

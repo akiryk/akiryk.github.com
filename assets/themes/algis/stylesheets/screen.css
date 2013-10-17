@@ -441,17 +441,45 @@ Modular scale
 97.08  // 60 scale
 137.07 // 84.72 * 1.618 
 */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 9, ../sass/modules/_helpers.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 17, ../sass/modules/_helpers.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 24, ../sass/modules/_helpers.scss */
+.screenreaders {
+  position: absolute;
+  left: -999em;
+}
+
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
-/**
- * Create a fully formed type style (sizing and vertical rhythm) by passing in a
- * single value, e.g.:
+/*
+ * Create a css transition with vendor prefixes
+ * 
+ * Extend the compass mixin but make it easier
+ * e.g. @include transition(width);
+ * e.g. @include transition(width, .4s, ease-in);
  *
-   `@include font-size(10px);`
- *
- * Thanks to @redclov3r for the `line-height` Sass:
- * twitter.com/redclov3r/status/250301539321798657
  */
 /**
  * Style any number of headings in one fell swoop, e.g.:
@@ -555,155 +583,75 @@ Modular scale
  * We work out your end points for you:
  */
 /**
- * Headings.scss
- * Each heading element gets a separate class so that heading sizes.
- * can be applied as necessary to other elements.
+ * Base.scss
+ * Handle base html styles (body, p, a, etc). 
+ * Note that in many cases, there is a separate module to 
+ * handle a particular type of body element. For example,
+ * h1, h2, etc are handled in _headings.scss. 
  *
  * 
  */
-/* line 9, ../sass/modules/_headings.scss */
-.wf-active h1, .wf-active .alpha, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
+/* line 11, ../sass/_base.scss */
+body {
   color: #333;
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  font-family: Georgia,Palatino,Times,"Times New Roman",serif;
+  font-size: 125%;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
 }
 
-/* line 14, ../sass/modules/_headings.scss */
-h1, .alpha {
-  color: #fff;
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
-}
-
-/* line 19, ../sass/modules/_headings.scss */
-h1, .alpha {
-  font-size: 3em;
-  line-height: 1.2em;
-  margin-bottom: 0.53333em;
-  margin-top: 0.36667em;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-
-/* line 34, ../sass/modules/_headings.scss */
-.wf-active h1, .wf-active .alpha {
-  font-size: 3em;
-  line-height: 1.2;
-  margin-bottom: 0.53333em;
-  margin-top: 0.36667em;
-}
-
-/* line 47, ../sass/modules/_headings.scss */
-h3, .gamma {
-  font-size: 1.146em;
-  margin-bottom: 0.96552em;
-}
-
-/**
- * Images.scss
- * Handle image sizes
- *
- */
-/* line 7, ../sass/modules/_images.scss */
-.large-pic {
+/* line 19, ../sass/_base.scss */
+img {
   width: 100%;
+  max-width: 100%;
 }
 
-@media only screen and (min-width: 40em) and (max-width: 64em) {
-  /* line 19, ../sass/modules/_images.scss */
-  .large-pic {
-    width: 100%;
+/* line 24, ../sass/_base.scss */
+blockquote {
+  font-size: .9em;
+  padding: .5em 2em;
+  margin: 0;
+  background: #eee;
+}
+
+@media only screen and (min-width: 40em) {
+  /* line 32, ../sass/_base.scss */
+  body {
+    line-height: 1.6;
+  }
+}
+/**
+ * Layout.scss
+ * Handle the big picture layout. 
+ *
+ * 
+ */
+/* line 8, ../sass/_layout.scss */
+.content-wrapper {
+  margin: 2em auto;
+  width: 90%;
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.99em) {
+  /* line 14, ../sass/_layout.scss */
+  .content-wrapper {
+    margin: 2em auto;
+    max-width: 32em;
+    width: 75%;
   }
 }
 @media only screen and (min-width: 64em) {
-  /* line 28, ../sass/modules/_images.scss */
-  .large-pic {
-    width: 47em;
+  /* line 22, ../sass/_layout.scss */
+  .content-wrapper {
+    margin: 2em auto auto 2em;
+    width: 32em;
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 34, ../sass/modules/_images.scss */
-  .large-pic {
-    margin-left: -2em;
-  }
-}
-/**
- * metatext.scss
- * Handle meta text such as author name, date, etc.
- *
- * 
- */
-/* line 9, ../sass/modules/_metatext.scss */
-.title-meta {
-  color: #888;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-/**
- * Marginalia.scss
- * Enable notes in the margins
- *
- * In order to do this, you need to follow a particular bit of markup. 
- 
-  <div class="marginator">
-    <p>
-      Your paragraph text goes here...
-    </p>
-    <div class="marginalia">
-      Your marginalia text goes here...
-    </div>
-  </div>
- * 
- */
-/* line 18, ../sass/modules/_marginalia.scss */
-.marginalia {
-  color: #555;
-  font-style: italic;
-}
-/* line 21, ../sass/modules/_marginalia.scss */
-.marginalia:before {
-  content: '(';
-}
-/* line 24, ../sass/modules/_marginalia.scss */
-.marginalia:after {
-  content: ')';
-}
-
-@media only screen and (min-width: 64em) {
-  /* line 30, ../sass/modules/_marginalia.scss */
-  .marginator {
-    margin-top: -1em;
-    width: 45em;
-  }
-  /* line 35, ../sass/modules/_marginalia.scss */
-  .marginator > p {
-    float: left;
-    width: 30em;
-  }
-  /* line 41, ../sass/modules/_marginalia.scss */
-  .marginator + p {
-    clear: left;
-  }
-
-  /* line 46, ../sass/modules/_marginalia.scss */
-  .marginalia {
-    background-color: white;
-    float: left;
-    margin: 24px 0 19px 2.85714em;
-    font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 0.7em;
-    font-weight: 300;
-    font-style: normal;
-    width: 18.57143em;
-  }
-  /* line 57, ../sass/modules/_marginalia.scss */
-  .marginalia .margin-heading {
-    color: #d52800;
-    display: block;
-  }
-  /* line 63, ../sass/modules/_marginalia.scss */
-  .marginalia:before, .marginalia:after {
-    content: '';
+  /* line 29, ../sass/_layout.scss */
+  .content-wrapper {
+    width: 32em;
+    margin-left: 17em;
   }
 }
 /* line 1, ../sass/modules/_code.scss */
@@ -1090,76 +1038,485 @@ img {
 }
 
 /* Literal.Number.Integer.Long */
+/*------------------------------------*\
+    $CLEARFIX from inuit.css
+\*------------------------------------*/
 /**
- * Base.scss
- * Handle base html styles (body, p, a, etc). 
- * Note that in many cases, there is a separate module to 
- * handle a particular type of body element. For example,
- * h1, h2, etc are handled in _headings.scss. 
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
+ * and over in your markup.
+ */
+/* line 10, ../sass/modules/_clearfix.scss */
+.cf:after, .primary-nav:after, .nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
+ * Headings.scss
+ * Each heading element gets a separate class so that heading sizes.
+ * can be applied as necessary to other elements.
  *
  * 
  */
-/* line 11, ../sass/_base.scss */
-body {
+/* line 9, ../sass/modules/_headings.scss */
+.wf-active h1, .wf-active .alpha, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
   color: #333;
-  font-family: Georgia,Palatino,Times,"Times New Roman",serif;
-  font-size: 125%;
-  line-height: 1.25;
-  text-rendering: optimizeLegibility;
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
 }
 
-/* line 19, ../sass/_base.scss */
-img {
-  width: 100%;
-  max-width: 100%;
+/* line 14, ../sass/modules/_headings.scss */
+h1, .alpha {
+  color: #fff;
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
 }
 
-@media only screen and (min-width: 40em) {
-  /* line 25, ../sass/_base.scss */
-  body {
-    line-height: 1.6;
+/* line 19, ../sass/modules/_headings.scss */
+h1, .alpha {
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 0.53333em;
+  margin-top: 0.36667em;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/* line 33, ../sass/modules/_headings.scss */
+.wf-active h1, .wf-active .alpha {
+  font-size: 3em;
+  line-height: 1.2;
+  margin-bottom: 0.53333em;
+  margin-top: 0.36667em;
+}
+
+/* line 43, ../sass/modules/_headings.scss */
+.wf-inactive h1, .wf-inactive .alpha {
+  color: #333;
+}
+
+/* line 51, ../sass/modules/_headings.scss */
+h3, .gamma {
+  font-size: 1.146em;
+  margin-bottom: 0.96552em;
+}
+
+@media only screen and (max-width: 39.99em) {
+  /* line 68, ../sass/modules/_headings.scss */
+  .wf-active h1, .wf-active .alpha {
+    color: #333;
+    font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin-bottom: 0.53333em;
+    margin-top: 0.36667em;
   }
 }
-/**
- * Layout.scss
- * Handle the big picture layout. 
- *
- * 
- */
-/* line 8, ../sass/_layout.scss */
-.content-wrapper {
-  margin: 2em auto;
-  width: 90%;
+/* line 79, ../sass/modules/_headings.scss */
+#homepage h1 {
+  font-size: 2.1em;
+  line-height: 1.35;
 }
 
-@media only screen and (min-width: 40em) and (max-width: 64em) {
-  /* line 14, ../sass/_layout.scss */
-  .content-wrapper {
-    margin: 2em auto;
-    max-width: 30em;
-    width: 75%;
+/* line 84, ../sass/modules/_headings.scss */
+.slug {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: -2em;
+  line-height: 1.25;
+}
+
+/* line 91, ../sass/modules/_headings.scss */
+.introduction {
+  margin-bottom: 3em;
+}
+
+/**
+ * Images.scss
+ * Handle image sizes
+ *
+ */
+/* line 7, ../sass/modules/_images.scss */
+.large-pic {
+  width: 100%;
+}
+
+/* line 11, ../sass/modules/_images.scss */
+.no-resize {
+  width: auto;
+}
+
+@media only screen and (min-width: 40em) and (max-width: 63.99em) {
+  /* line 16, ../sass/modules/_images.scss */
+  .large-pic {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 64em) {
-  /* line 22, ../sass/_layout.scss */
-  .content-wrapper {
-    margin: 2em auto auto 2em;
-    width: 30em;
+  /* line 22, ../sass/modules/_images.scss */
+  .large-pic {
+    width: 47em;
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 29, ../sass/_layout.scss */
+  /* line 28, ../sass/modules/_images.scss */
+  .large-pic {
+    margin-left: -2em;
+    width: 49em;
+  }
+}
+/**
+ * Marginalia.scss
+ * Enable notes in the margins
+ *
+ * In order to do this, you need to follow a particular bit of markup. 
+ 
+  <div class="marginator">
+    <p>
+      Your paragraph text goes here...
+    </p>
+    <div class="marginalia">
+      Your marginalia text goes here...
+    </div>
+  </div>
+ * 
+ */
+/* line 18, ../sass/modules/_marginalia.scss */
+.marginalia {
+  color: #555;
+  font-style: italic;
+}
+/* line 21, ../sass/modules/_marginalia.scss */
+.marginalia:before {
+  content: '(';
+}
+/* line 24, ../sass/modules/_marginalia.scss */
+.marginalia:after {
+  content: ')';
+}
+
+@media only screen and (min-width: 64em) {
+  /* line 30, ../sass/modules/_marginalia.scss */
+  .marginator {
+    margin-top: -1em;
+    width: 47em;
+  }
+  /* line 35, ../sass/modules/_marginalia.scss */
+  .marginator > p {
+    float: left;
+    width: 32em;
+  }
+  /* line 41, ../sass/modules/_marginalia.scss */
+  .marginator + p {
+    clear: left;
+  }
+
+  /* line 46, ../sass/modules/_marginalia.scss */
+  .marginalia {
+    background-color: white;
+    float: left;
+    margin: 24px 0 19px 2em;
+    width: 13em;
+  }
+  /* line 51, ../sass/modules/_marginalia.scss */
+  .marginalia p {
+    font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.7em;
+    font-weight: 300;
+    font-style: normal;
+  }
+  /* line 58, ../sass/modules/_marginalia.scss */
+  .marginalia .margin-heading {
+    color: #d52800;
+    display: block;
+  }
+  /* line 64, ../sass/modules/_marginalia.scss */
+  .marginalia:before, .marginalia:after {
+    content: '';
+  }
+}
+/**
+ * Masthead
+ *
+ * 
+ */
+/* line 7, ../sass/modules/_masthead.scss */
+.masthead {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* line 12, ../sass/modules/_masthead.scss */
+.logo-wrapper {
+  border-bottom: 1px solid #ccc;
+  margin-top: 1em;
+  padding-bottom: .5em;
+}
+
+/* line 18, ../sass/modules/_masthead.scss */
+.logo {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 23, ../sass/modules/_masthead.scss */
+#menu {
+  display: none;
+}
+/* line 26, ../sass/modules/_masthead.scss */
+#menu.expanded {
+  display: block;
+}
+
+/* line 31, ../sass/modules/_masthead.scss */
+#toggle {
+  background: transparent url(../images/toggle.gif) no-repeat center center;
+  float: right;
+  height: 41px;
+  width: 31px;
+  text-indent: -999em;
+}
+
+/* line 39, ../sass/modules/_masthead.scss */
+.primary-nav {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 44, ../sass/modules/_masthead.scss */
+.primary-nav a {
+  font-size: 0.8em;
+}
+/* line 51, ../sass/modules/_masthead.scss */
+.primary-nav > li,
+.primary-nav > li > a {
+  color: #666;
+  color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  *display: inline;
+  text-decoration: none;
+  text-transform: uppercase;
+  zoom: 1;
+}
+
+@media only screen and (max-width: 39.99em) {
+  /* line 66, ../sass/modules/_masthead.scss */
+  .logo-wrapper {
+    margin-top: .5em;
+    padding-bottom: .25em;
+  }
+
+  /* line 71, ../sass/modules/_masthead.scss */
+  .primary-nav {
+    margin: 0;
+  }
+  /* line 75, ../sass/modules/_masthead.scss */
+  .primary-nav > li {
+    border-bottom: 1px solid white;
+    display: list-item;
+  }
+  /* line 78, ../sass/modules/_masthead.scss */
+  .primary-nav > li > a {
+    line-height: 3em;
+    background-color: #eee;
+    color: #333;
+    display: block;
+    padding-left: 1em;
+  }
+  /* line 85, ../sass/modules/_masthead.scss */
+  .primary-nav > li > a:active {
+    background-color: #ccc;
+  }
+  /* line 91, ../sass/modules/_masthead.scss */
+  .primary-nav li.active a {
+    background-color: #999;
+    color: white;
+  }
+}
+@media only screen and (min-width: 40em) {
+  /* line 100, ../sass/modules/_masthead.scss */
+  #toggle {
+    display: none;
+  }
+
+  /* line 104, ../sass/modules/_masthead.scss */
+  #menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* line 111, ../sass/modules/_masthead.scss */
+  .primary-nav {
+    margin: .25em 0 0 0;
+  }
+  /* line 113, ../sass/modules/_masthead.scss */
+  .primary-nav > li {
+    margin-right: 2em;
+  }
+
+  /* line 118, ../sass/modules/_masthead.scss */
+  .masthead {
+    margin: 0 2em;
+    max-width: 47em;
+    position: relative;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 80em) {
+  /* line 128, ../sass/modules/_masthead.scss */
+  #menu {
+    position: static;
+  }
+
+  /* line 132, ../sass/modules/_masthead.scss */
   .masthead {
     background-color: white;
+    margin: 0;
     position: fixed;
-    top: 2em;
+    top: 5em;
     left: 2em;
     width: 13em;
   }
 
-  /* line 37, ../sass/_layout.scss */
-  .content-wrapper {
-    width: 30em;
-    margin-left: 17em;
+  /* line 141, ../sass/modules/_masthead.scss */
+  .logo {
+    display: block;
+    float: none;
   }
+
+  /* line 147, ../sass/modules/_masthead.scss */
+  .primary-nav {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  /* line 152, ../sass/modules/_masthead.scss */
+  .primary-nav > li {
+    display: list-item;
+    padding-bottom: 1em;
+  }
+  /* line 155, ../sass/modules/_masthead.scss */
+  .primary-nav > li > a {
+    display: block;
+  }
+}
+/**
+ * metatext.scss
+ * Handle meta text such as author name, date, etc.
+ *
+ * 
+ */
+/* line 9, ../sass/modules/_metatext.scss */
+.title-meta {
+  color: #888;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * Nav
+ *
+ * Thanks for inuit.css
+ * 
+ */
+/* line 7, ../sass/modules/_nav.scss */
+.nav {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 15, ../sass/modules/_nav.scss */
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+/**
+ * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+ *
+   <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+/* line 37, ../sass/modules/_nav.scss */
+.nav--stacked > li {
+  display: list-item;
+}
+/* line 40, ../sass/modules/_nav.scss */
+.nav--stacked > li > a {
+  display: block;
+}
+
+/**
+ * Paragraphs
+ *
+ * Callout typography
+ * 
+ */
+/* line 8, ../sass/modules/_paragraphs.scss */
+.callout {
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  font-weight: bold;
+  font-size: 1.618em;
+}
+
+/* line 14, ../sass/modules/_paragraphs.scss */
+.intro {
+  font-weight: bold;
+}
+
+/**
+ * Lists
+ *
+ * Ordered and unordered lists
+ * 
+ */
+/* line 10, ../sass/modules/_lists.scss */
+.main-content ul,
+.main-content ol {
+  font-size: 1em;
+  padding-left: 2em;
+}
+
+/* line 16, ../sass/modules/_lists.scss */
+ul.posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+/**
+ * Links
+ *
+ * 
+ */
+/* line 7, ../sass/modules/_links.scss */
+a {
+  color: #1b60a7;
+}
+
+/* line 11, ../sass/modules/_links.scss */
+.cta {
+  display: inline-block;
+  text-decoration: none;
+}
+/* line 15, ../sass/modules/_links.scss */
+.cta:hover {
+  color: #333333;
+}
+
+/* line 20, ../sass/modules/_links.scss */
+.plain {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 24, ../sass/modules/_links.scss */
+.plain:hover {
+  color: #1b60a7;
 }

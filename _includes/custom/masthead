@@ -1,0 +1,10 @@
+<header class="masthead cf">
+  <div class="logo-wrapper">
+    <a class="logo" href="{{ HOME_PATH }}" title="Ready Lab Home">
+      <img src=" {{ ASSET_PATH }}/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+    </a>
+    <a href="#main" class="screenreaders">Skip navigation</a>
+    <div id="toggle">Toggle</div>
+  </div><!-- .logo-wrapper -->
+  <nav id="menu" class="">{% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include JB/pages_list %}</nav>
+</header>

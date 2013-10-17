@@ -1,19 +1,27 @@
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
-/**
- * Create a fully formed type style (sizing and vertical rhythm) by passing in a
- * single value, e.g.:
- *
-   `@include font-size(10px);`
- *
- * Thanks to @redclov3r for the `line-height` Sass:
- * twitter.com/redclov3r/status/250301539321798657
- */
-@mixin font-size($font-size, $line-height:true){
-   
-}
 
+/*
+ * Create a css transition with vendor prefixes
+ * 
+ * Extend the compass mixin but make it easier
+ * e.g. @include transition(width);
+ * e.g. @include transition(width, .4s, ease-in);
+ *
+ */
+@mixin transition($prop: all, $duration: 1s, $easing: null, $delay: null) {
+  @include transition-property($prop);
+  @include transition-duration($duration);
+
+  @if ($easing != null) {
+    @include transition-timing-function($easing); 
+  }
+
+  @if ($delay != null) {
+    @include transition-delay($delay); 
+  }
+}
 
 /**
  * Style any number of headings in one fell swoop, e.g.:
@@ -280,8 +288,8 @@
  *
  * We work out your end points for you:
  */
-$palm-end:              $lap-start;
-$lap-end:               $desk-start;
+$palm-end:              $lap-start - 0.01em;
+$lap-end:               $desk-start - 0.01em;
 
 @mixin media-query($media-query){
 
