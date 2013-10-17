@@ -18,24 +18,23 @@
 
 h1,.alpha{
   @extend %notypekit;
-  font-size: $h1-size; // 60px
-  line-height: 1.2; // 72px
-  margin-bottom: (32/60) + em; // should be equivalent to 32px
-  margin-top: (22/60) + em;
+   color: #fff;
+    font-size: 1.5em;
+    line-height: 1.2; // 72px
+    margin-bottom: (32/60) + em; // should be equivalent to 32px
+    margin-top: (22/60) + em;
   -moz-transition:all 1s;
   -webkit-transition:all 1s;
   -o-transition:all 1s;
   transition:all 1s;
+
 }
 
 
 .wf-active {
   h1,.alpha{
     @extend %typekit;
-    font-size: $h1-size; // 60px
-    line-height: 1.2; // 72px
-    margin-bottom: (32/60) + em; // should be equivalent to 32px
-    margin-top: (22/60) + em;
+    
   }
 }
 
@@ -63,23 +62,28 @@ h6,.zeta{
   @extend %typekit;
 }
 
-@include media-query(palm){
-  .wf-active {
+@include media-query(lap-and-up){
+  h1,.alpha {
+     font-size: $h1-size; // 60px
+    line-height: 1.2; // 72px
+    margin-bottom: (32/60) + em; // should be equivalent to 32px
+    margin-top: (22/60) + em;
+  }
+  .wf-active,
+  .wf-inactive {
     h1,.alpha{
       color: #333;
-      font-family: "ff-tisa-web-pro", Georgia, Times, serif;
-      font-size: 1.5em;
-      line-height: 1.2; // 72px
-      margin-bottom: (32/60) + em; // should be equivalent to 32px
-      margin-top: (22/60) + em;
+     
     }
+  }
+
+  #homepage h1 {
+    font-size: 2.1em;
+    line-height: 1.35;
   }
 }
 
-#homepage h1 {
-  font-size: 2.1em;
-  line-height: 1.35;
-}
+
 
 .slug {
   font-size: 12px;
