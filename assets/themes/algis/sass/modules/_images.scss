@@ -12,6 +12,13 @@
   width: auto;
 }
 
+.caption {
+  font-family: $sans;
+  font-size: getEms($caption-size);
+  color: $light-text;
+  max-width: 48em;
+}
+
 @include media-query(lap) {
   .large-pic {
     width: 100%;
@@ -28,6 +35,17 @@
   .large-pic {
     margin-left: -$gutter;
     width: $content-width + $column-width + $gutter;
+
+    .caption {
+      padding-left: getEms( 2*$base-font-size, $caption-size);
+    }
+  }
+
+  .offset-pic {
+    float: left;
+    margin-left: -($content-width / 4);
+    margin-right: $gutter;
+    width: ($gutter) + ($content-width / 2);
   }
 
 }

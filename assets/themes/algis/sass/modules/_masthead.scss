@@ -43,7 +43,7 @@
     @extend .cf;
 
     a {
-      font-size: 0.8em;
+      font-size: 0.9em;
     }
 
     > li{
@@ -54,8 +54,9 @@
             color: rgba(0,0,0,0.4);
             display:inline-block;
            *display:inline;
+            font-family: $sans;
             text-decoration: none;
-            text-transform: uppercase;
+            // text-transform: uppercase;
             zoom:1;
         }
     }
@@ -133,8 +134,8 @@
   .masthead {
     background-color: white;
     margin: 0;
-    position: fixed;
-    top: 5em;
+    position: absolute;
+    top: 4em;
     left: $gutter;
     width: $column-width - $gutter;
   }

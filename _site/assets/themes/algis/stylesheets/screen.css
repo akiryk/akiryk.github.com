@@ -470,9 +470,16 @@ Modular scale
   left: -999em;
 }
 
+/*
+ * Functions
+ *
+ */
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
+/*
+ * simple way to make the h1 ... h6 font stack
+ */
 /*
  * Create a css transition with vendor prefixes
  * 
@@ -481,18 +488,9 @@ Modular scale
  * e.g. @include transition(width, .4s, ease-in);
  *
  */
-/**
- * Style any number of headings in one fell swoop, e.g.:
- *
-   .foo{
-       @include headings(1, 3){
-           color:#BADA55;
-       }
-    }
- *
- * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
- * @thierrylemoulec for refining and improving my initial mixin.
- */
+/*
+* Apply font styles as per http://css-tricks.com/snippets/css/better-helvetica/
+*/
 /**
  * Create vendor-prefixed CSS in one go, e.g.
  *
@@ -614,8 +612,13 @@ blockquote {
   background: #eee;
 }
 
+/* line 31, ../sass/_base.scss */
+p {
+  margin: 1.6em 0;
+}
+
 @media only screen and (min-width: 40em) {
-  /* line 32, ../sass/_base.scss */
+  /* line 36, ../sass/_base.scss */
   body {
     line-height: 1.6;
   }
@@ -636,7 +639,7 @@ blockquote {
   /* line 14, ../sass/_layout.scss */
   .content-wrapper {
     margin: 2em auto;
-    max-width: 32em;
+    max-width: 34em;
     width: 75%;
   }
 }
@@ -644,13 +647,13 @@ blockquote {
   /* line 22, ../sass/_layout.scss */
   .content-wrapper {
     margin: 2em auto auto 2em;
-    width: 32em;
+    width: 34em;
   }
 }
 @media only screen and (min-width: 80em) {
   /* line 29, ../sass/_layout.scss */
   .content-wrapper {
-    width: 32em;
+    width: 34em;
     margin-left: 17em;
   }
 }
@@ -1060,77 +1063,85 @@ img {
  *
  * 
  */
-/* line 9, ../sass/modules/_headings.scss */
-.wf-active h1, .wf-active .alpha, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
-  color: #333;
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
-}
-
-/* line 14, ../sass/modules/_headings.scss */
-h1, .alpha {
-  color: #fff;
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
-}
-
-/* line 19, ../sass/modules/_headings.scss */
-h1, .alpha {
-  color: #fff;
-  font-size: 1.5em;
-  line-height: 1.2;
-  margin-bottom: 0.53333em;
-  margin-top: 0.36667em;
-  -moz-transition: all 1s;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-
-/* line 42, ../sass/modules/_headings.scss */
-.wf-inactive h1, .wf-inactive .alpha {
-  color: #333;
-}
-
-/* line 50, ../sass/modules/_headings.scss */
-h3, .gamma {
-  font-size: 1.146em;
-  margin-bottom: 0.96552em;
-}
-
 @media only screen and (min-width: 40em) {
-  /* line 66, ../sass/modules/_headings.scss */
-  h1, .alpha {
+  /*
+   * Create all the headings in one fell swoop
+   * requires an array for the classnames: alpha, beta, etc
+   */
+  /* line 24, ../sass/modules/_headings.scss */
+  h1,
+  .alpha {
+    color: #333333;
     font-size: 3em;
+    margin: 0.53333em 0;
     line-height: 1.2;
-    margin-bottom: 0.53333em;
-    margin-top: 0.36667em;
+    margin-left: -2px;
+    font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   }
 
-  /* line 74, ../sass/modules/_headings.scss */
-  .wf-active h1, .wf-active .alpha,
-  .wf-inactive h1,
-  .wf-inactive .alpha {
-    color: #333;
+  /* line 24, ../sass/modules/_headings.scss */
+  h2,
+  .beta {
+    color: #333333;
+    font-size: 1.618em;
+    margin: 0.98888em 0;
+    font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   }
 
-  /* line 80, ../sass/modules/_headings.scss */
+  /* line 24, ../sass/modules/_headings.scss */
+  h3,
+  .gamma {
+    color: #333333;
+    font-size: 1.146em;
+    margin: 1.39616em 0;
+    font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  }
+
+  /* line 24, ../sass/modules/_headings.scss */
+  h4,
+  .delta {
+    color: #333333;
+    font-size: 1.146em;
+    margin: 1.39616em 0;
+    font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  }
+
+  /* line 24, ../sass/modules/_headings.scss */
+  h5,
+  .epsilon {
+    color: #333333;
+    font-size: 1em;
+    margin: 1.6em 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* line 24, ../sass/modules/_headings.scss */
+  h6,
+  .zeta {
+    color: #333333;
+    font-size: 0.8em;
+    margin: 2em 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* line 43, ../sass/modules/_headings.scss */
   #homepage h1 {
     font-size: 2.1em;
     line-height: 1.35;
   }
-}
-/* line 88, ../sass/modules/_headings.scss */
-.slug {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: -2em;
-  line-height: 1.25;
-}
 
-/* line 95, ../sass/modules/_headings.scss */
-.introduction {
-  margin-bottom: 3em;
+  /* line 48, ../sass/modules/_headings.scss */
+  .blog-heading {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+  }
+  /* line 50, ../sass/modules/_headings.scss */
+  .blog-heading a {
+    color: #333;
+  }
 }
-
 /**
  * Images.scss
  * Handle image sizes
@@ -1146,23 +1157,43 @@ h3, .gamma {
   width: auto;
 }
 
+/* line 15, ../sass/modules/_images.scss */
+.caption {
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 0.7em;
+  color: #666666;
+  max-width: 48em;
+}
+
 @media only screen and (min-width: 40em) and (max-width: 63.99em) {
-  /* line 16, ../sass/modules/_images.scss */
+  /* line 23, ../sass/modules/_images.scss */
   .large-pic {
     width: 100%;
   }
 }
 @media only screen and (min-width: 64em) {
-  /* line 22, ../sass/modules/_images.scss */
+  /* line 29, ../sass/modules/_images.scss */
   .large-pic {
-    width: 47em;
+    width: 49em;
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 28, ../sass/modules/_images.scss */
+  /* line 35, ../sass/modules/_images.scss */
   .large-pic {
     margin-left: -2em;
-    width: 49em;
+    width: 51em;
+  }
+  /* line 39, ../sass/modules/_images.scss */
+  .large-pic .caption {
+    padding-left: 2.85714em;
+  }
+
+  /* line 44, ../sass/modules/_images.scss */
+  .offset-pic {
+    float: left;
+    margin-left: -8.5em;
+    margin-right: 2em;
+    width: 19em;
   }
 }
 /**
@@ -1186,51 +1217,53 @@ h3, .gamma {
   color: #555;
   font-style: italic;
 }
-/* line 21, ../sass/modules/_marginalia.scss */
-.marginalia:before {
-  content: '(';
-}
+
 /* line 24, ../sass/modules/_marginalia.scss */
-.marginalia:after {
-  content: ')';
+.margin-heading:after {
+  content: ': ';
 }
 
 @media only screen and (min-width: 64em) {
   /* line 30, ../sass/modules/_marginalia.scss */
   .marginator {
     margin-top: -1em;
-    width: 47em;
+    width: 49em;
   }
   /* line 35, ../sass/modules/_marginalia.scss */
   .marginator > p {
     float: left;
-    width: 32em;
+    width: 34em;
   }
   /* line 41, ../sass/modules/_marginalia.scss */
   .marginator + p {
     clear: left;
   }
 
-  /* line 46, ../sass/modules/_marginalia.scss */
+  /* line 47, ../sass/modules/_marginalia.scss */
+  .margin-heading:after {
+    content: '';
+  }
+
+  /* line 52, ../sass/modules/_marginalia.scss */
   .marginalia {
     background-color: white;
     float: left;
     margin: 24px 0 19px 2em;
     width: 13em;
   }
-  /* line 51, ../sass/modules/_marginalia.scss */
+  /* line 57, ../sass/modules/_marginalia.scss */
   .marginalia p {
     font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 0.7em;
     font-weight: 300;
     font-style: normal;
   }
-  /* line 58, ../sass/modules/_marginalia.scss */
+  /* line 64, ../sass/modules/_marginalia.scss */
   .marginalia .margin-heading {
     color: #d52800;
     display: block;
   }
-  /* line 64, ../sass/modules/_marginalia.scss */
+  /* line 70, ../sass/modules/_marginalia.scss */
   .marginalia:before, .marginalia:after {
     content: '';
   }
@@ -1285,7 +1318,7 @@ h3, .gamma {
 }
 /* line 45, ../sass/modules/_masthead.scss */
 .primary-nav a {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 /* line 52, ../sass/modules/_masthead.scss */
 .primary-nav > li,
@@ -1294,28 +1327,28 @@ h3, .gamma {
   color: rgba(0, 0, 0, 0.4);
   display: inline-block;
   *display: inline;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-decoration: none;
-  text-transform: uppercase;
   zoom: 1;
 }
 
 @media only screen and (max-width: 39.99em) {
-  /* line 67, ../sass/modules/_masthead.scss */
+  /* line 68, ../sass/modules/_masthead.scss */
   .logo-wrapper {
     margin-top: .5em;
     padding-bottom: .25em;
   }
 
-  /* line 72, ../sass/modules/_masthead.scss */
+  /* line 73, ../sass/modules/_masthead.scss */
   .primary-nav {
     margin: 0;
   }
-  /* line 76, ../sass/modules/_masthead.scss */
+  /* line 77, ../sass/modules/_masthead.scss */
   .primary-nav > li {
     border-bottom: 1px solid white;
     display: list-item;
   }
-  /* line 79, ../sass/modules/_masthead.scss */
+  /* line 80, ../sass/modules/_masthead.scss */
   .primary-nav > li > a {
     line-height: 3em;
     background-color: #eee;
@@ -1323,23 +1356,23 @@ h3, .gamma {
     display: block;
     padding-left: 1em;
   }
-  /* line 86, ../sass/modules/_masthead.scss */
+  /* line 87, ../sass/modules/_masthead.scss */
   .primary-nav > li > a:active {
     background-color: #ccc;
   }
-  /* line 92, ../sass/modules/_masthead.scss */
+  /* line 93, ../sass/modules/_masthead.scss */
   .primary-nav li.active a {
     background-color: #999;
     color: white;
   }
 }
 @media only screen and (min-width: 40em) {
-  /* line 101, ../sass/modules/_masthead.scss */
+  /* line 102, ../sass/modules/_masthead.scss */
   #toggle {
     display: none;
   }
 
-  /* line 105, ../sass/modules/_masthead.scss */
+  /* line 106, ../sass/modules/_masthead.scss */
   #menu {
     display: block;
     position: absolute;
@@ -1347,73 +1380,61 @@ h3, .gamma {
     top: 0;
   }
 
-  /* line 112, ../sass/modules/_masthead.scss */
+  /* line 113, ../sass/modules/_masthead.scss */
   .primary-nav {
     margin: .25em 0 0 0;
   }
-  /* line 114, ../sass/modules/_masthead.scss */
+  /* line 115, ../sass/modules/_masthead.scss */
   .primary-nav > li {
     margin-right: 2em;
   }
 
-  /* line 119, ../sass/modules/_masthead.scss */
+  /* line 120, ../sass/modules/_masthead.scss */
   .masthead {
     margin: 0 2em;
-    max-width: 47em;
+    max-width: 49em;
     position: relative;
     width: auto;
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 129, ../sass/modules/_masthead.scss */
+  /* line 130, ../sass/modules/_masthead.scss */
   #menu {
     position: static;
   }
 
-  /* line 133, ../sass/modules/_masthead.scss */
+  /* line 134, ../sass/modules/_masthead.scss */
   .masthead {
     background-color: white;
     margin: 0;
-    position: fixed;
-    top: 5em;
+    position: absolute;
+    top: 4em;
     left: 2em;
     width: 13em;
   }
 
-  /* line 142, ../sass/modules/_masthead.scss */
+  /* line 143, ../sass/modules/_masthead.scss */
   .logo {
     display: block;
     float: none;
   }
 
-  /* line 148, ../sass/modules/_masthead.scss */
+  /* line 149, ../sass/modules/_masthead.scss */
   .primary-nav {
     list-style: none;
     margin-left: 0;
     margin-top: 1em;
   }
-  /* line 153, ../sass/modules/_masthead.scss */
+  /* line 154, ../sass/modules/_masthead.scss */
   .primary-nav > li {
     display: list-item;
     padding-bottom: 1em;
   }
-  /* line 156, ../sass/modules/_masthead.scss */
+  /* line 157, ../sass/modules/_masthead.scss */
   .primary-nav > li > a {
     display: block;
   }
 }
-/**
- * metatext.scss
- * Handle meta text such as author name, date, etc.
- *
- * 
- */
-/* line 9, ../sass/modules/_metatext.scss */
-.title-meta {
-  color: #888;
-  color: rgba(0, 0, 0, 0.3);
-}
-
 /**
  * Nav
  *
@@ -1454,21 +1475,62 @@ h3, .gamma {
 }
 
 /**
- * Paragraphs
+ * Typography for posts
  *
- * Callout typography
  * 
  */
-/* line 8, ../sass/modules/_paragraphs.scss */
+/* line 9, ../sass/modules/_posttypography.scss */
 .callout {
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   font-weight: bold;
   font-size: 1.618em;
 }
 
-/* line 14, ../sass/modules/_paragraphs.scss */
+/* line 15, ../sass/modules/_posttypography.scss */
 .intro {
-  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 19, ../sass/modules/_posttypography.scss */
+.post-title-meta, .agg-title-meta {
+  color: #aaa;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+/* line 26, ../sass/modules/_posttypography.scss */
+.post-title-meta {
+  margin-bottom: -0.7em;
+}
+
+/* line 31, ../sass/modules/_posttypography.scss */
+.agg-title-meta {
+  clear: both;
+  display: block;
+  line-height: 2.57143em;
+}
+
+/* line 39, ../sass/modules/_posttypography.scss */
+.post-date {
+  color: #333;
+}
+
+/* line 43, ../sass/modules/_posttypography.scss */
+.slug {
+  letter-spacing: 1px;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+/* line 47, ../sass/modules/_posttypography.scss */
+.slug a {
+  color: #999;
+}
+
+/* line 52, ../sass/modules/_posttypography.scss */
+.introduction {
+  margin-bottom: 3em;
 }
 
 /**
@@ -1490,6 +1552,26 @@ ul.posts {
   padding: 0;
 }
 
+/* line 21, ../sass/modules/_lists.scss */
+.inline {
+  display: inline;
+  padding: 0;
+}
+
+/* line 26, ../sass/modules/_lists.scss */
+.agg-page-tags {
+  float: left;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  list-style: none;
+  margin-right: -15em;
+  width: 13em;
+}
+/* line 33, ../sass/modules/_lists.scss */
+.agg-page-tags > li {
+  font-size: 0.7em;
+  line-height: 6px;
+}
+
 /**
  * Links
  *
@@ -1498,24 +1580,69 @@ ul.posts {
 /* line 7, ../sass/modules/_links.scss */
 a {
   color: #1b60a7;
+  text-decoration: none;
 }
 
-/* line 11, ../sass/modules/_links.scss */
+/* line 12, ../sass/modules/_links.scss */
 .cta {
   display: inline-block;
   text-decoration: none;
 }
-/* line 15, ../sass/modules/_links.scss */
+/* line 16, ../sass/modules/_links.scss */
 .cta:hover {
   color: #333333;
 }
 
-/* line 20, ../sass/modules/_links.scss */
-.plain {
-  text-decoration: none;
+/* line 22, ../sass/modules/_links.scss */
+.plain,
+.tag {
   color: #333333;
 }
-/* line 24, ../sass/modules/_links.scss */
-.plain:hover {
+/* line 25, ../sass/modules/_links.scss */
+.plain:hover,
+.tag:hover {
   color: #1b60a7;
+}
+
+/**
+ * Video embeds
+ *
+ * 
+ */
+/* line 7, ../sass/modules/_video.scss */
+.bt-video-container {
+  margin: 1.6em 0;
+}
+
+/**
+ * Island
+ *
+ * 
+ */
+/* line 7, ../sass/modules/_island.scss */
+.island, .portfolio-item {
+  margin: 1.6em 0;
+  padding: 1em;
+}
+/* line 11, ../sass/modules/_island.scss */
+.island > .slug, .portfolio-item > .slug {
+  margin: 0;
+}
+
+/**
+ * Porfolio
+ *
+ * 
+ */
+/* line 7, ../sass/modules/_portfolio.scss */
+.portfolio-item {
+  border: 1px solid #859b0c;
+  border-top: 4px solid #859b0c;
+}
+
+/* line 15, ../sass/modules/_portfolio.scss */
+.slug + h1,
+.slug + h2,
+.slug + h3 {
+  margin-top: 0;
 }

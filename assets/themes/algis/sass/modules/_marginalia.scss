@@ -18,11 +18,11 @@
 .marginalia {
   color: #555;
   font-style: italic;
-  &:before {
-    content: '(';
-  }
+}
+
+.margin-heading {
   &:after {
-    content: ')';
+    content: ': ';
   }
 }
 
@@ -43,6 +43,12 @@
     }
   }
 
+  .margin-heading {
+    &:after {
+      content: '';
+    }
+  }
+
   .marginalia {
     background-color: white;
     float: left;
@@ -50,7 +56,7 @@
     width: $column-width - $gutter; // 260px
     p {
       font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-      font-size: ($marginaliaSize/$base-line-size) + em;
+      font-size: ($marginaliaSize/$base-font-size) + em;
       font-weight: 300;
       font-style: normal;
     }

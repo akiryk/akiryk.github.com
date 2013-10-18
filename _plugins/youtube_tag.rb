@@ -24,7 +24,7 @@ module Jekyll
     end
 
     def render(context)
-      ouptut = super
+      output = super
       if @videoid
         # Thanks to Andrew Clark for the inline CSS calculation idea <http://contentioninvain.com/2013/02/13/video-embeds-for-responsive-designs/>
         intrinsic = ((@height.to_f / @width.to_f) * 100)

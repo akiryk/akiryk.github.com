@@ -2,20 +2,14 @@
 layout: post
 title: Better Book Browsing Online
 teaser: A Readers' Cry for a Better Digital Book Browsing User Experience.
-hero: book-browsing-hero.jpg
-hero-title: Some books
 category : blog
 tags : [ux, design, making-stuff-better]
 ---
 
-<div class="marginator">
-  <p class="intro"><strong>Synopsis:</strong> Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. </p>
-  <div class="marginalia">
-    <p><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
-    </p></div>
-</div>
+*Synopsis:* Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. 
+  
 
-###To Begin:
+##To Begin With, We Make A Comparison With Jonas Avimbi:
 
 I'm not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I'm talking about the experience of looking for something you don't know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It's an experience that's been notably absent from the world of digital book-shopping. 
 
@@ -42,20 +36,28 @@ Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and b
 ###Imagine a Better Way
 Imagine there's a new digital bookseller in town, and they want to provide a better way to browse. They think their customers will be happier with their purchases if they've spent enough time to find the right books — and they'll be more satisfied overall if the process of exploring for those right books is enjoyable. How would I approach the problem? What would I suggest? Why would I suggest it?
 
-###Inspirations
+##Inspirations
 
 The first thing I'd do is examine what it's like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes & Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?
 
+<div class="large-pic">
+  <img src="{{ site.url }}/assets/images/random/flowers.jpg" title="Flowers Image">
+  <div class="caption">Look at this wonderful photograph of flowers. It was taken on a day in June, 2013, walking around Cambridge, nothing fance. Just trying out a 35mm Nikon lens.</div>
+</div>
 Here's a thought — they do it because it's pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop's barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn't replicate those things very easily in a digital experience. You wouldn't want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure). 
 
 You could take inspiration from those things, perhaps. I believe you should seek inspiration from any and all of the good things about real-world browsing. Let's look at some of them, briefly, and decide what could be useful and what could be discarded.
+
+![My image]({{ site.url }}/assets/images/random/flowers.jpg "My Title")
 
 Serendipity. You're casually walking from one part of the store to another when something catches your eye. A book cover, perhaps, or an author's name, and it draws you to something new and worthwhile. A good thing.
 
 Quirkiness. I love bookstores that stock tables with "what we're reading now" or "our favorite beach reads." Some flavor of the people who work in the store and the things they like. I don't necessarily end up buying from these tables, but they tell me something about the character of the store (e.g. libertarian hippy-hangout in Arcata, California or literary-haven in Nashville, Tennessee). Who wants every bookstore to be the same? Surprise me. 
 
 
-Localization. No, not GPS-enabled services. I simply mean the way many bookstores relate to their local environments. In St. Johnsbury, Vermont, the Boxcar & Caboose bookshop has a section of work by Vermont writers and a shelf full of books about Vermont. At the Harvard Coop (actually Barnes & Noble), there's a section about Boston and New England — but perhaps more apt are the tables featuring academically-flavored books more likely to appeal to a PhD. literary theorist than a casual reader. That's what I mean by relating to the local environment. 
+#####Localization. 
+
+No, not GPS-enabled services. I simply mean the way many bookstores relate to their local environments. In St. Johnsbury, Vermont, the Boxcar & Caboose bookshop has a section of work by Vermont writers and a shelf full of books about Vermont. At the Harvard Coop (actually Barnes & Noble), there's a section about Boston and New England — but perhaps more apt are the tables featuring academically-flavored books more likely to appeal to a PhD. literary theorist than a casual reader. That's what I mean by relating to the local environment. 
 
 Rhythm. In most bookstores, the books are arranged with a certain uneven but pleasing rhythm. Some are neatly lined up, spine facing out, alphabetically, like in a library. But then one breaks the flow, its cover facing you and grabbing your attention. Compare that to the rhythm you find in the iTunes bookstore, where it's just an endless march of thumbnail book covers, titles and buy-buttons. 
 

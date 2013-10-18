@@ -1,0 +1,8 @@
+/*
+ * Functions
+ *
+ */
+
+@function getEms( $size: $base-font-size, $context: $base-font-size){
+   @return ($size / $context) + em;
+}

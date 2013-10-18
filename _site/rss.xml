@@ -5,8 +5,8 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-10-17T21:24:33+02:00</lastBuildDate>
-        <pubDate>2013-10-17T21:24:33+02:00</pubDate>
+        <lastBuildDate>2013-10-18T15:51:26+02:00</lastBuildDate>
+        <pubDate>2013-10-18T15:51:26+02:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -77,14 +77,9 @@ etc.&lt;/p&gt;
 
         <item>
                 <title>Better Book Browsing Online</title>
-                <description>&lt;div class=&quot;marginator&quot;&gt;
-  &lt;p class=&quot;intro&quot;&gt;&lt;strong&gt;Synopsis:&lt;/strong&gt; Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. &lt;/p&gt;
-  &lt;div class=&quot;marginalia&quot;&gt;
-    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;An Aside&lt;/span&gt; This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
-    &lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
+                <description>&lt;p&gt;&lt;em&gt;Synopsis:&lt;/em&gt; Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like. &lt;/p&gt;
 
-&lt;h3&gt;To Begin:&lt;/h3&gt;
+&lt;h2&gt;To Begin With, We Make A Comparison With Jonas Avimbi:&lt;/h2&gt;
 
 &lt;p&gt;I&amp;#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#39;m talking about the experience of looking for something you don&amp;#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#39;s an experience that&amp;#39;s been notably absent from the world of digital book-shopping. &lt;/p&gt;
 
@@ -111,19 +106,28 @@ etc.&lt;/p&gt;
 
 &lt;p&gt;Imagine there&amp;#39;s a new digital bookseller in town, and they want to provide a better way to browse. They think their customers will be happier with their purchases if they&amp;#39;ve spent enough time to find the right books — and they&amp;#39;ll be more satisfied overall if the process of exploring for those right books is enjoyable. How would I approach the problem? What would I suggest? Why would I suggest it?&lt;/p&gt;
 
-&lt;h3&gt;Inspirations&lt;/h3&gt;
+&lt;h2&gt;Inspirations&lt;/h2&gt;
 
 &lt;p&gt;The first thing I&amp;#39;d do is examine what it&amp;#39;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
+
+&lt;div class=&quot;large-pic&quot;&gt;
+  &lt;img src=&quot;/assets/images/random/flowers.jpg&quot; title=&quot;Flowers Image&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;Look at this wonderful photograph of flowers. It was taken on a day in June, 2013, walking around Cambridge, nothing fance. Just trying out a 35mm Nikon lens.&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Here&amp;#39;s a thought — they do it because it&amp;#39;s pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop&amp;#39;s barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn&amp;#39;t replicate those things very easily in a digital experience. You wouldn&amp;#39;t want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure). &lt;/p&gt;
 
 &lt;p&gt;You could take inspiration from those things, perhaps. I believe you should seek inspiration from any and all of the good things about real-world browsing. Let&amp;#39;s look at some of them, briefly, and decide what could be useful and what could be discarded.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/images/random/flowers.jpg&quot; alt=&quot;My image&quot; title=&quot;My Title&quot;&gt;&lt;/p&gt;
+
 &lt;p&gt;Serendipity. You&amp;#39;re casually walking from one part of the store to another when something catches your eye. A book cover, perhaps, or an author&amp;#39;s name, and it draws you to something new and worthwhile. A good thing.&lt;/p&gt;
 
 &lt;p&gt;Quirkiness. I love bookstores that stock tables with &amp;quot;what we&amp;#39;re reading now&amp;quot; or &amp;quot;our favorite beach reads.&amp;quot; Some flavor of the people who work in the store and the things they like. I don&amp;#39;t necessarily end up buying from these tables, but they tell me something about the character of the store (e.g. libertarian hippy-hangout in Arcata, California or literary-haven in Nashville, Tennessee). Who wants every bookstore to be the same? Surprise me. &lt;/p&gt;
 
-&lt;p&gt;Localization. No, not GPS-enabled services. I simply mean the way many bookstores relate to their local environments. In St. Johnsbury, Vermont, the Boxcar &amp;amp; Caboose bookshop has a section of work by Vermont writers and a shelf full of books about Vermont. At the Harvard Coop (actually Barnes &amp;amp; Noble), there&amp;#39;s a section about Boston and New England — but perhaps more apt are the tables featuring academically-flavored books more likely to appeal to a PhD. literary theorist than a casual reader. That&amp;#39;s what I mean by relating to the local environment. &lt;/p&gt;
+&lt;h5&gt;Localization.&lt;/h5&gt;
+
+&lt;p&gt;No, not GPS-enabled services. I simply mean the way many bookstores relate to their local environments. In St. Johnsbury, Vermont, the Boxcar &amp;amp; Caboose bookshop has a section of work by Vermont writers and a shelf full of books about Vermont. At the Harvard Coop (actually Barnes &amp;amp; Noble), there&amp;#39;s a section about Boston and New England — but perhaps more apt are the tables featuring academically-flavored books more likely to appeal to a PhD. literary theorist than a casual reader. That&amp;#39;s what I mean by relating to the local environment. &lt;/p&gt;
 
 &lt;p&gt;Rhythm. In most bookstores, the books are arranged with a certain uneven but pleasing rhythm. Some are neatly lined up, spine facing out, alphabetically, like in a library. But then one breaks the flow, its cover facing you and grabbing your attention. Compare that to the rhythm you find in the iTunes bookstore, where it&amp;#39;s just an endless march of thumbnail book covers, titles and buy-buttons. &lt;/p&gt;
 
@@ -233,13 +237,13 @@ The idea is to role play a &amp;#39;conversation&amp;#39; with the user-interfac
 
 &lt;p&gt;The first video shows what NPR editors see — it’s mostly the same as station journalists, but they can choose whether to accept or reject a given pitch. The site is responsive since so many of the users are working off of tablets and phones. The second video shows what stations see.&lt;/p&gt;
 
-&lt;iframe src=&quot;//player.vimeo.com/video/61651125&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; &gt; &lt;/iframe&gt;
+&lt;style&gt;.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}&lt;/style&gt;
 
-&lt;p&gt;Some content
-&lt;iframe src=&quot;//player.vimeo.com/video/61651127&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
-More content
-&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/VlOxlSOr3_M&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
-&lt;div&gt;&lt;b&gt;hello&lt;/b&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://player.vimeo.com/video/61651125?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;style&gt;.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}&lt;/style&gt;
+
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://player.vimeo.com/video/61651127?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description>
                 <link>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</link>
                 <guid>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</guid>

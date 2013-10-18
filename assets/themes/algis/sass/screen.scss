@@ -10,6 +10,7 @@
 @import "modules/normalize";
 @import "vars";
 @import "modules/helpers";
+@import "modules/functions";
 @import "modules/mixins";
 
 @import "base";
@@ -21,10 +22,12 @@
 @import "modules/images";
 @import "modules/marginalia";
 @import "modules/masthead";
-@import "modules/metatext";
 @import "modules/nav";
-@import "modules/paragraphs";
+@import "modules/posttypography";
 @import "modules/lists";
 @import "modules/links";
+@import "modules/video";
+@import "modules/island";
+@import "modules/portfolio";
 
 

@@ -2,8 +2,6 @@
 layout: portfolio
 title: NPR Stations on Facebook
 teaser: With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.
-hero: cp-cms-hero.png
-hero-title: Design of a content management system
 category : portfolio
 tags : [ux, cms, npr, design]
 ---
@@ -24,11 +22,9 @@ The thirty or so stations that use it spend a lot of time looking at the differe
 
 The first video shows what NPR editors see — it’s mostly the same as station journalists, but they can choose whether to accept or reject a given pitch. The site is responsive since so many of the users are working off of tablets and phones. The second video shows what stations see.
 
-<iframe src="//player.vimeo.com/video/61651125" width="640" height="480" frameborder="0" > </iframe>
-Some content
-<iframe src="//player.vimeo.com/video/61651127" width="640" height="480" frameborder="0"> </iframe>
-More content
-<iframe width="640" height="480" src="//www.youtube.com/embed/VlOxlSOr3_M" frameborder="0"> </iframe>
-<div><b>hello</b></div>
+{% vimeo 61651125 %}
+
+{% vimeo 61651127 %}
+
 
 

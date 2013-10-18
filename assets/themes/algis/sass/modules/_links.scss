@@ -6,6 +6,7 @@
 
 a {
   color: $blue;
+  text-decoration: none;
 }
 
 .cta {
@@ -17,8 +18,8 @@ a {
   }
 }
 
-.plain {
-  text-decoration: none;
+.plain,
+.tag {
   color: $normal-color;
 
   &:hover {

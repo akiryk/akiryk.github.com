@@ -1,0 +1,17 @@
+/**
+ * Porfolio
+ *
+ * 
+ */
+
+.portfolio-item {
+  border: 1px solid #859b0c;
+  border-top: 4px solid #859b0c;
+  @extend .island;
+}
+
+.slug + h1,
+.slug + h2,
+.slug + h3 {
+  margin-top: 0;
+}

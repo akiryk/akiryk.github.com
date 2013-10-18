@@ -6,6 +6,12 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<section class="introduction">
+  <h1>Readylab is a small creative studio focused on making well-crafted websites and digital experiences.</h1>
+
+  <a href="{{ BASE_PATH }}/about.html" class="cta">Go on, say more...</a>
+</section>
+
 This is some about information.
 
 > This is a blockquote.

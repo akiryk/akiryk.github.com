@@ -17,3 +17,21 @@ ul.posts {
   list-style-type: none;
   padding: 0;
 }
+
+.inline {
+  display: inline;
+  padding: 0;
+}
+
+.agg-page-tags {
+  float: left;
+  font-family: $sans;
+  list-style: none;
+  margin-right: -$column-width;
+  width: $column-width - $gutter; // 260px
+
+  > li {
+    font-size: getEms(14);
+    line-height: 6px;
+  }
+}

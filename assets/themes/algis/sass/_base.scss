@@ -28,6 +28,10 @@ blockquote {
   background: #eee;
 }
 
+p {
+  margin: 1.6em 0;
+}
+
 @include media-query(lap-and-up){
   body {
     line-height: 1.6; 

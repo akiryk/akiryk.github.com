@@ -1,17 +1,4 @@
-<section>
-  <header>
-    <div class="title-meta">
-      <span class="author-name">
-        {% if page.author %}
-          {{ page.author }},
-        {% else %}
-          {{ site.author.name }},
-        {% endif %}
-      </span> <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-    </div>
-    <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
-  </header>
-</section>
+{% include custom/dateline %}
 
 <article class="main-content">
   {{ content }}
@@ -27,7 +14,6 @@
 
   {% unless page.tags == empty %}
     <ul class="tag_box inline">
-      Tags
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>

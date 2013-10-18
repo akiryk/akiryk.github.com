@@ -3,6 +3,13 @@
 \*------------------------------------*/
 
 /*
+ * simple way to make the h1 ... h6 font stack
+ */
+@mixin hfamily() {
+    font-family: $headings;
+}
+
+/*
  * Create a css transition with vendor prefixes
  * 
  * Extend the compass mixin but make it easier
@@ -23,32 +30,14 @@
   }
 }
 
-/**
- * Style any number of headings in one fell swoop, e.g.:
- *
-   .foo{
-       @include headings(1, 3){
-           color:#BADA55;
-       }
-    }
- *
- * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
- * @thierrylemoulec for refining and improving my initial mixin.
- */
-@mixin headings($from: 1, $to: 6){
-    %base-heading {
-        @content
-    }
-
-    @if $from >= 1 and $to <= 6{
-        @for $i from $from through $to{
-            h#{$i}{
-                @extend %base-heading;
-            }
-        }
-    }
+/*
+* Apply font styles as per http://css-tricks.com/snippets/css/better-helvetica/
+*/ 
+@mixin sans(){
+  font-family: $sans; 
+    font-weight: 300;
 }
-
+ 
 
 /**
  * Create vendor-prefixed CSS in one go, e.g.

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Readable Body Text
-teaser: Are you a web designer/developer who's comfortable in the command line and wants to create a new site using Jekyll? Read on. 
+teaser: I just made a new personal website and blog. Here's my design and development process. Are you interested? Cool. Because that's how we roll, or at least how I roll. I roll with a lot of process and text and lorem ipsum dolor sit amet.
 category : blog
-tags : [development, jekyll, cms]
+tags : [process, design, jekyll, typography, development]
 ---
 
 <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
