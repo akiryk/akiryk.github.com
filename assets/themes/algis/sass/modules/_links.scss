@@ -26,3 +26,12 @@ a {
     color: $blue;
   }
 }
+
+.post-tags {
+  .tag {
+    border: 1px solid #ccc;
+    font-family: $sans;
+    font-size: getEms(14);
+    padding: .5em 1em;
+  }  
+}

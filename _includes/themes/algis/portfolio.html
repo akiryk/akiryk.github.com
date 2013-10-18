@@ -5,26 +5,13 @@
 </section>
 
 <article class="main-content">
-  {{ page.date | date_to_long_string }}
 
   {{ content }}
 
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      Categories
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}  
+</article>
 
-  {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      Tags
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
-
+  {% include custom/tag_buttons %}
+ 
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -41,6 +28,3 @@
       </ul>
     </div>
     <hr>
-    {% include JB/comments %}
-
-</section>

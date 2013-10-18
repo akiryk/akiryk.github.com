@@ -1484,15 +1484,16 @@ img {
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   font-weight: bold;
   font-size: 1.618em;
+  margin: 0.98888em 0;
 }
 
-/* line 15, ../sass/modules/_posttypography.scss */
+/* line 16, ../sass/modules/_posttypography.scss */
 .intro {
   font-style: italic;
 }
 
-/* line 19, ../sass/modules/_posttypography.scss */
-.post-title-meta, .agg-title-meta {
+/* line 20, ../sass/modules/_posttypography.scss */
+.post-title-meta, .agg-title-meta, .footer-text {
   color: #aaa;
   letter-spacing: 1px;
   font-size: 0.7em;
@@ -1500,35 +1501,36 @@ img {
   font-weight: 300;
 }
 
-/* line 26, ../sass/modules/_posttypography.scss */
+/* line 27, ../sass/modules/_posttypography.scss */
 .post-title-meta {
   margin-bottom: -0.7em;
 }
 
-/* line 31, ../sass/modules/_posttypography.scss */
+/* line 32, ../sass/modules/_posttypography.scss */
 .agg-title-meta {
   clear: both;
   display: block;
   line-height: 2.57143em;
 }
 
-/* line 39, ../sass/modules/_posttypography.scss */
+/* line 40, ../sass/modules/_posttypography.scss */
 .post-date {
   color: #333;
 }
 
-/* line 43, ../sass/modules/_posttypography.scss */
+/* line 44, ../sass/modules/_posttypography.scss */
 .slug {
   letter-spacing: 1px;
+  margin: 0;
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
-/* line 47, ../sass/modules/_posttypography.scss */
+/* line 50, ../sass/modules/_posttypography.scss */
 .slug a {
   color: #999;
 }
 
-/* line 52, ../sass/modules/_posttypography.scss */
+/* line 55, ../sass/modules/_posttypography.scss */
 .introduction {
   margin-bottom: 3em;
 }
@@ -1553,23 +1555,24 @@ ul.posts {
 }
 
 /* line 21, ../sass/modules/_lists.scss */
-.inline {
+.agg-tags {
   display: inline;
   padding: 0;
 }
 
 /* line 26, ../sass/modules/_lists.scss */
-.agg-page-tags {
-  float: left;
-  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
-  list-style: none;
-  margin-right: -15em;
-  width: 13em;
+.inline {
+  display: inline;
 }
-/* line 33, ../sass/modules/_lists.scss */
-.agg-page-tags > li {
-  font-size: 0.7em;
-  line-height: 6px;
+
+/* line 30, ../sass/modules/_lists.scss */
+.post-tags {
+  margin-left: -0.5em;
+  padding: 0;
+}
+/* line 34, ../sass/modules/_lists.scss */
+.post-tags .inline {
+  padding-left: .5em;
 }
 
 /**
@@ -1604,6 +1607,14 @@ a {
   color: #1b60a7;
 }
 
+/* line 31, ../sass/modules/_links.scss */
+.post-tags .tag {
+  border: 1px solid #ccc;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 0.7em;
+  padding: .5em 1em;
+}
+
 /**
  * Video embeds
  *
@@ -1624,10 +1635,6 @@ a {
   margin: 1.6em 0;
   padding: 1em;
 }
-/* line 11, ../sass/modules/_island.scss */
-.island > .slug, .portfolio-item > .slug {
-  margin: 0;
-}
 
 /**
  * Porfolio
@@ -1645,4 +1652,22 @@ a {
 .slug + h2,
 .slug + h3 {
   margin-top: 0;
+}
+
+/* 
+ * Footer
+ *
+ */
+/* line 6, ../sass/modules/_footer.scss */
+footer {
+  border-top: 1px solid #ccc;
+  margin: 4em 2em auto 2em;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@media only screen and (min-width: 80em) {
+  /* line 17, ../sass/modules/_footer.scss */
+  footer {
+    margin-left: 17em;
+  }
 }

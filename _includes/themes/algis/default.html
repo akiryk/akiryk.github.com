@@ -49,10 +49,7 @@
         {{ content }}
     </section>
 
-    <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
-    </footer>
-
+    {% include custom/footer %}
    
     <script src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
     <script>
