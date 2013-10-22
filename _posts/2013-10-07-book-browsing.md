@@ -40,7 +40,7 @@ Imagine there's a new digital bookseller in town, and they want to provide a bet
 
 The first thing I'd do is examine what it's like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes & Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?
 
-<div class="large-pic">
+<div class="offset-pic">
   <img src="{{ site.url }}/assets/images/random/flowers.jpg" title="Flowers Image">
   <div class="caption">Look at this wonderful photograph of flowers. It was taken on a day in June, 2013, walking around Cambridge, nothing fance. Just trying out a 35mm Nikon lens.</div>
 </div>

@@ -4,7 +4,7 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2013-10-18T16:59:03+02:00</updated>
+ <updated>2013-10-19T08:04:16+02:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
@@ -18,6 +18,11 @@
    <updated>2013-10-12T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/blog/2013/10/12/readable-body-text</id>
    <content type="html">&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:&lt;/p&gt;
+
+&lt;div class=&quot;large-pic&quot;&gt;
+  &lt;img src=&quot;/assets/images/aldus/aldus-codex-1000.jpg&quot; title=&quot;Hypnerotomachia Poliphili&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;A spread from &lt;em&gt;Hypnerotomachia Poliphili&lt;/em&gt;, a book designed by Aldus Manutius in the 15th century; it's famous for it's typographical beauty and lasting influence. &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins&lt;/p&gt;
 
@@ -115,7 +120,7 @@ etc.&lt;/p&gt;
 
 &lt;p&gt;The first thing I&amp;#39;d do is examine what it&amp;#39;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
 
-&lt;div class=&quot;large-pic&quot;&gt;
+&lt;div class=&quot;offset-pic&quot;&gt;
   &lt;img src=&quot;/assets/images/random/flowers.jpg&quot; title=&quot;Flowers Image&quot;&gt;
   &lt;div class=&quot;caption&quot;&gt;Look at this wonderful photograph of flowers. It was taken on a day in June, 2013, walking around Cambridge, nothing fance. Just trying out a 35mm Nikon lens.&lt;/div&gt;
 &lt;/div&gt;

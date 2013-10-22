@@ -645,16 +645,27 @@ p {
 }
 @media only screen and (min-width: 64em) {
   /* line 22, ../sass/_layout.scss */
+  #wrapper {
+    width: 50em;
+    margin: 0 auto;
+  }
+
+  /* line 26, ../sass/_layout.scss */
   .content-wrapper {
-    margin: 2em auto auto 2em;
+    margin: 2em 0;
     width: 34em;
   }
 }
-@media only screen and (min-width: 80em) {
-  /* line 29, ../sass/_layout.scss */
+@media only screen and (min-width: 82em) {
+  /* line 32, ../sass/_layout.scss */
+  #wrapper {
+    width: auto;
+  }
+
+  /* line 35, ../sass/_layout.scss */
   .content-wrapper {
     width: 34em;
-    margin-left: 17em;
+    margin-left: 16em;
   }
 }
 /* line 1, ../sass/modules/_code.scss */
@@ -1174,13 +1185,13 @@ img {
 @media only screen and (min-width: 64em) {
   /* line 29, ../sass/modules/_images.scss */
   .large-pic {
-    width: 49em;
+    width: 48em;
   }
 }
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 82em) {
   /* line 35, ../sass/modules/_images.scss */
   .large-pic {
-    margin-left: -2em;
+    margin-left: -3em;
     width: 51em;
   }
   /* line 39, ../sass/modules/_images.scss */
@@ -1191,9 +1202,10 @@ img {
   /* line 44, ../sass/modules/_images.scss */
   .offset-pic {
     float: left;
-    margin-left: -8.5em;
+    margin-left: -8em;
     margin-right: 2em;
-    width: 19em;
+    margin-top: .5em;
+    width: 17em;
   }
 }
 /**
@@ -1227,7 +1239,7 @@ img {
   /* line 30, ../sass/modules/_marginalia.scss */
   .marginator {
     margin-top: -1em;
-    width: 49em;
+    width: 50em;
   }
   /* line 35, ../sass/modules/_marginalia.scss */
   .marginator > p {
@@ -1248,8 +1260,8 @@ img {
   .marginalia {
     background-color: white;
     float: left;
-    margin: 24px 0 19px 2em;
-    width: 13em;
+    margin: 0.6em 0 0 2em;
+    width: 14em;
   }
   /* line 57, ../sass/modules/_marginalia.scss */
   .marginalia p {
@@ -1392,45 +1404,63 @@ img {
   /* line 120, ../sass/modules/_masthead.scss */
   .masthead {
     margin: 0 2em;
-    max-width: 49em;
+    max-width: 48em;
     position: relative;
     width: auto;
   }
 }
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 64em) {
   /* line 130, ../sass/modules/_masthead.scss */
+  .logo-wrapper {
+    margin-right: 2em;
+  }
+
+  /* line 133, ../sass/modules/_masthead.scss */
+  .masthead {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 82em) {
+  /* line 140, ../sass/modules/_masthead.scss */
   #menu {
     position: static;
   }
 
-  /* line 134, ../sass/modules/_masthead.scss */
+  /* line 144, ../sass/modules/_masthead.scss */
   .masthead {
     background-color: white;
     margin: 0;
     position: absolute;
     top: 4em;
     left: 2em;
-    width: 13em;
+    width: 12em;
   }
 
-  /* line 143, ../sass/modules/_masthead.scss */
+  /* line 153, ../sass/modules/_masthead.scss */
+  .logo-wrapper {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* line 158, ../sass/modules/_masthead.scss */
   .logo {
     display: block;
     float: none;
   }
 
-  /* line 149, ../sass/modules/_masthead.scss */
+  /* line 164, ../sass/modules/_masthead.scss */
   .primary-nav {
     list-style: none;
     margin-left: 0;
     margin-top: 1em;
   }
-  /* line 154, ../sass/modules/_masthead.scss */
+  /* line 169, ../sass/modules/_masthead.scss */
   .primary-nav > li {
     display: list-item;
     padding-bottom: 1em;
   }
-  /* line 157, ../sass/modules/_masthead.scss */
+  /* line 172, ../sass/modules/_masthead.scss */
   .primary-nav > li > a {
     display: block;
   }
@@ -1665,9 +1695,9 @@ footer {
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 82em) {
   /* line 17, ../sass/modules/_footer.scss */
   footer {
-    margin-left: 17em;
+    margin-left: 16em;
   }
 }

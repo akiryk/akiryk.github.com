@@ -19,13 +19,19 @@
 }
 
 @include media-query(desk){
+  #wrapper {
+    width: 50em;
+    margin: 0 auto;
+  }
   .content-wrapper {
-    margin: 2em auto auto $gutter;
+    margin: 2em 0;
     width: $content-width;
   }
 }
 @include media-query(desk-wide) {
-
+  #wrapper {
+    width: auto;
+  }
   .content-wrapper {
     width: $content-width;
     margin-left: $column-width + $gutter;

@@ -29,7 +29,7 @@
 @include media-query(desk) {
   .marginator {
     margin-top: -1em;
-    width: $content-width + $column-width;
+    width: $content-width + $column-width + $gutter;
 
     // handle all p's inside this class
     & > p {
@@ -52,8 +52,8 @@
   .marginalia {
     background-color: white;
     float: left;
-    margin: 24px 0 19px $gutter;
-    width: $column-width - $gutter; // 260px
+    margin: getEms(12) 0 0 $gutter;
+    width: $column-width; // 260px
     p {
       font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
       font-size: ($marginaliaSize/$base-font-size) + em;

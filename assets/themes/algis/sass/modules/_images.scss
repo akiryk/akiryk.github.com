@@ -33,8 +33,8 @@
 
 @include media-query(desk-wide) {
   .large-pic {
-    margin-left: -$gutter;
-    width: $content-width + $column-width + $gutter;
+    margin-left: -3em;
+    width: $content-width + $column-width + 3em;
 
     .caption {
       padding-left: getEms( 2*$base-font-size, $caption-size);
@@ -43,9 +43,10 @@
 
   .offset-pic {
     float: left;
-    margin-left: -($content-width / 4);
+    margin-left: -8em;
     margin-right: $gutter;
-    width: ($gutter) + ($content-width / 2);
+    margin-top: .5em;
+    width: 17em;
   }
 
 }
