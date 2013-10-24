@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <title>How I did it</title>
@@ -30,23 +30,26 @@
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
   <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-  <!-- typekit fonts -->
   <script type="text/javascript">
+    //typekit fonts
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 3000
+      scriptTimeout: 2000
     };
-    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
+
+    // picturefill polyfill
+    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
   </script>
 
 
   </head>
   <body>
-    <div id="wrapper">
+    <div id="wrapper-all">
 
-    <header class="masthead cf">
+      <header class="masthead cf">
   <div class="logo-wrapper">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
@@ -80,24 +83,24 @@
 </nav>
 </header>
 
-    <section id="main" class="content-wrapper">
+      <div id="main" class="content-outer">
         
-<header>
-  <div class="post-title-meta">
-    <span class="post-date">October 12, 2013</span> <span class="divider"> / </span>
-    <span class="by">by</span>
-    <span class="author-name">
-      
-        Adam Kiryk
-      
-    </span> 
-  </div>
-  <h1>How I did it </h1>
-</header>
+<article>
  
+    <div class="content-inner">
+  
+    <div class="post-title-meta">
+  <span class="post-date">October 12, 2013</span> <span class="divider"> / </span>
+  <span class="by">by</span>
+  <span class="author-name">
+    
+      Adam Kiryk
+    
+  </span> 
+</div>
+<h1><span class="backgrounded">How I did it </span></h1>
 
-<article class="main-content">
-  <p>I grew frustrated with Wordpress because load times seemed too slow for my liking. I could live with it in the US but experienced it in Africa and parts of Europe. No good. So decdied to work with a static site generator tool, Jekyll.</p>
+    <p>I grew frustrated with Wordpress because load times seemed too slow for my liking. I could live with it in the US but experienced it in Africa and parts of Europe. No good. So decdied to work with a static site generator tool, Jekyll.</p>
 
 <p>Here&#39;s the process I used. I started by creating loose mockups for my home page and post pages. I didn&#39;t mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work. </p>
 
@@ -107,11 +110,12 @@ etc.</p>
 
 <p>Then I put in some content and n</p>
 
+  </div>
 </article>
-<section>
-  
+
   <!--    -->
 
+<section class="content-inner">
   
   <h6 class="slug">This post tagged:</h6>
   <ul class="post-tags inline">
@@ -144,18 +148,21 @@ etc.</p>
   
 
     <div class="pagination">
-      <ul>
       
-        <li class="prev"><a href="/blog/2013/10/11/jekyll-portfolio-blog" title="Making a Blog/Portfolio Site with Jekyll">&larr; Previous</a></li>
+        <a href="/blog/2013/10/11/jekyll-portfolio-blog" title="Making a Blog/Portfolio Site with Jekyll">
+          <h2 class="blog-heading">Making a Blog/Portfolio Site with Jekyll</h2>
+        </a>
+        <p class="teaser"> Are you a web designer/developer who's comfortable in the command line and wants to create a new site using Jekyll? Read on.</p>
       
-        <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/blog/2013/10/12/readable-body-text" title="Readable Body Text">Next &rarr;</a></li>
+        <a href="/blog/2013/10/12/readable-body-text" title="Readable Body Text">
+          <h2 class="blog-heading">Readable Body Text</h2>
+        </a>
+        <p class="teaser"> I just made a new personal website and blog. Here's my design and development process. Are you interested? Cool. Because that's how we roll, or at least how I roll. I roll with a lot of process and text and lorem ipsum dolor sit amet.</p>
       
       </ul>
     </div>
-    <hr>
-    
+    <!-- 
 
 
   <div id="disqus_thread"></div>
@@ -175,28 +182,19 @@ etc.</p>
 
 
 
-
+ -->
 </section>
 
 
-    </section>
+      </div>
 
-    <footer>
+      <footer>
   <p class="footer-text">&copy; 2013 Adam Kiryk</p>
 </footer>
 
 
   </div><!-- #wrapper -->
    
-    <script src="/assets/themes/algis/js/jquery.min.js"></script>
-    <script>
-      // $(function(){
-        // $('#toggle').click(function(){
-        //   $('#menu').toggleClass("expanded");
-        // });
-     // });
-    </script>
-
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
@@ -214,7 +212,7 @@ etc.</p>
       })();
     </script>
 
-    
+    <!--  -->
   </body>
 </html>
 

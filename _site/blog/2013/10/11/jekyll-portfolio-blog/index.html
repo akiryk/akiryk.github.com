@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <title>Making a Blog/Portfolio Site with Jekyll</title>
@@ -30,23 +30,26 @@
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
   <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-  <!-- typekit fonts -->
   <script type="text/javascript">
+    //typekit fonts
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 3000
+      scriptTimeout: 2000
     };
-    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
+
+    // picturefill polyfill
+    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
   </script>
 
 
   </head>
   <body>
-    <div id="wrapper">
+    <div id="wrapper-all">
 
-    <header class="masthead cf">
+      <header class="masthead cf">
   <div class="logo-wrapper">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
@@ -80,24 +83,24 @@
 </nav>
 </header>
 
-    <section id="main" class="content-wrapper">
+      <div id="main" class="content-outer">
         
-<header>
-  <div class="post-title-meta">
-    <span class="post-date">October 11, 2013</span> <span class="divider"> / </span>
-    <span class="by">by</span>
-    <span class="author-name">
-      
-        Adam Kiryk
-      
-    </span> 
-  </div>
-  <h1>Making a Blog/Portfolio Site with Jekyll </h1>
-</header>
+<article>
  
+    <div class="content-inner">
+  
+    <div class="post-title-meta">
+  <span class="post-date">October 11, 2013</span> <span class="divider"> / </span>
+  <span class="by">by</span>
+  <span class="author-name">
+    
+      Adam Kiryk
+    
+  </span> 
+</div>
+<h1><span class="backgrounded">Making a Blog/Portfolio Site with Jekyll </span></h1>
 
-<article class="main-content">
-  <style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+    <style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
 
 <div class="bt-video-container" style="position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden"><iframe width="480" height="360" src="http://www.youtube.com/embed/B4g4zTF5lDo?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
@@ -119,11 +122,12 @@
 
 <p>Handling plugins. </p>
 
+  </div>
 </article>
-<section>
-  
+
   <!--    -->
 
+<section class="content-inner">
   
   <h6 class="slug">This post tagged:</h6>
   <ul class="post-tags inline">
@@ -152,18 +156,21 @@
   
 
     <div class="pagination">
-      <ul>
       
-        <li class="prev"><a href="/blog/2013/10/07/book-browsing" title="Better Book Browsing Online">&larr; Previous</a></li>
+        <a href="/blog/2013/10/07/book-browsing" title="Better Book Browsing Online">
+          <h2 class="blog-heading">Better Book Browsing Online</h2>
+        </a>
+        <p class="teaser"> A Readers' Cry for a Better Digital Book Browsing User Experience.</p>
       
-        <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/blog/2013/10/12/personal-site-process" title="How I did it">Next &rarr;</a></li>
+        <a href="/blog/2013/10/12/personal-site-process" title="How I did it">
+          <h2 class="blog-heading">How I did it</h2>
+        </a>
+        <p class="teaser"> I just made a new personal website and blog. Here's my design and development process.</p>
       
       </ul>
     </div>
-    <hr>
-    
+    <!-- 
 
 
   <div id="disqus_thread"></div>
@@ -183,28 +190,19 @@
 
 
 
-
+ -->
 </section>
 
 
-    </section>
+      </div>
 
-    <footer>
+      <footer>
   <p class="footer-text">&copy; 2013 Adam Kiryk</p>
 </footer>
 
 
   </div><!-- #wrapper -->
    
-    <script src="/assets/themes/algis/js/jquery.min.js"></script>
-    <script>
-      // $(function(){
-        // $('#toggle').click(function(){
-        //   $('#menu').toggleClass("expanded");
-        // });
-     // });
-    </script>
-
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
@@ -222,7 +220,7 @@
       })();
     </script>
 
-    
+    <!--  -->
   </body>
 </html>
 

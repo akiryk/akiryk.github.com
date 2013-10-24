@@ -4,8 +4,13 @@
  *
  */
 
-.large-pic {
+.pic-hero {
+  position: relative;
   width: 100%;
+
+  img {
+    display: block;
+  }
 }
 
 .no-resize {
@@ -13,40 +18,76 @@
 }
 
 .caption {
-  font-family: $sans;
-  font-size: getEms($caption-size);
+  @include sans-alt();
+  font-size: getEms($caption-size) * 1em;
   color: $light-text;
   max-width: 48em;
 }
 
-@include media-query(lap) {
-  .large-pic {
+.pic-hero .caption {
+  display: none;
+}
+
+@include media-query(palm) {
+  .pic-hero {
+    margin: 1.6em auto;
+  }
+}
+
+@include media-query(lap-and-up) {
+  .pic-large {
     width: 100%;
+  }
+
+  .pic-hero {
+    width: 51em;
+    z-index: -1;
   }
 }
 
 @include media-query(desk) {
-  .large-pic {
-    width: $content-width + $column-width;
+  .pic-large,
+  .pic-hero  {
+    width: $content-width + $column-width + $gutter-width + em;
+  }
+
+  .pic-large {
+    margin-left: -($content-wrapper-width - $content-width) / 2 + em; 
+    // e.g (47-32)/2 = 7.5em;
+    // Do this funny math so that image is centered, equally offset on both margins.
+  }
+
+  .pic-outset {
+    float: left;
+    margin-left: -7.5em;
+    margin-right: $gutter-width + em;
+    margin-top: .5em;
+    width: ($content-width / 2) + $gutter-width + em; // half of content width plus room for gutter
   }
 }
 
 @include media-query(desk-wide) {
-  .large-pic {
-    margin-left: -3em;
-    width: $content-width + $column-width + 3em;
-
+  .pic-large {
+    margin-left: 0;
+    width: $content-width + $column-width + (3*$gutter-width) + em;
     .caption {
       padding-left: getEms( 2*$base-font-size, $caption-size);
     }
   }
 
-  .offset-pic {
-    float: left;
+  .pic-hero {
+    left: -$gutter-width + em;
+    width: $content-width + $column-width + (3*$gutter-width) + em; // 51em or 1020px
+
+    .caption {
+      bottom: auto;
+      top: auto;
+    }
+
+  }
+
+  .pic-outset {
     margin-left: -8em;
-    margin-right: $gutter;
-    margin-top: .5em;
-    width: 17em;
   }
 
 }

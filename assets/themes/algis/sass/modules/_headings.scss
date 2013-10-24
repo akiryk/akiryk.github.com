@@ -23,8 +23,8 @@
     .#{nth($headings-classes, $i)}  // this will be .alpha through zeta
     {  
       color: $normal-color;
-      font-size: getEms(nth($sizelist, $i)); // see _functions.scss
-      margin: getEms($base-line-height, nth($sizelist, $i)) 0;
+      font-size: getEms(nth($sizelist, $i)) * 1em; // see _functions.scss
+      margin: getEms($base-line-height, nth($sizelist, $i)) * 1em 0;
       @if ($i<5) {
         @if ($i == 1) {
           line-height: 1.2;
@@ -46,11 +46,24 @@
   }
 
   .blog-heading {
-    font-size: getEms(30);
+    font-size: getEms(30) * 1em;
     a {
       color: #333;
     }
-    margin-bottom: getEms(6, 30);
+    margin-bottom: getEms(6, 30) * 1em;
+  }
+
+  .backgrounded {
+    @include transition(all);
+    background-color: #ccc;
+    color: #ccc;
+  }
+
+  .wf-inactive {
+    .backgrounded {
+      background-color: transparent;
+      color: #333;
+    }
   }
 }
 

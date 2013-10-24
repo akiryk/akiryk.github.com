@@ -4,6 +4,10 @@
  * 
  */
 
+img {
+  font-style: italic;
+}
+
 // paragraphs 
 
  .callout {
@@ -31,7 +35,6 @@
 
 .agg-title-meta {
   @extend %meta;
-  clear: both;
   display: block;
   line-height: getEms(36, 14);
 }
@@ -57,5 +60,5 @@
 }
 
 .teaser {
-
+  margin-top: .5em;
 }

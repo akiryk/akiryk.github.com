@@ -5,35 +5,75 @@
  * 
  */
 
-.content-wrapper {
-  margin: 2em auto;
+#wrapper-all {
+  @include vendor(box-sizing, border-box);
+  max-width: $content-wrapper-width + em; 
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-outer {
+  @include vendor(box-sizing, border-box);
+  margin: 1em auto;
+  position: relative;
   width: 90%;
 }
 
+.content-inner {
+  // no box-sizing; doesn't seem necessary
+  margin: 0 auto;
+  max-width: $content-width + em;
+}
+
 @include media-query(lap) {
-  .content-wrapper {
+  .content-outer {
+    overflow: hidden;
     margin: 2em auto;
-    max-width: $content-width;
-    width: 75%;
+  }
+}
+
+@include media-query(lap-and-up) {
+
+  .content-inner,
+  .content-inner--hero {
+    background-color: white;
+    padding-top: $gutter-width + em;
+    padding-right: $gutter-width + em;
+    padding-left: $gutter-width + em;
+    width: $content-width + em;
+
+    > p {
+      &:nth-of-type(1) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .content-inner--hero {
+    margin-top: -8em;
   }
 }
 
 @include media-query(desk){
-  #wrapper {
-    width: 50em;
-    margin: 0 auto;
+
+  .content-outer {
+    margin-top: 0;
+    width: 100%;
   }
-  .content-wrapper {
-    margin: 2em 0;
-    width: $content-width;
-  }
+
 }
 @include media-query(desk-wide) {
-  #wrapper {
-    width: auto;
+  #wrapper-all {
+    max-width: $widest-width+em;
   }
-  .content-wrapper {
-    width: $content-width;
-    margin-left: $column-width + $gutter;
+ 
+  .content-outer {
+     margin-left: $column-width + em;
+  }
+
+  .content-inner {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

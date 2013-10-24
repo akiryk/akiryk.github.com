@@ -2,14 +2,17 @@
 layout: post
 title: Better Book Browsing Online
 teaser: A Readers' Cry for a Better Digital Book Browsing User Experience.
+hero: random/tintin.jpg
 category : blog
 tags : [ux, design, making-stuff-better]
 ---
 
-*Synopsis:* Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. 
-  
 
-##To Begin With, We Make A Comparison With Jonas Avimbi:
+*Synopsis:* Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like.  
+
+<div class="pic-outset">
+  <h2>To Begin With, We Make A Comparison With Jonas Avimbi:</h2>
+</div>
 
 I'm not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I'm talking about the experience of looking for something you don't know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It's an experience that's been notably absent from the world of digital book-shopping. 
 
@@ -22,13 +25,20 @@ I'm not talking about the process of finding and buying a book online. Simply fi
     </p></div>
 </div>
 
-
 As more and more people purchase and read digital books, it's critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what's left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. 
 
 Perhaps you disagree. Perhaps you think digital book-browsing is just fine as is. (An aside: let me try to think of a less awful and cumbersome term than 'digital book-browsing.' e-Book shopping? Browsing for books in the digital space? Ugh. Forget it. From now on, when I say 'browsing,' I mean browsing for books either online or in an app. If I want to talk about browsing in the real world, I'll be explicit about it). 
 
-<div class="large-pic">
-  <img src="{{ site.url }}/assets/images/random/flowers.jpg" title="Flowers Image">
+<div class="pic-large">
+  <span data-picture data-alt="Photograph of flowers">
+  <span data-src="/assets/images/random/flowers-small.jpg"></span>
+  <span data-src="/assets/images/random/flowers-large.jpg" data-media="(min-width: 880px)"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/random/flowers-small.jpg">
+  </noscript>
+  </span>
+<div class="caption">This is a caption. Live with it.</div>
 </div>
 
 Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and browse through listings like these (see example from the iBook store)? It isn't, I don't think. It's repetitive. Nothing stands out (except for the orange buy buttons). Everything is presented as equally important. You have to squint to see the artwork. It feels less like browsing and more like research, or worse, data-entry. 
@@ -40,10 +50,20 @@ Imagine there's a new digital bookseller in town, and they want to provide a bet
 
 The first thing I'd do is examine what it's like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes & Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?
 
-<div class="offset-pic">
-  <img src="{{ site.url }}/assets/images/random/flowers.jpg" title="Flowers Image">
-  <div class="caption">Look at this wonderful photograph of flowers. It was taken on a day in June, 2013, walking around Cambridge, nothing fance. Just trying out a 35mm Nikon lens.</div>
+<div class="pic-outset">
+ 
+  <span data-picture data-alt="This is a nice image, outset at large screen sizes, small at small.">
+    <span data-src="/assets/images/random/flowers-small.jpg"></span>
+    <span data-src="/assets/images/random/flowers-outset.jpg" data-media="(min-width: 880px)"></span>
+
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="external/imgs/small-flowers.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+  </noscript>
+  </span>
+<div class="caption">This is a caption. Live with it.</div>
 </div>
+
 Here's a thought — they do it because it's pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop's barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn't replicate those things very easily in a digital experience. You wouldn't want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure). 
 
 You could take inspiration from those things, perhaps. I believe you should seek inspiration from any and all of the good things about real-world browsing. Let's look at some of them, briefly, and decide what could be useful and what could be discarded.

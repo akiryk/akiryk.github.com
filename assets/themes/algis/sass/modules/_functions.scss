@@ -4,5 +4,14 @@
  */
 
 @function getEms( $size: $base-font-size, $context: $base-font-size){
-   @return ($size / $context) + em;
+   @return ($size * 1em) / ($context * 1em);
+}
+
+/*
+ * @return ems based on font-size of 16px
+ * Useful for handling media queries, which ignore style sheet font size settings
+ */
+@function getNormlizedEms( $n: $base-font-size ){
+  $px: $n * $base-font-size;
+  @return getEms($px, 16);
 }
