@@ -5,19 +5,19 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-10-19T08:04:16+02:00</lastBuildDate>
-        <pubDate>2013-10-19T08:04:16+02:00</pubDate>
+        <lastBuildDate>2013-10-24T08:41:16+02:00</lastBuildDate>
+        <pubDate>2013-10-24T08:41:16+02:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Readable Body Text</title>
-                <description>&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:&lt;/p&gt;
-
-&lt;div class=&quot;large-pic&quot;&gt;
-  &lt;img src=&quot;/assets/images/aldus/aldus-codex-1000.jpg&quot; title=&quot;Hypnerotomachia Poliphili&quot;&gt;
+                <description>&lt;div class=&quot;pic-hero&quot;&gt;
+    &lt;img src=&quot;/assets/images/aldus/aldus-codex-hero.jpg&quot; title=&quot;Hypnerotomachia Poliphili&quot;&gt;
   &lt;div class=&quot;caption&quot;&gt;A spread from &lt;em&gt;Hypnerotomachia Poliphili&lt;/em&gt;, a book designed by Aldus Manutius in the 15th century; it's famous for it's typographical beauty and lasting influence. &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:&lt;/p&gt;
 
 &lt;p&gt;Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins&lt;/p&gt;
 
@@ -82,9 +82,15 @@ etc.&lt;/p&gt;
 
         <item>
                 <title>Better Book Browsing Online</title>
-                <description>&lt;p&gt;&lt;em&gt;Synopsis:&lt;/em&gt; Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like. &lt;/p&gt;
+                <description>&lt;div class=&quot;pic-hero&quot;&gt;
+  &lt;img src=&quot;/assets/images/random/tintin.jpg&quot; title=&quot;Flowers Image&quot;&gt;
+&lt;/div&gt;
 
-&lt;h2&gt;To Begin With, We Make A Comparison With Jonas Avimbi:&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Synopsis:&lt;/em&gt; Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like.  &lt;/p&gt;
+
+&lt;div class=&quot;pic-outset&quot;&gt;
+  &lt;h2&gt;To Begin With, We Make A Comparison With Jonas Avimbi:&lt;/h2&gt;
+&lt;/div&gt;
 
 &lt;p&gt;I&amp;#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#39;m talking about the experience of looking for something you don&amp;#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#39;s an experience that&amp;#39;s been notably absent from the world of digital book-shopping. &lt;/p&gt;
 
@@ -115,7 +121,7 @@ etc.&lt;/p&gt;
 
 &lt;p&gt;The first thing I&amp;#39;d do is examine what it&amp;#39;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
 
-&lt;div class=&quot;offset-pic&quot;&gt;
+&lt;div class=&quot;pic-outset&quot;&gt;
   &lt;img src=&quot;/assets/images/random/flowers.jpg&quot; title=&quot;Flowers Image&quot;&gt;
   &lt;div class=&quot;caption&quot;&gt;Look at this wonderful photograph of flowers. It was taken on a day in June, 2013, walking around Cambridge, nothing fance. Just trying out a 35mm Nikon lens.&lt;/div&gt;
 &lt;/div&gt;

@@ -5,6 +5,7 @@
  */
 
 .masthead {
+  @include vendor(box-sizing, border-box);
   margin: 0 auto;
   width: 90%;
 }
@@ -118,8 +119,7 @@
   }
 
   .masthead {
-    margin: 0 2em;
-    max-width: $content-width + $column-width;
+    max-width: 90%;
     position: relative;
     width: auto;
   }
@@ -127,9 +127,6 @@
 
 
 @include media-query(desk) {
-  .logo-wrapper {
-    margin-right: 2em;
-  }
   .masthead {
     max-width: 100%;
     width: 100%;
@@ -142,17 +139,14 @@
   }
 
   .masthead {
-    background-color: white;
-    margin: 0;
-    position: absolute;
-    top: 4em;
-    left: $gutter;
-    width: $column-width - $gutter;
+    float: left;
+    margin: 4em 0 0 0;
+    width: $column-width + em;
   }
 
   .logo-wrapper {
     border-bottom: none;
-  padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   .logo {

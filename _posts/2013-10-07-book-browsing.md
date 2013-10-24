@@ -2,14 +2,20 @@
 layout: post
 title: Better Book Browsing Online
 teaser: A Readers' Cry for a Better Digital Book Browsing User Experience.
+hero: true;
 category : blog
 tags : [ux, design, making-stuff-better]
 ---
 
-*Synopsis:* Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like. 
-  
+<div class="pic-hero">
+  <img src="{{ site.url }}/assets/images/random/tintin.jpg" title="Flowers Image">
+</div>
 
-##To Begin With, We Make A Comparison With Jonas Avimbi:
+*Synopsis:* Here's a problem I've noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I'll present some mockups of what that improved experience could look like.  
+
+<div class="pic-outset">
+  <h2>To Begin With, We Make A Comparison With Jonas Avimbi:</h2>
+</div>
 
 I'm not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I'm talking about the experience of looking for something you don't know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It's an experience that's been notably absent from the world of digital book-shopping. 
 
@@ -21,7 +27,6 @@ I'm not talking about the process of finding and buying a book online. Simply fi
     <p><span class="margin-heading">An Aside</span> This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
     </p></div>
 </div>
-
 
 As more and more people purchase and read digital books, it's critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what's left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. 
 
@@ -40,7 +45,7 @@ Imagine there's a new digital bookseller in town, and they want to provide a bet
 
 The first thing I'd do is examine what it's like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes & Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?
 
-<div class="offset-pic">
+<div class="pic-outset">
   <img src="{{ site.url }}/assets/images/random/flowers.jpg" title="Flowers Image">
   <div class="caption">Look at this wonderful photograph of flowers. It was taken on a day in June, 2013, walking around Cambridge, nothing fance. Just trying out a 35mm Nikon lens.</div>
 </div>

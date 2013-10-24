@@ -15,6 +15,6 @@
 
 @include media-query(desk-wide){
   footer {
-    margin-left: $column-width + $gutter;
+    margin-left: $column-width + $gutter-width;
  }
 }

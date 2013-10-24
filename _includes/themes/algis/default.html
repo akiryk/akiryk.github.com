@@ -43,26 +43,19 @@
 
   </head>
   <body>
-    <div id="wrapper">
+    <div id="wrapper-all">
 
-    {% include custom/masthead %}
+      {% include custom/masthead %}
 
-    <section id="main" class="content-wrapper">
+      <div id="main" class="content-outer">
         {{ content }}
-    </section>
+      </div>
 
-    {% include custom/footer %}
+      {% include custom/footer %}
 
   </div><!-- #wrapper -->
    
     <script src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
-    <script>
-      // $(function(){
-        // $('#toggle').click(function(){
-        //   $('#menu').toggleClass("expanded");
-        // });
-     // });
-    </script>
 
     <script>
       (function(){

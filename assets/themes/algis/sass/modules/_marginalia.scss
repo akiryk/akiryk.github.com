@@ -29,12 +29,13 @@
 @include media-query(desk) {
   .marginator {
     margin-top: -1em;
-    width: $content-width + $column-width + $gutter;
+    margin-left: -7.5em;
+    width: $content-width + $column-width + $gutter-width + em;
 
     // handle all p's inside this class
     & > p {
       float: left;
-      width: $content-width;
+      width: $content-width + em;
     }
 
     // handle the p following this class
@@ -52,10 +53,10 @@
   .marginalia {
     background-color: white;
     float: left;
-    margin: getEms(12) 0 0 $gutter;
-    width: $column-width; // 260px
+    margin: getEms(12) 0 0 $gutter-width + em;
+    width: $column-width + em; // 260px
     p {
-      font-family: Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      @include sans-alt(); 
       font-size: ($marginaliaSize/$base-font-size) + em;
       font-weight: 300;
       font-style: normal;
@@ -70,6 +71,13 @@
     &:after {
       content: '';
     }
+  }
+
+}
+
+@include media-query(desk-wide) {
+  .marginator {
+    margin-left: 0;
   }
 
 }

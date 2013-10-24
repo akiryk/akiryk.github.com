@@ -4,7 +4,7 @@
  *
  */
 
-.large-pic {
+.pic-hero {
   width: 100%;
 }
 
@@ -13,40 +13,83 @@
 }
 
 .caption {
-  font-family: $sans;
+  @include sans-alt();
   font-size: getEms($caption-size);
   color: $light-text;
   max-width: 48em;
 }
 
+.pic-hero .caption {
+  display: none;
+}
+
 @include media-query(lap) {
-  .large-pic {
+  .pic-large {
     width: 100%;
+  }
+
+  .pic-hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 51em;
+    z-index: -1;
   }
 }
 
 @include media-query(desk) {
-  .large-pic {
-    width: $content-width + $column-width;
+  .pic-large,
+  .pic-hero  {
+    width: $content-width + $column-width + $gutter-width + em;
+  }
+  .pic-hero {
+    position: absolute;
+    left: 0;
+    top: -13em;
+    z-index: -1;
+
+    .caption {
+      background-color: rgba(255,255,255,0.6);
+      color: rgba(0,0,0,0.4);
+      padding: .25em .5em;
+      position: absolute;
+      right: 0;
+      top: 0;
+      // width: ($column-width / 2) + em;
+      width: getEms($column-width*$base-font-size, $caption-size);
+    }
+  }
+
+  .pic-outset {
+    float: left;
+    margin-left: -7.5em;
+    margin-right: $gutter-width + em;
+    margin-top: .5em;
+    width: ($content-width / 2) + $gutter-width + em; // half of content width plus room for gutter
   }
 }
 
 @include media-query(desk-wide) {
-  .large-pic {
-    margin-left: -3em;
-    width: $content-width + $column-width + 3em;
-
+  .pic-large {
+    width: $content-width + $column-width + (3*$gutter-width) + em;
     .caption {
       padding-left: getEms( 2*$base-font-size, $caption-size);
     }
   }
 
-  .offset-pic {
-    float: left;
+  .pic-hero {
+    left: -$gutter-width + em;
+    width: 51em; 
+
+    .caption {
+      bottom: auto;
+      top: auto;
+    }
+
+  }
+
+  .pic-outset {
     margin-left: -8em;
-    margin-right: $gutter;
-    margin-top: .5em;
-    width: 17em;
   }
 
 }

@@ -31,7 +31,6 @@
 
 .agg-title-meta {
   @extend %meta;
-  clear: both;
   display: block;
   line-height: getEms(36, 14);
 }
@@ -56,6 +55,7 @@
   margin-bottom: 3em;
 }
 
-.teaser {
-
+.backgrounded {
+  background-color: #ccc;
+  color: #ccc;
 }

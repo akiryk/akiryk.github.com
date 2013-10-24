@@ -19,11 +19,7 @@ layout: default
     {% else %}
       <li class="blog-item">
     {% endif %}
-      {% if post.hero %}
-        <a href="{{ BASE_PATH }}{{ post.url }}">
-          <img src="{{ site.url }}/assets/images/{{ post.hero }}" title="{{ post.hero-title }}">
-        </a>
-      {% endif %}
+    
       <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ post.url }}" class="plain">{{ post.title }}</a></h2>
       <div class="teaser">{{ post.teaser }}</div>
 

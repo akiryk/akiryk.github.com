@@ -1,13 +1,18 @@
-{% include custom/dateline %}
-
-<article class="main-content">
-  {{ content }}
+<article>
+ {% if page.hero %}
+    <div class="content-inner content-inner--hero">
+  {% else %}
+    <div class="content-inner">
+  {% endif %}
+    {% include custom/title_heading %}
+    {{ content }}
+  </div>
 </article>
-<section>
-  
+
   <!-- {% unless page.categories == empty %}
   {% endunless %}   -->
 
+<section>
   {% include custom/tag_buttons %}
 
     <div class="pagination">

@@ -1,0 +1,12 @@
+<div class="post-title-meta">
+  <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span> <span class="divider"> / </span>
+  <span class="by">by</span>
+  <span class="author-name">
+    {% if page.author %}
+      {{ page.author }}
+    {% else %}
+      {{ site.author.name }}
+    {% endif %}
+  </span> 
+</div>
+<h1><span class="backgrounded">{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</span></h1>

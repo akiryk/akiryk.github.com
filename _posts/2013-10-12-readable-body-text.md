@@ -4,14 +4,15 @@ title: Readable Body Text
 teaser: I just made a new personal website and blog. Here's my design and development process. Are you interested? Cool. Because that's how we roll, or at least how I roll. I roll with a lot of process and text and lorem ipsum dolor sit amet.
 category : blog
 tags : [process, design, jekyll, typography, development]
+hero: true
 ---
 
-<p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
-
-<div class="large-pic">
-  <img src="{{ site.url }}/assets/images/aldus/aldus-codex-1000.jpg" title="Hypnerotomachia Poliphili">
+<div class="pic-hero">
+    <img src="{{ site.url }}/assets/images/aldus/aldus-codex-hero.jpg" title="Hypnerotomachia Poliphili">
   <div class="caption">A spread from <em>Hypnerotomachia Poliphili</em>, a book designed by Aldus Manutius in the 15th century; it's famous for it's typographical beauty and lasting influence. </div>
 </div>
+
+<p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
 
 Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins
 
