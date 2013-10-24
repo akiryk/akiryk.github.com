@@ -2,19 +2,24 @@
 layout: post
 title: Readable Body Text
 teaser: I just made a new personal website and blog. Here's my design and development process. Are you interested? Cool. Because that's how we roll, or at least how I roll. I roll with a lot of process and text and lorem ipsum dolor sit amet.
+hero: aldus/aldus-codex-hero.jpg
 category : blog
 tags : [process, design, jekyll, typography, development]
-hero: true
 ---
-
-<div class="pic-hero">
-    <img src="{{ site.url }}/assets/images/aldus/aldus-codex-hero.jpg" title="Hypnerotomachia Poliphili">
-  <div class="caption">A spread from <em>Hypnerotomachia Poliphili</em>, a book designed by Aldus Manutius in the 15th century; it's famous for it's typographical beauty and lasting influence. </div>
-</div>
 
 <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
 
 Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins
+
+<span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+  <span data-src="/assets/images/random/small.jpg"></span>
+  <span data-src="/assets/images/random/extralarge.jpg" data-media="(min-width: 1000px)"></span>
+
+<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+<noscript>
+  <img src="external/imgs/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+</noscript>
+</span>
 
 Here's a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It's free, fast, and easy to use — plus, hosting is free if you use github pages.
 

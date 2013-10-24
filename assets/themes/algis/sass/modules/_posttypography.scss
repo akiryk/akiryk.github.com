@@ -4,6 +4,10 @@
  * 
  */
 
+img {
+  font-style: italic;
+}
+
 // paragraphs 
 
  .callout {
@@ -55,7 +59,6 @@
   margin-bottom: 3em;
 }
 
-.backgrounded {
-  background-color: #ccc;
-  color: #ccc;
+.teaser {
+  margin-top: .5em;
 }

@@ -21,13 +21,9 @@ layout: default
     {% endif %}
     
       <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ post.url }}" class="plain">{{ post.title }}</a></h2>
-      <div class="teaser">{{ post.teaser }}</div>
+      <p class="teaser">{{ post.teaser }}</p>
 
       <span class="agg-title-meta">{{ post.date | date: "%B %d, %Y" }}</span>
     </li>
   {% endfor %}
 </ul>
-
- <a class="navicon-button x">
-      <div class="navicon"></div>
-    </a>

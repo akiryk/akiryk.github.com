@@ -592,7 +592,7 @@ p {
   margin: 1.6em 0;
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 55em) {
   /* line 36, ../sass/_base.scss */
   body {
     line-height: 1.6;
@@ -614,103 +614,74 @@ p {
   max-width: 47em;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
-/* line 15, ../sass/_layout.scss */
+/* line 16, ../sass/_layout.scss */
 .content-outer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 2em auto;
+  margin: 1em auto;
   position: relative;
   width: 90%;
 }
 
-/* line 22, ../sass/_layout.scss */
+/* line 23, ../sass/_layout.scss */
 .content-inner {
   margin: 0 auto;
+  max-width: 32em;
 }
 
-@media only screen and (min-width: 50em) and (max-width: 63.75em) {
-  /* line 28, ../sass/_layout.scss */
+@media only screen and (min-width: 55em) and (max-width: 63.74em) {
+  /* line 30, ../sass/_layout.scss */
   .content-outer {
     overflow: hidden;
+    margin: 2em auto;
   }
-
-  /* line 32, ../sass/_layout.scss */
+}
+@media only screen and (min-width: 55em) {
+  /* line 39, ../sass/_layout.scss */
   .content-inner,
   .content-inner--hero {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
     background-color: white;
     padding-top: 2em;
     padding-right: 2em;
     padding-left: 2em;
     width: 32em;
   }
-  /* line 41, ../sass/_layout.scss */
+  /* line 47, ../sass/_layout.scss */
   .content-inner > p:nth-of-type(1),
   .content-inner--hero > p:nth-of-type(1) {
     margin-top: 0;
   }
 
-  /* line 47, ../sass/_layout.scss */
+  /* line 53, ../sass/_layout.scss */
   .content-inner--hero {
-    margin-top: 13em;
+    margin-top: -8em;
   }
 }
 @media only screen and (min-width: 63.75em) {
-  /* line 53, ../sass/_layout.scss */
-  #wrapper-all {
-    margin: 0 auto;
-    position: relative;
-  }
-
-  /* line 58, ../sass/_layout.scss */
+  /* line 60, ../sass/_layout.scss */
   .content-outer {
     margin-top: 0;
-    position: relative;
     width: 100%;
-  }
-
-  /* line 65, ../sass/_layout.scss */
-  .content-inner,
-  .content-inner--hero {
-    background-color: white;
-    padding-top: 2em;
-    padding-right: 2em;
-    padding-left: 2em;
-    width: 32em;
-  }
-  /* line 73, ../sass/_layout.scss */
-  .content-inner > p:nth-of-type(1),
-  .content-inner--hero > p:nth-of-type(1) {
-    margin-top: 0;
-  }
-
-  /* line 80, ../sass/_layout.scss */
-  .content-inner--hero {
-    margin-top: 13em;
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 86, ../sass/_layout.scss */
+  /* line 67, ../sass/_layout.scss */
   #wrapper-all {
     max-width: 62em;
-    width: auto;
   }
 
-  /* line 91, ../sass/_layout.scss */
+  /* line 71, ../sass/_layout.scss */
   .content-outer {
     margin-left: 13em;
   }
 
-  /* line 95, ../sass/_layout.scss */
+  /* line 75, ../sass/_layout.scss */
   .content-inner {
     margin-left: 0;
     margin-right: 0;
@@ -1122,7 +1093,7 @@ img {
  *
  * 
  */
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 55em) {
   /*
    * Create all the headings in one fell swoop
    * requires an array for the classnames: alpha, beta, etc
@@ -1200,6 +1171,26 @@ img {
   .blog-heading a {
     color: #333;
   }
+
+  /* line 56, ../sass/modules/_headings.scss */
+  .backgrounded {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    background-color: #ccc;
+    color: #ccc;
+  }
+
+  /* line 63, ../sass/modules/_headings.scss */
+  .wf-inactive .backgrounded {
+    background-color: transparent;
+    color: #333;
+  }
 }
 /**
  * Images.scss
@@ -1208,69 +1199,64 @@ img {
  */
 /* line 7, ../sass/modules/_images.scss */
 .pic-hero {
+  position: relative;
   width: 100%;
 }
-
 /* line 11, ../sass/modules/_images.scss */
+.pic-hero img {
+  display: block;
+}
+
+/* line 16, ../sass/modules/_images.scss */
 .no-resize {
   width: auto;
 }
 
-/* line 15, ../sass/modules/_images.scss */
+/* line 20, ../sass/modules/_images.scss */
 .caption {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   letter-spacing: 1px;
   font-size: 0.7em;
   color: #666666;
   max-width: 48em;
 }
 
-/* line 22, ../sass/modules/_images.scss */
+/* line 27, ../sass/modules/_images.scss */
 .pic-hero .caption {
   display: none;
 }
 
-@media only screen and (min-width: 50em) and (max-width: 63.75em) {
-  /* line 27, ../sass/modules/_images.scss */
+@media only screen and (max-width: 54.99em) {
+  /* line 32, ../sass/modules/_images.scss */
+  .pic-hero {
+    margin: 1.6em auto;
+  }
+}
+@media only screen and (min-width: 55em) {
+  /* line 38, ../sass/modules/_images.scss */
   .pic-large {
     width: 100%;
   }
 
-  /* line 31, ../sass/modules/_images.scss */
+  /* line 42, ../sass/modules/_images.scss */
   .pic-hero {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 51em;
     z-index: -1;
   }
 }
 @media only screen and (min-width: 63.75em) {
-  /* line 42, ../sass/modules/_images.scss */
+  /* line 50, ../sass/modules/_images.scss */
   .pic-large,
   .pic-hero {
     width: 47em;
   }
 
-  /* line 45, ../sass/modules/_images.scss */
-  .pic-hero {
-    position: absolute;
-    left: 0;
-    top: -13em;
-    z-index: -1;
-  }
-  /* line 51, ../sass/modules/_images.scss */
-  .pic-hero .caption {
-    background-color: rgba(255, 255, 255, 0.6);
-    color: rgba(0, 0, 0, 0.4);
-    padding: .25em .5em;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 18.57143em;
+  /* line 54, ../sass/modules/_images.scss */
+  .pic-large {
+    margin-left: -7.5em;
   }
 
-  /* line 63, ../sass/modules/_images.scss */
+  /* line 60, ../sass/modules/_images.scss */
   .pic-outset {
     float: left;
     margin-left: -7.5em;
@@ -1280,27 +1266,28 @@ img {
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 73, ../sass/modules/_images.scss */
+  /* line 70, ../sass/modules/_images.scss */
   .pic-large {
+    margin-left: 0;
     width: 51em;
   }
-  /* line 75, ../sass/modules/_images.scss */
+  /* line 73, ../sass/modules/_images.scss */
   .pic-large .caption {
-    padding-left: 2.85714em;
+    padding-left: 2.85714;
   }
 
-  /* line 80, ../sass/modules/_images.scss */
+  /* line 78, ../sass/modules/_images.scss */
   .pic-hero {
     left: -2em;
     width: 51em;
   }
-  /* line 84, ../sass/modules/_images.scss */
+  /* line 82, ../sass/modules/_images.scss */
   .pic-hero .caption {
     bottom: auto;
     top: auto;
   }
 
-  /* line 91, ../sass/modules/_images.scss */
+  /* line 89, ../sass/modules/_images.scss */
   .pic-outset {
     margin-left: -8em;
   }
@@ -1363,7 +1350,7 @@ img {
   }
   /* line 58, ../sass/modules/_marginalia.scss */
   .marginalia p {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
     letter-spacing: 1px;
     font-size: 0.7em;
     font-weight: 300;
@@ -1373,14 +1360,15 @@ img {
   .marginalia .margin-heading {
     color: #d52800;
     display: block;
+    font-weight: 500;
   }
-  /* line 71, ../sass/modules/_marginalia.scss */
+  /* line 72, ../sass/modules/_marginalia.scss */
   .marginalia:before, .marginalia:after {
     content: '';
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 79, ../sass/modules/_marginalia.scss */
+  /* line 80, ../sass/modules/_marginalia.scss */
   .marginator {
     margin-left: 0;
   }
@@ -1454,7 +1442,7 @@ img {
   zoom: 1;
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 54.99em) {
   /* line 69, ../sass/modules/_masthead.scss */
   .logo-wrapper {
     margin-top: .5em;
@@ -1488,7 +1476,7 @@ img {
     color: white;
   }
 }
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 55em) {
   /* line 103, ../sass/modules/_masthead.scss */
   #toggle {
     display: none;
@@ -1610,20 +1598,25 @@ img {
  *
  * 
  */
-/* line 9, ../sass/modules/_posttypography.scss */
+/* line 7, ../sass/modules/_posttypography.scss */
+img {
+  font-style: italic;
+}
+
+/* line 13, ../sass/modules/_posttypography.scss */
 .callout {
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   font-weight: bold;
-  font-size: 1.618em;
-  margin: 0.98888em 0;
+  font-size: 1.618;
+  margin: 0.98888 0;
 }
 
-/* line 16, ../sass/modules/_posttypography.scss */
+/* line 20, ../sass/modules/_posttypography.scss */
 .intro {
   font-style: italic;
 }
 
-/* line 20, ../sass/modules/_posttypography.scss */
+/* line 24, ../sass/modules/_posttypography.scss */
 .post-title-meta, .agg-title-meta, .footer-text {
   color: #aaa;
   letter-spacing: 1px;
@@ -1632,43 +1625,42 @@ img {
   font-weight: 300;
 }
 
-/* line 27, ../sass/modules/_posttypography.scss */
+/* line 31, ../sass/modules/_posttypography.scss */
 .post-title-meta {
-  margin-bottom: -0.7em;
+  margin-bottom: -0.7;
 }
 
-/* line 32, ../sass/modules/_posttypography.scss */
+/* line 36, ../sass/modules/_posttypography.scss */
 .agg-title-meta {
   display: block;
-  line-height: 2.57143em;
+  line-height: 2.57143;
 }
 
-/* line 39, ../sass/modules/_posttypography.scss */
+/* line 43, ../sass/modules/_posttypography.scss */
 .post-date {
   color: #333;
 }
 
-/* line 43, ../sass/modules/_posttypography.scss */
+/* line 47, ../sass/modules/_posttypography.scss */
 .slug {
   letter-spacing: 1px;
   margin: 0;
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
-/* line 49, ../sass/modules/_posttypography.scss */
+/* line 53, ../sass/modules/_posttypography.scss */
 .slug a {
   color: #999;
 }
 
-/* line 54, ../sass/modules/_posttypography.scss */
+/* line 58, ../sass/modules/_posttypography.scss */
 .introduction {
   margin-bottom: 3em;
 }
 
-/* line 58, ../sass/modules/_posttypography.scss */
-.backgrounded {
-  background-color: #ccc;
-  color: #ccc;
+/* line 62, ../sass/modules/_posttypography.scss */
+.teaser {
+  margin-top: .5em;
 }
 
 /**
@@ -1747,7 +1739,7 @@ a {
 .post-tags .tag {
   border: 1px solid #ccc;
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 0.7em;
+  font-size: 0.7;
   padding: .5em 1em;
 }
 
@@ -1768,8 +1760,8 @@ a {
  */
 /* line 7, ../sass/modules/_island.scss */
 .island, .portfolio-item {
-  margin: 1.6em 0;
-  padding: 1em;
+  margin: 1.6 0;
+  padding: 1;
 }
 
 /**

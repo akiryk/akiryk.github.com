@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <title>Comic Stripping for UX</title>
@@ -30,15 +30,18 @@
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
   <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-  <!-- typekit fonts -->
   <script type="text/javascript">
+    //typekit fonts
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 3000
+      scriptTimeout: 2000
     };
-    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
+
+    // picturefill polyfill
+    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
   </script>
 
 
@@ -166,7 +169,7 @@ The idea is to role play a &#39;conversation&#39; with the user-interface you&#3
 
   <!--    -->
 
-<section>
+<section class="content-inner">
   
   <h6 class="slug">This post tagged:</h6>
   <ul class="post-tags inline">
@@ -193,18 +196,21 @@ The idea is to role play a &#39;conversation&#39; with the user-interface you&#3
   
 
     <div class="pagination">
-      <ul>
       
-        <li class="prev"><a href="/portfolio/2013/02/09/facebook-project" title="NPR Stations on Facebook">&larr; Previous</a></li>
+        <a href="/portfolio/2013/02/09/facebook-project" title="NPR Stations on Facebook">
+          <h2 class="blog-heading">NPR Stations on Facebook</h2>
+        </a>
+        <p class="teaser"> With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
       
-        <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/blog/2013/10/07/book-browsing" title="Better Book Browsing Online">Next &rarr;</a></li>
+        <a href="/blog/2013/10/07/book-browsing" title="Better Book Browsing Online">
+          <h2 class="blog-heading">Better Book Browsing Online</h2>
+        </a>
+        <p class="teaser"> A Readers' Cry for a Better Digital Book Browsing User Experience.</p>
       
       </ul>
     </div>
-    <hr>
-    
+    <!-- 
 
 
   <div id="disqus_thread"></div>
@@ -224,7 +230,7 @@ The idea is to role play a &#39;conversation&#39; with the user-interface you&#3
 
 
 
-
+ -->
 </section>
 
 
@@ -237,8 +243,6 @@ The idea is to role play a &#39;conversation&#39; with the user-interface you&#3
 
   </div><!-- #wrapper -->
    
-    <script src="/assets/themes/algis/js/jquery.min.js"></script>
-
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
@@ -256,7 +260,7 @@ The idea is to role play a &#39;conversation&#39; with the user-interface you&#3
       })();
     </script>
 
-    
+    <!--  -->
   </body>
 </html>
 

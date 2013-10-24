@@ -30,13 +30,13 @@ $h6-size: 16;
 // mqs won't acknowledge base font size; ems assume 16px base.
 
 $desk-wide: $widest-width + 2*($gutter-width); 
-$desk-wide-start: getNormlizedEms($desk-wide);
+$desk-wide-start: getNormlizedEms($desk-wide) * 1em;
 
 $desk: $content-width + 3*($gutter-width) + $column-width; // helper var (two columns, one wide and one narrow)
-$desk-start: getNormlizedEms($desk);
+$desk-start: getNormlizedEms($desk) * 1em;
 
-$lap: $content-width + (4*$gutter-width);
-$lap-start: getNormlizedEms($lap);
+$lap: $content-width + (6*$gutter-width);
+$lap-start: getNormlizedEms($lap) * 1em;
 
 // Colors
 $red: #d52800;

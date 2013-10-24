@@ -10,7 +10,7 @@
 }
 
 @mixin sans-alt(){
-  font-family: $sans-alt;
+  font-family: $sans;
   letter-spacing: 1px;
 }
 
@@ -152,8 +152,8 @@
  *
  * We work out your end points for you:
  */
-$palm-end:              $lap-start;
-$lap-end:               $desk-start;
+$palm-end:              $lap-start - .01em;
+$lap-end:               $desk-start - .01em;
 
 @mixin media-query($media-query){
 
