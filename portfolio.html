@@ -10,20 +10,20 @@ group: navigation
     {% for portfolio in site.categories.portfolio %}
       {% if portfolio.champion == true %}
         <li class="portfolio-piece">
-          {% if portfolio.image %}
-            <div class="pic-portfolio-piece">
-              <span data-picture data-alt="Portfolio image">
-                <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-small.jpg"></span>
-                <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-med.jpg" data-media="(min-width: 450px)"></span>
-                <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-large.jpg" data-media="(min-width: 1320px)"></span>
-                <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                <noscript>
-                  <img src="/assets/images/portfolio-heros/{{ portfolio.image }}-small.jpg">
-                </noscript>
-              </span>
-            </div>
-          {% endif %}
           <a href="{{ BASE_PATH }}{{ portfolio.url }}">
+            {% if portfolio.image %}
+              <div class="pic-portfolio-piece">
+                <span data-picture data-alt="Portfolio image">
+                  <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-small.jpg"></span>
+                  <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-med.jpg" data-media="(min-width: 450px)"></span>
+                  <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-large.jpg" data-media="(min-width: 1320px)"></span>
+                  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                  <noscript>
+                    <img src="/assets/images/portfolio-heros/{{ portfolio.image }}-small.jpg">
+                  </noscript>
+                </span>
+              </div>
+            {% endif %}
             <div class="portfolio-text">
               <div class="slug">{{ portfolio.micro-teaser }}</div>
               <h4 class="portfolio-title">{{ portfolio.title }}</h4>

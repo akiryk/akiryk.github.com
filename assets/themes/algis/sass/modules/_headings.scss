@@ -37,6 +37,14 @@ $sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size;
 .blog-heading {
   font-size: getEms(30);
   margin-bottom: getEms(6, 30);
+  a {
+    color: $normal-color;
+  }
+}
+
+.portfolio-title {
+  line-height: 1.2;
+  margin: 0.25em 0;
 }
 
 @include media-query(lap-and-up){
