@@ -5,6 +5,7 @@
 
  footer {
   border-top: 1px solid #ccc;
+  clear: both;
   margin: 4em 2em auto 2em;
   font-family: $sans;
  }
@@ -15,6 +16,6 @@
 
 @include media-query(desk-wide){
   footer {
-    margin-left: $column-width + $gutter-width;
+    margin-right: 0;
  }
 }

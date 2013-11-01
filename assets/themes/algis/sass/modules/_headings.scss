@@ -6,7 +6,38 @@
  * 
  */
 
+$headings-classes: alpha beta gamma delta epsilon zeta;
+$sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size; 
 
+@for $i from 1 through 6 {
+  h#{$i}, // this will be h1 ... h6
+  .#{nth($headings-classes, $i)}  // this will be .alpha through zeta
+  {  
+    color: $normal-color;
+    font-size: getEms(nth($sizelist, $i)); // see _functions.scss
+    margin: getEms($base-line-height, nth($sizelist, $i)) 0;
+    @if ($i<5) {
+      @if ($i == 1) {
+        line-height: 1.2;
+        margin-left:-2px;
+      }
+    } 
+    @else {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  } 
+}
+
+#homepage h1 {
+  font-size: 2.1em;
+  line-height: 1.35;
+}
+
+.blog-heading {
+  font-size: getEms(30);
+  margin-bottom: getEms(6, 30);
+}
 
 @include media-query(lap-and-up){
 
@@ -15,42 +46,15 @@
  * requires an array for the classnames: alpha, beta, etc
  */
 
-  $headings-classes: alpha beta gamma delta epsilon zeta;
-  $sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size; 
-
   @for $i from 1 through 6 {
     h#{$i}, // this will be h1 ... h6
     .#{nth($headings-classes, $i)}  // this will be .alpha through zeta
     {  
-      color: $normal-color;
-      font-size: getEms(nth($sizelist, $i)) * 1em; // see _functions.scss
-      margin: getEms($base-line-height, nth($sizelist, $i)) * 1em 0;
       @if ($i<5) {
-        @if ($i == 1) {
-          line-height: 1.2;
-          margin-left:-2px;
-        }
-       
+        @include vendor(font-smoothing, antialiased);
         font-family: $headings;
       } 
-      @else {
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
     } 
-  }
-
-  #homepage h1 {
-    font-size: 2.1em;
-    line-height: 1.35;
-  }
-
-  .blog-heading {
-    font-size: getEms(30) * 1em;
-    a {
-      color: #333;
-    }
-    margin-bottom: getEms(6, 30) * 1em;
   }
 
   .backgrounded {
@@ -59,7 +63,8 @@
     color: #ccc;
   }
 
-  .wf-inactive {
+  .wf-inactive,
+  .wf-active {
     .backgrounded {
       background-color: transparent;
       color: #333;

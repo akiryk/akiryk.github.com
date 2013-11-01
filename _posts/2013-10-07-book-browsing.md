@@ -2,7 +2,8 @@
 layout: post
 title: Better Book Browsing Online
 teaser: A Readers' Cry for a Better Digital Book Browsing User Experience.
-hero: random/tintin.jpg
+hero: tintin
+hero-caption: Tintin illustration, Hergé
 category : blog
 tags : [ux, design, making-stuff-better]
 ---

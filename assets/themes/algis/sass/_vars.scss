@@ -30,19 +30,23 @@ $h6-size: 16;
 // mqs won't acknowledge base font size; ems assume 16px base.
 
 $desk-wide: $widest-width + 2*($gutter-width); 
-$desk-wide-start: getNormlizedEms($desk-wide) * 1em;
+$desk-wide-start: getNormlizedEms($desk-wide);
 
 $desk: $content-width + 3*($gutter-width) + $column-width; // helper var (two columns, one wide and one narrow)
-$desk-start: getNormlizedEms($desk) * 1em;
+$desk-start: getNormlizedEms($desk);
 
 $lap: $content-width + (6*$gutter-width);
-$lap-start: getNormlizedEms($lap) * 1em;
+$lap-start: getNormlizedEms($lap);
+
+$large-palm: 36em;
 
 // Colors
 $red: #d52800;
 $normal-color: #333;
 $light-text: #666;
-$blue: #1b60a7;
+$lighter-text: #aaa;
+$blue: #0f769f;
+$blue-alt: #24bbfe; // for blue on black or dark gray
 
 $headings: "ff-tisa-web-pro", Georgia, Times, serif;
 $sans:     "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;

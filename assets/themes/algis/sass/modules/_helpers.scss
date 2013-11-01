@@ -25,3 +25,13 @@
   position: absolute;
   left: -999em;
 }
+
+.hidesmall {
+  display: none;
+}
+
+@include media-query(lap-and-up) {
+  .hidesmall {
+    display: block;
+  }
+}

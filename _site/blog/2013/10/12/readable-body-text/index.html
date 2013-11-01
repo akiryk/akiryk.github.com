@@ -64,17 +64,17 @@
 <ul class="primary-nav">
     <li>
   
-      <a href="/index.html">Blog</a>
+      <a href="/index.html" class="nav-link">Blog</a>
     </li>
 
     <li>
   
-      <a href="/portfolio.html">Portfolio</a>
+      <a href="/portfolio.html" class="nav-link">Portfolio</a>
     </li>
 
     <li>
   
-      <a href="/about.html">About</a>
+      <a href="/about.html" class="nav-link">About</a>
     </li>
 
 </ul>
@@ -83,16 +83,25 @@
 </nav>
 </header>
 
-      <div id="main" class="content-outer">
+      <div id="main" class="content-outer cf">
         
-<article>
- 
-    <div class="pic-hero">
-      <img src="/assets/images/aldus/aldus-codex-hero.jpg">
-    </div>
-    <div class="content-inner content-inner--hero">
-  
-    <div class="post-title-meta">
+  <article>
+   
+      <div class="pic-hero">
+        <span data-picture data-alt="Image of Tintin">
+          <span data-src="/assets/images/heros/aldus-codex-hero-small.jpg" ></span>
+          <span data-src="/assets/images/heros/aldus-codex-hero-large.jpg" data-media="(min-width: 880px)"></span>
+          <noscript>
+            <img src="/assets/images/heros/aldus-codex-hero-small.jpg">
+          </noscript>
+        </span>
+        
+          <div class="caption">Page from the codex.</div>
+        
+      </div>
+      <div class="content-inner content-inner--hero">
+    
+      <div class="post-title-meta">
   <span class="post-date">October 12, 2013</span> <span class="divider"> / </span>
   <span class="by">by</span>
   <span class="author-name">
@@ -103,7 +112,7 @@
 </div>
 <h1><span class="backgrounded">Readable Body Text </span></h1>
 
-    <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
+      <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
 
 <p>Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins</p>
 
@@ -127,32 +136,25 @@
 
 <p>Handling plugins. </p>
 
-  </div>
-</article>
-
-  <!--    -->
-
-<section class="content-inner">
-  
-  <h6 class="slug">This post tagged:</h6>
-  <ul class="post-tags inline">
+      
+  <ul class="post-tags">
     
     
 
 
   
+<li class="inline tag-title">Filed under: </li>
 
-
    
-    <li class="inline"><a href="/tag/process" class="tag">process</a> </li>
+    <li class="inline"><a href="/tag/process" class="tag-link">process</a> </li>
    
-    <li class="inline"><a href="/tag/design" class="tag">design</a> </li>
+    <li class="inline"><a href="/tag/design" class="tag-link">design</a> </li>
    
-    <li class="inline"><a href="/tag/jekyll" class="tag">jekyll</a> </li>
+    <li class="inline"><a href="/tag/jekyll" class="tag-link">jekyll</a> </li>
    
-    <li class="inline"><a href="/tag/typography" class="tag">typography</a> </li>
+    <li class="inline"><a href="/tag/typography" class="tag-link">typography</a> </li>
    
-    <li class="inline"><a href="/tag/development" class="tag">development</a> </li>
+    <li class="inline"><a href="/tag/development" class="tag-link">development</a> </li>
   
 
 
@@ -163,16 +165,20 @@
 
   </ul>
   
-
-    <div class="pagination">
+    </div>
+  </article>
+  <section class="secondary-content">
+    <div class="posts">
       
-        <a href="/blog/2013/10/12/personal-site-process" title="How I did it">
-          <h2 class="blog-heading">How I did it</h2>
-        </a>
-        <p class="teaser"> I just made a new personal website and blog. Here's my design and development process.</p>
+        <div class="slug slug--underline">Previous</div>
+          <h2 class="blog-heading"><a href="/blog/2013/10/12/personal-site-process" title="How I did it">How I did it</a></h2>
+        <p class="teaser"> I just made a new personal website and blog. Here's my design and development process. Here's the process I used. I started by creating loose mockups for my home page and post pages. I didn't mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work.</p>
       
       
       </ul>
+    </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#wrapper-all">Return to Top</a>
     </div>
     <!-- 
 
@@ -195,17 +201,16 @@
 
 
  -->
-</section>
-
+  </section>
 
       </div>
-
+      
       <footer>
   <p class="footer-text">&copy; 2013 Adam Kiryk</p>
 </footer>
 
 
-  </div><!-- #wrapper -->
+    </div><!-- #wrapper -->
    
     <script>
       (function(){

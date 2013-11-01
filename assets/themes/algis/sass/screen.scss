@@ -10,9 +10,8 @@
 @import "modules/normalize";
 @import "modules/functions";
 @import "vars";
-@import "modules/helpers";
 @import "modules/mixins";
-
+@import "modules/helpers";
 @import "base";
 @import "layout";
 
@@ -23,12 +22,14 @@
 @import "modules/marginalia";
 @import "modules/masthead";
 @import "modules/nav";
-@import "modules/posttypography";
+@import "modules/typography";
 @import "modules/lists";
 @import "modules/links";
 @import "modules/video";
 @import "modules/island";
 @import "modules/portfolio";
 @import "modules/footer";
+@import "modules/pagination";
+@import "modules/tags";
 
 

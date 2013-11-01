@@ -9,7 +9,7 @@
   {% else %}
     <li>
   {% endif %}
-      <a href="{{ link[0] }}">{{ link[1] }}</a>
+      <a href="{{ link[0] }}" class="nav-link">{{ link[1] }}</a>
     </li>
 {% endfor %}
 </ul>

@@ -4,7 +4,7 @@
  */
 
 @function getEms( $size: $base-font-size, $context: $base-font-size){
-   @return ($size * 1em) / ($context * 1em);
+   @return ($size / $context) * 1em;
 }
 
 /*

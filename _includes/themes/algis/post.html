@@ -1,37 +1,42 @@
-<article>
- {% if page.hero %}
-    <div class="pic-hero">
-      <img src="/assets/images/{{ page.hero }}">
+  <article>
+   {% if page.hero %}
+      <div class="pic-hero">
+        <span data-picture data-alt="Image of Tintin">
+          <span data-src="/assets/images/heros/{{ page.hero }}-small.jpg" ></span>
+          <span data-src="/assets/images/heros/{{ page.hero }}-large.jpg" data-media="(min-width: 880px)"></span>
+          <noscript>
+            <img src="/assets/images/heros/{{ page.hero }}-small.jpg">
+          </noscript>
+        </span>
+        {% if page.hero-caption %}
+          <div class="caption">{{ page.hero-caption }}</div>
+        {% endif %}
+      </div>
+      <div class="content-inner content-inner--hero">
+    {% else %}
+      <div class="content-inner">
+    {% endif %}
+      {% include custom/post_title_heading %}
+      {{ content }}
+      {% include custom/tag_buttons %}
     </div>
-    <div class="content-inner content-inner--hero">
-  {% else %}
-    <div class="content-inner">
-  {% endif %}
-    {% include custom/title_heading %}
-    {{ content }}
-  </div>
-</article>
-
-  <!-- {% unless page.categories == empty %}
-  {% endunless %}   -->
-
-<section class="content-inner">
-  {% include custom/tag_buttons %}
-
-    <div class="pagination">
+  </article>
+  <section class="secondary-content">
+    <div class="posts">
       {% if page.previous %}
-        <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">
-          <h2 class="blog-heading">{{ page.previous.title }}</h2>
-        </a>
+        <div class="slug slug--underline">Previous</div>
+          <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></h2>
         <p class="teaser"> {{ page.previous.teaser }}</p>
       {% endif %}
       {% if page.next %}
-        <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">
-          <h2 class="blog-heading">{{ page.next.title }}</h2>
-        </a>
+        <div class="slug slug--underline">Next</div>
+          <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></h2>
         <p class="teaser"> {{ page.next.teaser }}</p>
       {% endif %}
       </ul>
     </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#wrapper-all">Return to Top</a>
+    </div>
     <!-- {% include JB/comments %} -->
-</section>
+  </section>

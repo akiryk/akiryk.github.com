@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I did it
-teaser: I just made a new personal website and blog. Here's my design and development process.
+teaser: I just made a new personal website and blog. Here's my design and development process. Here's the process I used. I started by creating loose mockups for my home page and post pages. I didn't mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work. 
 category : blog
 tags : [process, design, jekyll, typography, development]
 ---

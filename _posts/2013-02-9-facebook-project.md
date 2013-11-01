@@ -2,7 +2,10 @@
 layout: portfolio
 title: NPR Stations on Facebook
 teaser: With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.
+micro-teaser: ux + design + front-end
 category : portfolio
+champion: true
+image: amplify
 tags : [ux, cms, npr, design]
 ---
 

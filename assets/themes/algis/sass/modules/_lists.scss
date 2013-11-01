@@ -5,6 +5,48 @@
  * 
  */
 
+/**
+ * Remove vertical spacing from nested lists.
+ */
+li{
+    > ul,
+    > ol{
+         margin-bottom:0;
+     }
+}
+
+// Allow blog posts or other lists of posts to be free of list styles
+.vertical-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-list {
+  list-style:none;
+  margin-left:0;
+  padding-left: 0;
+  @extend .cf;
+
+  > li{
+
+      &,
+      > a{
+          display:inline-block;
+         *display:inline;
+          zoom:1;
+      }
+  }
+}
+
+/**
+ * Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/.numbered-list{
+    list-style-type:decimal;
+}
+
+
 .main-content {
   ul,
   ol {

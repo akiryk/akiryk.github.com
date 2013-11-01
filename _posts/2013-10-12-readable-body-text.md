@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Readable Body Text
-teaser: I just made a new personal website and blog. Here's my design and development process. Are you interested? Cool. Because that's how we roll, or at least how I roll. I roll with a lot of process and text and lorem ipsum dolor sit amet.
-hero: aldus/aldus-codex-hero.jpg
+teaser: Pagination only works on posts, not on categories of posts. I handled this by displaying all posts including portfolio plices in my blog. Portfolio pieces are displayed on a portfolio page that doesn't use pagination. It simply looks for all itemms with a YAML front matter label of highlight true. It diesplays only these items. Then I put the full bunch on a different page without paginations.
+hero: aldus-codex-hero
+hero-caption: Page from the codex.
 category : blog
 tags : [process, design, jekyll, typography, development]
 ---

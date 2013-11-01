@@ -1,18 +1,63 @@
 ---
-layout: post
+layout: portfolio
 title: Portfolio
 header: Portfolio Posts
 group: navigation
 ---
 {% include JB/setup %}
+<div class="portfolio-wrapper">
+  <ul class="vertical-list">
+    {% for portfolio in site.categories.portfolio %}
+      {% if portfolio.champion == true %}
+        <li class="portfolio-piece">
+          {% if portfolio.image %}
+            <div class="pic-portfolio-piece">
+              <span data-picture data-alt="Portfolio image">
+                <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-small.jpg"></span>
+                <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-med.jpg" data-media="(min-width: 450px)"></span>
+                <span data-src="/assets/images/portfolio-heros/{{ portfolio.image }}-large.jpg" data-media="(min-width: 1320px)"></span>
+                <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                <noscript>
+                  <img src="/assets/images/portfolio-heros/{{ portfolio.image }}-small.jpg">
+                </noscript>
+              </span>
+            </div>
+          {% endif %}
+          <a href="{{ BASE_PATH }}{{ portfolio.url }}">
+            <div class="portfolio-text">
+              <div class="slug">{{ portfolio.micro-teaser }}</div>
+              <h4 class="portfolio-title">{{ portfolio.title }}</h4>
+              <span class="agg-title-meta">{{ portfolio.date | date: "%B %d, %Y" }}</span>
+            </div>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="portfolio-wrapper">
+  <ul class="vertical-list">
+    {% for portfolio in site.categories.portfolio %}
+      {% if portfolio.champion == nil %}
+        <li class="portfolio-piece  portfolio-piece--secondary">
+          {% if portfolio.image %}
+            <a href="{{ BASE_PATH }}{{ portfolio.url }}">
+              <img src="/assets/images/portfolio-heros/{{ portfolio.image }}-large.jpg" title="{{ portfolio.hero-title }}">
+            </a>
+          {% endif %}
+          <a href="{{ BASE_PATH }}{{ portfolio.url }}">
+            <div class="portfolio-text">
+              <div class="slug-alt slug--underline invert-normal">{{ portfolio.micro-teaser }}</div>
+              <h4 class="portfolio-title">{{ portfolio.title }}</h4>
+              <span class="agg-title-meta">{{ portfolio.date | date: "%B %d, %Y" }}</span>
+            </div>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
 
 
-{% for portfolio in site.categories.portfolio %} 
-  <p>
-    <a href="{{ BASE_PATH }}{{ portfolio.url }}">
-      <img src="{{ site.url }}/assets/images/{{ portfolio.hero }}" title="{{ portfolio.hero-title }}">
-    </a>
-    <a href="{{ BASE_PATH }}{{ portfolio.url }}">{{ portfolio.title }}</a>
-  </p>
-{% endfor %}
 

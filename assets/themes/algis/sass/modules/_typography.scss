@@ -4,13 +4,41 @@
  * 
  */
 
-img {
-  font-style: italic;
+
+// title for home page: "latest posts"
+.latest {
+  @include slug-title();
+  border-bottom: 1px solid #999;
+  color: $red;
+  margin: 0;
+  padding-bottom: 0.55em;
+}
+
+// E.g. "Portfolio" on top of portfolio titles on home page
+.slug {
+  @include slug-title();
+}
+  .slug + h2 {
+    margin-top: 0;
+  }
+
+.slug-alt {
+  // a light version of the slug
+  @include slug-title(true);
+}
+
+.slug--underline {
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.invert-normal {
+  color: $lighter-text;
 }
 
 // paragraphs 
-
- .callout {
+.callout {
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   font-weight: bold;
   font-size: getEms($h2-size, $base-font-size);
@@ -39,20 +67,8 @@ img {
   line-height: getEms(36, 14);
 }
 
-
 .post-date {
   color: #333;
-}
-
-.slug {
-  letter-spacing: 1px;
-  margin: 0;
-
-  @include sans();
-
-  a {
-    color: #999;
-  }
 }
 
 .introduction {
@@ -60,5 +76,5 @@ img {
 }
 
 .teaser {
-  margin-top: .5em;
+  margin-top:0;
 }

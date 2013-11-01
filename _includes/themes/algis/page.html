@@ -1,9 +1,37 @@
-<section>
-  <header>
-    <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
-  </header>
-</section>
+  <article>
+   {% if page.hero %}
+      <div class="pic-hero">
+        <img src="/assets/images/{{ page.hero }}">
+      </div>
+      <div class="content-inner content-inner--hero">
+    {% else %}
+      <div class="content-inner">
+    {% endif %}
+      {{ content }}
+    </div>
+  </article>
 
-{{ content }}
+    <!-- {% unless page.categories == empty %}
+    {% endunless %}   -->
 
-
+  <section class="secondary-content">
+    <div class="posts">
+      {% if page.previous %}
+        <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+          <h2 class="blog-heading">{{ page.previous.title }}</h2>
+        </a>
+        <p class="teaser"> {{ page.previous.teaser }}</p>
+      {% endif %}
+      {% if page.next %}
+        <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">
+          <h2 class="blog-heading">{{ page.next.title }}</h2>
+        </a>
+        <p class="teaser"> {{ page.next.teaser }}</p>
+      {% endif %}
+      </ul>
+    </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#wrapper-all">Return to Top</a>
+    </div>
+    <!-- {% include JB/comments %} -->
+  </section>

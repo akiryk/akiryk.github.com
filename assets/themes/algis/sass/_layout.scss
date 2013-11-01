@@ -15,30 +15,32 @@
 
 .content-outer {
   @include vendor(box-sizing, border-box);
-  margin: 1em auto;
+  margin: 0 auto;
   position: relative;
   width: 90%;
 }
 
-.content-inner {
+.content-inner,
+.secondary-content {
   // no box-sizing; doesn't seem necessary
   margin: 0 auto;
   max-width: $content-width + em;
 }
 
+.continue-content {
+  margin: 0;
+  width: 100%;
+}
+
 @include media-query(lap) {
   .content-outer {
     overflow: hidden;
-    margin: 2em auto;
   }
 }
 
 @include media-query(lap-and-up) {
-
-  .content-inner,
-  .content-inner--hero {
+  %c {
     background-color: white;
-    padding-top: $gutter-width + em;
     padding-right: $gutter-width + em;
     padding-left: $gutter-width + em;
     width: $content-width + em;
@@ -48,6 +50,14 @@
         margin-top: 0;
       }
     }
+  }
+  .secondary-content {
+    @extend %c;
+  }
+  .content-inner,
+  .content-inner--hero {
+    padding-top: $gutter-width + em;
+    @extend %c;
   }
 
   .content-inner--hero {
@@ -62,6 +72,10 @@
     width: 100%;
   }
 
+  .content-inner {
+    margin-left: 2em;
+  }
+
 }
 @include media-query(desk-wide) {
   #wrapper-all {
@@ -72,7 +86,8 @@
      margin-left: $column-width + em;
   }
 
-  .content-inner {
+  .content-inner,
+  .secondary-content {
     margin-left: 0;
     margin-right: 0;
   }

@@ -5,21 +5,25 @@
  */
 
 a {
+  @include transition(color);
   color: $blue;
   text-decoration: none;
+  &:hover {
+    color: $red;
+    // text-decoration: underline;
+  }
+}
+
+.agg-link:hover {
+  color: $normal-color;
 }
 
 .cta {
   display: inline-block;
   text-decoration: none;
-
-  &:hover {
-    color: $normal-color;
-  }
 }
 
-.plain,
-.tag {
+.plain {
   color: $normal-color;
 
   &:hover {

@@ -64,17 +64,17 @@
 <ul class="primary-nav">
     <li>
   
-      <a href="/index.html">Blog</a>
+      <a href="/index.html" class="nav-link">Blog</a>
     </li>
 
     <li>
   
-      <a href="/portfolio.html">Portfolio</a>
+      <a href="/portfolio.html" class="nav-link">Portfolio</a>
     </li>
 
     <li>
   
-      <a href="/about.html">About</a>
+      <a href="/about.html" class="nav-link">About</a>
     </li>
 
 </ul>
@@ -83,16 +83,25 @@
 </nav>
 </header>
 
-      <div id="main" class="content-outer">
+      <div id="main" class="content-outer cf">
         
-<article>
- 
-    <div class="pic-hero">
-      <img src="/assets/images/random/tintin.jpg">
-    </div>
-    <div class="content-inner content-inner--hero">
-  
-    <div class="post-title-meta">
+  <article>
+   
+      <div class="pic-hero">
+        <span data-picture data-alt="Image of Tintin">
+          <span data-src="/assets/images/heros/tintin-small.jpg" ></span>
+          <span data-src="/assets/images/heros/tintin-large.jpg" data-media="(min-width: 880px)"></span>
+          <noscript>
+            <img src="/assets/images/heros/tintin-small.jpg">
+          </noscript>
+        </span>
+        
+          <div class="caption">Tintin illustration, Hergé</div>
+        
+      </div>
+      <div class="content-inner content-inner--hero">
+    
+      <div class="post-title-meta">
   <span class="post-date">October 07, 2013</span> <span class="divider"> / </span>
   <span class="by">by</span>
   <span class="author-name">
@@ -103,7 +112,7 @@
 </div>
 <h1><span class="backgrounded">Better Book Browsing Online </span></h1>
 
-    <p><em>Synopsis:</em> Here&#39;s a problem I&#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&#39;ll present some mockups of what that improved experience could look like.  </p>
+      <p><em>Synopsis:</em> Here&#39;s a problem I&#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&#39;ll present some mockups of what that improved experience could look like.  </p>
 
 <div class="pic-outset">
   <h2>To Begin With, We Make A Comparison With Jonas Avimbi:</h2>
@@ -188,28 +197,21 @@
 
 <p>I think so. I think it should be possible to design an experience that encourages serendipitous finds, enables a feeling of pleasant meandering, and allows a meaningful personality to emerge. I don&#39;t know precisely what it should look like, but it should have the following characteristics. </p>
 
-  </div>
-</article>
-
-  <!--    -->
-
-<section class="content-inner">
-  
-  <h6 class="slug">This post tagged:</h6>
-  <ul class="post-tags inline">
+      
+  <ul class="post-tags">
     
     
 
 
   
+<li class="inline tag-title">Filed under: </li>
 
-
    
-    <li class="inline"><a href="/tag/ux" class="tag">ux</a> </li>
+    <li class="inline"><a href="/tag/ux" class="tag-link">ux</a> </li>
    
-    <li class="inline"><a href="/tag/design" class="tag">design</a> </li>
+    <li class="inline"><a href="/tag/design" class="tag-link">design</a> </li>
    
-    <li class="inline"><a href="/tag/making-stuff-better" class="tag">making-stuff-better</a> </li>
+    <li class="inline"><a href="/tag/making-stuff-better" class="tag-link">making-stuff-better</a> </li>
   
 
 
@@ -220,21 +222,24 @@
 
   </ul>
   
-
-    <div class="pagination">
+    </div>
+  </article>
+  <section class="secondary-content">
+    <div class="posts">
       
-        <a href="/blog/2013/09/21/comic-ux" title="Comic Stripping for UX">
-          <h2 class="blog-heading">Comic Stripping for UX</h2>
-        </a>
+        <div class="slug slug--underline">Previous</div>
+          <h2 class="blog-heading"><a href="/blog/2013/09/21/comic-ux" title="Comic Stripping for UX">Comic Stripping for UX</a></h2>
         <p class="teaser"> I wanted to come up with a super-simple way to show how a web site expressed hierarchy, so I experimented with using a rudimentary form of comic strip.</p>
       
       
-        <a href="/blog/2013/10/11/jekyll-portfolio-blog" title="Making a Blog/Portfolio Site with Jekyll">
-          <h2 class="blog-heading">Making a Blog/Portfolio Site with Jekyll</h2>
-        </a>
-        <p class="teaser"> Are you a web designer/developer who's comfortable in the command line and wants to create a new site using Jekyll? Read on.</p>
+        <div class="slug slug--underline">Next</div>
+          <h2 class="blog-heading"><a href="/blog/2013/10/11/jekyll-portfolio-blog" title="Making a Blog/Portfolio Site with Jekyll">Making a Blog/Portfolio Site with Jekyll</a></h2>
+        <p class="teaser"> Are you a web designer developer who's comfortable in the command line and wants to create a new site using Jekyll? Here's a pretty darn common scenario web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It's free, fast, and easy to use plus, hosting is free if you use github pages. Read on.</p>
       
       </ul>
+    </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#wrapper-all">Return to Top</a>
     </div>
     <!-- 
 
@@ -257,17 +262,16 @@
 
 
  -->
-</section>
-
+  </section>
 
       </div>
-
+      
       <footer>
   <p class="footer-text">&copy; 2013 Adam Kiryk</p>
 </footer>
 
 
-  </div><!-- #wrapper -->
+    </div><!-- #wrapper -->
    
     <script>
       (function(){
