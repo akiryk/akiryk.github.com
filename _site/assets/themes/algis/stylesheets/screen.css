@@ -1195,6 +1195,7 @@ h6,
 /* line 45, ../sass/modules/_headings.scss */
 .portfolio-title {
   line-height: 1.2;
+  font-size: 20px;
   margin: 0.25em 0;
 }
 
@@ -1203,7 +1204,7 @@ h6,
    * Create all the headings in one fell swoop
    * requires an array for the classnames: alpha, beta, etc
    */
-  /* line 60, ../sass/modules/_headings.scss */
+  /* line 61, ../sass/modules/_headings.scss */
   h1,
   .alpha {
     -webkit-font-smoothing: antialiased;
@@ -1214,7 +1215,7 @@ h6,
     font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   }
 
-  /* line 60, ../sass/modules/_headings.scss */
+  /* line 61, ../sass/modules/_headings.scss */
   h2,
   .beta {
     -webkit-font-smoothing: antialiased;
@@ -1225,7 +1226,7 @@ h6,
     font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   }
 
-  /* line 60, ../sass/modules/_headings.scss */
+  /* line 61, ../sass/modules/_headings.scss */
   h3,
   .gamma {
     -webkit-font-smoothing: antialiased;
@@ -1236,7 +1237,7 @@ h6,
     font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   }
 
-  /* line 60, ../sass/modules/_headings.scss */
+  /* line 61, ../sass/modules/_headings.scss */
   h4,
   .delta {
     -webkit-font-smoothing: antialiased;
@@ -1247,7 +1248,7 @@ h6,
     font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   }
 
-  /* line 68, ../sass/modules/_headings.scss */
+  /* line 69, ../sass/modules/_headings.scss */
   .backgrounded {
     -webkit-transition-property: all;
     -moz-transition-property: all;
@@ -1261,7 +1262,7 @@ h6,
     color: #ccc;
   }
 
-  /* line 76, ../sass/modules/_headings.scss */
+  /* line 77, ../sass/modules/_headings.scss */
   .wf-inactive .backgrounded,
   .wf-active .backgrounded {
     background-color: transparent;
