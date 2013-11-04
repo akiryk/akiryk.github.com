@@ -1,10 +1,9 @@
 /**
  * Base.scss
  * Handle base html styles (body, p, a, etc). 
- * Note that in many cases, there is a separate module to 
- * handle a particular type of body element. For example,
- * h1, h2, etc are handled in _headings.scss. 
- *
+ * These should generally be unmodified tags rather than classnames or ids
+ * except for a couple exceptions (for example, h1 also has an analog class, .alpha,
+ * that will always be the same size so belongs here)
  * 
  */
 
@@ -20,6 +19,42 @@ body {
   }
 }
 
+h1, .alpha {
+  @include vendor(font-smoothing, antialiased);
+  font-size: getEms($h2-size);
+  line-height: 1.2;
+}
+
+h2, .beta {
+  @include vendor(font-smoothing, antialiased);
+  font-size: getEms($h3-size);
+}
+
+h3, .gamma {
+  @include vendor(font-smoothing, antialiased);
+  font-size: getEms($h4-size);
+}
+
+h4, .delta {
+  @include vendor(font-smoothing, antialiased);
+  font-size: getEms($h4-size);
+}
+
+h5, .epsilon {
+  font-size: getEms($h5-size);
+}
+
+h6, .zeta {
+  font-size: getEms($h6-size);
+}
+
+a {
+  color: $normal-color;
+  text-decoration: none;
+  &:active {
+    color: $red;
+  }
+}
 
 img {
   display: block;
@@ -27,6 +62,7 @@ img {
   width: 100%;
   max-width: 100%;
 }
+
 
 blockquote {
   font-size: .9em;
@@ -47,22 +83,14 @@ p {
       background-color: #fff;
     }
   }
+
+  h1, .alpha {
+    font-size: getEms($h1-size);
+  }
+  h2, .beta {
+    font-size: getEms($h2-size);
+  }
+  h3, .gamma {
+    font-size: getEms($h3-size);
+  }
 }
-
-// @function getEmsA( $size: $base-font-size, $context: $base-font-size){
-//    // @return ($size * 1em) / ($context * 1em);
-//    @return ($size / $context) * 1em;
-// }
-
-// @function getNormlizedEmsA( $n: $base-font-size ){
-//   $px: $n * $base-font-size;
-//   @return getEmsA($px, 16);
-// }
-
-// $lap: $content-width + (6*$gutter-width);
-// $lap-start: getNormlizedEmsA($lap);
-
-// .danny {
-//   margin: $lap-start - 0.01em;
-//   margin: getEmsA(12) 0 0 $gutter-width + em;
-// }

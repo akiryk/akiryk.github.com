@@ -23,12 +23,12 @@ classes: homepage
 {% else %}
   <header class="home-header">
 {% endif %}
-  <h1 class="latest">Latest Posts</h1>
+  <h1 class="blog-title">Latest Posts</h1>
 </header>
-<ul class="content-body vertical-list">
+<ul class="blog-river">
   {% for post in site.posts %}
     {% if post.category == 'portfolio' %}
-      <li class="portfolio-agg">
+      <li class="portfolio-card">
         <a href="{{ BASE_PATH }}{{ post.url }}" class="portfolio-piece">
             <div class="portfolio-text">
               <div class="slugger">
@@ -51,12 +51,12 @@ classes: homepage
             {% endif %}
           </a>
     {% else %}
-      <li class="blog-agg">
-        <h2 class="blog-agg-heading"><a href="{{ BASE_PATH }}{{ post.url }}" class="agg-link">{{ post.title }}</a></h2>
+      <li class="blog-card">
+        <h2 class="blog-card-heading"><a href="{{ BASE_PATH }}{{ post.url }}" class="agg-link">{{ post.title }}</a></h2>
         <p class="teaser"><span class="agg-title-meta">{{ post.date | date: "%B %d, %Y" }}</span>{{ post.teaser }}</p>
     {% endif %}
     </li>
   {% endfor %}
-</ul>
+</ul><!-- end .blog-river -->
 </section>
 </div> <!-- end .wrapper -->

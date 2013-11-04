@@ -6,73 +6,47 @@
  * 
  */
 
-$headings-classes: alpha beta gamma delta epsilon zeta;
-$sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size; 
 
-@for $i from 1 through 6 {
-  h#{$i}, // this will be h1 ... h6
-  .#{nth($headings-classes, $i)}  // this will be .alpha through zeta
-  {  
-    color: $normal-color;
-    font-size: getEms(nth($sizelist, $i)); // see _functions.scss
-    margin: getEms($base-line-height, nth($sizelist, $i)) 0;
-    @if ($i<5) {
-      @include vendor(font-smoothing, antialiased);
-      @if ($i == 1) {
-        line-height: 1.2;
-        margin-left:-2px;
-      }
-    } 
-    @else {
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-  } 
-}
-
-#homepage h1 {
-  font-size: 2.1em;
-  line-height: 1.35;
-}
-
-.blog-agg-heading {
-  font-size: getEms(30);
-  margin-bottom: getEms(6, 30);
+.blog-card-heading {
+  margin-bottom: getEms(6, 24);
   margin-top: 0;
   a {
     color: $normal-color;
   }
 }
 
-@include media-query(lap-and-up){
+.home-header {
+  background-color: #fff;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0;
 
-/*
- * Create all the headings in one fell swoop
- * requires an array for the classnames: alpha, beta, etc
- */
-
-  @for $i from 1 through 6 {
-    h#{$i}, // this will be h1 ... h6
-    .#{nth($headings-classes, $i)}  // this will be .alpha through zeta
-    {  
-      @if ($i<5) {
-        @include vendor(font-smoothing, antialiased);
-        font-family: $headings;
-      } 
-    } 
+  &.with-hero {
+    margin-top: -5em;
   }
 
-  .backgrounded {
-    @include transition(all);
-    background-color: #ccc;
-    color: #ccc;
+  .blog-title {
+    @include slug-title();
+    color: $red;
+    margin: 0;
+    max-width: none;
+    padding: 15px 30px;
   }
+}
 
-  .wf-inactive,
-  .wf-active {
-    .backgrounded {
-      background-color: transparent;
-      color: #333;
+@include media-query(lap-and-up) {
+  .home-header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 32em;
+    padding: 0 2em;
+
+    .blog-title {
+      padding: getEms(42, $caption-size) 0 0 0;
+    }
+
+    &.with-hero {
+      margin-top: -8em;
     }
   }
 }
@@ -83,6 +57,11 @@ $sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size;
     margin-left: -80px;
     padding: 40px 80px;
     width: 940px;
+  }
+  
+  .home-header,
+  .post-header {
+    margin-left: 0;
   }
 }
 

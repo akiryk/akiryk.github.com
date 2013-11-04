@@ -16,14 +16,21 @@
 .logo {
   float: left;
   overflow: hidden;
-  padding: .5em 1.5em;  
+  padding: .5em 1em;  
 }
 
 #primary-menu {
-  display: none;
+  // display: none;
+  overflow-y: hidden;
+  max-height: 0;
+  @include vendor(transition-property, all);
+  @include vendor(transition-duration, .25s);
+  @include vendor(transition-timing-function, ease-out);
+  // @include vendor(transition-timing-function, cubic-bezier(0, 1, 0.5, 1));
 
   &.expanded {
-    display: block;
+    // display: block;
+    max-height: (165/20) * 1em;
   }
 }
 
@@ -32,7 +39,7 @@
   cursor: pointer;
   float: right;
   height: 41px;
-  padding: .5em 1.5em;
+  padding: .5em 1em;
   width: 31px;
   text-indent: -999em;
 }
@@ -87,7 +94,6 @@
         display:list-item;
     }
   }
-
 }
 
 @include media-query(lap){

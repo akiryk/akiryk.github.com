@@ -4,38 +4,11 @@
  * 
  */
 
-a {
-  @include transition(color);
+.content-body a {
   color: $blue;
-  text-decoration: none;
+  text-decoration: underline;
   &:hover {
-    color: $red;
-    // text-decoration: underline;
+    color: $normal-color;
   }
 }
 
-.agg-link:hover {
-  color: $normal-color;
-}
-
-.cta {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.plain {
-  color: $normal-color;
-
-  &:hover {
-    color: $blue;
-  }
-}
-
-.post-tags {
-  .tag {
-    border: 1px solid #ccc;
-    font-family: $sans;
-    font-size: getEms(14);
-    padding: .5em 1em;
-  }  
-}

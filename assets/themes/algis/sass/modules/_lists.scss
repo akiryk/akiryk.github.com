@@ -16,10 +16,9 @@ li{
 }
 
 // Allow blog posts or other lists of posts to be free of list styles
+
 .vertical-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include vertical-list();
 }
 
 .horizontal-list {

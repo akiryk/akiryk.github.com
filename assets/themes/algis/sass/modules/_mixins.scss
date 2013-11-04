@@ -2,9 +2,15 @@
     $MIXINS
 \*------------------------------------*/
 
-@mixin content() {
-  background-color: #fff;
-  max-width: $content-width + em;
+@mixin centered-content() {
+  margin: 1em auto;
+  padding: 0 1em;
+}
+
+@mixin vertical-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*

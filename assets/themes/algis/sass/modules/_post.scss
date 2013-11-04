@@ -4,10 +4,11 @@
  */
 
 .post-header {
-  background-color: #fff;
-  padding: 1.5em 1.5em 0 1.5em;
+  background-color: #ddd;
+  color: #333;
   margin-left: 1em;
   margin-right: 1em;
+  padding: 1.5em;
 
   h1 {
     margin-bottom: 0;
@@ -22,22 +23,10 @@
   }
 }
 
-.home-header {
-  background-color: #fff;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding: 0;
-
-  &.with-hero {
-    margin-top: -5em;
-  }
-
-  h1 {
-    @include slug-title();
-    color: $red;
-    margin: 0;
-    max-width: none;
-    padding: 15px 30px;
+@include media-query(large-palm) {
+  .post-header {
+    background-color: #fff;
+    padding: 1.5em 1.5em 0 1.5em;
   }
 }
 
@@ -53,26 +42,4 @@
     }
   }
 
-  .home-header {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 32em;
-    padding: 0 2em;
-
-    .latest {
-      padding: getEms(42, $caption-size) 0 0 0;
-    }
-
-    &.with-hero {
-      margin-top: -8em;
-    }
-  }
-
-}
-
-@include media-query(desk-wide) {
-  .home-header,
-  .post-header {
-    margin-left: 0;
-  }
 }
