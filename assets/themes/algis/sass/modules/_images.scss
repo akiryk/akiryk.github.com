@@ -5,15 +5,17 @@
  */
 
 .pic-hero {
+  background-color: #333;
   margin-bottom: 0;
   position: relative;
   width: 100%;
   z-index: -1;
-
+  min-height: 10em;
   img {
     display: block;
   }
 }
+
 
 .no-resize {
   width: auto;
@@ -49,6 +51,9 @@
   .pic-large {
     width: 100%;
   }
+  .pic-hero {
+    min-height: 10em;
+  }
 }
 
 @include media-query(desk) {
@@ -81,7 +86,8 @@
   .pic-hero {
     left: -$gutter-width + em;
     width: $content-width + $column-width + (3*$gutter-width) + em; // 51em or 1020px
-
+    height: (400/20) * 1em;
+    overflow: hidden;
   }
 
   .pic-outset {

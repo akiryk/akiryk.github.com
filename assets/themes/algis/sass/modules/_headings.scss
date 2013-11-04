@@ -77,3 +77,12 @@ $sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size;
   }
 }
 
+@include media-query(desk-wide) {
+  .about-intro {
+    background-color: #ddd;
+    margin-left: -80px;
+    padding: 40px 80px;
+    width: 940px;
+  }
+}
+

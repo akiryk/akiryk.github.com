@@ -585,7 +585,7 @@ body {
 }
 /* line 18, ../sass/_base.scss */
 body.homepage {
-  background-color: #eee;
+  background-color: #ddd;
 }
 
 /* line 24, ../sass/_base.scss */
@@ -625,8 +625,7 @@ p {
  *
  * 
  */
-/* line 9, ../sass/_layout.scss */
-#wrapper-all,
+/* line 8, ../sass/_layout.scss */
 .wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -639,20 +638,7 @@ p {
   position: relative;
 }
 
-/* line 17, ../sass/_layout.scss */
-.primary-content-wrapper {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 47em;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-
-/* line 25, ../sass/_layout.scss */
+/* line 16, ../sass/_layout.scss */
 #primary-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -663,20 +649,15 @@ p {
   position: relative;
 }
 
-/* line 31, ../sass/_layout.scss */
-.content-inner {
-  margin: 0 auto;
-}
-
-/* line 37, ../sass/_layout.scss */
+/* line 22, ../sass/_layout.scss */
 .content-body {
   background-color: #fff;
   max-width: 32em;
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 2.5em;
 }
 
-/* line 44, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
 .home .content-body {
   background-color: transparent;
   margin: 0 1em;
@@ -685,33 +666,20 @@ p {
   overflow: hidden;
 }
 
-/* line 53, ../sass/_layout.scss */
+/* line 38, ../sass/_layout.scss */
 .blog-agg {
   background-color: #fff;
-  margin: 1.5em auto;
-  max-width: 32em;
+  margin: 1em auto;
   padding: 1.5em;
 }
 
-/* line 60, ../sass/_layout.scss */
-.continue-content {
-  margin: 0;
-  width: 100%;
-}
-
-@media only screen and (min-width: 50em) and (max-width: 63.74em) {
-  /* line 66, ../sass/_layout.scss */
-  .main-content {
-    overflow: hidden;
-  }
-}
 @media only screen and (min-width: 50em) {
-  /* line 72, ../sass/_layout.scss */
+  /* line 46, ../sass/_layout.scss */
   .content-body {
     padding: 0 2em;
   }
 
-  /* line 77, ../sass/_layout.scss */
+  /* line 51, ../sass/_layout.scss */
   .home .content-body {
     background-color: #fff;
     margin: 0 auto;
@@ -719,7 +687,7 @@ p {
     padding: 0 2em;
   }
 
-  /* line 85, ../sass/_layout.scss */
+  /* line 59, ../sass/_layout.scss */
   .blog-agg {
     background-color: #fff;
     margin: 1.5em auto;
@@ -727,62 +695,29 @@ p {
     padding: 0;
   }
 
-  /* line 93, ../sass/_layout.scss */
-  .content-inner,
-  .content-inner--hero {
-    background-color: white;
-    padding-right: 2em;
-    padding-left: 2em;
-    width: 32em;
-  }
-  /* line 100, ../sass/_layout.scss */
-  .content-inner > p:nth-of-type(1),
-  .content-inner--hero > p:nth-of-type(1) {
-    margin-top: 0;
-  }
-
-  /* line 106, ../sass/_layout.scss */
+  /* line 66, ../sass/_layout.scss */
   .blog-agg {
     margin: 1.5em 0;
   }
-
-  /* line 111, ../sass/_layout.scss */
-  .content-inner,
-  .content-inner--hero {
-    padding-top: 2em;
-  }
-
-  /* line 116, ../sass/_layout.scss */
-  .content-inner--hero {
-    margin-top: -8em;
-  }
-}
-@media only screen and (min-width: 63.75em) {
-  /* line 123, ../sass/_layout.scss */
-  .main-content {
-    margin-top: 0;
-    width: 100%;
-  }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 132, ../sass/_layout.scss */
-  #wrapper-all,
+  /* line 73, ../sass/_layout.scss */
   .wrapper {
     max-width: 62em;
   }
 
-  /* line 135, ../sass/_layout.scss */
+  /* line 77, ../sass/_layout.scss */
   #primary-content {
     margin-left: 13em;
   }
 
-  /* line 138, ../sass/_layout.scss */
+  /* line 80, ../sass/_layout.scss */
   .content-body {
     margin: 0;
     padding: 0 2em;
   }
 
-  /* line 144, ../sass/_layout.scss */
+  /* line 86, ../sass/_layout.scss */
   .home .content-body {
     margin-left: 0;
   }
@@ -794,28 +729,36 @@ p {
 /* line 6, ../sass/modules/_post.scss */
 .post-header {
   background-color: #fff;
-  padding: 1.5em 1.5em 1em 1.5em;
+  padding: 1.5em 1.5em 0 1.5em;
   margin-left: 1em;
   margin-right: 1em;
 }
 /* line 12, ../sass/modules/_post.scss */
+.post-header h1 {
+  margin-bottom: 0;
+}
+/* line 16, ../sass/modules/_post.scss */
 .post-header.with-hero {
   margin-top: -5em;
 }
+/* line 20, ../sass/modules/_post.scss */
+.post-header.no-hero {
+  margin-top: -7em;
+}
 
-/* line 17, ../sass/modules/_post.scss */
+/* line 25, ../sass/modules/_post.scss */
 .home-header {
   background-color: #fff;
   margin-left: 1em;
   margin-right: 1em;
   padding: 0;
 }
-/* line 23, ../sass/modules/_post.scss */
+/* line 31, ../sass/modules/_post.scss */
 .home-header.with-hero {
   margin-top: -5em;
 }
-/* line 27, ../sass/modules/_post.scss */
-.home-header .latest {
+/* line 35, ../sass/modules/_post.scss */
+.home-header h1 {
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.7em;
   margin-top: 0;
@@ -823,42 +766,42 @@ p {
   text-transform: uppercase;
   font-weight: 500;
   color: #f54a08;
-  margin: 0 auto;
+  margin: 0;
   max-width: none;
   padding: 15px 30px;
 }
 
 @media only screen and (min-width: 50em) {
-  /* line 37, ../sass/modules/_post.scss */
+  /* line 45, ../sass/modules/_post.scss */
   .post-header {
     margin-left: auto;
     margin-right: auto;
     max-width: 32em;
     padding: 2em 2em 1em 2em;
   }
-  /* line 43, ../sass/modules/_post.scss */
+  /* line 51, ../sass/modules/_post.scss */
   .post-header.with-hero {
     margin-top: -8em;
   }
 
-  /* line 48, ../sass/modules/_post.scss */
+  /* line 56, ../sass/modules/_post.scss */
   .home-header {
     margin-left: auto;
     margin-right: auto;
     max-width: 32em;
     padding: 0 2em;
   }
-  /* line 54, ../sass/modules/_post.scss */
+  /* line 62, ../sass/modules/_post.scss */
   .home-header .latest {
-    padding: 2em 0 0 0;
+    padding: 3em 0 0 0;
   }
-  /* line 58, ../sass/modules/_post.scss */
+  /* line 66, ../sass/modules/_post.scss */
   .home-header.with-hero {
     margin-top: -8em;
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 67, ../sass/modules/_post.scss */
+  /* line 75, ../sass/modules/_post.scss */
   .home-header,
   .post-header {
     margin-left: 0;
@@ -1431,6 +1374,15 @@ h6,
     color: #333;
   }
 }
+@media only screen and (min-width: 82.5em) {
+  /* line 81, ../sass/modules/_headings.scss */
+  .about-intro {
+    background-color: #ddd;
+    margin-left: -80px;
+    padding: 40px 80px;
+    width: 940px;
+  }
+}
 /**
  * Images.scss
  * Handle image sizes
@@ -1438,22 +1390,24 @@ h6,
  */
 /* line 7, ../sass/modules/_images.scss */
 .pic-hero {
+  background-color: #333;
   margin-bottom: 0;
   position: relative;
   width: 100%;
   z-index: -1;
+  min-height: 10em;
 }
-/* line 13, ../sass/modules/_images.scss */
+/* line 14, ../sass/modules/_images.scss */
 .pic-hero img {
   display: block;
 }
 
-/* line 18, ../sass/modules/_images.scss */
+/* line 20, ../sass/modules/_images.scss */
 .no-resize {
   width: auto;
 }
 
-/* line 22, ../sass/modules/_images.scss */
+/* line 24, ../sass/modules/_images.scss */
 .caption {
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   letter-spacing: 1px;
@@ -1462,7 +1416,7 @@ h6,
   max-width: 48em;
 }
 
-/* line 30, ../sass/modules/_images.scss */
+/* line 32, ../sass/modules/_images.scss */
 .pic-hero .caption {
   position: absolute;
   right: 1px;
@@ -1475,30 +1429,35 @@ h6,
 }
 
 @media only screen and (max-width: 49.99em) {
-  /* line 43, ../sass/modules/_images.scss */
+  /* line 45, ../sass/modules/_images.scss */
   .home-hero {
     display: none;
   }
 }
 @media only screen and (min-width: 50em) {
-  /* line 49, ../sass/modules/_images.scss */
+  /* line 51, ../sass/modules/_images.scss */
   .pic-large {
     width: 100%;
   }
+
+  /* line 54, ../sass/modules/_images.scss */
+  .pic-hero {
+    min-height: 10em;
+  }
 }
 @media only screen and (min-width: 63.75em) {
-  /* line 56, ../sass/modules/_images.scss */
+  /* line 61, ../sass/modules/_images.scss */
   .pic-large,
   .pic-hero {
     width: 47em;
   }
 
-  /* line 60, ../sass/modules/_images.scss */
+  /* line 65, ../sass/modules/_images.scss */
   .pic-large {
     margin-left: -7.5em;
   }
 
-  /* line 66, ../sass/modules/_images.scss */
+  /* line 71, ../sass/modules/_images.scss */
   .pic-outset {
     float: left;
     margin-left: -7.5em;
@@ -1508,19 +1467,21 @@ h6,
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 76, ../sass/modules/_images.scss */
+  /* line 81, ../sass/modules/_images.scss */
   .pic-large {
     margin-left: 0;
     width: 51em;
   }
 
-  /* line 81, ../sass/modules/_images.scss */
+  /* line 86, ../sass/modules/_images.scss */
   .pic-hero {
     left: -2em;
     width: 51em;
+    height: 20em;
+    overflow: hidden;
   }
 
-  /* line 87, ../sass/modules/_images.scss */
+  /* line 93, ../sass/modules/_images.scss */
   .pic-outset {
     margin-left: -8em;
   }
@@ -1822,7 +1783,7 @@ h6,
 #secondary-content .return {
   max-width: 32em;
   margin: 2em auto;
-  padding: 0 2em;
+  padding: 0 2.5em;
 }
 /* line 22, ../sass/modules/_secondary.scss */
 #secondary-content .blog-heading a {
@@ -2073,34 +2034,34 @@ a:hover {
 .portfolio-agg {
   background-color: #111;
   box-sizing: content-box;
-  margin: 1.5em auto;
+  margin: 1em auto;
   padding: 1.5em;
-  max-width: 32em;
 }
 
-/* line 17, ../sass/modules/_portfolio.scss */
+/* line 16, ../sass/modules/_portfolio.scss */
 .portfolio-wrapper {
   margin: 0 auto;
   width: 100%;
 }
-/* line 21, ../sass/modules/_portfolio.scss */
+/* line 20, ../sass/modules/_portfolio.scss */
 .portfolio-wrapper li {
   background-color: #1a1a1a;
   overflow: hidden;
 }
-/* line 24, ../sass/modules/_portfolio.scss */
+/* line 23, ../sass/modules/_portfolio.scss */
 .portfolio-wrapper li:nth-of-type(even) {
   background-color: #000;
 }
 
-/* line 31, ../sass/modules/_portfolio.scss */
+/* line 30, ../sass/modules/_portfolio.scss */
 .portfolio-post .post-header {
   background-color: #111;
   padding: 1.5em 1.5em 1em 1.5em;
 }
-/* line 34, ../sass/modules/_portfolio.scss */
+/* line 33, ../sass/modules/_portfolio.scss */
 .portfolio-post .post-header h1 {
   color: #fff;
+  margin-bottom: .5em;
 }
 /* line 37, ../sass/modules/_portfolio.scss */
 .portfolio-post .post-header .post-date {

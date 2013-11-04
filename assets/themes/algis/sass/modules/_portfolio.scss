@@ -8,9 +8,8 @@
 .portfolio-agg {
   background-color: #111;
   box-sizing: content-box;
-  margin: 1.5em auto;
+  margin: 1em auto;
   padding: 1.5em;
-  max-width: 32em;
 }
 
 // on portfolio page
@@ -33,6 +32,7 @@
     padding: 1.5em 1.5em 1em 1.5em;
     h1 {
       color: #fff;
+      margin-bottom: .5em;
     }
     .post-date {
       color: #777;

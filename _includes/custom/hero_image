@@ -13,5 +13,6 @@
   </div>
   <header class="post-header with-hero">
 {% else %}
-  <header class="post-header">
+  <div class="pic-hero"></div>
+    <header class="post-header no-hero">
 {% endif %}

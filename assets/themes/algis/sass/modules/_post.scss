@@ -5,12 +5,20 @@
 
 .post-header {
   background-color: #fff;
-  padding: 1.5em 1.5em 1em 1.5em;
+  padding: 1.5em 1.5em 0 1.5em;
   margin-left: 1em;
   margin-right: 1em;
 
+  h1 {
+    margin-bottom: 0;
+  }
+  
   &.with-hero {
     margin-top: -5em;
+  }
+
+  &.no-hero {
+    margin-top: -7em;
   }
 }
 
@@ -24,10 +32,10 @@
     margin-top: -5em;
   }
 
-  .latest {
+  h1 {
     @include slug-title();
     color: $red;
-    margin: 0 auto;
+    margin: 0;
     max-width: none;
     padding: 15px 30px;
   }
@@ -52,7 +60,7 @@
     padding: 0 2em;
 
     .latest {
-      padding: 2em 0 0 0;
+      padding: getEms(42, $caption-size) 0 0 0;
     }
 
     &.with-hero {

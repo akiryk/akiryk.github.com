@@ -5,16 +5,7 @@
  * 
  */
 
-#wrapper-all,
 .wrapper {
-  @include vendor(box-sizing, border-box);
-  max-width: $content-wrapper-width + em; 
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.primary-content-wrapper {
   @include vendor(box-sizing, border-box);
   max-width: $content-wrapper-width + em; 
   margin: 0 auto;
@@ -28,16 +19,10 @@
   position: relative;
 }
 
-.content-inner {
-  // no box-sizing; doesn't seem necessary
-  margin: 0 auto;
-  // max-width: $content-width + em;
-}
-
 .content-body {
   @include content();
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 2.5em;
 }
 
 .home {
@@ -52,21 +37,10 @@
 
 .blog-agg {
   background-color: #fff;
-  margin: 1.5em auto;
-  max-width: 32em;
+  margin: 1em auto;
   padding: 1.5em;
 }
 
-.continue-content {
-  margin: 0;
-  width: 100%;
-}
-
-@include media-query(lap) {
-  .main-content {
-    overflow: hidden;
-  }
-}
 
 @include media-query(lap-and-up) {
   .content-body {
@@ -89,49 +63,17 @@
     padding: 0;
   }
 
-
-  %c {
-    background-color: white;
-    padding-right: $gutter-width + em;
-    padding-left: $gutter-width + em;
-    width: $content-width + em;
-
-    > p {
-      &:nth-of-type(1) {
-        margin-top: 0;
-      }
-    }
-  }
-
   .blog-agg {
     margin: 1.5em 0;
   }
 
-  .content-inner,
-  .content-inner--hero {
-    padding-top: $gutter-width + em;
-    @extend %c;
-  }
-
-  .content-inner--hero {
-    margin-top: -8em;
-  }
 }
 
-@include media-query(desk){
-
-  .main-content {
-    margin-top: 0;
-    width: 100%;
-  }
-
-
-}
 @include media-query(desk-wide) {
-  #wrapper-all,
   .wrapper {
     max-width: $widest-width+em;
   }
+
   #primary-content {
     margin-left: 13em;
   }
