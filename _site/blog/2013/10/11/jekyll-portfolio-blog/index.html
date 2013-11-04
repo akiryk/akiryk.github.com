@@ -46,49 +46,52 @@
 
 
   </head>
-  <body>
-    <div id="wrapper-all">
-
-      <header class="masthead cf">
-  <div class="logo-wrapper">
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header id="masthead" class="cf">
+  <div class="masthead-top">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
     </a>
     <a href="#main" class="screenreaders">Skip navigation</a>
     <div id="toggle">Toggle</div>
-  </div><!-- .logo-wrapper -->
-  <nav id="menu" class="">
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="">
+    
 
 
   
 <ul class="primary-nav">
     <li>
-  
-      <a href="/index.html" class="nav-link">Blog</a>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
     </li>
 
     <li>
-  
-      <a href="/portfolio.html" class="nav-link">Portfolio</a>
+      
+        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+       
     </li>
 
     <li>
-  
-      <a href="/about.html" class="nav-link">About</a>
+      
+        <a href="/about.html" class="nav-link">About</a>
+       
     </li>
 
 </ul>
 
 
-</nav>
-</header>
 
-      <div id="main" class="content-outer cf">
-        
-  <article>
-   
-      <div class="content-inner">
-    
+  </nav>
+</header>
+      
+<article id="primary-content" class="blog-post">
+  
+  
+  <header class="post-header">
+
       <div class="post-title-meta">
   <span class="post-date">October 11, 2013</span> <span class="divider"> / </span>
   <span class="by">by</span>
@@ -98,8 +101,10 @@
     
   </span> 
 </div>
-<h1><span class="backgrounded">Making a Blog/Portfolio Site with Jekyll </span></h1>
+<h1>Making a Blog/Portfolio Site with Jekyll </h1>
 
+    </header>
+    <div class="content-body">
       <style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
 
 <div class="bt-video-container" style="position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden"><iframe width="480" height="360" src="http://www.youtube.com/embed/B4g4zTF5lDo?rel=0" frameborder="0" allowfullscreen></iframe></div>
@@ -122,50 +127,45 @@
 <p>Handling plugins. </p>
 
       
+
   <ul class="post-tags">
     
-    
-
-
+    <li class="inline tag-title">Filed under: </li>
+      
+         
+          <li class="inline"><a href="/tag/development" class="tag-link">development</a> </li>
+         
+          <li class="inline"><a href="/tag/jekyll" class="tag-link">jekyll</a> </li>
+         
+          <li class="inline"><a href="/tag/cms" class="tag-link">cms</a> </li>
+        
+      
+    </ul>
   
-<li class="inline tag-title">Filed under: </li>
-
-   
-    <li class="inline"><a href="/tag/development" class="tag-link">development</a> </li>
-   
-    <li class="inline"><a href="/tag/jekyll" class="tag-link">jekyll</a> </li>
-   
-    <li class="inline"><a href="/tag/cms" class="tag-link">cms</a> </li>
-  
 
 
 
-
-
-
-
-  </ul>
-  
     </div>
   </article>
-  <section class="secondary-content">
-    <div class="posts">
-      
-        <div class="slug slug--underline">Previous</div>
-          <h2 class="blog-heading"><a href="/blog/2013/10/07/book-browsing" title="Better Book Browsing Online">Better Book Browsing Online</a></h2>
-        <p class="teaser"> A Readers' Cry for a Better Digital Book Browsing User Experience.</p>
-      
-      
-        <div class="slug slug--underline">Next</div>
-          <h2 class="blog-heading"><a href="/blog/2013/10/12/personal-site-process" title="How I did it">How I did it</a></h2>
-        <p class="teaser"> I just made a new personal website and blog. Here's my design and development process. Here's the process I used. I started by creating loose mockups for my home page and post pages. I didn't mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work.</p>
-      
-      </ul>
-    </div>
-    <div class="return">
-      <a href="/">Home</a> | <a href="#wrapper-all">Return to Top</a>
-    </div>
-    <!-- 
+</div><!-- close .wrapper-all from default.html -->
+<section id="secondary-content" class="">
+  <div class="posts">
+    
+      <div class="slug slug--underline">Previous Post</div>
+        <h2 class="blog-heading"><a href="/blog/2013/10/07/book-browsing" title="Better Book Browsing Online">Better Book Browsing Online</a></h2>
+      <p class="teaser"> A Readers' Cry for a Better Digital Book Browsing User Experience.</p>
+    
+    
+      <div class="slug slug--underline">Next Post</div>
+        <h2 class="blog-heading"><a href="/blog/2013/10/12/personal-site-process" title="How I did it">How I did it</a></h2>
+      <p class="teaser"> I just made a new personal website and blog. Here's my design and development process. Here's the process I used. I started by creating loose mockups for my home page and post pages. I didn't mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work.</p>
+    
+    </ul>
+  </div>
+  <div class="return">
+    <a href="/">Home</a> | <a href="#top">Return to Top</a>
+  </div>
+  <!-- 
 
 
   <div id="disqus_thread"></div>
@@ -186,21 +186,19 @@
 
 
  -->
-  </section>
+</section>
 
-      </div>
-      
       <footer>
-  <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+  <div class="footer-body">
+    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+    </div>
 </footer>
 
-
-    </div><!-- #wrapper -->
    
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
-        var menu = document.getElementById("menu");
+        var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 
           if (expanded) {

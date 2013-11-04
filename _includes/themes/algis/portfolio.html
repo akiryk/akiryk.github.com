@@ -1,1 +1,15 @@
-{{ content }}
+<article id="primary-content" class="portfolio-post">
+  {% assign dir = "portfolio-heros" %}
+  {% include custom/hero_image %}
+    <div class="post-title-meta">
+      <span class="micro-teaser">{{ page.micro-teaser }}</span><span class="divider"> / </span><span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>     
+    </div>
+    <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+    </header>
+  <div class="content-body">
+    {{ content }}
+    {% include custom/tags_list %}
+  </div>
+</article>
+</div><!-- close .wrapper-all from default.html -->
+{% include custom/secondary %}

@@ -5,9 +5,10 @@
  */
 
 .pic-hero {
-  margin-bottom: 1.6em;
+  margin-bottom: 0;
   position: relative;
   width: 100%;
+  z-index: -1;
 
   img {
     display: block;
@@ -25,17 +26,22 @@
   max-width: 48em;
 }
 
+.pic-hero {
+  .caption {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 12px;
+    color: #333;
+    background: rgba(255,255,255,0.5);
+    padding: .5em 1em;
+    margin: 0;
+  }
+}
+
 @include media-query(palm) {
-  .pic-hero {
-    // margin: 1.6em auto;
-    overflow: hidden;
-    .caption {
-      font-size: 12px;
-      color: $lighter-text;
-      text-align: right;
-      max-width: 100%;
-      padding:.5em 0;
-    }
+  .home-hero {
+    display: none;
   }
 }
 
@@ -43,24 +49,6 @@
   .pic-large {
     width: 100%;
   }
-
-  .pic-hero {
-    margin-bottom: 0;
-    z-index: -1;
-  
-    .caption {
-      position: absolute;
-      right: 1px;
-      top: 1px;
-      font-size: 12px;
-      color: #333;
-      background: rgba(255,255,255,0.5);
-      padding: .5em 1em;
-      margin: 0;
-    }
-
-  }
-
 }
 
 @include media-query(desk) {

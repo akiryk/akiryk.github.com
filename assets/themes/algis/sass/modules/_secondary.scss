@@ -1,0 +1,33 @@
+/**
+ * Secondary
+ *
+ * Styles for secondary content, such as next and previous
+ * or related posts. This is content that is part of the main content
+ * area (i.e. not part of the masthead or footer) but not part of
+ * the primary content.
+ */
+
+#secondary-content {
+  background-color: #111;
+  color: #999;
+  overflow: hidden;
+
+  .posts,
+  .return {
+    max-width: 32em;
+    margin: 2em auto;
+    padding: 0 2em;
+  }
+
+  .blog-heading a {
+    color: #fff;
+  }
+}
+
+@include media-query(lap-and-up) {
+  .posts,
+  .return {
+    padding: 0 2em;
+  }
+}
+

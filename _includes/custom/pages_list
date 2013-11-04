@@ -4,12 +4,13 @@
   Note that this file is called from the Jekyll Bootstrap pages_list file, which knows
   there is a custom version to call based on config.yml settings. 
 -->{% endcomment %}
-{% assign links = site.AK.primary_nav %}<ul class="primary-nav">{% for link in links %}{% if page.url == link[0] %}
-    <li class="active">
-  {% else %}
+{% assign links = site.AK.primary_nav %}<ul class="primary-nav">{% for link in links %}
     <li>
-  {% endif %}
-      <a href="{{ link[0] }}" class="nav-link">{{ link[1] }}</a>
+      {% if page.url == link[0] %}
+        <a href="{{ link[0] }}" class="nav-link current">{{ link[1] }}</a>
+      {% else %}
+        <a href="{{ link[0] }}" class="nav-link">{{ link[1] }}</a>
+      {% endif %} 
     </li>
 {% endfor %}
 </ul>

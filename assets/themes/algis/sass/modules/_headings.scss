@@ -17,6 +17,7 @@ $sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size;
     font-size: getEms(nth($sizelist, $i)); // see _functions.scss
     margin: getEms($base-line-height, nth($sizelist, $i)) 0;
     @if ($i<5) {
+      @include vendor(font-smoothing, antialiased);
       @if ($i == 1) {
         line-height: 1.2;
         margin-left:-2px;
@@ -34,18 +35,13 @@ $sizelist: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size;
   line-height: 1.35;
 }
 
-.blog-heading {
+.blog-agg-heading {
   font-size: getEms(30);
   margin-bottom: getEms(6, 30);
+  margin-top: 0;
   a {
     color: $normal-color;
   }
-}
-
-.portfolio-title {
-  line-height: 1.2;
-  font-size: 20px;
-  margin: 0.25em 0;
 }
 
 @include media-query(lap-and-up){

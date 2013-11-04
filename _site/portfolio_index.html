@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>Gronster Drawing Game</title>
+  <title>Portfolio</title>
   
   <meta name="author" content="Adam Kiryk">
 
@@ -46,62 +46,130 @@
 
 
   </head>
-  <body>
-    <div id="wrapper-all">
-
-      <header class="masthead cf">
-  <div class="logo-wrapper">
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header id="masthead" class="cf">
+  <div class="masthead-top">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
     </a>
     <a href="#main" class="screenreaders">Skip navigation</a>
     <div id="toggle">Toggle</div>
-  </div><!-- .logo-wrapper -->
-  <nav id="menu" class="">
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="">
+    
 
 
   
 <ul class="primary-nav">
     <li>
-  
-      <a href="/index.html" class="nav-link">Blog</a>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
     </li>
 
     <li>
-  
-      <a href="/portfolio.html" class="nav-link">Portfolio</a>
+      
+        <a href="/portfolio_index.html" class="nav-link current">Portfolio</a>
+       
     </li>
 
     <li>
-  
-      <a href="/about.html" class="nav-link">About</a>
+      
+        <a href="/about.html" class="nav-link">About</a>
+       
     </li>
 
 </ul>
 
 
-</nav>
+
+  </nav>
 </header>
-
-      <div id="main" class="content-outer cf">
-        
-<p>Gronster, This is some new content.</p>
-
-
-
-      </div>
       
+
+<div id="primary-content" class="portfolio-wrapper">
+  <ul class="vertical-list">
+    
+      
+        <li>
+          <a href="/portfolio/2013/02/09/facebook-project" class="portfolio-piece">
+            <div class="portfolio-text">
+              <div class="slugger">
+                <div class="slug">ux + design + front-end</div>
+                <h4 class="portfolio-title">NPR Stations on Facebook</h4>
+              </div>
+              <p class="portfolio-teaser">With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
+            </div>
+            
+              <div class="portfolio-image">
+                <span data-picture data-alt="Portfolio image">
+                  <span data-src="/assets/images/portfolio-images/amplify-small.jpg"></span>
+                  <span data-src="/assets/images/portfolio-images/amplify-med.jpg" data-media="(min-width: 800px)"></span>
+                  <span data-src="/assets/images/portfolio-images/amplify-med.jpg" data-media="(min-width: 1320px)"></span>
+                  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                  <noscript>
+                    <img src="/assets/images/portfolio-images/amplify-small.jpg">
+                  </noscript>
+                </span>
+              </div>
+            
+          </a>
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          <a href="/portfolio/2008/07/18/whales" class="portfolio-piece">
+            <div class="portfolio-text">
+              <div class="slugger">
+                <div class="slug">design + code</div>
+                <h4 class="portfolio-title">Whale Game</h4>
+              </div>
+              <p class="portfolio-teaser">Try to save the whales by popping to balloons!</p>
+            </div>
+            
+              <div class="portfolio-image">
+                <span data-picture data-alt="Portfolio image">
+                  <span data-src="/assets/images/portfolio-images/whale-small.jpg"></span>
+                  <span data-src="/assets/images/portfolio-images/whale-med.jpg" data-media="(min-width: 800px)"></span>
+                  <span data-src="/assets/images/portfolio-images/whale-med.jpg" data-media="(min-width: 1320px)"></span>
+                  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                  <noscript>
+                    <img src="/assets/images/portfolio-images/whale-small.jpg">
+                  </noscript>
+                </span>
+              </div>
+            
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+</div><!-- close .wrapper-all from default.html -->
+
+
+
+
+
       <footer>
-  <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+  <div class="footer-body">
+    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+    </div>
 </footer>
 
-
-    </div><!-- #wrapper -->
    
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
-        var menu = document.getElementById("menu");
+        var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 
           if (expanded) {

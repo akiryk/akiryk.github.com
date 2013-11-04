@@ -1,0 +1,12 @@
+/**
+ * Slugger
+ *
+ * Handles small subtitles or 'slugs' that go above headings
+ * 
+ */
+
+.slugger {
+  h1,h2,h3,h4 {
+    margin-top: 0;
+  }
+}

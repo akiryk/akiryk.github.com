@@ -5,26 +5,14 @@
  */
 
 
-// title for home page: "latest posts"
-.latest {
-  @include slug-title();
-  border-bottom: 1px solid #999;
-  color: $red;
-  margin: 0;
-  padding-bottom: 0.55em;
-}
-
 // E.g. "Portfolio" on top of portfolio titles on home page
 .slug {
   @include slug-title();
 }
-  .slug + h2 {
-    margin-top: 0;
-  }
 
 .slug-alt {
   // a light version of the slug
-  @include slug-title(true);
+  @include slug-title($base-font-size, true);
 }
 
 .slug--underline {

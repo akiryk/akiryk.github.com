@@ -35,13 +35,13 @@ $desk-wide-start: getNormlizedEms($desk-wide);
 $desk: $content-width + 3*($gutter-width) + $column-width; // helper var (two columns, one wide and one narrow)
 $desk-start: getNormlizedEms($desk);
 
-$lap: $content-width + (6*$gutter-width);
+$lap: $content-width + (4*$gutter-width);
 $lap-start: getNormlizedEms($lap);
 
 $large-palm: 36em;
 
 // Colors
-$red: #d52800;
+$red: #f54a08;
 $normal-color: #333;
 $light-text: #666;
 $lighter-text: #aaa;

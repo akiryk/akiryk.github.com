@@ -1,0 +1,62 @@
+---
+layout: default
+hero: cassis
+hero-caption: Hotel sign, Cassis, France
+classes: homepage
+---
+{% include JB/setup %}
+<section id="primary-content" class="home">
+{% if page.hero %}
+  <div class="pic-hero">
+    <span data-picture data-alt="{{ page.hero-caption }}">
+      <span data-src="/assets/images/heros/{{ page.hero }}-small.jpg" ></span>
+      <span data-src="/assets/images/heros/{{ page.hero }}-large.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
+      <noscript>
+        <img src="/assets/images/heros/{{ page.hero }}-small.jpg">
+      </noscript>
+    </span>
+    {% if page.hero-caption %}
+      <div class="caption">{{ page.hero-caption }}</div>
+    {% endif %}
+  </div>
+  <header class="home-header with-hero">
+{% else %}
+  <header class="home-header">
+{% endif %}
+  <h1 class="latest">Latest Posts</h1>
+</header>
+<ul class="content-body vertical-list">
+  {% for post in site.posts %}
+    {% if post.category == 'portfolio' %}
+      <li class="portfolio-agg">
+        <a href="{{ BASE_PATH }}{{ post.url }}" class="portfolio-piece">
+            <div class="portfolio-text">
+              <div class="slugger">
+                <div class="slug">Portfolio Piece</div>
+                <h4 class="portfolio-title">{{ post.title }}</h4>
+              </div>
+              <p class="portfolio-teaser">{{ post.teaser }}</p>
+            </div>
+            {% if post.image %}
+              <div class="portfolio-image">
+                <span data-picture data-alt="Portfolio image">
+                  <span data-src="/assets/images/portfolio-images/{{ post.image }}-small.jpg"></span>
+                  <span data-src="/assets/images/portfolio-images/{{ post.image }}-thumb-large.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
+                  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                  <noscript>
+                    <img src="/assets/images/portfolio-images/{{ post.image }}-small.jpg">
+                  </noscript>
+                </span>
+              </div>
+            {% endif %}
+          </a>
+    {% else %}
+      <li class="blog-agg">
+        <h2 class="blog-agg-heading"><a href="{{ BASE_PATH }}{{ post.url }}" class="agg-link">{{ post.title }}</a></h2>
+        <p class="teaser"><span class="agg-title-meta">{{ post.date | date: "%B %d, %Y" }}</span>{{ post.teaser }}</p>
+    {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+</section>
+</div> <!-- end .wrapper -->

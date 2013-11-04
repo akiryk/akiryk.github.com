@@ -46,46 +46,59 @@
 
 
   </head>
-  <body>
-    <div id="wrapper-all">
-
-      <header class="masthead cf">
-  <div class="logo-wrapper">
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header id="masthead" class="cf">
+  <div class="masthead-top">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
     </a>
     <a href="#main" class="screenreaders">Skip navigation</a>
     <div id="toggle">Toggle</div>
-  </div><!-- .logo-wrapper -->
-  <nav id="menu" class="">
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="">
+    
 
 
   
 <ul class="primary-nav">
     <li>
-  
-      <a href="/index.html" class="nav-link">Blog</a>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
     </li>
 
     <li>
-  
-      <a href="/portfolio.html" class="nav-link">Portfolio</a>
+      
+        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+       
     </li>
 
     <li>
-  
-      <a href="/about.html" class="nav-link">About</a>
+      
+        <a href="/about.html" class="nav-link">About</a>
+       
     </li>
 
 </ul>
 
 
-</nav>
-</header>
 
-      <div id="main" class="content-outer cf">
-        
-<p class="intro">
+  </nav>
+</header>
+      
+<article id="primary-content" class="portfolio-post">
+  
+  
+  <header class="post-header">
+
+    <div class="post-title-meta">
+      <span class="micro-teaser">illustration</span><span class="divider"> / </span><span class="post-date">April 07, 2012</span>     
+    </div>
+    <h1>Moose </h1>
+    </header>
+  <div class="content-body">
+    <p class="intro">
   In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a <a href="http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&hq_m=2040998&hq_l=1&hq_v=437cc910b2">big success</a> For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.
 </p>
 
@@ -109,21 +122,81 @@
 
 <div class="bt-video-container" style="position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden"><iframe width="480" height="360" src="http://player.vimeo.com/video/61651127?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
+    
 
-
-      </div>
+  <ul class="post-tags">
+    
+    <li class="inline tag-title">Filed under: </li>
       
+         
+          <li class="inline"><a href="/tag/ux" class="tag-link">ux</a> </li>
+         
+          <li class="inline"><a href="/tag/cms" class="tag-link">cms</a> </li>
+         
+          <li class="inline"><a href="/tag/npr" class="tag-link">npr</a> </li>
+         
+          <li class="inline"><a href="/tag/design" class="tag-link">design</a> </li>
+        
+      
+    </ul>
+  
+
+
+
+  </div>
+</article>
+</div><!-- close .wrapper-all from default.html -->
+<section id="secondary-content" class="">
+  <div class="posts">
+    
+      <div class="slug slug--underline">Previous Post</div>
+        <h2 class="blog-heading"><a href="/portfolio/2008/07/18/whales" title="Whale Game">Whale Game</a></h2>
+      <p class="teaser"> Try to save the whales by popping to balloons!</p>
+    
+    
+      <div class="slug slug--underline">Next Post</div>
+        <h2 class="blog-heading"><a href="/portfolio/2012/11/19/CMS-for-NPR" title="Content Management for NPR Stations">Content Management for NPR Stations</a></h2>
+      <p class="teaser"> Most NPR member stations use a content management system (CMS) based on Drupal to manage their websites. I redesigned key parts of this CMS to make content-creation simpler and more intuitive.</p>
+    
+    </ul>
+  </div>
+  <div class="return">
+    <a href="/">Home</a> | <a href="#top">Return to Top</a>
+  </div>
+  <!-- 
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'adamkiryk'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+ -->
+</section>
+
       <footer>
-  <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+  <div class="footer-body">
+    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+    </div>
 </footer>
 
-
-    </div><!-- #wrapper -->
    
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
-        var menu = document.getElementById("menu");
+        var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 
           if (expanded) {

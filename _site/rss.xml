@@ -5,10 +5,76 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-11-02T12:06:16+01:00</lastBuildDate>
-        <pubDate>2013-11-02T12:06:16+01:00</pubDate>
+        <lastBuildDate>2013-11-04T11:20:22+01:00</lastBuildDate>
+        <pubDate>2013-11-04T11:20:22+01:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Gronster Drawing Game</title>
+                <description>&lt;p&gt;&lt;em&gt;Synopsis:&lt;/em&gt; Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like.  &lt;/p&gt;
+
+&lt;div class=&quot;pic-outset&quot;&gt;
+  &lt;h2&gt;To Begin With, We Make A Comparison With Jonas Avimbi:&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I&amp;#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#39;m talking about the experience of looking for something you don&amp;#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#39;s an experience that&amp;#39;s been notably absent from the world of digital book-shopping. &lt;/p&gt;
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    Why? Well, I'm not sure, but I suppose it's because the big digital booksellers don't think they need to worry about it. They move enough product as is. They seem to have concluded that the most important part of the book-buying process is the moment you click the 'buy' button. I think that's a mistake.
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;An Aside&lt;/span&gt; This isn't strictly speaking true. On the one hand, sure, it is. But on the other I'm not so sure. So...
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As more and more people purchase and read digital books, it&amp;#39;s critical to keep the experience of shopping for those books engaging and fun. Critical? Sure, absolutely. If we remove the fun of the hunt, what&amp;#39;s left? Just a dry algorithm: you bought that one (or your friends did), so buy this! It narrows your world. &lt;/p&gt;
+
+&lt;p&gt;Perhaps you disagree. Perhaps you think digital book-browsing is just fine as is. (An aside: let me try to think of a less awful and cumbersome term than &amp;#39;digital book-browsing.&amp;#39; e-Book shopping? Browsing for books in the digital space? Ugh. Forget it. From now on, when I say &amp;#39;browsing,&amp;#39; I mean browsing for books either online or in an app. If I want to talk about browsing in the real world, I&amp;#39;ll be explicit about it). &lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Photograph of flowers&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/random/flowers-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;This is a caption. Live with it.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and browse through listings like these (see example from the iBook store)? It isn&amp;#39;t, I don&amp;#39;t think. It&amp;#39;s repetitive. Nothing stands out (except for the orange buy buttons). Everything is presented as equally important. You have to squint to see the artwork. It feels less like browsing and more like research, or worse, data-entry. &lt;/p&gt;
+
+&lt;h3&gt;Imagine a Better Way&lt;/h3&gt;
+
+&lt;p&gt;Imagine there&amp;#39;s a new digital bookseller in town, and they want to provide a better way to browse. They think their customers will be happier with their purchases if they&amp;#39;ve spent enough time to find the right books — and they&amp;#39;ll be more satisfied overall if the process of exploring for those right books is enjoyable. How would I approach the problem? What would I suggest? Why would I suggest it?&lt;/p&gt;
+
+&lt;h2&gt;Inspirations&lt;/h2&gt;
+
+&lt;p&gt;The first thing I&amp;#39;d do is examine what it&amp;#39;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
+
+&lt;div class=&quot;pic-outset&quot;&gt;
+ 
+  &lt;span data-picture data-alt=&quot;This is a nice image, outset at large screen sizes, small at small.&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/random/flowers-outset.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
+
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;external/imgs/small-flowers.jpg&quot; alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;This is a caption. Live with it.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here&amp;#39;s a thought — they do it because it&amp;#39;s pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop&amp;#39;s barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn&amp;#39;t replicate those things very easily in a digital experience. You wouldn&amp;#39;t want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure). &lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2013/11/02/gronster</link>
+                <guid>http://akiryk.github.io/blog/2013/11/02/gronster</guid>
+                <pubDate>2013-11-02T00:00:00+01:00</pubDate>
+        </item>
 
         <item>
                 <title>Readable Body Text</title>
@@ -310,15 +376,6 @@ The idea is to role play a &amp;#39;conversation&amp;#39; with the user-interfac
                 <link>http://akiryk.github.io/portfolio/2012/11/19/CMS-for-NPR</link>
                 <guid>http://akiryk.github.io/portfolio/2012/11/19/CMS-for-NPR</guid>
                 <pubDate>2012-11-19T00:00:00+01:00</pubDate>
-        </item>
-
-        <item>
-                <title>Gronster Drawing Game</title>
-                <description>&lt;p&gt;Gronster, This is some new content.&lt;/p&gt;
-</description>
-                <link>http://akiryk.github.io/portfolio/2012/06/12/gronster</link>
-                <guid>http://akiryk.github.io/portfolio/2012/06/12/gronster</guid>
-                <pubDate>2012-06-12T00:00:00+02:00</pubDate>
         </item>
 
         <item>

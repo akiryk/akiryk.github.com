@@ -4,25 +4,22 @@
  * 
  */
 
-.masthead {
+#masthead {
   @include vendor(box-sizing, border-box);
-  margin: 0 auto;
-  width: 90%;
+  background-color: #fff;
 }
 
-.logo-wrapper {
-  border-bottom: 1px solid #ccc;
-  margin-top: 1em;
-  padding-bottom: .5em;
+.masthead-top {
   overflow: hidden;
 }
 
 .logo {
   float: left;
-  margin-right: 1em;
+  overflow: hidden;
+  padding: .5em 1.5em;  
 }
 
-#menu {
+#primary-menu {
   display: none;
 
   &.expanded {
@@ -32,15 +29,17 @@
 
 #toggle {
   background: transparent url(../images/toggle.gif) no-repeat center center;
+  cursor: pointer;
   float: right;
   height: 41px;
+  padding: .5em 1.5em;
   width: 31px;
   text-indent: -999em;
 }
 
 .primary-nav{
     list-style:none;
-    padding-left:0;
+    padding-left: 0;
     @extend .cf;
 }
 
@@ -52,61 +51,69 @@
   *display:inline;
   font-family: $sans;
   font-size: 0.9em;
+  line-height: 3.25em;
   text-decoration: none;
   // text-transform: uppercase;
   zoom:1;
+
+  &.current {
+    color: #111;
+  }
 }
 
-
 @include media-query(palm) {
+  .nav-link {
+    line-height: 3em;
+    background-color: #eee;
+    color: #333;
+    display:block;
+    padding-left: 1em;
 
-  .logo-wrapper {
-    margin-top: .5em;
-    padding-bottom: .25em;
+    &:active {
+      background-color: #ccc;
+    }
+  }
+
+  .nav-link.current {
+    background-color: #999;
+    color: white;
   }
 
   .primary-nav{
     margin: 0;
-
     // Stack the nav items
     > li{
         border-bottom: 1px solid white;
         display:list-item;
-        > a{
-            line-height: 3em;
-            background-color: #eee;
-            color: #333;
-            display:block;
-            padding-left: 1em;
-
-            &:active {
-              background-color: #ccc;
-            }
-        }
-    }
-
-    li.active a {
-      background-color: #999;
-      color: white;
     }
   }
 
 }
 
+@include media-query(lap){
+  .primary-nav {
+    right: 1.5em;
+  }
+}
+
 @include media-query(lap-and-up) {
+
   #toggle {
     display: none;
   }
 
-  #menu {
+  .masthead-top {
+    border-bottom: 1px solid #ccc;
+  }
+
+  #primary-menu {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
   }
 
   .primary-nav {
-    margin: .25em 0 0 0;
+    position: absolute;
+    top: 0;
+    margin: 0;
     > li {
       display: inline-block;
       margin-right: 2em;
@@ -116,33 +123,28 @@
     }
   }
 
-  .masthead {
-    max-width: 90%;
-    position: relative;
-    width: auto;
-  }
 }
 
 
 @include media-query(desk) {
-  .masthead {
-    max-width: 100%;
-    width: 100%;
+  .logo {
+    padding-left: 0;
+  }
+  .primary-nav {
+    right: 0;
   }
 }
 
 @include media-query(desk-wide) {
-  #menu {
-    position: static;
-  }
 
-  .masthead {
+  #masthead {
+    background-color: transparent;
     float: left;
     margin: 4em 0 0 0;
     width: $column-width + em;
   }
 
-  .logo-wrapper {
+  .masthead-top {
     border-bottom: none;
     padding-bottom: 0;
   }
@@ -157,10 +159,12 @@
     list-style:none;
     margin-left:0;
     margin-top: 1em;
+    position: static;
 
     > li{
         display:list-item;
-        padding-bottom: 1em;
+        margin: 0;
+        padding: 0;
     }
   }
 

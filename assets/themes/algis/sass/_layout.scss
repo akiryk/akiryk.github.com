@@ -5,7 +5,8 @@
  * 
  */
 
-#wrapper-all {
+#wrapper-all,
+.wrapper {
   @include vendor(box-sizing, border-box);
   max-width: $content-wrapper-width + em; 
   margin: 0 auto;
@@ -13,18 +14,47 @@
   position: relative;
 }
 
-.content-outer {
+.primary-content-wrapper {
+  @include vendor(box-sizing, border-box);
+  max-width: $content-wrapper-width + em; 
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#primary-content {
   @include vendor(box-sizing, border-box);
   margin: 0 auto;
   position: relative;
-  width: 90%;
 }
 
-.content-inner,
-.secondary-content {
+.content-inner {
   // no box-sizing; doesn't seem necessary
   margin: 0 auto;
-  max-width: $content-width + em;
+  // max-width: $content-width + em;
+}
+
+.content-body {
+  @include content();
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.home {
+  .content-body {
+    background-color: transparent;
+    margin: 0 1em;
+    padding: 0;
+    max-width: none;
+    overflow: hidden;  
+  }
+}
+
+.blog-agg {
+  background-color: #fff;
+  margin: 1.5em auto;
+  max-width: 32em;
+  padding: 1.5em;
 }
 
 .continue-content {
@@ -33,12 +63,33 @@
 }
 
 @include media-query(lap) {
-  .content-outer {
+  .main-content {
     overflow: hidden;
   }
 }
 
 @include media-query(lap-and-up) {
+  .content-body {
+    padding: 0 2em;
+  }
+
+  .home {
+    .content-body {
+      background-color: #fff;
+      margin: 0 auto;
+      max-width: 32em;
+      padding: 0 2em;
+    }
+  }
+
+  .blog-agg {
+    background-color: #fff;
+    margin: 1.5em auto;
+    max-width: 32em;
+    padding: 0;
+  }
+
+
   %c {
     background-color: white;
     padding-right: $gutter-width + em;
@@ -51,9 +102,11 @@
       }
     }
   }
-  .secondary-content {
-    @extend %c;
+
+  .blog-agg {
+    margin: 1.5em 0;
   }
+
   .content-inner,
   .content-inner--hero {
     padding-top: $gutter-width + em;
@@ -67,28 +120,29 @@
 
 @include media-query(desk){
 
-  .content-outer {
+  .main-content {
     margin-top: 0;
     width: 100%;
   }
 
-  .content-inner {
-    margin-left: 2em;
-  }
 
 }
 @include media-query(desk-wide) {
-  #wrapper-all {
+  #wrapper-all,
+  .wrapper {
     max-width: $widest-width+em;
   }
- 
-  .content-outer {
-     margin-left: $column-width + em;
+  #primary-content {
+    margin-left: 13em;
   }
+    .content-body {
+      margin: 0;
+      padding: 0 2em;
+    }
 
-  .content-inner,
-  .secondary-content {
-    margin-left: 0;
-    margin-right: 0;
+  .home {
+    .content-body {
+      margin-left: 0;
+    }
   }
 }

@@ -46,45 +46,47 @@
 
 
   </head>
-  <body>
-    <div id="wrapper-all">
-
-      <header class="masthead cf">
-  <div class="logo-wrapper">
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header id="masthead" class="cf">
+  <div class="masthead-top">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
     </a>
     <a href="#main" class="screenreaders">Skip navigation</a>
     <div id="toggle">Toggle</div>
-  </div><!-- .logo-wrapper -->
-  <nav id="menu" class="">
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="">
+    
 
 
   
 <ul class="primary-nav">
     <li>
-  
-      <a href="/index.html" class="nav-link">Blog</a>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
     </li>
 
     <li>
-  
-      <a href="/portfolio.html" class="nav-link">Portfolio</a>
+      
+        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+       
     </li>
 
     <li>
-  
-      <a href="/about.html" class="nav-link">About</a>
+      
+        <a href="/about.html" class="nav-link">About</a>
+       
     </li>
 
 </ul>
 
 
-</nav>
-</header>
 
-      <div id="main" class="content-outer cf">
-        
+  </nav>
+</header>
+      
   <article>
    
       <div class="content-inner">
@@ -103,8 +105,27 @@
   
     
       <h2>2013</h2>
-      <h3>October</h3>
+      <h3>November</h3>
       <ul>
+    
+  
+    <li><span>November  2, 2013</span> &raquo; <a href="/blog/2013/11/02/gronster">Gronster Drawing Game</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
     
   
     <li><span>October 12, 2013</span> &raquo; <a href="/blog/2013/10/12/readable-body-text">Readable Body Text</a></li>
@@ -233,25 +254,6 @@
           
         
           </ul>
-          <h3>June</h3>
-          <ul>
-        
-      
-    
-  
-    
-    
-    
-    
-  
-    
-  
-    <li><span>June 12, 2012</span> &raquo; <a href="/portfolio/2012/06/12/gronster">Gronster Drawing Game</a></li>
-  
-    
-          
-        
-          </ul>
           <h3>April</h3>
           <ul>
         
@@ -329,19 +331,17 @@
   </section>
 
 
-      </div>
-      
       <footer>
-  <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+  <div class="footer-body">
+    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+    </div>
 </footer>
 
-
-    </div><!-- #wrapper -->
    
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
-        var menu = document.getElementById("menu");
+        var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 
           if (expanded) {

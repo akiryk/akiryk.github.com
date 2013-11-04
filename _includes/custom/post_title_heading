@@ -9,4 +9,4 @@
     {% endif %}
   </span> 
 </div>
-<h1><span class="backgrounded">{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</span></h1>
+<h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>

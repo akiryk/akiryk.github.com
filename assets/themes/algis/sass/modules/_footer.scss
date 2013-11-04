@@ -4,14 +4,23 @@
  */
 
  footer {
-  border-top: 1px solid #ccc;
+  background-color: #333;
+  border-top: 1px solid #444;
   clear: both;
-  margin: 4em 2em auto 2em;
+  margin: 0;
+  padding: 0.5em 2em;
   font-family: $sans;
  }
 
 .footer-text {
   @extend %meta;
+}
+
+@include media-query(lap-and-up){
+  .footer-body {
+    max-width: 32em;
+    margin: 0 auto;
+  }
 }
 
 @include media-query(desk-wide){

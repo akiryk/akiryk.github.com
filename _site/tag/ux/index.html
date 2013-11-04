@@ -46,48 +46,66 @@
 
 
   </head>
-  <body>
-    <div id="wrapper-all">
-
-      <header class="masthead cf">
-  <div class="logo-wrapper">
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header id="masthead" class="cf">
+  <div class="masthead-top">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
     </a>
     <a href="#main" class="screenreaders">Skip navigation</a>
     <div id="toggle">Toggle</div>
-  </div><!-- .logo-wrapper -->
-  <nav id="menu" class="">
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="">
+    
 
 
   
 <ul class="primary-nav">
     <li>
-  
-      <a href="/index.html" class="nav-link">Blog</a>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
     </li>
 
     <li>
-  
-      <a href="/portfolio.html" class="nav-link">Portfolio</a>
+      
+        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+       
     </li>
 
     <li>
-  
-      <a href="/about.html" class="nav-link">About</a>
+      
+        <a href="/about.html" class="nav-link">About</a>
+       
     </li>
 
 </ul>
 
 
-</nav>
-</header>
 
-      <div id="main" class="content-outer cf">
-        
+  </nav>
+</header>
+      
 
 <h2 class="blog-heading">Posts Tagged &ldquo;ux&rdquo;</h2>
 <ul class="posts">
+  
+    
+      
+        <li class="archive_list">
+          <a class="archive_list_article_link" href='/blog/2013/11/02/gronster'>Gronster Drawing Game</a>
+          <span class="agg-title-meta">November 02, 2013</span>
+         
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
   
     
       
@@ -198,22 +216,6 @@
     
       
         <li class="archive_list">
-          <a class="archive_list_article_link" href='/portfolio/2012/06/12/gronster'>Gronster Drawing Game</a>
-          <span class="agg-title-meta">June 12, 2012</span>
-         
-        </li>
-      
-    
-      
-    
-      
-    
-      
-    
-  
-    
-      
-        <li class="archive_list">
           <a class="archive_list_article_link" href='/portfolio/2012/04/07/stub'>Moose</a>
           <span class="agg-title-meta">April 07, 2012</span>
          
@@ -244,19 +246,17 @@
     
   
 </ul>
-      </div>
-      
       <footer>
-  <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+  <div class="footer-body">
+    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+    </div>
 </footer>
 
-
-    </div><!-- #wrapper -->
    
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
-        var menu = document.getElementById("menu");
+        var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 
           if (expanded) {

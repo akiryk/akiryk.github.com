@@ -5,7 +5,7 @@ http://akiryk.github.io/atom.xml
 http://akiryk.github.io/categories.html
 http://akiryk.github.io/index.html
 http://akiryk.github.io/pages.html
-http://akiryk.github.io/portfolio.html
+http://akiryk.github.io/portfolio_index.html
 http://akiryk.github.io/rss.xml
 http://akiryk.github.io/sitemap.txt
 http://akiryk.github.io/tags.html
@@ -20,6 +20,7 @@ http://akiryk.github.io/tag/jekyll/index.html
 http://akiryk.github.io/tag/process/index.html
 http://akiryk.github.io/tag/typography/index.html
 
+http://akiryk.github.io/blog/2013/11/02/gronster
 http://akiryk.github.io/blog/2013/10/12/readable-body-text
 http://akiryk.github.io/blog/2013/10/12/personal-site-process
 http://akiryk.github.io/blog/2013/10/11/jekyll-portfolio-blog
@@ -28,6 +29,5 @@ http://akiryk.github.io/blog/2013/09/21/comic-ux
 http://akiryk.github.io/portfolio/2013/02/09/facebook-project
 http://akiryk.github.io/portfolio/2012/12/14/npr-station-analytics
 http://akiryk.github.io/portfolio/2012/11/19/CMS-for-NPR
-http://akiryk.github.io/portfolio/2012/06/12/gronster
 http://akiryk.github.io/portfolio/2012/04/07/stub
 http://akiryk.github.io/portfolio/2008/07/18/whales

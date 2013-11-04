@@ -1,0 +1,43 @@
+---
+layout: portfolio_index
+title: Portfolio
+header: Portfolio Posts
+group: navigation
+---
+{% include JB/setup %}
+<div id="primary-content" class="portfolio-wrapper">
+  <ul class="vertical-list">
+    {% for portfolio in site.categories.portfolio %}
+      {% if portfolio.champion == true %}
+        <li>
+          <a href="{{ BASE_PATH }}{{ portfolio.url }}" class="portfolio-piece">
+            <div class="portfolio-text">
+              <div class="slugger">
+                <div class="slug">{{ portfolio.micro-teaser }}</div>
+                <h4 class="portfolio-title">{{ portfolio.title }}</h4>
+              </div>
+              <p class="portfolio-teaser">{{ portfolio.teaser }}</p>
+            </div>
+            {% if portfolio.image %}
+              <div class="portfolio-image">
+                <span data-picture data-alt="Portfolio image">
+                  <span data-src="/assets/images/portfolio-images/{{ portfolio.image }}-small.jpg"></span>
+                  <span data-src="/assets/images/portfolio-images/{{ portfolio.image }}-med.jpg" data-media="(min-width: 800px)"></span>
+                  <span data-src="/assets/images/portfolio-images/{{ portfolio.image }}-med.jpg" data-media="(min-width: 1320px)"></span>
+                  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                  <noscript>
+                    <img src="/assets/images/portfolio-images/{{ portfolio.image }}-small.jpg">
+                  </noscript>
+                </span>
+              </div>
+            {% endif %}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+</div><!-- close .wrapper-all from default.html -->
+
+
+

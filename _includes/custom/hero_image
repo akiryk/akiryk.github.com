@@ -1,0 +1,17 @@
+{% if page.hero %}
+  <div class="pic-hero">
+    <span data-picture data-alt="{{ page.hero-caption }}">
+      <span data-src="/assets/images/heros/{{ page.hero }}-small.jpg" ></span>
+      <span data-src="/assets/images/heros/{{ page.hero }}-large.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
+      <noscript>
+        <img src="/assets/images/heros/{{ page.hero }}-small.jpg">
+      </noscript>
+    </span>
+    {% if page.hero-caption %}
+      <div class="caption">{{ page.hero-caption }}</div>
+    {% endif %}
+  </div>
+  <header class="post-header with-hero">
+{% else %}
+  <header class="post-header">
+{% endif %}

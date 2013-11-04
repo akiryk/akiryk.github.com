@@ -14,9 +14,15 @@ body {
   font-size: 125%;
   line-height: 1.5;
   text-rendering:optimizeLegibility; // helps with kerning and ligatures
+
+  &.homepage {
+    background-color: #eee;
+  }
 }
 
+
 img {
+  display: block;
   font-style: italic;
   width: 100%;
   max-width: 100%;
@@ -37,6 +43,9 @@ p {
 @include media-query(lap-and-up){
   body {
     line-height: 1.6; 
+    &.homepage {
+      background-color: #fff;
+    }
   }
 }
 

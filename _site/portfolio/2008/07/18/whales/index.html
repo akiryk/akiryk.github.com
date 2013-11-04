@@ -46,62 +46,131 @@
 
 
   </head>
-  <body>
-    <div id="wrapper-all">
-
-      <header class="masthead cf">
-  <div class="logo-wrapper">
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header id="masthead" class="cf">
+  <div class="masthead-top">
     <a class="logo" href="/" title="Ready Lab Home">
       <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
     </a>
     <a href="#main" class="screenreaders">Skip navigation</a>
     <div id="toggle">Toggle</div>
-  </div><!-- .logo-wrapper -->
-  <nav id="menu" class="">
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="">
+    
 
 
   
 <ul class="primary-nav">
     <li>
-  
-      <a href="/index.html" class="nav-link">Blog</a>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
     </li>
 
     <li>
-  
-      <a href="/portfolio.html" class="nav-link">Portfolio</a>
+      
+        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+       
     </li>
 
     <li>
-  
-      <a href="/about.html" class="nav-link">About</a>
+      
+        <a href="/about.html" class="nav-link">About</a>
+       
     </li>
 
 </ul>
 
 
-</nav>
+
+  </nav>
 </header>
-
-      <div id="main" class="content-outer cf">
-        
-<p>Gronster, This is some new content.</p>
-
-
-
-      </div>
       
+<article id="primary-content" class="portfolio-post">
+  
+  
+  <header class="post-header">
+
+    <div class="post-title-meta">
+      <span class="micro-teaser">design + code</span><span class="divider"> / </span><span class="post-date">July 18, 2008</span>     
+    </div>
+    <h1>Whale Game </h1>
+    </header>
+  <div class="content-body">
+    <p>Gronster, This is some new content.</p>
+
+    
+
+  <ul class="post-tags">
+    
+    <li class="inline tag-title">Filed under: </li>
+      
+         
+          <li class="inline"><a href="/tag/ux" class="tag-link">ux</a> </li>
+         
+          <li class="inline"><a href="/tag/cms" class="tag-link">cms</a> </li>
+         
+          <li class="inline"><a href="/tag/npr" class="tag-link">npr</a> </li>
+         
+          <li class="inline"><a href="/tag/design" class="tag-link">design</a> </li>
+        
+      
+    </ul>
+  
+
+
+
+  </div>
+</article>
+</div><!-- close .wrapper-all from default.html -->
+<section id="secondary-content" class="">
+  <div class="posts">
+    
+    
+      <div class="slug slug--underline">Next Post</div>
+        <h2 class="blog-heading"><a href="/portfolio/2012/04/07/stub" title="Moose">Moose</a></h2>
+      <p class="teaser"> With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
+    
+    </ul>
+  </div>
+  <div class="return">
+    <a href="/">Home</a> | <a href="#top">Return to Top</a>
+  </div>
+  <!-- 
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'adamkiryk'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+ -->
+</section>
+
       <footer>
-  <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+  <div class="footer-body">
+    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
+    </div>
 </footer>
 
-
-    </div><!-- #wrapper -->
    
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
-        var menu = document.getElementById("menu");
+        var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 
           if (expanded) {

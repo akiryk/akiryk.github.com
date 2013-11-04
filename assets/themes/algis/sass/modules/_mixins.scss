@@ -2,6 +2,11 @@
     $MIXINS
 \*------------------------------------*/
 
+@mixin content() {
+  background-color: #fff;
+  max-width: $content-width + em;
+}
+
 /*
  * simple way to make the h1 ... h6 font stack
  */
@@ -14,11 +19,11 @@
   letter-spacing: 1px;
 }
 
-@mixin slug-title($lighttext: false){
+@mixin slug-title($context: $base-font-size, $lighttext: false){
   font-family: $sans;
-  font-size: getEms($caption-size);
+  font-size: getEms($caption-size, $context);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: getEms(5, $caption-size);
   text-transform: uppercase;
   @if ($lighttext) {
     font-weight: 300;

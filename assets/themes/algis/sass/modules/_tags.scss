@@ -4,6 +4,13 @@
  * 
  */
 
-// .post-tags {
-//   margin-bottom: 1.6em;
-// }
+.post-tags {
+  font-style: italic;
+  margin-left: -.5em;
+  padding: 0;
+  
+  .inline {
+    padding-left: .5em;
+  }
+
+}

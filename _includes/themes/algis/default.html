@@ -45,23 +45,16 @@
 
 
   </head>
-  <body>
-    <div id="wrapper-all">
-
+  <body id="top" class="{{ page.classes }}">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
       {% include custom/masthead %}
-
-      <div id="main" class="content-outer cf">
-        {{ content }}
-      </div>
-      
+      {{ content }}
       {% include custom/footer %}
-
-    </div><!-- #wrapper -->
    
     <script>
       (function(){
         var toggle = document.getElementById("toggle");
-        var menu = document.getElementById("menu");
+        var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 
           if (expanded) {

@@ -1,42 +1,12 @@
-  <article>
-   {% if page.hero %}
-      <div class="pic-hero">
-        <span data-picture data-alt="Image of Tintin">
-          <span data-src="/assets/images/heros/{{ page.hero }}-small.jpg" ></span>
-          <span data-src="/assets/images/heros/{{ page.hero }}-large.jpg" data-media="(min-width: 880px)"></span>
-          <noscript>
-            <img src="/assets/images/heros/{{ page.hero }}-small.jpg">
-          </noscript>
-        </span>
-        {% if page.hero-caption %}
-          <div class="caption">{{ page.hero-caption }}</div>
-        {% endif %}
-      </div>
-      <div class="content-inner content-inner--hero">
-    {% else %}
-      <div class="content-inner">
-    {% endif %}
+<article id="primary-content" class="blog-post">
+  {% assign dir = "heros" %}
+  {% include custom/hero_image %}
       {% include custom/post_title_heading %}
+    </header>
+    <div class="content-body">
       {{ content }}
-      {% include custom/tag_buttons %}
+      {% include custom/tags_list %}
     </div>
   </article>
-  <section class="secondary-content">
-    <div class="posts">
-      {% if page.previous %}
-        <div class="slug slug--underline">Previous</div>
-          <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></h2>
-        <p class="teaser"> {{ page.previous.teaser }}</p>
-      {% endif %}
-      {% if page.next %}
-        <div class="slug slug--underline">Next</div>
-          <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></h2>
-        <p class="teaser"> {{ page.next.teaser }}</p>
-      {% endif %}
-      </ul>
-    </div>
-    <div class="return">
-      <a href="/">Home</a> | <a href="#wrapper-all">Return to Top</a>
-    </div>
-    <!-- {% include JB/comments %} -->
-  </section>
+</div><!-- close .wrapper-all from default.html -->
+{% include custom/secondary %}
