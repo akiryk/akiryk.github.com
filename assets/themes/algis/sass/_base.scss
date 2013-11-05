@@ -76,6 +76,11 @@ p {
   margin: 1.6em 0;
 }
 
+@include media-query(palm){
+  .homepage {
+    background-color: #eee;
+  }
+}
 
 @include media-query(lap-and-up){
   body {

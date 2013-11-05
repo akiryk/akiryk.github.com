@@ -33,7 +33,6 @@
 
 // For small screens, pull post up over the image
 @mixin up-and-over-image(){
-  background-color: rgba(255,255,255,0.8);
   margin-top: -5em;
 }
 

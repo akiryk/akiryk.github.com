@@ -3,34 +3,36 @@
  *
  */
 
-.blog-river-wrapper {
-  @include content-on-white();
-}
-
 .blog-river {
   @include vertical-list();
 }
 
 .blog-card {
-  margin: $spacing-small auto;
-  padding: 0 $spacing-small;
+  background-color: #fff;
+  margin: $spacing-small;
+  padding: $spacing-small;
 }
 
 @include media-query(palm) {
   .blog-river-wrapper {
     @include up-and-over-image();
   }
+  .blog-card p {
+    font-size: getEms(18);
+  }
 }
 
 @include media-query(palm-large) {
   .blog-card {
-    margin: $spacing-medium auto;
-    padding: 0 $spacing-medium;
+    font-size: getEms(20);
+    margin: $spacing-medium;
+    padding: $spacing-medium;
   }
 }
 
 @include media-query(lap-and-up) {
   .blog-river-wrapper {
+    @include content-on-white();
     @include main-content-wrapper();
   }
 
@@ -45,7 +47,7 @@
     padding: 0;
   }
   
-  .portfolio-card {
+  .blog-river {
     margin: $spacing-large 0;
     .portfolio-text {
       width: 60%;

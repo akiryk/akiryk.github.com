@@ -13,16 +13,6 @@
 .portfolio-wrapper {
   margin: 0 auto;
   width: 100%;
-
-  li {
-    background-color: #1a1a1a;  
-    border-bottom: 1px solid #333;
-    margin: 0;
-    overflow: hidden;
-    &:nth-of-type(even) {
-      background-color:#000;
-    }
-  }
 }
 
 .portfolio-card {

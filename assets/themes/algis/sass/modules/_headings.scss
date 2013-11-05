@@ -36,6 +36,12 @@
   line-height: getEms(36, 14);
 }
 
+.portfolio-heading {
+  background-color: #111;
+  color: #eee;
+  margin: 0 1em 1em 0;
+  padding: $spacing-medium;
+}
 
 .read-next {
   @include slug-light();
@@ -48,16 +54,19 @@
   .homepage {
     .post-heading {
       font-size: getEms(16);
+      background-color: #fff;
+      margin: getEms(15, 16);
+      padding-left: getEms(15, 16);
+      padding-bottom: $spacing-medium;
     }
   }
-  .post-heading,
-  .portfolio-heading {
-    padding: $spacing-medium $spacing-small 0 $spacing-small; 
+  .post-heading {
+    background-color: #fff;
+    padding: $spacing-medium $spacing-small $spacing-medium $spacing-small; 
+    margin-right: $spacing-medium;
+    margin-bottom: -$spacing-large;
   }
-  .post-title-meta {
-    @include white-shadow();
-    color: #777;
-  }
+  
   .blog-river-title {
     @include white-shadow();
   }
@@ -70,6 +79,12 @@
     padding-left: $spacing-medium;
     padding-right: $spacing-medium;
   }
+  .homepage {
+    .post-heading {
+      margin: getEms(20, 16);
+      padding-left: getEms(20, 16);
+    }
+  }
   .blog-card-heading {
     font-size: getEms($h2-size);
   }
@@ -77,14 +92,14 @@
 
 @include media-query(lap-and-up) {
   .post-heading {
-    margin-top: 0 2em;
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+    margin-top: 0 $spacing-large;
+    padding-top: $spacing-large;
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
   }
   .portfolio-heading {
-    margin: 0;
-    padding: 2em 2em 0 2em;
+    padding: $spacing-large;
+    margin: 0 0 1em 0;
   }
 }
 

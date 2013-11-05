@@ -21,6 +21,7 @@
 @include media-query(palm) {
   .post-wrapper {
     @include up-and-over-image();
+    background-color: transparent;
   }
 }
 
