@@ -731,65 +731,83 @@ p {
 
 /* line 25, ../sass/_layout.scss */
 .blog-river {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin: 1em auto;
-  padding: 0 1em;
+  margin: 0.75em auto;
+  padding: 0 0.75em;
 }
 
 /* line 30, ../sass/_layout.scss */
 .blog-card {
   background-color: #fff;
-  margin: 1em auto;
-  padding: 1.5em;
+  margin: 0.75em auto;
+  padding: 0.75em;
 }
 
 @media only screen and (min-width: 36em) {
   /* line 37, ../sass/_layout.scss */
   .content-body {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 1em auto;
+    padding: 0 1em;
     padding: 0 2.5em;
+  }
+
+  /* line 42, ../sass/_layout.scss */
+  .blog-river {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 1em auto;
+    padding: 0 1em;
+  }
+
+  /* line 46, ../sass/_layout.scss */
+  .blog-card {
+    margin: 1em auto;
+    padding: 1em;
   }
 }
 @media only screen and (min-width: 50em) {
-  /* line 44, ../sass/_layout.scss */
+  /* line 54, ../sass/_layout.scss */
   .content-body,
   .blog-river {
     padding: 0 2em;
     max-width: 32em;
+    margin-bottom: 2em;
   }
 
-  /* line 49, ../sass/_layout.scss */
+  /* line 60, ../sass/_layout.scss */
   .blog-river {
     background-color: #fff;
     margin: 0 auto;
     overflow: hidden;
   }
 
-  /* line 55, ../sass/_layout.scss */
+  /* line 66, ../sass/_layout.scss */
   .blog-card {
     margin: 1.5em 0;
     padding: 0;
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 64, ../sass/_layout.scss */
+  /* line 75, ../sass/_layout.scss */
   .wrapper {
     max-width: 62em;
   }
 
-  /* line 68, ../sass/_layout.scss */
+  /* line 79, ../sass/_layout.scss */
   #primary-content {
     margin-left: 13em;
   }
 
-  /* line 71, ../sass/_layout.scss */
+  /* line 82, ../sass/_layout.scss */
   .content-body {
-    margin: 0;
+    margin: 0 0 2em 0;
     padding: 0 2em;
   }
 
-  /* line 76, ../sass/_layout.scss */
+  /* line 87, ../sass/_layout.scss */
   .blog-river {
     margin-left: 0;
   }
@@ -800,41 +818,46 @@ p {
  */
 /* line 6, ../sass/modules/_post.scss */
 .post-header {
-  background-color: #ddd;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #333;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding: 1.5em;
+  margin-bottom: -2em;
+  margin-left: 0em;
+  margin-right: 0em;
+  padding: 1.5em 1em;
 }
-/* line 13, ../sass/modules/_post.scss */
+/* line 15, ../sass/modules/_post.scss */
 .post-header h1 {
   margin-bottom: 0;
 }
-/* line 17, ../sass/modules/_post.scss */
+/* line 19, ../sass/modules/_post.scss */
 .post-header.with-hero {
   margin-top: -5em;
 }
-/* line 21, ../sass/modules/_post.scss */
+/* line 23, ../sass/modules/_post.scss */
 .post-header.no-hero {
   margin-top: -7em;
 }
 
 @media only screen and (min-width: 36em) {
-  /* line 27, ../sass/modules/_post.scss */
+  /* line 29, ../sass/modules/_post.scss */
   .post-header {
     background-color: #fff;
-    padding: 1.5em 1.5em 0 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1.5em;
   }
 }
 @media only screen and (min-width: 50em) {
-  /* line 34, ../sass/modules/_post.scss */
+  /* line 38, ../sass/modules/_post.scss */
   .post-header {
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 32em;
     padding: 2em 2em 1em 2em;
   }
-  /* line 40, ../sass/modules/_post.scss */
+  /* line 45, ../sass/modules/_post.scss */
   .post-header.with-hero {
     margin-top: -8em;
   }
@@ -1949,8 +1972,8 @@ ul.posts {
 .portfolio-card {
   background-color: #111;
   box-sizing: content-box;
-  margin: 1em auto;
-  padding: 1.5em;
+  margin: 0.75em auto;
+  padding: 0.75em;
 }
 
 /* line 16, ../sass/modules/_portfolio.scss */
@@ -2036,93 +2059,99 @@ ul.posts {
 
 @media only screen and (min-width: 36em) {
   /* line 82, ../sass/modules/_portfolio.scss */
+  .portfolio-card {
+    margin: 1.5em auto;
+    padding: 1.5em;
+  }
+
+  /* line 86, ../sass/modules/_portfolio.scss */
   .portfolio-text {
     float: left;
     margin-right: 5%;
     width: 47.5%;
   }
 
-  /* line 87, ../sass/modules/_portfolio.scss */
+  /* line 91, ../sass/modules/_portfolio.scss */
   .portfolio-image {
     float: left;
     width: 47.5%;
   }
 }
 @media only screen and (min-width: 50em) {
-  /* line 94, ../sass/modules/_portfolio.scss */
+  /* line 98, ../sass/modules/_portfolio.scss */
   .portfolio-wrapper {
     margin: 1.5em;
     width: auto;
   }
 
-  /* line 99, ../sass/modules/_portfolio.scss */
+  /* line 103, ../sass/modules/_portfolio.scss */
   .portfolio-card {
     margin: 2em 0;
   }
 
-  /* line 103, ../sass/modules/_portfolio.scss */
+  /* line 107, ../sass/modules/_portfolio.scss */
   .portfolio-text {
     float: left;
     margin-right: 5%;
     width: 35%;
   }
 
-  /* line 108, ../sass/modules/_portfolio.scss */
+  /* line 112, ../sass/modules/_portfolio.scss */
   .portfolio-image {
     float: left;
     width: 60%;
   }
 
-  /* line 112, ../sass/modules/_portfolio.scss */
+  /* line 116, ../sass/modules/_portfolio.scss */
   .portfolio-title {
     font-size: 1.2em;
     line-height: 1.25;
   }
 
-  /* line 119, ../sass/modules/_portfolio.scss */
+  /* line 123, ../sass/modules/_portfolio.scss */
   .portfolio-card .portfolio-text {
     width: 60%;
   }
-  /* line 122, ../sass/modules/_portfolio.scss */
+  /* line 126, ../sass/modules/_portfolio.scss */
   .portfolio-card .portfolio-image {
     width: 35%;
   }
 
-  /* line 128, ../sass/modules/_portfolio.scss */
+  /* line 132, ../sass/modules/_portfolio.scss */
   .portfolio-post .post-header {
     padding: 2em 2em 1em 2em;
   }
 }
 @media only screen and (min-width: 63.75em) {
-  /* line 135, ../sass/modules/_portfolio.scss */
+  /* line 139, ../sass/modules/_portfolio.scss */
   .portfolio-wrapper {
     margin-bottom: 1em;
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 141, ../sass/modules/_portfolio.scss */
+  /* line 145, ../sass/modules/_portfolio.scss */
   #primary-content.portfolio-wrapper {
     margin-top: 2em;
     margin-bottom: 2em;
   }
 
-  /* line 146, ../sass/modules/_portfolio.scss */
+  /* line 150, ../sass/modules/_portfolio.scss */
   .portfolio-wrapper {
     margin: 0;
     margin-top: 2em;
     max-width: 49em;
   }
-  /* line 151, ../sass/modules/_portfolio.scss */
+  /* line 155, ../sass/modules/_portfolio.scss */
   .portfolio-wrapper li {
     margin-left: -2em;
   }
 
-  /* line 156, ../sass/modules/_portfolio.scss */
+  /* line 160, ../sass/modules/_portfolio.scss */
   .portfolio-piece {
     padding: 2em;
   }
 
-  /* line 161, ../sass/modules/_portfolio.scss */
+  /* line 165, ../sass/modules/_portfolio.scss */
   .portfolio-post .post-header {
     margin-left: 0;
   }

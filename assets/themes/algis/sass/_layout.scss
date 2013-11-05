@@ -23,19 +23,29 @@
 }
 
 .blog-river {
-  @include vertical-list();
-  @include centered-content();
+  margin: 0.75em auto;
+  padding: 0 0.75em;
 }
 
 .blog-card {
   background-color: #fff;
-  margin: 1em auto;
-  padding: 1.5em;
+  margin: 0.75em auto;
+  padding: 0.75em;
 }
 
 @include media-query(large-palm) {
   .content-body {
+    @include vertical-list();
+    @include centered-content();
     padding: 0 2.5em;
+  }
+  .blog-river {
+    @include vertical-list();
+    @include centered-content();
+  }
+  .blog-card {
+    margin: 1em auto;
+    padding: 1em;
   }
 }
 
@@ -44,6 +54,7 @@
   .blog-river {
     padding: 0 2em;
     max-width: 32em;
+    margin-bottom: 2em;
   }
 
   .blog-river {
@@ -69,7 +80,7 @@
     margin-left: 13em;
   }
     .content-body {
-      margin: 0;
+      margin: 0 0 2em 0;
       padding: 0 2em;
     }
 

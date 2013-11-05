@@ -8,8 +8,8 @@
 .portfolio-card {
   background-color: #111;
   box-sizing: content-box;
-  margin: 1em auto;
-  padding: 1.5em;
+  margin: 0.75em auto;
+  padding: 0.75em;
 }
 
 // on portfolio page
@@ -79,6 +79,10 @@
     }
 
 @include media-query(large-palm){
+  .portfolio-card {
+    margin: 1.5em auto;
+    padding: 1.5em;
+  }
   .portfolio-text {
     float: left;
     margin-right: 5%;
