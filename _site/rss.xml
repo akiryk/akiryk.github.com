@@ -5,10 +5,41 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-11-05T22:07:46+01:00</lastBuildDate>
-        <pubDate>2013-11-05T22:07:46+01:00</pubDate>
+        <lastBuildDate>2013-11-05T22:13:21+01:00</lastBuildDate>
+        <pubDate>2013-11-05T22:13:21+01:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Readable Body Text</title>
+                <description>&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:&lt;/p&gt;
+
+&lt;p&gt;Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins&lt;/p&gt;
+
+&lt;p&gt;&lt;span data-picture data-alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/random/small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/random/extralarge.jpg&quot; data-media=&quot;(min-width: 1000px)&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+
+&lt;noscript&gt;
+  &lt;img src=&quot;external/imgs/small.jpg&quot; alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
+&lt;/noscript&gt;
+
+&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&amp;#39;s free, fast, and easy to use — plus, hosting is free if you use github pages.&lt;/p&gt;
+
+&lt;p&gt;Using jekyll bootstrap. Copy the themes and make your own.&lt;/p&gt;
+
+&lt;p&gt;Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&amp;#39;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &amp;quot;hightlight: true.&amp;quot; It displays only these items. Then I put the full bunch on a different page without pagination. &lt;/p&gt;
+
+&lt;p&gt;Handling plugins. &lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2013/11/12/readable-body-text</link>
+                <guid>http://akiryk.github.io/blog/2013/11/12/readable-body-text</guid>
+                <pubDate>2013-11-12T00:00:00+01:00</pubDate>
+        </item>
 
         <item>
                 <title>Gronster Drawing Game</title>
@@ -74,37 +105,6 @@
                 <link>http://akiryk.github.io/portfolio/2013/11/02/gronster</link>
                 <guid>http://akiryk.github.io/portfolio/2013/11/02/gronster</guid>
                 <pubDate>2013-11-02T00:00:00+01:00</pubDate>
-        </item>
-
-        <item>
-                <title>Readable Body Text</title>
-                <description>&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:&lt;/p&gt;
-
-&lt;p&gt;Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins&lt;/p&gt;
-
-&lt;p&gt;&lt;span data-picture data-alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
-  &lt;span data-src=&quot;/assets/images/random/small.jpg&quot;&gt;&lt;/span&gt;
-  &lt;span data-src=&quot;/assets/images/random/extralarge.jpg&quot; data-media=&quot;(min-width: 1000px)&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
-
-&lt;noscript&gt;
-  &lt;img src=&quot;external/imgs/small.jpg&quot; alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
-&lt;/noscript&gt;
-
-&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;#39;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&amp;#39;s free, fast, and easy to use — plus, hosting is free if you use github pages.&lt;/p&gt;
-
-&lt;p&gt;Using jekyll bootstrap. Copy the themes and make your own.&lt;/p&gt;
-
-&lt;p&gt;Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&amp;#39;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &amp;quot;hightlight: true.&amp;quot; It displays only these items. Then I put the full bunch on a different page without pagination. &lt;/p&gt;
-
-&lt;p&gt;Handling plugins. &lt;/p&gt;
-</description>
-                <link>http://akiryk.github.io/blog/2013/10/12/readable-body-text</link>
-                <guid>http://akiryk.github.io/blog/2013/10/12/readable-body-text</guid>
-                <pubDate>2013-10-12T00:00:00+02:00</pubDate>
         </item>
 
         <item>

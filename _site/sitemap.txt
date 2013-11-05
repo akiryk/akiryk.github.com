@@ -20,8 +20,8 @@ http://akiryk.github.io/tag/jekyll/index.html
 http://akiryk.github.io/tag/process/index.html
 http://akiryk.github.io/tag/typography/index.html
 
+http://akiryk.github.io/blog/2013/11/12/readable-body-text
 http://akiryk.github.io/portfolio/2013/11/02/gronster
-http://akiryk.github.io/blog/2013/10/12/readable-body-text
 http://akiryk.github.io/blog/2013/10/12/personal-site-process
 http://akiryk.github.io/blog/2013/10/11/jekyll-portfolio-blog
 http://akiryk.github.io/blog/2013/10/07/book-browsing

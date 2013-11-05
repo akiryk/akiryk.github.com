@@ -108,6 +108,12 @@
     padding: $spacing-large;
     margin: 0 0 1em 0;
   }
+  .homepage {
+    .post-heading {
+      margin: 0 2em;
+      padding-left: 0;
+    }
+  }
 }
 
 @include media-query(desk-wide) {
