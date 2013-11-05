@@ -2,8 +2,9 @@
   {% assign dir = "portfolio-heros" %}
   {% assign header-class = "portfolio-header" %}
   {% include custom/hero_image %}
+  <header class="portfolio-heading">
     <div class="post-title-meta">
-      <span class="micro-teaser">{{ page.micro-teaser }}</span><span class="divider"> / </span><span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>     
+      <span class="post-micro-teaser">{{ page.micro-teaser }}</span><span class="divider"> / </span><span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>     
     </div>
     <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
     </header>

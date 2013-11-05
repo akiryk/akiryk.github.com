@@ -6,8 +6,15 @@
  * 
  */
 
+.blog-river-title {
+  @include slug-normal();
+  font-size: getEms(26);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
 
 .blog-card-heading {
+  font-size: getEms($h4-size);
   margin-bottom: getEms(6, 24);
   margin-top: 0;
   a {
@@ -15,39 +22,69 @@
   }
 }
 
-.home-header {
-  background-color: #fff;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding: 0;
+// date and such on post/portfolio pages
+.post-title-meta {
+  @include small-text();
+  letter-spacing: 1px;
+  margin-bottom: getEms(-14);
+}
 
-  &.with-hero {
-    margin-top: -5em;
+// date and such on agg-pages (like home page)
+.agg-title-meta {
+  @include small-text();
+  letter-spacing: 1px;
+  line-height: getEms(36, 14);
+}
+
+
+.read-next {
+  @include slug-light();
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+@include media-query(palm){
+  .homepage {
+    .post-heading {
+      font-size: getEms(16);
+    }
   }
+  .post-heading,
+  .portfolio-heading {
+    padding: $spacing-medium $spacing-small 0 $spacing-small; 
+  }
+  .post-title-meta {
+    @include white-shadow();
+    color: #777;
+  }
+  .blog-river-title {
+    @include white-shadow();
+  }
+}
 
-  .blog-title {
-    @include slug-title();
-    color: $red;
-    margin: 0;
-    max-width: none;
-    padding: 15px 30px;
+@include media-query(palm-large) {
+  .post-heading,
+  .portfolio-heading {
+    font-size: getEms(20);
+    padding-left: $spacing-medium;
+    padding-right: $spacing-medium;
+  }
+  .blog-card-heading {
+    font-size: getEms($h2-size);
   }
 }
 
 @include media-query(lap-and-up) {
-  .home-header {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 32em;
-    padding: 0 2em;
-
-    .blog-title {
-      padding: getEms(42, $caption-size) 0 0 0;
-    }
-
-    &.with-hero {
-      margin-top: -8em;
-    }
+  .post-heading {
+    margin-top: 0 2em;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .portfolio-heading {
+    margin: 0;
+    padding: 2em 2em 0 2em;
   }
 }
 
@@ -59,8 +96,7 @@
     width: 940px;
   }
   
-  .home-header,
-  .post-header {
+  .post-heading {
     margin-left: 0;
   }
 }

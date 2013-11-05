@@ -1,24 +1,23 @@
 /**
  * Porfolio
  *
+ * This covers styles for the following pages:
+ *   > portfolio aggregation page (portfolio_index.html)
+ *   > portfolio post pages
+ *   > blog aggregation pages (e.g. index.html)
  * 
  */
 
-// on index page
-.portfolio-card {
-  background-color: #111;
-  box-sizing: content-box;
-  margin: 0.75em auto;
-  padding: 0.75em;
-}
 
-// on portfolio page
+// Styles for Portfolio aggregation page (portfolio_index.html)
 .portfolio-wrapper {
   margin: 0 auto;
   width: 100%;
 
   li {
     background-color: #1a1a1a;  
+    border-bottom: 1px solid #333;
+    margin: 0;
     overflow: hidden;
     &:nth-of-type(even) {
       background-color:#000;
@@ -26,6 +25,26 @@
   }
 }
 
+.portfolio-card {
+  background-color: #111;
+  box-sizing: content-box;
+  margin: $spacing-medium;
+
+  > a {
+    display: block;
+    overflow: hidden;
+    padding: $spacing-medium;
+  }
+
+}
+
+.homepage {
+  a.portfolio-piece {
+    border-bottom: none;
+  }
+}
+
+// Styles for Portfolio post page (e.g. a single portfolio piece)
 .portfolio-post {
   .post-header {
     background-color: #111;
@@ -40,49 +59,43 @@
   }
 }
 
-.portfolio-piece {
-  border-bottom: 1px solid #333;
-  color: $red;
-  display: block;
-  padding: 1.5em;
-  overflow: hidden;
+.portfolio-text {
+  @include vendor(box-sizing, border-box);
 }
 
-.homepage {
-  .portfolio-piece {
-    padding: 0;
-    border-bottom: none;
-  }
+.micro-teaser {
+  @include slug-normal();
 }
 
-  .portfolio-text {
-    @include vendor(box-sizing, border-box);
-  }
-  // Inside of .portfolio-text
-    .micro-teaser {
-      @include slug-title(14, false);
-      color: $red;
-      -webkit-font-smoothing: antialiased;
-    }
+.post-micro-teaser {
+  @include slug-normal(14);
+}
 
-    .portfolio-title {
-      color: #eee;
-      font-weight: normal;
-      margin-bottom: 0.41666667em;
-    }
+.portfolio-title {
+  color: #eee;
+  font-weight: normal;
+  margin-bottom: 0.41666667em;
+}
 
-    .portfolio-teaser {
-      color: #999;
-      font-family: $sans;
-      font-size: 0.8em; // 16px
-      margin-top: 0;
-    }
+.portfolio-teaser {
+  @include sans();
+  color: $lighter-text;
+  font-size: 0.8em; // 16px
+  margin-top: 0;
+}
 
-@include media-query(large-palm){
+@include media-query(palm-small) {
+
   .portfolio-card {
-    margin: 1.5em auto;
-    padding: 1.5em;
+    margin: $spacing-small;
+
+    > a {
+      padding: $spacing-small;
+    }
   }
+}
+
+@include media-query(palm-large){
   .portfolio-text {
     float: left;
     margin-right: 5%;
@@ -101,7 +114,7 @@
   }
 
   .portfolio-card {
-    margin: 2em 0;
+    margin: 1.5em 0;
   }
 
   .portfolio-text {
@@ -116,16 +129,6 @@
   .portfolio-title {
     font-size: getEms($h3-size);
     line-height: 1.25;
-  }
-
-  // Styles for portfolio pieces that appear in the blog river
-  .portfolio-card {
-    .portfolio-text {
-      width: 60%;
-    }
-    .portfolio-image {
-      width: 35%
-    }
   }
   
   .portfolio-post {
@@ -143,22 +146,24 @@
 
 @include media-query(desk-wide) {
   #primary-content.portfolio-wrapper {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: $spacing-large; // 2em
+    margin-bottom: $spacing-large; // 2em
   }
 
   .portfolio-wrapper {
     margin: 0;
-    margin-top: 2em;
+    margin-top: $spacing-large;
     max-width: $content-wrapper-width + $gutter-width + em;
 
     li {
-      margin-left: -2em;
+      margin-left: -$spacing-large; // -2em
     }
   }
 
-  .portfolio-piece {
-    padding: 2em;
+  .portfolio-card {
+    > a {
+      padding: $spacing-large; // 2em   
+    }
   }
 
   .portfolio-post {

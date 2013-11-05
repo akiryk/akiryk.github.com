@@ -4,60 +4,7 @@
  * 
  */
 
-
-// E.g. "Portfolio" on top of portfolio titles on home page
-.slug {
-  @include slug-title();
-}
-
-.slug-alt {
-  // a light version of the slug
-  @include slug-title($base-font-size, true);
-}
-
-.slug--underline {
-  border-bottom: 1px solid #555;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-.invert-normal {
-  color: $lighter-text;
-}
-
 // paragraphs 
-.callout {
-  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
-  font-weight: bold;
-  font-size: getEms($h2-size, $base-font-size);
-  margin: getEms(32, $h2-size) 0;
- }
-
-.intro {
-  font-style: italic;
-}
-
-%meta {
-  color: #aaa;
-  letter-spacing: 1px;
-  font-size: 0.7em;
-  @include sans();
-}
-// meta text
-.post-title-meta {
-  @extend %meta;
-  margin-bottom: getEms(-14);
-}
-
-.agg-title-meta {
-  @extend %meta;
-  display: block;
-  line-height: getEms(36, 14);
-}
-
-.post-date {
-  color: #333;
-}
 
 .introduction {
   margin-bottom: 3em;

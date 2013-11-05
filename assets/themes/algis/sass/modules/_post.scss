@@ -3,48 +3,29 @@
  *
  */
 
-.post-header {
-  background-color: #fff;
-  background-color: rgba(255,255,255,0.9);
-  color: #333;
-  margin-bottom: -2em;
-  margin-left: 0em;
-  margin-right: 0em;
-  padding: 1.5em 1em;
+.post-wrapper {
+  @include content-on-white();
+}
 
-  h1 {
-    margin-bottom: 0;
-  }
-  
-  &.with-hero {
-    margin-top: -5em;
-  }
+.callout {
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  font-weight: bold;
+  font-size: getEms($h2-size, $base-font-size);
+  margin: getEms(32, $h2-size) 0;
+ }
 
-  &.no-hero {
-    margin-top: -7em;
+.intro {
+  font-style: italic;
+}
+
+@include media-query(palm) {
+  .post-wrapper {
+    @include up-and-over-image();
   }
 }
 
-@include media-query(large-palm) {
-  .post-header {
-    background-color: #fff;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 1.5em;
+@include media-query(lap-and-up){
+  .post-wrapper {
+    @include main-content-wrapper();
   }
-}
-
-@include media-query(lap-and-up) {
-  .post-header {
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 32em;
-    padding: 2em 2em 1em 2em;
-
-    &.with-hero {
-      margin-top: -8em;
-    }
-  }
-
 }

@@ -11,8 +11,8 @@
       <div class="caption">{{ page.hero-caption }}</div>
     {% endif %}
   </div>
-  <header class="post-header with-hero">
+  <div class="post-wrapper with-hero">
 {% else %}
   <div class="pic-hero"></div>
-    <header class="post-header no-hero">
+    <div class="post-wrapper no-hero">
 {% endif %}

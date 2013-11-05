@@ -8,15 +8,27 @@
   border-top: 1px solid #444;
   clear: both;
   margin: 0;
-  padding: 0.5em 2em;
+  padding: 0.5em $spacing-medium;
   font-family: $sans;
  }
 
 .footer-text {
-  @extend %meta;
+  @include small-text();
+  letter-spacing: 1px;
+}
+
+@include media-query(palm-small) {
+  footer {
+    padding: 0.5em $spacing-small;
+  }
 }
 
 @include media-query(lap-and-up){
+  
+  footer {
+    padding: 0.5em $spacing-large;
+  }
+
   .footer-body {
     max-width: 32em;
     margin: 0 auto;

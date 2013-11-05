@@ -16,32 +16,7 @@
 .logo {
   float: left;
   overflow: hidden;
-  padding: .5em 1em;  
-}
-
-#primary-menu {
-  // display: none;
-  overflow-y: hidden;
-  max-height: 0;
-  @include vendor(transition-property, all);
-  @include vendor(transition-duration, .25s);
-  @include vendor(transition-timing-function, ease-out);
-  // @include vendor(transition-timing-function, cubic-bezier(0, 1, 0.5, 1));
-
-  &.expanded {
-    // display: block;
-    max-height: (165/20) * 1em;
-  }
-}
-
-#toggle {
-  background: transparent url(../images/toggle.gif) no-repeat center center;
-  cursor: pointer;
-  float: right;
-  height: 41px;
-  padding: .5em 1em;
-  width: 31px;
-  text-indent: -999em;
+  padding: .5em $spacing-small;  
 }
 
 .primary-nav{
@@ -51,7 +26,6 @@
 }
 
 .nav-link {
-  @include transition(color);
   color: #666;
   color: rgba(0,0,0,0.4);
   display:inline-block;
@@ -69,12 +43,36 @@
 }
 
 @include media-query(palm) {
+  #primary-menu {
+    overflow-y: hidden;
+    max-height: 0;
+    @include vendor(transition-property, all);
+    @include vendor(transition-duration, .25s);
+    @include vendor(transition-timing-function, ease-out);
+    // @include vendor(transition-timing-function, cubic-bezier(0, 1, 0.5, 1));
+
+    &.expanded {
+      // display: block;
+      max-height: (165/20) * 1em;
+    }
+  }
+
+  #toggle {
+    background: transparent url(../images/toggle.gif) no-repeat center center;
+    cursor: pointer;
+    float: right;
+    height: 41px; // it's a bitmap image; live with it for now...
+    padding: 0.5em $spacing-medium;
+    width: 31px;
+    text-indent: -999em;
+  }
+
   .nav-link {
     line-height: 3em;
     background-color: #eee;
     color: #333;
     display:block;
-    padding-left: 1em;
+    padding-left: $spacing-small;
 
     &:active {
       background-color: #ccc;
@@ -93,6 +91,13 @@
         border-bottom: 1px solid white;
         display:list-item;
     }
+  }
+}
+
+@include media-query(palm-large){
+  .logo {
+    padding-left: $spacing-medium;
+    padding-right: $spacing-medium;
   }
 }
 
@@ -122,7 +127,7 @@
     margin: 0;
     > li {
       display: inline-block;
-      margin-right: 2em;
+      margin-right: $spacing-large;
     }
     li:last-of-type {
       margin-right: 0;

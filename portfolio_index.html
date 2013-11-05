@@ -9,11 +9,11 @@ group: navigation
   <ul class="vertical-list">
     {% for portfolio in site.categories.portfolio %}
       {% if portfolio.champion == true %}
-        <li>
+        <li class="portfolio-card">
           <a href="{{ BASE_PATH }}{{ portfolio.url }}" class="portfolio-piece">
             <div class="portfolio-text">
               <div class="slugger">
-                <div class="slug">{{ portfolio.micro-teaser }}</div>
+                <div class="micro-teaser">{{ portfolio.micro-teaser }}</div>
                 <h4 class="portfolio-title">{{ portfolio.title }}</h4>
               </div>
               <p class="portfolio-teaser">{{ portfolio.teaser }}</p>

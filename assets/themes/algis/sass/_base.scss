@@ -13,30 +13,31 @@ body {
   font-size: 125%;
   line-height: 1.5;
   text-rendering:optimizeLegibility; // helps with kerning and ligatures
-
-  &.homepage {
-    background-color: #ddd;
-  }
 }
 
 h1, .alpha {
   @include vendor(font-smoothing, antialiased);
+  font-family: $headings;
   font-size: getEms($h2-size);
   line-height: 1.2;
+  // margin: 0.5em 0;
 }
 
 h2, .beta {
   @include vendor(font-smoothing, antialiased);
+  font-family: $headings;
   font-size: getEms($h3-size);
 }
 
 h3, .gamma {
   @include vendor(font-smoothing, antialiased);
+  font-family: $headings;
   font-size: getEms($h4-size);
 }
 
 h4, .delta {
   @include vendor(font-smoothing, antialiased);
+  font-family: $headings;
   font-size: getEms($h4-size);
 }
 
@@ -79,9 +80,6 @@ p {
 @include media-query(lap-and-up){
   body {
     line-height: 1.6; 
-    &.homepage {
-      background-color: #fff;
-    }
   }
 
   h1, .alpha {

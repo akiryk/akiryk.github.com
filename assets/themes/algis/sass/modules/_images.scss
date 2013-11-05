@@ -22,9 +22,7 @@
 }
 
 .caption {
-  @include sans-alt();
-  font-size: getEms($caption-size);
-  color: $light-text;
+  @include small-text();
   margin: .5em 0;
   max-width: 48em;
 }
@@ -39,12 +37,6 @@
     background: rgba(255,255,255,0.5);
     padding: .5em 1em;
     margin: 0;
-  }
-}
-
-@include media-query(palm) {
-  .home-hero {
-    display: none;
   }
 }
 

@@ -1,12 +1,14 @@
 <article id="primary-content" class="blog-post">
   {% assign dir = "heros" %}
   {% include custom/hero_image %}
-      {% include custom/post_title_heading %}
-    </header>
+  <header class="post-heading">
+    {% include custom/post_title_heading %}
+  </header>
     <div class="content-body">
       {{ content }}
       {% include custom/tags_list %}
     </div>
+  </div><!-- end .post-wrapper -->
   </article>
 </div><!-- close .wrapper-all from default.html -->
 {% include custom/secondary %}

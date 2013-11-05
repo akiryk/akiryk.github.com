@@ -1,0 +1,64 @@
+/*
+ * Blog
+ *
+ */
+
+.blog-river-wrapper {
+  @include content-on-white();
+}
+
+.blog-river {
+  @include vertical-list();
+}
+
+.blog-card {
+  margin: $spacing-small auto;
+  padding: 0 $spacing-small;
+}
+
+@include media-query(palm) {
+  .blog-river-wrapper {
+    @include up-and-over-image();
+  }
+}
+
+@include media-query(palm-large) {
+  .blog-card {
+    margin: $spacing-medium auto;
+    padding: 0 $spacing-medium;
+  }
+}
+
+@include media-query(lap-and-up) {
+  .blog-river-wrapper {
+    @include main-content-wrapper();
+  }
+
+  .blog-river {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 $spacing-large;
+  }
+
+  .blog-card {
+    margin: 1.5em 0;
+    padding: 0;
+  }
+  
+  .portfolio-card {
+    margin: $spacing-large 0;
+    .portfolio-text {
+      width: 60%;
+    }
+    .portfolio-image {
+      width: 35%
+    }
+  }
+}
+
+@include media-query(desk-wide) {
+  .blog-river-wrapper,
+  .post-wrapper {
+    margin-left: 0;
+  }
+}

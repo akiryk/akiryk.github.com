@@ -56,7 +56,7 @@
     margin: getEms(12) 0 0 $gutter-width + em;
     width: $column-width + em; // 260px
     p {
-      @include sans-alt(); 
+      @include sans(); 
       font-size: ($marginaliaSize/$base-font-size) + em;
       font-weight: 300;
       font-style: normal;

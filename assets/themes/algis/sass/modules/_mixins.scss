@@ -14,17 +14,75 @@
 }
 
 /*
+ * Layout mixins
+ */
+
+// The white panel that holds content and partially covers the hero image at top
+@mixin main-content-wrapper() {
+  margin-top: -8em;
+  max-width: 36em;
+}
+
+ // The main content container. Sits inside of the main content wrapper (above)
+@mixin content-on-white(){
+  background-color: #fff;
+  max-width: 36em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// For small screens, pull post up over the image
+@mixin up-and-over-image(){
+  background-color: rgba(255,255,255,0.8);
+  margin-top: -5em;
+}
+
+/* 
+ * Sans mixins
+ */
+
+// Apply font styles as per http://css-tricks.com/snippets/css/better-helvetica/ 
+@mixin sans(){
+  font-family: $sans; 
+}
+
+// Uppercase labels (slugs, site title, etc)
+@mixin uppercase-sans($context: $base-font-size) {
+  @include sans();
+  font-size: getEms(14, $context);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@mixin slug-normal($context: $base-font-size) {
+  @include uppercase-sans($context);
+  @include vendor(font-smoothing, antialiased);
+  color: $red;
+}
+
+@mixin slug-light(){
+  @include uppercase-sans($context: $base-font-size);
+  color: $lighter-text;
+}
+
+// Lowercase sans-text (captions, brief teaser text, meta-data)
+@mixin small-text($context: $base-font-size){
+  @include sans();
+  color: $lighter-text;
+  font-size: getEms(14, $context);
+}
+
+@mixin white-shadow(){
+  text-shadow: -1px 1px 0 #fff;
+}
+/*
  * simple way to make the h1 ... h6 font stack
  */
 @mixin hfamily() {
     font-family: $headings;
 }
 
-@mixin sans-alt(){
-  font-family: $sans;
-  letter-spacing: 1px;
-}
-
+// phase out in place of slug() above
 @mixin slug-title($context: $base-font-size, $lighttext: false){
   font-family: $sans;
   font-size: getEms($caption-size, $context);
@@ -59,14 +117,6 @@
   @if ($delay != null) {
     @include transition-delay($delay); 
   }
-}
-
-/*
-* Apply font styles as per http://css-tricks.com/snippets/css/better-helvetica/
-*/ 
-@mixin sans(){
-  font-family: $sans; 
-    font-weight: 300;
 }
  
 
@@ -180,6 +230,7 @@
  */
 $palm-end:              $lap-start - 0.01em;
 $lap-end:               $desk-start - 0.01em;
+$palm-small-end:        $palm-large-start - 0.01em;
 
 @mixin media-query($media-query){
 
@@ -189,9 +240,15 @@ $lap-end:               $desk-start - 0.01em;
 
     }
 
-    @if $media-query == large-palm {
+     @if $media-query == palm-small{
 
-      @media only screen and (min-width:$large-palm) { @content; }
+        @media only screen and (max-width:$palm-small-end) { @content; }
+
+    }
+
+    @if $media-query == palm-large {
+
+      @media only screen and (min-width:$palm-large-start) { @content; }
     }
 
     @if $media-query == lap{
