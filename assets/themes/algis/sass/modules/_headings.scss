@@ -70,6 +70,12 @@
   .blog-river-title {
     @include white-shadow();
   }
+  .post-date {
+    display: block;
+  }
+  .divider {
+    display: none;
+  }
 }
 
 @include media-query(palm-large) {
@@ -98,6 +104,7 @@
     padding-right: $spacing-large;
   }
   .portfolio-heading {
+    background-color: rgba(0,0,0,0.8);
     padding: $spacing-large;
     margin: 0 0 1em 0;
   }

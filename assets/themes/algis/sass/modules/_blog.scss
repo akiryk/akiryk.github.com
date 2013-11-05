@@ -5,6 +5,10 @@
 
 .blog-river {
   @include vertical-list();
+  .portfolio-card {
+    background-color: #111;
+    margin: $spacing-small;
+  }
 }
 
 .blog-card {
@@ -15,7 +19,7 @@
 
 @include media-query(palm) {
   .blog-river-wrapper {
-    @include up-and-over-image();
+    margin-top: -6em;
   }
   .blog-card p {
     font-size: getEms(18);
@@ -24,9 +28,17 @@
 
 @include media-query(palm-large) {
   .blog-card {
-    font-size: getEms(20);
     margin: $spacing-medium;
     padding: $spacing-medium;
+
+    p {
+      font-size: getEms(20);
+    }
+  }
+  .blog-river {
+    .portfolio-card {
+      margin: $spacing-medium;
+    }
   }
 }
 
@@ -40,6 +52,9 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 $spacing-large;
+    .portfolio-card {
+      margin: $spacing-large 0;
+    }
   }
 
   .blog-card {

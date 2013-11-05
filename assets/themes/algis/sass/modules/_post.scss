@@ -5,6 +5,7 @@
 
 .post-wrapper {
   @include content-on-white();
+  background-color: transparent;
 }
 
 .callout {

@@ -74,6 +74,7 @@ blockquote {
 
 p {
   margin: 1.6em 0;
+  max-width: 32em;
 }
 
 @include media-query(palm){
