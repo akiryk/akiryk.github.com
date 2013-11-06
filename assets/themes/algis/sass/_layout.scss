@@ -22,6 +22,11 @@
   @include centered-content();
 }
 
+@include media-query(palm){
+  .content-body p {
+    font-size: 1.1em;
+  }
+}
 
 @include media-query(palm-large) {
   .content-body {
@@ -33,7 +38,6 @@
   .content-body {
     padding: 0 2em;
     max-width: 32em;
-    margin-bottom: 2em;
   }
 }
 
@@ -46,7 +50,6 @@
     margin-left: 13em;
   }
     .content-body {
-      margin: 0 0 2em 0;
       padding: 0 2em;
     }
 }

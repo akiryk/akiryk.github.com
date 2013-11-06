@@ -9,6 +9,7 @@ http://akiryk.github.io/portfolio_index.html
 http://akiryk.github.io/rss.xml
 http://akiryk.github.io/sitemap.txt
 http://akiryk.github.io/tags.html
+http://akiryk.github.io/page2/index.html
 http://akiryk.github.io/tag/ux/index.html
 http://akiryk.github.io/tag/cms/index.html
 http://akiryk.github.io/tag/npr/index.html

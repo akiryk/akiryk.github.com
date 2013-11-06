@@ -8,6 +8,8 @@ pygments: true
 # markdown: rdiscount
 markdown: redcarpet
 
+paginate: 10
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -129,7 +131,8 @@ JB :
 AK:
   # Custom list of pages to include in navigation
   primary_nav : [["/index.html", "Blog"], ["/portfolio_index.html", "Portfolio"], ["/about.html", "About"]]
-  lap_size : "800px"
+  lap_size :  "800px"
+  med_size :  "550px"
   desk_size : "880px"
   palm_size : "680px"
   wide_size : "1320px"

@@ -1,24 +1,4 @@
----
-layout: default
-hero: cassis
-hero-caption: Hotel sign, Cassis, France
-classes: homepage
----
-{% include JB/setup %}
-<section id="primary-content" class="home">
-  <div class="pic-hero">
-    <span data-picture data-alt="{{ page.hero-caption }}">
-      <span data-src="/assets/images/heros/{{ page.hero }}-small.jpg" ></span>
-      <span data-src="/assets/images/heros/{{ page.hero }}-large.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
-      <noscript>
-        <img src="/assets/images/heros/{{ page.hero }}-small.jpg">
-      </noscript>
-    </span>
-    {% if page.hero-caption %}
-      <div class="caption">{{ page.hero-caption }}</div>
-    {% endif %}
-  </div>
-  <div class="blog-river-wrapper">
+<div class="blog-river-wrapper">
     <header class="post-heading">
       <div class="blog-river-title">Latest Posts</div>
     </header>
@@ -79,5 +59,3 @@ classes: homepage
   {% endif %}
 </div>
 {% endif %}
-</section>
-</div> <!-- end .wrapper -->

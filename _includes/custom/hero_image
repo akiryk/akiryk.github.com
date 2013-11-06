@@ -2,7 +2,7 @@
   <div class="pic-hero">
     <span data-picture data-alt="{{ page.hero-caption }}">
       <span data-src="/assets/images/heros/{{ page.hero }}-small.jpg" ></span>
-      <span data-src="/assets/images/heros/{{ page.hero }}-med.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
+      <span data-src="/assets/images/heros/{{ page.hero }}-med.jpg" data-media="(min-width: {{ site.AK.med_size }})"></span>
       <span data-src="/assets/images/heros/{{ page.hero }}-large.jpg" data-media="(min-width: {{ site.AK.wide_size }})"></span>
       <noscript>
         <img src="/assets/images/heros/{{ page.hero }}-small.jpg">

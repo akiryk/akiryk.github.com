@@ -99,6 +99,9 @@
     padding-left: $spacing-medium;
     padding-right: $spacing-medium;
   }
+  .nav-link {
+    padding-left: $spacing-medium;
+  }
 }
 
 @include media-query(lap){

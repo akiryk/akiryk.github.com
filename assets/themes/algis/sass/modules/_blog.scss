@@ -3,6 +3,12 @@
  *
  */
 
+.tags-page {
+  .blog-river-wrapper {
+    margin-top: 0;
+  }
+}
+
 .blog-river {
   @include vertical-list();
   .portfolio-card {
@@ -71,6 +77,11 @@
       width: 35%
     }
   }
+
+  .teaser {
+    margin-top: 0.5em;
+  }
+
 }
 
 @include media-query(desk-wide) {

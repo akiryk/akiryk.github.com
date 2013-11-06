@@ -6,4 +6,31 @@
 
 .pagination {
   border-top: 1px solid #ccc;
+  max-width: 32em;
+  margin: 2em auto;
+  padding-top: 1em; 
+
+  a {
+    color: $blue;
+  }
+
 }
+
+@include media-query(palm) {
+  .pagination {
+    margin: 1em $spacing-medium;
+  }
+}
+
+@include media-query(palm-small) {
+  .pagination {
+    margin: 2em $spacing-small;
+  }
+}
+
+@include media-query(desk-wide) {
+  .pagination {
+    margin: 2em 0 2em 2em;
+  }
+}
+

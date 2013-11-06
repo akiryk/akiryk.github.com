@@ -98,6 +98,7 @@
 
 @include media-query(lap-and-up) {
   .post-heading {
+    background-color: #fff;
     margin-top: 0 $spacing-large;
     padding-top: $spacing-large;
     padding-left: $spacing-large;
@@ -117,13 +118,6 @@
 }
 
 @include media-query(desk-wide) {
-  .about-intro {
-    background-color: #ddd;
-    margin-left: -80px;
-    padding: 40px 80px;
-    width: 940px;
-  }
-  
   .post-heading {
     margin-left: 0;
   }
