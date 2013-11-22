@@ -35,7 +35,7 @@
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 2000
+      scriptTimeout: 3000
     };
     var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
@@ -48,20 +48,20 @@
   </head>
   <body id="top" class="">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
-      <header id="masthead" class="cf">
+      <header class="masthead cf">
   <div class="masthead-top">
-    <a class="logo" href="/" title="Ready Lab Home">
-      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
-    </a>
-    <a href="#main" class="screenreaders">Skip navigation</a>
-    <div id="toggle">Toggle</div>
+    <div class="brand">
+      <a class="logo" href="/" title="Ready Lab Home">
+        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
   </div><!-- .masthead-top -->
-  <nav id="primary-menu" class="">
+  <nav id="primary-menu" class="primary-menu">
     
-
-
-  
-<ul class="primary-nav">
+<ul class="nav">
     <li>
       
         <a href="/index.html" class="nav-link">Blog</a>
@@ -81,16 +81,29 @@
     </li>
 
 </ul>
-
-
-
   </nav>
 </header>
-      
-<article id="primary-content">
-  <div class="post-wrapper page-wrapper">
-    <div class="content-body">
-    <h1 class="about-intro">Readylab is a small creative studio focused on making well-crafted websites and digital experiences.</h1>
+      <div class="inner-wrapper">
+        
+
+
+  <div id="start" class="pic-hero">
+    <span data-picture data-alt="">
+      <span data-src="/assets/images/heros/cassis-mini.jpg" ></span>
+      <span data-src="/assets/images/heros/cassis-small.jpg" data-media="(min-width: 420px)"></span>
+      <span data-src="/assets/images/heros/cassis-med.jpg" data-media="(min-width:690px)"></span>
+      <span data-src="/assets/images/heros/cassis-large.jpg" data-media="(min-width: 760px)"></span>
+      <noscript>
+        <img src="/assets/images/heros/cassis-small.jpg">
+      </noscript>
+    </span>
+    
+      <div class="caption">Hotel sign, Cassis, France</div>
+    
+  </div>
+<article class="content-wrapper post-wrapper">
+      <div class="content-body">
+        <h2 class="no-margin-top">Readylab is a small creative studio focused on making well-crafted websites and digital experiences.</h2>
 
 <p>Creative micro-studio front end development, web disign, user experience, thought leadership and more. Clients, subsidiaries, pushing the boundaries of leading edge technology.</p>
 
@@ -107,21 +120,22 @@
 
 <p>I&#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&#39;m talking about the experience of looking for something you don&#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&#39;s an experience that&#39;s been notably absent from the world of digital book-shopping.</p>
 
-    </div>
-  </div>
-</article>
-</div>
+      </div>
+    </article>
+  </div><!-- .inner-wrapper -->
+</div><!-- end .inner-wrapper -->
 
-      <footer>
-  <div class="footer-body">
-    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
-    </div>
+        <footer>
+  <div class="footer-wrapper">
+    <div class="footer-body">
+      <div class="footer-text">&copy; 2013 Adam Kiryk</div>
+      </div>
+  </div>
 </footer>
 
-   
     <script>
       (function(){
-        var toggle = document.getElementById("toggle");
+        var toggle = document.getElementById("nav-toggle");
         var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 

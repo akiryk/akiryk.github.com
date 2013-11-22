@@ -1,17 +1,10 @@
 /**
  * Images.scss
- * Handle image sizes
+ *
+ * Note also image-hero, which handles the big hero images
+ * and pull-push, which pushes and pulls images and quotes.
  *
  */
-
-.pic-hero {
-  margin-bottom: 0;
-  position: relative;
-  width: 100%;
-  z-index: -1;
-  min-height: 10em;
-}
-
 
 .no-resize {
   width: auto;
@@ -23,16 +16,29 @@
   max-width: 48em;
 }
 
-.pic-hero {
-  .caption {
-    position: absolute;
-    right: 1px;
-    top: 1px;
-    font-size: 12px;
-    color: #333;
-    background: rgba(255,255,255,0.5);
-    padding: .5em 1em;
-    margin: 0;
+.pic-medium {
+  
+  width: 40%;
+  
+  margin-top: .35em;
+
+  &.pull-left {
+    float: left;
+    margin-right: 5%;
+  }
+
+  &.push-right {
+    float: right;
+    margin-left: 5%;
+  }
+
+}
+
+@include media-query(palm) {
+  .pic-medium {
+    .caption {
+      display: none;
+    }
   }
 }
 
@@ -40,52 +46,21 @@
   .pic-large {
     width: 100%;
   }
-  .pic-hero {
-    min-height: 10em;
-  }
 }
 
 @include media-query(desk) {
-  .pic-large,
-  .pic-hero  {
-    width: $content-width + $column-width + $gutter-width + em;
-  }
 
   .pic-large {
-    margin-left: -($content-wrapper-width - $content-width) / 2 + em; 
-    // e.g (47-32)/2 = 7.5em;
-    // Do this funny math so that image is centered, equally offset on both margins.
+    margin-left: -7.5em; 
+    width: 47em;
   }
 
-  .content-outset {
-    float: left;
-    margin-left: -7.5em;
-    margin-right: $gutter-width + em;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    width: ($content-width / 2) + $gutter-width + em; // half of content width plus room for gutter
-
-    h2 {
-      margin: 0;
-    }
-  }
 }
 
 @include media-query(desk-wide) {
   .pic-large {
     margin-left: 0;
-    width: $content-width + $column-width + (3*$gutter-width) + em;
-  }
-
-  .pic-hero {
-    left: -$gutter-width + em;
-    width: $content-width + $column-width + (3*$gutter-width) + em; // 51em or 1020px
-    height: (400/20) * 1em;
-    overflow: hidden;
-  }
-
-  .content-outset {
-    margin-left: -8em;
+    width: 51em;
   }
 
 }

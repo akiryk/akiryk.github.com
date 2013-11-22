@@ -2,61 +2,27 @@
 layout: default
 hero: cassis
 hero-caption: Hotel sign, Cassis, France
-classes: homepage
+classes: homepage, use-cards
 ---
 {% include JB/setup %}
-<section id="primary-content" class="home">
-  <div class="pic-hero">
-    <span data-picture data-alt="{{ page.hero-caption }}">
-      <span data-src="/assets/images/heros/{{ page.hero }}-small.jpg" ></span>
-      <span data-src="/assets/images/heros/{{ page.hero }}-large.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
-      <noscript>
-        <img src="/assets/images/heros/{{ page.hero }}-small.jpg">
-      </noscript>
-    </span>
-    {% if page.hero-caption %}
-      <div class="caption">{{ page.hero-caption }}</div>
-    {% endif %}
-  </div>
-  <div class="blog-river-wrapper">
-    <header class="post-heading">
-      <div class="blog-river-title">Latest Posts</div>
+  {% include custom/hero_image %}
+  <section class="content-wrapper blog-river-wrapper">
+    <header class="header agg-header">
+      <h1 class="title agg-title">Latest Posts</h1>
     </header>
-    <ul class="blog-river">
+    <ul class="river blog-river">
       {% for post in paginator.posts %}
         {% if post.category == 'portfolio' %}
-          <li class="portfolio-card">
-            <a href="{{ BASE_PATH }}{{ post.url }}" class="portfolio-piece">
-                <div class="portfolio-text">
-                  <div class="slugger">
-                    <div class="micro-teaser">{{ post.micro-teaser }}</div>
-                    <h4 class="portfolio-title">{{ post.title }}</h4>
-                  </div>
-                  <p class="portfolio-teaser">{{ post.teaser }}</p>
-                </div>
-                {% if post.image %}
-                  <div class="portfolio-image">
-                    <span data-picture data-alt="Portfolio image">
-                      <span data-src="/assets/images/portfolio-images/{{ post.image }}-small.jpg"></span>
-                      <span data-src="/assets/images/portfolio-images/{{ post.image }}-thumb-large.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
-                      <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                      <noscript>
-                        <img src="/assets/images/portfolio-images/{{ post.image }}-small.jpg">
-                      </noscript>
-                    </span>
-                  </div>
-                {% endif %}
-              </a>
+          <li class="card portfolio-card">
+            {% include custom/create_portfolio_card %}
         {% else %}
-          <li class="blog-card">
-            <h2 class="blog-card-heading"><a href="{{ BASE_PATH }}{{ post.url }}" class="agg-link">{{ post.title }}</a></h2>
-            <div class="agg-title-meta">{{ post.date | date: "%B %d, %Y" }}</div>
-            <p class="teaser">{{ post.teaser }}</p>
+          <li class="card blog-card">
+            {% include custom/create_blog_card %}
         {% endif %}
-        </li>
+        </li><!-- close the portfolio or blog card -->
       {% endfor %}
     </ul><!-- end .blog-river -->
-  </div><!-- end blog-river-wrapper -->
+  </section><!-- end blog-river-wrapper -->
   <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
@@ -77,7 +43,8 @@ classes: homepage
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
   {% endif %}
-</div>
+</div><!-- end .pagination -->
 {% endif %}
-</section>
+
+  </div> <!-- end .inner-wrapper -->
 </div> <!-- end .wrapper -->

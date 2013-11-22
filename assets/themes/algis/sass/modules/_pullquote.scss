@@ -1,0 +1,19 @@
+/*
+ * Pullquotes
+ */
+
+
+
+@include media-query(desk) {
+
+  .pullquote{
+    float: left;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 18em; // half of content width plus room for gutter
+
+    h2,h3,h4 {
+      margin: 0;
+    }
+  }
+}

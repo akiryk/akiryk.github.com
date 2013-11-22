@@ -6,9 +6,10 @@
 
 .pagination {
   border-top: 1px solid #ccc;
-  max-width: 32em;
-  margin: 2em auto;
+  max-width: 34em;
+  margin: 0 auto 2em auto;
   padding-top: 1em; 
+  text-align: center;
 
   a {
     color: $blue;
@@ -18,13 +19,13 @@
 
 @include media-query(palm) {
   .pagination {
-    margin: 1em $spacing-medium;
+    margin: 1em;
   }
 }
 
 @include media-query(palm-small) {
   .pagination {
-    margin: 2em $spacing-small;
+    margin: 2em 1em;
   }
 }
 

@@ -1,19 +1,21 @@
-<section id="secondary-content" class="">
-  <div class="posts">
-    {% if page.previous %}
-      <div class="read-next">Previous Post</div>
-        <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></h2>
-      <p class="teaser"> {{ page.previous.teaser }}</p>
-    {% endif %}
-    {% if page.next %}
-      <div class="read-next">Next Post</div>
-        <h2 class="blog-heading"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></h2>
-      <p class="teaser"> {{ page.next.teaser }}</p>
-    {% endif %}
-    </ul>
-  </div>
-  <div class="return">
-    <a href="/">Home</a> | <a href="#top">Return to Top</a>
-  </div>
+<section id="secondary-content">
+  <div class="content-wrapper secondary-wrapper">
+    <div class="posts">
+      {% if page.previous %}
+        <div class="read-next">Previous Post</div>
+          <h2 class="card-title secondary-card-title"><a href="{{ BASE_PATH }}{{ page.previous.url }}#start" title="{{ page.previous.title }}">{{ page.previous.title }}</a></h2>
+        <p class="teaser"> {{ page.previous.teaser }}</p>
+      {% endif %}
+      {% if page.next %}
+        <div class="read-next">Next Post</div>
+          <h2 class="card-title secondary-card-title"><a href="{{ BASE_PATH }}{{ page.next.url }}#start" title="{{ page.next.title }}">{{ page.next.title }}</a></h2>
+        <p class="teaser"> {{ page.next.teaser }}</p>
+      {% endif %}
+      </ul>
+    </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#top">Return to Top</a>
+    </div>
+    </div><!-- content-wrapper -->
   <!-- {% include JB/comments %} -->
 </section>

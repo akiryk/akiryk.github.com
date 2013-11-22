@@ -5,14 +5,8 @@
  */
 
 .post-tags {
+  @include horizontal-list();
   font-style: italic;
-  margin-left: -.5em;
-  padding: 0;
-  
-  .inline {
-    padding-left: .5em;
-  }
-
 }
 
 .quoted  {

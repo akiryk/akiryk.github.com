@@ -9,7 +9,7 @@
   }
 }
 
-.blog-river {
+.river {
   @include vertical-list();
   .portfolio-card {
     background-color: #111;
@@ -17,6 +17,10 @@
   }
 }
 
+.teaser {
+  margin-top: 0.5em;
+}
+  
 .blog-card {
   background-color: #fff;
   margin: $spacing-small;
@@ -24,7 +28,7 @@
 }
 
 @include media-query(palm) {
-  .blog-river-wrapper {
+  .river-wrapper {
     margin-top: -6em;
   }
   .blog-card p {
@@ -41,7 +45,7 @@
       font-size: getEms(20);
     }
   }
-  .blog-river {
+  .river {
     .portfolio-card {
       margin: $spacing-medium;
     }
@@ -49,12 +53,13 @@
 }
 
 @include media-query(lap-and-up) {
-  .blog-river-wrapper {
+  .river-wrapper {
     @include content-on-white();
     @include main-content-wrapper();
+    background-color: #fff;
   }
 
-  .blog-river {
+  .river {
     margin-left: auto;
     margin-right: auto;
     padding: 0 $spacing-large;
@@ -66,26 +71,23 @@
   .blog-card {
     margin: 1.5em 0;
     padding: 0;
+    border-bottom: 1px solid #ccc;
   }
   
-  .blog-river {
+  .river {
     margin: $spacing-large 0;
-    .portfolio-text {
-      width: 60%;
-    }
-    .portfolio-image {
-      width: 35%
-    }
   }
 
-  .teaser {
-    margin-top: 0.5em;
+  .blog-post {
+    .post-wrapper {
+      background-color: #fff;
+    }
   }
 
 }
 
 @include media-query(desk-wide) {
-  .blog-river-wrapper,
+  .river-wrapper,
   .post-wrapper {
     margin-left: 0;
   }

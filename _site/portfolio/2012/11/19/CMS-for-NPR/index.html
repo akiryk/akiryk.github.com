@@ -35,7 +35,7 @@
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 2000
+      scriptTimeout: 3000
     };
     var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
@@ -48,20 +48,20 @@
   </head>
   <body id="top" class="">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
-      <header id="masthead" class="cf">
+      <header class="masthead cf">
   <div class="masthead-top">
-    <a class="logo" href="/" title="Ready Lab Home">
-      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
-    </a>
-    <a href="#main" class="screenreaders">Skip navigation</a>
-    <div id="toggle">Toggle</div>
+    <div class="brand">
+      <a class="logo" href="/" title="Ready Lab Home">
+        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
   </div><!-- .masthead-top -->
-  <nav id="primary-menu" class="">
+  <nav id="primary-menu" class="primary-menu">
     
-
-
-  
-<ul class="primary-nav">
+<ul class="nav">
     <li>
       
         <a href="/index.html" class="nav-link">Blog</a>
@@ -81,29 +81,35 @@
     </li>
 
 </ul>
-
-
-
   </nav>
 </header>
-      
-<article id="primary-content" class="portfolio-post">
+      <div class="inner-wrapper">
+        
   
-  
-  
-  <div class="pic-hero"></div>
-    <div class="post-wrapper no-hero">
 
-  <header class="portfolio-heading">
-    <div class="post-title-meta">
-      <span class="post-micro-teaser">ux + design</span><span class="divider"> / </span><span class="post-date">November 19, 2012</span>     
-    </div>
-    <h1>Content Management for NPR Stations </h1>
-    </header>
-  <div class="content-body">
-    <p>This is some new content.</p>
-
+  <div id="start" class="pic-hero">
+    <span data-picture data-alt="">
+      <span data-src="/assets/images/heros/portfolio-mini.jpg" ></span>
+      <span data-src="/assets/images/heros/portfolio-small.jpg" data-media="(min-width: 420px)"></span>
+      <span data-src="/assets/images/heros/portfolio-med.jpg" data-media="(min-width:690px)"></span>
+      <span data-src="/assets/images/heros/portfolio-large.jpg" data-media="(min-width: 760px)"></span>
+      <noscript>
+        <img src="/assets/images/heros/portfolio-small.jpg">
+      </noscript>
+    </span>
     
+  </div>
+    <article class="content-wrapper portfolio-post-wrapper">
+        <header class="header portfolio-header">
+          <div class="post-title-meta">
+            <span class="post-micro-teaser">ux + design</span><span class="divider"> / </span><span class="post-date">November 19, 2012</span>     
+          </div>
+          <h1>Content Management for NPR Stations </h1>
+          </header>
+        <div class="content-body portfolio-body">
+          <p>This is some new content.</p>
+
+          
 
   <ul class="post-tags">
     
@@ -124,26 +130,30 @@
 
 
 
-  </div>
-</article>
-</div><!-- close .wrapper-all from default.html -->
-<section id="secondary-content" class="">
-  <div class="posts">
-    
-      <div class="read-next">Previous Post</div>
-        <h2 class="blog-heading"><a href="/portfolio/2012/04/07/stub" title="Moose">Moose</a></h2>
-      <p class="teaser"> With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
-    
-    
-      <div class="read-next">Next Post</div>
-        <h2 class="blog-heading"><a href="/portfolio/2012/12/14/npr-station-analytics" title="NPR Station Analytics">NPR Station Analytics</a></h2>
-      <p class="teaser"> With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
-    
-    </ul>
-  </div>
-  <div class="return">
-    <a href="/">Home</a> | <a href="#top">Return to Top</a>
-  </div>
+        </div>
+    </article>
+  </div><!-- .inner-wrapper -->
+</div><!-- end .inner-wrapper -->
+
+<section id="secondary-content">
+  <div class="content-wrapper secondary-wrapper">
+    <div class="posts">
+      
+        <div class="read-next">Previous Post</div>
+          <h2 class="card-title secondary-card-title"><a href="/portfolio/2012/04/07/stub#start" title="Moose">Moose</a></h2>
+        <p class="teaser"> With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
+      
+      
+        <div class="read-next">Next Post</div>
+          <h2 class="card-title secondary-card-title"><a href="/portfolio/2012/12/14/npr-station-analytics#start" title="NPR Station Analytics">NPR Station Analytics</a></h2>
+        <p class="teaser"> With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
+      
+      </ul>
+    </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#top">Return to Top</a>
+    </div>
+    </div><!-- content-wrapper -->
   <!-- 
 
 
@@ -167,16 +177,17 @@
  -->
 </section>
 
-      <footer>
-  <div class="footer-body">
-    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
-    </div>
+        <footer>
+  <div class="footer-wrapper">
+    <div class="footer-body">
+      <div class="footer-text">&copy; 2013 Adam Kiryk</div>
+      </div>
+  </div>
 </footer>
 
-   
     <script>
       (function(){
-        var toggle = document.getElementById("toggle");
+        var toggle = document.getElementById("nav-toggle");
         var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 

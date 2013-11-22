@@ -1,0 +1,31 @@
+/* 
+ * web-fonts.scss
+ *
+ * Handle webfonts during load and in case of failure to load.
+ *
+ * In this theme, web fonts are used in h1-h4 headings.
+ * The fonts come from typekit, which uses a few classnames to indicate
+ * load status.
+ * 
+ */
+
+// default to o
+h1, h2, h3, h4, h5, h6 {
+  visibility: hidden;
+}
+
+
+.wf-active {
+  h1, h2, h3, h4, h5, h6 {
+    @include vendor(font-smoothing, antialiased);
+    font-family: $headings;
+    visibility: visible;
+  }
+}
+
+.wf-inactive {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $sans-stack;
+    visibility: visible;
+  }
+}

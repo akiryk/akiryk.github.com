@@ -5,39 +5,29 @@ header: Portfolio Posts
 group: navigation
 ---
 {% include JB/setup %}
-<div id="primary-content" class="portfolio-wrapper">
-  <ul class="vertical-list">
-    {% for portfolio in site.categories.portfolio %}
-      {% if portfolio.champion == true %}
-        <li class="portfolio-card">
-          <a href="{{ BASE_PATH }}{{ portfolio.url }}" class="portfolio-piece">
-            <div class="portfolio-text">
-              <div class="slugger">
-                <div class="micro-teaser">{{ portfolio.micro-teaser }}</div>
-                <h4 class="portfolio-title">{{ portfolio.title }}</h4>
-              </div>
-              <p class="portfolio-teaser">{{ portfolio.teaser }}</p>
-            </div>
-            {% if portfolio.image %}
-              <div class="portfolio-image">
-                <span data-picture data-alt="Portfolio image">
-                  <span data-src="/assets/images/portfolio-images/{{ portfolio.image }}-small.jpg"></span>
-                  <span data-src="/assets/images/portfolio-images/{{ portfolio.image }}-med.jpg" data-media="(min-width: 800px)"></span>
-                  <span data-src="/assets/images/portfolio-images/{{ portfolio.image }}-med.jpg" data-media="(min-width: 1320px)"></span>
-                  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                  <noscript>
-                    <img src="/assets/images/portfolio-images/{{ portfolio.image }}-small.jpg">
-                  </noscript>
-                </span>
-              </div>
-            {% endif %}
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
-</div><!-- close .wrapper-all from default.html -->
+{% include custom/hero_image %}
+  <section class="content-wrapper portfolio-river-wrapper">
+    <header class="header agg-header">
+      <h1 class="title agg-title">Portfolio</h1>
+    </header>
+    <ul class="river portfolio-river">
+      {% for post in site.categories.portfolio %}
+        {% if post.champion == true %}
+          <li class="card portfolio-card">
+            {% include custom/create_portfolio_card %}
+          </li>
+        {% endif %}
+      {% endfor %}
+      {% for post in site.categories.portfolio %}
+        {% if post.champion == nil %}
+          <li class="card portfolio-card">
+            {% include custom/create_portfolio_card %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section> <!-- .blog-river-wrapper -->
+</div> <!-- end .inner-wrapper -->
 
 
 

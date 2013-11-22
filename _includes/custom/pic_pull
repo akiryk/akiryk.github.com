@@ -1,0 +1,8 @@
+{% comment %}<!--
+This wraps an image with the proper class.
+The actual work of placing the image takes place in:
+pic_push_pull
+-->{% endcomment %}
+<div class="pic-medium push-pull pull-left">
+  {% include custom/pic_push_pull %}
+</div>

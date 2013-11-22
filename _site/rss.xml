@@ -5,8 +5,8 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-11-06T12:51:41+01:00</lastBuildDate>
-        <pubDate>2013-11-06T12:51:41+01:00</pubDate>
+        <lastBuildDate>2013-11-22T14:11:26+01:00</lastBuildDate>
+        <pubDate>2013-11-22T14:11:26+01:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -45,8 +45,8 @@
                 <title>Gronster Drawing Game</title>
                 <description>&lt;p&gt;&lt;em&gt;Synopsis:&lt;/em&gt; Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. &lt;a href=&quot;http://www.google.com&quot;&gt;mylink&lt;/a&gt; To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like.  &lt;/p&gt;
 
-&lt;div class=&quot;content-outset&quot;&gt;
-  &lt;h2&gt;To Begin With, We Make A Comparison With Jonas Avimbi:&lt;/h2&gt;
+&lt;div class=&quot;push-pull pull-left&quot;&gt;
+  &lt;h3&gt;To Begin With, We Make A Comparison With Jonas Avimbi&lt;/h3&gt;
 &lt;/div&gt;
 
 &lt;p&gt;I&amp;#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#39;m talking about the experience of looking for something you don&amp;#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#39;s an experience that&amp;#39;s been notably absent from the world of digital book-shopping. &lt;/p&gt;
@@ -111,13 +111,38 @@
                 <title>How I did it</title>
                 <description>&lt;p&gt;I grew frustrated with Wordpress because load times seemed too slow for my liking. I could live with it in the US but experienced it in Africa and parts of Europe. No good. So decdied to work with a static site generator tool, Jekyll.&lt;/p&gt;
 
+&lt;h1&gt;Here&amp;#39;s a one part headline that seems to go on too far for words.&lt;/h1&gt;
+
 &lt;p&gt;Here&amp;#39;s the process I used. I started by creating loose mockups for my home page and post pages. I didn&amp;#39;t mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work. &lt;/p&gt;
+
+&lt;h2&gt;Here&amp;#39;s a two part headline that goes too far for us to readily interpret what we&amp;#39;re reading and seeing&lt;/h2&gt;
 
 &lt;p&gt;This revealed some issues I had to figure out: handling post and portfolio categories separately. 
 Plugins not working on github pages. 
 etc.&lt;/p&gt;
 
-&lt;p&gt;Then I put in some content and n&lt;/p&gt;
+&lt;h3&gt;Here&amp;#39;s a two part headline that goes too far for us to readily interpret what we&amp;#39;re reading and seeing&lt;/h3&gt;
+
+&lt;p&gt;This revealed some issues I had to figure out: handling post and portfolio categories separately. 
+Plugins not working on github pages. 
+etc.&lt;/p&gt;
+
+&lt;h4&gt;Here&amp;#39;s a two part headline that goes too far for us to readily interpret what we&amp;#39;re reading and seeing&lt;/h4&gt;
+
+&lt;p&gt;This revealed some issues I had to figure out: handling post and portfolio categories separately. 
+Plugins not working on github pages. 
+etc.&lt;/p&gt;
+
+&lt;h5&gt;Here&amp;#39;s a two part headline that goes too far for us to readily interpret what we&amp;#39;re reading and seeing&lt;/h5&gt;
+
+&lt;p&gt;This revealed some issues I had to figure out: handling post and portfolio categories separately. 
+Plugins not working on github pages. 
+etc.&lt;/p&gt;
+
+&lt;h6&gt;Here&amp;#39;s a two part headline that goes too far for us to readily interpret what we&amp;#39;re reading and seeing&lt;/h6&gt;
+
+&lt;p&gt;This revealed some issues I had to figure out: handling post and portfolio categories separately. 
+Plugins not working on github pages. &lt;/p&gt;
 </description>
                 <link>http://akiryk.github.io/blog/2013/10/12/personal-site-process</link>
                 <guid>http://akiryk.github.io/blog/2013/10/12/personal-site-process</guid>
@@ -156,8 +181,8 @@ etc.&lt;/p&gt;
                 <title>Better Book Browsing Online</title>
                 <description>&lt;p&gt;&lt;em&gt;Synopsis:&lt;/em&gt; Here&amp;#39;s a problem I&amp;#39;ve noticed. Compared with walking into a real-world book store, browsing for a book online kind of sucks. To solve this problem, I suggest examining what makes the real-world browsing experience a good one, and then seeing if some of those things can be applied in a digitally native way. Then, if I have time (surprise! I do!), I&amp;#39;ll present some mockups of what that improved experience could look like.  &lt;/p&gt;
 
-&lt;div class=&quot;content-outset&quot;&gt;
-  &lt;h2&gt;To Begin With, We Make A Comparison With Jonas Avimbi:&lt;/h2&gt;
+&lt;div class=&quot;push-pull pull-left&quot;&gt;
+  &lt;h3&gt;To Begin With, We Make A Comparison With Jonas Avimbi&lt;/h3&gt;
 &lt;/div&gt;
 
 &lt;p&gt;I&amp;#39;m not talking about the process of finding and buying a book online. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by like likes of Amazon and Apple. I&amp;#39;m talking about the experience of looking for something you don&amp;#39;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. It&amp;#39;s an experience that&amp;#39;s been notably absent from the world of digital book-shopping. &lt;/p&gt;
@@ -176,15 +201,15 @@ etc.&lt;/p&gt;
 &lt;p&gt;Perhaps you disagree. Perhaps you think digital book-browsing is just fine as is. (An aside: let me try to think of a less awful and cumbersome term than &amp;#39;digital book-browsing.&amp;#39; e-Book shopping? Browsing for books in the digital space? Ugh. Forget it. From now on, when I say &amp;#39;browsing,&amp;#39; I mean browsing for books either online or in an app. If I want to talk about browsing in the real world, I&amp;#39;ll be explicit about it). &lt;/p&gt;
 
 &lt;div class=&quot;pic-large&quot;&gt;
-  &lt;span data-picture data-alt=&quot;Photograph of flowers&quot;&gt;
-  &lt;span data-src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;&lt;/span&gt;
-  &lt;span data-src=&quot;/assets/images/random/flowers-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
+  &lt;span data-picture data-alt=&quot;My neat old caption&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/flowers-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/flowers-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
   &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
   &lt;noscript&gt;
-    &lt;img src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;
+    &lt;img src=&quot;/assets/images/book-browsing/flowers-small.jpg&quot;&gt;
   &lt;/noscript&gt;
   &lt;/span&gt;
-&lt;div class=&quot;caption&quot;&gt;This is a caption. Live with it.&lt;/div&gt;
+&lt;div class=&quot;caption&quot;&gt;My neat old caption&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Seriously, how awesome is it to just kick back on your sofa, iPad in hand, and browse through listings like these (see example from the iBook store)? It isn&amp;#39;t, I don&amp;#39;t think. It&amp;#39;s repetitive. Nothing stands out (except for the orange buy buttons). Everything is presented as equally important. You have to squint to see the artwork. It feels less like browsing and more like research, or worse, data-entry. &lt;/p&gt;
@@ -197,25 +222,34 @@ etc.&lt;/p&gt;
 
 &lt;p&gt;The first thing I&amp;#39;d do is examine what it&amp;#39;s like to browse for books in your friendly, local, independent bookshop (or even your friendly, nationwide, corporate Barnes &amp;amp; Noble). Even though this takes us away from the task at hand — digital — it focuses our attention on what really matters. Why do people browse in the first place? What do they like about it?&lt;/p&gt;
 
-&lt;div class=&quot;pic-outset&quot;&gt;
- 
-  &lt;span data-picture data-alt=&quot;This is a nice image, outset at large screen sizes, small at small.&quot;&gt;
-    &lt;span data-src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;&lt;/span&gt;
-    &lt;span data-src=&quot;/assets/images/random/flowers-outset.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
-
+&lt;div class=&quot;pic-medium push-pull push-right&quot;&gt;
+  
+&lt;span data-picture data-alt=&quot;An outset image&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/flowers-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/flowers-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
   &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
   &lt;noscript&gt;
-    &lt;img src=&quot;external/imgs/small-flowers.jpg&quot; alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
+    &lt;img src=&quot;/assets/images/book-browsing/flowers-small.jpg&quot;&gt;
   &lt;/noscript&gt;
   &lt;/span&gt;
-&lt;div class=&quot;caption&quot;&gt;This is a caption. Live with it.&lt;/div&gt;
+&lt;div class=&quot;caption&quot;&gt;An outset image&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Here&amp;#39;s a thought — they do it because it&amp;#39;s pleasant. Pleasant to slow down for a moment, buy a cup of coffee from the shop&amp;#39;s barista, maybe find a comfortable chair tucked into some quiet corner and flip through a beautifully printed book. That all seems reasonable, although you probably couldn&amp;#39;t replicate those things very easily in a digital experience. You wouldn&amp;#39;t want to replicate them, anyway, unless you were a die-hard fan of Second Life and its ilk (does Second Life have any ilk? Not sure). &lt;/p&gt;
 
 &lt;p&gt;You could take inspiration from those things, perhaps. I believe you should seek inspiration from any and all of the good things about real-world browsing. Let&amp;#39;s look at some of them, briefly, and decide what could be useful and what could be discarded.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/random/flowers.jpg&quot; alt=&quot;My image&quot; title=&quot;My Title&quot;&gt;&lt;/p&gt;
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;A normal photo, in the flow of the story.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/amster-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/amster-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/book-browsing/amster-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;A normal photo, in the flow of the story.&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Serendipity. You&amp;#39;re casually walking from one part of the store to another when something catches your eye. A book cover, perhaps, or an author&amp;#39;s name, and it draws you to something new and worthwhile. A good thing.&lt;/p&gt;
 
@@ -325,7 +359,10 @@ The idea is to role play a &amp;#39;conversation&amp;#39; with the user-interfac
   Here's something important I'd like to say. Really like to say, really.
 &lt;/p&gt;
 
-&lt;p&gt;During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). From the &lt;a href=&quot;http://digitalservices.npr.org/post/how-were-experimenting-member-station-content-nprs-facebook-page&quot;&gt;NPR DS blog&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on 
+NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test    &amp;gt;helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (    &amp;gt;October 2011) and the highest traffic for a single month (January). From the &lt;a href=&quot;http://digitalservices.npr.org/post/how-%3Ewere-experimenting-member-station-content-nprs-facebook-page&quot;&gt;NPR DS blog&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;To build on that success, we decided to assemble a small team including me (design and front-end developer), a backend developer, and an editor to build a tool that would make it easier for stations to pitch stories to NPR. Working over a few weeks, we build a tool that is focused and easy to use. You paste the url to a story you want to pitch, make any edits inline, and then engage in a community-wide vetting process to select the best posts.&lt;/p&gt;
 
@@ -416,6 +453,48 @@ The idea is to role play a &amp;#39;conversation&amp;#39; with the user-interfac
                 <link>http://akiryk.github.io/portfolio/2008/07/18/whales</link>
                 <guid>http://akiryk.github.io/portfolio/2008/07/18/whales</guid>
                 <pubDate>2008-07-18T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>SmartsCo Brand/Package Design</title>
+                <description>&lt;p class=&quot;intro&quot;&gt;I was lead illustrator and designer on this project, which involved creating branding for a new company and designing the packaging for it's first product, a trivia-style card game for wine lovers.&lt;/p&gt;
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    This was a complicated project, because it involved creating the visual language for both a brand and a product, neither of which existed at the time. The brand, SmartsCo., was a startup game company whose founders hoped it would profit by creating fun and attractive trivia games about subjects like wine, chocolate, food, and sex. 
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Success!&lt;/span&gt; It looks like my original clients went on to sell the product, and somebody has been &lt;a href=&quot;http://www.barnesandnoble.com/s/?pn=SmartsCo&quot;&gt;going crazy making spinoffs&lt;/a&gt; of my original design 
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Box with cards&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Box with cards&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To begin, they only had a small budget and a set of a few hundred (hopefully entertaining) questions about wine, vetted and approved by wine experts. Where to start? Designing the trivia cards would have probably made a lot of sense, since that was the meat of the whole thing. But we didn&amp;#39;t start with the cards because the business needed to find shop owners who would be willing to stock the product — and on first glance, the product &lt;em&gt;was&lt;/em&gt; the package. So we started by designing the package. &lt;/p&gt;
+
+&lt;p&gt;It quickly became apparent that the packaging needed to communicate the SmartsCo identity almost as much as the nature of its contents because our clients wanted to grow the brand quickly into other areas of educational trivia. We needed the packaging to say clearly, &amp;quot;I&amp;#39;m a wine trivia game&amp;quot; but also &amp;quot;I&amp;#39;m part of a family of related products.&amp;quot; &lt;/p&gt;
+
+&lt;div class=&quot;content-outset&quot;&gt;
+  &lt;h2&gt;Like, the SexSmarts® box needs to say &lt;em&gt;I'm about sex!&lt;/em&gt; and — at the same time — I'm related to DogSmarts®&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Anyway, all this simply means that the project went in several directions at once. What should the logo communicate? What mood should the package convey? What would be the right balance of playful versus educational? What set of visual elements would have the flexibility to support a wide range of possible subjects (like sex, golf, or music) and still feel related?&lt;/p&gt;
+
+&lt;p&gt;I developed a simple logo that expressed a playful energy and a style of illustration that lent itself to different configurations. For wine, I used a bottle, grapes, and a glass — for future products, we could easily change the palette and replace the imagery. &lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/portfolio/2004/10/10/winesmarts</link>
+                <guid>http://akiryk.github.io/portfolio/2004/10/10/winesmarts</guid>
+                <pubDate>2004-10-10T00:00:00+02:00</pubDate>
         </item>
 
 

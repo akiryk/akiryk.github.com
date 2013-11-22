@@ -5,16 +5,6 @@
  * 
  */
 
-/**
- * Remove vertical spacing from nested lists.
- */
-li{
-    > ul,
-    > ol{
-         margin-bottom:0;
-     }
-}
-
 // Allow blog posts or other lists of posts to be free of list styles
 
 .vertical-list {

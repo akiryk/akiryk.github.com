@@ -5,7 +5,7 @@ header: Posts By Tag
 group: navigation
 ---
 {% include JB/setup %}
-<h1 class="about-intro">Readylab is a small creative studio focused on making well-crafted websites and digital experiences.</h1>
+<h2 class="no-margin-top">Readylab is a small creative studio focused on making well-crafted websites and digital experiences.</h2>
 
 Creative micro-studio front end development, web disign, user experience, thought leadership and more. Clients, subsidiaries, pushing the boundaries of leading edge technology.
 

@@ -1,146 +1,32 @@
-/**
- * Porfolio
+/*
+ * Portfolio
  *
- * This covers styles for the following pages:
- *   > portfolio aggregation page (portfolio_index.html)
- *   > portfolio post pages
- *   > blog aggregation pages (e.g. index.html)
- * 
+ * Styles for portfolio post pages.
+ *
  */
 
-
-// Styles for Portfolio aggregation page (portfolio_index.html)
-.portfolio-wrapper {
-  margin: 0 auto;
-  width: 100%;
-
-  li {
-    background-color: #000;
-    border-bottom: 1px solid #333;
-  }
-  li:nth-of-type(even) {
-    background-color: #1a1a1a;
-  }
+// remove padding so that the header can be dark up to the edges.
+.content-wrapper.portfolio-post-wrapper {
+  background-color: transparent;
+  padding: 0;
 }
 
-.portfolio-card {
-  box-sizing: content-box;
-  margin: 0;
-
-  > a {
-    display: block;
-    overflow: hidden;
-    padding: $spacing-medium;
-  }
-
+// The header on portfolio post pages.
+.portfolio-header {
+  padding: 1em 1em 2em 1em;
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
 }
 
-.homepage {
-  a.portfolio-piece {
-    border-bottom: none;
-  }
+.content-body.portfolio-body {
+  padding: 0 1em;
 }
 
-.portfolio-text {
-  @include vendor(box-sizing, border-box);
-}
-
-.micro-teaser {
-  @include slug-normal();
-}
-
-.post-micro-teaser {
-  @include slug-normal(14);
-}
-
-.portfolio-title {
-  color: #eee;
-  font-weight: normal;
-  margin-bottom: 0.41666667em;
-}
-
-.portfolio-teaser {
-  @include sans();
-  color: $lighter-text;
-  font-size: 0.8em; // 16px
-  margin-top: 0;
-}
-
-@include media-query(palm-small) {
-
-  .portfolio-card {
-
-    > a {
-      padding: $spacing-small;
-    }
+@include media-query(desk){
+  .portfolio-header{
+    padding: 2em;
   }
-}
-
-@include media-query(palm-large){
-  .portfolio-text {
-    float: left;
-    margin-right: 5%;
-    width:47.5%;
-  }
-  .portfolio-image {
-    float: left;
-    width: 47.5%;
-  }
-}
-
-@include media-query(lap-and-up){
-  .portfolio-wrapper {
-    margin: 1.5em;
-    width: auto;
-  }
-
-  .portfolio-text {
-    float: left;
-    margin-right: 5%;
-    width:35%;
-  }
-  .portfolio-image {
-    float: left;
-    width: 60%;
-  }
-  .portfolio-title {
-    font-size: getEms($h3-size);
-    line-height: 1.25;
-  }
-  
-}
-
-@include media-query(desk) {
-  .portfolio-wrapper {
-    margin-bottom: 1em;
-  }
-}
-
-@include media-query(desk-wide) {
-  #primary-content.portfolio-wrapper {
-    margin-top: $spacing-large; // 2em
-    margin-bottom: $spacing-large; // 2em
-  }
-
-  .portfolio-wrapper {
-    margin: 0;
-    margin-top: $spacing-large;
-    max-width: $content-wrapper-width + $gutter-width + em;
-
-    li {
-      margin-left: -$spacing-large; // -2em
-    }
-  }
-
-  .portfolio-card {
-    > a {
-      padding: $spacing-large; // 2em   
-    }
-  }
-
-  .portfolio-post {
-    .post-header {
-      margin-left: 0;
-    }
+  .content-body.portfolio-body {
+    padding: 0 2em;
   }
 }

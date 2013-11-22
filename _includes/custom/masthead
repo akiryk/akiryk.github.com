@@ -1,12 +1,15 @@
-<header id="masthead" class="cf">
+<header class="masthead cf">
   <div class="masthead-top">
-    <a class="logo" href="{{ HOME_PATH }}" title="Ready Lab Home">
-      <img src=" {{ ASSET_PATH }}/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
-    </a>
-    <a href="#main" class="screenreaders">Skip navigation</a>
-    <div id="toggle">Toggle</div>
+    <div class="brand">
+      <a class="logo" href="{{ HOME_PATH }}" title="Ready Lab Home">
+        <img src=" {{ ASSET_PATH }}/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
   </div><!-- .masthead-top -->
-  <nav id="primary-menu" class="">
-    {% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include JB/pages_list %}
+  <nav id="primary-menu" class="primary-menu">
+    {% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include custom/pages_list %}
   </nav>
 </header>

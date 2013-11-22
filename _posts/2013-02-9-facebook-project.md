@@ -17,7 +17,8 @@ tags : [ux, cms, npr, design]
   Here's something important I'd like to say. Really like to say, really.
 </p>
 
-During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). From the [NPR DS blog](http://digitalservices.npr.org/post/how-were-experimenting-member-station-content-nprs-facebook-page)
+>During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on 
+>NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test    >helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (    >October 2011) and the highest traffic for a single month (January). From the [NPR DS blog](http://digitalservices.npr.org/post/how->were-experimenting-member-station-content-nprs-facebook-page)
 
 To build on that success, we decided to assemble a small team including me (design and front-end developer), a backend developer, and an editor to build a tool that would make it easier for stations to pitch stories to NPR. Working over a few weeks, we build a tool that is focused and easy to use. You paste the url to a story you want to pitch, make any edits inline, and then engage in a community-wide vetting process to select the best posts.
 

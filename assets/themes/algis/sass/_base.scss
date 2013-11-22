@@ -8,53 +8,52 @@
  */
 
 body {
+  background-color: #fff;
   color: #333;
-  font-family: Georgia,Palatino,Times,"Times New Roman",serif; 
-  font-size: 125%;
-  line-height: 1.5;
+  font-family: $serif-stack;
+  font-size: 125%; // 20px
+  line-height: 1.6;
   text-rendering:optimizeLegibility; // helps with kerning and ligatures
 }
 
 h1, .alpha {
-  @include vendor(font-smoothing, antialiased);
-  font-family: $headings;
-  font-size: getEms($h2-size);
+  font-size: getEms($h1-size);
   line-height: 1.2;
-  // margin: 0.5em 0;
+  margin: (36/$h1-size) * 1em 0;
 }
 
 h2, .beta {
-  @include vendor(font-smoothing, antialiased);
-  font-family: $headings;
-  font-size: getEms($h3-size);
+  font-size: getEms($h2-size); 
+  line-height: 1.4;
+  margin: 36/$h2-size * 1em 0;
 }
 
 h3, .gamma {
-  @include vendor(font-smoothing, antialiased);
-  font-family: $headings;
+  font-size: getEms($h3-size);
+  line-height: 1.4;
+  margin: 36/$h3-size * 1em 0;
+}
+
+h4, .delta,
+h5, .epsilon,
+h6, .zeta
+ {
   font-size: getEms($h4-size);
+  line-height: 1.375;
+  margin: 36/$h4-size * 1em 0;
 }
 
-h4, .delta {
-  @include vendor(font-smoothing, antialiased);
-  font-family: $headings;
-  font-size: getEms($h4-size);
+// Title on blog and portfolio index pages.
+h1.agg-title {
+  @include slug-normal();
+  border-bottom: 1px solid $red;
+  padding-bottom: .5em;
 }
 
-h5, .epsilon {
-  font-size: getEms($h5-size);
-}
-
-h6, .zeta {
-  font-size: getEms($h6-size);
-}
 
 a {
   color: $normal-color;
   text-decoration: none;
-  &:active {
-    color: $red;
-  }
 }
 
 img {
@@ -66,7 +65,6 @@ img {
 
 
 blockquote {
-  font-size: .9em;
   padding: .5em 2em;
   margin: 0;
   background: #eee;
@@ -77,24 +75,26 @@ p {
   max-width: 32em;
 }
 
-@include media-query(palm){
-  .homepage {
-    background-color: #eee;
+@include media-query (palm) {
+  h1 {
+    font-size: getEms($h2-size); 
+    line-height: 1.2;
+    margin-bottom: 16/$h2-size * 1em;
+  }
+  h2 {
+    font-size: getEms($h3-size); 
+    margin-bottom: 36/$h3-size * 1em;
+  }
+  h3 {
+    font-size: getEms($h4-size); 
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 16/$h3-size * 1em;
   }
 }
 
-@include media-query(lap-and-up){
-  body {
-    line-height: 1.6; 
-  }
-
-  h1, .alpha {
-    font-size: getEms($h1-size);
-  }
-  h2, .beta {
-    font-size: getEms($h2-size);
-  }
-  h3, .gamma {
-    font-size: getEms($h3-size);
+@include media-query (palm-small) {
+  h1 {
+    font-size: getEms($h3-size); 
   }
 }

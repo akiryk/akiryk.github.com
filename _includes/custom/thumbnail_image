@@ -1,0 +1,16 @@
+{% comment %}<!--
+  This is for the thumbnail images that go with portfolio cards.
+  The data-picture class is for use with picture-fill polyfill, which selects the best image
+  size according to screen size. 
+  The sizes (site.AK.med_size and other) are set in config.yml.
+-->{% endcomment %}
+
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
+      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
+      <noscript>
+        <img src="/assets/images/heros/{{ post.hero }}-thumb.jpg">
+      </noscript>
+    </span>
+  </div>

@@ -1,52 +1,32 @@
 ---
 layout: default
-classes: tags
+classes: tags, use-cards
 ---
 {% include JB/setup %}
 
-<section id="primary-content" class="tags-page">
- <div class="blog-river-wrapper">
+<div class="inner-wrapper">
+ <section class="content-wrapper blog-river-wrapper">
     <header class="post-heading">
-      <div class="blog-river-title"><span class="setup">Items tagged </span><span class="quoted">{{ page.tag }}</span></div>
+      <h1 class="blog-river-title"><span class="setup"> </span><span class="quoted">{{ page.tag }}</span></h1>
     </header>
-    <ul class="blog-river">
+    <header class="header agg-header">
+      <h1 class="title agg-title"><span class="tag-title-text">Items tagged</span> <span class="tag-name-text">{{ page.tag }}</span></h1>
+    </header>
+    <ul class="river blog-river">
       {% for post in site.posts %}
         {% for tag in post.tags %}
           {% if tag == page.tag %}
             {% if post.category == 'portfolio' %}
-              <li class="portfolio-card">
-                <a href="{{ BASE_PATH }}{{ post.url }}" class="portfolio-piece">
-                <div class="portfolio-text">
-                  <div class="slugger">
-                    <div class="micro-teaser">{{ post.micro-teaser }}</div>
-                    <h4 class="portfolio-title">{{ post.title }}</h4>
-                  </div>
-                  <p class="portfolio-teaser">{{ post.teaser }}</p>
-                </div>
-                {% if post.image %}
-                  <div class="portfolio-image">
-                    <span data-picture data-alt="Portfolio image">
-                      <span data-src="/assets/images/portfolio-images/{{ post.image }}-small.jpg"></span>
-                      <span data-src="/assets/images/portfolio-images/{{ post.image }}-thumb-large.jpg" data-media="(min-width: {{ site.AK.lap_size }})"></span>
-                      <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                      <noscript>
-                        <img src="/assets/images/portfolio-images/{{ post.image }}-small.jpg">
-                      </noscript>
-                    </span>
-                  </div>
-                {% endif %}
-                  </a>
-              {% else %}
-                  <li class="blog-card">
-                    <h2 class="blog-card-heading"><a href="{{ BASE_PATH }}{{ post.url }}" class="agg-link">{{ post.title }}</a></h2>
-                    <div class="agg-title-meta">{{ post.date | date: "%B %d, %Y" }}</div>
-                    <p class="teaser">{{ post.teaser }}</p>
-              {% endif %}
+              <li class="card portfolio-card">
+                {% include custom/create_portfolio_card %}
+            {% else %}
+                <li class="card blog-card">
+                  {% include custom/create_blog_card %}
+            {% endif  %}
               </li>
-            {% endif %}
+          {% endif %}
         {% endfor %}
       {% endfor %}
     </ul><!-- end .blog-river -->
-  </div><!-- end blog-river-wrapper -->
-</div>
-<section>
+  </section><!-- end blog-river-wrapper -->
+</div><!-- .inner-wrapper -->

@@ -1,157 +1,46 @@
 /**
  * Masthead
  *
+ * This handles the general masthead layout styles and styles for
+ * branding/logo.
+ * See _nav.scss for the navigation styles
  * 
  */
 
-#masthead {
-  @include vendor(box-sizing, border-box);
+.masthead-top {
   background-color: #fff;
+  height: $masthead-height;
+  overflow: hidden;
+  padding: 0 1em;
 }
 
-.masthead-top {
+.brand {
+  float: left;
   overflow: hidden;
 }
 
 .logo {
-  float: left;
-  overflow: hidden;
-  padding: .5em $spacing-small;  
+  display: table-cell;
+  vertical-align: middle;
+  height: $masthead-height;
+  width: 165/20 * 1em;
 }
 
-.primary-nav{
-    list-style:none;
-    padding-left: 0;
-    @extend .cf;
-}
-
-.nav-link {
-  color: #666;
-  color: rgba(0,0,0,0.4);
-  display:inline-block;
-  *display:inline;
-  font-family: $sans;
-  font-size: 0.9em;
-  line-height: 3.25em;
-  text-decoration: none;
-  // text-transform: uppercase;
-  zoom:1;
-
-  &.current {
-    color: #111;
-  }
-}
-
-@include media-query(palm) {
-  #primary-menu {
-    overflow-y: hidden;
-    max-height: 0;
-    @include vendor(transition-property, all);
-    @include vendor(transition-duration, .25s);
-    @include vendor(transition-timing-function, ease-out);
-    // @include vendor(transition-timing-function, cubic-bezier(0, 1, 0.5, 1));
-
-    &.expanded {
-      // display: block;
-      max-height: (165/20) * 1em;
-    }
-  }
-
-  #toggle {
-    background: transparent url(../images/toggle.gif) no-repeat center center;
-    cursor: pointer;
-    float: right;
-    height: 41px; // it's a bitmap image; live with it for now...
-    padding: 0.5em $spacing-medium;
-    width: 31px;
-    text-indent: -999em;
-  }
-
-  .nav-link {
-    line-height: 3em;
-    background-color: #eee;
-    color: #333;
-    display:block;
-    padding-left: $spacing-small;
-
-    &:active {
-      background-color: #ccc;
-    }
-  }
-
-  .nav-link.current {
-    background-color: #999;
-    color: white;
-  }
-
-  .primary-nav{
-    margin: 0;
-    // Stack the nav items
-    > li{
-        border-bottom: 1px solid white;
-        display:list-item;
-    }
-  }
-}
-
-@include media-query(palm-large){
-  .logo {
-    padding-left: $spacing-medium;
-    padding-right: $spacing-medium;
-  }
-  .nav-link {
-    padding-left: $spacing-medium;
-  }
-}
-
-@include media-query(lap){
-  .primary-nav {
-    right: 1.5em;
-  }
-}
-
-@include media-query(lap-and-up) {
-
-  #toggle {
-    display: none;
-  }
-
+// micro breakpoint. 
+// necessary to handle the case of logo bumping up against side of viewport
+@media only screen and (min-width: 61.875em) {
   .masthead-top {
-    border-bottom: 1px solid #ccc;
+    padding: 0;
   }
-
-  #primary-menu {
-    display: block;
-  }
-
-  .primary-nav {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    > li {
-      display: inline-block;
-      margin-right: $spacing-large;
-    }
-    li:last-of-type {
-      margin-right: 0;
-    }
-  }
-
 }
 
-
-@include media-query(desk) {
-  .logo {
-    padding-left: 0;
-  }
-  .primary-nav {
-    right: 0;
-  }
+@include media-query(desk){
+  
 }
 
 @include media-query(desk-wide) {
 
-  #masthead {
+  .masthead {
     background-color: transparent;
     float: left;
     margin: 4em 0 0 0;
@@ -160,31 +49,12 @@
 
   .masthead-top {
     border-bottom: none;
-    padding-bottom: 0;
   }
 
-  .logo {
-    display: block;
+  .brand {
     float: none;
-    
+    padding: 0;
   } 
-
-  .primary-nav{
-    list-style:none;
-    margin-left:0;
-    margin-top: 1em;
-    position: static;
-
-    > li{
-        display:list-item;
-        margin: 0;
-        padding: 0;
-    }
-  }
-
-  .nav-link {
-    display: block;
-  }
 
 }
 

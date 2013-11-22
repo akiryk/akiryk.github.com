@@ -35,7 +35,7 @@
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 2000
+      scriptTimeout: 3000
     };
     var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
@@ -48,20 +48,20 @@
   </head>
   <body id="top" class="">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
-      <header id="masthead" class="cf">
+      <header class="masthead cf">
   <div class="masthead-top">
-    <a class="logo" href="/" title="Ready Lab Home">
-      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
-    </a>
-    <a href="#main" class="screenreaders">Skip navigation</a>
-    <div id="toggle">Toggle</div>
+    <div class="brand">
+      <a class="logo" href="/" title="Ready Lab Home">
+        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
   </div><!-- .masthead-top -->
-  <nav id="primary-menu" class="">
+  <nav id="primary-menu" class="primary-menu">
     
-
-
-  
-<ul class="primary-nav">
+<ul class="nav">
     <li>
       
         <a href="/index.html" class="nav-link">Blog</a>
@@ -81,20 +81,18 @@
     </li>
 
 </ul>
-
-
-
   </nav>
 </header>
-      
-<article id="primary-content" class="blog-post">
-  
-  
-  <div class="pic-hero">
+      <div class="inner-wrapper">
+        
+    
+
+  <div id="start" class="pic-hero">
     <span data-picture data-alt="Page from the codex.">
-      <span data-src="/assets/images/heros/aldus-codex-hero-small.jpg" ></span>
-      <span data-src="/assets/images/heros/aldus-codex-hero-med.jpg" data-media="(min-width: 550px)"></span>
-      <span data-src="/assets/images/heros/aldus-codex-hero-large.jpg" data-media="(min-width: 1320px)"></span>
+      <span data-src="/assets/images/heros/aldus-codex-hero-mini.jpg" ></span>
+      <span data-src="/assets/images/heros/aldus-codex-hero-small.jpg" data-media="(min-width: 420px)"></span>
+      <span data-src="/assets/images/heros/aldus-codex-hero-med.jpg" data-media="(min-width:690px)"></span>
+      <span data-src="/assets/images/heros/aldus-codex-hero-large.jpg" data-media="(min-width: 760px)"></span>
       <noscript>
         <img src="/assets/images/heros/aldus-codex-hero-small.jpg">
       </noscript>
@@ -103,10 +101,9 @@
       <div class="caption">Page from the codex.</div>
     
   </div>
-  <div class="post-wrapper with-hero">
-
-  <header class="post-heading">
-    <div class="post-title-meta">
+    <article class="content-wrapper post-wrapper">
+    <header class="header post-header">
+      <div class="post-title-meta">
   <span class="post-date">November 12, 2013</span> <span class="divider"> / </span>
   <span class="by">by</span>
   <span class="author-name">
@@ -115,11 +112,11 @@
     
   </span> 
 </div>
-<h1>Readable Body Text</h1>
+<h1 class="title post-title">Readable Body Text</h1>
 
-  </header>
-    <div class="content-body">
-      <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
+    </header>
+      <div class="content-body">
+        <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
 
 <p>Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins</p>
 
@@ -143,7 +140,7 @@
 
 <p>Handling plugins. </p>
 
-      
+        
 
   <ul class="post-tags">
     
@@ -166,23 +163,25 @@
 
 
 
+      </div>
+    </article>
+  </div><!-- .inner-wrapper -->
+</div><!-- end .inner-wrapper -->
+<section id="secondary-content">
+  <div class="content-wrapper secondary-wrapper">
+    <div class="posts">
+      
+        <div class="read-next">Previous Post</div>
+          <h2 class="card-title secondary-card-title"><a href="/portfolio/2013/11/02/gronster#start" title="Gronster Drawing Game">Gronster Drawing Game</a></h2>
+        <p class="teaser"> Some crazy kind of drawing game.</p>
+      
+      
+      </ul>
     </div>
-  </div><!-- end .post-wrapper -->
-  </article>
-</div><!-- close .wrapper-all from default.html -->
-<section id="secondary-content" class="">
-  <div class="posts">
-    
-      <div class="read-next">Previous Post</div>
-        <h2 class="blog-heading"><a href="/portfolio/2013/11/02/gronster" title="Gronster Drawing Game">Gronster Drawing Game</a></h2>
-      <p class="teaser"> Some crazy kind of drawing game.</p>
-    
-    
-    </ul>
-  </div>
-  <div class="return">
-    <a href="/">Home</a> | <a href="#top">Return to Top</a>
-  </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#top">Return to Top</a>
+    </div>
+    </div><!-- content-wrapper -->
   <!-- 
 
 
@@ -206,16 +205,17 @@
  -->
 </section>
 
-      <footer>
-  <div class="footer-body">
-    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
-    </div>
+        <footer>
+  <div class="footer-wrapper">
+    <div class="footer-body">
+      <div class="footer-text">&copy; 2013 Adam Kiryk</div>
+      </div>
+  </div>
 </footer>
 
-   
     <script>
       (function(){
-        var toggle = document.getElementById("toggle");
+        var toggle = document.getElementById("nav-toggle");
         var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 

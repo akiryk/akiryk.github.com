@@ -1,0 +1,19 @@
+{% comment %}<!--
+  This is for large images used in posts and portfolio pages. The large images are not the 
+  same as the "hero" images, which appear at the top of the pages. Large images appear in the flow
+  of the post.
+  The data-picture class is for use with picture-fill polyfill, which selects the best image
+  size according to screen size. 
+  The sizes (site.AK.med_size and other) are set in config.yml.
+-->{% endcomment %}
+<div class="pic-large">
+  <span data-picture data-alt="{{ caption }}">
+  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-small.jpg"></span>
+  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-large.jpg" data-media="(min-width: {{site.AK.desk_size}})"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/{{ page.assets }}/{{ photo }}-small.jpg">
+  </noscript>
+  </span>
+<div class="caption">{{ caption }}</div>
+</div>

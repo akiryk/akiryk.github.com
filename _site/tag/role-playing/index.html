@@ -35,7 +35,7 @@
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 2000
+      scriptTimeout: 3000
     };
     var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
@@ -46,22 +46,22 @@
 
 
   </head>
-  <body id="top" class="tags">
+  <body id="top" class="tags, use-cards">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
-      <header id="masthead" class="cf">
+      <header class="masthead cf">
   <div class="masthead-top">
-    <a class="logo" href="/" title="Ready Lab Home">
-      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
-    </a>
-    <a href="#main" class="screenreaders">Skip navigation</a>
-    <div id="toggle">Toggle</div>
+    <div class="brand">
+      <a class="logo" href="/" title="Ready Lab Home">
+        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
   </div><!-- .masthead-top -->
-  <nav id="primary-menu" class="">
+  <nav id="primary-menu" class="primary-menu">
     
-
-
-  
-<ul class="primary-nav">
+<ul class="nav">
     <li>
       
         <a href="/index.html" class="nav-link">Blog</a>
@@ -81,19 +81,20 @@
     </li>
 
 </ul>
-
-
-
   </nav>
 </header>
-      
+      <div class="inner-wrapper">
+        
 
-<section id="primary-content" class="tags-page">
- <div class="blog-river-wrapper">
+<div class="inner-wrapper">
+ <section class="content-wrapper blog-river-wrapper">
     <header class="post-heading">
-      <div class="blog-river-title"><span class="setup">Items tagged </span><span class="quoted">role-playing</span></div>
+      <h1 class="blog-river-title"><span class="setup"> </span><span class="quoted">role-playing</span></h1>
     </header>
-    <ul class="blog-river">
+    <header class="header agg-header">
+      <h1 class="title agg-title"><span class="tag-title-text">Items tagged</span> <span class="tag-name-text">role-playing</span></h1>
+    </header>
+    <ul class="river blog-river">
       
         
           
@@ -150,22 +151,15 @@
         
           
             
-                  <li class="blog-card">
-                    <h2 class="blog-card-heading"><a href="/blog/2013/09/21/comic-ux" class="agg-link">Comic Stripping for UX</a></h2>
-                    <div class="agg-title-meta">September 21, 2013</div>
-                    <p class="teaser">I wanted to come up with a super-simple way to show how a web site expressed hierarchy, so I experimented with using a rudimentary form of comic strip.</p>
-              
+                <li class="card blog-card">
+                  
+<a href="/blog/2013/09/21/comic-ux#start" class="agg-link">
+  <h2 class="card-title blog-card-title">Comic Stripping for UX</h2>
+  <div class="agg-title-meta">September 21, 2013</div>
+  <p class="teaser">I wanted to come up with a super-simple way to show how a web site expressed hierarchy, so I experimented with using a rudimentary form of comic strip.</p>
+</a>
+            
               </li>
-            
-        
-      
-        
-          
-        
-          
-        
-          
-        
           
         
       
@@ -201,6 +195,24 @@
       
         
           
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
         
           
         
@@ -210,20 +222,19 @@
         
       
     </ul><!-- end .blog-river -->
-  </div><!-- end blog-river-wrapper -->
-</div>
-<section>
-
-      <footer>
-  <div class="footer-body">
-    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
-    </div>
+  </section><!-- end blog-river-wrapper -->
+</div><!-- .inner-wrapper -->
+        <footer>
+  <div class="footer-wrapper">
+    <div class="footer-body">
+      <div class="footer-text">&copy; 2013 Adam Kiryk</div>
+      </div>
+  </div>
 </footer>
 
-   
     <script>
       (function(){
-        var toggle = document.getElementById("toggle");
+        var toggle = document.getElementById("nav-toggle");
         var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 

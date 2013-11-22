@@ -35,7 +35,7 @@
     (function() {
     var config = {
       kitId: 'sfd3xhj',
-      scriptTimeout: 2000
+      scriptTimeout: 3000
     };
     var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
     })();
@@ -46,22 +46,22 @@
 
 
   </head>
-  <body id="top" class="homepage">
+  <body id="top" class="homepage, use-cards">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
-      <header id="masthead" class="cf">
+      <header class="masthead cf">
   <div class="masthead-top">
-    <a class="logo" href="/" title="Ready Lab Home">
-      <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
-    </a>
-    <a href="#main" class="screenreaders">Skip navigation</a>
-    <div id="toggle">Toggle</div>
+    <div class="brand">
+      <a class="logo" href="/" title="Ready Lab Home">
+        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
   </div><!-- .masthead-top -->
-  <nav id="primary-menu" class="">
+  <nav id="primary-menu" class="primary-menu">
     
-
-
-  
-<ul class="primary-nav">
+<ul class="nav">
     <li>
       
         <a href="/index.html" class="nav-link">Blog</a>
@@ -81,17 +81,18 @@
     </li>
 
 </ul>
-
-
-
   </nav>
 </header>
-      
-<section id="primary-content" class="home">
-  <div class="pic-hero">
+      <div class="inner-wrapper">
+        
+  
+
+  <div id="start" class="pic-hero">
     <span data-picture data-alt="Hotel sign, Cassis, France">
-      <span data-src="/assets/images/heros/cassis-small.jpg" ></span>
-      <span data-src="/assets/images/heros/cassis-large.jpg" data-media="(min-width: 800px)"></span>
+      <span data-src="/assets/images/heros/cassis-mini.jpg" ></span>
+      <span data-src="/assets/images/heros/cassis-small.jpg" data-media="(min-width: 420px)"></span>
+      <span data-src="/assets/images/heros/cassis-med.jpg" data-media="(min-width:690px)"></span>
+      <span data-src="/assets/images/heros/cassis-large.jpg" data-media="(min-width: 760px)"></span>
       <noscript>
         <img src="/assets/images/heros/cassis-small.jpg">
       </noscript>
@@ -100,40 +101,68 @@
       <div class="caption">Hotel sign, Cassis, France</div>
     
   </div>
-  <div class="blog-river-wrapper">
-    <header class="post-heading">
-      <div class="blog-river-title">Latest Posts</div>
+  <section class="content-wrapper blog-river-wrapper">
+    <header class="header agg-header">
+      <h1 class="title agg-title">Latest Posts</h1>
     </header>
-    <ul class="blog-river">
+    <ul class="river blog-river">
       
         
-          <li class="portfolio-card">
-            <a href="/portfolio/2008/07/18/whales" class="portfolio-piece">
-                <div class="portfolio-text">
-                  <div class="slugger">
-                    <div class="micro-teaser">design + code</div>
-                    <h4 class="portfolio-title">Whale Game</h4>
-                  </div>
-                  <p class="portfolio-teaser">Try to save the whales by popping to balloons!</p>
-                </div>
-                
-                  <div class="portfolio-image">
-                    <span data-picture data-alt="Portfolio image">
-                      <span data-src="/assets/images/portfolio-images/whale-small.jpg"></span>
-                      <span data-src="/assets/images/portfolio-images/whale-thumb-large.jpg" data-media="(min-width: 800px)"></span>
-                      <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                      <noscript>
-                        <img src="/assets/images/portfolio-images/whale-small.jpg">
-                      </noscript>
-                    </span>
-                  </div>
-                
-              </a>
+          <li class="card portfolio-card">
+            
+<a href="/portfolio/2008/07/18/whales#start" class="portfolio-piece">
+  
+
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
+      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
+      <noscript>
+        <img src="/assets/images/heros/-thumb.jpg">
+      </noscript>
+    </span>
+  </div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">design + code</div>
+        <h2 class="card-title portfolio-card-title">Whale Game</h2>
+      </div>
+      <p class="portfolio-teaser">Try to save the whales by popping to balloons!</p>
+    </div>
+  </a>
         
-        </li>
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card portfolio-card">
+            
+<a href="/portfolio/2004/10/10/winesmarts#start" class="portfolio-piece">
+  
+
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
+      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
+      <noscript>
+        <img src="/assets/images/heros/winesmarts-thumb.jpg">
+      </noscript>
+    </span>
+  </div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">Design + Illustration</div>
+        <h2 class="card-title portfolio-card-title">SmartsCo Brand/Package Design</h2>
+      </div>
+      <p class="portfolio-teaser">I was lead illustrator and designer on this project, which required that I create a branded look for a series of trivia-style card games intended to be both fun and educational.</p>
+    </div>
+  </a>
+        
+        </li><!-- close the portfolio or blog card -->
       
     </ul><!-- end .blog-river -->
-  </div><!-- end blog-river-wrapper -->
+  </section><!-- end blog-river-wrapper -->
   <!-- Pagination links -->
 
 <div class="pagination">
@@ -152,20 +181,22 @@
   
 
   
-</div>
+</div><!-- end .pagination -->
 
-</section>
+
+  </div> <!-- end .inner-wrapper -->
 </div> <!-- end .wrapper -->
-      <footer>
-  <div class="footer-body">
-    <p class="footer-text">&copy; 2013 Adam Kiryk</p>
-    </div>
+        <footer>
+  <div class="footer-wrapper">
+    <div class="footer-body">
+      <div class="footer-text">&copy; 2013 Adam Kiryk</div>
+      </div>
+  </div>
 </footer>
 
-   
     <script>
       (function(){
-        var toggle = document.getElementById("toggle");
+        var toggle = document.getElementById("nav-toggle");
         var menu = document.getElementById("primary-menu");
         var expanded = false;
         toggle.onclick = function(){ 

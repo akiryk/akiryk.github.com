@@ -12,24 +12,32 @@
   color: #999;
   overflow: hidden;
 
-  .posts,
-  .return {
-    max-width: 32em;
-    margin: 2em auto;
-    padding: 0 1em;
+  .secondary-wrapper {
+    background-color: #111;
+    margin-top: 0;
   }
 
-  .blog-heading a {
+  .card-title a {
     color: #ccc;
   }
+
+  .read-next {
+    @include slug-light();
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
 }
 
-@include media-query(large-palm) {
-  #secondary-content {
-    .posts,
-    .return {
-      padding: 0 2.5em;
-    }
+.return a {
+  color: #ccc;
+  @include slug-light();
+}
+
+@include media-query(desk-wide){
+  #secondary-content  {
+    padding-left: 17em;
   }
 }
 
