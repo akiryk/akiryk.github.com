@@ -59,6 +59,11 @@ h2.portfolio-card-title {
   margin-top: getEms(10, $h3-size);
 }
 
+@include media-query(portable){
+  .card {
+    font-size: 1.1em;
+  }
+}
 @include media-query(lap-and-up){
   .card {
     margin: 1em auto;

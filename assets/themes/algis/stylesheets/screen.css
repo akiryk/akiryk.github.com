@@ -652,40 +652,40 @@ p {
   background-color: #fff;
   max-width: 36em;
   margin: -8em auto 0 auto;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 @media only screen and (max-width: 25.99em) {
   /* line 38, ../sass/_layout.scss */
   .content-wrapper {
     margin-top: 0;
+    padding: 1em;
   }
 }
 @media only screen and (min-width: 26em) and (max-width: 48.6775em) {
-  /* line 44, ../sass/_layout.scss */
+  /* line 45, ../sass/_layout.scss */
   .content-wrapper {
     margin-left: 1em;
     margin-right: 1em;
-    margin-top: -3em;
+    margin-top: -3.5em;
   }
 }
 @media only screen and (max-width: 66.24em) {
-  /* line 52, ../sass/_layout.scss */
+  /* line 53, ../sass/_layout.scss */
   .content-body {
     font-size: 1.1em;
   }
 }
 @media only screen and (min-width: 48.6875em) {
-  /* line 58, ../sass/_layout.scss */
+  /* line 59, ../sass/_layout.scss */
   .content-wrapper {
-    padding: 2em 1em;
+    padding: 2em;
   }
 }
 @media only screen and (min-width: 66.25em) {
-  /* line 64, ../sass/_layout.scss */
+  /* line 65, ../sass/_layout.scss */
   .content-wrapper {
     margin-top: -8em;
-    padding: 2em;
   }
 
   /* line 68, ../sass/_layout.scss */
@@ -844,18 +844,24 @@ h2.portfolio-card-title {
   margin-top: 0.33333em;
 }
 
-@media only screen and (min-width: 48.6875em) {
+@media only screen and (max-width: 66.24em) {
   /* line 63, ../sass/modules/_card.scss */
+  .card {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 48.6875em) {
+  /* line 68, ../sass/modules/_card.scss */
   .card {
     margin: 1em auto;
   }
 
-  /* line 66, ../sass/modules/_card.scss */
+  /* line 71, ../sass/modules/_card.scss */
   .blog-card {
     padding: 0;
   }
 
-  /* line 69, ../sass/modules/_card.scss */
+  /* line 74, ../sass/modules/_card.scss */
   .portfolio-text {
     padding: 2em;
   }
@@ -897,7 +903,13 @@ h1, h2, h3, h2.card-title, h4, h5, h6 {
   visibility: hidden;
 }
 
-/* line 19, ../sass/modules/_web-fonts.scss */
+/* line 17, ../sass/modules/_web-fonts.scss */
+h1.agg-title {
+  visibility: visible;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 24, ../sass/modules/_web-fonts.scss */
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h2.card-title, .wf-active h4, .wf-active h5, .wf-active h6 {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -907,8 +919,12 @@ h1, h2, h3, h2.card-title, h4, h5, h6 {
   font-family: "ff-tisa-web-pro", Georgia, Times, serif;
   visibility: visible;
 }
+/* line 29, ../sass/modules/_web-fonts.scss */
+.wf-active h1.agg-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
-/* line 27, ../sass/modules/_web-fonts.scss */
+/* line 35, ../sass/modules/_web-fonts.scss */
 .wf-inactive h1, .wf-inactive h2, .wf-inactive h3, .wf-inactive h2.card-title, .wf-inactive h4, .wf-inactive h5, .wf-inactive h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   visibility: visible;

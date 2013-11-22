@@ -14,12 +14,20 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
+h1.agg-title {
+  visibility: visible;
+  font-family: $sans-stack;
+}
+
 
 .wf-active {
   h1, h2, h3, h4, h5, h6 {
     @include vendor(font-smoothing, antialiased);
     font-family: $headings;
     visibility: visible;
+  }
+  h1.agg-title {
+    font-family: $sans-stack;
   }
 }
 

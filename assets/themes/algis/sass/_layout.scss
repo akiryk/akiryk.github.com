@@ -31,12 +31,13 @@
   background-color: #fff;
   max-width: 36em; //720px;
   margin: -8em auto 0 auto;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 @include media-query(palm-small) {
   .content-wrapper {
     margin-top: 0;
+    padding: 1em;
   }
 }
 
@@ -44,7 +45,7 @@
   .content-wrapper {
     margin-left: 1em;
     margin-right: 1em;
-    margin-top: -3em;
+    margin-top: -3.5em;
   }
 }
 
@@ -56,14 +57,13 @@
 
 @include media-query(lap-and-up){
   .content-wrapper {
-    padding: 2em 1em;
+    padding: 2em;
   }
 }
 
 @include media-query(desk){
   .content-wrapper {
     margin-top: -8em;
-    padding: 2em;
   }
   .content-body.portfolio-body {
     padding: 0 2em;
