@@ -674,37 +674,38 @@ p {
   /* line 53, ../sass/_layout.scss */
   .content-body {
     font-size: 1.1em;
+    line-height: 1.5;
   }
 }
 @media only screen and (min-width: 48.6875em) {
-  /* line 59, ../sass/_layout.scss */
+  /* line 60, ../sass/_layout.scss */
   .content-wrapper {
     padding: 2em;
   }
 }
 @media only screen and (min-width: 66.25em) {
-  /* line 65, ../sass/_layout.scss */
+  /* line 66, ../sass/_layout.scss */
   .content-wrapper {
     margin-top: -8em;
   }
 
-  /* line 68, ../sass/_layout.scss */
+  /* line 69, ../sass/_layout.scss */
   .content-body.portfolio-body {
     padding: 0 2em;
   }
 }
 @media only screen and (min-width: 85em) {
-  /* line 75, ../sass/_layout.scss */
+  /* line 76, ../sass/_layout.scss */
   .wrapper {
     max-width: 62em;
   }
 
-  /* line 79, ../sass/_layout.scss */
+  /* line 80, ../sass/_layout.scss */
   .inner-wrapper {
     margin-left: 11em;
   }
 
-  /* line 83, ../sass/_layout.scss */
+  /* line 84, ../sass/_layout.scss */
   .content-wrapper {
     margin-left: 2em;
   }
@@ -848,20 +849,21 @@ h2.portfolio-card-title {
   /* line 63, ../sass/modules/_card.scss */
   .card {
     font-size: 1.1em;
+    line-height: 1.5;
   }
 }
 @media only screen and (min-width: 48.6875em) {
-  /* line 68, ../sass/modules/_card.scss */
+  /* line 69, ../sass/modules/_card.scss */
   .card {
     margin: 1em auto;
   }
 
-  /* line 71, ../sass/modules/_card.scss */
+  /* line 72, ../sass/modules/_card.scss */
   .blog-card {
     padding: 0;
   }
 
-  /* line 74, ../sass/modules/_card.scss */
+  /* line 75, ../sass/modules/_card.scss */
   .portfolio-text {
     padding: 2em;
   }

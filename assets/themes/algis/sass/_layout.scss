@@ -52,6 +52,7 @@
 @include media-query(portable) {
   .content-body {
     font-size: 1.1em; // 22px
+    line-height: 1.5;
   }
 }
 
