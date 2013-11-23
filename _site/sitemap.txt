@@ -1,14 +1,11 @@
 
-http://akiryk.github.io/about.html
+http://akiryk.github.io/about/index.html
 http://akiryk.github.io/archive.html
 http://akiryk.github.io/atom.xml
-http://akiryk.github.io/categories.html
 http://akiryk.github.io/index.html
-http://akiryk.github.io/pages.html
-http://akiryk.github.io/portfolio_index.html
+http://akiryk.github.io/portfolio-list/index.html
 http://akiryk.github.io/rss.xml
 http://akiryk.github.io/sitemap.txt
-http://akiryk.github.io/tags.html
 http://akiryk.github.io/page2/index.html
 http://akiryk.github.io/tag/design/index.html
 http://akiryk.github.io/tag/branding/index.html

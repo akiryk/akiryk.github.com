@@ -1,16 +1,13 @@
 ---
 layout: default
+hero: winesmarts
+hero-caption: Hotel sign, Cassis, France
 classes: tags, use-cards
 ---
 {% include JB/setup %}
-
-<div class="inner-wrapper">
  <section class="content-wrapper blog-river-wrapper">
-    <header class="post-heading">
-      <h1 class="blog-river-title"><span class="setup"> </span><span class="quoted">{{ page.tag }}</span></h1>
-    </header>
     <header class="header agg-header">
-      <h1 class="title agg-title"><span class="tag-title-text">Items tagged</span> <span class="tag-name-text">{{ page.tag }}</span></h1>
+      <h1 class="title agg-title"><span class="tag-title-text">Items tagged</span> <span class="tag-name-text quoted">{{ page.tag }}</span></h1>
     </header>
     <ul class="river blog-river">
       {% for post in site.posts %}
@@ -28,5 +25,6 @@ classes: tags, use-cards
         {% endfor %}
       {% endfor %}
     </ul><!-- end .blog-river -->
-  </section><!-- end blog-river-wrapper -->
-</div><!-- .inner-wrapper -->
+  </section><!-- end content-wrapper -->
+    </div> <!-- end .inner-wrapper -->
+</div> <!-- end .wrapper -->

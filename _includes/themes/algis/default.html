@@ -48,9 +48,9 @@
   <body id="top" class="{{ page.classes }}">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
       {% include custom/masthead %}
-      <div class="inner-wrapper">
+      {% include custom/pic_hero %}
         {{ content }}
-        {% include custom/footer %}
+      {% include custom/footer %}
     <script>
       (function(){
         var toggle = document.getElementById("nav-toggle");
