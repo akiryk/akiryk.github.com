@@ -1,0 +1,32 @@
+/*
+ * Portfolio
+ *
+ * Styles for portfolio post pages.
+ *
+ */
+
+// remove padding so that the header can be dark up to the edges.
+.content-wrapper.portfolio-post-wrapper {
+  background-color: transparent;
+  padding: 0;
+}
+
+// The header on portfolio post pages.
+.portfolio-header {
+  padding: 1em 1em 2em 1em;
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+}
+
+.content-body.portfolio-body {
+  padding: 0 1em;
+}
+
+@include media-query(desk){
+  .portfolio-header{
+    padding: 2em;
+  }
+  .content-body.portfolio-body {
+    padding: 0 2em;
+  }
+}

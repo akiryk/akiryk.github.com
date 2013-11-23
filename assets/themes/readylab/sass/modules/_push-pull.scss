@@ -1,0 +1,31 @@
+/*
+ * Pull & Push
+ *
+ * For pulling and pushing content like quotes and images
+ */
+
+@include media-query(desk) {
+
+  .push-pull {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 18em; // half of content width plus room for gutter
+
+    h2,h3,h4 {
+      margin: 0;
+    }
+  }
+
+  .pull-left {
+    float: left;
+    margin-left: -7.5em;
+    margin-right: 2em;
+  }
+
+  .push-right {
+    float: right;
+    margin-right: -7.5em;
+    margin-left: 2em;
+  }
+
+}

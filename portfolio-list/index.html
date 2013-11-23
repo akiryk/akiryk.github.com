@@ -1,0 +1,33 @@
+---
+layout: default
+title: Portfolio
+header: Portfolio Posts
+hero: portfolio
+hero-caption: Responsive design sketches
+group: navigation
+---
+  <section class="content-wrapper portfolio-river-wrapper">
+    <header class="header agg-header">
+      <h1 class="title agg-title">Portfolio</h1>
+    </header>
+    <ul class="river portfolio-river">
+      {% for post in site.categories.portfolio %}
+        {% if post.champion == true %}
+          <li class="card portfolio-card">
+            {% include custom/create_portfolio_card %}
+          </li>
+        {% endif %}
+      {% endfor %}
+      {% for post in site.categories.portfolio %}
+        {% if post.champion == nil %}
+          <li class="card portfolio-card">
+            {% include custom/create_portfolio_card %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section> <!-- .blog-river-wrapper -->
+</div> <!-- end .inner-wrapper -->
+
+
+

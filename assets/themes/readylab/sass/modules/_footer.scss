@@ -1,0 +1,51 @@
+/* 
+ * Footer
+ *
+ */
+
+footer {
+  background-color: #333;
+  border-top: 1px solid #444;
+  clear: both;
+}
+
+.footer-text {
+  @include small-text();
+  letter-spacing: 1px;
+}
+
+.footer-body {
+  padding: 1em 2em;
+  margin: 0 auto;
+}
+
+@include media-query(palm-small) {
+  .footer-body {
+    padding: 1em;
+  }
+}
+
+@include media-query(lap){
+  .footer-body {
+    padding: 2em 0em;
+    max-width: 680/20 * 1em;
+  }
+}
+
+@include media-query(desk){
+  .footer-body {
+    padding: 2em 0em;
+    max-width: 640/20 * 1em;
+  }
+}
+
+@include media-query(desk-wide){
+  footer {
+  
+  }
+  .footer-body {
+    max-width: 100%;
+    margin-left: 2em;
+  }
+}
+

@@ -1,0 +1,44 @@
+/*
+ * Handle .pic-hero, the big hero image at top of post pages and index pages.
+ *
+ * Don't confuse with pic-large, which is simply a large image that
+ * is displayed within the content of a post.
+ *
+ */
+
+.pic-hero {
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+
+  .caption {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 12px;
+    color: #333;
+    background-color: rgba(255,255,255,0.9);
+    padding: .5em 1em;
+    margin: 0;
+  }
+
+}
+
+@include media-query(desk) {
+  .pic-hero  {
+    width: 47em;
+    .caption {
+      background-color: rgba(255,255,255,0.7);
+    }
+  }
+}
+
+@include media-query(desk-wide) {
+
+  .pic-hero {
+    width: 51em;
+    overflow: hidden;
+  }
+
+}

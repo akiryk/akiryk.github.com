@@ -1,0 +1,60 @@
+/**
+ * Lists
+ *
+ * Ordered and unordered lists
+ * 
+ */
+
+// Allow blog posts or other lists of posts to be free of list styles
+
+.vertical-list {
+  @include vertical-list();
+}
+
+.horizontal-list {
+  list-style:none;
+  margin-left:0;
+  padding-left: 0;
+  @extend .cf;
+
+  > li{
+
+      &,
+      > a{
+          display:inline-block;
+         *display:inline;
+          zoom:1;
+      }
+  }
+}
+
+/**
+ * Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/.numbered-list{
+    list-style-type:decimal;
+}
+
+
+.main-content {
+  ul,
+  ol {
+    font-size: 1em;
+    padding-left: 2em;
+  }
+}
+
+ul.posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.agg-tags {
+  display: inline;
+  padding: 0;
+}
+
+.inline {
+  display: inline;
+}
+

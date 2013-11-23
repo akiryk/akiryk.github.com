@@ -1,0 +1,38 @@
+/* 
+ * Page
+ *
+ */
+
+.page-wrapper {
+  margin-top: 0;
+}
+
+// helper variable just for this module
+$aw: getEms(40, 60);
+
+@include media-query(lap-and-up) {
+  .about-intro {
+    border-bottom: 1px solid #ccc;
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+}
+
+@include media-query(desk) {
+  .about-intro { 
+    font-size: 3em;
+    margin-left: -(getEms(150, 60));
+    margin-right: 0;
+    width: getEms(940, 60);
+  }
+}
+@include media-query(desk-wide) {
+  .page-wrapper {
+    border-left: 1px solid #ccc;
+  }
+  .about-intro {
+    margin-left: -(getEms(40, 60));
+    padding: getEms(30, 60) 0 getEms(30,60) getEms(40, 60);
+    border-bottom: 0;
+  }
+}

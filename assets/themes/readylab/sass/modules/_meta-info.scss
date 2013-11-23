@@ -1,0 +1,18 @@
+/* 
+ * meta-info.scss
+ *
+ * Styles for meta info such as date, author name, etc.
+ * 
+ */
+
+// Meta info on agg pages like index.html
+.agg-title-meta {
+  @include small-text();
+  letter-spacing: 1px;
+}
+
+// meta info on post pages and portfolio pages.
+.post-title-meta {
+  @include small-text();
+  letter-spacing: 1px;
+}

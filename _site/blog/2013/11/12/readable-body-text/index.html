@@ -1,2 +1,238 @@
 
-Included file themes/readylab/default.html not found in _includes directory
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Readable Body Text</title>
+  
+  <meta name="author" content="Adam Kiryk">
+
+  <!-- Enable responsive viewport -->
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le styles -->
+  <link href="/assets/themes/readylab/stylesheets/screen.css" rel="stylesheet">
+
+  <!-- Le fav and touch icons -->
+<!-- Update these with your own images
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+
+  <!-- atom & rss feed -->
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  <script type="text/javascript">
+    //typekit fonts
+    (function() {
+    var config = {
+      kitId: 'sfd3xhj',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    })();
+
+    // picturefill polyfill
+    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
+  </script>
+
+
+  </head>
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header class="masthead cf">
+  <div class="masthead-top">
+    <div class="brand">
+      <a class="logo" href="/" title="Ready Lab Home">
+        <img src=" /assets/themes/readylab/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="primary-menu">
+    
+<ul class="nav">
+    <li>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
+    </li>
+
+    <li>
+      
+        <a href="/portfolio-list/index.html" class="nav-link">Portfolio</a>
+       
+    </li>
+
+    <li>
+      
+        <a href="/about/index.html" class="nav-link">About</a>
+       
+    </li>
+
+</ul>
+  </nav>
+</header>
+      
+
+  <div class="inner-wrapper yes-hero">
+    
+    
+    <div class="pic-hero">
+      <span data-picture data-alt="Page from the codex.">
+        <span data-src="/assets/images/heros/aldus-codex-hero-mini.jpg" ></span>
+        <span data-src="/assets/images/heros/aldus-codex-hero-med.jpg" data-media="(min-width:420px)"></span>
+        <span data-src="/assets/images/heros/aldus-codex-hero-large.jpg" data-media="(min-width: 760px)"></span>
+        <noscript>
+          <img src="/assets/images/heros/aldus-codex-hero-med.jpg">
+        </noscript>
+      </span>
+      
+        <div class="caption">Page from the codex.</div>
+      
+    </div><!-- .pic-hero -->
+
+        
+<article class="content-wrapper post-wrapper">
+    <header class="header post-header">
+      <div class="post-title-meta">
+  <span class="post-date">November 12, 2013</span> <span class="divider"> / </span>
+  <span class="by">by</span>
+  <span class="author-name">
+    
+      Adam Kiryk
+    
+  </span> 
+</div>
+<h1 class="wf post-title">Readable Body Text</h1>
+
+    </header>
+      <div class="content-body">
+        <p class="intro">The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:</p>
+
+<p>Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins</p>
+
+<p><span data-picture data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+  <span data-src="/assets/images/random/small.jpg"></span>
+  <span data-src="/assets/images/random/extralarge.jpg" data-media="(min-width: 1000px)"></span></p>
+
+<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+
+<noscript>
+  <img src="external/imgs/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+</noscript>
+
+<p></span></p>
+
+<p>Here&#39;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&#39;s free, fast, and easy to use — plus, hosting is free if you use github pages.</p>
+
+<p>Using jekyll bootstrap. Copy the themes and make your own.</p>
+
+<p>Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&#39;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &quot;hightlight: true.&quot; It displays only these items. Then I put the full bunch on a different page without pagination. </p>
+
+<p>Handling plugins. </p>
+
+        
+
+  <ul class="post-tags">
+    
+    <li class="inline tag-title">Filed under: </li>
+      
+         
+          <li class="inline"><a href="/tag/process" class="tag-link">process</a> </li>
+         
+          <li class="inline"><a href="/tag/design" class="tag-link">design</a> </li>
+         
+          <li class="inline"><a href="/tag/jekyll" class="tag-link">jekyll</a> </li>
+         
+          <li class="inline"><a href="/tag/typography" class="tag-link">typography</a> </li>
+         
+          <li class="inline"><a href="/tag/development" class="tag-link">development</a> </li>
+        
+      
+    </ul>
+  
+
+
+
+      </div>
+    </article>
+  </div><!-- .inner-wrapper -->
+</div><!-- end .inner-wrapper -->
+<section id="secondary-content">
+  <div class="content-wrapper secondary-wrapper">
+    <div class="posts">
+      
+        <div class="read-next">Previous Post</div>
+          <h2 class="card-title secondary-card-title"><a href="/portfolio/2013/11/02/gronster#start" title="Gronster Drawing Game">Gronster Drawing Game</a></h2>
+        <p class="teaser"> Some crazy kind of drawing game.</p>
+      
+      
+      </ul>
+    </div>
+    <div class="return">
+      <a href="/">Home</a> | <a href="#top">Return to Top</a>
+    </div>
+    </div><!-- content-wrapper -->
+  <!-- 
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'adamkiryk'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+ -->
+</section>
+
+      <footer>
+  <div class="footer-wrapper">
+    <div class="footer-body">
+      <div class="footer-text">&copy; 2013 Adam Kiryk</div>
+      </div>
+  </div>
+</footer>
+
+    <script>
+      (function(){
+        var toggle = document.getElementById("nav-toggle");
+        var menu = document.getElementById("primary-menu");
+        var expanded = false;
+        toggle.onclick = function(){ 
+          if (expanded) {
+            expanded = false;
+            menu.className="closed";
+          } else {
+            expanded = true;
+            menu.className="expanded";
+          }
+        }
+      })();
+    </script>
+
+    <!--  -->
+  </body>
+</html>
+
