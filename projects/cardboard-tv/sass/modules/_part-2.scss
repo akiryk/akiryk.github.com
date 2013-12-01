@@ -1,0 +1,23 @@
+.movie-shot-wrapper {
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.part-2-card {
+  margin-top: 2em;
+  padding: 2em 8em;
+  text-align: center;
+
+  .body-text {
+    font-weight: 100;
+
+    &:last-of-type {
+      font-weight: 400;
+    }
+  }
+}

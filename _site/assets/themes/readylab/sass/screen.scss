@@ -25,25 +25,20 @@
 @import "modules/nav";
 @import "modules/image-hero";
 @import "modules/paragraphs";
-@import "modules/portfolio";
-// @import "modules/page";
-// @import "modules/blog";
+@import "modules/post"; // styles just for post and things like portfolio that inherit from it
+@import "modules/portfolio"; // styles just for portfolio type posts
+@import "modules/pullquote";
 @import "modules/code";
-// @import "modules/clearfix";
-// @import "modules/headings";
 @import "modules/images";
 @import "modules/marginalia";
 
 @import "modules/secondary";
 @import "modules/push-pull";
-// @import "modules/lists";
 @import "modules/links";
 @import "modules/video";
-// @import "modules/island";
 @import "modules/footer";
 @import "modules/pagination";
 @import "modules/tags";
-// @import "modules/slugger";
 
 // @import "modules/AAA";
 

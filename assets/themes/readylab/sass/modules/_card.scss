@@ -28,10 +28,17 @@
 }
 
 .card.portfolio-card {
-  background-color: #111;
   margin-top: 2em;
   padding-bottom: 2em;
+}
 
+// wraps all the text on a portfolio card
+.portfolio-text {
+  background-color: #111;
+  padding: 1em;
+}
+
+  // text on a portfolio card
   .portfolio-teaser {
     @include sans();
     color: $lighter-text;
@@ -40,12 +47,7 @@
   .micro-teaser {
     @include slug-normal();
   }
-}
 
-// the text on a portfolio card
-.portfolio-text {
-  padding: 1em;
-}
 
 h2.card-title {
   @extend h3;
@@ -78,6 +80,11 @@ h2.portfolio-card-title {
 }
 
 @include media-query(desk){
+
+  .portfolio-image-wrapper {
+    background-color: #111;
+  }
+
   .portfolio-image {
     @include transition(opacity);
     opacity: 0.5; 

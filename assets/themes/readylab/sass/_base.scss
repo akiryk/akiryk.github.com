@@ -46,7 +46,7 @@ h6, .zeta
 // Title on blog and portfolio index pages.
 h1.agg-title {
   @include slug-normal();
-  border-bottom: 1px solid $red;
+  border-bottom: 1px solid #ccc;
   padding-bottom: .5em;
 }
 

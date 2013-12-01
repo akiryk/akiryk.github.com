@@ -5,8 +5,12 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
-# markdown: rdiscount
-markdown: redcarpet
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+# markdown: redcarpet
+# redcarpet:
+#   extensions: [smart]
 
 paginate: 15
 

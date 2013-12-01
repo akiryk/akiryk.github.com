@@ -1,0 +1,13 @@
+/**
+ * Layout.scss
+ * Handle the big picture layout. 
+ *
+ */
+
+.outer-wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  margin: 0 auto;
+  position: relative;
+  max-width: 75em; 
+}

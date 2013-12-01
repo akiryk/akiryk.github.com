@@ -35,9 +35,3 @@
   @include slug-light();
 }
 
-@include media-query(desk-wide){
-  #secondary-content  {
-    padding-left: 17em;
-  }
-}
-

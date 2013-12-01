@@ -558,7 +558,7 @@ h1.agg-title {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   color: #e83d12;
-  border-bottom: 1px solid #e83d12;
+  border-bottom: 1px solid #ccc;
   padding-bottom: .5em;
 }
 
@@ -627,20 +627,8 @@ p {
  * Layout.scss
  * Handle the big picture layout. 
  *
-
-<body>
-  <div class="wrapper">
-    <header class="masthead"></header>
-    <div class="inner-wrapper">
-      <div class="pic-hero"></div>
-      <section class="content-wrapper">
-        <header></header>
-         ...
-      </section>
-    </div>
-
  */
-/* line 19, ../sass/_layout.scss */
+/* line 7, ../sass/_layout.scss */
 .wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -648,88 +636,87 @@ p {
   max-width: 47em;
 }
 
-/* line 26, ../sass/_layout.scss */
+/* line 14, ../sass/_layout.scss */
 .inner-wrapper {
   position: relative;
 }
 
-/* line 30, ../sass/_layout.scss */
+/* line 19, ../sass/_layout.scss */
 .content-wrapper {
-  background-color: #fff;
   max-width: 36em;
   margin: 0 auto;
   padding: 1.5em;
 }
 
-/* line 37, ../sass/_layout.scss */
-.content-wrapper {
-  margin: 0 auto;
+/* line 25, ../sass/_layout.scss */
+.blog-river-wrapper {
+  background-color: #fff;
 }
 
-/* line 41, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
 .portfolio-river-wrapper {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 25.99em) {
-  /* line 47, ../sass/_layout.scss */
+  /* line 38, ../sass/_layout.scss */
   .content-wrapper {
     padding: 1em;
   }
 }
 @media only screen and (min-width: 26em) and (max-width: 48.6775em) {
-  /* line 54, ../sass/_layout.scss */
+  /* line 45, ../sass/_layout.scss */
   .content-wrapper {
     margin-left: 1em;
     margin-right: 1em;
   }
 
-  /* line 60, ../sass/_layout.scss */
+  /* line 51, ../sass/_layout.scss */
   .yes-hero .content-wrapper {
     margin-top: -3.5em;
   }
 }
 @media only screen and (max-width: 66.24em) {
-  /* line 68, ../sass/_layout.scss */
+  /* line 59, ../sass/_layout.scss */
   .content-body {
     font-size: 1.1em;
     line-height: 1.5;
   }
 }
 @media only screen and (min-width: 48.6875em) {
-  /* line 75, ../sass/_layout.scss */
+  /* line 66, ../sass/_layout.scss */
   .content-wrapper {
     padding: 2em;
   }
 
-  /* line 79, ../sass/_layout.scss */
+  /* line 70, ../sass/_layout.scss */
   .yes-hero .content-wrapper {
     margin-top: -6em;
   }
 }
 @media only screen and (min-width: 66.25em) {
-  /* line 87, ../sass/_layout.scss */
+  /* line 78, ../sass/_layout.scss */
   .yes-hero .content-wrapper {
     margin-top: -8em;
   }
 
-  /* line 91, ../sass/_layout.scss */
+  /* line 82, ../sass/_layout.scss */
   .content-body.portfolio-body {
-    padding: 0 2em;
+    padding: 0 2em 2em 2em;
   }
 }
 @media only screen and (min-width: 85em) {
-  /* line 98, ../sass/_layout.scss */
+  /* line 89, ../sass/_layout.scss */
   .wrapper {
     max-width: 62em;
   }
 
-  /* line 102, ../sass/_layout.scss */
+  /* line 93, ../sass/_layout.scss */
   .inner-wrapper {
     margin-left: 11em;
   }
 
-  /* line 107, ../sass/_layout.scss */
+  /* line 98, ../sass/_layout.scss */
   .yes-hero .content-wrapper,
   .content-wrapper {
     margin-left: 2em;
@@ -828,18 +815,25 @@ p {
 
 /* line 30, ../sass/modules/_card.scss */
 .card.portfolio-card {
-  background-color: #111;
   margin-top: 2em;
   padding-bottom: 2em;
 }
-/* line 35, ../sass/modules/_card.scss */
-.card.portfolio-card .portfolio-teaser {
+
+/* line 36, ../sass/modules/_card.scss */
+.portfolio-text {
+  background-color: #111;
+  padding: 1em;
+}
+
+/* line 42, ../sass/modules/_card.scss */
+.portfolio-teaser {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #999999;
   font-size: 0.8em;
 }
-/* line 40, ../sass/modules/_card.scss */
-.card.portfolio-card .micro-teaser {
+
+/* line 47, ../sass/modules/_card.scss */
+.micro-teaser {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.7em;
   font-weight: 500;
@@ -852,18 +846,13 @@ p {
   color: #e83d12;
 }
 
-/* line 46, ../sass/modules/_card.scss */
-.portfolio-text {
-  padding: 1em;
-}
-
-/* line 50, ../sass/modules/_card.scss */
+/* line 52, ../sass/modules/_card.scss */
 h2.card-title {
   margin-bottom: 0.46667em;
   margin-top: 0.46667em;
 }
 
-/* line 56, ../sass/modules/_card.scss */
+/* line 58, ../sass/modules/_card.scss */
 h2.portfolio-card-title {
   color: #fff;
   margin-bottom: 0.33333em;
@@ -871,30 +860,35 @@ h2.portfolio-card-title {
 }
 
 @media only screen and (max-width: 66.24em) {
-  /* line 63, ../sass/modules/_card.scss */
+  /* line 65, ../sass/modules/_card.scss */
   .card {
     font-size: 1.1em;
     line-height: 1.5;
   }
 }
 @media only screen and (min-width: 48.6875em) {
-  /* line 69, ../sass/modules/_card.scss */
+  /* line 71, ../sass/modules/_card.scss */
   .card {
     margin: 1em auto;
   }
 
-  /* line 72, ../sass/modules/_card.scss */
+  /* line 74, ../sass/modules/_card.scss */
   .blog-card {
     padding: 0;
   }
 
-  /* line 75, ../sass/modules/_card.scss */
+  /* line 77, ../sass/modules/_card.scss */
   .portfolio-text {
     padding: 2em;
   }
 }
 @media only screen and (min-width: 66.25em) {
-  /* line 81, ../sass/modules/_card.scss */
+  /* line 84, ../sass/modules/_card.scss */
+  .portfolio-image-wrapper {
+    background-color: #111;
+  }
+
+  /* line 88, ../sass/modules/_card.scss */
   .portfolio-image {
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
@@ -907,7 +901,7 @@ h2.portfolio-card-title {
     opacity: 0.5;
   }
 
-  /* line 87, ../sass/modules/_card.scss */
+  /* line 94, ../sass/modules/_card.scss */
   .card.portfolio-card:hover .portfolio-image {
     opacity: 1;
   }
@@ -1251,6 +1245,17 @@ h1.agg-title {
 }
 
 /*
+ * Post
+ *
+ * Styles for post pages and pages that inherit from post (like portfolio)
+ *
+ */
+/* line 8, ../sass/modules/_post.scss */
+.post-wrapper {
+  background-color: #fff;
+}
+
+/*
  * Portfolio
  *
  * Styles for portfolio post pages.
@@ -1258,31 +1263,54 @@ h1.agg-title {
  */
 /* line 9, ../sass/modules/_portfolio.scss */
 .content-wrapper.portfolio-post-wrapper {
-  background-color: transparent;
   padding: 0;
 }
 
-/* line 15, ../sass/modules/_portfolio.scss */
+/* line 14, ../sass/modules/_portfolio.scss */
 .portfolio-header {
   padding: 1em 1em 2em 1em;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
 }
 
-/* line 21, ../sass/modules/_portfolio.scss */
+/* line 20, ../sass/modules/_portfolio.scss */
 .content-body.portfolio-body {
-  padding: 0 1em;
+  padding: 0 1em 1em 1em;
 }
 
 @media only screen and (min-width: 66.25em) {
-  /* line 26, ../sass/modules/_portfolio.scss */
+  /* line 25, ../sass/modules/_portfolio.scss */
   .portfolio-header {
     padding: 2em;
   }
+}
+/*
+ * Pullquotes
+ */
+/* line 6, ../sass/modules/_pullquote.scss */
+.pullquote h2, .pullquote h3, .pullquote h2.card-title, .pullquote h4 {
+  margin: 0;
+}
 
-  /* line 29, ../sass/modules/_portfolio.scss */
-  .content-body.portfolio-body {
-    padding: 0 2em;
+/* line 11, ../sass/modules/_pullquote.scss */
+.plainquote {
+  padding: 1em;
+  border: 3px solid #555;
+}
+/* line 14, ../sass/modules/_pullquote.scss */
+.plainquote h2, .plainquote h3, .plainquote h2.card-title, .plainquote h4 {
+  font-family: Georgia, Palatino, Times, "Times New Roman", serif;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0 0 1em 0;
+}
+
+@media only screen and (min-width: 66.25em) {
+  /* line 24, ../sass/modules/_pullquote.scss */
+  .plainquote {
+    margin-left: -2rem;
+    padding: 1.5em 2em;
+    width: 44rem;
   }
 }
 /* line 1, ../sass/modules/_code.scss */
@@ -1861,12 +1889,6 @@ img {
   color: #999999;
 }
 
-@media only screen and (min-width: 85em) {
-  /* line 39, ../sass/modules/_secondary.scss */
-  #secondary-content {
-    padding-left: 17em;
-  }
-}
 /*
  * Pull & Push
  *
@@ -1879,19 +1901,15 @@ img {
     margin-bottom: .5em;
     width: 18em;
   }
-  /* line 14, ../sass/modules/_push-pull.scss */
-  .push-pull h2, .push-pull h3, .push-pull h2.card-title, .push-pull h4 {
-    margin: 0;
-  }
 
-  /* line 19, ../sass/modules/_push-pull.scss */
+  /* line 15, ../sass/modules/_push-pull.scss */
   .pull-left {
     float: left;
     margin-left: -7.5em;
     margin-right: 2em;
   }
 
-  /* line 25, ../sass/modules/_push-pull.scss */
+  /* line 21, ../sass/modules/_push-pull.scss */
   .push-right {
     float: right;
     margin-right: -7.5em;

@@ -2,18 +2,29 @@
  * Pullquotes
  */
 
+.pullquote {
+   h2,h3,h4 {
+    margin: 0;
+  }
+}
 
+.plainquote {
+  padding:  1em;
+  border: 3px solid #555;
+  h2,h3,h4{
+    font-family: $serif-stack;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0 0 1em 0;
+  }
+}
 
 @include media-query(desk) {
 
-  .pullquote{
-    float: left;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    width: 18em; // half of content width plus room for gutter
-
-    h2,h3,h4 {
-      margin: 0;
-    }
+  .plainquote {
+    margin-left: -2rem;
+    padding:  1.5em 2em;
+    width: 44rem;
   }
+
 }

@@ -4,7 +4,7 @@
   size according to screen size. 
   The sizes (site.AK.med_size and other) are set in config.yml.
 -->{% endcomment %}
-
+<div class="portfolio-image-wrapper">
   <div class="portfolio-image">
     <span data-picture data-alt="Portfolio Thumbnail Image">
       <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
@@ -14,3 +14,4 @@
       </noscript>
     </span>
   </div>
+</div>

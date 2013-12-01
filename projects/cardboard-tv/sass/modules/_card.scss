@@ -1,0 +1,33 @@
+
+.brown {
+  background-color: $brown;
+  color: $tan;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.yellow {
+  background-color: $yellow;
+  color: #fff;
+}
+
+.postcard {
+  border: .875em solid $tan;
+  border-radius: .75em;
+}
+
+.small-card {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -4em;
+  padding: 4em;
+  box-shadow: 0 10px 8px -6px rgba(0,0,0,0.5);
+}
+
+.light-blue {
+  background-color: $light-blue;
+  color: #0b3856;
+  text-shadow: -1px 1px 0 white;
+}

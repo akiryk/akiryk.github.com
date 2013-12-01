@@ -7,7 +7,6 @@
 
 // remove padding so that the header can be dark up to the edges.
 .content-wrapper.portfolio-post-wrapper {
-  background-color: transparent;
   padding: 0;
 }
 
@@ -19,14 +18,12 @@
 }
 
 .content-body.portfolio-body {
-  padding: 0 1em;
+  padding: 0 1em 1em 1em;
 }
 
 @include media-query(desk){
   .portfolio-header{
     padding: 2em;
   }
-  .content-body.portfolio-body {
-    padding: 0 2em;
-  }
+
 }
