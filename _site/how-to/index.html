@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>Posts Tagged &ldquo;jekyll&rdquo;</title>
+  <title>How To</title>
   
   <meta name="author" content="Adam Kiryk">
 
@@ -47,7 +47,7 @@
 
 
   </head>
-  <body id="top" class="tags, use-cards">
+  <body id="top" class="">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
       <header class="masthead cf">
   <div class="masthead-top">
@@ -86,84 +86,70 @@
 </header>
       
 
-  <div class="inner-wrapper yes-hero">
-    
-    
-    <div class="pic-hero">
-      <span data-picture data-alt="Hotel sign, Cassis, France">
-        <span data-src="/assets/images/heros/winesmarts-mini.jpg" ></span>
-        <span data-src="/assets/images/heros/winesmarts-med.jpg" data-media="(min-width:420px)"></span>
-        <span data-src="/assets/images/heros/winesmarts-large.jpg" data-media="(min-width: 760px)"></span>
-        <noscript>
-          <img src="/assets/images/heros/winesmarts-med.jpg">
-        </noscript>
-      </span>
-      
-        <div class="caption">Hotel sign, Cassis, France</div>
-      
-    </div><!-- .pic-hero -->
+  <div class="inner-wrapper no-hero">
 
         
- <section class="content-wrapper blog-river-wrapper">
-    <header class="header agg-header">
-      <h1 class="title agg-title"><span class="tag-title-text">Items tagged</span> <span class="tag-name-text quoted">jekyll</span></h1>
-    </header>
-    <ul class="river blog-river">
-      
-        
-          
-            
-                <li class="card blog-card">
-                  
-<a href="/blog/2013/12/01/Having-A-Go-Jekyll-Plugins" class="agg-link">
-  <h2 class="card-title blog-card-title">Responsive Videos in Jekyll</h2>
-  <div class="agg-title-meta">December 01, 2013</div>
-  <p class="teaser">In creating my first Jekyll site, I held off on using plugins until I felt I really needed them. Well, now I need them. And I learned a few things along the way...</p>
-</a>
-            
-              </li>
-          
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-          
-            
-                <li class="card blog-card">
-                  
-<a href="/blog/2013/11/12/readable-body-text" class="agg-link">
-  <h2 class="card-title blog-card-title">Readable Body Text</h2>
-  <div class="agg-title-meta">November 12, 2013</div>
-  <p class="teaser">Pagination only works on posts, not on categories of posts. I handled this by displaying all posts including portfolio plices in my blog. Portfolio pieces are displayed on a portfolio page that doesn't use pagination. It simply looks for all itemms with a YAML front matter label of highlight true. It diesplays only these items. Then I put the full bunch on a different page without paginations.</p>
-</a>
-            
-              </li>
-          
-        
-          
-        
-          
-        
-      
-        
-          
-        
-          
-        
-          
-        
-      
-    </ul><!-- end .blog-river -->
-  </section><!-- end content-wrapper -->
-    </div> <!-- end .inner-wrapper -->
-</div> <!-- end .wrapper -->
+<article class="content-wrapper post-wrapper">
+      <div class="content-body">
+        <h2>This is a how-to for making posts in Jekyll</h2>
+
+<h3>Add code snippets using Pygments</h3>
+
+<p>Use the highlight tag:</p>
+
+<p>{% highlight ruby %} <br>
+    # My example code <br>
+    @color = &lsquo;red&rsquo; <br>
+ {% endhighlight %} </p>
+
+<p>This results in markup like this:</p>
+
+<div class="highlight"><pre><code class="ruby">   <span class="c1"># My example code</span>
+   <span class="vi">@color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span>
+</code></pre></div>
+
+
+
+<div class="highlight"><pre><code class="css">   <span class="o">/*</span> <span class="nt">my</span> <span class="nt">example</span> <span class="nt">css</span> <span class="o">/*</span>
+   <span class="nc">.class</span> <span class="p">{</span>
+      <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+
+
+###Escape liquid syntax
+
+Use the  {% raw %}{% my liquid markup goes here %}  command. Don&rsquo;t forget to close with endraw.
+
+###Marginator
+Use this:
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;marginator&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    The paragraph of copy I want to have a piece of marginalia or an aside display next to.
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;marginalia&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;margin-heading&quot;</span><span class="nt">&gt;</span>An optional heading<span class="nt">&lt;/span&gt;</span> The aside or piece of marginalia...
+    <span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+
+Which results in something like this:
+<div class="marginator">
+  <p>
+    The paragraph of copy I want to have a piece of marginalia or an aside display next to.
+  </p>
+  <div class="marginalia">
+    <p><span class="margin-heading">An optional heading</span> The aside or piece of marginalia&hellip;
+    </p></div>
+</div>
+
+      </div>
+    </article>
+  </div><!-- .inner-wrapper -->
+</div><!-- end .inner-wrapper -->
+
       <footer>
   <div class="wrapper">
     <div class="inner-wrapper">

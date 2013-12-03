@@ -27,7 +27,7 @@
     margin-right: 5%;
   }
 
-  &.push-right {
+  &.pull-right {
     float: right;
     margin-left: 5%;
   }
@@ -49,6 +49,13 @@
 }
 
 @include media-query(desk) {
+  .pull-left {
+    @include pull-left();
+  }
+
+  .pull-right {
+    @include pull-right();
+  }
 
   .pic-large {
     margin-left: -7.5em; 

@@ -3,7 +3,7 @@
   This will appear in the blog index page, the portfolio index page, and
   similar pages such as tag pages.
 -->{% endcomment %}
-<a href="{{ BASE_PATH }}{{ post.url }}#start" class="agg-link">
+<a href="{{ BASE_PATH }}{{ post.url }}" class="agg-link">
   <h2 class="card-title blog-card-title">{{ post.title }}</h2>
   <div class="agg-title-meta">{{ post.date | date: "%B %d, %Y" }}</div>
   <p class="teaser">{{ post.teaser }}</p>

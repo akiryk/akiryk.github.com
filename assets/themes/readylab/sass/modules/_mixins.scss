@@ -12,6 +12,32 @@
 }
 
 /*
+ * Common styles for images or text that pulls left or  pushes right
+ */
+@mixin push-or-pull(){
+  margin-top: .5em;
+  margin-bottom: .5em;
+  width: 18em; // half of content width plus room for gutter
+}
+
+/*
+ * Common styles for images or text that pull left
+ */
+
+@mixin pull-left(){
+  @include push-or-pull();
+  float: left;
+  margin-left: -7.5em;
+  margin-right: 2em;
+}
+
+@mixin pull-right() {
+  @include push-or-pull();
+  float: right;
+  margin-right: -7.5em;
+  margin-left: 2em;
+}
+/*
  * Create a clean vertical list.
  * Do this for things like lists of portfolio cards on a tag page,
  * blog items on a blog page, or menu items in dropdown navigation.

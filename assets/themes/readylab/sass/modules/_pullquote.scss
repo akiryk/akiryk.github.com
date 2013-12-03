@@ -3,9 +3,19 @@
  */
 
 .pullquote {
-   h2,h3,h4 {
+  font-family: $headings;
+  font-size: $h3-size;
+  margin: 0;
+  padding: 0;
+
+   .gamma {
     margin: 0;
   }
+}
+
+.pullquote, 
+.plainquote {
+  background-color: #fff;
 }
 
 .plainquote {
@@ -25,6 +35,10 @@
     margin-left: -2rem;
     padding:  1.5em 2em;
     width: 44rem;
+  }
+
+  .pullquote {
+    @include pull-left();
   }
 
 }

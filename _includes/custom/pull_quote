@@ -7,6 +7,6 @@ into your post:
 {% assign quoteLink = "Optional url here but don't use without a source" %}
 {% include custom/pull_quote %}
 -->{% endcomment %}
-<blockquote class="pullquote push-pull pull-left">
+<blockquote class="pullquote">
   {% include custom/quote_logic %}
 </blockquote>

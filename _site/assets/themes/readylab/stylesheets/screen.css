@@ -441,6 +441,12 @@ table {
  * Basic cleanup for ordered and undered lists.
  */
 /*
+ * Common styles for images or text that pulls left or  pushes right
+ */
+/*
+ * Common styles for images or text that pull left
+ */
+/*
  * Create a clean vertical list.
  * Do this for things like lists of portfolio cards on a tag page,
  * blog items on a blog page, or menu items in dropdown navigation.
@@ -938,20 +944,20 @@ h2.portfolio-card-title {
  * load status.
  * 
  */
-/* line 13, ../sass/modules/_web-fonts.scss */
-h1, h2, h3, h2.card-title, h4, h5, h6 {
-  background: url(../images/loading.gif) no-repeat;
-  text-indent: -9999px;
-}
-
-/* line 18, ../sass/modules/_web-fonts.scss */
+/* line 14, ../sass/modules/_web-fonts.scss */
 h1.agg-title {
   text-indent: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background: none;
 }
 
-/* line 26, ../sass/modules/_web-fonts.scss */
+/* line 21, ../sass/modules/_web-fonts.scss */
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h2.card-title, .wf-loading h4, .wf-loading h5, .wf-loading h6 {
+  background: url(../images/loading.gif) no-repeat;
+  text-indent: -9999px;
+}
+
+/* line 28, ../sass/modules/_web-fonts.scss */
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h2.card-title, .wf-active h4, .wf-active h5, .wf-active h6 {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -963,12 +969,12 @@ h1.agg-title {
   background: none;
   text-indent: 0;
 }
-/* line 33, ../sass/modules/_web-fonts.scss */
+/* line 35, ../sass/modules/_web-fonts.scss */
 .wf-active h1.agg-title {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-/* line 39, ../sass/modules/_web-fonts.scss */
+/* line 41, ../sass/modules/_web-fonts.scss */
 .wf-inactive h1, .wf-inactive h2, .wf-inactive h3, .wf-inactive h2.card-title, .wf-inactive h4, .wf-inactive h5, .wf-inactive h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   visibility: visible;
@@ -1287,17 +1293,30 @@ h1.agg-title {
 /*
  * Pullquotes
  */
-/* line 6, ../sass/modules/_pullquote.scss */
-.pullquote h2, .pullquote h3, .pullquote h2.card-title, .pullquote h4 {
+/* line 5, ../sass/modules/_pullquote.scss */
+.pullquote {
+  font-family: "ff-tisa-web-pro", Georgia, Times, serif;
+  font-size: 30;
+  margin: 0;
+  padding: 0;
+}
+/* line 11, ../sass/modules/_pullquote.scss */
+.pullquote .gamma {
   margin: 0;
 }
 
-/* line 11, ../sass/modules/_pullquote.scss */
+/* line 17, ../sass/modules/_pullquote.scss */
+.pullquote,
+.plainquote {
+  background-color: #fff;
+}
+
+/* line 21, ../sass/modules/_pullquote.scss */
 .plainquote {
   padding: 1em;
   border: 3px solid #555;
 }
-/* line 14, ../sass/modules/_pullquote.scss */
+/* line 24, ../sass/modules/_pullquote.scss */
 .plainquote h2, .plainquote h3, .plainquote h2.card-title, .plainquote h4 {
   font-family: Georgia, Palatino, Times, "Times New Roman", serif;
   font-weight: normal;
@@ -1306,11 +1325,21 @@ h1.agg-title {
 }
 
 @media only screen and (min-width: 66.25em) {
-  /* line 24, ../sass/modules/_pullquote.scss */
+  /* line 34, ../sass/modules/_pullquote.scss */
   .plainquote {
     margin-left: -2rem;
     padding: 1.5em 2em;
     width: 44rem;
+  }
+
+  /* line 40, ../sass/modules/_pullquote.scss */
+  .pullquote {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 18em;
+    float: left;
+    margin-left: -7.5em;
+    margin-right: 2em;
   }
 }
 /* line 1, ../sass/modules/_code.scss */
@@ -1729,7 +1758,7 @@ img {
   margin-right: 5%;
 }
 /* line 30, ../sass/modules/_images.scss */
-.pic-medium.push-right {
+.pic-medium.pull-right {
   float: right;
   margin-left: 5%;
 }
@@ -1747,14 +1776,34 @@ img {
   }
 }
 @media only screen and (min-width: 66.25em) {
-  /* line 53, ../sass/modules/_images.scss */
+  /* line 52, ../sass/modules/_images.scss */
+  .pull-left {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 18em;
+    float: left;
+    margin-left: -7.5em;
+    margin-right: 2em;
+  }
+
+  /* line 56, ../sass/modules/_images.scss */
+  .pull-right {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 18em;
+    float: right;
+    margin-right: -7.5em;
+    margin-left: 2em;
+  }
+
+  /* line 60, ../sass/modules/_images.scss */
   .pic-large {
     margin-left: -7.5em;
     width: 47em;
   }
 }
 @media only screen and (min-width: 85em) {
-  /* line 61, ../sass/modules/_images.scss */
+  /* line 68, ../sass/modules/_images.scss */
   .pic-large {
     margin-left: 0;
     width: 51em;
@@ -1818,28 +1867,29 @@ img {
     font-size: 0.7em;
     font-weight: 300;
     font-style: normal;
+    margin-top: 1.92857em;
   }
-  /* line 60, ../sass/modules/_marginalia.scss */
+  /* line 61, ../sass/modules/_marginalia.scss */
   .marginalia .margin-heading {
     color: #e83d12;
     display: block;
     font-weight: 500;
   }
-  /* line 67, ../sass/modules/_marginalia.scss */
+  /* line 68, ../sass/modules/_marginalia.scss */
   .marginalia:before, .marginalia:after {
     content: '';
   }
 }
 @media only screen and (min-width: 85em) {
-  /* line 75, ../sass/modules/_marginalia.scss */
+  /* line 76, ../sass/modules/_marginalia.scss */
   .marginator {
     margin-left: 0;
   }
-  /* line 77, ../sass/modules/_marginalia.scss */
+  /* line 78, ../sass/modules/_marginalia.scss */
   .marginator > p {
     width: 32em;
   }
-  /* line 81, ../sass/modules/_marginalia.scss */
+  /* line 82, ../sass/modules/_marginalia.scss */
   .marginator .marginalia {
     width: 13em;
   }
@@ -1889,33 +1939,6 @@ img {
   color: #999999;
 }
 
-/*
- * Pull & Push
- *
- * For pulling and pushing content like quotes and images
- */
-@media only screen and (min-width: 66.25em) {
-  /* line 9, ../sass/modules/_push-pull.scss */
-  .push-pull {
-    margin-top: .5em;
-    margin-bottom: .5em;
-    width: 18em;
-  }
-
-  /* line 15, ../sass/modules/_push-pull.scss */
-  .pull-left {
-    float: left;
-    margin-left: -7.5em;
-    margin-right: 2em;
-  }
-
-  /* line 21, ../sass/modules/_push-pull.scss */
-  .push-right {
-    float: right;
-    margin-right: -7.5em;
-    margin-left: 2em;
-  }
-}
 /**
  * Links
  *
@@ -1940,6 +1963,17 @@ img {
 .bt-video-container {
   background: #cccccc url(/assets/themes/algis/images/loading-video.png) no-repeat center center;
   margin: 1.6em 0;
+}
+/* line 13, ../sass/modules/_video.scss */
+.bt-video-container iframe,
+.bt-video-container object,
+.bt-video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
 }
 
 /* 
@@ -2042,12 +2076,12 @@ footer {
   padding: 0;
   font-style: italic;
 }
-/* line 30, ../sass/modules/_mixins.scss */
+/* line 56, ../sass/modules/_mixins.scss */
 .post-tags > li {
   display: inline;
   padding-right: .5em;
 }
-/* line 34, ../sass/modules/_mixins.scss */
+/* line 60, ../sass/modules/_mixins.scss */
 .post-tags > li:last-of-type {
   padding-right: 0;
 }

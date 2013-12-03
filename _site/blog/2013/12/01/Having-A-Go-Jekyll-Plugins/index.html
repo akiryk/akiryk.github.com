@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>A New Blog Post</title>
+  <title>Responsive Videos in Jekyll</title>
   
   <meta name="author" content="Adam Kiryk">
 
@@ -107,7 +107,7 @@
 <article class="content-wrapper post-wrapper">
     <header class="header post-header">
       <div class="post-title-meta">
-  <span class="post-date">November 30, 2013</span> <span class="divider"> / </span>
+  <span class="post-date">December 01, 2013</span> <span class="divider"> / </span>
   <span class="by">by</span>
   <span class="author-name">
     
@@ -115,34 +115,62 @@
     
   </span> 
 </div>
-<h1 class="wf post-title">A New Blog Post</h1>
+<h1 class="wf post-title">Responsive Videos in Jekyll</h1>
 
     </header>
       <div class="content-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan hendrerit quam. Nullam feugiat metus posuere tellus tempor aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut velit dui. Cras iaculis placerat nunc, eu hendrerit velit malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque enim odio, pellentesque sed orci quis, condimentum eleifend tortor. Duis et tristique nulla, ac luctus mauris. Ut tellus lectus, sagittis sit amet libero ut, auctor ultrices orci. Cras faucibus justo magna, et placerat mi blandit a. Donec sed velit justo. Praesent vitae nunc in dolor cursus facilisis varius ut elit. Mauris nunc sapien, egestas non malesuada ut, bibendum vel justo. Cras sit amet arcu euismod, tristique arcu et, rhoncus nisi.</p>
-
-<blockquote class="pullquote push-pull pull-left">
-  
-<h4>Mauris nunc sapien, egestas non malesuada ut, bibendum vel justo</h4>
-
-</blockquote>
-
-
-<p>Proin justo nulla, congue non aliquet sit amet, convallis ac nisi. Aliquam et elementum nulla. In at malesuada turpis, aliquam accumsan justo. Nam lectus augue, varius eu viverra vitae, commodo a dui. Donec et iaculis mauris, sit amet suscipit mauris. In a dui nec quam tempor blandit a sed mauris. Vestibulum ut bibendum sem.</p>
+        <p>There are a bunch of cool <a href="http://jekyllrb.com/docs/plugins/">Jekyll plugins</a> out there, but using them can be a bit fussy if you&rsquo;re deploying to GitHub pages since GitHub disables custom plugins. You can do it, but you&rsquo;ll need to generate your site locally — and then push the generated site to Github. Is that a problem? Not for me, although it might be if you had a much bigger site than mine. Anyway, it meant I held off on trying any plugins until such time when I would really need one. That time has come. </p>
 
 <div class="marginator">
   <p>
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sagittis dolor et dolor aliquet tincidunt. Suspendisse quis consectetur tellus. Pellentesque vehicula tellus non mauris vehicula, ut sagittis eros pellentesque.
+    See, I&rsquo;d like to post a video or several, and I&rsquo;d like them to handle different viewport sizes well — but I don&rsquo;t want to rely on the <a href="http://fitvidsjs.com/">FitVids plugin</a> since I&rsquo;m not using jQuery on this site. After exploring a few options, I found a YouTube plugin for Jekyll that seemed pretty good, <a href="https://github.com/ttscoff/JekyllPlugins/tree/master/YouTube">youtube_tag.rb</a> by Brett Terpstra.
   </p>
   <div class="marginalia">
-    <p><span class="margin-heading">An Aside</span> Quisque enim odio, pellentesque sed orci quis, condimentum eleifend tortor. Duis et tristique nulla, ac luctus mauris. Ut tellus lectus.
+    <p><span class="margin-heading">How To:</span> To learn about generating a static site and hosting it on Github, just read <a href="http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html">this article from ixti.net</a>. Don&rsquo;t worry about how they used octopress; I&rsquo;m not using octopress and their methods worked for me.
     </p></div>
 </div>
 
+<p>This plugin uses the approach described in <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">&ldquo;Creating Instrinsic Ratios for Video&rdquo;</a>, which I believe is the same approach used by FitVids: it calculates the video&rsquo;s aspect ratio and uses that ratio to set just the right percentage of padding for the video to resize correctly. </p>
 
-<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sagittis dolor et dolor aliquet tincidunt. Suspendisse quis consectetur tellus. Pellentesque vehicula tellus non mauris vehicula, ut sagittis eros pellentesque. Mauris tristique, felis sagittis elementum ultrices, neque augue lacinia augue, ac consequat urna magna in justo. Mauris egestas nunc ut nunc sollicitudin, quis iaculis neque tempus. Nullam faucibus interdum porta. Mauris pretium eu arcu vel mollis.</p>
+<p>Using the plugin is simple. Once it&rsquo;s in your Jekyll plugins directory, simply put the &lsquo;youtube&rsquo; liquid tag in your post along with the youtube video ID and optional width and height parameters:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"> {% youtube uEdRLlqdgA4 640 480 %} 
+</code></pre></div>
+<p>One gotcha: If you use this plugin with rDiscount, the default Jekyll markdown rendering engine, you might run into a problem with the way it plugin injects an inline style tag. The styles don&rsquo;t get rendered and the videos don&rsquo;t end up being resizeable. I found two possible solutions. One is to put the necessary styles in your css and then comment out the offending line:</p>
 
-<p>Fusce non tempus nulla. Nam mauris massa, elementum quis enim vitae, rutrum hendrerit justo. Mauris in vehicula dolor. Cras ipsum lacus, elementum a molestie quis, suscipit quis lorem. Pellentesque imperdiet dictum diam, eu faucibus enim auctor vitae. Sed nunc turpis, dignissim eleifend tortor nec, tempor eleifend justo. Sed at leo eu urna ultrices ullamcorper et vitae lectus. Suspendisse imperdiet molestie ligula, sed sodales tortor ultrices eget. Maecenas tempus viverra consequat. Donec nec lorem vitae dui lacinia lobortis. Cras vestibulum leo libero, vitae pulvinar est eleifend ac. Vivamus porttitor lorem vitae magna luctus, quis porttitor orci placerat. Etiam faucibus justo vel aliquet eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi gravida urna eu eros blandit, vel suscipit leo gravida.</p>
+<div class="highlight"><pre><code class="css"><span class="c">/* Put these styles in your css */</span>
+<span class="nt">iframe</span><span class="o">,</span>
+<span class="nt">object</span><span class="o">,</span> 
+<span class="nt">embed</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">margin-top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>And comment out line 33 from youtube_tag.rb</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="c1">#video = &quot;&lt;style&gt;.bt-video-container iframe,.bt-video-container object,.bt-video-container embed { position:absolute; top:0; left:0; width:100%; height:100%; margin-top:0 } &lt;/style&gt;\n&quot;</span>
+<span class="c1"># Then modify line 34 so that video is simply set to = and not +=:</span>
+<span class="n">video</span> <span class="o">=</span> <span class="sx">%Q{&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:</span><span class="si">#{</span><span class="n">padding_bottom</span><span class="si">}</span><span class="sx">;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;</span><span class="si">#{</span><span class="vi">@width</span><span class="si">}</span><span class="sx">&quot; height=&quot;</span><span class="si">#{</span><span class="vi">@height</span><span class="si">}</span><span class="sx">&quot; src=&quot;http://www.youtube.com/embed/</span><span class="si">#{</span><span class="vi">@videoid</span><span class="si">}</span><span class="sx">?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;}</span>
+</code></pre></div>
+
+<p>The other option is to use a different markdown renderer — RedCarpet seems to work fine. You might need to install it; you&rsquo;ll definitely need to tell Jekyll about it. Open the Jekyll config.yml file and add the following:</p>
+
+<div class="highlight"><pre><code class="ruby">  <span class="ss">markdown</span><span class="p">:</span> <span class="n">redcarpet</span>
+</code></pre></div>
+
+<h3>Vimeo</h3>
+
+<p>The youtube_tag plugin is designed for YouTube, but the approach is the same no matter where your video is hosted. I made a version that works with Vimeo by making just a few modifications. See my <a href="https://gist.github.com/akiryk/7750273">gist for a vimeo plugin</a>.</p>
+
+<p>Here are the plugins live in action showing a couple videos I&rsquo;ve seen recently on <a href="http://www.kottke.org">kottke</a>. Here are the two liquid tags I used:<br><br>
+ {% vimeo 80310253 500 281 %} <br><br>and<br><br>
+ {% youtube uEdRLlqdgA4 640 480 %} 
+<div class="bt-video-container" style="position:relative;padding-bottom:56.20%;padding-top:30px;height:0;overflow:hidden"><iframe width="500" height="281" src="http://player.vimeo.com/video/80310253?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<div class="bt-video-container" style="position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden"><iframe width="640" height="480" src="http://www.youtube.com/embed/uEdRLlqdgA4?rel=0" frameborder="0" allowfullscreen></iframe></div></p>
 
         
 
@@ -151,11 +179,11 @@
     <li class="inline tag-title">Filed under: </li>
       
          
-          <li class="inline"><a href="/tag/ux" class="tag-link">ux</a> </li>
+          <li class="inline"><a href="/tag/jekyll" class="tag-link">jekyll</a> </li>
          
-          <li class="inline"><a href="/tag/design" class="tag-link">design</a> </li>
+          <li class="inline"><a href="/tag/code" class="tag-link">code</a> </li>
          
-          <li class="inline"><a href="/tag/making-stuff-better" class="tag-link">making-stuff-better</a> </li>
+          <li class="inline"><a href="/tag/tips-n-tricks" class="tag-link">tips-n-tricks</a> </li>
         
       
     </ul>

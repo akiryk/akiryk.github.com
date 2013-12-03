@@ -55,6 +55,7 @@
       font-size: ($marginaliaSize/$base-font-size) + em;
       font-weight: 300;
       font-style: normal;
+      margin-top: getEms(27, 14);
     }
 
     .margin-heading {

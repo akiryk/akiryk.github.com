@@ -3,7 +3,7 @@
   This will appear in the blog index page, the portfolio index page, and
   similar pages such as tag pages.
 -->{% endcomment %}
-<a href="{{ BASE_PATH }}{{ post.url }}#start" class="portfolio-piece">
+<a href="{{ BASE_PATH }}{{ post.url }}" class="portfolio-piece">
   {% include custom/thumbnail_image %}
   <div class="portfolio-text">
       <div class="slugger">

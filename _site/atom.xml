@@ -4,7 +4,7 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2013-12-01T12:55:56+01:00</updated>
+ <updated>2013-12-03T21:20:04+01:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
@@ -13,34 +13,62 @@
 
  
  <entry>
-   <title>A New Blog Post</title>
-   <link href="http://akiryk.github.io/blog/2013/11/30/a-new-blog-post"/>
-   <updated>2013-11-30T00:00:00+01:00</updated>
-   <id>http://akiryk.github.io/blog/2013/11/30/a-new-blog-post</id>
-   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan hendrerit quam. Nullam feugiat metus posuere tellus tempor aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut velit dui. Cras iaculis placerat nunc, eu hendrerit velit malesuada at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque enim odio, pellentesque sed orci quis, condimentum eleifend tortor. Duis et tristique nulla, ac luctus mauris. Ut tellus lectus, sagittis sit amet libero ut, auctor ultrices orci. Cras faucibus justo magna, et placerat mi blandit a. Donec sed velit justo. Praesent vitae nunc in dolor cursus facilisis varius ut elit. Mauris nunc sapien, egestas non malesuada ut, bibendum vel justo. Cras sit amet arcu euismod, tristique arcu et, rhoncus nisi.&lt;/p&gt;
-
-&lt;blockquote class=&quot;pullquote push-pull pull-left&quot;&gt;
-  
-&lt;h4&gt;Mauris nunc sapien, egestas non malesuada ut, bibendum vel justo&lt;/h4&gt;
-
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Proin justo nulla, congue non aliquet sit amet, convallis ac nisi. Aliquam et elementum nulla. In at malesuada turpis, aliquam accumsan justo. Nam lectus augue, varius eu viverra vitae, commodo a dui. Donec et iaculis mauris, sit amet suscipit mauris. In a dui nec quam tempor blandit a sed mauris. Vestibulum ut bibendum sem.&lt;/p&gt;
+   <title>Responsive Videos in Jekyll</title>
+   <link href="http://akiryk.github.io/blog/2013/12/01/Having-A-Go-Jekyll-Plugins"/>
+   <updated>2013-12-01T00:00:00+01:00</updated>
+   <id>http://akiryk.github.io/blog/2013/12/01/Having-A-Go-Jekyll-Plugins</id>
+   <content type="html">&lt;p&gt;There are a bunch of cool &lt;a href=&quot;http://jekyllrb.com/docs/plugins/&quot;&gt;Jekyll plugins&lt;/a&gt; out there, but using them can be a bit fussy if you&amp;rsquo;re deploying to GitHub pages since GitHub disables custom plugins. You can do it, but you&amp;rsquo;ll need to generate your site locally — and then push the generated site to Github. Is that a problem? Not for me, although it might be if you had a much bigger site than mine. Anyway, it meant I held off on trying any plugins until such time when I would really need one. That time has come. &lt;/p&gt;
 
 &lt;div class=&quot;marginator&quot;&gt;
   &lt;p&gt;
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sagittis dolor et dolor aliquet tincidunt. Suspendisse quis consectetur tellus. Pellentesque vehicula tellus non mauris vehicula, ut sagittis eros pellentesque.
+    See, I&amp;rsquo;d like to post a video or several, and I&amp;rsquo;d like them to handle different viewport sizes well — but I don&amp;rsquo;t want to rely on the &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids plugin&lt;/a&gt; since I&amp;rsquo;m not using jQuery on this site. After exploring a few options, I found a YouTube plugin for Jekyll that seemed pretty good, &lt;a href=&quot;https://github.com/ttscoff/JekyllPlugins/tree/master/YouTube&quot;&gt;youtube_tag.rb&lt;/a&gt; by Brett Terpstra.
   &lt;/p&gt;
   &lt;div class=&quot;marginalia&quot;&gt;
-    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;An Aside&lt;/span&gt; Quisque enim odio, pellentesque sed orci quis, condimentum eleifend tortor. Duis et tristique nulla, ac luctus mauris. Ut tellus lectus.
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;How To:&lt;/span&gt; To learn about generating a static site and hosting it on Github, just read &lt;a href=&quot;http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html&quot;&gt;this article from ixti.net&lt;/a&gt;. Don&amp;rsquo;t worry about how they used octopress; I&amp;rsquo;m not using octopress and their methods worked for me.
     &lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;p&gt;This plugin uses the approach described in &lt;a href=&quot;http://alistapart.com/article/creating-intrinsic-ratios-for-video&quot;&gt;&amp;ldquo;Creating Instrinsic Ratios for Video&amp;rdquo;&lt;/a&gt;, which I believe is the same approach used by FitVids: it calculates the video&amp;rsquo;s aspect ratio and uses that ratio to set just the right percentage of padding for the video to resize correctly. &lt;/p&gt;
 
-&lt;p&gt;Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sagittis dolor et dolor aliquet tincidunt. Suspendisse quis consectetur tellus. Pellentesque vehicula tellus non mauris vehicula, ut sagittis eros pellentesque. Mauris tristique, felis sagittis elementum ultrices, neque augue lacinia augue, ac consequat urna magna in justo. Mauris egestas nunc ut nunc sollicitudin, quis iaculis neque tempus. Nullam faucibus interdum porta. Mauris pretium eu arcu vel mollis.&lt;/p&gt;
+&lt;p&gt;Using the plugin is simple. Once it&amp;rsquo;s in your Jekyll plugins directory, simply put the &amp;lsquo;youtube&amp;rsquo; liquid tag in your post along with the youtube video ID and optional width and height parameters:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt; {% youtube uEdRLlqdgA4 640 480 %} 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;One gotcha: If you use this plugin with rDiscount, the default Jekyll markdown rendering engine, you might run into a problem with the way it plugin injects an inline style tag. The styles don&amp;rsquo;t get rendered and the videos don&amp;rsquo;t end up being resizeable. I found two possible solutions. One is to put the necessary styles in your css and then comment out the offending line:&lt;/p&gt;
 
-&lt;p&gt;Fusce non tempus nulla. Nam mauris massa, elementum quis enim vitae, rutrum hendrerit justo. Mauris in vehicula dolor. Cras ipsum lacus, elementum a molestie quis, suscipit quis lorem. Pellentesque imperdiet dictum diam, eu faucibus enim auctor vitae. Sed nunc turpis, dignissim eleifend tortor nec, tempor eleifend justo. Sed at leo eu urna ultrices ullamcorper et vitae lectus. Suspendisse imperdiet molestie ligula, sed sodales tortor ultrices eget. Maecenas tempus viverra consequat. Donec nec lorem vitae dui lacinia lobortis. Cras vestibulum leo libero, vitae pulvinar est eleifend ac. Vivamus porttitor lorem vitae magna luctus, quis porttitor orci placerat. Etiam faucibus justo vel aliquet eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi gravida urna eu eros blandit, vel suscipit leo gravida.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* Put these styles in your css */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;iframe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;nt&quot;&gt;embed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And comment out line 33 from youtube_tag.rb&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#video = &amp;quot;&amp;lt;style&amp;gt;.bt-video-container iframe,.bt-video-container object,.bt-video-container embed { position:absolute; top:0; left:0; width:100%; height:100%; margin-top:0 } &amp;lt;/style&amp;gt;\n&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Then modify line 34 so that video is simply set to = and not +=:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;video&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;%Q{&amp;lt;div class=&amp;quot;bt-video-container&amp;quot; style=&amp;quot;position:relative;padding-bottom:&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;padding_bottom&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;;padding-top:30px;height:0;overflow:hidden&amp;quot;&amp;gt;&amp;lt;iframe width=&amp;quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@width&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;&amp;quot; height=&amp;quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;&amp;quot; src=&amp;quot;http://www.youtube.com/embed/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@videoid&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;?rel=0&amp;quot; frameborder=&amp;quot;0&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/div&amp;gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The other option is to use a different markdown renderer — RedCarpet seems to work fine. You might need to install it; you&amp;rsquo;ll definitely need to tell Jekyll about it. Open the Jekyll config.yml file and add the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;  &lt;span class=&quot;ss&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;redcarpet&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Vimeo&lt;/h3&gt;
+
+&lt;p&gt;The youtube_tag plugin is designed for YouTube, but the approach is the same no matter where your video is hosted. I made a version that works with Vimeo by making just a few modifications. See my &lt;a href=&quot;https://gist.github.com/akiryk/7750273&quot;&gt;gist for a vimeo plugin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are the plugins live in action showing a couple videos I&amp;rsquo;ve seen recently on &lt;a href=&quot;http://www.kottke.org&quot;&gt;kottke&lt;/a&gt;. Here are the two liquid tags I used:&lt;br&gt;&lt;br&gt;
+ {% vimeo 80310253 500 281 %} &lt;br&gt;&lt;br&gt;and&lt;br&gt;&lt;br&gt;
+ {% youtube uEdRLlqdgA4 640 480 %} 
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:56.20%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/80310253?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;http://www.youtube.com/embed/uEdRLlqdgA4?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -49,8 +77,7 @@
    <link href="http://akiryk.github.io/blog/2013/11/12/readable-body-text"/>
    <updated>2013-11-12T00:00:00+01:00</updated>
    <id>http://akiryk.github.io/blog/2013/11/12/readable-body-text</id>
-   <content type="html">&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I've discovered and should write about are:&lt;/p&gt;
-
+   <content type="html">&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;rsquo;ve discovered and should write about are:&lt;/p&gt;
 
 &lt;p&gt;Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins&lt;/p&gt;
 
@@ -60,19 +87,63 @@
 
 &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
 
-
-&lt;p&gt;&lt;noscript&gt;
+&lt;noscript&gt;
   &lt;img src=&quot;external/imgs/small.jpg&quot; alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
 &lt;/noscript&gt;
-&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&amp;rsquo;s free, fast, and easy to use — plus, hosting is free if you use github pages.&lt;/p&gt;
 
 &lt;p&gt;Using jekyll bootstrap. Copy the themes and make your own.&lt;/p&gt;
 
-&lt;p&gt;Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&amp;rsquo;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &amp;ldquo;hightlight: true.&amp;rdquo; It displays only these items. Then I put the full bunch on a different page without pagination.&lt;/p&gt;
+&lt;p&gt;Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&amp;rsquo;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &amp;ldquo;hightlight: true.&amp;rdquo; It displays only these items. Then I put the full bunch on a different page without pagination. &lt;/p&gt;
 
-&lt;p&gt;Handling plugins.&lt;/p&gt;
+&lt;p&gt;Handling plugins. &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>SmartsCo Brand/Package Design</title>
+   <link href="http://akiryk.github.io/portfolio/2004/10/10/winesmarts"/>
+   <updated>2004-10-10T00:00:00+02:00</updated>
+   <id>http://akiryk.github.io/portfolio/2004/10/10/winesmarts</id>
+   <content type="html">&lt;p class=&quot;intro&quot;&gt;I was lead illustrator and designer on this project, which involved creating branding for a new company and designing the packaging for it&amp;rsquo;s first product, a trivia-style card game for wine lovers.&lt;/p&gt;
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    This was a complicated project, because it involved creating the visual language for both a brand and a product, neither of which existed at the time. The brand, SmartsCo., was a startup game company whose founders hoped it would profit by creating fun and attractive trivia games about subjects like wine, chocolate, food, and sex. 
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Success!&lt;/span&gt; It looks like my original clients went on to sell the product, and somebody has been &lt;a href=&quot;http://www.barnesandnoble.com/s/?pn=SmartsCo&quot;&gt;going crazy making spinoffs&lt;/a&gt; of my original design 
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Box with cards&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Box with cards&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To begin, they only had a small budget and a set of a few hundred (hopefully entertaining) questions about wine, vetted and approved by wine experts. Where to start? Designing the trivia cards would have probably made a lot of sense, since that was the meat of the whole thing. But we didn&amp;rsquo;t start with the cards because the business needed to find shop owners who would be willing to stock the product — and on first glance, the product &lt;em&gt;was&lt;/em&gt; the package. So we started by designing the package. &lt;/p&gt;
+
+&lt;p&gt;It quickly became apparent that the packaging needed to communicate the SmartsCo identity almost as much as the nature of its contents because our clients wanted to grow the brand quickly into other areas of educational trivia. We needed the packaging to say clearly, &amp;ldquo;I&amp;rsquo;m a wine trivia game&amp;rdquo; but also &amp;ldquo;I&amp;rsquo;m part of a family of related products.&amp;rdquo; &lt;/p&gt;
+
+&lt;blockquote class=&quot;plainquote&quot;&gt;
+  
+&lt;div class=&quot;gamma&quot;&gt;Like, the SexSmarts® box needs to say &lt;em&gt;I&amp;rsquo;m about sex!&lt;/em&gt; and — at the same time — I&amp;rsquo;m related to DogSmarts®&lt;/div&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;Anyway, all this simply means that the project went in several directions at once. What should the logo communicate? What mood should the package convey? What would be the right balance of playful versus educational? What set of visual elements would have the flexibility to support a wide range of possible subjects (like sex, golf, or music) and still feel related?&lt;/p&gt;
+
+&lt;p&gt;I developed a simple logo that expressed a playful energy and a style of illustration that lent itself to different configurations. For wine, I used a bottle, grapes, and a glass — for future products, we could easily change the palette and replace the imagery. &lt;/p&gt;
 </content>
  </entry>
  
