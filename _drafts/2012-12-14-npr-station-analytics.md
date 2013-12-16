@@ -7,6 +7,9 @@ category : portfolio
 image: analytics
 tags : [ux, cms, npr, design]
 ---
+<p class="intro">This is a great example of a successful MVP project. MVP, which stands for minimum viable product, means creating something that's valuable to your customers using a minimum of time and resources. At its best, this process forces you to think very clearly about what problem you're trying to solve, and to solve that problem in a super-focused way. I think we did that here. </p>
+
+In a brief period of time, we created a tool that works very well for doing a specific thing. It's easy to use, 
 
 <p class="intro">
   In 2012, we launched an experiment to see how we could leverage NPR’s Facebook presence by posting member-station stories that we’d geo-target to the member-station’s region. It’s been a <a href="http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&hq_m=2040998&hq_l=1&hq_v=437cc910b2">big success</a> For example, KPLU in Seattle would post a story to NPR’s Facebook page that would only be seen by NPR fans who lived around Seattle. Done well, this had the potential to benefit both NPR and the individual member stations. The experiment did very well.

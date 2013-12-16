@@ -2,9 +2,9 @@
 layout: post
 title: Responsive Videos in Jekyll
 teaser: In creating my first Jekyll site, I held off on using plugins until I felt I really needed them. Well, now I need them. And I learned a few things along the way...
-hero: tintin
-hero-caption: Tintin illustration, Hergé
-assets: book-browsing
+hero: lake
+hero-caption: Moose Lake, Maine
+assets: videos
 category : blog
 tags : [jekyll, code, tips-n-tricks]
 ---

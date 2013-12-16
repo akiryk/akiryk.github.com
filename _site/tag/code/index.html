@@ -28,24 +28,9 @@
 -->
 
   <!-- atom & rss feed -->
-  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  <script type="text/javascript">
-    // typekit fonts
-    (function() {
-    var config = {
-      kitId: 'sfd3xhj',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-    })();
-
-    // picturefill polyfill
-    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
-  </script>
-
-
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </head>
   <body id="top" class="tags, use-cards">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
@@ -90,12 +75,13 @@
     
     
     <div class="pic-hero">
-      <span data-picture data-alt="Hotel sign, Cassis, France">
-        <span data-src="/assets/images/heros/winesmarts-mini.jpg" ></span>
-        <span data-src="/assets/images/heros/winesmarts-med.jpg" data-media="(min-width:420px)"></span>
-        <span data-src="/assets/images/heros/winesmarts-large.jpg" data-media="(min-width: 760px)"></span>
+      <span data-picture data-alt="Hotel sign, Cassis, France" class="">
+        <span data-src="/assets/images//winesmarts-small.jpg" ></span>
+        <span data-src="/assets/images//winesmarts-med.jpg" data-media="(min-width:26.25em)"></span>
+        <span data-src="/assets/images//winesmarts-mid-large.jpg" data-media="(min-width:39.8125em)"></span>
+        <span data-src="/assets/images//winesmarts-large.jpg" data-media="(min-width: 82.5em)"></span>
         <noscript>
-          <img src="/assets/images/heros/winesmarts-med.jpg">
+          <img src="/assets/images//winesmarts-med.jpg">
         </noscript>
       </span>
       
@@ -114,13 +100,19 @@
           
         
           
+        
+      
+        
+          
+        
+          
             
                 <li class="card blog-card">
                   
-<a href="/blog/2013/12/01/Having-A-Go-Jekyll-Plugins" class="agg-link">
-  <h2 class="card-title blog-card-title">Responsive Videos in Jekyll</h2>
-  <div class="agg-title-meta">December 01, 2013</div>
-  <p class="teaser">In creating my first Jekyll site, I held off on using plugins until I felt I really needed them. Well, now I need them. And I learned a few things along the way...</p>
+<a href="/blog/2013/12/05/responsive-images-baby-steps" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">How I'm Handling Responsive Images With Jekyll</h2>
+  <div class="agg-title-meta">December 05, 2013</div>
+  <p class="teaser">There are a lot of options for handling images on a responsive site and none are perfect — hence the need for baby steps. For me, that means using the picturefill.js polyfill combined with a Jekyll/liquid hack. I know there's got to be a better way, but since I'm not sure what that is just yet, I'll do this.</p>
 </a>
             
               </li>
@@ -131,6 +123,29 @@
       
         
           
+        
+          
+        
+      
+        
+          
+        
+          
+            
+                <li class="card blog-card">
+                  
+<a href="/blog/2013/12/01/Having-A-Go-Jekyll-Plugins" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Responsive Videos in Jekyll</h2>
+  <div class="agg-title-meta">December 01, 2013</div>
+  <p class="teaser">In creating my first Jekyll site, I held off on using plugins until I felt I really needed them. Well, now I need them. And I learned a few things along the way...</p>
+</a>
+            
+              </li>
+          
+        
+          
+        
+      
         
           
         

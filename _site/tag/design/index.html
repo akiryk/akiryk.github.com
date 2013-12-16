@@ -28,24 +28,9 @@
 -->
 
   <!-- atom & rss feed -->
-  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  <script type="text/javascript">
-    // typekit fonts
-    (function() {
-    var config = {
-      kitId: 'sfd3xhj',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-    })();
-
-    // picturefill polyfill
-    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
-  </script>
-
-
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </head>
   <body id="top" class="tags, use-cards">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
@@ -90,12 +75,13 @@
     
     
     <div class="pic-hero">
-      <span data-picture data-alt="Hotel sign, Cassis, France">
-        <span data-src="/assets/images/heros/winesmarts-mini.jpg" ></span>
-        <span data-src="/assets/images/heros/winesmarts-med.jpg" data-media="(min-width:420px)"></span>
-        <span data-src="/assets/images/heros/winesmarts-large.jpg" data-media="(min-width: 760px)"></span>
+      <span data-picture data-alt="Hotel sign, Cassis, France" class="">
+        <span data-src="/assets/images//winesmarts-small.jpg" ></span>
+        <span data-src="/assets/images//winesmarts-med.jpg" data-media="(min-width:26.25em)"></span>
+        <span data-src="/assets/images//winesmarts-mid-large.jpg" data-media="(min-width:39.8125em)"></span>
+        <span data-src="/assets/images//winesmarts-large.jpg" data-media="(min-width: 82.5em)"></span>
         <noscript>
-          <img src="/assets/images/heros/winesmarts-med.jpg">
+          <img src="/assets/images//winesmarts-med.jpg">
         </noscript>
       </span>
       
@@ -115,20 +101,24 @@
         
           
         
-          
-        
       
         
           
         
           
+        
+          
+        
+      
+        
+          
             
                 <li class="card blog-card">
                   
-<a href="/blog/2013/11/12/readable-body-text" class="agg-link">
-  <h2 class="card-title blog-card-title">Readable Body Text</h2>
-  <div class="agg-title-meta">November 12, 2013</div>
-  <p class="teaser">Pagination only works on posts, not on categories of posts. I handled this by displaying all posts including portfolio plices in my blog. Portfolio pieces are displayed on a portfolio page that doesn't use pagination. It simply looks for all itemms with a YAML front matter label of highlight true. It diesplays only these items. Then I put the full bunch on a different page without paginations.</p>
+<a href="/blog/2013/12/04/using-georgia" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">After Looking At Twenty Different Typefaces, I Chose...</h2>
+  <div class="agg-title-meta">December 04, 2013</div>
+  <p class="teaser">I wanted to design my blog with reading in mind, so I spent a good bit of time considering how best to handle body copy. I already have a Typekit subscription, Google Fonts are free, and Typecast makes it super easy to try out different options. So why did I stick with Georgia?</p>
 </a>
             
               </li>
@@ -136,8 +126,50 @@
         
           
         
+      
+        
           
         
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li class="card portfolio-card">
+                
+<a href="/portfolio/2013/02/09/facebook-project" class="portfolio-piece">
+  
+<div class="portfolio-image-wrapper">
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/amplify/facebook-page-small.jpg" ></span>
+      <span data-src="/assets/images/amplify/facebook-page-med.jpg" data-media="(min-width: 26.25em)"></span>
+      <noscript>
+        <img src="/assets/images/amplify/facebook-page-small.jpg">
+      </noscript>
+    </span>
+  </div>
+</div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">ux + design + front-end</div>
+        <h2 class="card-title portfolio-card-title webfont">NPR Stations on Facebook</h2>
+      </div>
+      <p class="portfolio-teaser">With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
+    </div>
+  </a>
+            
+              </li>
           
         
       
@@ -151,10 +183,10 @@
 <div class="portfolio-image-wrapper">
   <div class="portfolio-image">
     <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/winesmarts-mini.jpg" ></span>
-      <span data-src="/assets/images/heros/winesmarts-small.jpg" data-media="(min-width: 440px)"></span>
+      <span data-src="/assets/images/winesmarts/winesmarts-small.jpg" ></span>
+      <span data-src="/assets/images/winesmarts/winesmarts-med.jpg" data-media="(min-width: 26.25em)"></span>
       <noscript>
-        <img src="/assets/images/heros/winesmarts-small.jpg">
+        <img src="/assets/images/winesmarts/winesmarts-small.jpg">
       </noscript>
     </span>
   </div>
@@ -163,7 +195,7 @@
   <div class="portfolio-text">
       <div class="slugger">
         <div class="micro-teaser">Design + Illustration</div>
-        <h2 class="card-title portfolio-card-title">SmartsCo Brand/Package Design</h2>
+        <h2 class="card-title portfolio-card-title webfont">Smarts Company Brand/Package Design</h2>
       </div>
       <p class="portfolio-teaser">I was lead illustrator and designer on this project, which required that I create a branded look for a series of trivia-style card games intended to be both fun and educational.</p>
     </div>

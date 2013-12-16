@@ -3,42 +3,31 @@
  */
 
 .pullquote {
-  font-family: $headings;
   font-size: $h3-size;
-  margin: 0;
-  padding: 0;
-
-   .gamma {
+  clear: both;
+  font-family: $headings;
+  .gamma {
     margin: 0;
-  }
-}
-
-.pullquote, 
-.plainquote {
-  background-color: #fff;
-}
-
-.plainquote {
-  padding:  1em;
-  border: 3px solid #555;
-  h2,h3,h4{
-    font-family: $serif-stack;
-    font-weight: normal;
-    font-style: italic;
-    margin: 0 0 1em 0;
   }
 }
 
 @include media-query(desk) {
 
   .plainquote {
-    margin-left: -2rem;
-    padding:  1.5em 2em;
-    width: 44rem;
+    text-align: center;
+    width: 40em;
+    margin-left: -5em;
   }
 
   .pullquote {
-    @include pull-left();
-  }
 
+    &.pull-left {
+      @include pull-left();
+    }
+
+    &.pull-right {
+      @include pull-right();
+    }
+
+  }
 }

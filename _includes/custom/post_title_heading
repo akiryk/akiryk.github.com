@@ -9,4 +9,4 @@
     {% endif %}
   </span> 
 </div>
-<h1 class="wf post-title">{{ page.title }}</h1>
+<h1 class="webfont post-title">{{ page.title }}</h1>

@@ -17,7 +17,11 @@
 
 .marginalia {
   color: #555;
-  font-style: italic;
+  p {
+    @include sans();
+    font-size: (16/$base-font-size) + em;
+    letter-spacing: 1px;
+  }
 }
 
 @include media-query(desk) {
@@ -30,7 +34,7 @@
     // handle all p's inside this class
     & > p {
       float: left;
-      width: ($content-width - 7.5) + em;
+      width: 22em;
     }
 
     // handle the p following this class
@@ -49,9 +53,8 @@
     background-color: white;
     float: left;
     margin: getEms(12) 0 0 $gutter-width + em;
-    width: 11em; // 260px
-    p {
-      @include sans(); 
+    width: 13em; // 260px
+    p { 
       font-size: ($marginaliaSize/$base-font-size) + em;
       font-weight: 300;
       font-style: normal;
@@ -75,12 +78,15 @@
 @include media-query(desk-wide) {
   .marginator {
     margin-left: 0;
+
+    // handle all p's inside this class
     & > p {
-      width: 32em;
+      float: left;
+      width: 30em;
     }
 
     .marginalia {
-      width: 13em; // 260px
+      width: 15em; // 260px
     }
 
   }

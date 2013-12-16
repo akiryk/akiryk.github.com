@@ -28,24 +28,9 @@
 -->
 
   <!-- atom & rss feed -->
-  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  <script type="text/javascript">
-    // typekit fonts
-    (function() {
-    var config = {
-      kitId: 'sfd3xhj',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-    })();
-
-    // picturefill polyfill
-    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
-  </script>
-
-
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </head>
   <body id="top" class="">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
@@ -144,6 +129,56 @@ Which results in something like this:
     <p><span class="margin-heading">An optional heading</span> The aside or piece of marginalia&hellip;
     </p></div>
 </div>
+
+<h3>Create a New Post</h3>
+
+<p>rake post title=&ldquo;my title&rdquo;
+rake post title=&ldquo;A Title&rdquo; [date=&ldquo;2012-02-09&rdquo;] [tags=[tag1,tag2]] [category=&ldquo;category&rdquo;]</p>
+
+<h3>Insert a standard image</h3>
+
+<p><img src="%7B%7B%20site.url%20%7D%7D/assets/images/fonts/kepler.png" alt="My helpful screenshot"></p>
+
+<h3>Insert a small pull left image</h3>
+
+<p>{% assign photo=&ldquo;winesmarts-box1&rdquo; %}
+{% assign caption=&ldquo;Box with cards&rdquo; %}
+{% include custom/pic_pull %}</p>
+
+<h3>Pull quote</h3>
+
+<p>{% assign quote = &ldquo;To Begin With, We Make A Comparison With Jonas Avimbi&rdquo; %}
+{% include custom/pull_quote %}</p>
+
+<h3>Images</h3>
+
+<p>There are two kinds of images used in this site and they behave slightly differently. </p>
+
+<ul>
+<li>Hero images. The large images at the top of most pages, these tend not to fit within the boundaries of the rest of the site, so special rules apply.</li>
+<li>Regular images. These are all other images, generally those placed within posts. They can be small images that float to the left or right or they can be big images that break the grid.</li>
+</ul>
+
+<p>The images used in this site come in five sizes. Four of those sizes apply to hero images and four to regular images:</p>
+
+<ul>
+<li>large (both): 1020px wide</li>
+<li>mid-large (only hero images): 940px wide </li>
+<li>med (both): 636px wide. Note that this is bigger than necessary for images in the flow of a post, but exactly right for images in the hero position.</li>
+<li>small (both): 400px wide</li>
+<li>tiny (only regular images): 200px wide (this size is only used by placed images that float left or right)</li>
+</ul>
+
+<p><strong>A Note About Hero Images</strong>
+Hero images mostly have an aspect ratio of 2.55 (1020/400)
+* large: 1020px x 400px is standard, although it can go taller if necessary
+* mid-large: 940px wide (2.55 aspect ratio)
+* med: 636px wide (2.55 aspect ratio)
+* small: 400px wide; same ratio not necessary.</p>
+
+<h3>Picturefill Polyfill Settings</h3>
+
+<p>The picturefill markup resides in several files in the includes/custom directory. There is a separate file with slightly distinct markup for each type of image (hero, large, normal, and pull/push). The hero style, for example, uses a large image from 1020px screens and up and a mid-large image from 940px wide and up. The pull/push style uses a tiny image size at small screen sizes. </p>
 
       </div>
     </article>

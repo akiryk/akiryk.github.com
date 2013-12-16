@@ -17,7 +17,7 @@
 
 
 .content-wrapper {
-  max-width: 36em; //720px;
+  max-width: 34em; //680px;
   margin: 0 auto;
   padding: 1.5em;
 }
@@ -34,9 +34,19 @@
   // also portfolio-post-wrapper
 
 
+
+@include media-query(portable) {
+  .content-body {
+    font-size: 1.1em; // 22px
+  }
+}
+
 @include media-query(palm-small) {
   .content-wrapper {
     padding: 1em;
+  }
+  .content-body {
+    font-size: 0.9em;
   }
 }
 
@@ -53,13 +63,6 @@
     }
   }
 
-}
-
-@include media-query(portable) {
-  .content-body {
-    font-size: 1.1em; // 22px
-    line-height: 1.5;
-  }
 }
 
 @include media-query(lap-and-up){

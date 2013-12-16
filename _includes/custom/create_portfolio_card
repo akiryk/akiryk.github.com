@@ -8,7 +8,7 @@
   <div class="portfolio-text">
       <div class="slugger">
         <div class="micro-teaser">{{ post.micro-teaser }}</div>
-        <h2 class="card-title portfolio-card-title">{{ post.title }}</h2>
+        <h2 class="card-title portfolio-card-title webfont">{{ post.title }}</h2>
       </div>
       <p class="portfolio-teaser">{{ post.teaser }}</p>
     </div>

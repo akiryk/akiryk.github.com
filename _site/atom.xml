@@ -4,13 +4,344 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2013-12-03T21:20:04+01:00</updated>
+ <updated>2013-12-16T22:52:09+01:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
    <email>adamkiryk@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Help With Learning Javascript Properly</title>
+   <link href="http://akiryk.github.io/blog/2013/12/16/new-post"/>
+   <updated>2013-12-16T00:00:00+01:00</updated>
+   <id>http://akiryk.github.io/blog/2013/12/16/new-post</id>
+   <content type="html">&lt;p&gt;Ed note: this is an edited version of &lt;a href=&quot;http://javascriptissexy.com/how-to-learn-javascript-properly/&quot;&gt;How To Learn Javascript Properly&lt;/a&gt;. I didn&amp;rsquo;t write it and claim no credit, but I think it&amp;rsquo;s a great resource. I&amp;rsquo;ve recreated it here with a couple of minor changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Instead of listing several alteratives for each reading assignment, I&amp;rsquo;ve just given one. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Instead of packing lots of stuff into two-week segments, I&amp;rsquo;ve packed less stuff into one-week segments. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;ve removed most of the words of encouragement. Sorry. You&amp;rsquo;ll do fine!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Before You Start&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Buy &lt;em&gt;&lt;a href=&quot;http://www.amazon.com/gp/product/1118026691/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1118026691&amp;amp;linkCode=as2&amp;amp;tag=interhaptic-20&quot;&gt;Professional Javascript for Web Developers&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sign up for an account on StackOverflow, a forum for asking programming questions.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sign up for an account on Codecademy, a free tool for learning programming.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sign up for an account on JSFiddle and/or CodePen, free tools for hacking around with front-end development.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you don&amp;rsquo;t already know your way around Chrome&amp;rsquo;s dev tools (you may not know them as well as you think), check out &lt;a href=&quot;http://discover-devtools.codeschool.com/&quot;&gt;this set of tutorials&lt;/a&gt; from codeschool.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Visit the &lt;a href=&quot;http://www.reddit.com/r/learnjavascript/comments/1ceefw/learn_javascript_properly_omnibus_post/&quot;&gt;Learn JS Reddit&lt;/a&gt;; it&amp;rsquo;s a useful complement to the class with suggestions and problems to work on. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you do not already know HTML and CSS very well, complete the &lt;a href=&quot;http://www.codecademy.com/tracks/web&quot;&gt;Web Fundamentals Track&lt;/a&gt; on Codecademy.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Last but not least, read through the &lt;a href=&quot;http://javascriptissexy.com/how-to-learn-javascript-properly/&quot;&gt;original guide here&lt;/a&gt;. Only use this if you decide you like my simplified sequence. Also, the original has good advice about how to use Codecademy (hint: don&amp;rsquo;t use it as a crutch) and how to learn (hint: lots of playing around in your browser&amp;rsquo;s console window).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;My own suggestion:&lt;/strong&gt; Find a good way to memorize at least the basics with a good flash card app. I like &lt;a href=&quot;http://brainscape.com/&quot;&gt;brainscape&lt;/a&gt;, and I&amp;rsquo;ve created a &lt;a href=&quot;https://www.brainscape.com/study?pack_id=1226858&quot;&gt;set of flashcards&lt;/a&gt; that anyone can download.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Week 1&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read the Introduction and Chapters 1 and 2 of &lt;em&gt;Professional JavaScript for Web Developers&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Week 2&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Work through &lt;a href=&quot;http://www.codecademy.com/tracks/javascript&quot;&gt;Introduction to JavaScript&lt;/a&gt;, sections 1 and 2, on Codecademy.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read the Preface and Chapters 3 and 4 of Professional JavaScript for Web Developers. (According to javascript is sexy: &amp;ldquo;you can skip the section on &amp;lsquo;Bitwise Operators&amp;rsquo;; it is hardly likely you will use those in your JavaScript career.&amp;rdquo;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Work through sections 3, 4, and 5 on &lt;a href=&quot;http://www.codecademy.com/tracks/javascript&quot;&gt;Codecademy&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Week 3&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read chapters 5, 6 and 7 of Professional JavaScript for Web Developers. Note: Only read the “Understanding Objects” section in Chapter 6.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Week 4&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Finish the JavaScript track on &lt;a href=&quot;http://www.codecademy.com/tracks/javascript&quot;&gt;Codecademy&lt;/a&gt; (through Objects 1 and Objects 2).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;While you are on Codecademy, go ahead and build the 5 little Basic Projects on the Projects track. After this, you are done with Codecademy. And this is a good thing, because the more you work on your own, the faster you will learn and the better prepared you will be to start programming on your own.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read chapters 8, 9, 10, 11, 13, and 14 of Professional JavaScript for Web Developers. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Learn jQuery using this free course: http://try.jquery.com/. Work through the entire course. &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Mid Terms: Your First Project&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Ed note: this is still all taken straight from &lt;a href=&quot;http://javascriptissexy.com/how-to-learn-javascript-properly&quot;&gt;javascript is sexy&lt;/a&gt;. All I&amp;rsquo;ve done is simplify by making it plain what you should do each week.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Before you build your first project, if you plan to be a JavaScript developer or use JavaScript often, you should take a break now and download a trial copy of &lt;a href=&quot;http://www.jetbrains.com/webstorm/&quot;&gt;WebStorm&lt;/a&gt;. Learn how to get started with WebStorm &lt;a href=&quot;http://2oahu.com/blog/webstorm-javascript/&quot;&gt;here&lt;/a&gt; (written especially for this course).&lt;/p&gt;
+
+&lt;p&gt;Make sure you set WebStorm to use JSHint. JSHint is a “tool to detect errors and potential problems in JavaScript code and to enforce your team’s coding conventions.” The cool thing with using WebStorm is that JSHint automatically adds a red line under errors in your code, just like a spell checker does in a word processing application. So JSHint will show you all the errors in your code (including HTML errors) and make you a better JavaScript programmer, even as you are learning. This is extremely important. You will thank me later after you realize how much WebStorm and JSHint have helped you become a better programmer.&lt;/p&gt;
+
+&lt;p&gt;At this juncture, you have learned enough to build a solid web application that is manageable. Don’t proceed any further until you can successfully build this application I describe below. If you are stuck, ask questions on Stack Overflow and reread sections of the book to properly understand the concepts.&lt;/p&gt;
+
+&lt;p&gt;You are building a JavaScript quiz application (you will use HTML and CSS as well) that will function as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It is a simple quiz that has radio button choices, and it will show the user her score upon completion.&lt;/li&gt;
+&lt;li&gt;The quiz can show any number of questions and any number of choices.&lt;/li&gt;
+&lt;li&gt;Tally the user’s score and display the final score on the last page. The last page will only show the score, so remove the last question.&lt;/li&gt;
+&lt;li&gt;Use an array to store all the questions. Each question, along with its choices and correct answer, should be stored in an object. The array of questions should look similar to this:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Only one question is in this array, but you will add all the questions.&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;allQuestions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;question&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Who is Prime Minister of the United Kingdom?&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;choices&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;David Cameron&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Gordon Brown&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Winston Churchill&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Tony Blair&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;correctAnswer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dynamically (with document.getElementById or jQuery) add the next question and remove the current question from the screen, when the user clicks the “Next” button. The Next button will be the only button to navigate this version of the quiz.&lt;/li&gt;
+&lt;li&gt;You can ask for help in the comments below or preferably on Stack Overflow. You are likely to get a prompt and accurate answer on Stack Overflow.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Week 5&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read chapters 20 and 23 of Professional JavaScript for Web Developers.&lt;/li&gt;
+&lt;li&gt;At this point, you should be very comfortable with JavaScript, probably feeling like a Jedi. You are not quite a Jedi yet, you must keep using your newly acquired knowledge and skills as often as possible to keep learning and improving.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Week 6&lt;/h4&gt;
+
+&lt;p&gt;Improve Your Quiz Application From Earlier:
+* Add client-side data validation: make sure the user answers each question before proceeding to the next question.
+* Add a “Back” button to allow the user to go back and change her answer. The user can go back up to the first question. For the questions that the user has answered already, be sure to show the radio button selected, so that the user is not forced to answer the questions again, which she has completed.
+* Use jQuery to add animation (fade out the current question and fade in the next question).
+* Test the quiz on IE 8 and 9, and fix any bugs. This will give you a good workout ;)
+* Store the quiz questions in an external JSON file.
+* Add user authentication: allow users log in, and save their login credentials to local storage (HTML5 browser storage).
+* Use cookies to remember the user, and show a “Welcome, First Name” message when the user returns to the quiz.&lt;/p&gt;
+
+&lt;h4&gt;Week 7&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read chapter 6 (only the “Object Creation” and “Inheritance” sections this time).&lt;/li&gt;
+&lt;li&gt;Read chapters 16, 22, and 24. NOTE: The reading in this section of the book is the most technical reading you will encounter in this entire roadmap. It is up to you if you want to read all of it. You should at least learn the Prototype Pattern, Factory Pattern, and Prototypal Inheritance. You don’t have to know all the other patterns.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Week 8&lt;/h4&gt;
+
+&lt;p&gt;Improve Your Quiz Application Even Further:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Use Twitter Bootstrap for the entire page layout, including the quiz elements to make it look more professional. As an added bonus, use the tabs user interface component from Twitter Bootstrap and show 4 different quizzes, one on each tab.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/&quot;&gt;Learn Handlebars.js&lt;/a&gt; and add Handlebars.js templating to the quiz. You should no longer have any HTML in your JavaScript code. Your quiz is getting more advanced bit by bit.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Keep a record of all the users who take the quiz and show each user how her score ranks amongst the scores from other quiz takers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Final Exam: A Personal Project&lt;/h4&gt;
+
+&lt;p&gt;Decide on a personal project to build, and start building your project promptly (while everything is fresh in your mind). Use the book, &lt;em&gt;Professional JavaScript for Web Developers,&lt;/em&gt; as a reference when you are stuck. And of course be an active member of Stack Overflow: ask questions and answer other programmers’ questions.&lt;/p&gt;
+
+&lt;h4&gt;Continue Improving&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learn &lt;a href=&quot;http://javascriptissexy.com/learn-backbone-js-completely/&quot;&gt;Backbone.js Completely&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Learn &lt;a href=&quot;http://javascriptissexy.com/learn-intermediate-and-advanced-javascript/&quot;&gt;Intermediate and Advanced JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Learn &lt;a href=&quot;http://javascriptissexy.com/learn-node-js-completely-and-with-confidence/&quot;&gt;Node.js Completely and With Confidence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Read the forthcoming post on javascript is sexy on Getting Started with Meteor.js&lt;/li&gt;
+&lt;li&gt;Read my forthcoming posts on javascript is sexy on the Three Best Front-end JavaScript Frameworks&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How I'm Handling Responsive Images With Jekyll</title>
+   <link href="http://akiryk.github.io/blog/2013/12/05/responsive-images-baby-steps"/>
+   <updated>2013-12-05T00:00:00+01:00</updated>
+   <id>http://akiryk.github.io/blog/2013/12/05/responsive-images-baby-steps</id>
+   <content type="html">&lt;p&gt;The state of the state regarding responsive image solutions seems to be, at the moment of this writing, that a number of options exist but none are perfect. I could say more about those options, but Chris Coyier already did such a good job in bringing together pluses and minuses in &lt;a href=&quot;https://docs.google.com/spreadsheet/ccc?key=0Al0lI17fOl9DdDgxTFVoRzFpV3VCdHk2NTBmdVI2OXc#gid=0&quot;&gt;this spreadsheet&lt;/a&gt;. And he&amp;rsquo;s got an article that talks &lt;a href=&quot;http://css-tricks.com/which-responsive-images-solution-should-you-use/&quot;&gt;in greater detail&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;Anyway, after considering some of these options, I decided to use the picturefill polyfill method. It works better for me than many of the alternatives do because a) I don&amp;rsquo;t have a server since I&amp;rsquo;m using Jekyll; b) I don&amp;rsquo;t want to use a 3rd party since I want to control and understand what I&amp;rsquo;m doing; and c) it gives me a lot of flexibility for art direction. &lt;/p&gt;
+
+&lt;p&gt;Using picturefill is easy. I just pasted a bit of minified javascript in the head of my Jekyll default template, no jQuery required, and whenever I need an image I just insert the following snippet of html. The picturefill.js script identifies the screen size and inserts the appropriate image file between the &lt;span&gt; elements.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;my-picturefill-image&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-picture&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;The image title&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/image-small.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/image-medium.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;(min-width: 38em)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/image-large.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;(min-width: 50em)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/image-small.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/noscript&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;caption&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;The caption for this image&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class=&quot;marginator&quot;&gt;
+   &lt;p&gt;
+    Hello! That&amp;rsquo;s kind of a lot of stuff for one image! But that&amp;rsquo;s fine. I can live with that for a while, since it works so well and helps me achieve what I want — I mean, look at all the flexibility inherent in that markup. As long as I&amp;rsquo;m willing to prepare all the different images required for it to work, it will be fine.
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;And That&amp;rsquo;s Not All:&lt;/span&gt; It gets even more complicated if you want to include images for hi-res devices.
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Obviously, there are some problems with this. A big one for me is that I&amp;rsquo;ll end up copying and pasting the same chunk of markup over and over again. Plenty of opportunities to make a mistake, leave something out, insert an errant character, whatever. &lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s probably a Jekyll plugin out there that would solve my problem. Actually, &lt;a href=&quot;https://github.com/robwierzbowski/jekyll-picture-tag&quot;&gt;there is one&lt;/a&gt;, but using it will take me some time. I need to make sure it does what I want it to do, gives me the flexibility I need, doesn&amp;rsquo;t break other things, whatever. &lt;/p&gt;
+
+&lt;h3&gt;Baby Step Solution&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s my short term solution that probably won&amp;rsquo;t suit me for long but works for now. Jekyll allows you to separate out pieces of a site (partials) that get used in several places. For example, you can make a bit of markup for a sidebar, call it &amp;lsquo;sidebar&amp;rsquo; and then include it in other templates by saying:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sidebar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I can use that same model for the picturefill markup. Rather than pasting the it over and over again, I can put it in a partial.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;picturefill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now I just needed a way to tell the partial what image to use — because otherwise the picturefill partial will only ever display the same image which has been hard-coded into the markup. Enter the &amp;lsquo;assign&amp;rsquo; tag. Jekyll uses something called liquid to handle variables and simple logic when generating markup. It can handle if/else statements, loops, and variables, among other things (not [a lot of other things](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers), actually).&lt;/p&gt;
+&lt;p&gt;The liquid tag I care about here lets you assign a value to a variable which can be used elsewhere. Thus, when I insert the picturefill partial, I just need to add a second line like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;fancy&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myImage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;flower-image&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partials&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;picturefill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I can now make the picturefill markup dynamic by replacing every instance of &amp;lsquo;image&amp;rsquo; with the liquid output markup . This allows the picturefill partial to work for all of my posts, even for multiple pictures in the same post. Actually, it&amp;rsquo;s a mite more complicated than that because I&amp;rsquo;ve got a caption as well — but that can be handled with one additional variable. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;fancy&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myImage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;flower-image&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myCaption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;A picture of flowers&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partials&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;picturefill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The picturefill markup works with the myImage and myCaption variables like this: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;my-picturefill-image&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-picture&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/-small.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/-medium.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;(min-width: 38em)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/-large.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;(min-width: 50em)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;noscript&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/images/-small.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/noscript&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;caption&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I&amp;rsquo;ll try it here with an image of some flowers I took last spring:&lt;/p&gt;
+
+
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;A picture of flowers&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/random/flowers-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/random/flowers-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/random/flowers-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;A picture of flowers&lt;/div&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>After Looking At Twenty Different Typefaces, I Chose...</title>
+   <link href="http://akiryk.github.io/blog/2013/12/04/using-georgia"/>
+   <updated>2013-12-04T00:00:00+01:00</updated>
+   <id>http://akiryk.github.io/blog/2013/12/04/using-georgia</id>
+   <content type="html">&lt;p&gt;In designing this site, I wanted to focus on creating a good reading experience, so I spent a bunch of time considering how best to handle body copy. I have a Typekit subscription, Google Fonts are free, and Typecast makes it super easy to try different options. So why would I stick with Georgia?&lt;/p&gt;
+
+&lt;div class=&quot;pullquote pull-left&quot;&gt;
+  
+&lt;div class=&quot;gamma&quot;&gt;Georgia. It&amp;rsquo;s a pleasure to read. It doesn&amp;rsquo;t draw attention to itself. And it&amp;rsquo;s already on your computer. &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;First of all, it&amp;rsquo;s interesting to note that &lt;a href=&quot;http://www.bbc.co.uk/news/world-11573666&quot;&gt;studies show people learn and remember better&lt;/a&gt; when material is presented in a difficult-to-read manner. If text is set in a hand-writing font or if it&amp;rsquo;s small or very faint, readers experience &amp;ldquo;disfluency&amp;rdquo; (cool word). It seems that when readers experience disfluency, they lose a bit of confidence — and lack of confidence causes people to slow down and pay closer attention. Paying closer attention results in better recall.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s cool, but it doesn&amp;rsquo;t apply here. Obviously — since you&amp;rsquo;re here voluntarily, and probably won’t read for very long under the best of circumstances. (I’m just saying, based on what analytics usually shows about bounce-rate and so on). So I’d like to do the opposite of encouraging disfluency, and I think I’ll do it by making text clean, clear, and readable. Georgia does these things well.&lt;/p&gt;
+
+&lt;p&gt;Georgia does some other things well, too. Like live on your computer. Web site performance isn’t typically thought of as a readability issue, per se, but the two things are closely linked. If you have to wait a couple of extra seconds to load a page, readability is compromised — because there’s nothing to read. One easy way to make pages load faster is for them to load less stuff, and unfortunately, web fonts count as &lt;em&gt;more&lt;/em&gt; stuff. So with that in mind, I’m being cautious about loading anything that isn’t absolutely essential. Of course, I &lt;em&gt;will&lt;/em&gt; load things that aren’t absolutely essential — I’ll just do it judiciously.&lt;/p&gt;
+
+&lt;p&gt;But Georgia’s so … commonplace. Can it be beautiful? &lt;/p&gt;
+
+&lt;p&gt;Yes, it can. For one thing, choosing an appropriate font is only part of good typography. It’s how one uses the font that enables content to really shine. For body copy on the web, this means finding the best balance of line length, leading, and font-size — and adjusting those things as necessary for different screen sizes.  It’s true that a badly designed font is going to look bad even when set really nicely. But a merely competent font could be made to look pretty good. And Georgia isn’t merely competent. &lt;/p&gt;
+
+&lt;p&gt;You probably already know this, but Georgia was designed by Matthew Carter (&lt;a href=&quot;http://designmuseum.org/design/matthew-carter&quot;&gt;not just any old type designer&lt;/a&gt;) for the specific purpose of looking good on screen. He based it on a family of fonts that had been created in the early 19th century but modified the original structure in order to make his font nice for low-resolution devices. He simplified certain details that would get lost or muddied; he increased the x-height; he lightened the uppercase letters. In short, he worked hard to make a great font for pixel displays, and that partly explains why it’s become so ubiquitous.&lt;/p&gt;
+
+&lt;p&gt;Hmmm, ubiquitous doesn’t sound so cool. Things that are ubiquitous are easy to ignore; they have less punch; they have less meaning. True, but I’m also swayed by the notion of the crystal goblet. The idea, from the classic typography essay, &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Crystal_Goblet&quot;&gt;Printing Should Be Invisible&lt;/a&gt;, is that a well-crafted wineglass reveals its contents plainly, without drawing attention to itself. Well-crafted body text should do the same. In this sense, I think Georgia’s ubiquity could be an asset — you don’t pay it much attention; you just get down to reading. &lt;/p&gt;
+
+&lt;p&gt;So why would I ever use a web font? &lt;/p&gt;
+
+&lt;p&gt;One obvious reason is if I needed access to certain characters — something like small-caps or a particular weight or characters from another language. But that&amp;rsquo;s a special case that doesn&amp;rsquo;t apply to me right now.&lt;/p&gt;
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    Aside from that, I&amp;rsquo;d use a web font in order to communicate a mood or feeling or character. For example, if I wanted to communicate a sense of literary seriousness, I&amp;rsquo;d explore using something like Hoeffler. If I wanted to communicate a more solid, corporate tone, I might work with Neue Haas Grotesque. In my case, I&amp;rsquo;d like the text to feel friendly, unpretentious, straightforward, approachable — all perfectly compatible with Georgia.
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Authoritative Fonts&lt;/span&gt; Baskerville has a small but statistically significant edge over other fonts in terms of trust-worthiness, according to this &lt;a href=&quot;http://opinionator.blogs.nytimes.com/2012/08/08/hear-all-ye-people-hearken-o-earth/&quot;&gt;clever study at the nytimes&lt;/a&gt;.
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So there you have it. Georgia has a friendly character, displays well on screen, comes fast and for free, and suits my purposes well. I&amp;rsquo;ll take it. &lt;/p&gt;
+
+&lt;p&gt;As an addendum, here are screenshots from &lt;a href=&quot;http://www.typecast.com&quot;&gt;typecast&lt;/a&gt; of a few of the fonts I considered using instead of Georgia. &lt;/p&gt;
+
+&lt;h3&gt;Chaparral&lt;/h3&gt;
+
+&lt;p&gt;Chaparral feels distinct, but not overly so. It has a friendly, approachable feel, and looks like something I’d be happy to read when set at something like 22/34, as in the image below. &lt;/p&gt;
+
+&lt;div class=&quot;pic-original&quot;&gt;
+  &lt;img class=&quot;natural-size&quot; src=&quot;/assets/images/fonts/chaparral.png&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Tisa 20, 32&lt;/h3&gt;
+
+&lt;p&gt;Tisa also has a distinct look, which I like a lot. Medium uses it, and has written a &lt;a href=&quot;http://www.forbes.com/sites/quora/2013/07/05/why-did-medium-choose-ff-tisa-web-pro-as-the-font-for-posts/&quot;&gt;good piece&lt;/a&gt; of why they chose it.&lt;/p&gt;
+
+&lt;div class=&quot;pic-original&quot;&gt;
+  &lt;img class=&quot;natural-size&quot; src=&quot;/assets/images/fonts/tisa-20-32.png&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Merriweather&lt;/h3&gt;
+
+&lt;p&gt;This is a free font from Google that I like because it feels just a bit elegant and serious, but perfectly accessible and easy-to-read.&lt;/p&gt;
+
+&lt;div class=&quot;pic-original&quot;&gt;
+  &lt;img class=&quot;natural-size&quot; src=&quot;/assets/images/fonts/merriweather.png&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;A Few Others That I Like:&lt;/h3&gt;
+
+&lt;h3&gt;Kepler, 22/32&lt;/h3&gt;
+
+&lt;div class=&quot;pic-original&quot;&gt;
+  &lt;img class=&quot;natural-size&quot; src=&quot;/assets/images/fonts/kepler.png&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Nimrod, 18/30&lt;/h3&gt;
+
+&lt;div class=&quot;pic-original&quot;&gt;
+  &lt;img class=&quot;natural-size&quot; src=&quot;/assets/images/fonts/nimrod.png&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Skolar 20, 32&lt;/h3&gt;
+
+&lt;div class=&quot;pic-original&quot;&gt;
+  &lt;img class=&quot;natural-size&quot; src=&quot;/assets/images/fonts/skolar.png&quot;&gt;
+  &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Responsive Videos in Jekyll</title>
@@ -67,83 +398,169 @@
 &lt;p&gt;Here are the plugins live in action showing a couple videos I&amp;rsquo;ve seen recently on &lt;a href=&quot;http://www.kottke.org&quot;&gt;kottke&lt;/a&gt;. Here are the two liquid tags I used:&lt;br&gt;&lt;br&gt;
  {% vimeo 80310253 500 281 %} &lt;br&gt;&lt;br&gt;and&lt;br&gt;&lt;br&gt;
  {% youtube uEdRLlqdgA4 640 480 %} 
-&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:56.20%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/80310253?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:56.20%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/80310253?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;http://www.youtube.com/embed/uEdRLlqdgA4?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
-   <title>Readable Body Text</title>
-   <link href="http://akiryk.github.io/blog/2013/11/12/readable-body-text"/>
-   <updated>2013-11-12T00:00:00+01:00</updated>
-   <id>http://akiryk.github.io/blog/2013/11/12/readable-body-text</id>
-   <content type="html">&lt;p class=&quot;intro&quot;&gt;The idea is that I have some tips and tricks to talk about that might help other dev/designers make their own sites. A few of the things I&amp;rsquo;ve discovered and should write about are:&lt;/p&gt;
+   <title>NPR Stations on Facebook</title>
+   <link href="http://akiryk.github.io/portfolio/2013/02/09/facebook-project"/>
+   <updated>2013-02-09T00:00:00+01:00</updated>
+   <id>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</id>
+   <content type="html">&lt;p class=&quot;intro&quot;&gt;
+  In 2012, I helped launch an experiment to leverage NPR&amp;rsquo;s Facebook presence to grow the audience for member stations. NPR has more than three million Facebook followers, but most member stations have far less. By posting member station stories onto NPR&amp;rsquo;s Facebook page, we had an opportunity to expose their content to a much wider group of people. It’s been a &lt;a href=&quot;http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&amp;hq_m=2040998&amp;hq_l=1&amp;hq_v=437cc910b2&quot;&gt;big success.&lt;/a&gt; 
+&lt;/p&gt;
 
-&lt;p&gt;Using jekyll bootstrap as a basis. Creating a new theme. Sorting posts from portfolio categories: no pagination, but workarounds. Option 1. Just live with it. Option 2. Create a separate page. Handling Navigation: making custom nav list Handling plugins&lt;/p&gt;
+&lt;div class=&quot;pullquote pull-right&quot;&gt;
+  
+&lt;div class=&quot;gamma&quot;&gt;NPR depends on member stations to build their own audiences since those audiences give money that ultimately pays for NPR services.&lt;/div&gt;
 
-&lt;p&gt;&lt;span data-picture data-alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
-  &lt;span data-src=&quot;/assets/images/random/small.jpg&quot;&gt;&lt;/span&gt;
-  &lt;span data-src=&quot;/assets/images/random/extralarge.jpg&quot; data-media=&quot;(min-width: 1000px)&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+&lt;p&gt;In case you aren&amp;rsquo;t a National Public Radio insider, you may not realize exactly how the organization works. It&amp;rsquo;s non-profit and gets some support from the federal government. But it only gets a fraction of its budget that way (like, around 10%). The rest comes from underwriting, grants, an endowment, and payments from member stations. That last one is pretty important. Member stations pay a fee for NPR programming (and for a bunch of other stuff, too). NPR depends on that money, so it depends on each member station to build a loyal audience who will give to that station, which will in turn be able to pay NPR. NPR can&amp;rsquo;t solicit member donations on its own — that&amp;rsquo;s just part of its charter.&lt;/p&gt;
 
-&lt;noscript&gt;
-  &lt;img src=&quot;external/imgs/small.jpg&quot; alt=&quot;A giant stone face at The Bayon temple in Angkor Thom, Cambodia&quot;&gt;
-&lt;/noscript&gt;
+&lt;p&gt;We believed we could drive new potential fans to member stations&amp;#39; web sites if we posted their content to NPR&amp;rsquo;s Facebook page, but we wanted to do it smartly, without weakening NPR&amp;rsquo;s brand in any way. In brand terms, NPR has a particular &amp;ldquo;voice&amp;rdquo; that it maintains on Facebook, and watering it down with too many other brand &amp;ldquo;voices&amp;rdquo; wouldn&amp;rsquo;t be cool. &lt;/p&gt;
 
-&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Example of a member station story that's been shared on NPR's Facebook page.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/amplify/example-share-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/amplify/example-share-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/amplify/example-share-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Example of a member station story that&amp;rsquo;s been shared on NPR&amp;rsquo;s Facebook page.&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Here&amp;rsquo;s a pretty darn common scenario: web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It&amp;rsquo;s free, fast, and easy to use — plus, hosting is free if you use github pages.&lt;/p&gt;
+&lt;p&gt;Solution: we selected a small number of stations and asked them to propose stories, maybe one a day, that would go on NPR&amp;rsquo;s Facebook page. If a story passed muster — if it had qualities that NPR editors believed would drive interest, if it was written in the NPR tone — we&amp;rsquo;d post it and geotarget it to the member station&amp;rsquo;s area. For example, a story posted by KPLU in Seattle would be geotargetted to the Seattle region; a story from WBUR in Boston would be targetted to Boston. It was a very successful experiment.&lt;/p&gt;
 
-&lt;p&gt;Using jekyll bootstrap. Copy the themes and make your own.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;During the first four months of the experiment, we posted about 50 geofocused KPLU links — a fraction of all KPLU content — on NPR’s Facebook page. These posts accounted for 12 percent of KPLU.org’s sitewide visits during this four-month period. The test helped KPLU achieve three milestones: record traffic for a single day (January 19), second-highest traffic for a single month (October 2011) and the highest traffic for a single month (January). — From the &lt;a href=&quot;http://digitalservices.npr.org/post/how-%3Ewere-experimenting-member-station-content-nprs-facebook-page&quot;&gt;NPR DS blog&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Dealing with pagination. Pagination only works on posts, not on categories of posts. I handled this by displaying all posts, including portfolio pieces, in my blog. Portfolio pieces are displayed on a portfolio page that doesn&amp;rsquo;t use pagination. It simply looks for all portfolio items with a YAML front matter label of &amp;ldquo;hightlight: true.&amp;rdquo; It displays only these items. Then I put the full bunch on a different page without pagination. &lt;/p&gt;
+&lt;h3&gt;An Online Tool To Help With The Process&lt;/h3&gt;
 
-&lt;p&gt;Handling plugins. &lt;/p&gt;
+&lt;p&gt;This was great, but it was somewhat of a hassle to manage day-to-day. Two editors at NPR were spending almost all of their time reading and editing station submissions; going back and forth with station editors about changes; and copying and pasting the actual content into Facebook. Silly. More painful yet, they had to manually enter the geotargeting data for every station every time, carefully identifying the precise town and city names where the post should be seen. &lt;/p&gt;
+
+&lt;p&gt;To improve this situation, we assembled a small team — two backend developers, an editor, and me (UX, design, and front-end) — to build a tool that would make it easier. We created an alpha version of something we&amp;rsquo;re calling Amplify. It&amp;rsquo;s got a minimal but clean design that enables stations to pitch ideas by simply pasting a link to their story.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s how it works. Let&amp;rsquo;s say a writer in Seattle wants to drive readers to a story they&amp;rsquo;ve just published about a bicycle condom-delivery service (true story). They go to our site, paste the link into a simple form field, and immediately see a how the text will appear on Facebook, more or less (i). Since this format is distinct from the news posts they ordinarily write for their own web site, they may want to edit it — and they can do so inline. When they&amp;rsquo;re happy with the result, they submit the pitch (we called it a pitch because that&amp;rsquo;s really what it is: a proposal to get something published by NPR). &lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Pitch review and submit screen for alpha version.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/amplify/amplify1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/amplify/amplify1-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/amplify/amplify1-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/amplify/amplify1-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Pitch review and submit screen for alpha version.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As soon as the pitch is submitted, the app notifies editors from NPR and other participating member stations, who can see it and add comments or ask questions. Assuming the pitch is good enough, or is modified to become good enough, an NPR editor simply clicks &amp;ldquo;publish.&amp;rdquo; Rather than having to carefully enter a bunch of geotargetting data every time, they only have to do it once — our tool takes care of it from there. &lt;/p&gt;
+
+&lt;p&gt;Naturally, this has been very popular with member stations. We immediately jumped from having 5 or 6 participants to 40, and 30 more wanted to join. Why so much interest? Stations love having their stories get the massive reach that NPR can provide, so they&amp;rsquo;re eager to get stories accepted. And they want to know what other stations are submitting so they can learn from those stations&amp;#39; successes. We even implemented a small bit of competition by tracking the most viral stories (according to Facebook&amp;rsquo;s algorithm for determining virality). Stations can now see how their stories fare compared to other stations. Actually, this list of top stories has other benefits: if we make it public, it&amp;rsquo;s like a daily rundown of top stories from the NPR universe. &lt;/p&gt;
+
+&lt;p&gt;Check out the videos below that give a better sense of the experience. The first video shows a station editor&amp;rsquo;s view as they look at comments and submit a new pitch. The second shows what NPR editors see — it’s mostly the same as station journalists, but they can choose whether to accept or reject a given pitch.&lt;/p&gt;
+
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:62.60%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;313&quot; src=&quot;http://player.vimeo.com/video/61651127?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:62.60%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;313&quot; src=&quot;http://player.vimeo.com/video/61651125?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p class=&quot;notes&quot;&gt;
+  &lt;span class=&quot;counter&quot;&gt;i&lt;/span&gt; I didn&amp;rsquo;t make the story display exactly as it would look on Facebook for a couple of reasons. First, I knew we probably wouldn&amp;rsquo;t have the resources to maintain this product as much as we&amp;rsquo;d like, and that it would therefore be hard to keep up with changes Facebook would inevitably make to its own design. We could reflect a true facsimile of how a story would appear &lt;em&gt;now&lt;/em&gt;&amp;hellip; but in six months? Second, I knew that a long-term goal of the web app was to potentially expand beyond Facebook — for example, to managing submissions to NPR&amp;rsquo;s twitter feed or to an as-yet-uncreated NPR service for sharing content among stations. Tying our visual approach to Facebook seemed shortsited.
+&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
-   <title>SmartsCo Brand/Package Design</title>
+   <title>Smarts Company Brand/Package Design</title>
    <link href="http://akiryk.github.io/portfolio/2004/10/10/winesmarts"/>
    <updated>2004-10-10T00:00:00+02:00</updated>
    <id>http://akiryk.github.io/portfolio/2004/10/10/winesmarts</id>
-   <content type="html">&lt;p class=&quot;intro&quot;&gt;I was lead illustrator and designer on this project, which involved creating branding for a new company and designing the packaging for it&amp;rsquo;s first product, a trivia-style card game for wine lovers.&lt;/p&gt;
+   <content type="html">&lt;p class=&quot;intro&quot;&gt;I was lead illustrator and designer on this project way back in 2002. It involved creating branding for a new company and designing the packaging for it&amp;rsquo;s first product, a trivia-style card game for wine lovers.&lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;div class=&quot;marginator&quot;&gt;
   &lt;p&gt;
-    This was a complicated project, because it involved creating the visual language for both a brand and a product, neither of which existed at the time. The brand, SmartsCo., was a startup game company whose founders hoped it would profit by creating fun and attractive trivia games about subjects like wine, chocolate, food, and sex. 
+    For this project to succeed, I needed to create a visual language that could work for both the Smarts Company brand and the WineSmarts product — neither of which existed at the time. Further, the design had to have enough flexibility that it could be extended to a line of future products: trivia games about subjects like chocolate, food, and golf that the company&amp;rsquo;s founders intended to create before long. 
   &lt;/p&gt;
   &lt;div class=&quot;marginalia&quot;&gt;
     &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Success!&lt;/span&gt; It looks like my original clients went on to sell the product, and somebody has been &lt;a href=&quot;http://www.barnesandnoble.com/s/?pn=SmartsCo&quot;&gt;going crazy making spinoffs&lt;/a&gt; of my original design 
     &lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;p&gt;To begin, I designed a logo — the Smarts Company logo — that expressed a combination of playfulness, education, and fun. (That was my goal, anyway. Logo design isn&amp;rsquo;t my strength or my passion, but in this case, I think I succeeded in subtly referencing things like a cheer-leader&amp;rsquo;s bullhorn, or a cartoon&amp;rsquo;s shouted speech bubble, or a team flag, or even — very subtly — the swoosh of a checkmark, any or all of which supported the brand&amp;rsquo;s message of fun, learning, good cheer). Oh, and it would also lock-up well with other titles such as Chocolate Smarts or Food Smarts or Sex Smarts.&lt;/p&gt;
+
 &lt;div class=&quot;pic-normal&quot;&gt;
-  &lt;span data-picture data-alt=&quot;Box with cards&quot;&gt;
-  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;&lt;/span&gt;
-  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box1-large.jpg&quot; data-media=&quot;(min-width: 880px)&quot;&gt;&lt;/span&gt;
+  &lt;span data-picture data-alt=&quot;Smarts Company logo designed to lock-up with various titles&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/smarts-close1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/smarts-close1-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
   &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
   &lt;noscript&gt;
-    &lt;img src=&quot;/assets/images/winesmarts/winesmarts-box1-small.jpg&quot;&gt;
+    &lt;img src=&quot;/assets/images/winesmarts/smarts-close1-small.jpg&quot;&gt;
   &lt;/noscript&gt;
   &lt;/span&gt;
-&lt;div class=&quot;caption&quot;&gt;Box with cards&lt;/div&gt;
+&lt;div class=&quot;caption&quot;&gt;Smarts Company logo designed to lock-up with various titles&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;To begin, they only had a small budget and a set of a few hundred (hopefully entertaining) questions about wine, vetted and approved by wine experts. Where to start? Designing the trivia cards would have probably made a lot of sense, since that was the meat of the whole thing. But we didn&amp;rsquo;t start with the cards because the business needed to find shop owners who would be willing to stock the product — and on first glance, the product &lt;em&gt;was&lt;/em&gt; the package. So we started by designing the package. &lt;/p&gt;
+&lt;p&gt;Once we settled on a logo, I started work on the packaging. Why not begin with the cards, since they were the foundation of the enterprise? Business reasons. The clients needed to sell the idea to retailers before they actually had the finished product in-hand, and for that they needed a compelling package design.&lt;/p&gt;
 
-&lt;p&gt;It quickly became apparent that the packaging needed to communicate the SmartsCo identity almost as much as the nature of its contents because our clients wanted to grow the brand quickly into other areas of educational trivia. We needed the packaging to say clearly, &amp;ldquo;I&amp;rsquo;m a wine trivia game&amp;rdquo; but also &amp;ldquo;I&amp;rsquo;m part of a family of related products.&amp;rdquo; &lt;/p&gt;
+&lt;p&gt;I created illustrations and a visual language that was modular, in the sense that the pieces could be fit together in different ways to suit different product categories. Per the creative brief, the design was intended to look informal, contemporary, and inviting, playful without being a kid&amp;rsquo;s toy and modern without being cold. &lt;/p&gt;
 
-&lt;blockquote class=&quot;plainquote&quot;&gt;
-  
-&lt;div class=&quot;gamma&quot;&gt;Like, the SexSmarts® box needs to say &lt;em&gt;I&amp;rsquo;m about sex!&lt;/em&gt; and — at the same time — I&amp;rsquo;m related to DogSmarts®&lt;/div&gt;
+&lt;p&gt;Was it successful? To a large degree. The product wasn&amp;rsquo;t a blockbuster, but the founders were written up in various business magazines because of it; they got it carried by desirable retailers (like the Museum of Modern Art gift store); and it stuck around for several years and several editions. And, hey, I was happy with the results. I think WineSmarts is still available — search for it on Amazon or Google. &lt;/p&gt;
 
-&lt;/blockquote&gt;
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Smarts Company logo designed to lock-up with various titles&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box3-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box3-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/winesmarts/winesmarts-box3-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Smarts Company logo designed to lock-up with various titles&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Anyway, all this simply means that the project went in several directions at once. What should the logo communicate? What mood should the package convey? What would be the right balance of playful versus educational? What set of visual elements would have the flexibility to support a wide range of possible subjects (like sex, golf, or music) and still feel related?&lt;/p&gt;
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Box showing the booklet of instructions&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box2-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-box2-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/winesmarts/winesmarts-box2-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Box showing the booklet of instructions&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;I developed a simple logo that expressed a playful energy and a style of illustration that lent itself to different configurations. For wine, I used a bottle, grapes, and a glass — for future products, we could easily change the palette and replace the imagery. &lt;/p&gt;
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;A sampling of the trivia cards&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-cards1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/winesmarts/winesmarts-cards1-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/winesmarts/winesmarts-cards1-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;A sampling of the trivia cards&lt;/div&gt;
+&lt;/div&gt;
 </content>
  </entry>
  

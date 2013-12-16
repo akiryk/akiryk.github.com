@@ -1,0 +1,8 @@
+{% comment %}<!--
+  This is for images that shouldn't be resized — for example, screen grabs of fonts at a particular size.
+  Note that the filetype needs to be included with the photo name (don't pass "myPhoto" pass "myPhoto.png").
+-->{% endcomment %}
+<div class="pic-original">
+  <img class="natural-size" src="/assets/images/{{ page.assets }}/{{ photo }}">
+  <div class="caption">{{ caption }}</div>
+</div>

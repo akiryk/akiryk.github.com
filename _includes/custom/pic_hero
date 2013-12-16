@@ -12,12 +12,13 @@
     {% assign pic-name = page.hero %}
     {% assign caption = page.hero-caption %}
     <div class="pic-hero">
-      <span data-picture data-alt="{{ page.hero-caption }}">
-        <span data-src="/assets/images/heros/{{ pic-name }}-mini.jpg" ></span>
-        <span data-src="/assets/images/heros/{{ pic-name }}-med.jpg" data-media="(min-width:420px)"></span>
-        <span data-src="/assets/images/heros/{{ pic-name }}-large.jpg" data-media="(min-width: 760px)"></span>
+      <span data-picture data-alt="{{ page.hero-caption }}" class="{{ page.permalink }}">
+        <span data-src="/assets/images/{{page.assets}}/{{ pic-name }}-small.jpg" ></span>
+        <span data-src="/assets/images/{{page.assets}}/{{ pic-name }}-med.jpg" data-media="(min-width:{{site.AK.pic_med_size}})"></span>
+        <span data-src="/assets/images/{{page.assets}}/{{ pic-name }}-mid-large.jpg" data-media="(min-width:{{site.AK.pic_hero_mid_large}})"></span>
+        <span data-src="/assets/images/{{page.assets}}/{{ pic-name }}-large.jpg" data-media="(min-width: {{site.AK.pic_hero_large}})"></span>
         <noscript>
-          <img src="/assets/images/heros/{{ pic-name }}-med.jpg">
+          <img src="/assets/images/{{page.assets}}/{{ pic-name }}-med.jpg">
         </noscript>
       </span>
       {% if caption %}
