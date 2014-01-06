@@ -19,8 +19,9 @@ h1.agg-title {
 
 .wf-loading {
   h1, h2, h3, h4, h5, h6 {
-    background: url(../images/loading.gif) no-repeat;
-    text-indent: -9999px;
+    // background: url(../images/loading.gif) no-repeat;
+    // text-indent: -9999px;
+    visibility: hidden;
   }
 }
 
@@ -37,11 +38,11 @@ h1.agg-title {
   }
 }
 
-.wf-inactive {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $sans-stack;
-    visibility: visible;
-    background: none;
-    text-indent: 0;
-  }
-}
+// .wf-inactive {
+//   h1, h2, h3, h4, h5, h6 {
+//     font-family: $sans-stack;
+//     visibility: visible;
+//     background: none;
+//     text-indent: 0;
+//   }
+// }

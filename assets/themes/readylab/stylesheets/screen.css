@@ -658,69 +658,74 @@ p {
   background-color: #fff;
 }
 
+/* line 35, ../sass/_layout.scss */
+.content-body h2, .content-body h3, .content-body h2.card-title, .content-body h4, .content-body h5, .content-body h6 {
+  clear: both;
+}
+
 @media only screen and (max-width: 63.74em) {
-  /* line 39, ../sass/_layout.scss */
+  /* line 41, ../sass/_layout.scss */
   .content-body {
     font-size: 1.1em;
   }
 }
 @media only screen and (max-width: 25.99em) {
-  /* line 45, ../sass/_layout.scss */
+  /* line 47, ../sass/_layout.scss */
   .content-wrapper {
     padding: 1em;
   }
 
-  /* line 48, ../sass/_layout.scss */
+  /* line 50, ../sass/_layout.scss */
   .content-body {
     font-size: 0.9em;
   }
 }
 @media only screen and (min-width: 26em) and (max-width: 45.5525em) {
-  /* line 55, ../sass/_layout.scss */
+  /* line 57, ../sass/_layout.scss */
   .content-wrapper {
     margin-left: 1em;
     margin-right: 1em;
   }
 
-  /* line 61, ../sass/_layout.scss */
+  /* line 63, ../sass/_layout.scss */
   .yes-hero .content-wrapper {
     margin-top: -3.5em;
   }
 }
 @media only screen and (min-width: 45.5625em) {
-  /* line 69, ../sass/_layout.scss */
+  /* line 71, ../sass/_layout.scss */
   .content-wrapper {
     padding: 2em;
   }
 
-  /* line 73, ../sass/_layout.scss */
+  /* line 75, ../sass/_layout.scss */
   .yes-hero .content-wrapper {
     margin-top: -6em;
   }
 }
 @media only screen and (min-width: 63.75em) {
-  /* line 81, ../sass/_layout.scss */
+  /* line 83, ../sass/_layout.scss */
   .yes-hero .content-wrapper {
     margin-top: -8em;
   }
 
-  /* line 85, ../sass/_layout.scss */
+  /* line 87, ../sass/_layout.scss */
   .content-body.portfolio-body {
     padding: 0 2em 2em 2em;
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 92, ../sass/_layout.scss */
+  /* line 94, ../sass/_layout.scss */
   .wrapper {
     max-width: 62em;
   }
 
-  /* line 96, ../sass/_layout.scss */
+  /* line 98, ../sass/_layout.scss */
   .inner-wrapper {
     margin-left: 11em;
   }
 
-  /* line 101, ../sass/_layout.scss */
+  /* line 103, ../sass/_layout.scss */
   .yes-hero .content-wrapper,
   .content-wrapper {
     margin-left: 2em;
@@ -951,11 +956,10 @@ h1.agg-title {
 
 /* line 21, ../sass/modules/_web-fonts.scss */
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h2.card-title, .wf-loading h4, .wf-loading h5, .wf-loading h6 {
-  background: url(../images/loading.gif) no-repeat;
-  text-indent: -9999px;
+  visibility: hidden;
 }
 
-/* line 28, ../sass/modules/_web-fonts.scss */
+/* line 29, ../sass/modules/_web-fonts.scss */
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h2.card-title, .wf-active h4, .wf-active h5, .wf-active h6 {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -967,17 +971,9 @@ h1.agg-title {
   background: none;
   text-indent: 0;
 }
-/* line 35, ../sass/modules/_web-fonts.scss */
+/* line 36, ../sass/modules/_web-fonts.scss */
 .wf-active h1.agg-title {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-/* line 41, ../sass/modules/_web-fonts.scss */
-.wf-inactive h1, .wf-inactive h2, .wf-inactive h3, .wf-inactive h2.card-title, .wf-inactive h4, .wf-inactive h5, .wf-inactive h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  visibility: visible;
-  background: none;
-  text-indent: 0;
 }
 
 /**
@@ -1275,20 +1271,21 @@ h1.agg-title {
   padding: 1em 1em 2em 1em;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
+  margin-bottom: 1.6em;
 }
 
-/* line 20, ../sass/modules/_portfolio.scss */
+/* line 21, ../sass/modules/_portfolio.scss */
 .content-body.portfolio-body {
   padding: 0 1em 1em 1em;
 }
 
 @media only screen and (min-width: 63.75em) {
-  /* line 25, ../sass/modules/_portfolio.scss */
+  /* line 26, ../sass/modules/_portfolio.scss */
   .portfolio-header {
     padding: 2em;
   }
 
-  /* line 28, ../sass/modules/_portfolio.scss */
+  /* line 29, ../sass/modules/_portfolio.scss */
   .content-body.portfolio-body {
     padding: 0 2em 2em 2em;
   }
@@ -1835,73 +1832,85 @@ img {
 /* line 18, ../sass/modules/_marginalia.scss */
 .marginalia {
   color: #555;
+  margin-bottom: 1.6em;
 }
-/* line 20, ../sass/modules/_marginalia.scss */
+/* line 21, ../sass/modules/_marginalia.scss */
 .marginalia p {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.8em;
   letter-spacing: 1px;
 }
 
+/* line 28, ../sass/modules/_marginalia.scss */
+.margin-heading {
+  color: #e83d12;
+  display: block;
+}
+
+@media only screen and (max-width: 63.74em) {
+  /* line 34, ../sass/modules/_marginalia.scss */
+  .marginalia {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+}
 @media only screen and (min-width: 63.75em) {
-  /* line 28, ../sass/modules/_marginalia.scss */
+  /* line 41, ../sass/modules/_marginalia.scss */
   .marginator {
     clear: both;
     margin-top: -1em;
     margin-left: 0;
     width: 47em;
   }
-  /* line 35, ../sass/modules/_marginalia.scss */
+  /* line 48, ../sass/modules/_marginalia.scss */
   .marginator > p {
     float: left;
     width: 22em;
   }
-  /* line 41, ../sass/modules/_marginalia.scss */
+  /* line 54, ../sass/modules/_marginalia.scss */
   .marginator + p {
     clear: left;
   }
 
-  /* line 47, ../sass/modules/_marginalia.scss */
+  /* line 60, ../sass/modules/_marginalia.scss */
   .margin-heading:after {
     content: '';
   }
 
-  /* line 52, ../sass/modules/_marginalia.scss */
+  /* line 65, ../sass/modules/_marginalia.scss */
   .marginalia {
     background-color: white;
     float: left;
     margin: 0.6em 0 0 2em;
     width: 13em;
   }
-  /* line 57, ../sass/modules/_marginalia.scss */
+  /* line 70, ../sass/modules/_marginalia.scss */
   .marginalia p {
     font-size: 0.75em;
     font-weight: 300;
     font-style: normal;
     margin-top: 1.92857em;
   }
-  /* line 64, ../sass/modules/_marginalia.scss */
+  /* line 77, ../sass/modules/_marginalia.scss */
   .marginalia .margin-heading {
-    color: #e83d12;
-    display: block;
     font-weight: 500;
   }
-  /* line 71, ../sass/modules/_marginalia.scss */
+  /* line 82, ../sass/modules/_marginalia.scss */
   .marginalia:before, .marginalia:after {
     content: '';
   }
 }
 @media only screen and (min-width: 82.5em) {
-  /* line 79, ../sass/modules/_marginalia.scss */
+  /* line 90, ../sass/modules/_marginalia.scss */
   .marginator {
     margin-left: 0;
   }
-  /* line 83, ../sass/modules/_marginalia.scss */
+  /* line 94, ../sass/modules/_marginalia.scss */
   .marginator > p {
     float: left;
     width: 30em;
   }
-  /* line 88, ../sass/modules/_marginalia.scss */
+  /* line 99, ../sass/modules/_marginalia.scss */
   .marginator .marginalia {
     width: 15em;
   }

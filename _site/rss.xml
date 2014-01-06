@@ -5,8 +5,8 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2013-12-16T22:52:09+01:00</lastBuildDate>
-        <pubDate>2013-12-16T22:52:09+01:00</pubDate>
+        <lastBuildDate>2014-01-05T14:20:33+01:00</lastBuildDate>
+        <pubDate>2014-01-05T14:20:33+01:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -100,20 +100,23 @@
 
 &lt;h4&gt;Week 6&lt;/h4&gt;
 
-&lt;p&gt;Improve Your Quiz Application From Earlier:
-* Add client-side data validation: make sure the user answers each question before proceeding to the next question.
-* Add a “Back” button to allow the user to go back and change her answer. The user can go back up to the first question. For the questions that the user has answered already, be sure to show the radio button selected, so that the user is not forced to answer the questions again, which she has completed.
-* Use jQuery to add animation (fade out the current question and fade in the next question).
-* Test the quiz on IE 8 and 9, and fix any bugs. This will give you a good workout ;)
-* Store the quiz questions in an external JSON file.
-* Add user authentication: allow users log in, and save their login credentials to local storage (HTML5 browser storage).
-* Use cookies to remember the user, and show a “Welcome, First Name” message when the user returns to the quiz.&lt;/p&gt;
+&lt;p&gt;Improve Your Quiz Application From Earlier:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add client-side data validation: make sure the user answers each question before proceeding to the next question.&lt;/li&gt;
+&lt;li&gt;Add a “Back” button to allow the user to go back and change her answer. The user can go back up to the first question. For the questions that the user has answered already, be sure to show the radio button selected, so that the user is not forced to answer the questions again, which she has completed.&lt;/li&gt;
+&lt;li&gt;Use jQuery to add animation (fade out the current question and fade in the next question).&lt;/li&gt;
+&lt;li&gt;Test the quiz on IE 8 and 9, and fix any bugs. This will give you a good workout ;)&lt;/li&gt;
+&lt;li&gt;Store the quiz questions in an external JSON file.&lt;/li&gt;
+&lt;li&gt;Add user authentication: allow users log in, and save their login credentials to local storage (HTML5 browser storage).&lt;/li&gt;
+&lt;li&gt;Use cookies to remember the user, and show a “Welcome, First Name” message when the user returns to the quiz.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h4&gt;Week 7&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Read chapter 6 (only the “Object Creation” and “Inheritance” sections this time).&lt;/li&gt;
-&lt;li&gt;Read chapters 16, 22, and 24. NOTE: The reading in this section of the book is the most technical reading you will encounter in this entire roadmap. It is up to you if you want to read all of it. You should at least learn the Prototype Pattern, Factory Pattern, and Prototypal Inheritance. You don’t have to know all the other patterns.&lt;/li&gt;
+&lt;li&gt;Read chapters 16, 22, and 24. NOTE: The reading in this section of the book is the most technical reading you will encounter in this entire roadmap. It is up to you if you want to read all of it. You should at least learn the Prototype Pattern, Factory Pattern, and Prototypal Inheritance from chapter 6. You don’t have to know all the other patterns.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;Week 8&lt;/h4&gt;
@@ -140,8 +143,8 @@
 &lt;li&gt;Read my forthcoming posts on javascript is sexy on the Three Best Front-end JavaScript Frameworks&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-                <link>http://akiryk.github.io/blog/2013/12/16/new-post</link>
-                <guid>http://akiryk.github.io/blog/2013/12/16/new-post</guid>
+                <link>http://akiryk.github.io/blog/2013/12/16/learn-js</link>
+                <guid>http://akiryk.github.io/blog/2013/12/16/learn-js</guid>
                 <pubDate>2013-12-16T00:00:00+01:00</pubDate>
         </item>
 
@@ -396,8 +399,8 @@
 &lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:56.20%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/80310253?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;http://www.youtube.com/embed/uEdRLlqdgA4?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
-                <link>http://akiryk.github.io/blog/2013/12/01/Having-A-Go-Jekyll-Plugins</link>
-                <guid>http://akiryk.github.io/blog/2013/12/01/Having-A-Go-Jekyll-Plugins</guid>
+                <link>http://akiryk.github.io/blog/2013/12/01/responsive-video-jekyll</link>
+                <guid>http://akiryk.github.io/blog/2013/12/01/responsive-video-jekyll</guid>
                 <pubDate>2013-12-01T00:00:00+01:00</pubDate>
         </item>
 
@@ -473,6 +476,38 @@
                 <link>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</link>
                 <guid>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</guid>
                 <pubDate>2013-02-09T00:00:00+01:00</pubDate>
+        </item>
+
+        <item>
+                <title>Gronster&#58; A Drawing Game</title>
+                <description>&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    I had the idea for creating an online version of a game that I&amp;rsquo;d played once or twice on paper — maybe you&amp;rsquo;ve played it. You start with a page folded into thirds. The first person draws the head and shoulders, then passes the paper to the second person but keeps the drawing hidden. The second person draws the mid-section and passes it to the last player. No one knows what the others have drawn, so the resulting illustration is a strange mashup. 
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Exquisite Corpse &lt;/span&gt;It turns out that this game has a name — Exquisite Corpse — and was either invented or popularized by Surrealist artists in the 1920s. 
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Making A Drawing&lt;/h3&gt;
+
+&lt;p&gt;You start on an intro page, which shows in simple terms how the game works (the site cookies you, so if you return later you&amp;rsquo;ll go straight to the drawing panel). You can click on the big Get Started button — or you can explore the gallery.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The Gronster start screen, visible to first-time users.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/start-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/start-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/gronster/start-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The Gronster start screen, visible to first-time users.&lt;/div&gt;
+&lt;/div&gt;
+</description>
+                <link>http://akiryk.github.io/portfolio/2012/09/15/gronster-drawing-game</link>
+                <guid>http://akiryk.github.io/portfolio/2012/09/15/gronster-drawing-game</guid>
+                <pubDate>2012-09-15T00:00:00+02:00</pubDate>
         </item>
 
         <item>

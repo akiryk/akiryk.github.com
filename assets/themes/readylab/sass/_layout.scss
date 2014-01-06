@@ -15,7 +15,7 @@
   position: relative;
 }
 
-
+// wraps both the header and the content body
 .content-wrapper {
   max-width: 34em; //680px;
   margin: 0 auto;
@@ -30,10 +30,12 @@
     background-color: #fff;
   }
 
-  // also post-wrapper
-  // also portfolio-post-wrapper
-
-
+// wraps just the post or portfolio body itself (text and images) not heading.
+.content-body {
+  h2, h3, h4, h5, h6 {
+    clear: both;
+  }
+}
 
 @include media-query(portable) {
   .content-body {

@@ -32,13 +32,13 @@
 @import "modules/images";
 @import "modules/marginalia";
 
-@import "modules/secondary";
+@import "modules/secondary"; // Should be called "Continue" because it pertains to continuing to read.
 @import "modules/links";
 @import "modules/video";
 @import "modules/footer";
 @import "modules/pagination";
 @import "modules/tags";
-@import "modules/notes"; // notes at the bottom of a post
+@import "modules/notes"; // endnotes at the bottom of a post
 
 // @import "modules/AAA";
 

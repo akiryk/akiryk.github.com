@@ -3,6 +3,9 @@ layout: page
 title: How To
 ---
 
+##How to encode colon in your YML 
+Use the entity &#58;
+
 ##This is a how-to for making posts in Jekyll
 
 ###Add code snippets using Pygments

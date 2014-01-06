@@ -6,7 +6,7 @@ micro-teaser: ux + design + front-end
 category : portfolio
 assets: amplify
 hero: facebook-page
-tags : [ux, cms, npr, design]
+tags : [ux, mvp, npr, design, front-end]
 ---
 
 <p class="intro">
