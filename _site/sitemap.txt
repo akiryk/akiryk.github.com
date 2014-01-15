@@ -23,7 +23,9 @@ http://akiryk.github.io/tag/jekyll/index.html
 http://akiryk.github.io/tag/responsive-design/index.html
 http://akiryk.github.io/tag/tips-n-tricks/index.html
 http://akiryk.github.io/tag/tutorials/index.html
+http://akiryk.github.io/tag/making-stuff-better/index.html
 
+http://akiryk.github.io/blog/2014/01/15/whats-wrong-with-browsing
 http://akiryk.github.io/blog/2013/12/16/learn-js
 http://akiryk.github.io/blog/2013/12/05/responsive-images-baby-steps
 http://akiryk.github.io/blog/2013/12/04/using-georgia

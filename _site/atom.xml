@@ -4,13 +4,115 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2014-01-05T14:20:33+01:00</updated>
+ <updated>2014-01-15T18:09:59+01:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
    <email>adamkiryk@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>What's Wrong With Browsing?</title>
+   <link href="http://akiryk.github.io/blog/2014/01/15/whats-wrong-with-browsing"/>
+   <updated>2014-01-15T00:00:00+01:00</updated>
+   <id>http://akiryk.github.io/blog/2014/01/15/whats-wrong-with-browsing</id>
+   <content type="html">&lt;p&gt;Compared with walking into a real-world book store, browsing for a book online kind of sucks. I don’t mean buying a book online or reading a book on screen or anything like that. Those things are fine. Simply finding a book that you already know you want and purchasing it is pretty well taken care of by Amazon and Apple. I&amp;rsquo;m talking about the experience of looking for something you don&amp;rsquo;t know you want. Browsing, in the sense of wandering into your local independent bookseller and just poking around. Not only have digital booksellers failed to match or improve on that browsing experience — it seems like they haven’t even tried.&lt;/p&gt;
+
+&lt;p&gt;Maybe there’s an opportunity there for someone.&lt;/p&gt;
+
+&lt;h3&gt;What Job Do We Hire Bookstores To Provide?&lt;/h3&gt;
+
+&lt;p&gt;Perhaps you’re familiar with the marketing study that &lt;a href=&quot;http://www.earwolf.com/episode/creating-scarcity/&quot;&gt;looked at milkshake sales&lt;/a&gt;. Marketers saw that their fast-food business was selling a lot of milkshakes in the mornings. Instead of just patting each other on the backs and saying, good for us, we sell milkshakes at a weird hour, they asked a novel question: &lt;/p&gt;
+
+&lt;p&gt;What job are people hiring these milkshakes to do? &lt;/p&gt;
+
+&lt;p&gt;What they learned is that people wanted a breakfast that could be easily consumed in a car while driving to work — sucked through a straw, to put it plainly — which suggested they could make money by selling other, possibly more nutritious (although probably not), drinkable breakfast options.&lt;/p&gt;
+
+&lt;p&gt;That same approach could be applied to book browsing. What service do people hire a bookstore for when they browse? If we knew the answer, we could consider how better to provide it. (Again, I’m not talking about the times when you walk in, ask for help in finding something, find it and buy it. I’m talking about the times when you walk in and browse, poking around for twenty minutes, thirty minutes, whatever). &lt;/p&gt;
+
+&lt;p&gt;Here’s what I think I’m hiring when I browse at the Book ’n Bar, my local shop here in France:  &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Free entertainment. Unless I buy a coffee (or a book). Either way, the browsing itself is fun and costs nothing.&lt;/li&gt;
+&lt;li&gt;A chance to relax. It’s me-time, to use a dumb cliché.&lt;/li&gt;
+&lt;li&gt;Inspiration. I don’t mean that in a spiritual sense, I just mean that all the images and titles and ideas trigger associations, new thoughts. It’s a chance to learn something and it’s energizing.&lt;/li&gt;
+&lt;li&gt;Connection. Like many book stores, this one serves a particular community, something it does by specializing in certain kinds of books (American and British novels), hiring a certain kind of staff (friendly, speak English), and encouraging people to stick around (with croissants and comfortable chairs). It’s nice to feel connected to a community, even if you’re just a visitor.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How does the digital browsing experience stack up against this list? I don’t think very well. It’s free, but it&amp;rsquo;s not very entertaining. It isn&amp;rsquo;t fun. You could argue it&amp;rsquo;s educational — but it&amp;rsquo;s not inspiring. In short, there’s room for improvement. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I want browsing to be fun&lt;/strong&gt;. Does this interface look like it provides entertainment? &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The iBooks Top Charts screen on an iPad.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/ibooks-topcharts-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/ibooks-topcharts-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/book-browsing/ibooks-topcharts-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The iBooks Top Charts screen on an iPad.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;No, it’s a functional and usable way to identify a book, but that’s about it. You wouldn’t want to spend thirty minutes browsing through lists like that.&lt;/p&gt;
+
+&lt;p&gt;Okay, perhaps that’s a bit of a low blow, since you might expect a section on top books to employ a list-style format. But monotonous lists are the rule in digital book browsing experiences. On Amazon and Barnes and Nobles and the service used by public libraries, the standard seems to be to display a thumbnail image of a book cover beside the title and maybe a little bit of information. Thumbnail after thumbnail after thumbnail. &lt;/p&gt;
+
+&lt;p&gt;Contrast that with the good old Book ’n Bar (why the goofy name? I don’t know, but I suspect it’s a British-English thing). It’s visually interesting. There are different shapes and colors, there’s contrast, there’s rhythm. There’s clearly order, but it’s far from repetitive or monotonous. It’s quirky. It feels personal, with hand-written notices on the message board and selected promotions that the staff believes will appeal to their clientele.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I want to slow down, relax, feel at ease&lt;/strong&gt;.  Here’s the Amazon app&amp;rsquo;s best-seller page and the pop-up you get if you select one of them. Very business-like and to-the-point. Find it, buy it, you’re done.&lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The Amazon bookstore app&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/amazon-before-after-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/amazon-before-after-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/amazon-before-after-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/book-browsing/amazon-before-after-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The Amazon bookstore app&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But browsing isn’t about finding and buying. It’s about meandering. It’s about taking your time.  &lt;/p&gt;
+
+&lt;p&gt;It should be easy to pick something up, flip through the pages, and put it down again —  this is literally true in the case of the real world; could it be metaphorically true in the case of digital? The iBooks store and Amazon may be aiming for that metaphor — very generally — but if they are, they’re wide of the mark. &lt;/p&gt;
+
+&lt;p&gt;You can click on a book for more information, but it’s fairly one-dimensional, technical even. Look at the iBooks example: a prominent price and buy button, an official description, and a list of publishing details. You can download a sample — and that is great — but it takes you out of the browsing experience, and it’s never that quick. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The iBooks book details page.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/ibooks-details-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/book-browsing/ibooks-details-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/book-browsing/ibooks-details-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The iBooks book details page.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;At the Book ’n Bar, I can pick up a book and quickly get a ton of information. Much of it, like the weight, the texture, the quality of the printing, is immediate. And it’s easy to turn between promotional quotes on the back, an official description on the inner flap, and the actual content itself. That ease fosters further exploration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I want to feel energized and inspired&lt;/strong&gt;. The digital sellers give you data. They give you meta-data. They try to move you down the funnel from looking to buying. They don’t inspire you. They don’t surprise you. There’s no serendipity. &lt;/p&gt;
+
+&lt;p&gt;I like serendipity.&lt;/p&gt;
+
+&lt;p&gt;I like a balance between what-I-think-I’m-looking-for and what-I-didn&amp;rsquo;t-realize-I-should-be-looking-for. In a real-world book store, I might flip through a book of poetry just because it’s right in front of me. I might walk home with a beautiful book of vintage maps I never intended to buy. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I want a feeling of community&lt;/strong&gt;. The selection on Apple or Amazon is a weird blend of generically mass-market and overly personalized. It’s not special. You don’t get the sense that there’s a unique voice to the iBooks store — beyond the general Apple design sensibility. Amazon doesn’t give the impression of being a member of a community; being local isn’t their thing. 
+A positive browsing experience doesn’t necessarily require that the bookstore have a strong community-based point of view. But it helps to have some kind of grounding. The Harvard Coop has a particular vibe that feels Harvard-y and Cambridge-y (even though it’s owned by Barnes &amp;amp; Noble). The Book ’n Bar in Aix-en-Provence feels like a slice of the British world inserted in France. These are qualities that make the experience feel interesting and enriching.&lt;/p&gt;
+
+&lt;h3&gt;Can a digital experience provide these things?&lt;/h3&gt;
+
+&lt;p&gt;I’m not asking if a digital experience can do the same things that a bookstore does. I&amp;rsquo;m just asking if a digital browsing experience can solve the same problems that bookstores solve — that is, can it be fun? Can it be relaxing? Can it energize or inspire? Can it create community? I think it can. At least for some of those things. &lt;/p&gt;
+
+&lt;p&gt;How? I’ll have to think about that.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Help With Learning Javascript Properly</title>
@@ -155,9 +257,9 @@
    <link href="http://akiryk.github.io/blog/2013/12/05/responsive-images-baby-steps"/>
    <updated>2013-12-05T00:00:00+01:00</updated>
    <id>http://akiryk.github.io/blog/2013/12/05/responsive-images-baby-steps</id>
-   <content type="html">&lt;p&gt;The state of the state regarding responsive image solutions seems to be, at the moment of this writing, that a number of options exist but none are perfect. I could say more about those options, but Chris Coyier already did such a good job in bringing together pluses and minuses in &lt;a href=&quot;https://docs.google.com/spreadsheet/ccc?key=0Al0lI17fOl9DdDgxTFVoRzFpV3VCdHk2NTBmdVI2OXc#gid=0&quot;&gt;this spreadsheet&lt;/a&gt;. And he&amp;rsquo;s got an article that talks &lt;a href=&quot;http://css-tricks.com/which-responsive-images-solution-should-you-use/&quot;&gt;in greater detail&lt;/a&gt; as well.&lt;/p&gt;
+   <content type="html">&lt;p&gt;At the moment of this writing, there are a number of options for handling responsive images — yet none are perfect. I could say more about those options, but Chris Coyier already did such a good job in bringing together pluses and minuses in &lt;a href=&quot;https://docs.google.com/spreadsheet/ccc?key=0Al0lI17fOl9DdDgxTFVoRzFpV3VCdHk2NTBmdVI2OXc#gid=0&quot;&gt;this spreadsheet&lt;/a&gt;. And he&amp;rsquo;s got an article that talks &lt;a href=&quot;http://css-tricks.com/which-responsive-images-solution-should-you-use/&quot;&gt;in greater detail&lt;/a&gt; as well.&lt;/p&gt;
 
-&lt;p&gt;Anyway, after considering some of these options, I decided to use the picturefill polyfill method. It works better for me than many of the alternatives do because a) I don&amp;rsquo;t have a server since I&amp;rsquo;m using Jekyll; b) I don&amp;rsquo;t want to use a 3rd party since I want to control and understand what I&amp;rsquo;m doing; and c) it gives me a lot of flexibility for art direction. &lt;/p&gt;
+&lt;p&gt;Anyway, I decided to use the picturefill polyfill method. It works better for me than many of the alternatives do because a) I don&amp;rsquo;t have a server since I&amp;rsquo;m using Jekyll; b) I don&amp;rsquo;t want to use a 3rd party since I want to control and understand what I&amp;rsquo;m doing; and c) it gives me a lot of flexibility for art direction.&lt;/p&gt;
 
 &lt;p&gt;Using picturefill is easy. I just pasted a bit of minified javascript in the head of my Jekyll default template, no jQuery required, and whenever I need an image I just insert the following snippet of html. The picturefill.js script identifies the screen size and inserts the appropriate image file between the &lt;span&gt; elements.&lt;/p&gt;
 
@@ -178,7 +280,7 @@
 
 &lt;div class=&quot;marginator&quot;&gt;
    &lt;p&gt;
-    Hello! That&amp;rsquo;s kind of a lot of stuff for one image! But that&amp;rsquo;s fine. I can live with that for a while, since it works so well and helps me achieve what I want — I mean, look at all the flexibility inherent in that markup. As long as I&amp;rsquo;m willing to prepare all the different images required for it to work, it will be fine.
+    Whoa. That&amp;rsquo;s kind of a lot of html for one image. But that&amp;rsquo;s fine. I can live with that for a while, since it works so well and helps me achieve what I want — I mean, look at all the flexibility inherent in that markup. As long as I&amp;rsquo;m willing to prepare all the different images required for it to work, it will be fine.
   &lt;/p&gt;
   &lt;div class=&quot;marginalia&quot;&gt;
     &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;And That&amp;rsquo;s Not All:&lt;/span&gt; It gets even more complicated if you want to include images for hi-res devices.
@@ -201,7 +303,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;picturefill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Now I just needed a way to tell the partial what image to use — because otherwise the picturefill partial will only ever display the same image which has been hard-coded into the markup. Enter the &amp;lsquo;assign&amp;rsquo; tag. Jekyll uses something called liquid to handle variables and simple logic when generating markup. It can handle if/else statements, loops, and variables, among other things (not [a lot of other things](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers), actually).&lt;/p&gt;
+&lt;p&gt;Now I just needed a way to tell the partial what image to use — because otherwise the picturefill partial will only ever display the same image which has been hard-coded into the markup. Enter the &amp;lsquo;assign&amp;rsquo; tag. Jekyll uses something called liquid to handle variables and simple logic when generating markup. It can handle if/else statements, loops, and variables, among other things (&lt;a href=&quot;https://github.com/Shopify/liquid/wiki/Liquid-for-Designers&quot;&gt;a lot of other things&lt;/a&gt;, actually).&lt;/p&gt;
 &lt;p&gt;The liquid tag I care about here lets you assign a value to a variable which can be used elsewhere. Thus, when I insert the picturefill partial, I just need to add a second line like this:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;fancy&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myImage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;flower-image&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;

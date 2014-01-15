@@ -6,9 +6,9 @@ assets: "random"
 category: blog
 tags: [jekyll, code, responsive-design]
 ---
-The state of the state regarding responsive image solutions seems to be, at the moment of this writing, that a number of options exist but none are perfect. I could say more about those options, but Chris Coyier already did such a good job in bringing together pluses and minuses in [this spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Al0lI17fOl9DdDgxTFVoRzFpV3VCdHk2NTBmdVI2OXc#gid=0). And he's got an article that talks [in greater detail](http://css-tricks.com/which-responsive-images-solution-should-you-use/) as well.
+At the moment of this writing, there are a number of options for handling responsive images — yet none are perfect. I could say more about those options, but Chris Coyier already did such a good job in bringing together pluses and minuses in [this spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Al0lI17fOl9DdDgxTFVoRzFpV3VCdHk2NTBmdVI2OXc#gid=0). And he's got an article that talks [in greater detail](http://css-tricks.com/which-responsive-images-solution-should-you-use/) as well.
 
-Anyway, after considering some of these options, I decided to use the picturefill polyfill method. It works better for me than many of the alternatives do because a) I don't have a server since I'm using Jekyll; b) I don't want to use a 3rd party since I want to control and understand what I'm doing; and c) it gives me a lot of flexibility for art direction. 
+Anyway, I decided to use the picturefill polyfill method. It works better for me than many of the alternatives do because a) I don't have a server since I'm using Jekyll; b) I don't want to use a 3rd party since I want to control and understand what I'm doing; and c) it gives me a lot of flexibility for art direction.
 
 Using picturefill is easy. I just pasted a bit of minified javascript in the head of my Jekyll default template, no jQuery required, and whenever I need an image I just insert the following snippet of html. The picturefill.js script identifies the screen size and inserts the appropriate image file between the <span> elements.
 
@@ -29,7 +29,7 @@ Using picturefill is easy. I just pasted a bit of minified javascript in the hea
 
 <div class="marginator">
    <p>
-    Hello! That's kind of a lot of stuff for one image! But that's fine. I can live with that for a while, since it works so well and helps me achieve what I want — I mean, look at all the flexibility inherent in that markup. As long as I'm willing to prepare all the different images required for it to work, it will be fine.
+    Whoa. That's kind of a lot of html for one image. But that's fine. I can live with that for a while, since it works so well and helps me achieve what I want — I mean, look at all the flexibility inherent in that markup. As long as I'm willing to prepare all the different images required for it to work, it will be fine.
   </p>
   <div class="marginalia">
     <p><span class="margin-heading">And That's Not All:</span> It gets even more complicated if you want to include images for hi-res devices.
@@ -51,7 +51,7 @@ Here's my short term solution that probably won't suit me for long but works for
 {% include partials/picturefill %}
 {% endraw %}
 {% endhighlight %}
-<p>Now I just needed a way to tell the partial what image to use — because otherwise the picturefill partial will only ever display the same image which has been hard-coded into the markup. Enter the 'assign' tag. Jekyll uses something called liquid to handle variables and simple logic when generating markup. It can handle if/else statements, loops, and variables, among other things (not [a lot of other things](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers), actually).</p>
+<p>Now I just needed a way to tell the partial what image to use — because otherwise the picturefill partial will only ever display the same image which has been hard-coded into the markup. Enter the 'assign' tag. Jekyll uses something called liquid to handle variables and simple logic when generating markup. It can handle if/else statements, loops, and variables, among other things (<a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">a lot of other things</a>, actually).</p>
 <p>The liquid tag I care about here lets you assign a value to a variable which can be used elsewhere. Thus, when I insert the picturefill partial, I just need to add a second line like this:</p>
 {% highlight fancy %}
 {% raw %}
