@@ -4,7 +4,7 @@
  <title>Adam Kiryk</title>
  <link href="http://akiryk.github.io/" rel="self"/>
  <link href="http://akiryk.github.io"/>
- <updated>2014-01-16T11:32:22+01:00</updated>
+ <updated>2014-01-24T19:31:40+01:00</updated>
  <id>http://akiryk.github.io</id>
  <author>
    <name>Adam Kiryk</name>
@@ -595,9 +595,13 @@
     I had the idea for creating an online version of a game that I&amp;rsquo;d played once or twice on paper — maybe you&amp;rsquo;ve played it. You start with a page folded into thirds. The first person draws the head and shoulders, then passes the paper to the second person but keeps the drawing hidden. The second person draws the mid-section and passes it to the last player. No one knows what the others have drawn, so the resulting illustration is a strange mashup. 
   &lt;/p&gt;
   &lt;div class=&quot;marginalia&quot;&gt;
-    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Exquisite Corpse &lt;/span&gt;It turns out that this game has a name — Exquisite Corpse — and was either invented or popularized by Surrealist artists in the 1920s. 
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Exquisite Corpse &lt;/span&gt;It turns out that this game has a name — Exquisite Corpse — and was either invented or popularized by Surrealists in the 1920s. 
     &lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
+
+&lt;p&gt;Anyway, I built this game/app as a side project by myself, using CakePHP and JavaScript. It lets you and some friends create three segments of a drawing (without knowing what the others have done), and it stitches them together into a connected whole. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;(http://gronster.adamkiryk.com&quot;&gt;Check it out&lt;/a&gt; — or read on&amp;hellip;&lt;/p&gt;
 
 &lt;h3&gt;Making A Drawing&lt;/h3&gt;
 
@@ -614,6 +618,63 @@
   &lt;/span&gt;
 &lt;div class=&quot;caption&quot;&gt;The Gronster start screen, visible to first-time users.&lt;/div&gt;
 &lt;/div&gt;
+
+&lt;p&gt;The drawing panel is easy and basic. You simply draw with the defaults or expand the paintbrush or colors menus to see other options — I kept them limited by design since my goal was quick and easy sketching over elaborate illustration. &lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/startDrawing-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/startDrawing-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/startDrawing-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/gronster/startDrawing-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The drawing panel, with options for changing color, erasing, and drawing with a fatter or thinner line. There aren't a ton of choices because I wanted to keep this simple — no fuss, just draw something and share it.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/drawingPart2-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/drawingPart2-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/drawingPart2-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/gronster/drawingPart2-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The drawing panel, with options for changing color, erasing, and drawing with a fatter or thinner line. There aren&amp;rsquo;t a ton of choices because I wanted to keep this simple — no fuss, just draw something and share it.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once you&amp;rsquo;re satisfied with the drawing, click &amp;ldquo;Next&amp;rdquo;, and go to the share screen. If you choose to invite a friend, they&amp;rsquo;ll receive an email with a link back to the original drawing. Only, they won&amp;rsquo;t see all of what you drew — they&amp;rsquo;ll only see the very bottom part, beneath the dotted line on the drawing panel, so they can connect their piece with yours. The result may look crazy, but it will be an intentional sort of crazy.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The Gronster share screen.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/share-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/share-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/gronster/share-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The Gronster share screen.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;A couple of strange ones from the gallery. You can see how my application stitches the pieces together so that they can feel like connected, self-contained images. Of course, some users choose to ignore the guidelines, and it still works...&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/gallery1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/gallery1-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/gallery1-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/gronster/gallery1-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;A couple of strange ones from the gallery. You can see how my application stitches the pieces together so that they can feel like connected, self-contained images. Of course, some users choose to ignore the guidelines, and it still works&amp;hellip;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It&amp;rsquo;s up and running, so check it out at &lt;a href=&quot;http://gronster.adamkiryk.com&quot;&gt;gronster.adamkiryk.com&lt;/a&gt;;&lt;/p&gt;
 </content>
  </entry>
  
