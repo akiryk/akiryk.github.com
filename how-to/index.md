@@ -3,7 +3,11 @@ layout: page
 title: How To
 ---
 
-##How to encode colon in your YML 
+Run local jekyll server:
+    jekyll server --watch
+
+
+###How to encode colon in your YML 
 Use the entity &#58;
 
 ##This is a how-to for making posts in Jekyll

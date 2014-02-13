@@ -30,7 +30,7 @@ You start on an intro page, which shows in simple terms how the game works (the 
 {% assign caption="The Gronster start screen, visible to first-time users." %}
 {% include custom/pic_normal %}
 
-The drawing panel is easy and basic. You simply draw with the defaults or expand the paintbrush or colors menus to see other options — I kept them limited by design since my goal was quick and easy sketching over elaborate illustration. 
+The drawing panel is easy and basic. You simply draw with the defaults or expand the paintbrush or colors menus to see other options — I kept them limited by design, since my goal was to enable quick and easy sketching rather than elaborate illustration. There are some nice contextual help features, as well. For example, when you are new to the site, you get a little help call-out; returning visitors won't see it. If you click the brush controls a couple of times, you get a little help call-out that shows you how to use the brush shortcuts.
 
 {% assign photo="startDrawing" %}
 {% assign caption =""; %}
@@ -40,7 +40,7 @@ The drawing panel is easy and basic. You simply draw with the defaults or expand
 {% assign caption="The drawing panel, with options for changing color, erasing, and drawing with a fatter or thinner line. There aren't a ton of choices because I wanted to keep this simple — no fuss, just draw something and share it." %}
 {% include custom/pic_large %}
 
-Once you're satisfied with the drawing, click "Next", and go to the share screen. If you choose to invite a friend, they'll receive an email with a link back to the original drawing. Only, they won't see all of what you drew — they'll only see the very bottom part, beneath the dotted line on the drawing panel, so they can connect their piece with yours. The result may look crazy, but it will be an intentional sort of crazy.
+Once you're satisfied with the drawing, click "Next", and go to the share screen. If you choose to invite a friend, they'll receive an email with a link back to the original drawing. Only they won't see all of what you drew — they'll see just the very bottom part, beneath the dotted line on the drawing panel, so they can connect their piece with yours. The result may look crazy, but it will be an intentional sort of crazy.
 
 {% assign photo="share" %}
 {% assign caption="The Gronster share screen." %}
@@ -50,4 +50,6 @@ Once you're satisfied with the drawing, click "Next", and go to the share screen
 {% assign caption="A couple of strange ones from the gallery. You can see how my application stitches the pieces together so that they can feel like connected, self-contained images. Of course, some users choose to ignore the guidelines, and it still works..." %}
 {% include custom/pic_large %}
 
-It's up and running, so check it out at [gronster.adamkiryk.com](http://gronster.adamkiryk.com);
+It's up and running, so check it out at [gronster.adamkiryk.com](http://gronster.adamkiryk.com).
+
+{% vimeo 85163079 500 313 %}

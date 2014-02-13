@@ -5,10 +5,142 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2014-01-24T19:31:40+01:00</lastBuildDate>
-        <pubDate>2014-01-24T19:31:40+01:00</pubDate>
+        <lastBuildDate>2014-02-13T08:45:08+01:00</lastBuildDate>
+        <pubDate>2014-02-13T08:45:08+01:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>5 Favorite (Sans-Serif) Fonts from Google</title>
+                <description>&lt;p&gt;I was recently working on a project where we needed to choose a web font for body copy. There are thousands of choices, but far fewer that actually met our needs: the typeface should be good for reading over several paragraphs or pages. It should come in a few weights so that we&amp;rsquo;d have flexibility going forward. It should feel accessible and friendly but fairly plain — nothing too edgy or opinionated.&lt;/p&gt;
+
+&lt;p&gt;And it had to be free.&lt;/p&gt;
+
+&lt;p&gt;Following are the best ones I&amp;rsquo;ve found — all from google. Why? Because they&amp;rsquo;ll be served up quickly and reliably and because Google will handle quirks and oddities in how to handle compatibility issues. &lt;/p&gt;
+
+&lt;p&gt;I found several that seemed nice but only came in one or two weights. While this isn&amp;rsquo;t necessarily a huge issue now — and, to keep file size down, we may not load more than a couple of weights anyway — it could become an issue at some point in the future as design needs change. Droid Sans, for example, is nice but only available in normal and bold without italic. So, the following all include at least four weights. &lt;/p&gt;
+
+&lt;p&gt;Finally, here they are — each of the following paragraphs is set in the font it&amp;rsquo;s describing. I&amp;rsquo;ll take a look at serif fonts later&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=OpenSans' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'&gt;&lt;/p&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+
+  .arial {
+    color: #333;
+    font-family: 'Arial';
+    font-size: 14px;
+  }
+  .lato { 
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: .95em;
+  }
+  .roboto {
+    font-family: 'Roboto', sans-serif;
+    font-size: .95em;
+  }
+  .open-sans {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size:.9em;
+  }
+  .ubuntu {
+    color: #444;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .95em;
+  }
+  .pt-sans {
+    font-family: 'PT Sans', sans-serif;
+    font-size: .95em;
+  }
+  .massive-letter {
+    display: block;
+    font-size: 150px;
+    line-height: 1;
+  }
+  .massive-letter-caption {
+    color: #999;
+    font-size: .75em;
+    display: block;
+    margin-bottom: 1.5em;
+  }
+
+&lt;/style&gt;
+
+&lt;p class=&quot;open-sans&quot;&gt;&lt;span class=&quot;massive-letter&quot;&gt;Aa&lt;/span&gt;&lt;span class=&quot;massive-letter-caption&quot;&gt;Open Sans, 400&lt;/span&gt;
+Open Sans is one of my favorites — that&amp;rsquo;s why I&amp;rsquo;m putting it first — because it&amp;rsquo;s clean and readable. It&amp;rsquo;s got nice open counters, a comfortable x-height, and plenty of weights to choose from (something like ten). It&amp;rsquo;s also become popular — not necessarily a bad thing at all. Because it&amp;rsquo;s common, it&amp;rsquo;s likely
+to be cached on many people&amp;rsquo;s computers. Nice for performance. As with the other fonts, take a look at how it handles the phrase &amp;ldquo;1 Il ocean&amp;rdquo; at a small size (below). Not perfect – the i and the l aren&amp;rsquo;t super distinguishable — but it does a tiny bit better than Arial (shown beside). The &amp;lsquo;c&amp;rsquo; is nice and open, so contrasts nicely with the &amp;lsquo;o&amp;rsquo; and &amp;lsquo;e&amp;rsquo;.&lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  &lt;img src=&quot;/assets/images/free-google-sans-serif-fonts/opensans-x-height-400.gif&quot;&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;open-sans&quot;&gt;Some lorem ipsum text: Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art party McSweeney&amp;rsquo;s beard
+tousled flexitarian. Blue Bottle aesthetic tofu slow-carb, fixie kale chips artisan typewriter gentrify Truffaut
+post-ironic VHS. Pinterest fixie mumblecore, mustache fingerstache roof party tofu pug kitsch brunch Echo Park
+gluten-free PBR street art lomo. Wolf fap biodiesel Intelligentsia, Tumblr letterpress Carles irony YOLO kale chips
+try-hard Portland. Twee 3 wolf moon put a bird on it quinoa banjo whatever. Bushwick Schlitz locavore ennui.&lt;/p&gt;
+
+&lt;p class=&quot;open-sans&quot; style=&quot;font-size:14px&quot;&gt;Open Sans: 1 Il ocean. | &lt;span class=&quot;arial&quot;&gt;Arial: 1 Il ocean.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;open-sans&quot;&gt;Authentic butcher leggings cray sartorial tattooed, Portland High Life ugh. Aesthetic Blue Bottle hoodie selvage Brooklyn polaroid. Photo booth Portland 90&amp;rsquo;s Williamsburg, deep v selvage cornhole church-key Tonx. Cornhole mustache post-ironic, art party banh mi Cosby sweater church-key butcher. Ugh quinoa McSweeney&amp;rsquo;s, flannel post-ironic stumptown hoodie vegan Blue Bottle synth tote bag street art swag. +1 quinoa VHS, hella church-key Cosby sweater asymmetrical iPhone shabby chic banh mi Odd Future 3 wolf moon pork belly organic. Small batch brunch tattooed, readymade lomo raw denim American Apparel four loko Odd Future fixie.&lt;/p&gt;
+
+&lt;p class=&quot;pt-sans&quot;&gt;&lt;span class=&quot;massive-letter&quot;&gt;Aa&lt;/span&gt;&lt;span class=&quot;massive-letter-caption&quot;&gt;pt-sans&lt;/span&gt;PT-Sans. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art party McSweeney&amp;rsquo;s beard tousled flexitarian. Blue Bottle aesthetic tofu slow-carb, fixie kale chips artisan typewriter gentrify Truffaut post-ironic VHS. Pinterest fixie mumblecore, mustache fingerstache roof party tofu pug kitsch brunch Echo Park gluten-free PBR street art lomo. Wolf fap biodiesel Intelligentsia, Tumblr letterpress Carles irony YOLO kale chips try-hard Portland. Twee 3 wolf moon put a bird on it quinoa banjo whatever. Bushwick Schlitz locavore ennui.&lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  &lt;img src=&quot;/assets/images/free-google-sans-serif-fonts/pt-x-height-400.gif&quot;&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;pt-sans&quot; style=&quot;font-size:14px&quot;&gt;A little test: 1 Il ocean. | &lt;span class=&quot;arial&quot;&gt;With arial: 1 Il ocean.&lt;/span&gt; &lt;/p&gt;
+
+&lt;p class=&quot;pt-sans&quot;&gt;Authentic butcher leggings cray sartorial tattooed, Portland High Life ugh.
+Aesthetic Blue Bottle hoodie selvage Brooklyn polaroid. Photo booth Portland 90&amp;rsquo;s Williamsburg,
+deep v selvage cornhole church-key Tonx. Cornhole mustache post-ironic, art party banh mi Cosby
+sweater church-key butcher. Ugh quinoa McSweeney&amp;rsquo;s, flannel post-ironic stumptown hoodie vegan
+Blue Bottle synth tote bag street art swag. +1 quinoa VHS, hella church-key Cosby sweater asymmetrical
+iPhone shabby chic banh mi Odd Future 3 wolf moon pork belly organic. Small batch brunch tattooed,
+readymade lomo raw denim American Apparel four loko Odd Future fixie.&lt;/p&gt;
+
+&lt;p class=&quot;lato&quot;&gt;&lt;span class=&quot;massive-letter&quot;&gt;Aa&lt;/span&gt;&lt;span class=&quot;massive-letter-caption&quot;&gt;Lato font, 400&lt;/span&gt;
+Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art party McSweeney&amp;rsquo;s beard tousled flexitarian. Blue Bottle aesthetic tofu slow-carb, fixie kale chips artisan typewriter gentrify Truffaut post-ironic VHS. Pinterest fixie mumblecore, mustache fingerstache roof party tofu pug kitsch brunch Echo Park gluten-free PBR street art lomo. Wolf fap biodiesel Intelligentsia, Carles irony YOLO kale chips try-hard Portland. Twee 3 wolf moon put a bird on it quinoa banjo whatever. Bushwick Schlitz locavore ennui.&lt;/p&gt;
+
+&lt;p class=&quot;lato&quot; style=&quot;font-size:14px&quot;&gt;With lato: 1 Il ocean. | &lt;span class=&quot;arial&quot;&gt;With arial: 1 Il ocean.&lt;/span&gt; &lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  &lt;img src=&quot;/assets/images/free-google-sans-serif-fonts/lato-x-height-400.gif&quot;&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;lato&quot;&gt;Authentic butcher leggings cray sartorial tattooed, Portland High Life ugh. Aesthetic Blue Bottle hoodie selvage Brooklyn polaroid. Photo booth Portland 90&amp;rsquo;s Williamsburg, deep v selvage cornhole church-key Tonx. Cornhole mustache post-ironic, art party banh mi Cosby sweater church-key butcher. Ugh quinoa McSweeney&amp;rsquo;s, flannel post-ironic stumptown hoodie vegan Blue Bottle synth tote bag street art swag. +1 quinoa VHS, hella church-key Cosby sweater asymmetrical iPhone shabby chic banh mi Odd Future 3 wolf moon pork belly organic. Small batch brunch tattooed, readymade lomo raw denim American Apparel four loko Odd Future fixie.&lt;/p&gt;
+
+&lt;p class=&quot;roboto&quot;&gt;&lt;span class=&quot;massive-letter&quot;&gt;Aa&lt;/span&gt;&lt;span class=&quot;massive-letter-caption&quot;&gt;Roboto font, 300&lt;/span&gt;Roboto. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art party McSweeney&amp;rsquo;s beard tousled flexitarian. Blue Bottle aesthetic tofu slow-carb, fixie kale chips artisan typewriter gentrify Truffaut post-ironic VHS. Pinterest fixie mumblecore, mustache fingerstache roof party tofu pug kitsch brunch Echo Park gluten-free PBR street art lomo. Wolf fap biodiesel Intelligentsia, Tumblr letterpress Carles irony YOLO kale chips try-hard Portland. Twee 3 wolf moon put a bird on it quinoa banjo whatever. Bushwick Schlitz locavore ennui.&lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  &lt;img src=&quot;/assets/images/free-google-sans-serif-fonts/roboto-x-height-400.gif&quot;&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;roboto&quot; style=&quot;font-size:14px&quot;&gt;A little test: 1 Il ocean. | &lt;span class=&quot;arial&quot;&gt;With arial: 1 Il ocean.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;roboto&quot;&gt;Authentic butcher leggings cray sartorial tattooed, Portland High Life ugh. Aesthetic Blue Bottle hoodie selvage Brooklyn polaroid. Photo booth Portland 90&amp;rsquo;s Williamsburg, deep v selvage cornhole church-key Tonx. Cornhole mustache post-ironic, art party banh mi Cosby sweater church-key butcher. Ugh quinoa McSweeney&amp;rsquo;s, flannel post-ironic stumptown hoodie vegan Blue Bottle synth tote bag street art swag. +1 quinoa VHS, hella church-key Cosby sweater asymmetrical iPhone shabby chic banh mi Odd Future 3 wolf moon pork belly organic. Small batch brunch tattooed, readymade lomo raw denim American Apparel four loko Odd Future fixie.&lt;/p&gt;
+
+&lt;p class=&quot;ubuntu&quot;&gt;&lt;span class=&quot;massive-letter&quot;&gt;Aa&lt;/span&gt;&lt;span class=&quot;massive-letter-caption&quot;&gt;Ubuntu&lt;/span&gt;Ubuntu. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art party McSweeney&amp;rsquo;s beard tousled flexitarian. Blue Bottle aesthetic tofu slow-carb, fixie kale chips artisan typewriter gentrify Truffaut post-ironic VHS. Pinterest fixie mumblecore, mustache fingerstache roof party tofu pug kitsch brunch Echo Park gluten-free PBR street art lomo. Wolf fap biodiesel Intelligentsia, Tumblr letterpress Carles irony YOLO kale chips try-hard Portland. Twee 3 wolf moon put a bird on it quinoa banjo whatever. Bushwick Schlitz locavore ennui.&lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  &lt;img src=&quot;/assets/images/free-google-sans-serif-fonts/ubuntu-x-height-400.gif&quot;&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;ubuntu&quot; style=&quot;font-size:14px&quot;&gt;A little test: 1 Il ocean. | &lt;span class=&quot;arial&quot;&gt;With arial: 1 Il ocean.&lt;/span&gt; &lt;/p&gt;
+
+&lt;p class=&quot;ubuntu&quot;&gt;Authentic butcher leggings cray sartorial tattooed, Portland High Life ugh. Aesthetic Blue Bottle hoodie selvage Brooklyn polaroid. Photo booth Portland 90&amp;rsquo;s Williamsburg, deep v selvage cornhole church-key Tonx. Cornhole mustache post-ironic, art party banh mi Cosby sweater church-key butcher. Ugh quinoa McSweeney&amp;rsquo;s, flannel post-ironic stumptown hoodie vegan Blue Bottle synth tote bag street art swag. +1 quinoa VHS, hella church-key Cosby sweater asymmetrical iPhone shabby chic banh mi Odd Future 3 wolf moon pork belly organic. Small batch brunch tattooed, readymade lomo raw denim American Apparel four loko Odd Future fixie.&lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2014/01/24/best-free-fonts</link>
+                <guid>http://akiryk.github.io/blog/2014/01/24/best-free-fonts</guid>
+                <pubDate>2014-01-24T00:00:00+01:00</pubDate>
+        </item>
 
         <item>
                 <title>What's Wrong With Browsing?</title>
@@ -614,7 +746,7 @@
 &lt;div class=&quot;caption&quot;&gt;The Gronster start screen, visible to first-time users.&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The drawing panel is easy and basic. You simply draw with the defaults or expand the paintbrush or colors menus to see other options — I kept them limited by design since my goal was quick and easy sketching over elaborate illustration. &lt;/p&gt;
+&lt;p&gt;The drawing panel is easy and basic. You simply draw with the defaults or expand the paintbrush or colors menus to see other options — I kept them limited by design, since my goal was to enable quick and easy sketching rather than elaborate illustration. There are some nice contextual help features, as well. For example, when you are new to the site, you get a little help call-out; returning visitors won&amp;rsquo;t see it. If you click the brush controls a couple of times, you get a little help call-out that shows you how to use the brush shortcuts.&lt;/p&gt;
 
 &lt;div class=&quot;pic-large&quot;&gt;
   &lt;span data-picture data-alt=&quot;&quot;&gt;
@@ -642,7 +774,7 @@
 &lt;div class=&quot;caption&quot;&gt;The drawing panel, with options for changing color, erasing, and drawing with a fatter or thinner line. There aren&amp;rsquo;t a ton of choices because I wanted to keep this simple — no fuss, just draw something and share it.&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Once you&amp;rsquo;re satisfied with the drawing, click &amp;ldquo;Next&amp;rdquo;, and go to the share screen. If you choose to invite a friend, they&amp;rsquo;ll receive an email with a link back to the original drawing. Only, they won&amp;rsquo;t see all of what you drew — they&amp;rsquo;ll only see the very bottom part, beneath the dotted line on the drawing panel, so they can connect their piece with yours. The result may look crazy, but it will be an intentional sort of crazy.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;re satisfied with the drawing, click &amp;ldquo;Next&amp;rdquo;, and go to the share screen. If you choose to invite a friend, they&amp;rsquo;ll receive an email with a link back to the original drawing. Only they won&amp;rsquo;t see all of what you drew — they&amp;rsquo;ll see just the very bottom part, beneath the dotted line on the drawing panel, so they can connect their piece with yours. The result may look crazy, but it will be an intentional sort of crazy.&lt;/p&gt;
 
 &lt;div class=&quot;pic-normal&quot;&gt;
   &lt;span data-picture data-alt=&quot;The Gronster share screen.&quot;&gt;
@@ -669,11 +801,84 @@
 &lt;div class=&quot;caption&quot;&gt;A couple of strange ones from the gallery. You can see how my application stitches the pieces together so that they can feel like connected, self-contained images. Of course, some users choose to ignore the guidelines, and it still works&amp;hellip;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;It&amp;rsquo;s up and running, so check it out at &lt;a href=&quot;http://gronster.adamkiryk.com&quot;&gt;gronster.adamkiryk.com&lt;/a&gt;;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s up and running, so check it out at &lt;a href=&quot;http://gronster.adamkiryk.com&quot;&gt;gronster.adamkiryk.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:62.60%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;313&quot; src=&quot;http://player.vimeo.com/video/85163079?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description>
                 <link>http://akiryk.github.io/portfolio/2012/09/15/gronster-drawing-game</link>
                 <guid>http://akiryk.github.io/portfolio/2012/09/15/gronster-drawing-game</guid>
                 <pubDate>2012-09-15T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Story Making Application</title>
+                <description>&lt;p&gt;I designed and built this web application for making and reading choose-your-own-adventure stories. If you like inventing stories, this application can be addictive — and strange. The stories often end up twisting and turning in ridiculous, MadLib style ways.&lt;/p&gt;
+
+&lt;p&gt;Once you register, you can create branching stories with as much complexity as you choose. And you can read them anywhere — the application is a responsive design, meaning it displays well whether on desktop computer, tablet, or mobile phone.&lt;/p&gt;
+
+&lt;p&gt;I developed Storili using php (the same programming language that runs WordPress), in part because I wanted to increase my expertise in creating content management systems for clients. Unlike a regular content management system, however, this branching story game had a number of very specific requirements. It needed to accommodate multiple stories, each with multiple chapters that might or might not lead to new chapters.&lt;/p&gt;
+
+&lt;p&gt;The challenge of branching stories&lt;/p&gt;
+
+&lt;p&gt;One of the challenges I struggled with was how to prevent the multiplication of chapters from overwhelming an author. Every time you allow readers to make a choice, you create the need for two new chapters. The number of chapters can therefore grow exponentially, making stories almost impossible to manage. I’ve mitigated this problem to some extent by giving authors the option to re-use chapters — stories can loop and multiple pathways can lead to the same result. In the end, however, creating an endlessly looping and evolving story is part of the fun.&lt;/p&gt;
+
+&lt;p&gt;Some seventh graders (my son and his friends) came up with a way to create stories that bypasses the whole branching-chapters problem. They give choices at the end of each segment, but they only flesh out one of them. The result is a linear story in which, as a reader, you forever encounter options that the narrator opted not to give you. They can be very funny or can pique your curiosity, and create a weirdly engaging experience.&lt;/p&gt;
+
+&lt;p&gt;Check out the site and create your own story. I’d love to hear from you if you have comments!&lt;/p&gt;
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    I had the idea for creating an online version of a game that I&amp;rsquo;d played once or twice on paper — maybe you&amp;rsquo;ve played it. You start with a page folded into thirds. The first person draws the head and shoulders, then passes the paper to the second person but keeps the drawing hidden. The second person draws the mid-section and passes it to the last player. No one knows what the others have drawn, so the resulting illustration is a strange mashup. 
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Exquisite Corpse &lt;/span&gt;It turns out that this game has a name — Exquisite Corpse — and was either invented or popularized by Surrealists in the 1920s. 
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;(http://gronster.adamkiryk.com&quot;&gt;Check it out&lt;/a&gt; — or read on&amp;hellip;&lt;/p&gt;
+
+&lt;h3&gt;Making A Drawing&lt;/h3&gt;
+
+&lt;p&gt;You start on an intro page, which shows in simple terms how the game works (the site cookies you, so if you return later you&amp;rsquo;ll go straight to the drawing panel). You can click on the big Get Started button — or you can explore the gallery.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The Gronster start screen, visible to first-time users.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/storili/start-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/storili/start-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/storili/start-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The Gronster start screen, visible to first-time users.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:62.60%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;313&quot; src=&quot;http://player.vimeo.com/video/85163080?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+</description>
+                <link>http://akiryk.github.io/portfolio/2011/06/21/story-making-app</link>
+                <guid>http://akiryk.github.io/portfolio/2011/06/21/story-making-app</guid>
+                <pubDate>2011-06-21T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Save The Whales!</title>
+                <description>&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The Gronster start screen, visible to first-time users.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/start-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/gronster/start-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/gronster/start-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The Gronster start screen, visible to first-time users.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;s&lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/portfolio/2008/07/19/save-the-whales</link>
+                <guid>http://akiryk.github.io/portfolio/2008/07/19/save-the-whales</guid>
+                <pubDate>2008-07-19T00:00:00+02:00</pubDate>
         </item>
 
         <item>
