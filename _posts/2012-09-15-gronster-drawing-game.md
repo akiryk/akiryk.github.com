@@ -21,7 +21,7 @@ tags: [php, code, javascript, design, side-projects]
 
 Anyway, I built this game/app as a side project by myself, using CakePHP and JavaScript. It lets you and some friends create three segments of a drawing (without knowing what the others have done), and it stitches them together into a connected whole. 
 
-[Check it out]((http://gronster.adamkiryk.com) — or read on...
+[Check it out](http://gronster.adamkiryk.com) — or read on...
 
 ###Making A Drawing
 You start on an intro page, which shows in simple terms how the game works (the site cookies you, so if you return later you'll go straight to the drawing panel). You can click on the big Get Started button — or you can explore the gallery.

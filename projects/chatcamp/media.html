@@ -13,8 +13,8 @@
 <script>
 // get a reference to our FireBase database. You should create your own
 // and replace the URL.
-var dbRef = new Firebase("https://starlight.firebaseio.com");
-var roomRef = dbRef.child("rooms");
+var roomRef = new Firebase("https://starlight.firebaseio.com/rooms");
+//var roomRef = dbRef.child("rooms");
 
 // shims!
 var PeerConnection = window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
@@ -29,6 +29,9 @@ function id () {
 
 // a nice wrapper to send data to FireBase
 function send (room, key, data) {
+  console.log('room ' + room);
+  console.log('key is ' + key);
+  console.log(data);
 	roomRef.child(room).child(key).set(data);
 }
 
@@ -75,7 +78,8 @@ var server = {
 
 var options = {
 	optional: [
-		{DtlsSrtpKeyAgreement: true}
+		{ DtlsSrtpKeyAgreement: true }, // required for Chrome and Firefox to interoperate
+    { RtpDataChannels: true } // required if we want to make use of the DataChannels API on ff
 	]
 }
 
@@ -104,10 +108,8 @@ var video2 = document.getElementById("otherPeer");
 navigator.getUserMedia({video: true}, function (stream) {
 	// set one of the video src to the stream
 	video.src = URL.createObjectURL(stream);
-
 	// add the stream to the PeerConnection
 	pc.addStream(stream);
-
 	// now we can connect to the other peer
 	connect();
 }, errorHandler);
@@ -121,6 +123,9 @@ pc.onaddstream = function (e) {
 // constraints on the offer SDP. Easier to set these
 // to true unless you don't want to receive either audio
 // or video.
+// An Offer SDP (Session Description Protocol) is metadata that describes
+// to the other peer the format to expect (video, formats, codecs, encryption,
+// resolution, size, etc etc).
 var constraints = {
 	mandatory: {
         OfferToReceiveAudio: true,
