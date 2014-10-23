@@ -5,10 +5,842 @@
         <description>Adam Kiryk - Adam Kiryk</description>
         <link>http://akiryk.github.io</link>
         <link>http://akiryk.github.io</link>
-        <lastBuildDate>2014-05-25T19:08:18+02:00</lastBuildDate>
-        <pubDate>2014-05-25T19:08:18+02:00</pubDate>
+        <lastBuildDate>2014-10-14T21:50:48-04:00</lastBuildDate>
+        <pubDate>2014-10-14T21:50:48-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Bus Ride Reads — Microinteractions</title>
+                <description>&lt;p style=&quot;font-style: italic;&quot;&gt;&lt;a href=&quot;/tag/bus-ride-reads/&quot;&gt;Bus ride reads&lt;/a&gt; is an occasional series in which I discuss a design or ux book I&amp;rsquo;ve been reading on my commute. More recap than review, my goal is to capture the key ideas that stand out for me, and to explore how those ideas relate to my own work whenever possible. &lt;/p&gt;
+
+&lt;p&gt;Microinteractions, by Dan Saffer, is about little details that make a huge difference. If you’ve ever looked through the tumblr &lt;a href=&quot;http://littlebigdetails.com/&quot;&gt;Little Big Details&lt;/a&gt;, you have a decent idea of the kind of thing it covers — and the book is full of examples from that site. But whereas Little Big Details typically celebrates unexpected moments of delight or humor, Microinteractions stresses the role small things play in the overall success of a technology. &lt;/p&gt;
+
+&lt;p&gt;First, as the name implies, a microinteraction is a little bitty thing, usually — but not always — part of a larger feature. From the book: &amp;ldquo;A music player is a feature; adjusting the volume is a microinteraction.” Because such interactions are small and highly focused, they can and should be at the pinnacle of simplicity and ease-of-use. The book’s thesis is that well-polished micro interactions not only help make products great, but can become “signature” moments in their own right — key elements in making something truly stand out. &lt;/p&gt;
+
+&lt;p&gt;There are four parts of a micro interaction. The trigger, rules, feedback, and loops and modes. &lt;/p&gt;
+
+&lt;p&gt;The trigger is fairly self-explanatory. It could be a button that says “log in” or it could be a camera icon that opens a smartphone camera. Triggers can be super obvious, like the public transit kiosks with a giant “touch me” call-to-action, or they can be hidden, like with Google Maps for iOS, where shaking the phone is a invisible trigger for giving feedback. As a designer, you have to strike a balance where the interface is clean and simple and scannable enough that users can easily do the main tasks they want to do, yet not so minimal that the key functionality is  lost. How to determine when to be self-evident and when to be subtle is obviously a trick. Saffer quotes what he calls a golden rule:&lt;/p&gt;
+
+&lt;blockquote&gt;Microinteractions that most people do, most often, should be highly discoverable.&lt;br/&gt;&lt;br/&gt;
+Microinteractions that some people do, somewhat often, should be easily discoverable.&lt;br/&gt;&lt;br/&gt;
+Microinteractions that few people do, infrequently, should take some searching to find.&lt;/blockquote&gt;
+
+&lt;p&gt;This seems hard to argue with, although sometimes designers have to guess about what things people will do most often, or even about what counts as highly discoverable. I love the way we’ve handled the scrubber on our NPR One app. It doesn’t need a giant trigger because it’s infrequently used. But for those people who do want to scrub, it’s a little small for easy handling. The solution is to toggle between minimized and maximized states — as soon as you tap it, the scrubber expands and becomes much easier to use widget. It’s the best of both worlds, because we keep the interface uncluttered yet still make it highly findable. &lt;/p&gt;
+
+&lt;p&gt;Saffer has several principles of good trigger design. I won’t list them all, but a couple seem worth noting.&lt;/p&gt;
+
+&lt;p&gt;The trigger should initiate the same action every time. Apparently, the Galaxy S Note has icons that display different menus  depending on when you click on them, which is confusing and counterproductive because it prevents users from developing an accurate mental model of how the micro interaction works.&lt;/p&gt;
+
+&lt;p&gt;Not to harp on iPhoto too much, but they suffer from this problem as well. Clicking on the “Share” item in the upper-left set of options displays a sub-menu with Facebook, Flickr, and the like. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;iPhoto has two share triggers, but they don't do the same thing.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/share1-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/share1-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-14-microinteractions/share1-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;iPhoto has two share triggers, but they don&amp;rsquo;t do the same thing.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Clicking on the “Share” item in the lower right set of options displays a sub-menu with the same options but also others, including buttons to create a book, order prints, or make an album. If a user has learned that “share” means share on social media, how likely is it they’ll click the share button when trying to create a book? &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Unlike 'share' above, this one enables user to make books, cards, and other assets.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/share2-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/share2-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-14-microinteractions/share2-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Unlike &amp;lsquo;share&amp;rsquo; above, this one enables user to make books, cards, and other assets.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The trigger should bring the data forward. This is a cool idea and worth aiming to do when it makes sense, as in a notifications badge that is first a trigger to view messages and second an indicator of how many messages you have. This can also work really well with button labels, as in a donate button that says  “Donate $200” or “Donate $16.66 per month” depending on what the user has selected.&lt;/p&gt;
+
+&lt;p&gt;As a counter-example, Dropbox does not bring data forward in its trigger for viewing a folder — you just see a plain folder icon. This can be kind of frustrating because it suggests there’s contents that doesn&amp;rsquo;t actually exist, as in the Bully From Space folder, which is empty. In the image below, I’ve contrasted the default display with a simple variation that brings some data forward, in this case data about the contents of the directory.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;In this animated gif, notice how we can improve Dropbox's design by bringing data forward. Adding nothing more than a number to the folder icon enables us to see that one folder is empty and the other has content. &quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/dropbox-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/dropbox-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-14-microinteractions/dropbox-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;In this animated gif, notice how we can improve Dropbox&amp;rsquo;s design by bringing data forward. Adding nothing more than a number to the folder icon enables us to see that one folder is empty and the other has content. &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Rules&lt;/strong&gt;
+Every micro interaction has to have rules. Some are very simple: only show the login button if a user isn’t already logged in. Some are more complex: only show the option to translate a web page if it&amp;rsquo;s in a language other than the user’s default. Saffer’s general advice is to limit options so that the rules stay simple. The whole idea of a micro interaction is to do one small thing really well, so you want to be careful of trying to do to much. &lt;/p&gt;
+
+&lt;p&gt;In my Gronster drawing game, I built some shortcuts for changing the color and size of the brush, but I didn’t want to over-complicate the experience by making everyone read through a paragraph of help text. Instead, I created a rule that says: if a user changes the size of their brush more than two times, show them a little help tip explaining the shortcut. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Not all users will want to be bothered by remembering  keyboard shortcuts, so Gronster doesn't display them. On the other hand, users who change colors regularly are more likely to benefit. There's a rule for that.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/gronster-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/gronster-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-14-microinteractions/gronster-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Not all users will want to be bothered by remembering  keyboard shortcuts, so Gronster doesn&amp;rsquo;t display them. On the other hand, users who change colors regularly are more likely to benefit. There&amp;rsquo;s a rule for that.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;An ounce of prevention&amp;hellip;&lt;/strong&gt;
+In interactions that user-input, there’s the possibility of errors. Certainly, one can always fall back on the old error message — in many cases, they’re unavoidable. But it’s better to eliminate the chance of errors if at all possible. For example, when pasting a url into a field in this internal NPR app, we don’t give an error if the user forgets to add the ‘http://&amp;lsquo; part, we do it for them. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Absorb complexity&lt;/strong&gt; Basically, if the computer can help out users by making a calculation or identifying a reasonable default, do it. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Controls and User Input&lt;/strong&gt;
+I found Saffer’s discussion of operational simplicity vs. perceived simplicity to be a bit confusing, but I think I can explain what he means. In this image of two blenders, the old one with all the buttons would be considered operationally simple because it gives every command its own control. The Vitamix would have perceived simplicity because a single control (the middle dial) enables several actions. It’s hard to think of many examples of operational simplicity being preferable in the type of digital interfaces I’m involved in designing, but I can think of at least one: the NPR One app.&lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-right&quot;&gt;
+  
+
+  &lt;span data-picture data-alt=&quot;NPR One features operational simplicity — a single button for skipping back and another for skipping ahead.&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/9-14-microinteractions/npr-2-phone-tiny.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/9-14-microinteractions/npr-2-phone-small.jpg&quot; data-media=&quot;(min-width: 36.5625em)&quot;&gt;&lt;/span&gt;
+    &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+    &lt;noscript&gt;
+      &lt;img src=&quot;/assets/images/9-14-microinteractions/npr-2-phone-tiny.jpg&quot;&gt;
+    &lt;/noscript&gt;
+  &lt;/span&gt;
+
+&lt;div class=&quot;caption&quot;&gt;NPR One features operational simplicity — a single button for skipping back and another for skipping ahead.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The NPR One app contains a single button for jumping back 15 seconds and another button for skipping ahead to the next story. We at NPR could have done this differently — say, providing a single scrubber representing a full hour of programming, and letting users drag the playhead forward or back as they saw fit. But, of course, that would have actually been much less easy for users and would have missed the point of a simple and elegant micro interaction. &lt;/p&gt;
+
+&lt;p&gt;How to decide when to go for operational simplicity or perceived simplicity? Saffer says:&lt;/p&gt;
+
+&lt;p&gt;For micro interactions that will be done repeatedly, err on the side of perceived simplicity, unless it is an action that needs to be done quickly and with no chance of error — for example, the Mute button on a conference phone; combing it with the Make Quieter action would probably be a disaster. For micro interactions that will only be done once or occasionally, err on the side of operational simplicity; display all the options so that little to no foreknowledge is required.&lt;/p&gt;
+
+&lt;p&gt;I think this makes sense. With NPR One, most people just listen and don’t skip ahead or rewind very often; however, when you need to do one of those things, we’ve reduced or eliminated the amount of necessary foreknowledge.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Feedback&lt;/strong&gt; We need to provide feedback to our users that their action has had an effect. Sometimes this is embedded in the micro-interaction and no additional feedback is necessary — for example, if I click “pause” on Spotify, the music stops. I don’t need it to tell me, “Hey, we’ve stopped the music.” On the other hand, many interactions aren’t so clearcut. If I click on an Add to Cart button on a shopping experience, I’ll need some kind of feedback that my action was successful. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Saffer cautions against using animations to communicate feedback unless the information is critical. Debatable in this case, but it's not a bad implementation.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/shopping-cart-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-14-microinteractions/shopping-cart-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-14-microinteractions/shopping-cart-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Saffer cautions against using animations to communicate feedback unless the information is critical. Debatable in this case, but it&amp;rsquo;s not a bad implementation.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Two ideas stand out to me from this section. 1. With feedback, less is often more. Giving users too much information at the wrong time can be confusing, so aim to provide the least amount of feedback necessary to communicate what’s going on. Simply showing a little cart icon with a number 1 in it might be all you need to do to indicate success rather than an actual animation.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;“Use the overlooked as a means of message delivery.” I’d love to see more of this, and there are probably a variety of ways to do this in projects I’m currently working on. For example, a ‘loading’ screen could be  a place to add some useful information. A simple spinner indicates that something is happening, but what? Perhaps show progress in a meaningful way or at least explain what is happening. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The last section of the book is about loops and modes. Loops are all the micro interactions that occur in some kind of repeating way — an alarm, say. Modes are different states of an interface — like normal vs edit. Saffer cautions that modes can cause confusion, because the same or similar triggers can behave in new ways. For example, in the Stitcher podcast app, the normal behavior for clicking on a podcast is to display options related to that podcast — save for later, view all, etc. But in the edit mode, clicking on a podcast does nothing. I think Stitcher does a reasonably good job with this, because they make it really clear when you’re in edit mode, but it’s a worthwhile thinking hard about how best to handle modes. &lt;/p&gt;
+
+&lt;p&gt;The book covers a lot more than what I’ve mentioned here, but these are the things that stood out most to me. It’s important to design triggers carefully, to use them consistently, and to make give them the right degree of discoverability. Every micro interaction has rules, and they can quickly become difficult to manage, so it’s important to keep them simple whenever possible. Think creatively about how to give feedback, using overlooked design elements or moments of down-time to convey the right amount of information.   &lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2014/10/12/microinteractions</link>
+                <guid>http://akiryk.github.io/blog/2014/10/12/microinteractions</guid>
+                <pubDate>2014-10-12T00:00:00-04:00</pubDate>
+        </item>
+
+        <item>
+                <title>The Best Pledge Experience Ever, Part 3</title>
+                <description>&lt;p&gt;I’ve just written a couple of posts about the online donation experience — &lt;a href=&quot;/blog/2014/09/16/pledge-part-1/&quot;&gt;one&lt;/a&gt; about best and worst practices and &lt;a href=&quot;/blog/2014/09/28/pledge-part-2/&quot;&gt;another&lt;/a&gt; that presents a sample best-case approach. There’s still a big piece I haven’t explored. A particularly thorny problem my team has grappled with at work:  is it possible to prod supporters into giving larger donations by up-selling them more “expensive” premiums — thank-you gifts like concert tickets, hand-crafted tote bags, or cases of wine? &lt;/p&gt;
+
+&lt;p&gt;Or what about up-selling a greater variety of the normal sort of premiums — a black tote bag as well as a cream colored one, perhaps one in organic cotton and the other synthetic? &lt;/p&gt;
+
+&lt;p&gt;And is it possible to do this without making the experience cumbersome and confusing or losing sight of the main objective, which is to collect a donation? &lt;/p&gt;
+
+&lt;p&gt;The short answer is no. The long answer is… well, read on.
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    In my &lt;a href=&quot;/blog/2014/09/28/pledge-part-2/&quot;&gt;last post&lt;/a&gt;, I proposed solving the question of thank-you gifts by limiting them to just a few simple and brand-appropriate items. In other words, a public radio station could offer $50-donors a mug with the station logo or $100-donors tickets to a station-sponsored concert event — and that’s just fine. It strengthens your brand in the minds of supporters and doesn’t add any real work on their part to complete the donation experience. 
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;The value of premiums &lt;/span&gt;Nonprofit consultancy M+R &lt;a href=&quot;http://www.mrss.com/lab/the-power-of-the-premium-convincing-prospective-donors-to-give/&quot;&gt;studied 4 nonprofits&lt;/a&gt;, and found that a small selection of appropriate premiums — like in my earlier post — can help increase donations.
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;• Every thank-you gift has an associated donation requirement (e.g. you have to give at least $50 to get the tote-bag).&lt;/p&gt;
+
+&lt;p&gt;• A supporter/shopper can select as many gifts as they’d like.&lt;/p&gt;
+
+&lt;p&gt;• For any item, a supporter/shopper can choose from among multiple attributes (color, size, material, etc).&lt;/p&gt;
+
+&lt;p&gt;• The donation amount may need to change to reflect the premiums selected. For example, a tee-shirt requires a minimum donation of $50; you selected three; your donation needs to climb to $150.&lt;/p&gt;
+
+&lt;p&gt;I think this is crazy. &lt;/p&gt;
+
+&lt;p&gt;In this post, I’m going to explore how to provide the best user experience possible for the premiums-situation described above, but first I need to explain why I think this approach to handling premiums is nuts. &lt;/p&gt;
+
+&lt;div class=&quot;pullquote pull-left&quot;&gt;
+  
+&lt;div class=&quot;gamma&quot;&gt;Why would you sidetrack would-be donors away from giving and into a bad shopping experience?&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;It’s nuts because it sidetracks would-be donors from making a simple donation and forces them instead into a bad online retail experience. Simple as that. It would be better to thank them with a basic tote and turn them into a regular supporter than to try and compete in the online shopping game.&lt;/p&gt;
+
+&lt;p&gt;Do we have to offer a &lt;em&gt;bad&lt;/em&gt; online retail experience? Perhaps we can make it good. No. There are laws of retail physics that can’t be broken, and online giving tends to break at least one of them.&lt;/p&gt;
+
+&lt;p&gt;Retail physics law #1: a good shopping experience requires that you sell something customers want. Often, this means specializing in a limited category of things — &lt;a href=&quot;https://www.missionbicycle.com/&quot;&gt;bicycles&lt;/a&gt;, say. You attract customers who want to shop for a bicycle. Alternately, you carry a truly wide range of stuff, like Amazon or Target, where shoppers know they’ll find it no matter what it is. Nobody shops at a store carrying a miscellaneous array of mugs, tote-bags, and umbrellas. &lt;/p&gt;
+
+&lt;p&gt;There’s the occasional exception: many museums have successful stores. A good &lt;a href=&quot;http://www.momastore.org/&quot;&gt;museum store&lt;/a&gt; makes money for the institution by selling a somewhat random selection of things. The difference is a) it’s a very well-curated selection of things; b) each of those things typically has something to do with the focus of the museum; c) it’s a store, and clearly distinct from the institution&amp;rsquo;s donation process — ultimately, you shop there because they have things you want to buy, not because you’re trying to support the museum.&lt;/p&gt;
+
+&lt;p&gt;Retail physics law #2: people want to shop first, then pay. Imagine walking into Whole Foods and being told to pay first. How much should you pay? Guess too high and you won’t get your money’s worth. Guess too low and you’ll waste time shopping for things you can’t carry home. You’d never do it. &lt;/p&gt;
+
+&lt;p&gt;When it comes to shopping for premiums, there are a few ways to handle this pay-first situation. Unfortunately, none are very satisfactory.&lt;/p&gt;
+
+&lt;h3&gt;Potential Solution 1&lt;/h3&gt; 
+
+&lt;p&gt;The most obvious solution would simply be to let supporters shop first and then calculate their donation based on what’s been added to the cart. In other words, turn it into a shopping experience. Add a cd to your cart and your donation climbs to $50. Add a pair of tickets to opening night at the symphony, it grows to $500. It’s fair, it works, and it makes sense. Success!&lt;/p&gt;
+
+&lt;p&gt;Wait. Really? We’ve now gone from letting people choose their thank-you gifts to creating a full-on shopping experience. Which misses the point in a major way. We want our supporters to donate, not shop. &lt;em&gt;Our supporters&lt;/em&gt; want to donate, not shop. Sure, it’s possible to do what I’ve described, but does your nonprofit really have the expertise, interest, or bandwidth to make it work?&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Other issues: it's kind of weird to drive users to a shopping site with a call-to-action like 'donate.' Should you say 'shop and donate'? Do you need an additional site dedicated to traditional donations?&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/user-alt-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/user-alt-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge3/user-alt-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Other issues: it&amp;rsquo;s kind of weird to drive users to a shopping site with a call-to-action like &amp;lsquo;donate.&amp;rsquo; Should you say &amp;lsquo;shop and donate&amp;rsquo;? Do you need an additional site dedicated to traditional donations?&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And don’t forget about retail law #1 — sell stuff people want. Nobody wants to “shop” at a store offering only random tote-bags and the like. You’d have to think about finding and maintaining inventory that could actually be sold. Ugh. This causes more headaches than it solves.&lt;/p&gt;
+
+&lt;h3&gt;Potential Solution 2&lt;/h3&gt;
+
+&lt;p&gt;The most user-friendly solution would be to let supporters choose the amount they want to give and then display only the thank-you gifts they can actually “afford.” That is, if I say I want to give $50, you let me choose from a mug or a tote-bag or a bumper-sticker. If I plan to give $100, you add a few more items to the list: a cd, tickets, something else. That works pretty well, and has a precedent in shopping — think of sites where you can filter results and only shop for cameras under $100 or whatever. &lt;/p&gt;
+
+&lt;div class=&quot;pullquote pull-right&quot;&gt;
+  
+&lt;div class=&quot;gamma&quot;&gt;This solution is basically sound, except that it kills the chance to up-sell.&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;This solution is basically sound, except that it kills the chance to up-sell, which is ostensibly the point of offering a large selection of premiums. If your nonprofit isn’t going to benefit from offering a richer selection of premiums, why go to the trouble? And it is trouble. You’ll need staff to maintain a more complex inventory; you’ll need a backend to your website that can handle the variety of choices; and of course there will be more chances to make a mistake — send the wrong thing or forget to order more of something that’s running low. &lt;/p&gt;
+
+&lt;p&gt;There’s another thing. One of our business rules says users should be able to select more than one of an item. We can easily hide $100 thank-you gifts from a $50 donor, but what if that donor wants two of the lower-value gifts? Well, they&amp;rsquo;d need to give $100, so we have to either show them an error message or increase their donation or both. It’s no longer such a clean operation.  &lt;/p&gt;
+
+&lt;h3&gt;Potential Solution 3&lt;/h3&gt;
+
+&lt;p&gt;Let our supporters select how much they want to give first, then let them select one or more thank-you gifts from the full collection — enabling the possibility that we up-sell some to a higher level. If you say you want to give $50 and then choose a gift at the $100 level, we’ll increase your donation to $100. Works well for our nonprofit — but risks pissing off supporters.&lt;/p&gt;
+
+&lt;p&gt;There’s really only one way to manage this scenario, and that’s to be as transparent as possible. We have to make it clear to our supporters that their donation goes up or down based on the premiums they select. And we have to make it easy for them to remove premiums to reach a comfortable level of giving.&lt;/p&gt;
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    We can do this by interrupting supporters when they’ve gone over their limit — say, with an error message: “hey, we just increased your donation to $75!” If we want to err on the side of ensuring they truly understand, we could force them to say yes or no, as in, “Are you sure you want to give $75 and receive this gift? Yes, No.” 
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Uber&amp;rsquo;s surge warning &lt;/span&gt;To ensure users are aware of price surges, Uber requires that you &lt;a href=&quot;http://www.phillymag.com/news/2013/12/18/uber-surge-pricing/&quot;&gt;manually key-in the price multiple&lt;/a&gt;.
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;This wireframe shows how we could prevent users from continueing without first consenting to the larger donation amount. It's a heavy-handed solution.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/modal-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/modal-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge3/modal-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;This wireframe shows how we could prevent users from continueing without first consenting to the larger donation amount. It&amp;rsquo;s a heavy-handed solution.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;These methods work okay, but they’re flawed because they make it too easy for users to create errors. We want our supporters to have a smooth and successful giving experience. Cluttering that experience with alerts and warnings doesn’t help. Ideally, we’d make it so that errors weren’t possible. For example, we could hide the high-donation gifts from low-donation supporters as in solution 2 above. Of course, we’ve been through this already, and that won’t work for our requirements. &lt;/p&gt;
+
+&lt;p&gt;Which brings us to our last best hope for a reasonable solution. A way to lead with the donation, let supporters choose whatever gifts they want, and ensure supporters don’t walk away resentful. Here it is. Ahem.&lt;/p&gt;
+
+&lt;p&gt;A user, let’s call her Kathy, comes to our donation page. Looking it over, she can see that we’ve already made some guesses about what she’d like to do — we’ve set a default donation of $75, which is indicated in both the form and in a summary panel. That&amp;rsquo;s a little high for her, so she changes to $25. (She may or may not notice the number in upper left corner — I&amp;rsquo;ll call it the summary panel — but that&amp;rsquo;s okay for now). &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;This wireframe suggests how a summary area could help inform users of any changes to their donation amount.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/select-amount-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/select-amount-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge3/select-amount-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;This wireframe suggests how a summary area could help inform users of any changes to their donation amount.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;She scrolls down the page a bit, and sees that we offer a variety of thank-you gifts organized by value. They&amp;rsquo;re clearly labeled, so she can tell which are in the $50 category, which are in the $100 category, and which are in the $250 category.&lt;/p&gt;
+
+&lt;p&gt;She likes something in the $50 group and clicks ‘add to cart.’ This triggers a change in the summary panel, where the donation climbs to $50 and the shopping cart icon, which until now has been empty, indicates that it contains one item. With a little animation, or a distinct color, or simply the switch from zero to 1, she notices the change. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;This wireframe shows how the donation amount and shopping cart change as a user adds premiums.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/add-gifts-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/add-gifts-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge3/add-gifts-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;This wireframe shows how the donation amount and shopping cart change as a user adds premiums.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As with other online shopping sites, she can view her cart to confirm its contents and make changes — or she can continue on her way. Let’s say she does. She sees another gift she likes and adds that. Then another. Her cart changes from 1 to 2 to 3 items and the donation changes to $100 and then $150.&lt;/p&gt;
+
+&lt;p&gt;Finally, she’s ready to move on, so she clicks a button marked “check out” and goes to the last part of the form. This displays fields where she can enter payment details — credit card number, expiration date, and so on. But there’s also a table that reviews her gifts and her total donation. She may not have originally intended to give $225, but that’s what she’s giving now and we make it obvious. Given the visual cues of the summary and shopping cart in the first part of the form, she’s probably not surprised, but if she is — or if she changes her mind — it’s easy to remove a gift or two and reduce the total donation. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Wireframe. Before gathering payment details — or at least before taking the user's money — we show a summary and enable users to remove items to reduce the donation.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/remove-stuff-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge3/remove-stuff-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge3/remove-stuff-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Wireframe. Before gathering payment details — or at least before taking the user&amp;rsquo;s money — we show a summary and enable users to remove items to reduce the donation.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I think this solution is the best match for the given business requirements. By leading with the ask, we establish giving as the primary goal. By letting supporters choose freely from the selection of premiums, we create the possibility that at least some might step up their donation. By using a shopping cart icon and language like “add to cart,” we start to feel more and more like a shopping site, which has the advantage of helping supporters form an accurate mental model for how our process works: the more gifts you choose, the more you give.&lt;/p&gt;
+
+&lt;p&gt;We know from user-interviews that at least some supporters are bothered by this overt retail experience. My feeling is we can’t have it both ways. If we’re going to let people choose items that we’re assigning a value to, even letting them select color or size or other attributes, we’ve essentially created a retail experience. Pretending otherwise only makes it more confusing. &lt;/p&gt;
+
+&lt;p&gt;In the beginning of this post, I said it’s not possible to up-sell premiums in a way that doesn’t lose site of the main objective or become unwieldy and confusing. I’ve just presented a way that sorta kinda works. But it’s flawed. It’s complicated, requiring the nonprofit to maintain a store-load of inventory (without becoming a store) and supporters to navigate a bunch of items with different values and keep track of a “shopping cart” even though their first objective is to give. &lt;/p&gt;
+
+&lt;p&gt;And do all of these efforts to up-sell even work? Do they work well enough to justify the added trouble and expense? We don’t really know. That’s why I think it’s better to create a simpler and more straightforward experience like I described in my earlier post. Getting people to give is hard. Make it easy, and I think both nonprofits and supporters will be happier. &lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2014/10/07/pledge-part-3</link>
+                <guid>http://akiryk.github.io/blog/2014/10/07/pledge-part-3</guid>
+                <pubDate>2014-10-07T00:00:00-04:00</pubDate>
+        </item>
+
+        <item>
+                <title>The Best Pledge Experience Ever, Part 2</title>
+                <description>&lt;p&gt;In my &lt;a href=&quot;/blog/2014/09/16/pledge-part-1/&quot;&gt;last post&lt;/a&gt; about the donation experience, I gave a variety of examples of best and worst practices. In this post, I’d like to sketch out an example site that pulls all the best practices together. It’s just an example, so I’m going to invent a classical-music format public radio station and pretend they’re amenable to my recommendations. However, this being public radio, I’ll work within some constraints that would be silly to ignore.&lt;/p&gt;
+
+&lt;p&gt;First, I’ll assume this station wants to give thank-you gifts (you know, those mugs and tote-bags). It makes the experience more complicated and it isn&amp;rsquo;t really that common among other non-profit organizations, but it’s in the public radio DNA. It needs to be there. In any case, I’ll keep the gift selection process simple, as it should be — this station won’t offer 30+ gift options like some I can think of. (See &lt;a href=&quot;/blog/2014/10/07/pledge-part-3/&quot;&gt;part 3&lt;/a&gt; for more on this).&lt;/p&gt;
+
+&lt;p&gt;Next, I’ll assume there are multiple ways to give support. You can give money, sure, but you can also give real-estate, stocks, an old car — or you could volunteer time. I’ll have to find a way to let users find these various ways without distracting from the primary goal of getting cash donations. &lt;/p&gt;
+
+&lt;p&gt;Okay, let’s start with how users get to the form. There should be a prominent button somewhere in the header that says “donate” or, if not that, something clear and explicit. If an organization has a clean and open header, it might be possible to include “other ways to give” as a discrete link beside the button that can drive to a page that covers the full gamut of options. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Here's a wireframe showing one way to make it possible for users to find other ways to give support. Donate is primary, but other ways to give are findable.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/donate-button-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/donate-button-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge2/donate-button-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Here&amp;rsquo;s a wireframe showing one way to make it possible for users to find other ways to give support. Donate is primary, but other ways to give are findable.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;However, I think a better solution would be to have an item in the navigation called something like “Ways to Give.” It could be a drop down menu that contained links to specific things: Donate your car, Volunteer, Give stock, whatever. I prefer this because it allows each type of support to get its own dedicated place. For example, if a user clicked “volunteer,” we could take them to a page where they could enter times and dates when they were available to help.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;In addition to the donate button, provide an item in nav-bar that says 'Ways to give.' On click, reveal a dropdown menu with various choices (donate, volunteer, give your car, etc), each one going to a dedicated page.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/drawing-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/drawing-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge2/drawing-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;In addition to the donate button, provide an item in nav-bar that says &amp;lsquo;Ways to give.&amp;rsquo; On click, reveal a dropdown menu with various choices (donate, volunteer, give your car, etc), each one going to a dedicated page.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This makes sense, because the things we want many people to do most often (donating) should be highly discoverable, whereas things that fewer people do with less frequency should take some searching to find (paraphrased from Microinteractions, p30). Trying to make everything highly discoverable is self-defeating because it only creates clutter and confusion. Focus, man!&lt;/p&gt;
+
+&lt;p&gt;Great, so a user clicks on the donate button and goes straight to a page where they can donate. This page should have certain characteristics. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It should be free of clutter and distractions&lt;/li&gt;
+&lt;li&gt;It should require the user to do as little work as possible&lt;/li&gt;
+&lt;li&gt;It should be easy to use on a smartphone or tablet&lt;/li&gt;
+&lt;li&gt;It should reinforce the user’s desire to give, if it doesn’t interfere with the other three goals&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Below are a couple of snapshots illustrating a two-step process — choose a donation level and then enter payment details. Starting at the top, there’s a logo and a tagline, but no navigation or other links. This is by design: we want to reduce distractions and keep people on this page. We need the logo to give supporters a sense of place, to let them know they’re giving money to the group they intend to support. The tagline we could possibly do without, but it’s understated, and it contributes to objective #4 in that it reminds users of why they support this station. &lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Here are the two views — first a user selects an amount to donate, then they enter payment details.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/two-panes-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/two-panes-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/two-panes-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge2/two-panes-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Here are the two views — first a user selects an amount to donate, then they enter payment details.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As mentioned, we’re offering thank-you gifts, and they add some inevitable complexity to the interaction. At the very least, we have to explain what they are — a cd or tickets to a performance. We may also have to provide users with a chance to opt-out — no perk for me, thanks. We probably also have to explain the gifts in a more general sense: we aren’t selling them, they’re little perks or rewards for our supporters.&lt;/p&gt;
+
+&lt;p&gt;Given these challenges, the form is about as simple and frictionless as it gets. To start, we only ask supporters a single question — how much do you want to give? Actually, we make it even easier by defaulting to an amount we believe most users will select, in this case $100.&lt;/p&gt;
+
+&lt;p&gt;Explaining the nature of the thank-you gifts is handled with the heading, “Donate and get a gift.” It’s brief and clear, and means we don’t need to put an additional label above the column of gifts or next to each item. Further, these gifts aren’t just random tote bags and tee-shirts. If this is a classical music station, let’s give rewards that enhance our brand — things related to music, like a cd, performance tickets, or fancy headphones. And we can always send a mug or tote-bag (with branding!) for the smaller donations.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Notice how 'No gift, thank you' gets displayed once the $100 amount is selected.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/no-gift-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/no-gift-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge2/no-gift-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Notice how &amp;lsquo;No gift, thank you&amp;rsquo; gets displayed once the $100 amount is selected.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Note the micro interaction, in which clicking on an amount reveals an otherwise hidden option not to receive the gift. One might argue this belongs at the top of the page just below the heading, but placing it there would create a minor speed bump I’d rather avoid, a tiny decision we’d be asking every supporter to make before even looking at the gift options. &lt;/p&gt;
+
+&lt;p&gt;Handling payment details requires at least a few inputs, so let’s make sure we only ask supporters for information we really need. Rather than separate fields for first and last name, one field gets it all. Rather than asking for credit card brand, we can figure it out based on the number. Rather than making users scroll through an endless drop down menu of countries, we can provide a smart default and radio buttons for the most common ones based on our target audience (clicking “other&amp;quot; might expose a drop down menu). Rather than making everyone fill out all fields of the address, we can hit the google maps API and pre-populate city, state, and zip code based on street address. &lt;/p&gt;
+
+&lt;p&gt;Is it better to divide the flow into two parts, as I’ve done here? That&amp;rsquo;s a reasonable question — certainly, breaking a long form into too many little pieces can be frustrating for users. However, in this case I see a couple of advantages. First, if the supporter opts not to receive a thank-you gift, we don’t really need to ask for shipping details and could simply remove that part of the second page. Second, it lets us chunk the form into easily digestible pieces. A common criticism of multipart form is that users don’t get a sense of how much they still have to complete. In this case, there are only two parts and there’s an easy-to-find back button, so I don’t believe it’s a problem. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The button text changes as a user toggles between monthly and one-time payments.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/monthly-anim-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/monthly-anim-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge2/monthly-anim-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The button text changes as a user toggles between monthly and one-time payments.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Finally, the donate button (above) is specific and helpful. And for users who’d like to pay monthly, we’ve done the math for them.&lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  
+
+  &lt;span data-picture data-alt=&quot;&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/9-2014-pledge2/mobile-tiny.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/9-2014-pledge2/mobile-small.jpg&quot; data-media=&quot;(min-width: 36.5625em)&quot;&gt;&lt;/span&gt;
+    &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+    &lt;noscript&gt;
+      &lt;img src=&quot;/assets/images/9-2014-pledge2/mobile-tiny.jpg&quot;&gt;
+    &lt;/noscript&gt;
+  &lt;/span&gt;
+
+&lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I won’t say too much about designing for mobile, since I covered most of what should be done in my &lt;a href=&quot;/blog/2014/09/16/pledge-part-1/&quot;&gt;last post&lt;/a&gt;. The form should be responsive and take advantage of html5 input types. At large screen sizes, it might make sense to use imagery to make an emotional connection with supporters and reinforce their intent to give. This is a hard one, since radio isn’t a particularly visual medium — it’s not like an anti-hunger charity that could show a child receiving food. But it’s worth exploring, perhaps showing classical music imagery for a classical station like in this example. &lt;/p&gt;
+
+&lt;p&gt;There you have it. A streamlined donation experience complete with various ways to give, gift premiums, and a payment form. The emphasis is on giving, as it should be, but I can imagine some stations would prefer offering more gifts in the hope of up-selling supporters on a larger donation. Does that work? I have some doubts, and I’ll explore them in a next post about how to handle a more robust set of premiums.&lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/desktop-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/desktop-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/9-2014-pledge2/desktop-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/9-2014-pledge2/desktop-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2014/09/28/pledge-part-2</link>
+                <guid>http://akiryk.github.io/blog/2014/09/28/pledge-part-2</guid>
+                <pubDate>2014-09-28T00:00:00-04:00</pubDate>
+        </item>
+
+        <item>
+                <title>Bus Ride Reviews — On Web Typography</title>
+                <description>&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  
+
+  &lt;a href=&quot;http://www.abookapart.com/products/on-web-typography&quot;&gt;
+
+  &lt;span data-picture data-alt=&quot;&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/9-14-web-type/web-type-tiny.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/9-14-web-type/web-type-small.jpg&quot; data-media=&quot;(min-width: 36.5625em)&quot;&gt;&lt;/span&gt;
+    &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+    &lt;noscript&gt;
+      &lt;img src=&quot;/assets/images/9-14-web-type/web-type-tiny.jpg&quot;&gt;
+    &lt;/noscript&gt;
+  &lt;/span&gt;
+
+  &lt;/a&gt;
+
+&lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I just read this book and wanted to get down some thoughts before I forget them. It’s a decent book that reviews general typographic principles in an accessible way. While it’s pretty basic stuff for an experienced designer, there were some things I’d forgotten, some I never knew, and I’ll probably refer back to it from time to time. &lt;/p&gt;
+
+&lt;p&gt;If your goal is to learn about web fonts from a developer&amp;rsquo;s perspective, this probably isn&amp;rsquo;t a good choice because it&amp;rsquo;s so general and — being in print — can&amp;rsquo;t really compete with rapid changes for which researching online will be a better bet. For instance, he talks about icon fonts which are already becoming out-moded. &lt;/p&gt;
+
+&lt;p&gt;However, if you&amp;rsquo;re a designer who just wants the basics — where to find web fonts, how to test them, and how to get them to display across browsers — this is a good place to start. &lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-right&quot;&gt;
+  
+
+  &lt;a href=&quot;http://freefaces.simonfosterdesign.com/&quot;&gt;
+
+  &lt;span data-picture data-alt=&quot;Screen grab from the free faces website&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/9-14-web-type/freefonts-tiny.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/9-14-web-type/freefonts-small.jpg&quot; data-media=&quot;(min-width: 36.5625em)&quot;&gt;&lt;/span&gt;
+    &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+    &lt;noscript&gt;
+      &lt;img src=&quot;/assets/images/9-14-web-type/freefonts-tiny.jpg&quot;&gt;
+    &lt;/noscript&gt;
+  &lt;/span&gt;
+
+  &lt;/a&gt;
+
+&lt;div class=&quot;caption&quot;&gt;Screen grab from the free faces website&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Santa Maria doesn&amp;rsquo;t think too much of free fonts, which seems like fair advice in general, but there are exceptions. In the resources section, he sites &lt;a href=&quot;http://hellohappy.org/beautiful-web-type/&quot;&gt;Beautiful Web Type&lt;/a&gt;, a decent list of nice, free fonts, but one that hasn&amp;rsquo;t been updated in over a year. For a more up-to-date discussion, check out &lt;a href=&quot;http://www.smashingmagazine.com/2014/03/12/taking-a-second-look-at-free-fonts/&quot;&gt;Taking a second look at free fonts&lt;/a&gt;, by Jeremiah Shoaf. Also, a &lt;a href=&quot;http://freefaces.simonfosterdesign.com/&quot;&gt;nice collection of free fonts&lt;/a&gt; that aren&amp;rsquo;t necessarily web optimized. &lt;/p&gt;
+
+&lt;p&gt;I liked his simple and approachable way of assessing a typeface so that you can decide whether it works well for your purposes. Although he briefly covers a larger range of considerations, he doesn’t delve much into things like counters, terminals, ascenders/descenders, and all the other aspects of letter anatomy. Instead, he talks about 3 key points for making sense of a typeface:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contrast&lt;/strong&gt;: Are the stroke-weights relatively even, like with Helvetica — or varied, like with Bodoni?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;x-height&lt;/strong&gt;: Again, is it high like Helvetica or low like Bodoni?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Letterforms&lt;/strong&gt;: Basically, are the letterforms distinct from one another? Do they have a lot of character or little to no character?&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot more to assessing a typeface that these three characteristics, but I like it as a starting place.&lt;/p&gt;
+
+&lt;p&gt;Although he doesn’t get too into the technical aspects of how computers render letterforms, he mentions how Mac OS uses Core Text and Microsoft uses DirectWrite, and shows some of their quirks. Not much to do about it except to understand the basic unpredictability of how text is rendered on screen.&lt;/p&gt;
+
+&lt;p&gt;For things web designers do have control over, I tended to agree with his take.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;FOUT (the flash of unstyled text). Sometimes thought of a bug, sometimes as a feature, Santa Maria sees it as more of a feature. I tend to agree. Better to get content to users faster even if it means the font might change after you start reading. Look to make the transition from one font to another as undramatic as possible. Specifically, if you set body copy to 18px with a web font, make sure that the backup font doesn&amp;rsquo;t appear too big or small at 18px — you might need a different size for the backup, something that&amp;rsquo;s possible with &lt;a href=&quot;https://developers.google.com/fonts/docs/webfont_loader&quot;&gt;web font loader&lt;/a&gt;. In addition to font size, consider line height, color, and other characteristics as well.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Baseline grids. Great in print because type can be seen through the paper. Nice that it creates a rhythm but exceptionally hard to pull of on web and probably not worth it when dealing with a CMS — where it’s so easy for assets like images to throw off the rhythm.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Consider using a system font for body text, since it will load super quickly and readability is greatly infuenced by familiarity. Although&amp;hellip; The book doesn&amp;rsquo;t say it, but &lt;a href=&quot;http://westleyknight.co.uk/farewell-web-safe-fonts/&quot;&gt;there’s no such thing as web-safe font anymore&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It’s possible to justify type with css but it isn’t usually worth doing because automatic hyphenation is poor and it can create awkward rivers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s all. Check out &lt;a href=&quot;http://www.abookapart.com/products/on-web-typography&quot;&gt;the book&lt;/a&gt; here!&lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2014/09/20/web-type</link>
+                <guid>http://akiryk.github.io/blog/2014/09/20/web-type</guid>
+                <pubDate>2014-09-20T00:00:00-04:00</pubDate>
+        </item>
+
+        <item>
+                <title>The Best Pledge Experience Ever, Part 1</title>
+                <description>&lt;p&gt;I’ve been designing the online donation framework for public radio stations, and I think I&amp;rsquo;ve learned a few things worth sharing. It&amp;rsquo;s challenging to create a system that will meet the needs of every station because they each have their own priorities and assumptions. However, using the ideas I&amp;rsquo;ll discuss here, it should be possible to create an excellent user experience for both stations and donors.&lt;/p&gt;
+
+&lt;p&gt;In this post, I’m going to review best practices, highlight some common mistakes, and show real-world examples of both. In &lt;a href=&quot;/blog/2014/09/28/pledge-part-2/&quot;&gt;a followup post&lt;/a&gt;, I’ll show mock-ups for a best-case scenario. I’ll also do a post about &lt;a href=&quot;/blog/2014/10/07/pledge-part-3/&quot;&gt;how to handle premiums&lt;/a&gt; (those tote-bags and other gifts we send supporters), which are common, yet complicated enough to warrant special attention.&lt;/p&gt;
+
+&lt;p&gt;So, what are the ingredients of a great donation form?&lt;/p&gt;
+
+&lt;h4&gt;1. Make it easy to find.&lt;/h4&gt; 
+
+&lt;p&gt;When a supporter clicks on a &amp;ldquo;donate&amp;rdquo; button, follows a link from an email, or goes directly to your site&amp;rsquo;s donate page, they should be able to donate. Sounds obvious, but it’s surprisingly common for organizations to put speed-bumps or even roadblocks along the way.  &lt;/p&gt;
+
+&lt;p&gt;For example, clicking &lt;em&gt;donate now&lt;/em&gt; on the Motor Neurone Disease Association&amp;rsquo;s site takes users to a landing page jam-packed with calls-to-action. Not good:&lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Common anti-pattern: clicking on 'donate' button takes users to a cluttered landing page. There are more than 50 buttons and links here — way too much distraction.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/mnd-steps-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/mnd-steps-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/mnd-steps-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/mnd-steps-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Common anti-pattern: clicking on &amp;lsquo;donate&amp;rsquo; button takes users to a cluttered landing page. There are more than 50 buttons and links here — way too much distraction.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    Options can be a good thing but too many become overwhelming and counter-productive. At the very least, they make it harder for users to accomplish their goal (giving to your organization). 
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Paradox of Choice &lt;/span&gt;Too many choices can make it &lt;a href=&quot;http://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice?language=en&quot;&gt;harder to make a choice.&lt;/a&gt; Make it easy for your supporters wherever you can.
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of course, the absense of options can also be a problem. For example, if the only way to donate is to create an account and login first, supporters may just walk away. &lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;I found plenty of examples like this at the sites of several megachurches. It's not like they're required to do it and it's not a good idea.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/church-login-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/church-login-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/church-login-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;I found plenty of examples like this at the sites of several megachurches. It&amp;rsquo;s not like they&amp;rsquo;re required to do it and it&amp;rsquo;s not a good idea.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Requiring login isn&amp;rsquo;t common for public media, but I&amp;rsquo;ve accross it several times in my research — like on this church donation page (above). If you want my money, then let me make a donation. “Login to Give” is a terrible call to action. &lt;/p&gt;
+
+&lt;p&gt;I understand why these kinds of problems come about. In public radio we have the same pressures. We want to add members, we offer diverse ways to give, and we don&amp;rsquo;t want to miss an opportunity to draw people in. &lt;/p&gt;
+
+&lt;div class=&quot;pullquote pull-left&quot;&gt;
+  
+&lt;div class=&quot;gamma&quot;&gt;When a user clicks the donate button, take them — in one step — to a place where they can enter payment details.&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Solution: Start with a reasonably prominent call to action that says “donate.” I like it better than “support” because it says what it means. Make it look clickable, like a button. When a user clicks it, take them — in one step — to a place where they can enter payment details and donate. &lt;/p&gt;
+
+&lt;p&gt;If you have other ways for people to support your organization — like the Motor Neurone Disease Association — that’s fine, but don’t disrupt the donation experience to tout it. One possibility: place a link saying &amp;ldquo;other ways to support&amp;rdquo; discretely at the top of your donation page. &lt;/p&gt;
+
+&lt;p&gt;If you want to build your membership list, include an address field in the donation form. You don&amp;rsquo;t need a separate registration proceedure to do it.&lt;/p&gt;
+
+&lt;p&gt;The folks at &lt;a href=&quot;http://www.water.org&quot;&gt;water.org&lt;/a&gt; do a nice job of this. The donate button seems a bit unnecessarily large, but that&amp;rsquo;s quibbling. It seems like the main reason you’d come to a site like this would be to give money, so go ahead, make it large. More importantly, when you click that big button, you go straight to a clean page that&amp;rsquo;s exclusively designed for taking donations. No competing calls to action. No clutter.&lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Water.org gets users to the donation form in one step.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/water-steps-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/water-steps-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/water-steps-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/water-steps-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Water.org gets users to the donation form in one step.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+
+&lt;h4&gt;2. Make it easy to use. &lt;/h4&gt; 
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Part of Livestrong Foundation's form. Setting a default donation can make it easier on supporters.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/anchor-amount-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/anchor-amount-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/anchor-amount-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Part of Livestrong Foundation&amp;rsquo;s form. Setting a default donation can make it easier on supporters.&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;div class=&quot;marginator&quot;&gt;
+  &lt;p&gt;
+    Once someone gets to the form — after one click (see above) — it should be as easy to get through as possible. Start by showing me a few gift amounts and defaulting to one. This helps by simplifying my decision making process, letting me move forward to the next part of the form without having to worry over the right amount. In addition, think hard about what data you need to gather so you can remove unnecessary fields and keep the form short. If possible, auto fill input fields where appropriate. The idea is to help people get to your submit button.
+  &lt;/p&gt;
+  &lt;div class=&quot;marginalia&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Cognitive bias&lt;/span&gt; A default amount also sets the user&amp;rsquo;s expectation about what a &amp;ldquo;normal&amp;rdquo; donation should be. This is called &amp;ldquo;anchoring,&amp;rdquo; a cognitive bias that says people have a tendency to put more importance on the first piece of information they get. 
+    &lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;p&gt;The Girl Scouts of America &lt;a href=&quot;https://donate.girlscouts.org/give&quot;&gt;donation page&lt;/a&gt; demonstrates many common problems: it’s really long with a number of unnecessary fields, the labels aren&amp;rsquo;t super clear, and it’s awkwardly designed. If they only fixed one thing, however, I&amp;rsquo;d suggest they get rid of the capcha they&amp;rsquo;ve placed at the end of the form. It stops people just before they can give. It feels impersonal and mistrustful. Find another way of handling robot-entries — if they&amp;rsquo;re even really such a concern (I haven&amp;rsquo;t found a single other nonprofit that uses capchas like this).&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/girlscouts-options-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/girlscouts-options-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/girlscouts-options-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Girl Scouts: do what you need to do to get rid of the capcha. I haven’t found any other nonprofit that uses one in this way.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/capcha-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/capcha-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/capcha-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Girl Scouts: do what you need to do to get rid of the capcha. I haven’t found any other nonprofit that uses one in this way.&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;p&gt;&lt;a href=&quot;https://www.charitywater.org/donate/&quot;&gt;Charity: Water&lt;/a&gt; (not the same as water.org, above) is a good example of an organization that makes its donation form easy to complete, even on mobile. To minimize the number of fields supporters have to click through, they require just a single “name” field rather than firstname, lastname, and salutation. Smart. &lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Nice and easy&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/charity-water-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/charity-water-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/charity-water-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/charity-water-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Nice and easy&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;They’ve eliminated all labels in favor of hints, which makes for an exceptionally clean design. &lt;a href=&quot;http://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php&quot;&gt;Hints in text boxes can cause confusion&lt;/a&gt; (e.g. a user might not enter anything into a field because it already appears completed), but in this case I suspect that&amp;rsquo;s not a problem because the form is so simple. &lt;/p&gt;
+
+&lt;p&gt;The credit card information is easy, just three fields, and the submit button is extremely clear. Saying &amp;ldquo;Give $30&amp;rdquo; is great because it does two things really well — acting as both submit button and summary.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Charity: Water completes your address for you.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/autofill-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/autofill-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/autofill-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Charity: Water completes your address for you.&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;p&gt;Further, they’ve used  smart defaults, like putting the United States in the country field. Even better, they’ve connected with a map API, so when I type the first part of my address, 22 Fresh&amp;hellip;, it suggests addresses that match (e.g. 22 Fresh Street, Arlington; 22 Fresh Pond Lane, Cambridge, etc). Also very cool: the form autocompletes town and zip code based on the street, so as soon as I select 22 Fresh Pond Lane I don’t need to fill out the other fields.&lt;/p&gt;
+
+&lt;h4&gt;Create urgency for your campaign in a meaningful way&lt;/h4&gt;
+
+&lt;p&gt;Probably half the time I discuss donation forms with a station, they raise the question of displaying a fund-drive thermometer. If it actually helps, I&amp;rsquo;d love to see some data, but I&amp;rsquo;m skeptical.&lt;/p&gt;
+
+&lt;div class=&quot;pic-medium pull-right&quot;&gt;
+  
+
+  &lt;span data-picture data-alt=&quot;Cliché&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/pledge/thermo-tiny.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/pledge/thermo-small.jpg&quot; data-media=&quot;(min-width: 36.5625em)&quot;&gt;&lt;/span&gt;
+    &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+    &lt;noscript&gt;
+      &lt;img src=&quot;/assets/images/pledge/thermo-tiny.jpg&quot;&gt;
+    &lt;/noscript&gt;
+  &lt;/span&gt;
+
+&lt;div class=&quot;caption&quot;&gt;Cliché&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I don’t think you create much urgency with a fundraising thermometer. They&amp;rsquo;re overused to the point of being clichéd — and, as with all clichés, are easy to tune out. Even if you don’t tune them out, what do they really say about the nature of the nonprofit organization or why you’d want to support it? Anyway, most people who give do it because they believe in an organization’s mission, not because the organization is almost done with its fundraising drive.&lt;/p&gt;
+
+&lt;p&gt;If you want to create urgency, do it in a way that’s related to your mission. Charity Water does it with imagery and a meaningful challenge: someone is matching all donations up to a million dollars to bring water to a specific place. The fact that it&amp;rsquo;s tied to something specific (the Sahel) helps drive home the point.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/sahel-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/sahel-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/sahel-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4&gt;Reinforce the supporter’s good intentions&lt;/h4&gt;
+
+&lt;p&gt;The Water Project (not the same as water.org or Charity: Water) also has a nice way of handling this by telling supporters what their gift can be used for. By the way, what is up with all the water organizations having good donation UIs?&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The Water Project gives some context for each donation amount.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/make-a-difference-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/make-a-difference-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/make-a-difference-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The Water Project gives some context for each donation amount.&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;h4&gt;Handle premiums wisely&lt;/h4&gt;
+
+&lt;div class=&quot;pic-medium pull-left&quot;&gt;
+  
+
+  &lt;span data-picture data-alt=&quot;The classic public radio premium.&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/pledge/mug-tiny.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/pledge/mug-small.jpg&quot; data-media=&quot;(min-width: 36.5625em)&quot;&gt;&lt;/span&gt;
+    &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+    &lt;noscript&gt;
+      &lt;img src=&quot;/assets/images/pledge/mug-tiny.jpg&quot;&gt;
+    &lt;/noscript&gt;
+  &lt;/span&gt;
+
+&lt;div class=&quot;caption&quot;&gt;The classic public radio premium.&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;p&gt;Being in public radio, I’m familiar with the use of thank-you gifts — we call them premiums. We give supporters station-branded mugs, tote bags, calendars, and it’s generally all well and good. It seems like supporters enjoy getting these items, and it helps the station&amp;rsquo;s brand to get their name and logo out into the world. At the very least, something like a branded mug keeps the station in-mind — if not top-of-mind — for supporters who use them.&lt;/p&gt;
+
+&lt;p&gt;However, beyond a certain point, managing gift selection becomes a real drag. It adds complexity for stations, who have to maintain inventory and shopping cart functionality. It adds complexity for supporters, who have to make more decisions and complete more form fields.&lt;/p&gt;
+
+&lt;p&gt;Wanna donate? No problem, just choose a premium (below). Kill me now.&lt;/p&gt;
+
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;This isn't even all of the gift premiums that a donor can choose.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/gbh-gifts-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/gbh-gifts-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/gbh-gifts-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/gbh-gifts-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;This isn&amp;rsquo;t even all of the gift premiums that a donor can choose.&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;p&gt;How to handle premiums is a complicated enough topic that I&amp;rsquo;ve written about it in &lt;a href=&quot;/blog/2014/10/07/pledge-part-3/&quot;&gt;a different post&lt;/a&gt;. For now, I&amp;rsquo;ll leave it at this: keep premiums simple and remember that people give because they want to give. If they want to shop, they&amp;rsquo;ll likely go elsewhere — to an online retailer.&lt;/p&gt;
+
+&lt;h5&gt;Make it work well on mobile&lt;/h5&gt;
+
+&lt;div class=&quot;pic-medium pull-right&quot;&gt;
+  
+
+  &lt;span data-picture data-alt=&quot;Set the input type in a way that will display a minimal number keypad when handling phone numbers or credit cards.&quot;&gt;
+    &lt;span data-src=&quot;/assets/images/pledge/number-pad-tiny.jpg&quot;&gt;&lt;/span&gt;
+    &lt;span data-src=&quot;/assets/images/pledge/number-pad-small.jpg&quot; data-media=&quot;(min-width: 36.5625em)&quot;&gt;&lt;/span&gt;
+    &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+    &lt;noscript&gt;
+      &lt;img src=&quot;/assets/images/pledge/number-pad-tiny.jpg&quot;&gt;
+    &lt;/noscript&gt;
+  &lt;/span&gt;
+
+&lt;div class=&quot;caption&quot;&gt;Set the input type in a way that will display a minimal number keypad when handling phone numbers or credit cards.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Other than making the donation page responsive, there are a number of optimizations you should make to the form. First, make sure the form is as simple and minimal as possible without compromising clarity and without giving up on collecting information that you need.  &lt;/p&gt;
+
+&lt;p&gt;Next, ensure each input works easily from a smartphone or tablet by taking advantage of HTML5 input types or finding alternatives when they don’t work well. For instance, when asking for a credit card number, use &lt;code&gt;input type=&amp;quot;number&amp;quot; pattern=&amp;quot;[0-9]*&amp;quot;&lt;/code&gt; for a simple number keypad &lt;a href=&quot;http://bradfrostweb.com/blog/mobile/better-numerical-inputs-for-mobile-forms/&quot;&gt;(more on this).&lt;/a&gt; For email addresses, set type=“email” and the smartphone will correctly show an email-optimized keypad. &lt;/p&gt;
+
+&lt;h4&gt;Monthly giving&lt;/h4&gt;
+
+&lt;p&gt;It&amp;rsquo;s generally considered a best practice to &lt;a href=&quot;http://nonprofit.about.com/od/onlinefundraising/a/Why-Your-Charity-Should-Have-A-Monthly-Giving-Program.htm&quot;&gt;encourage monthly giving&lt;/a&gt;. It makes sense, from the organization’s point of view, in that they get a stream of income and build a relationship that remains constant. &lt;/p&gt;
+
+&lt;p&gt;On the other hand, it wouldn’t be my first choice as a donor. It seems like there’s an ever-growing number of subscription services that lock you into monthly credit card payments, and the idea of adding yet another is a bit of a turn-off. It also adds one more task for our supporters to complete — and one more chance to potentially add some confusion. &lt;/p&gt;
+
+&lt;p&gt;If it’s important to receive payments in a regular and predictable way, the nonprofit could do the necessary accounting on their own end. Take my $120 and give yourself $10 a month — fine with me. &lt;/p&gt;
+
+&lt;p&gt;Oh well, it may be that the benefit to the nonprofit outweighs the potential hassle for the supporter. And, of course, many supporters would happily pay by whatever method is most helpful. So include an easy way to make the donation monthly, just be transparent about how you handle the recurring part, because sometimes it isn&amp;rsquo;t clear. For example, if I check next to the $50 donation amount and then check &amp;ldquo;give monthly,&amp;rdquo; am I giving $50 monthly or will my $50 be divided over 12 months? I&amp;rsquo;ve seen both methods used. &lt;/p&gt;
+
+&lt;p&gt;Autism Speaks has a nice way to reassure users that the monthly gift will be no more than they expect. Checking the monthly payment box changes the gift amount to a field where users can set whatever number they’d like.&lt;/p&gt;
+
+&lt;div class=&quot;pic-normal&quot;&gt;
+  &lt;span data-picture data-alt=&quot;Monthly gift selection for Autism Speaks&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/monthly-animation-small.gif&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/pledge/monthly-animation-med.gif&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/pledge/monthly-animation-small.gif&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;Monthly gift selection for Autism Speaks&lt;/div&gt;
+&lt;/div&gt; 
+</description>
+                <link>http://akiryk.github.io/blog/2014/09/16/pledge-part-1</link>
+                <guid>http://akiryk.github.io/blog/2014/09/16/pledge-part-1</guid>
+                <pubDate>2014-09-16T00:00:00-04:00</pubDate>
+        </item>
 
         <item>
                 <title>5 Favorite (Sans-Serif) Fonts from Google</title>
@@ -139,7 +971,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/blog/2014/01/24/best-free-fonts</link>
                 <guid>http://akiryk.github.io/blog/2014/01/24/best-free-fonts</guid>
-                <pubDate>2014-01-24T00:00:00+01:00</pubDate>
+                <pubDate>2014-01-24T00:00:00-05:00</pubDate>
         </item>
 
         <item>
@@ -244,7 +1076,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/blog/2014/01/15/whats-wrong-with-browsing</link>
                 <guid>http://akiryk.github.io/blog/2014/01/15/whats-wrong-with-browsing</guid>
-                <pubDate>2014-01-15T00:00:00+01:00</pubDate>
+                <pubDate>2014-01-15T00:00:00-05:00</pubDate>
         </item>
 
         <item>
@@ -382,7 +1214,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/blog/2013/12/16/learn-js</link>
                 <guid>http://akiryk.github.io/blog/2013/12/16/learn-js</guid>
-                <pubDate>2013-12-16T00:00:00+01:00</pubDate>
+                <pubDate>2013-12-16T00:00:00-05:00</pubDate>
         </item>
 
         <item>
@@ -482,7 +1314,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/blog/2013/12/05/responsive-images-baby-steps</link>
                 <guid>http://akiryk.github.io/blog/2013/12/05/responsive-images-baby-steps</guid>
-                <pubDate>2013-12-05T00:00:00+01:00</pubDate>
+                <pubDate>2013-12-05T00:00:00-05:00</pubDate>
         </item>
 
         <item>
@@ -578,7 +1410,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/blog/2013/12/04/using-georgia</link>
                 <guid>http://akiryk.github.io/blog/2013/12/04/using-georgia</guid>
-                <pubDate>2013-12-04T00:00:00+01:00</pubDate>
+                <pubDate>2013-12-04T00:00:00-05:00</pubDate>
         </item>
 
         <item>
@@ -638,7 +1470,62 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/blog/2013/12/01/responsive-video-jekyll</link>
                 <guid>http://akiryk.github.io/blog/2013/12/01/responsive-video-jekyll</guid>
-                <pubDate>2013-12-01T00:00:00+01:00</pubDate>
+                <pubDate>2013-12-01T00:00:00-05:00</pubDate>
+        </item>
+
+        <item>
+                <title>Comic Stripping for UX</title>
+                <description>&lt;p&gt;I thought this was a &lt;a href=&quot;http://uxmas.com/2012/ux-design-role-playing-and-micromoments&quot;&gt;pretty interesting approach to researching UI design&lt;/a&gt;&amp;hellip; The idea is to role play a &amp;lsquo;conversation&amp;rsquo; with the user-interface you&amp;rsquo;re thinking about in order to reveal its deficiencies and gain insight. I bet it can be helpful, under certain circumstances, and it&amp;rsquo;s definitely memorable — imagine role playing a conversation with a client&amp;rsquo;s web site along with your client. You&amp;rsquo;d make your point hit home, most likely. &lt;/p&gt;
+
+&lt;p&gt;Anyway, it got me thinking about a related exercise. Something less theatrical that could be used to encourage a client or a team to think about what is most important in a given interaction. I&amp;rsquo;ll take you through what I did and why. &lt;/p&gt;
+
+&lt;p&gt;The clients were struggling to understand the relative importance of various elements of a public radio station&amp;rsquo;s web site home page. We&amp;rsquo;d agreed to work mobile first and were therefore in the (desirable) position of starting with only what was necessary and making every new piece of content or functionality justify itself. But that didn&amp;rsquo;t mean there weren&amp;rsquo;t people advocating for their own pet elements.&lt;/p&gt;
+
+&lt;p&gt;For example, there was pressure to add space and attention to a branded masthead (Make the logo bigger! Add a tagline!); we couldn&amp;rsquo;t neglect the &amp;ldquo;Donate Now&amp;rdquo; button; we&amp;rsquo;d obviously need underwriting (an ad); listen to the live stream had to be prominent; what if the station was having a pledge drive? We&amp;rsquo;d need a big promotional unit. And what about regular old content — you know, news stories, interviews, first listens to new music… Yup, we&amp;rsquo;d need that to be important, too.&lt;/p&gt;
+
+&lt;p&gt;Since we&amp;rsquo;re doing this mobile-first, let&amp;rsquo;s start to think about how to handle all of those elements at a very small screen size.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-wireframe-1.jpg&quot; alt=&quot;A basic wireframe&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Lots of room for improvement, sure, but it&amp;rsquo;s a start, a way to display the priorities that the clients were pushing for. I decided to create a cartoon conversation that would reveal a few key points about this arrangement. Read on&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-1.png&quot; alt=&quot;Illustration of a site-visitor&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;He&amp;rsquo;s perfect because he&amp;rsquo;s totally generic. Thats&amp;rsquo;s the point. The first time someone visits our site&amp;rsquo;s home page, we really don&amp;rsquo;t know very much about them or what they&amp;rsquo;re after. We have to give them a default set of choices. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-2.png&quot; alt=&quot;Comic of a guy representing a computer screen&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The bearded guy represents the website. He&amp;rsquo;s got a bow tie, he&amp;rsquo;s got a little personality. That&amp;rsquo;s fine — the website will have some personality. &lt;/p&gt;
+
+&lt;p&gt;However, it&amp;rsquo;s still just a website. No artificial intelligence. No supernatural abilities to perceive what a particular site visitor wants. So no matter that the user &amp;lsquo;says&amp;rsquo; in response to this initial greeting, the site&amp;rsquo;s response is going to be the same. If we display a branded masthead with big logo and tagline at the top, front and center, then we might agree that this is what the site says to our hypothetical user&amp;rsquo;s first comment:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-3.png&quot; alt=&quot;Comic of a person speaking to a computer screen&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The point is: we&amp;rsquo;d better all agree that this first statement makes sense. And maybe it does. Or maybe it suggests to us that we want our welcome statement to be a little less one-track. It&amp;rsquo;s an important thing to consider, and it becomes obvious to clients and the team when presented in this way. &lt;/p&gt;
+
+&lt;p&gt;Moving onto a more specific type of user… Let&amp;rsquo;s see how the conversation goes with a user who&amp;rsquo;s interested in reading local news, given that our prioritization puts the logo/brand first above listen; listen is above underwriting/pledge; news is last.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-4.png&quot; alt=&quot;Conversation between person and computer screen&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Is that the right experience? It might be. Perhaps the point of this site isn&amp;rsquo;t to serve readers of local news. But if that&amp;rsquo;s true, let&amp;rsquo;s make sure we all understand it and agree to the principle. &lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say we talk about it, though, and agree to a different conversation, one that feels like the right one we should be having…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-5.png&quot; alt=&quot;Conversation between person and computer screen&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not perfect for the reader, but it&amp;rsquo;s reasonably smooth. If listening is the primary purpose for this site, then we can probably live with it. We&amp;rsquo;ll need to adjust our set of priorities in our wireframe a bit, shift some content/functionality around, possibly adjust the visual weight of certain elements. We might come up with something like the following. The logo/brand gets damped town a little — we remove the tagline, say; the sequence of where we see the ad and the pledge announcement changes; news comes up. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/comic-ux/comic-wireframe-2.jpg&quot; alt=&quot;A basic wireframe&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, a fairly loose wireframe, but a flow that&amp;rsquo;s much improved over the first example — and one that our stakeholders have agreed to. It gives us a good starting point for refinement, prototyping, and testing with real users.&lt;/p&gt;
+
+&lt;h3&gt;Results&lt;/h3&gt;
+
+&lt;p&gt;So, could cartooning be an effective approach to guiding UX? Of course. In my case, we were struggling to get everyone on the same page. A few little examples like this helped reveal that we didn&amp;rsquo;t agree about some fundamental things. They helped us articulate those differences and come up with some next steps for us to explore. I&amp;rsquo;d say that made it a successful exploration. I probably wouldn&amp;rsquo;t take it a lot farther than I did here, because it doesn&amp;rsquo;t take much to make the key points. But — simply by surprising people with a hopefully funny way to tackle a problem — it can get folk&amp;rsquo;s attention and possibly encourage them to think in a new way. It did that for us.&lt;/p&gt;
+</description>
+                <link>http://akiryk.github.io/blog/2013/09/21/comic-ux</link>
+                <guid>http://akiryk.github.io/blog/2013/09/21/comic-ux</guid>
+                <pubDate>2013-09-21T00:00:00-04:00</pubDate>
         </item>
 
         <item>
@@ -649,7 +1536,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 
 &lt;div class=&quot;pullquote pull-right&quot;&gt;
   
-&lt;div class=&quot;gamma&quot;&gt;NPR depends on member stations to build their own audiences since those audiences give money that ultimately pays for NPR services.&lt;/div&gt;
+&lt;div class=&quot;gamma&quot;&gt;NPR depends on money from member stations, so it&amp;rsquo;s in our interest to help stations build engaged audiences.&lt;/div&gt;
 
 &lt;/div&gt;
 
@@ -712,7 +1599,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</link>
                 <guid>http://akiryk.github.io/portfolio/2013/02/09/facebook-project</guid>
-                <pubDate>2013-02-09T00:00:00+01:00</pubDate>
+                <pubDate>2013-02-09T00:00:00-05:00</pubDate>
         </item>
 
         <item>
@@ -807,78 +1694,90 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/portfolio/2012/09/15/gronster-drawing-game</link>
                 <guid>http://akiryk.github.io/portfolio/2012/09/15/gronster-drawing-game</guid>
-                <pubDate>2012-09-15T00:00:00+02:00</pubDate>
+                <pubDate>2012-09-15T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>Story Making Application</title>
-                <description>&lt;p&gt;I designed and built this web application for making and reading choose-your-own-adventure stories. If you like inventing stories, this application can be addictive — and strange. The stories often end up twisting and turning in ridiculous, MadLib style ways.&lt;/p&gt;
+                <description>&lt;p&gt;I designed and built this web application for creating (and reading) choose-your-own-adventure 
+stories. If you like inventing stories, this application can be addictive — and strange. 
+The stories often end up twisting and turning in ridiculous, MadLib style ways.&lt;/p&gt;
 
-&lt;p&gt;Once you register, you can create branching stories with as much complexity as you choose. And you can read them anywhere — the application is a responsive design, meaning it displays well whether on desktop computer, tablet, or mobile phone.&lt;/p&gt;
+&lt;p&gt;Once you register, you can create branching stories with as much complexity as you choose. 
+And you can read them anywhere — the application is a responsive design, meaning it displays 
+well whether on desktop computer, tablet, or mobile phone.&lt;/p&gt;
 
-&lt;p&gt;I developed Storili using php (the same programming language that runs WordPress), in part because I wanted to increase my expertise in creating content management systems for clients. Unlike a regular content management system, however, this branching story game had a number of very specific requirements. It needed to accommodate multiple stories, each with multiple chapters that might or might not lead to new chapters.&lt;/p&gt;
+&lt;p&gt;One of the challenges posed to anyone creating a choose-your-own-adventure story is 
+that the number of chapters grows exponentially. Every time you create a choice, you need 
+two new chapters. It quickly becomes impossible to manage.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve reduced the pain to some extent by letting authors re-use chapters — stories can loop and multiple pathways can lead to the same result. 
+In the end, however, creating an endlessly looping and evolving story is part of the fun.&lt;/p&gt;
+
+&lt;p&gt;I developed Storili using php (the same programming language that runs WordPress), 
+in part because I wanted to increase my expertise in creating content management systems 
+for clients. Unlike a regular content management system, however, this branching story 
+game had a number of very specific requirements. It needed to accommodate multiple stories, 
+each with multiple chapters that might or might not lead to new chapters.&lt;/p&gt;
 
 &lt;p&gt;The challenge of branching stories&lt;/p&gt;
 
-&lt;p&gt;One of the challenges I struggled with was how to prevent the multiplication of chapters from overwhelming an author. Every time you allow readers to make a choice, you create the need for two new chapters. The number of chapters can therefore grow exponentially, making stories almost impossible to manage. I’ve mitigated this problem to some extent by giving authors the option to re-use chapters — stories can loop and multiple pathways can lead to the same result. In the end, however, creating an endlessly looping and evolving story is part of the fun.&lt;/p&gt;
-
-&lt;p&gt;Some seventh graders (my son and his friends) came up with a way to create stories that bypasses the whole branching-chapters problem. They give choices at the end of each segment, but they only flesh out one of them. The result is a linear story in which, as a reader, you forever encounter options that the narrator opted not to give you. They can be very funny or can pique your curiosity, and create a weirdly engaging experience.&lt;/p&gt;
-
-&lt;p&gt;Check out the site and create your own story. I’d love to hear from you if you have comments!&lt;/p&gt;
-
-&lt;div class=&quot;marginator&quot;&gt;
-  &lt;p&gt;
-    I had the idea for creating an online version of a game that I&amp;rsquo;d played once or twice on paper — maybe you&amp;rsquo;ve played it. You start with a page folded into thirds. The first person draws the head and shoulders, then passes the paper to the second person but keeps the drawing hidden. The second person draws the mid-section and passes it to the last player. No one knows what the others have drawn, so the resulting illustration is a strange mashup. 
-  &lt;/p&gt;
-  &lt;div class=&quot;marginalia&quot;&gt;
-    &lt;p&gt;&lt;span class=&quot;margin-heading&quot;&gt;Exquisite Corpse &lt;/span&gt;It turns out that this game has a name — Exquisite Corpse — and was either invented or popularized by Surrealists in the 1920s. 
-    &lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;pic-large&quot;&gt;
+  &lt;span data-picture data-alt=&quot;The Gronster share screen.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/storili/exponential-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/storili/exponential-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/storili/exponential-large.jpg&quot; data-media=&quot;(min-width: 63.75em)&quot;&gt;&lt;/span&gt;
+  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
+  &lt;noscript&gt;
+    &lt;img src=&quot;/assets/images/storili/exponential-small.jpg&quot;&gt;
+  &lt;/noscript&gt;
+  &lt;/span&gt;
+&lt;div class=&quot;caption&quot;&gt;The Gronster share screen.&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;(http://gronster.adamkiryk.com&quot;&gt;Check it out&lt;/a&gt; — or read on&amp;hellip;&lt;/p&gt;
+&lt;p&gt;My son and a couple of his friends (then in seventh-grade) side-stepped the problem of 
+branching chapters. They would give choices at the end of 
+each segment, but only one choice actually goes anywhere — the other is just a thought. 
+The result is a linear story in which, 
+as a reader, you forever encounter options that the narrator opted not to give you, which
+ can be funny and weirdly engaging.&lt;/p&gt;
+
+&lt;p&gt;Check out the site and create your own story. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://storyengine.adamkiryk.com&quot;&gt;Check it out&lt;/a&gt; — or read on&amp;hellip;&lt;/p&gt;
 
 &lt;h3&gt;Making A Drawing&lt;/h3&gt;
 
 &lt;p&gt;You start on an intro page, which shows in simple terms how the game works (the site cookies you, so if you return later you&amp;rsquo;ll go straight to the drawing panel). You can click on the big Get Started button — or you can explore the gallery.&lt;/p&gt;
 
 &lt;div class=&quot;pic-normal&quot;&gt;
-  &lt;span data-picture data-alt=&quot;The Gronster start screen, visible to first-time users.&quot;&gt;
-  &lt;span data-src=&quot;/assets/images/storili/start-small.jpg&quot;&gt;&lt;/span&gt;
-  &lt;span data-src=&quot;/assets/images/storili/start-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
+  &lt;span data-picture data-alt=&quot;The Gronster share screen.&quot;&gt;
+  &lt;span data-src=&quot;/assets/images/storili/editing-small.jpg&quot;&gt;&lt;/span&gt;
+  &lt;span data-src=&quot;/assets/images/storili/editing-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
   &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
   &lt;noscript&gt;
-    &lt;img src=&quot;/assets/images/storili/start-small.jpg&quot;&gt;
+    &lt;img src=&quot;/assets/images/storili/editing-small.jpg&quot;&gt;
   &lt;/noscript&gt;
   &lt;/span&gt;
-&lt;div class=&quot;caption&quot;&gt;The Gronster start screen, visible to first-time users.&lt;/div&gt;
+&lt;div class=&quot;caption&quot;&gt;The Gronster share screen.&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:62.60%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;313&quot; src=&quot;http://player.vimeo.com/video/85163080?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description>
                 <link>http://akiryk.github.io/portfolio/2011/06/21/story-making-app</link>
                 <guid>http://akiryk.github.io/portfolio/2011/06/21/story-making-app</guid>
-                <pubDate>2011-06-21T00:00:00+02:00</pubDate>
+                <pubDate>2011-06-21T00:00:00-04:00</pubDate>
         </item>
 
         <item>
                 <title>Save The Whales!</title>
-                <description>&lt;div class=&quot;pic-normal&quot;&gt;
-  &lt;span data-picture data-alt=&quot;The Gronster start screen, visible to first-time users.&quot;&gt;
-  &lt;span data-src=&quot;/assets/images/gronster/start-small.jpg&quot;&gt;&lt;/span&gt;
-  &lt;span data-src=&quot;/assets/images/gronster/start-med.jpg&quot; data-media=&quot;(min-width: 26.25em)&quot;&gt;&lt;/span&gt;
-  &lt;!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. --&gt;
-  &lt;noscript&gt;
-    &lt;img src=&quot;/assets/images/gronster/start-small.jpg&quot;&gt;
-  &lt;/noscript&gt;
-  &lt;/span&gt;
-&lt;div class=&quot;caption&quot;&gt;The Gronster start screen, visible to first-time users.&lt;/div&gt;
-&lt;/div&gt;
+                <description>&lt;p&gt;What’s the right balance of fun and challenge when making a game? I programmed this game in actionscript for flash, so it won’t work on iOS, but &lt;a href=&quot;http://www.adamkiryk.com/whales/&quot;&gt;check it out&lt;/a&gt; if you have flash.&lt;/p&gt;
 
-&lt;p&gt;s&lt;/p&gt;
+&lt;div class=&quot;bt-video-container&quot; style=&quot;position:relative;padding-bottom:62.60%;padding-top:30px;height:0;overflow:hidden&quot;&gt;&lt;iframe width=&quot;500&quot; height=&quot;313&quot; src=&quot;http://player.vimeo.com/video/50937011?rel=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description>
                 <link>http://akiryk.github.io/portfolio/2008/07/19/save-the-whales</link>
                 <guid>http://akiryk.github.io/portfolio/2008/07/19/save-the-whales</guid>
-                <pubDate>2008-07-19T00:00:00+02:00</pubDate>
+                <pubDate>2008-07-19T00:00:00-04:00</pubDate>
         </item>
 
         <item>
@@ -965,7 +1864,7 @@ Lato. Ethnic Pitchfork tofu year. Drinking vinegar wayfarers, roof party art par
 </description>
                 <link>http://akiryk.github.io/portfolio/2004/10/10/winesmarts</link>
                 <guid>http://akiryk.github.io/portfolio/2004/10/10/winesmarts</guid>
-                <pubDate>2004-10-10T00:00:00+02:00</pubDate>
+                <pubDate>2004-10-10T00:00:00-04:00</pubDate>
         </item>
 
 

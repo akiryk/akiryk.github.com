@@ -11,4 +11,7 @@ Do work in the source branch -- not the master branch. After you've made and com
     rake publish
 This will generate the site and then copy and push the generated site into the master branch. The master branch is what github pages will serve up. 
 
-
+**Run Locally**
+>1. cd to local folder with the jekyll files.
+>2. Run <code>jekyll serve --watch</code>
+>2. Visit http://localhost:4000/

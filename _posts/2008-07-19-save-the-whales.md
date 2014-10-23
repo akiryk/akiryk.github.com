@@ -1,18 +1,15 @@
 ---
 layout: portfolio
 title: Save The Whales!
-teaser: This is an application I designed and coded on my own. The idea is that up to three people can share in creating a single drawing without seeing what the other participants have done until the end.
-micro-teaser: ux + design + frontend
-hero: gronster-hero
-hero-caption: "A snapshot of Gronster"
-assets: gronster
+teaser: What’s the right balance of fun and challenge when making a game?
+micro-teaser: game design + programming + illustration
+hero: hero
+hero-caption: "A snapshot of Save the Whales"
+assets: whales
 category: portfolio
-tags: [php, code, javascript, design, side-projects]
+tags: [games, design, flash, side-projects]
 ---
 
+What’s the right balance of fun and challenge when making a game? I programmed this game in actionscript for flash, so it won’t work on iOS, but [check it out](http://www.adamkiryk.com/whales/) if you have flash.
 
-{% assign photo="start" %}
-{% assign caption="The Gronster start screen, visible to first-time users." %}
-{% include custom/pic_normal %}
-
-s
+{% vimeo 50937011 500 313 %}

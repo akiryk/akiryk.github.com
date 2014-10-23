@@ -22,11 +22,11 @@
   .pullquote {
 
     &.pull-left {
-      @include pull-left();
+      @include pull-left(large);
     }
 
     &.pull-right {
-      @include pull-right();
+      @include pull-right(large);
     }
 
   }

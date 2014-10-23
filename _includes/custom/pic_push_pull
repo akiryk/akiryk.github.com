@@ -3,12 +3,18 @@ This simply places an image.
 The classes that determine whether it pushes or pulls are in 
 pic_push and pic_pull.
 -->{% endcomment %}
-<span data-picture data-alt="{{ caption }}">
-  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-tiny.jpg"></span>
-  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-small.jpg" data-media="(min-width: {{ site.AK.pic_pull_size }})"></span>
-  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-  <noscript>
-    <img src="/assets/images/{{ page.assets }}/{{ photo }}-tiny.jpg">
-  </noscript>
+{% if url %}
+  <a href="{{ url }}">
+{% endif %}
+  <span data-picture data-alt="{{ caption }}">
+    <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-tiny.jpg"></span>
+    <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-small.jpg" data-media="(min-width: {{ site.AK.pic_pull_size }})"></span>
+    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+    <noscript>
+      <img src="/assets/images/{{ page.assets }}/{{ photo }}-tiny.jpg">
+    </noscript>
   </span>
+{% if url %}
+  </a>
+{% endif %}
 <div class="caption">{{ caption }}</div>

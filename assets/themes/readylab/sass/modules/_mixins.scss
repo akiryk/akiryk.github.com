@@ -14,25 +14,45 @@
 /*
  * Common styles for images or text that pulls left or  pushes right
  */
-@mixin push-or-pull(){
+@mixin push-or-pull($size: normal){
+  $width: 14.25em;
+  @if ($size == large){
+    $width: 18em;
+  }
   margin-top: .5em;
   margin-bottom: 1em;
-  width: 18em; // half of content width plus room for gutter
+  width: $width; // half of content width plus room for gutter
 }
 
 /*
- * Common styles for images or text that pull left
+ * Pull images or quotes or other assets left or push them right
+ * 
+ * Optional $size parameter used for width. 
  */
 
-@mixin pull-left(){
-  @include push-or-pull();
+@mixin pull-left($size: normal){
+  $margin-left: -7.5em;
+  $width: "normal";
+  @if $size == large {
+    $margin-left: -7.5em;
+    $width: "large";
+  }
+
+  @include push-or-pull($width);
   float: left;
   margin-left: -7.5em;
   margin-right: 2em;
 }
 
-@mixin pull-right() {
-  @include push-or-pull();
+@mixin pull-right($size: normal) {
+  $margin-left: -7.5em;
+  $width: "normal";
+  @if $size == large {
+    $margin-left: -7.5em;
+    $width: "large";
+  }
+
+  @include push-or-pull($width);
   float: right;
   margin-right: -7.5em;
   margin-left: 2em;

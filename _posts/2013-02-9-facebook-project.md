@@ -13,7 +13,7 @@ tags : [ux, mvp, npr, design, front-end]
   In 2012, I helped launch an experiment to leverage NPR's Facebook presence to grow the audience for member stations. NPR has more than three million Facebook followers, but most member stations have far less. By posting member station stories onto NPR's Facebook page, we had an opportunity to expose their content to a much wider group of people. It’s been a <a href="http://www.niemanlab.org/2012/02/how-npr-drove-traffic-to-a-local-station-by-geotargeting-stories-on-facebook/?hq_e=el&hq_m=2040998&hq_l=1&hq_v=437cc910b2">big success.</a> 
 </p>
 
-{% assign quote = "NPR depends on member stations to build their own audiences since those audiences give money that ultimately pays for NPR services." %}
+{% assign quote = "NPR depends on money from member stations, so it's in our interest to help stations build engaged audiences." %}
 {% include custom/push_quote %}
 
 In case you aren't a National Public Radio insider, you may not realize exactly how the organization works. It's non-profit and gets some support from the federal government. But it only gets a fraction of its budget that way (like, around 10%). The rest comes from underwriting, grants, an endowment, and payments from member stations. That last one is pretty important. Member stations pay a fee for NPR programming (and for a bunch of other stuff, too). NPR depends on that money, so it depends on each member station to build a loyal audience who will give to that station, which will in turn be able to pay NPR. NPR can't solicit member donations on its own — that's just part of its charter.

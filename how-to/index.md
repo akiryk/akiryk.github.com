@@ -5,7 +5,7 @@ title: How To
 
 Run local jekyll server:
     jekyll server --watch
-
+    use http://localhost:4000/
 
 ###How to encode colon in your YML 
 Use the entity &#58;
