@@ -1,0 +1,29 @@
+/**
+ * Base.scss
+ * Handle base html styles (body, p, a, etc). 
+ * These should generally be unmodified tags rather than classnames or ids
+ * except for a couple exceptions (for example, h1 also has an analog class, .alpha,
+ * that will always be the same size so belongs here)
+ * 
+ */
+
+body {
+  background-color: #ddd;
+  font-family: $serif-stack;
+}
+
+
+img {
+  display: block;
+  font-style: italic;
+  width: 100%;
+  max-width: 100%;
+}
+
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}

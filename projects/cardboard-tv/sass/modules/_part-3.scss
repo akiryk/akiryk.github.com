@@ -1,0 +1,69 @@
+.part-3 {
+  .card { 
+    padding: 0 4em;
+  }
+}
+
+.small-card {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -4em;
+  padding: 4em;
+}
+
+.packaging {
+  position: relative;
+
+  .big {
+    margin-bottom: .25em;
+  }
+
+  .poem {
+    margin-bottom: 1.5em;
+  }
+
+  .small-card {
+    img {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.screenprinting {
+  background-color: $aqua;
+  padding: 4em;
+  margin-top: -2em;
+  margin-bottom: 22em;
+  p { 
+    color: #02404f;
+    margin-top: 0.25em;
+  }
+
+  .col {
+    margin-bottom: 8em;
+  }
+}
+
+.heavy-cardboard {
+  background: $tan url(../images/cardboard-rt.png) no-repeat right top;
+  border-top: 1px solid $tan;
+  padding-bottom: 2em;
+  overflow: hidden;
+  clear: both;
+  p {
+    margin: .5em 1em;
+    text-align: left;
+    padding: 0;
+    width: 50%;
+
+  }
+}
+
+.nicely-machined {
+  background-color: $tan;
+}
+
+.end {
+  padding-bottom: 12em;
+}

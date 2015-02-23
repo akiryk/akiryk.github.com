@@ -4,13 +4,14 @@
   size according to screen size. 
   The sizes (site.AK.med_size and other) are set in config.yml.
 -->{% endcomment %}
-
+<div class="portfolio-image-wrapper">
   <div class="portfolio-image">
     <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
+      <span data-src="/assets/images/{{post.assets}}/{{ post.hero }}-small.jpg" ></span>
+      <span data-src="/assets/images/{{post.assets}}/{{ post.hero }}-med.jpg" data-media="(min-width: {{site.AK.pic_med_size}})"></span>
       <noscript>
-        <img src="/assets/images/heros/{{ post.hero }}-thumb.jpg">
+        <img src="/assets/images/{{post.assets}}/{{ post.hero }}-small.jpg">
       </noscript>
     </span>
   </div>
+</div>

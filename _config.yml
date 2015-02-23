@@ -6,9 +6,13 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
 # markdown: rdiscount
+# rdiscount:
+#   extensions: [smart]
 markdown: redcarpet
+redcarpet:
+  extensions: [smart]
 
-paginate: 10
+paginate: 15
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -130,9 +134,24 @@ JB :
 
 AK:
   # Custom list of pages to include in navigation
-  primary_nav : [["/index.html", "Blog"], ["/portfolio_index.html", "Portfolio"], ["/about.html", "About"]]
-  lap_size :  "800px"
-  med_size :  "550px"
-  desk_size : "880px"
+  primary_nav : [["/index.html", "Blog"], ["/portfolio-list/index.html", "Portfolio"], ["/about/index.html", "About"]]
+  
+  #Screen breaks for the picturefill polyfill.
+  #pic_med_size. Show the 'med' image if screen wider than 420px
+  pic_med_size:   "26.25em"
+  #pic_large_size: Show the 'large' image if screen wider than 1020px 
+  pic_large_size : "63.75em"
+  #pic_pull_size. For push and pull images, use the '-small' image suffix if screen larger than 585px
+  pic_pull_size: "36.5625em"
+
+  #Screen breaks for the hero images (the images at the top of pages)
+  #These are different than regular images because their dimensions are different.
+  #Show the large hero image if screen wider than 1320px
+  pic_hero_large: "82.5em"
+  #Show the mid-large image (940px wide) if screen wider than 637px
+  pic_hero_mid_large: "39.8125em"
+  #Show the medium image (636px wide, which is the same as for normal images above) as long as screen is wider than pic_med_size
+  #Show the small hero image if screen is narrower than pic_med_size
+
   palm_size : "680px"
   wide_size : "1320px"

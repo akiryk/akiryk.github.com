@@ -3,14 +3,22 @@
   The data-picture class is for use with picture-fill polyfill, which selects the best image
   size according to screen size. 
   The sizes (site.AK.med_size and other) are set in config.yml.
+  If you want to set the filetype, do this in the include:
+  {% include custom/pic_push filetype="gif" %}
 -->{% endcomment %}
+
+{% assign ft="jpg" %}
+{% if include.filetype %}
+  {% assign ft={{include.filetype}} %}
+{% endif %}
+
 <div class="pic-normal">
   <span data-picture data-alt="{{ caption }}">
-  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-small.jpg"></span>
-  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-large.jpg" data-media="(min-width: {{ site.AK.desk_size }})"></span>
+  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-small.{{ft}}"></span>
+  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-med.{{ft}}" data-media="(min-width: {{ site.AK.pic_med_size }})"></span>
   <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
   <noscript>
-    <img src="/assets/images/{{ page.assets }}/{{ photo }}-small.jpg">
+    <img src="/assets/images/{{ page.assets }}/{{ photo }}-small.{{ft}}">
   </noscript>
   </span>
 <div class="caption">{{ caption }}</div>

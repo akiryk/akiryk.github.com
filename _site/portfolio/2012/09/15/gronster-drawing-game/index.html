@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Gronster&#58; A Drawing Game</title>
+  
+  <meta name="author" content="Adam Kiryk">
+
+  <!-- Enable responsive viewport -->
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le styles -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'> -->
+  <link href="/assets/themes/readylab/stylesheets/screen.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <!-- Le fav and touch icons -->
+<!-- Update these with your own images
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+-->
+
+  <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  </head>
+  <body id="top" class="">
+    <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
+      <header class="masthead cf">
+  <div class="masthead-top">
+    <div class="brand">
+      <a class="logo" href="/" title="Ready Lab Home">
+        <img src=" /assets/themes/readylab/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <h1 class="screenreaders">Ready Lab</h1>
+      </a>
+      <a href="#main" class="screenreaders">Skip navigation</a>
+    </div><!-- .brand -->
+    <div id="nav-toggle"></div>
+  </div><!-- .masthead-top -->
+  <nav id="primary-menu" class="primary-menu">
+    
+<ul class="nav">
+    <li>
+      
+        <a href="/index.html" class="nav-link">Blog</a>
+       
+    </li>
+
+    <li>
+      
+        <a href="/portfolio-list/index.html" class="nav-link">Portfolio</a>
+       
+    </li>
+
+    <li>
+      
+        <a href="/about/index.html" class="nav-link">About</a>
+       
+    </li>
+
+</ul>
+  </nav>
+</header>
+      
+
+  <div class="inner-wrapper yes-hero">
+    
+    
+    <div class="pic-hero">
+      <span data-picture data-alt="A snapshot of Gronster" class="">
+        <span data-src="/assets/images/gronster/gronster-hero-small.jpg" ></span>
+        <span data-src="/assets/images/gronster/gronster-hero-med.jpg" data-media="(min-width:26.25em)"></span>
+        <span data-src="/assets/images/gronster/gronster-hero-mid-large.jpg" data-media="(min-width:39.8125em)"></span>
+        <span data-src="/assets/images/gronster/gronster-hero-large.jpg" data-media="(min-width: 82.5em)"></span>
+        <noscript>
+          <img src="/assets/images/gronster/gronster-hero-med.jpg">
+        </noscript>
+      </span>
+      
+        <div class="caption">A snapshot of Gronster</div>
+      
+    </div><!-- .pic-hero -->
+
+        
+    <article class="content-wrapper portfolio-post-wrapper">
+      <header class="header portfolio-header">
+        <div class="post-title-meta">
+          <span class="post-micro-teaser">ux + design + frontend</span><span class="divider"> / </span><span class="post-date">September 15, 2012</span>     
+        </div>
+        <h1 class="wf">Gronster&#58; A Drawing Game </h1>
+        </header>
+      <div class="content-body portfolio-body">
+        <div class="marginator">
+  <p>
+    I had the idea for creating an online version of a game that I&rsquo;d played once or twice on paper — maybe you&rsquo;ve played it. You start with a page folded into thirds. The first person draws the head and shoulders, then passes the paper to the second person but keeps the drawing hidden. The second person draws the mid-section and passes it to the last player. No one knows what the others have drawn, so the resulting illustration is a strange mashup. 
+  </p>
+  <div class="marginalia">
+    <p><span class="margin-heading">Exquisite Corpse </span>It turns out that this game has a name — Exquisite Corpse — and was either invented or popularized by Surrealists in the 1920s. 
+    </p></div>
+</div>
+
+<p>Anyway, I built this game/app as a side project by myself, using CakePHP and JavaScript. It lets you and some friends create three segments of a drawing (without knowing what the others have done), and it stitches them together into a connected whole. </p>
+
+<p><a href="http://gronster.adamkiryk.com">Check it out</a> — or read on&hellip;</p>
+
+<h3>Making A Drawing</h3>
+
+<p>You start on an intro page, which shows in simple terms how the game works (the site cookies you, so if you return later you&rsquo;ll go straight to the drawing panel). You can click on the big Get Started button — or you can explore the gallery.</p>
+
+<div class="pic-normal">
+  <span data-picture data-alt="The Gronster start screen, visible to first-time users.">
+  <span data-src="/assets/images/gronster/start-small.jpg"></span>
+  <span data-src="/assets/images/gronster/start-med.jpg" data-media="(min-width: 26.25em)"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/gronster/start-small.jpg">
+  </noscript>
+  </span>
+<div class="caption">The Gronster start screen, visible to first-time users.</div>
+</div>
+
+<p>The drawing panel is easy and basic. You simply draw with the defaults or expand the paintbrush or colors menus to see other options — I kept them limited by design, since my goal was to enable quick and easy sketching rather than elaborate illustration. There are some nice contextual help features, as well. For example, when you are new to the site, you get a little help call-out; returning visitors won&rsquo;t see it. If you click the brush controls a couple of times, you get a little help call-out that shows you how to use the brush shortcuts.</p>
+
+<div class="pic-large">
+  <span data-picture data-alt="">
+  <span data-src="/assets/images/gronster/startDrawing-small.jpg"></span>
+  <span data-src="/assets/images/gronster/startDrawing-med.jpg" data-media="(min-width: 26.25em)"></span>
+  <span data-src="/assets/images/gronster/startDrawing-large.jpg" data-media="(min-width: 63.75em)"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/gronster/startDrawing-small.jpg">
+  </noscript>
+  </span>
+<div class="caption"></div>
+</div>
+
+<div class="pic-large">
+  <span data-picture data-alt="The drawing panel, with options for changing color, erasing, and drawing with a fatter or thinner line. There aren't a ton of choices because I wanted to keep this simple — no fuss, just draw something and share it.">
+  <span data-src="/assets/images/gronster/drawingPart2-small.jpg"></span>
+  <span data-src="/assets/images/gronster/drawingPart2-med.jpg" data-media="(min-width: 26.25em)"></span>
+  <span data-src="/assets/images/gronster/drawingPart2-large.jpg" data-media="(min-width: 63.75em)"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/gronster/drawingPart2-small.jpg">
+  </noscript>
+  </span>
+<div class="caption">The drawing panel, with options for changing color, erasing, and drawing with a fatter or thinner line. There aren&rsquo;t a ton of choices because I wanted to keep this simple — no fuss, just draw something and share it.</div>
+</div>
+
+<p>Once you&rsquo;re satisfied with the drawing, click &ldquo;Next&rdquo;, and go to the share screen. If you choose to invite a friend, they&rsquo;ll receive an email with a link back to the original drawing. Only they won&rsquo;t see all of what you drew — they&rsquo;ll see just the very bottom part, beneath the dotted line on the drawing panel, so they can connect their piece with yours. The result may look crazy, but it will be an intentional sort of crazy.</p>
+
+<div class="pic-normal">
+  <span data-picture data-alt="The Gronster share screen.">
+  <span data-src="/assets/images/gronster/share-small.jpg"></span>
+  <span data-src="/assets/images/gronster/share-med.jpg" data-media="(min-width: 26.25em)"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/gronster/share-small.jpg">
+  </noscript>
+  </span>
+<div class="caption">The Gronster share screen.</div>
+</div>
+
+<div class="pic-large">
+  <span data-picture data-alt="A couple of strange ones from the gallery. You can see how my application stitches the pieces together so that they can feel like connected, self-contained images. Of course, some users choose to ignore the guidelines, and it still works...">
+  <span data-src="/assets/images/gronster/gallery1-small.jpg"></span>
+  <span data-src="/assets/images/gronster/gallery1-med.jpg" data-media="(min-width: 26.25em)"></span>
+  <span data-src="/assets/images/gronster/gallery1-large.jpg" data-media="(min-width: 63.75em)"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/gronster/gallery1-small.jpg">
+  </noscript>
+  </span>
+<div class="caption">A couple of strange ones from the gallery. You can see how my application stitches the pieces together so that they can feel like connected, self-contained images. Of course, some users choose to ignore the guidelines, and it still works&hellip;</div>
+</div>
+
+<p>It&rsquo;s up and running, so check it out at <a href="http://gronster.adamkiryk.com">gronster.adamkiryk.com</a>.</p>
+
+<div class="bt-video-container" style="position:relative;padding-bottom:62.60%;padding-top:30px;height:0;overflow:hidden"><iframe width="500" height="313" src="http://player.vimeo.com/video/85163079?rel=0&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe></div>
+
+        
+
+  <ul class="post-tags">
+    
+    <li class="inline tag-title">Filed under: </li>
+      
+         
+          <li class="inline"><a href="/tag/php" class="tag-link">php</a> </li>
+         
+          <li class="inline"><a href="/tag/code" class="tag-link">code</a> </li>
+         
+          <li class="inline"><a href="/tag/javascript" class="tag-link">javascript</a> </li>
+         
+          <li class="inline"><a href="/tag/design" class="tag-link">design</a> </li>
+         
+          <li class="inline"><a href="/tag/side-projects" class="tag-link">side-projects</a> </li>
+        
+      
+    </ul>
+  
+
+
+
+      </div>
+    </article>
+  </div><!-- .inner-wrapper -->
+</div><!-- end .inner-wrapper -->
+
+<section id="secondary-content">
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <div class="content-wrapper secondary-wrapper">
+        <div class="posts">
+          
+            <div class="read-next">Previous Post</div>
+              <h2 class="card-title secondary-card-title"><a href="/portfolio/2011/12/20/arts-and-letters#start" title="Redesigning A Culture Blog">Redesigning A Culture Blog</a></h2>
+            <p class="teaser"> I designed a simplified user experience for a culture blog, created a WordPress theme to make it easy for the editors to maintain, and did all the front-end code.</p>
+          
+          
+            <div class="read-next">Next Post</div>
+              <h2 class="card-title secondary-card-title"><a href="/portfolio/2012/10/10/corepub-post#start" title="An Easier Way To Create News Posts">An Easier Way To Create News Posts</a></h2>
+            <p class="teaser"> Post page update.</p>
+          
+          </ul>
+        </div>
+        <div class="return">
+          <a href="/">Home</a> | <a href="#top">Return to Top</a>
+        </div>
+      </div><!-- content-wrapper -->
+    </div><!-- inner-wrapper -->
+  </div><!-- .wrapper -->
+</section>
+
+      <footer>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <div class="content-wrapper">
+        <div class="footer-text">&copy; 2015 Adam Kiryk</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script>
+      (function(){
+        var toggle = document.getElementById("nav-toggle");
+        var menu = document.getElementById("primary-menu");
+        var expanded = false;
+        toggle.onclick = function(){ 
+          if (expanded) {
+            expanded = false;
+            menu.className="closed";
+          } else {
+            expanded = true;
+            menu.className="expanded";
+          }
+        }
+      })();
+    </script>
+
+    <!--  -->
+    <script type="text/javascript" src="//use.typekit.net/sfd3xhj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+  </body>
+</html>
+

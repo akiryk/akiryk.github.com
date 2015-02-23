@@ -16,35 +16,22 @@
   <![endif]-->
 
   <!-- Le styles -->
-  <link href="/assets/themes/algis/stylesheets/screen.css" rel="stylesheet">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'> -->
+  <link href="/assets/themes/readylab/stylesheets/screen.css" rel="stylesheet">
 
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
   <!-- Le fav and touch icons -->
 <!-- Update these with your own images
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 -->
 
   <!-- atom & rss feed -->
-  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  <script type="text/javascript">
-    //typekit fonts
-    (function() {
-    var config = {
-      kitId: 'sfd3xhj',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-    })();
-
-    // picturefill polyfill
-    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
-  </script>
-
-
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
   </head>
   <body id="top" class="homepage, use-cards">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
@@ -52,7 +39,7 @@
   <div class="masthead-top">
     <div class="brand">
       <a class="logo" href="/" title="Ready Lab Home">
-        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <img src=" /assets/themes/readylab/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
         <h1 class="screenreaders">Ready Lab</h1>
       </a>
       <a href="#main" class="screenreaders">Skip navigation</a>
@@ -70,41 +57,40 @@
 
     <li>
       
-        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+        <a href="/portfolio-list/index.html" class="nav-link">Portfolio</a>
        
     </li>
 
     <li>
       
-        <a href="/about.html" class="nav-link">About</a>
+        <a href="/about/index.html" class="nav-link">About</a>
        
     </li>
 
 </ul>
   </nav>
 </header>
-      <div class="inner-wrapper">
-        
-  
+      
 
-  
-  
+  <div class="inner-wrapper yes-hero">
+    
+    
+    <div class="pic-hero">
+      <span data-picture data-alt="Hotel sign, Cassis, France" class="">
+        <span data-src="/assets/images/heros/cassis-small.jpg" ></span>
+        <span data-src="/assets/images/heros/cassis-med.jpg" data-media="(min-width:26.25em)"></span>
+        <span data-src="/assets/images/heros/cassis-mid-large.jpg" data-media="(min-width:39.8125em)"></span>
+        <span data-src="/assets/images/heros/cassis-large.jpg" data-media="(min-width: 82.5em)"></span>
+        <noscript>
+          <img src="/assets/images/heros/cassis-med.jpg">
+        </noscript>
+      </span>
+      
+        <div class="caption">Hotel sign, Cassis, France</div>
+      
+    </div><!-- .pic-hero -->
 
-  <div id="start" class="pic-hero">
-    <span data-picture data-alt="Hotel sign, Cassis, France">
-      <span data-src="/assets/images/heros/cassis-mini.jpg" ></span>
-      <span data-src="/assets/images/heros/cassis-small.jpg" data-media="(min-width: 420px)"></span>
-      <span data-src="/assets/images/heros/cassis-med.jpg" data-media="(min-width:690px)"></span>
-      <span data-src="/assets/images/heros/cassis-large.jpg" data-media="(min-width: 760px)"></span>
-      <noscript>
-        <img src="/assets/images/heros/cassis-small.jpg">
-      </noscript>
-    </span>
-    
-      <div class="caption">Hotel sign, Cassis, France</div>
-    
-  </div>
-  <section class="content-wrapper blog-river-wrapper">
+          <section class="content-wrapper blog-river-wrapper">
     <header class="header agg-header">
       <h1 class="title agg-title">Latest Posts</h1>
     </header>
@@ -113,10 +99,87 @@
         
           <li class="card blog-card">
             
-<a href="/blog/2013/11/12/readable-body-text#start" class="agg-link">
-  <h2 class="card-title blog-card-title">Readable Body Text</h2>
-  <div class="agg-title-meta">November 12, 2013</div>
-  <p class="teaser">Pagination only works on posts, not on categories of posts. I handled this by displaying all posts including portfolio plices in my blog. Portfolio pieces are displayed on a portfolio page that doesn't use pagination. It simply looks for all itemms with a YAML front matter label of highlight true. It diesplays only these items. Then I put the full bunch on a different page without paginations.</p>
+<a href="/blog/2015/12/11/better-book-browsing" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">A better way to browse books online</h2>
+  <div class="agg-title-meta">December 11, 2015</div>
+  <p class="teaser">Browsing for books is different from buying books. Different from reading books. It's a distinct experience that solves a distinct set of problems. I've been doing a lot of browsing lately — online — and I think the experience is pretty poor. Can it be improved?</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card blog-card">
+            
+<a href="/blog/2015/03/01/eighty-days" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Around the (scrum) world in 80 days</h2>
+  <div class="agg-title-meta">March 01, 2015</div>
+  <p class="teaser">I recently role-hopped around my scrum team over the course of about 80 days — from developer to UX Lead to Product Owner. Ah, the adventures I had! How did it come about? What did I learn? What do I think?</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card blog-card">
+            
+<a href="/blog/2015/02/19/accessibility" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Curb ramps on the web!</h2>
+  <div class="agg-title-meta">February 19, 2015</div>
+  <p class="teaser">What makes something accessible? What does it mean to design for everyone? Is it possible to improve accessibility without relying exclusively on screen readers or other special tools?</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card blog-card">
+            
+<a href="/blog/2014/10/12/microinteractions" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Bus Ride Reads — Microinteractions</h2>
+  <div class="agg-title-meta">October 12, 2014</div>
+  <p class="teaser">Bus ride reads is an occasional series in which I discuss a design or ux book I've been reading on my commute. In this post, I'll talk about Microinteractions, a book by Dan Saffer about little details that play an outsized role.</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card blog-card">
+            
+<a href="/blog/2014/10/07/pledge-part-3" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">The Best Pledge Experience Ever, Part 3</h2>
+  <div class="agg-title-meta">October 07, 2014</div>
+  <p class="teaser">I’ve just written a couple of posts about donation forms and the online donation experience, and there’s still a big piece I haven’t explored. Is it possible to prod supporters into giving larger donations by up-selling them more “expensive” premiums — thank-you gifts like concert tickets, hand-crafted tote bags, or cases of wine?</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card blog-card">
+            
+<a href="/blog/2014/09/28/pledge-part-2" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">The Best Pledge Experience Ever, Part 2</h2>
+  <div class="agg-title-meta">September 28, 2014</div>
+  <p class="teaser">In my last post about the donation experience, I gave a variety of examples of best and worst practices. In this post, I’d like to sketch out an example site that pulls all the best practices together. It’s just an example, so I’m going to invent a classical-music format public radio station and pretend they’re amenable to my recommendations. However, this being public radio, I’ll work within some constraints that would be silly to ignore.</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card blog-card">
+            
+<a href="/blog/2014/09/20/web-type" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Bus Ride Reviews — On Web Typography</h2>
+  <div class="agg-title-meta">September 20, 2014</div>
+  <p class="teaser">A brief review of Jason Santa Maria's new book. While it’s pretty basic stuff for an experienced designer, it's a quick read with a lot of useful information on the state of the state of web typography.</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card blog-card">
+            
+<a href="/blog/2014/09/16/pledge-part-1" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">The Best Pledge Experience Ever, Part 1</h2>
+  <div class="agg-title-meta">September 16, 2014</div>
+  <p class="teaser">I’ve been designing the online donation framework for public radio stations, and I think I've learned a few things worth sharing. It's challenging to create a system that will meet the needs of every station because they each have their own priorities and assumptions. However, using the ideas I'll discuss here, it should be possible to create an excellent user experience for both stations and donors.</p>
 </a>
         
         </li><!-- close the portfolio or blog card -->
@@ -124,25 +187,26 @@
         
           <li class="card portfolio-card">
             
-<a href="/portfolio/2013/11/02/gronster#start" class="portfolio-piece">
+<a href="/portfolio/2014/06/18/composer" class="portfolio-piece">
   
-
+<div class="portfolio-image-wrapper">
   <div class="portfolio-image">
     <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
+      <span data-src="/assets/images/composer/hero-small.jpg" ></span>
+      <span data-src="/assets/images/composer/hero-med.jpg" data-media="(min-width: 26.25em)"></span>
       <noscript>
-        <img src="/assets/images/heros/gronster-thumb.jpg">
+        <img src="/assets/images/composer/hero-small.jpg">
       </noscript>
     </span>
   </div>
+</div>
 
   <div class="portfolio-text">
       <div class="slugger">
-        <div class="micro-teaser">Design + Play + Programming</div>
-        <h2 class="card-title portfolio-card-title">Gronster Drawing Game</h2>
+        <div class="micro-teaser">Front end design</div>
+        <h2 class="card-title portfolio-card-title webfont">Composer Music Tracking Application</h2>
       </div>
-      <p class="portfolio-teaser">Some crazy kind of drawing game.</p>
+      <p class="portfolio-teaser">I implemented several features in this application, which handles music playlists for public radio stations.</p>
     </div>
   </a>
         
@@ -151,10 +215,10 @@
         
           <li class="card blog-card">
             
-<a href="/blog/2013/10/12/personal-site-process#start" class="agg-link">
-  <h2 class="card-title blog-card-title">How I did it</h2>
-  <div class="agg-title-meta">October 12, 2013</div>
-  <p class="teaser">I just made a new personal website and blog. Here's my design and development process. Here's the process I used. I started by creating loose mockups for my home page and post pages. I didn't mean to use these as pixel-perfect comps against which I would build; rather, I wanted to have a sense of style direction and a basic layout I could test out with Jekyll to see if it would work.</p>
+<a href="/blog/2014/01/24/best-free-fonts" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">5 Favorite (Sans-Serif) Fonts from Google</h2>
+  <div class="agg-title-meta">January 24, 2014</div>
+  <p class="teaser">I was recently working on a project where we needed to choose a web font for body copy, so I spent some time pouring over options from Google – they're free and reliable, but not always so good for readability. Here are my favorite sans-serif options...</p>
 </a>
         
         </li><!-- close the portfolio or blog card -->
@@ -162,10 +226,10 @@
         
           <li class="card blog-card">
             
-<a href="/blog/2013/10/11/jekyll-portfolio-blog#start" class="agg-link">
-  <h2 class="card-title blog-card-title">Making a Blog/Portfolio Site with Jekyll</h2>
-  <div class="agg-title-meta">October 11, 2013</div>
-  <p class="teaser">Are you a web designer developer who's comfortable in the command line and wants to create a new site using Jekyll? Here's a pretty darn common scenario web designer with dev chops (or developer with design chops) wants to make themselves a website that a) features their portfolio of work and b) includes a blog. For this situation, Jekyll might be the perfect solution. It's free, fast, and easy to use plus, hosting is free if you use github pages. Read on.</p>
+<a href="/blog/2014/01/15/whats-wrong-with-browsing" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">What's Wrong With Browsing?</h2>
+  <div class="agg-title-meta">January 15, 2014</div>
+  <p class="teaser">Browsing for books is different from buying books. Different from reading books. It's a distinct experience that solves a distinct set of problems. I've been doing a lot of browsing lately — online — and I think the experience is pretty poor. Can it be improved?</p>
 </a>
         
         </li><!-- close the portfolio or blog card -->
@@ -173,10 +237,10 @@
         
           <li class="card blog-card">
             
-<a href="/blog/2013/10/07/book-browsing#start" class="agg-link">
-  <h2 class="card-title blog-card-title">Better Book Browsing Online</h2>
-  <div class="agg-title-meta">October 07, 2013</div>
-  <p class="teaser">A Readers' Cry for a Better Digital Book Browsing User Experience.</p>
+<a href="/blog/2013/12/16/learn-js" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Help With Learning Javascript Properly</h2>
+  <div class="agg-title-meta">December 16, 2013</div>
+  <p class="teaser">This is a brief rundown of how to tackle the syllabus as provided by javascript is sexy.</p>
 </a>
         
         </li><!-- close the portfolio or blog card -->
@@ -184,119 +248,33 @@
         
           <li class="card blog-card">
             
-<a href="/blog/2013/09/21/comic-ux#start" class="agg-link">
-  <h2 class="card-title blog-card-title">Comic Stripping for UX</h2>
-  <div class="agg-title-meta">September 21, 2013</div>
-  <p class="teaser">I wanted to come up with a super-simple way to show how a web site expressed hierarchy, so I experimented with using a rudimentary form of comic strip.</p>
+<a href="/blog/2013/12/05/responsive-images-baby-steps" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">How I'm Handling Responsive Images With Jekyll</h2>
+  <div class="agg-title-meta">December 05, 2013</div>
+  <p class="teaser">There are a lot of options for handling images on a responsive site and none are perfect — hence the need for baby steps. For me, that means using the picturefill.js polyfill combined with a Jekyll/liquid hack. I know there's got to be a better way, but since I'm not sure what that is just yet, I'll do this.</p>
 </a>
         
         </li><!-- close the portfolio or blog card -->
       
         
-          <li class="card portfolio-card">
+          <li class="card blog-card">
             
-<a href="/portfolio/2013/02/09/facebook-project#start" class="portfolio-piece">
-  
-
-  <div class="portfolio-image">
-    <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
-      <noscript>
-        <img src="/assets/images/heros/-thumb.jpg">
-      </noscript>
-    </span>
-  </div>
-
-  <div class="portfolio-text">
-      <div class="slugger">
-        <div class="micro-teaser">ux + design + front-end</div>
-        <h2 class="card-title portfolio-card-title">NPR Stations on Facebook</h2>
-      </div>
-      <p class="portfolio-teaser">With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
-    </div>
-  </a>
+<a href="/blog/2013/12/04/using-georgia" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">After Looking At Twenty Different Typefaces, I Chose...</h2>
+  <div class="agg-title-meta">December 04, 2013</div>
+  <p class="teaser">I wanted to design my blog with reading in mind, so I spent a good bit of time considering how best to handle body copy. I already have a Typekit subscription, Google Fonts are free, and Typecast makes it super easy to try out different options. So why did I stick with Georgia?</p>
+</a>
         
         </li><!-- close the portfolio or blog card -->
       
         
-          <li class="card portfolio-card">
+          <li class="card blog-card">
             
-<a href="/portfolio/2012/12/14/npr-station-analytics#start" class="portfolio-piece">
-  
-
-  <div class="portfolio-image">
-    <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
-      <noscript>
-        <img src="/assets/images/heros/-thumb.jpg">
-      </noscript>
-    </span>
-  </div>
-
-  <div class="portfolio-text">
-      <div class="slugger">
-        <div class="micro-teaser">Code + Design</div>
-        <h2 class="card-title portfolio-card-title">NPR Station Analytics</h2>
-      </div>
-      <p class="portfolio-teaser">With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
-    </div>
-  </a>
-        
-        </li><!-- close the portfolio or blog card -->
-      
-        
-          <li class="card portfolio-card">
-            
-<a href="/portfolio/2012/11/19/CMS-for-NPR#start" class="portfolio-piece">
-  
-
-  <div class="portfolio-image">
-    <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
-      <noscript>
-        <img src="/assets/images/heros/-thumb.jpg">
-      </noscript>
-    </span>
-  </div>
-
-  <div class="portfolio-text">
-      <div class="slugger">
-        <div class="micro-teaser">ux + design</div>
-        <h2 class="card-title portfolio-card-title">Content Management for NPR Stations</h2>
-      </div>
-      <p class="portfolio-teaser">Most NPR member stations use a content management system (CMS) based on Drupal to manage their websites. I redesigned key parts of this CMS to make content-creation simpler and more intuitive.</p>
-    </div>
-  </a>
-        
-        </li><!-- close the portfolio or blog card -->
-      
-        
-          <li class="card portfolio-card">
-            
-<a href="/portfolio/2012/04/07/stub#start" class="portfolio-piece">
-  
-
-  <div class="portfolio-image">
-    <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
-      <noscript>
-        <img src="/assets/images/heros/-thumb.jpg">
-      </noscript>
-    </span>
-  </div>
-
-  <div class="portfolio-text">
-      <div class="slugger">
-        <div class="micro-teaser">illustration</div>
-        <h2 class="card-title portfolio-card-title">Moose</h2>
-      </div>
-      <p class="portfolio-teaser">With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
-    </div>
-  </a>
+<a href="/blog/2013/12/01/responsive-video-jekyll" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Responsive Videos in Jekyll</h2>
+  <div class="agg-title-meta">December 01, 2013</div>
+  <p class="teaser">In creating my first Jekyll site, I held off on using plugins until I felt I really needed them. Well, now I need them. And I learned a few things along the way...</p>
+</a>
         
         </li><!-- close the portfolio or blog card -->
       
@@ -323,13 +301,15 @@
 </div><!-- end .pagination -->
 
 
-  </div> <!-- end .inner-wrapper -->
+</div> <!-- end .inner-wrapper -->
 </div> <!-- end .wrapper -->
-        <footer>
-  <div class="footer-wrapper">
-    <div class="footer-body">
-      <div class="footer-text">&copy; 2014 Adam Kiryk</div>
+      <footer>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <div class="content-wrapper">
+        <div class="footer-text">&copy; 2015 Adam Kiryk</div>
       </div>
+    </div>
   </div>
 </footer>
 
@@ -351,6 +331,9 @@
     </script>
 
     <!--  -->
+    <script type="text/javascript" src="//use.typekit.net/sfd3xhj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </body>
 </html>
 

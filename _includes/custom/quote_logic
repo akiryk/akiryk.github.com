@@ -1,0 +1,11 @@
+{% comment %}<!--
+This is just part of a quote that gets used whether it's for a pullquote,
+a standalone quote, a pull-right quote, whatever. 
+This gets wrapped in plain_quote or pull_quote.
+-->{% endcomment %}
+<div class="gamma">{{ quote }}</div>
+{% if quoteLink != null %}
+  <cite class="quote-source"><a class="quote-source" href="{{ quoteLink }}">{{ quoteSource }}</a></cite>
+{% elsif quoteSource != null %}  
+  <cite class="quote-source">{{ quoteSource }}</cite>
+{% endif %}

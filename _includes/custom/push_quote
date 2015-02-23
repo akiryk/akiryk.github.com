@@ -1,0 +1,12 @@
+{% comment %}<!--
+Create a pull quote that floats right.
+Optionally, include a source or a source with link by placing the following
+into your post:
+{% assign quote = "Quote text here..." %}
+{% assign quoteSource = "Optional name here" %}
+{% assign quoteLink = "Optional url here but don't use without a source" %}
+{% include custom/push_quote %}
+-->{% endcomment %}
+<div class="pullquote pull-right">
+  {% include custom/quote_logic %}
+</div>

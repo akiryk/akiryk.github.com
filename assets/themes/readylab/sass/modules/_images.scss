@@ -1,0 +1,84 @@
+/**
+ * Images.scss
+ *
+ * Note also image-hero, which handles the big hero images
+ * and pull-push, which pushes and pulls images and quotes.
+ *
+ */
+
+// wrapper for images with a class of .natural-size
+.pic-original {
+  margin-bottom: 2em;
+  overflow: scroll;
+}
+.natural-size {
+  width: initial;
+  max-width: initial;
+}
+
+.caption {
+  @include small-text();
+  margin: 1em 0;
+  max-width: 48em;
+}
+
+.pic-medium {
+  
+  width: 40%;
+  margin-bottom: 2em;
+  margin-top: .35em;
+
+  &.pull-left {
+    float: left;
+    margin-right: 5%;
+  }
+
+  &.pull-right {
+    float: right;
+    margin-left: 5%;
+  }
+
+}
+
+.pic-normal,
+.pic-large {
+  margin-bottom: 2em;
+}
+
+@include media-query(palm) {
+  .pic-medium {
+    .caption {
+      display: none;
+    }
+  }
+}
+
+@include media-query(lap-and-up) {
+  .pic-large {
+    width: 100%;
+  }
+}
+
+@include media-query(desk) {
+  .pull-left {
+    @include pull-left();
+  }
+
+  .pull-right {
+    @include pull-right();
+  }
+
+  .pic-large {
+    margin-left: -8.5em; 
+    width: 47em;
+  }
+
+}
+
+@include media-query(desk-wide) {
+  .pic-large {
+    margin-left: -4em;
+    width: 51em;
+  }
+
+}

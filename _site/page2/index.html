@@ -16,35 +16,22 @@
   <![endif]-->
 
   <!-- Le styles -->
-  <link href="/assets/themes/algis/stylesheets/screen.css" rel="stylesheet">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'> -->
+  <link href="/assets/themes/readylab/stylesheets/screen.css" rel="stylesheet">
 
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
   <!-- Le fav and touch icons -->
 <!-- Update these with your own images
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 -->
 
   <!-- atom & rss feed -->
-  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  <script type="text/javascript">
-    //typekit fonts
-    (function() {
-    var config = {
-      kitId: 'sfd3xhj',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-    })();
-
-    // picturefill polyfill
-    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
-  </script>
-
-
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
   </head>
   <body id="top" class="homepage, use-cards">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
@@ -52,7 +39,7 @@
   <div class="masthead-top">
     <div class="brand">
       <a class="logo" href="/" title="Ready Lab Home">
-        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <img src=" /assets/themes/readylab/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
         <h1 class="screenreaders">Ready Lab</h1>
       </a>
       <a href="#main" class="screenreaders">Skip navigation</a>
@@ -70,68 +57,79 @@
 
     <li>
       
-        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+        <a href="/portfolio-list/index.html" class="nav-link">Portfolio</a>
        
     </li>
 
     <li>
       
-        <a href="/about.html" class="nav-link">About</a>
+        <a href="/about/index.html" class="nav-link">About</a>
        
     </li>
 
 </ul>
   </nav>
 </header>
-      <div class="inner-wrapper">
-        
-  
+      
 
-  
-  
+  <div class="inner-wrapper yes-hero">
+    
+    
+    <div class="pic-hero">
+      <span data-picture data-alt="Hotel sign, Cassis, France" class="">
+        <span data-src="/assets/images/heros/cassis-small.jpg" ></span>
+        <span data-src="/assets/images/heros/cassis-med.jpg" data-media="(min-width:26.25em)"></span>
+        <span data-src="/assets/images/heros/cassis-mid-large.jpg" data-media="(min-width:39.8125em)"></span>
+        <span data-src="/assets/images/heros/cassis-large.jpg" data-media="(min-width: 82.5em)"></span>
+        <noscript>
+          <img src="/assets/images/heros/cassis-med.jpg">
+        </noscript>
+      </span>
+      
+        <div class="caption">Hotel sign, Cassis, France</div>
+      
+    </div><!-- .pic-hero -->
 
-  <div id="start" class="pic-hero">
-    <span data-picture data-alt="Hotel sign, Cassis, France">
-      <span data-src="/assets/images/heros/cassis-mini.jpg" ></span>
-      <span data-src="/assets/images/heros/cassis-small.jpg" data-media="(min-width: 420px)"></span>
-      <span data-src="/assets/images/heros/cassis-med.jpg" data-media="(min-width:690px)"></span>
-      <span data-src="/assets/images/heros/cassis-large.jpg" data-media="(min-width: 760px)"></span>
-      <noscript>
-        <img src="/assets/images/heros/cassis-small.jpg">
-      </noscript>
-    </span>
-    
-      <div class="caption">Hotel sign, Cassis, France</div>
-    
-  </div>
-  <section class="content-wrapper blog-river-wrapper">
+          <section class="content-wrapper blog-river-wrapper">
     <header class="header agg-header">
       <h1 class="title agg-title">Latest Posts</h1>
     </header>
     <ul class="river blog-river">
       
         
+          <li class="card blog-card">
+            
+<a href="/blog/2013/09/21/comic-ux" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Comic Stripping for UX</h2>
+  <div class="agg-title-meta">September 21, 2013</div>
+  <p class="teaser">In order to help our team make hard decisions about the relative importance of our content, I experimented with a rudimentary comic strip. What?</p>
+</a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
           <li class="card portfolio-card">
             
-<a href="/portfolio/2008/07/18/whales#start" class="portfolio-piece">
+<a href="/portfolio/2013/02/09/facebook-project" class="portfolio-piece">
   
-
+<div class="portfolio-image-wrapper">
   <div class="portfolio-image">
     <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
+      <span data-src="/assets/images/amplify/facebook-page-small.jpg" ></span>
+      <span data-src="/assets/images/amplify/facebook-page-med.jpg" data-media="(min-width: 26.25em)"></span>
       <noscript>
-        <img src="/assets/images/heros/-thumb.jpg">
+        <img src="/assets/images/amplify/facebook-page-small.jpg">
       </noscript>
     </span>
   </div>
+</div>
 
   <div class="portfolio-text">
       <div class="slugger">
-        <div class="micro-teaser">design + code</div>
-        <h2 class="card-title portfolio-card-title">Whale Game</h2>
+        <div class="micro-teaser">ux + design + front-end</div>
+        <h2 class="card-title portfolio-card-title webfont">NPR Stations on Facebook</h2>
       </div>
-      <p class="portfolio-teaser">Try to save the whales by popping to balloons!</p>
+      <p class="portfolio-teaser">With millions of fans, NPR is positioned to drive traffic to public radio member stations like no one else.</p>
     </div>
   </a>
         
@@ -140,23 +138,164 @@
         
           <li class="card portfolio-card">
             
-<a href="/portfolio/2004/10/10/winesmarts#start" class="portfolio-piece">
+<a href="/portfolio/2012/10/10/corepub-post" class="portfolio-piece">
   
-
+<div class="portfolio-image-wrapper">
   <div class="portfolio-image">
     <span data-picture data-alt="Portfolio Thumbnail Image">
-      <span data-src="/assets/images/heros/gronster-thumb.jpg" ></span>
-      <span data-src="/assets/images/heros/gronster-small.jpg" data-media="(min-width: 447px)"></span>
+      <span data-src="/assets/images/corepub-post/hero-small.jpg" ></span>
+      <span data-src="/assets/images/corepub-post/hero-med.jpg" data-media="(min-width: 26.25em)"></span>
       <noscript>
-        <img src="/assets/images/heros/winesmarts-thumb.jpg">
+        <img src="/assets/images/corepub-post/hero-small.jpg">
       </noscript>
     </span>
   </div>
+</div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">npr content management</div>
+        <h2 class="card-title portfolio-card-title webfont">An Easier Way To Create News Posts</h2>
+      </div>
+      <p class="portfolio-teaser">Post page update.</p>
+    </div>
+  </a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card portfolio-card">
+            
+<a href="/portfolio/2012/09/15/gronster-drawing-game" class="portfolio-piece">
+  
+<div class="portfolio-image-wrapper">
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/gronster/gronster-hero-small.jpg" ></span>
+      <span data-src="/assets/images/gronster/gronster-hero-med.jpg" data-media="(min-width: 26.25em)"></span>
+      <noscript>
+        <img src="/assets/images/gronster/gronster-hero-small.jpg">
+      </noscript>
+    </span>
+  </div>
+</div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">ux + design + frontend</div>
+        <h2 class="card-title portfolio-card-title webfont">Gronster&#58; A Drawing Game</h2>
+      </div>
+      <p class="portfolio-teaser">This is an application I designed and coded on my own. The idea is that up to three people can share in creating a single drawing without seeing what the other participants have done until the end.</p>
+    </div>
+  </a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card portfolio-card">
+            
+<a href="/portfolio/2011/12/20/arts-and-letters" class="portfolio-piece">
+  
+<div class="portfolio-image-wrapper">
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/arts-and-letters/hero-small.jpg" ></span>
+      <span data-src="/assets/images/arts-and-letters/hero-med.jpg" data-media="(min-width: 26.25em)"></span>
+      <noscript>
+        <img src="/assets/images/arts-and-letters/hero-small.jpg">
+      </noscript>
+    </span>
+  </div>
+</div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">ux + design + frontend</div>
+        <h2 class="card-title portfolio-card-title webfont">Redesigning A Culture Blog</h2>
+      </div>
+      <p class="portfolio-teaser">I designed a simplified user experience for a culture blog, created a WordPress theme to make it easy for the editors to maintain, and did all the front-end code.</p>
+    </div>
+  </a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card portfolio-card">
+            
+<a href="/portfolio/2011/06/21/story-making-app" class="portfolio-piece">
+  
+<div class="portfolio-image-wrapper">
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/storili/storili-hero-small.jpg" ></span>
+      <span data-src="/assets/images/storili/storili-hero-med.jpg" data-media="(min-width: 26.25em)"></span>
+      <noscript>
+        <img src="/assets/images/storili/storili-hero-small.jpg">
+      </noscript>
+    </span>
+  </div>
+</div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">ux + design + frontend</div>
+        <h2 class="card-title portfolio-card-title webfont">Story Making Application</h2>
+      </div>
+      <p class="portfolio-teaser">This is an application I designed and coded on my own. The idea is that up to three people can share in creating a single drawing without seeing what the other participants have done until the end.</p>
+    </div>
+  </a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card portfolio-card">
+            
+<a href="/portfolio/2008/07/19/save-the-whales" class="portfolio-piece">
+  
+<div class="portfolio-image-wrapper">
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/whales/hero-small.jpg" ></span>
+      <span data-src="/assets/images/whales/hero-med.jpg" data-media="(min-width: 26.25em)"></span>
+      <noscript>
+        <img src="/assets/images/whales/hero-small.jpg">
+      </noscript>
+    </span>
+  </div>
+</div>
+
+  <div class="portfolio-text">
+      <div class="slugger">
+        <div class="micro-teaser">game design + programming + illustration</div>
+        <h2 class="card-title portfolio-card-title webfont">Save The Whales!</h2>
+      </div>
+      <p class="portfolio-teaser">What’s the right balance of fun and challenge when making a game?</p>
+    </div>
+  </a>
+        
+        </li><!-- close the portfolio or blog card -->
+      
+        
+          <li class="card portfolio-card">
+            
+<a href="/portfolio/2004/10/10/winesmarts" class="portfolio-piece">
+  
+<div class="portfolio-image-wrapper">
+  <div class="portfolio-image">
+    <span data-picture data-alt="Portfolio Thumbnail Image">
+      <span data-src="/assets/images/winesmarts/winesmarts-small.jpg" ></span>
+      <span data-src="/assets/images/winesmarts/winesmarts-med.jpg" data-media="(min-width: 26.25em)"></span>
+      <noscript>
+        <img src="/assets/images/winesmarts/winesmarts-small.jpg">
+      </noscript>
+    </span>
+  </div>
+</div>
 
   <div class="portfolio-text">
       <div class="slugger">
         <div class="micro-teaser">Design + Illustration</div>
-        <h2 class="card-title portfolio-card-title">SmartsCo Brand/Package Design</h2>
+        <h2 class="card-title portfolio-card-title webfont">Smarts Company Brand/Package Design</h2>
       </div>
       <p class="portfolio-teaser">I was lead illustrator and designer on this project, which required that I create a branded look for a series of trivia-style card games intended to be both fun and educational.</p>
     </div>
@@ -187,13 +326,15 @@
 </div><!-- end .pagination -->
 
 
-  </div> <!-- end .inner-wrapper -->
+</div> <!-- end .inner-wrapper -->
 </div> <!-- end .wrapper -->
-        <footer>
-  <div class="footer-wrapper">
-    <div class="footer-body">
-      <div class="footer-text">&copy; 2014 Adam Kiryk</div>
+      <footer>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <div class="content-wrapper">
+        <div class="footer-text">&copy; 2015 Adam Kiryk</div>
       </div>
+    </div>
   </div>
 </footer>
 
@@ -215,6 +356,9 @@
     </script>
 
     <!--  -->
+    <script type="text/javascript" src="//use.typekit.net/sfd3xhj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </body>
 </html>
 

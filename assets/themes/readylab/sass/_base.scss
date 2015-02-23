@@ -1,0 +1,100 @@
+/**
+ * Base.scss
+ * Handle base html styles (body, p, a, etc). 
+ * These should generally be unmodified tags rather than classnames or ids
+ * except for a couple exceptions (for example, h1 also has an analog class, .alpha,
+ * that will always be the same size so belongs here)
+ * 
+ */
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: $serif-stack;
+  font-size: 125%; // 20px
+  line-height: 1.6;
+  text-rendering:optimizeLegibility; // helps with kerning and ligatures
+}
+
+h1, .alpha {
+  font-size: getEms($h1-size);
+  line-height: 1.2;
+  margin: (36/$h1-size) * 1em 0;
+}
+
+h2, .beta {
+  font-size: getEms($h2-size); 
+  line-height: 1.4;
+  margin: 36/$h2-size * 1em 0;
+}
+
+h3, .gamma {
+  font-size: getEms($h3-size);
+  line-height: 1.4;
+  margin: 36/$h3-size * 1em 0;
+}
+
+h4, .delta,
+h5, .epsilon,
+h6, .zeta
+ {
+  font-size: getEms($h4-size);
+  line-height: 1.375;
+  margin: 36/$h4-size * 1em 0;
+}
+
+// Title on blog and portfolio index pages.
+h1.agg-title {
+  @include slug-normal();
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .5em;
+}
+
+
+a {
+  color: $normal-color;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  font-style: italic;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+blockquote {
+  border-left: 1px solid #ccc;
+  color: $light-text;
+  padding: 0 2em;
+  margin: 0;
+}
+
+p {
+  margin: 1.6em 0;
+}
+
+@include media-query (palm) {
+  h1 {
+    font-size: getEms($h2-size); 
+    line-height: 1.2;
+    margin-bottom: 16/$h2-size * 1em;
+  }
+  h2 {
+    font-size: getEms($h3-size); 
+    margin-bottom: 36/$h3-size * 1em;
+  }
+  h3 {
+    font-size: getEms($h4-size); 
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 16/$h3-size * 1em;
+  }
+}
+
+@include media-query (palm-small) {
+  h1 {
+    font-size: getEms($h3-size); 
+  }
+}

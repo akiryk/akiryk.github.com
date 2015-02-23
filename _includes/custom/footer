@@ -1,7 +1,9 @@
 <footer>
-  <div class="footer-wrapper">
-    <div class="footer-body">
-      <div class="footer-text">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</div>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <div class="content-wrapper">
+        <div class="footer-text">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</div>
       </div>
+    </div>
   </div>
 </footer>

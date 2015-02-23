@@ -1,0 +1,56 @@
+.text-wrapper {
+  padding: 0 6em;
+}
+
+.big {
+  font-family: $sans-stack;
+  font-size:  5.125em;
+  font-weight: 100;
+  padding: 0;
+  text-align: center;
+}
+
+.gradient {
+   background: -webkit-linear-gradient(#b85f00, #592b02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.body-text {
+  font-family: $sans-stack;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 2.125em;
+}
+
+.highlight {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.poem {
+  font-family: $sans-stack;
+  font-size: 2.125em;
+  width: 60%;
+  text-align: center;
+  margin: 1em auto 0em auto;
+  line-height: 1.6;
+  color: $yellow;
+  font-weight: 100;
+}
+
+.label {
+  font-family: $sans-stack;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+
+.massive {
+  font-family: $sans-stack;
+  font-size: 8.75em;
+  font-weight: 100;
+  margin: 0;
+  text-transform: uppercase;
+}

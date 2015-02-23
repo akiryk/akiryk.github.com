@@ -1,0 +1,17 @@
+{% comment %}<!--
+  This is for normal images in the flow of posts and portfolio posts.
+  The data-picture class is for use with picture-fill polyfill, which selects the best image
+  size according to screen size. 
+  The sizes (site.AK.med_size and other) are set in config.yml.
+-->{% endcomment %}
+<div class="pic-normal">
+  <span data-picture data-alt="{{ caption }}">
+  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-small.gif"></span>
+  <span data-src="/assets/images/{{ page.assets }}/{{ photo }}-med.gif" data-media="(min-width: {{ site.AK.pic_med_size }})"></span>
+  <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+  <noscript>
+    <img src="/assets/images/{{ page.assets }}/{{ photo }}-small.gif">
+  </noscript>
+  </span>
+<div class="caption">{{ caption }}</div>
+</div>

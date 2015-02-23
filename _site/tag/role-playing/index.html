@@ -16,35 +16,22 @@
   <![endif]-->
 
   <!-- Le styles -->
-  <link href="/assets/themes/algis/stylesheets/screen.css" rel="stylesheet">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'> -->
+  <link href="/assets/themes/readylab/stylesheets/screen.css" rel="stylesheet">
 
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
   <!-- Le fav and touch icons -->
 <!-- Update these with your own images
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 -->
 
   <!-- atom & rss feed -->
-  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  <script type="text/javascript">
-    //typekit fonts
-    (function() {
-    var config = {
-      kitId: 'sfd3xhj',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className="js wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-    })();
-
-    // picturefill polyfill
-    !function(a){"use strict";a.picturefill=function(){for(var b=a.document.getElementsByTagName("span"),c=0,d=b.length;d>c;c++)if(null!==b[c].getAttribute("data-picture")){for(var e=b[c].getElementsByTagName("span"),f=[],g=0,h=e.length;h>g;g++){var i=e[g].getAttribute("data-media");(!i||a.matchMedia&&a.matchMedia(i).matches)&&f.push(e[g])}var j=b[c].getElementsByTagName("img")[0];if(f.length){var k=f.pop();if(j&&"NOSCRIPT"!==j.parentNode.nodeName){if(k===j.parentNode)continue}else j=a.document.createElement("img"),j.alt=b[c].getAttribute("data-alt");j.src=k.getAttribute("data-src"),k.appendChild(j)}else j&&j.parentNode.removeChild(j)}},a.addEventListener?(a.addEventListener("resize",a.picturefill,!1),a.addEventListener("DOMContentLoaded",function(){a.picturefill(),a.removeEventListener("load",a.picturefill,!1)},!1),a.addEventListener("load",a.picturefill,!1)):a.attachEvent&&a.attachEvent("onload",a.picturefill)}(this);
-  </script>
-
-
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
   </head>
   <body id="top" class="tags, use-cards">
     <div class="wrapper"><!-- closes inside of post, page, or portfolio -->
@@ -52,7 +39,7 @@
   <div class="masthead-top">
     <div class="brand">
       <a class="logo" href="/" title="Ready Lab Home">
-        <img src=" /assets/themes/algis/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
+        <img src=" /assets/themes/readylab/images/logo.gif" title="Ready Lab Logo" width="165" height="39" class="no-resize">
         <h1 class="screenreaders">Ready Lab</h1>
       </a>
       <a href="#main" class="screenreaders">Skip navigation</a>
@@ -70,29 +57,43 @@
 
     <li>
       
-        <a href="/portfolio_index.html" class="nav-link">Portfolio</a>
+        <a href="/portfolio-list/index.html" class="nav-link">Portfolio</a>
        
     </li>
 
     <li>
       
-        <a href="/about.html" class="nav-link">About</a>
+        <a href="/about/index.html" class="nav-link">About</a>
        
     </li>
 
 </ul>
   </nav>
 </header>
-      <div class="inner-wrapper">
-        
+      
 
-<div class="inner-wrapper">
+  <div class="inner-wrapper yes-hero">
+    
+    
+    <div class="pic-hero">
+      <span data-picture data-alt="Hotel sign, Cassis, France" class="">
+        <span data-src="/assets/images/winesmarts/winesmarts-small.jpg" ></span>
+        <span data-src="/assets/images/winesmarts/winesmarts-med.jpg" data-media="(min-width:26.25em)"></span>
+        <span data-src="/assets/images/winesmarts/winesmarts-mid-large.jpg" data-media="(min-width:39.8125em)"></span>
+        <span data-src="/assets/images/winesmarts/winesmarts-large.jpg" data-media="(min-width: 82.5em)"></span>
+        <noscript>
+          <img src="/assets/images/winesmarts/winesmarts-med.jpg">
+        </noscript>
+      </span>
+      
+        <div class="caption">Hotel sign, Cassis, France</div>
+      
+    </div><!-- .pic-hero -->
+
+        
  <section class="content-wrapper blog-river-wrapper">
-    <header class="post-heading">
-      <h1 class="blog-river-title"><span class="setup"> </span><span class="quoted">role-playing</span></h1>
-    </header>
     <header class="header agg-header">
-      <h1 class="title agg-title"><span class="tag-title-text">Items tagged</span> <span class="tag-name-text">role-playing</span></h1>
+      <h1 class="title agg-title"><span class="tag-title-text">Items tagged</span> <span class="tag-name-text quoted">role-playing</span></h1>
     </header>
     <ul class="river blog-river">
       
@@ -103,6 +104,18 @@
         
           
         
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
           
         
           
@@ -127,11 +140,65 @@
         
           
         
+      
+        
+          
+        
+          
+        
           
         
       
         
           
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
         
           
         
@@ -153,10 +220,10 @@
             
                 <li class="card blog-card">
                   
-<a href="/blog/2013/09/21/comic-ux#start" class="agg-link">
-  <h2 class="card-title blog-card-title">Comic Stripping for UX</h2>
+<a href="/blog/2013/09/21/comic-ux" class="agg-link">
+  <h2 class="card-title blog-card-title webfont">Comic Stripping for UX</h2>
   <div class="agg-title-meta">September 21, 2013</div>
-  <p class="teaser">I wanted to come up with a super-simple way to show how a web site expressed hierarchy, so I experimented with using a rudimentary form of comic strip.</p>
+  <p class="teaser">In order to help our team make hard decisions about the relative importance of our content, I experimented with a rudimentary comic strip. What?</p>
 </a>
             
               </li>
@@ -172,6 +239,32 @@
         
           
         
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
         
           
@@ -185,14 +278,6 @@
       
         
           
-        
-          
-        
-          
-        
-          
-        
-      
         
           
         
@@ -222,13 +307,16 @@
         
       
     </ul><!-- end .blog-river -->
-  </section><!-- end blog-river-wrapper -->
-</div><!-- .inner-wrapper -->
-        <footer>
-  <div class="footer-wrapper">
-    <div class="footer-body">
-      <div class="footer-text">&copy; 2014 Adam Kiryk</div>
+  </section><!-- end content-wrapper -->
+    </div> <!-- end .inner-wrapper -->
+</div> <!-- end .wrapper -->
+      <footer>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <div class="content-wrapper">
+        <div class="footer-text">&copy; 2015 Adam Kiryk</div>
       </div>
+    </div>
   </div>
 </footer>
 
@@ -250,6 +338,9 @@
     </script>
 
     <!--  -->
+    <script type="text/javascript" src="//use.typekit.net/sfd3xhj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </body>
 </html>
 

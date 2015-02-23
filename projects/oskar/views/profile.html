@@ -1,0 +1,7 @@
+<h1>{{profile.username}}</h1>
+<p>{{profile.about}}</p>
+<p>{{profile.username}} speaks {{primaryLanguage}}</p>
+<div ng-show="isConnected">
+  <p>{{profile.username}} is online now. Do you want to practice speaking with them now?</p>
+  <a ng-href="/projects/oskar/#/rooms/{{profile.uid}}" class="button">Video Chat With {{profile.firstname}}</a>
+</div>

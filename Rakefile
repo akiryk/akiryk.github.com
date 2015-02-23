@@ -64,11 +64,14 @@ task :post do
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts 'description: ""'
-    post.puts "category: \"#{category.gsub(/-/,' ')}\""
+    post.puts 'teaser: ""'
+    post.puts 'hero: ""'
+    post.puts 'hero-caption: ""'
+    post.puts 'assets: ""'
+    post.puts "category: blog"
     post.puts "tags: #{tags}"
     post.puts "---"
-    post.puts "{% include JB/setup %}"
+    # post.puts "{% include JB/setup %}"
   end
 end # task :post
 
@@ -305,6 +308,43 @@ def get_stdin(message)
   print message
   STDIN.gets.chomp
 end
+
+# Custom script based on rake post above
+# Usage: rake portfolio title="A Title" [date="2012-02-09"] [micro="design + art"] [tags=[tag1,tag2]] [category="category"]
+desc "Begin a new portfolio post in #{CONFIG['posts']}"
+task :portfolio do
+  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
+  title = ENV["title"] || "new-post"
+  micro = ENV["micro"] || "design"
+  tags = ENV["tags"] || "[]"
+  category = ENV["category"] || ""
+  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  begin
+    date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
+  rescue => e
+    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
+    exit -1
+  end
+  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  
+  puts "Creating new post: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: portfolio"
+    post.puts "title: \"#{title.gsub(/-/,' ')}\""
+    post.puts 'teaser: ""'
+    post.puts "micro-teaser: #{micro}"
+    post.puts 'hero: ""'
+    post.puts 'hero-caption: ""'
+    post.puts 'assets: ""'
+    post.puts "category: portfolio"
+    post.puts "tags: #{tags}"
+    post.puts "---"
+  end
+end # task :post
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }

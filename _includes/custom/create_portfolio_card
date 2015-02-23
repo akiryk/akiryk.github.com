@@ -3,12 +3,12 @@
   This will appear in the blog index page, the portfolio index page, and
   similar pages such as tag pages.
 -->{% endcomment %}
-<a href="{{ BASE_PATH }}{{ post.url }}#start" class="portfolio-piece">
+<a href="{{ BASE_PATH }}{{ post.url }}" class="portfolio-piece">
   {% include custom/thumbnail_image %}
   <div class="portfolio-text">
       <div class="slugger">
         <div class="micro-teaser">{{ post.micro-teaser }}</div>
-        <h2 class="card-title portfolio-card-title">{{ post.title }}</h2>
+        <h2 class="card-title portfolio-card-title webfont">{{ post.title }}</h2>
       </div>
       <p class="portfolio-teaser">{{ post.teaser }}</p>
     </div>

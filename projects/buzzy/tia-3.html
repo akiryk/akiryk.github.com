@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="font-c">
+<head>
+<script type="text/javascript">
+  WebFontConfig = {
+     google: { families: [ 'Roboto+Slab:400,100,300,700:latin',
+     'Lato:100,300,400,700,400italic:latin'] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  <title>Version 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+</head>
+<body>
+<div class="full-wrapper">
+  <header>
+    <div class="header-wrapper">
+      <div class="brand-wrapper">
+        <div class="logo-left"><img src="images/logo-left-330.jpg"/></div>
+        <div class="logo"><img src="images/logo-330.jpg"/></div>
+        <div class="logo-right"><img src="images/logo-right-330.jpg"/></div>
+      </div>
+      <h1 class="site-title">Buzzy Jackson</h1>
+      <div id="nav-toggle"></div>
+      <nav id="primary-menu" class="navigation-primary">
+        <ul class="nav-list nav-list--horizontal">
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Bio/Contact</a></li>
+        </ul>
+      </nav>
+      </div><!-- .header-wrapper -->
+  </header>
+  <div class="main-wrapper--outer">
+    <div class="main-wrapper--inner">
+      <section class="promo">
+        <figure class="promo-image">
+          <img src="images/tia-167.jpg"/>
+        </figure>
+
+        <h1 class="book-title--alpha">The Inspirational Atheist</h1>
+        <div class="subtitle--alpha">2,000 years of wisdom and wonder from history&rsquo;s brightest independent thinkers</div>
+
+        <div class="callout">
+          <div class="callout__alpha">Coming December 15, 2014</div>
+          <div class="callout__meta">To be notified when it goes on sale, email: AskBuzzy at gmail dot com.</div>
+        </div>
+      </section>
+      <section class="content">  
+        <div class="connections-wrapper">
+          <div class="connections">
+            <div class="connections__title">Connect</div>
+            <ul class="connections__list">
+              <li><a class="connections__list--link facebook" href="www.facebook.com">Facebook</a></li>
+              <li><a class="connections__list--link twitter" href="www.facebook.com">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-body">
+          <p>Think of it as Chicken Soup for the Soulless.</p>
+
+          <p>The Inspirational Atheist is a book of quotations on the <a href="#">meaning of life</a>, the mysteries of the universe, love, freedom <em>and the big questions</em>, all asked and answered without resorting to superstition, religion, or any pleas to abandon reason &mdash; just good old common sense, logic, and beauty.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <p>Coming from Penguin Random House to a bookstore near you in December 2014.</p>
+
+        </div><!-- .main-body -->
+      </section><!-- content -->
+    </div>
+  </div>
+  <script>
+      (function(){
+        var toggle = document.getElementById("nav-toggle");
+        var menu = document.getElementById("primary-menu");
+        var expanded = false;
+        toggle.onclick = function(){ 
+          if (expanded) {
+            expanded = false;
+            menu.className="closed";
+          } else {
+            expanded = true;
+            menu.className="expanded";
+          }
+        }
+      })();
+  </script>
+</body>
+</html>
