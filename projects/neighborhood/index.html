@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <script src="https://www.google.com/jsapi"></script>
+  <title>neighborhood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar__title title-block">
+      <h2 class="main-title">Incidents of gun violence in the United States, <span class="date-range">February-December, 2015</span></h2>
+      <div class="citation">Source: <a href="http://www.gunviolencearchive.org/mass-shooting" class="citation-link" target="_blank">Gun Violence Archive</a> and the <a href="http://www.census.gov/en.html" class="citation-link" target="_blank">U.S. Census</a></div>
+    </div>
+    <div class="sidebar__content">
+      <nav class="filters requires-data">
+        <div class="selection-wrapper">
+          <label>Filter Incidents by Month:</label>
+          <select data-bind="options: listOfMonths, value: selectedMonth"></select>
+        </div>
+        <div class="selection-wrapper">
+          <label>Filter Incidents by State:</label>
+          <select data-bind="options: listOfStates, value: selectedState"></select>
+        </div>
+        <div class="selection-wrapper">
+          <label>Find by location:</label>
+          <input placeholder="Enter city or state..." type="search" data-bind="value: searchQuery, valueUpdate: 'keyup'" autocomplete="off">
+        </div>
+
+        <button id="apply-button" class="btn apply-button">Apply Filters To Map</button>
+        <button id="reset-button" class="btn reset-button" data-bind="click: resetFilters">Reset Filters</button>
+      </nav>
+      <nav class="incident-nav requires-data">
+        <ul id="incidents-list" class="incidents-list" data-bind="foreach: visibleIncidents">
+          <li class="incident-item" data-bind="click: $parent.selectIncident">
+            <h3 class="incident-title" data-bind="text: title"></h3>
+            <div class="incident-location" data-bind="text: location"></div>
+            <div class="incident-date" data-bind="text: date"></div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <div id="loading">
+    <div class="centered-content">
+      <img src="images/default.svg" alt="loading icon" class='loading-icon'>
+      <div class="loading-message">Loading Google Maps...</div>
+    </div>
+  </div>
+  <div id="map" class="main-map loading"></div>
+
+  <nav class="mobile-nav" id="mobile-nav"><img class="menu-icon" src="images/menu.svg" alt=""><img class="close-icon" src="images/cancel.svg" alt=""></nav>
+
+  <script src="js/production.min.js"></script>
+  <script
+     async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9_V4fG-umELVwoyKKRm4jQ8XODuwV9MA&callback=app.init&sensor=false">
+    </script>
+  <script>
+    google.load('search', '1', {"callback": app.initSearch} ); // load google search API
+  </script>
+</body>
+</html>
