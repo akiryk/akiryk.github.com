@@ -1,0 +1,21 @@
+.introduction {
+  position: relative;
+}
+
+.image-one {
+  background: rgb(183,213,215); /* Old browsers */
+  background: linear-gradient(to bottom, rgba(183,213,215,1) 0%,rgba(156,189,200,1) 100%); /* W3C */
+  
+  margin-bottom: 10em;
+  max-height: 32em;
+  width: 100%;
+  
+
+  img {
+    display: block;
+    position: relative;
+    top: 3em;
+    margin: 0 auto;
+    width: 49.083333%;
+  }
+}

@@ -1,0 +1,59 @@
+.clean-list,
+.lettered-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lettered-list {
+  font-size: 2.5em;
+  font-family: $sans-stack;
+  font-weight: 100;
+  li {
+    .letter {
+      float: left;
+    }
+    .lettered-text {
+      display: block;
+      margin-left: 2em;
+    }
+
+  }
+  
+}
+
+.switch-back {
+  > li {
+    clear: both;
+    .body-text {
+      @include five-twelfths();
+    }
+    .postcard {
+      @include seven-twelfths();
+    }
+  }
+
+  > li:nth-of-type(odd) {
+    background-color: $brown;
+    color: $tan;
+    .body-text {
+      float: left;
+      padding-right: 2em;
+    }
+    .postcard {
+      float: right;
+    }
+  }
+
+   > li:nth-of-type(even) {
+    background-color: $blue;
+    color: $brown;
+    .body-text {
+      float: right;
+      padding-left: 2em;
+    }
+    .postcard {
+      float: left;
+    }
+  }
+}
