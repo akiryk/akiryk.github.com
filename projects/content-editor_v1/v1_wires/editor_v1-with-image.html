@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Wire V1</title>
+    <title>Wire V1 with image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="../prod/css/style.css">
@@ -118,8 +118,14 @@
 
       <div class="block block--image">
         <h2 class="block__heading">Primary Image</h2>
-        <img src="" alt="" class="primary-image__thumbnail">
-        <a href="editor_v1-with-image.html" class="btn btn--small">Upload Primary Image</a>
+        <div class="flex flex--start">
+        <img src="images/street.jpg" alt="" class="primary-image__thumbnail">
+        <div class="primary-image__details">
+          <div class="primary-image__caption"><span class="primary-image__details-title">Caption </span>Image of a street scene at night.</div>
+          <div class="primary-image__credit"><span class="primary-image__details-title">Credit/Agency </span>Getty Image, 2014</div>
+          <a href="#" class="primary-image__add">Edit Primary Image</a>
+        </div>
+      </div>
         <div class="help help--image"
         data-title="Primary Image"
         data-text="The primary image is what will be displayed on [name places where it will be used...]. Upload a primary image here or by using the Add Media button. "></div>
