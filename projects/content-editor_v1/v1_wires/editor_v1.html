@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Wire V1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../prod/css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header__portal">Station Portal</div>
+    <div class="header__breadcrumb ">Content Editor > Create Story</div>
+    <div class="header__user">
+      <a href="#">Adam Kiryk</a>
+    </div>
+  </header>
+
+  <div class="editor" id="replace">
+
+    <nav class="menu">
+      <a href="#" class="btn btn--wide explainer"
+        data-title="Create a new story"
+        data-text="Clicking this button takes you to the page where you can create a new story">New Story</a>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link explainer"
+          data-title="See all stories"
+          data-text="Clicking the 'All Stories' link takes you to a list of all stories that your station has created, including both published and unpublished stories.">All Stories</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link explainer"
+          data-title="Settings"
+          data-text="Clicking the 'Settings' link takes you to a place where you can modify settings for your station's content editor. For example, this is where you could go to manage whether your station pushes content to Facebook Instant Articles by default. Or you might go here to manage users. Or you might go here to manage other defaults that are yet to be determined.">Settings</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <form action="" class="story-form">
+        <div class="selection-menu">
+          <div class="selection-menu__label toggler">Category</div>
+          <div class="selection-menu__toggle">
+            <ul class="selection-menu__list">
+              <li class="selection-menu__item">News</li>
+              <li class="selection-menu__item">Arts</li>
+              <li class="selection-menu__item">Science</li>
+              <li class="selection-menu__item">Etc...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-segment">
+          <label for="story-title" class="form-segment__label" hidden>Headline</label>
+          <input type="text" class="form-segment__input form-segment__input--headline" id="story-title" placeholder="Enter headline here">
+        </div>
+        <div class="form-segment">
+          <a href="#" class="btn btn--add" id="add-media"
+          data-title="Add Media: Audio or Images"
+          data-text="Use this tool to upload images or audio and place them in the story. The first image/audio to be uploaded will be the primary image/primary audio by default; however, you can change that using the primary image and audio sections to the right.">Add Media +</a>
+        </div>
+        <div class="form-segment">
+          <label for="story-body" class="form-segment__label" hidden>Body</label>
+          <textarea class="form-segment__input form-segment__input--body" id="story-body" placeholder="Enter story here"></textarea>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="meta">
+      <div class="block block--publishing">
+        <h2 class="block__heading" hidden>Publish, Save, Schedule, or Delete</h2>
+        <div class="flex">
+          <button class="btn btn--publish">Publish</button>
+          <button class="btn btn--save">Save Draft</button>
+        </div>
+        <div class="selection-menu">
+          <div class="selection-menu__label selection-menu__label--wide toggler">Publishing Options</div>
+          <div class="selection-menu__toggle selection-menu__toggle--publish-options">
+            <div class="selection-menu__subheading">Select where this story should be published to:</div>
+            <ul class="selection-menu__list">
+              <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR API</label></li>
+              <li class="selection-menu__item"><label><input type="checkbox" class="selection-menu__checkbox">npr.org/kuow</label></li>
+              <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR One</label></li>
+              <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">PMP</label></li>
+              <li class="selection-menu__item"><label><input type="checkbox"  class="selection-menu__checkbox">Facebook Instant Articles</label></li>
+              <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">kuow.org</label></li>
+            </ul>
+            <div class="flex flex--base flex--top-border">
+              <button class="btn btn--schedule">Schedule</button>
+              <a href="#" class="delete-link">Delete</a>
+            </div>
+            <div class="help help--publish-options"
+            data-title="Publish Options"
+            data-text="Your story will be published to all of the places that are checked. The settings for this list can be managed on the 'Settings' page, which you get to by clicking on the 'Settings' link in the menu on the left."></div>
+          </div>
+        </div>
+        <div class="flex"><span class="timestamp">Saved, 1:22<span class="timestamp__seconds">:23</span>pm, 1/27/2017</span></div>
+
+        <div class="help help--publishing"
+        data-title="Saving & Publishing"
+        data-text="This tool automatically saves your document every few seconds, so you don't need to click 'Save.' To manage where this story goes after you click 'Publish' or to schedule publication, open the Publishing Options below."></div>
+      </div>
+
+      <div class="block block--bylines">
+        <h2 class="block__heading">Byline(s)</h2>
+        <ul class="bylines-list">
+          <li class="bylines-item">Adam Kiryk</li>
+          <li class="bylines-item"><a href="#" class="bylines-item__link">Edit</a></li>
+        </ul>
+        <div class="help help--bylines"
+        data-title="Bylines"
+        data-text="Help text about bylines... Click the edit link to manage bylines for this story."></div>
+      </div>
+
+      <div class="block block--image">
+        <h2 class="block__heading">Primary Image</h2>
+        <img src="" alt="" class="primary-image__thumbnail">
+        <a href="editor_v1-with-image.html" class="btn btn--small">Upload Primary Image</a>
+        <div class="help help--image"
+        data-title="Primary Image"
+        data-text="The primary image is what will be displayed on [name places where it will be used...]. Upload a primary image here or by using the Add Media button. "></div>
+      </div>
+
+      <div class="block block--audio">
+        <h2 class="block__heading">Primary Audio</h2>
+        <img src="" alt="" class="primary-image__thumbnail">
+        <a href="#" class="btn btn--small">Upload Primary Audio</a>
+        <div class="help"
+        data-title="Primary Audio"
+        data-text="The primary audio will be used on NPR One, is you publish to NPR One. Otherwise, it will be use [name the places it will be used]. You can upload primary audio here or by using the Add Media button."></div>
+      </div>
+
+      <div class="block block--teaser">
+        <h2 class="block__heading">Teaser</h2>
+        <textarea name="" id="teaser-field" cols="40" rows="4" class="teaser-input"></textarea>
+        <div class="help"
+        data-title="Teaser"
+        data-text="Text about teaser text"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="media-tools" class="load-media">
+    <div class="load-media__content">
+      <div class="close-media" id="close-media">Close</div>
+      <h2>Add Media</h2>
+      <p>Here you'll have an option to load either an image or an audio file.</p>
+    </div>
+
+  </div>
+  <script src="../prod/js/unminified.js"></script>
+</body>
+</html>
