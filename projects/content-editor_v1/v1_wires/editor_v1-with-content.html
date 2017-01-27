@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Wire V1 with image</title>
+    <title>Wire V1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="../prod/css/style.css">
@@ -12,7 +12,7 @@
 <body>
 
   <header class="header" id="header">
-    <div class="header__portal">Station Portal</div>
+    <div class="header__portal"><a href="../index.html">Station Portal</a></div>
     <div class="header__breadcrumb ">Content Editor > Create Story</div>
     <div class="header__user">
       <a href="#">Adam Kiryk</a>
@@ -40,7 +40,7 @@
     <div class="content">
       <form action="" class="story-form">
         <div class="selection-menu">
-          <div class="selection-menu__label toggler">Category</div>
+          <div class="selection-menu__label toggler">Category: News</div>
           <div class="selection-menu__toggle">
             <ul class="selection-menu__list">
               <li class="selection-menu__item">News</li>
@@ -52,7 +52,8 @@
         </div>
         <div class="form-segment">
           <label for="story-title" class="form-segment__label" hidden>Headline</label>
-          <input type="text" class="form-segment__input form-segment__input--headline" id="story-title" placeholder="Enter headline here">
+          <div contentEditable="true" class="form-segment__input form-segment__input--headline" id="story-title">
+            The Stock Market Is On An Epic Upswing. Here's Why It Probably Hasn't Benefited You </div>
         </div>
         <div class="form-segment">
           <a href="#" class="btn btn--add" id="add-media"
@@ -62,8 +63,28 @@
         <div class="form-segment">
           <label for="story-body" class="form-segment__label" hidden>Body</label>
           <div contentEditable="true" class="form-segment__input form-segment__input--body" id="story-body">
-              <img src="images/street-large.jpg" />
-            </div>
+            <p>The Dow Jones industrial average cruised past another milestone Wednesday — the 20,000 level, further evidence of the long bull market that has lifted share prices since the depths of the financial crisis.</p>
+              <div class="form-media">
+                <div class="form-media__image"><img src="../images/street-large.jpg" /></div>
+                <div class="form-media__details">
+                  <div class="form-media__title form-media__title--primary">Primary Image</div>
+                  <div class="form-media__caption"><p>Caption: Image of a street scene at night.</p>
+                  <p>Credit: Getty Images, 2014</p></div>
+                  <div class="form-media__edit">Edit Image</div>
+                </div>
+              </div>
+              <p>The index closed at a record 20,068. Since the November elections, the Dow and the broader S&P 500 are up 9.5 percent and 7.4 percent, respectively.</p>
+              <p>The stock market rally has been remarkably durable so far, withstanding the banking crisis in Europe, the Brexit vote, natural disasters, terrorist attacks, periods of disappointing growth in the U.S., and the polarizing U.S. presidential election.</p>
+              <div class="form-media">
+                <div class="form-media__image"><img src="../images/snow-large.jpg" /></div>
+                <div class="form-media__details">
+                  <div class="form-media__title">Image</div>
+                  <div class="form-media__caption"><p>Caption: Snowy mountains near Stowe, Vermont.</p>
+                  <p>Credit: Getty Images, 2014</p></div>
+                  <div class="form-media__edit">Edit Image</div>
+                </div>
+              </div>
+          </div>
         </div>
 
       </form>
@@ -115,17 +136,16 @@
         data-text="Help text about bylines... Click the edit link to manage bylines for this story."></div>
       </div>
 
-
       <div class="block block--image">
         <h2 class="block__heading">Primary Image</h2>
         <div class="flex flex--start">
-        <img src="images/street.jpg" alt="" class="primary-image__thumbnail">
-        <div class="primary-image__details">
-          <div class="primary-image__caption"><span class="primary-image__details-title">Caption </span>Image of a street scene at night.</div>
-          <div class="primary-image__credit"><span class="primary-image__details-title">Credit/Agency </span>Getty Image, 2014</div>
-          <a href="#" class="primary-image__add">Edit Primary Image</a>
+          <img src="../images/street.jpg" alt="" class="primary-image__thumbnail">
+          <div class="primary-image__details">
+            <div class="primary-image__caption"><span class="primary-image__details-title">Caption </span>Image of a street scene at night.</div>
+            <div class="primary-image__credit"><span class="primary-image__details-title">Credit/Agency </span>Getty Image, 2014</div>
+            <a href="#" class="primary-image__edit">Edit Primary Image</a>
+          </div>
         </div>
-      </div>
         <div class="help help--image"
         data-title="Primary Image"
         data-text="The primary image is what will be displayed on [name places where it will be used...]. Upload a primary image here or by using the Add Media button. "></div>
@@ -142,7 +162,7 @@
 
       <div class="block block--teaser">
         <h2 class="block__heading">Teaser</h2>
-        <textarea name="" id="teaser-field" cols="40" rows="4" class="teaser-input"></textarea>
+        <textarea name="" id="" cols="40" rows="4" class="teaser-input">The Dow Jones industrial average cruised past another milestone Wednesday — the 20,000 level, further evidence of the long bull market that has lifted prices.</textarea>
         <div class="help"
         data-title="Teaser"
         data-text="Text about teaser text"></div>
