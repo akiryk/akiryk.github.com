@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Wire V2</title>
+    <title>Wire V3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="../prod/css/style.css">
@@ -24,6 +24,9 @@
             <a href="#" class="dropdown-menu__link explainer"
             data-title="See all stories"
             data-text="Clicking the 'All Stories' link takes you to a list of all stories that your station has created, including both published and unpublished stories.">All Stories</a>
+            <a href="#" class="dropdown-menu__link explainer"
+            data-title="Content Creator Settings"
+            data-text="Go here to manage default collaborations such as LJCs; default publishing options; and other global defaults.">Settings</a>
           </li>
         </ul>
       </div>
@@ -57,81 +60,94 @@
             </div>
             <div contentEditable="true" class="wysiwyg__teaser" id="story-teaser"></div>
             <div class="flex flex--right">
-              <div class="btn btn--expander btn--rounded btn--small explainer" data-title="More Options" data-text="This would expose other, optional fields, such as a small teaser, an SEO headline, an alternate social headline, and/or a subtitle.">More Options</div>
+
             </div>
           </div>
           <div class="wysiwyg__chunk">
-            <div contentEditable="true" class="wysiwyg__body" id="story-body">Write your story
+            <div contentEditable="true" class="wysiwyg__body" id="story-body">
               <div class="add-media explainer" data-title="Add Media" data-text="This button should behave like the add media button in Medium.com. That is, it appears at the location of the cursor when a user clicks in the editing window. It disappears if the user starts to type, and reappears when they hit return.">
-                <img src="../images/add-media.png" class="add-media__image"><span class="add-media__text">Add media</span>
+                <img src="../images/add-media.png" class="add-media__image"><span class="add-media__text"><a>Add media</a></span>
               </div>
+              Write your story
             </div>
             <div class="wysiwyg__length"><span class="wysiwyg__number">0</span> characters | <span class="wysiwyg__number">0</span> words | <span class="wysiwyg__number">0</span> minute read</div>
           </div> <!-- end -->
         </div> <!-- other -->
         <!-- here -->
-        <div class="block block--main block--bordered">
-          <h2 class="block__heading block__heading--dropdown closed">Child Stories <span class="down-arrow">▸</span></h2>
-        </div>
+
     </div>
 
     <div class="meta">
       <div class="block block--publishing block--bordered
       ">
         <h2 class="block__heading" hidden>Publish, Save, Schedule, or Delete</h2>
-        <div class="metadata">
-          <span class="metadata__title">Draft ID: </span>403494530<br/>
-          <span class="metadata__title">Publish Date: </span>1/23/2017 | 10:32 AM</br>
-          <a href="" class="metadata__link">Preview Story</a> | <a href="" class="metadata__link">Send For Edit</a>
-        </div>
+
         <div class="flex flex--wrap">
-          <button class="btn btn--half">Save</button>
-          <button class="btn btn--half">Close</button>
-          <button class="btn btn--full">Schedule or Block</button>
-          <button class="btn btn--full">Publish Now</button>
+          <button class="btn btn--full">Publish</button>
+          <button class="btn btn--full">Schedule</button>
         </div>
-        <div class="flex"><span class="timestamp">Saved, 1:22<span class="timestamp__seconds">:23</span>pm, 1/27/2017</span></div>
+        <div class="metadata flex flex--between">
+          <span class="timestamp">Saved, 1:22<span class="timestamp__seconds">:23</span>pm, 1/27/2017</span>
+          <span class="timestamp delete-link explainer" data-title="Removing/Deleting Stories" data-text="Whether a story is saved as a draft or live and published, editors should have a way to remove them. Removing a story means it will not be published and will not appear by default in the list of all stories. It should still be findiable, however — for example, in an archive list view."><a href="#">Archive</a></span>
+        </div>
         <div class="help"
         data-title="Saving & Publishing"
         data-text="This tool automatically saves your document every few seconds, so you don't need to click 'Save.' To manage where this story goes after you click 'Publish' or to schedule publication, open the Publishing Options below."></div>
       </div>
-      <div class="block block--options block--bordered
-      ">
-        <h3 class="block__heading block__heading--dropdown">Publishing Options <span class="down-arrow">▾</span></h3>
-        <div class="block__subheading">Select where this story should be published to:</div>
-        <ul class="selection-menu__list">
-          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR API</label></li>
-          <li class="selection-menu__item"><label><input type="checkbox" class="selection-menu__checkbox">npr.org/kuow</label></li>
-          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR One</label></li>
-          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">PMP</label></li>
-          <li class="selection-menu__item"><label><input type="checkbox"  class="selection-menu__checkbox">Facebook Instant Articles</label></li>
-          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">kuow.org</label></li>
-        </ul>
+
+      <div class="block block--main block--bordered">
+        <h2 class="block__heading block__heading--dropdown closed">Publishing Options</h2>
+        <div class="dropdown-contents">
+          <div class="block__subheading">Select where this story should be published to:</div>
+          <ul class="selection-menu__list">
+            <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR API</label></li>
+            <li class="selection-menu__item"><label><input type="checkbox" class="selection-menu__checkbox">npr.org/kuow</label></li>
+            <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR One</label></li>
+            <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">PMP</label></li>
+            <li class="selection-menu__item"><label><input type="checkbox"  class="selection-menu__checkbox">Facebook Instant Articles</label></li>
+            <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">kuow.org</label></li>
+          </ul>
+          <a href="#">Edit publishing options</a>
+        </div>
         <div class="help"
         data-title="Publish Options"
         data-text="Your story will be published to all of the places that are checked. The settings for this list can be managed on the 'Settings' page, which you get to by clicking on the 'Settings' link in the menu on the left."></div>
       </div>
 
+      <div class="block block--options block--bordered">
+        <h3 class="block__heading block__heading--dropdown closed">Collaborations</h3>
+        <div class="dropdown-contents"><div class="block__subheading">Organizations that can edit this story:</div>
+        <ul class="selection-menu__list">
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">kuow.org</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" class="selection-menu__checkbox">Northwest RJC</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">Someone else</label></li>
+        </ul>
+        <a href="#">Edit list of collaborations</a>
+    </div>
+        <div class="help"
+        data-title="Collaborations"
+        data-text="A station can collaborate with other stations or organizations — e.g. with RJCs or LJCs. Manage collaboration settings on a case-by-case basis here."></div>
+      </div>
+
       <div class="block block--primary-media block--bordered">
-        <h2 class="block__heading block__heading--dropdown">Primary Image <span class="down-arrow">▾</span></h2>
-        <a href="#" class="btn btn--small">Upload Primary Image</a>
+        <h2 class="block__heading block__heading--dropdown closed ">Primary Image</h2>
+        <div class="dropdown-contents"><a href="#" class="btn btn--small">Upload Primary Image</a></div>
         <div class="help help--image"
         data-title="Primary Image"
         data-text="The primary image will be treated as the featured image for Facebook, for NPR One, and for promoting the story on npr.org. Upload a primary image here or by using the Add Media button in the WYSIWYG. "></div>
       </div>
       <div class="block block--primary-media block--bordered">
-        <h2 class="block__heading block__heading--dropdown">Primary Audio <span class="down-arrow">▾</span></h2>
-        <a href="#" class="btn btn--small">Upload Primary Audio</a>
+        <h2 class="block__heading block__heading--dropdown closed">Primary Audio</h2>
+        <div class="dropdown-contents"><a href="#" class="btn btn--small">Upload Primary Audio</a></div>
         <div class="help help--image"
         data-title="Primary Audio"
         data-text="The primary audio will be treated as the main audio for NPR One and... (?). Add it here or with the Add Media button in the WYSIWYG. "></div>
       </div>
       <div class="block block--associations block--bordered">
-        <h2 class="block__heading block__heading--dropdown">Associations <span class="down-arrow">▾</span></h2>
-        <ul class="bylines-list">
-          <li class="bylines-item">Bylines</li>
-          <li class="bylines-item">Programs</li>
-        </ul>
+        <h2 class="block__heading block__heading--dropdown closed">Associations</h2>
+        <div class="dropdown-contents"><ul class="bylines-list">
+          <li class="bylines-item">Bylines: <a href="#">Adam Kiryk</a> | <a href="#">Edit</a></li>
+        </ul></div>
         <div class="help help--bylines"
         data-title="Bylines"
         data-text="Help text about bylines... Click the edit link to manage bylines for this story."></div>

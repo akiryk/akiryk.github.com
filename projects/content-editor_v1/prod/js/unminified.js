@@ -16,6 +16,7 @@ const teaserField = document.querySelector('#teaser-field');
 let updateFlag = true;
 
 function copyTextToField(fromField, toField, charTotal){
+  if (!fromField.value) return;
   let val = fromField.value;
   if (val === undefined){
     val = fromField.textContent;
@@ -95,6 +96,31 @@ const mediaButton = document.querySelector('#add-media');
 if (mediaButton){
   mediaButton.addEventListener('click', handleHelp);
 }
+
+function toggleDropdown(){
+  this.classList.toggle('closed');
+}
+const dropdownMenus = document.querySelectorAll('.block__heading--dropdown');
+dropdownMenus.forEach(el => el.addEventListener('click', toggleDropdown));
+
+const showMetaBtn = document.querySelector('.super-clean__options');
+const meta = document.querySelector('.meta--clean');
+showMetaBtn.addEventListener('click', function(){
+  meta.classList.toggle('show');
+  this.textContent = meta.classList.contains('show') ? 'Hide Options' : 'Show Options';
+})
+
+// const cleanBodyContent = document.querySelector('.super-clean__body');
+// cleanBodyContent.addEventListener('keydown', function emptyBodyContent(e){
+//   cleanBodyContent.style.color = '#333';
+//   cleanBodyContent.removeEventListener('keydown', emptyBodyContent);
+// })
+//
+// const cleanHeadlineContent = document.querySelector('.super-clean__headline');
+// cleanHeadlineContent.addEventListener('keydown', function emptyHeadlineContent(e){
+//   cleanHeadlineContent.style.color = '#333';
+//   cleanHeadlineContent.removeEventListener('keydown', emptyHeadlineContent);
+// })
 
 // const wysiwyg = document.querySelector('.wysiwyg');
 // let headlineUpdated = false;
