@@ -110,6 +110,20 @@ showMetaBtn.addEventListener('click', function(){
   this.textContent = meta.classList.contains('show') ? 'Hide Options' : 'Show Options';
 })
 
+function togglePublishV4Workflow(){
+  const part1 = document.getElementById('publish1').classList.toggle('active');
+}
+const publishV4 = document.getElementById('publish-on-v4');
+publishV4.addEventListener('click', togglePublishV4Workflow);
+document.getElementById('publish-cancel').addEventListener('click', togglePublishV4Workflow);
+
+function toggleShareV4Workflow(){
+  const part1 = document.getElementById('share1').classList.toggle('active');
+}
+const shareV4 = document.getElementById('share-on-v4');
+shareV4.addEventListener('click', toggleShareV4Workflow);
+document.getElementById('share-cancel').addEventListener('click', toggleShareV4Workflow)
+
 // const cleanBodyContent = document.querySelector('.super-clean__body');
 // cleanBodyContent.addEventListener('keydown', function emptyBodyContent(e){
 //   cleanBodyContent.style.color = '#333';

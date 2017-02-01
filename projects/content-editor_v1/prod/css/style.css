@@ -1298,21 +1298,6 @@ body {
   position: relative;
 }
 
-.super-clean__body:before {
-  content: '+';
-  position: absolute;
-  left: -3rem;
-  top: -.25rem;
-  display: block;
-  border-radius: 50px;
-  border: 1px solid #ccc;
-  background-color: #eee;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  line-height: 30px;
-}
-
 .super-clean__options {
   display: inline-block;
   font-size: 14px;
@@ -1321,6 +1306,75 @@ body {
   right: 0;
   top: 135px;
   z-index: 99;
+}
+
+.super-clean__category {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+.super-clean__category:after {
+  content: '▾';
+  margin-left: 5px;
+}
+
+.workflow {
+  position: absolute;
+  left: calc(100vw-800px/2);
+  display: none;
+}
+
+.workflow.active {
+  display: block;
+}
+
+.workflow:after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.workflow__heading {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.workflow__content {
+  width: 800px;
+  height: 600px;
+  background-color: #fff;
+  z-index: 1001;
+  position: relative;
+  padding: 1rem;
+  top: 0;
+  overflow-y: scroll;
+}
+
+.workflow__publishbar {
+  position: relative;
+  bottom: 0;
+  z-index: 1004;
+  background-color: #000;
+  padding: .5rem 1rem;
+}
+
+.workflow__cancel {
+  color: #aaa;
+}
+
+.workflow__button {
+  background: #73cfff;
+  border: none;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

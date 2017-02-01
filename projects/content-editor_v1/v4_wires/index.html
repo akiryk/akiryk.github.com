@@ -37,19 +37,19 @@
     </div>
     <div class="header__right">
       <div class="dropdown-menu header__right-dropdown">
-        <div class="dropdown-menu__label dropdown-menu__label--overlay toggler">Save / Share / Publish</div>
+        <div class="dropdown-menu__label dropdown-menu__label--overlay toggler">Publish / Share / Schedule</div>
         <div class="dropdown-menu__toggle dropdown-menu__toggle--wide">
           <ul class="dropdown-menu__list">
             <li class="dropdown-menu__item">
-              <a href="#" class="dropdown-menu__link explainer"
+              <a href="#" class="dropdown-menu__link" id="publish-on-v4"
                 data-title="Publish Story"
                 data-text="Clicking 'Publish' begins a workflow in which the editor selects the appropriate category for this story and confirms that the story will be published to the correct places (e.g. the NPR API). They should also have a chance to preview/confirm the teaser text content">Publish</a>
+              <a href="#" class="dropdown-menu__link" id="share-on-v4"
+              data-title="Share"
+              data-text="Editor can share the story with collaborators — they should get some kind of notification and a link back to this story.">Share</a>
               <a href="#" class="dropdown-menu__link explainer"
               data-title="Schedule"
               data-text="Enable scheduling for this story.">Schedule</a>
-              <a href="#" class="dropdown-menu__link explainer"
-              data-title="Share"
-              data-text="Editor can share the story with collaborators — they should get some kind of notification and a link back to this story.">Share</a>
               <a href="#" class="dropdown-menu__link explainer"
               data-title="Archive"
               data-text="Whether a story is saved as a draft or live and published, editors should have a way to remove them. Removing a story means it will not be published and will not appear by default in the list of all stories. It should still be findiable, however — for example, in an archive list view.">Archive</a>
@@ -67,6 +67,9 @@
 
     <div class="content content--clean">
         <div class="super-clean">
+          <div class="super-clean__chunk">
+            <div class="super-clean__category">Choose Category</div>
+          </div>
           <div class="super-clean__chunk">
             <div contentEditable="true" class="super-clean__headline" id="story-title">Write your headline</div>
           </div>
@@ -142,13 +145,63 @@
 
     </div>
 
-  <div id="media-tools" class="load-media">
-    <div class="load-media__content">
-      <div class="close-media" id="close-media">Close</div>
-      <h2>Add Media</h2>
-      <p>Here you'll have an option to load either an image or an audio file.</p>
+  <div id="publish1" class="workflow">
+    <div class="workflow__content">
+      <h3 class="workflow__heading">Review Story Settings and Publish</h3>
+      <div class="workflow__chunk">
+        <h4 class="workflow__chunk-heading">Teaser</h4>
+        <p class="workflow__teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minima molestiae, quis sunt eaque, recusandae dolor repellendus incidunt, ad, obcaecati quae velit impedit. Provident ex omnis veniam excepturi, iste quo! <a href="#" class="workflow__edit">Edit Teaser</a></p>
+      </div>
+      <div class="workflow__chunk">
+        <h4 class="workflow__chunk-heading">Byline(s)</h4>
+        <ul class="workflow__bylines">
+          <li class="workflow__byline">Adam Kiryk</li>
+          <li class="workflow__byline">Johann Doe</li>
+          <li class="workflow__byline"><a href="#" class="workflow__edit">Edit Bylines</a></li>
+        </ul>
+      </div>
+      <div class="workflow__chunk">
+        <h4 class="workflow__chunk-heading">Select where this story should be published to:</h4>
+        <ul class="selection-menu__list">
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR API</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" class="selection-menu__checkbox">npr.org/kuow</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">NPR One</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">PMP</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox"  class="selection-menu__checkbox">Facebook Instant Articles</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">kuow.org</label></li>
+        </ul>
+        <a href="#">Edit publishing options</a>
+      </div>
+      <div class="workflow__chunk">
+        <h4 class="workflow__chunk-heading">Primary Image</h4>
+        <a href="#" class="btn btn--small">Upload Primary Image</a>
+      </div>
+      <div class="workflow__chunk">
+        <h4 class="workflow__chunk-heading">Primary Audio</h4>
+        <a href="#" class="btn btn--small">Upload Primary Audio</a>
+      </div>
     </div>
+    <div class="workflow__publishbar">
+      <button class="workflow__button">Publish Now</button> | <a href="#" class="workflow__cancel" id="publish-cancel">Cancel</a>
+    </div>
+  </div>
 
+  <div id="share1" class="workflow">
+    <div class="workflow__content">
+      <h3 class="workflow__heading">Share Story With Collaborators</h3>
+      <div class="workflow__chunk">
+        <h4 class="workflow__chunk-heading">Upload Primary Image</a>Organizations that can edit this story:</h4>
+        <ul class="selection-menu__list">
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">kuow.org</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" class="selection-menu__checkbox">Northwest RJC</label></li>
+          <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">Someone else</label></li>
+        </ul>
+        <a href="#">Edit list of collaborations</a>
+      </div>
+    </div>
+    <div class="workflow__publishbar">
+      <button class="workflow__button">Share Now</button> | <a href="#" class="workflow__cancel" id="share-cancel">Cancel</a>
+    </div>
   </div>
   <script src="../prod/js/unminified.js"></script>
 </body>
