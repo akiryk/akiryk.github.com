@@ -28,7 +28,9 @@ function updateTeaser(e){
   // if the teaser hasn't been messed with:
   copyTextToField(this, teaserField, 150);
 }
-bodyField.addEventListener('keyup', updateTeaser);
+if (bodyField){
+  bodyField.addEventListener('keyup', updateTeaser);
+}
 
 if (teaserField){
   teaserField.addEventListener('change', function(){
