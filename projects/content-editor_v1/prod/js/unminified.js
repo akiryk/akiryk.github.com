@@ -105,11 +105,12 @@ function toggleDropdown(){
 const dropdownMenus = document.querySelectorAll('.block__heading--dropdown');
 dropdownMenus.forEach(el => el.addEventListener('click', toggleDropdown));
 
-const showMetaBtn = document.querySelector('.super-clean__options');
+const showMetaBtn = document.querySelector('.super-clean__options > .super-clean__btn');
 const meta = document.querySelector('.meta--clean');
+const metaBtnText = showMetaBtn.textContent;
 showMetaBtn.addEventListener('click', function(){
   meta.classList.toggle('show');
-  this.textContent = meta.classList.contains('show') ? 'Hide Options' : 'Show Options';
+  this.textContent = meta.classList.contains('show') ? 'Hide Story Settings' : metaBtnText;
 })
 
 function togglePublishV4Workflow(){

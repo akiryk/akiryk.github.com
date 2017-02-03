@@ -63,12 +63,13 @@
     </div>
   </header>
   <div class="editor editor--narrow" id="replace">
-    <div class="super-clean__options">Show Options</div>
-
+    <div class="super-clean__options">
+      <div class="super-clean__btn">Show Story Settings</div>
+    </div>
     <div class="content content--clean">
         <div class="super-clean">
           <div class="super-clean__chunk">
-            <div class="super-clean__category">Choose Category</div>
+            <div class="super-clean__btn super-clean__btn--dd">Choose Category</div>
           </div>
           <div class="super-clean__chunk">
             <div contentEditable="true" class="super-clean__headline" id="story-title">Write your headline</div>
@@ -84,9 +85,32 @@
     </div>
 
     <div class="meta meta--clean">
+      <div class="block block--main block--primary-media block--bordered">
+        <h2 class="block__heading block__heading--dropdown">Teaser</h2>
+         <textarea name="" id="teaser-field"  rows="4" class="teaser-input"></textarea>
+        <div class="help"
+        data-title="Teaser"
+        data-text="Text about teaser text"></div>
+      </div>
+      
+      <div class="block block--primary-media block--bordered">
+        <h2 class="block__heading block__heading--dropdown  ">Primary Image</h2>
+        <div class="dropdown-contents"><a href="#" class="btn btn--small">Upload Primary Image</a></div>
+        <div class="help help--image"
+        data-title="Primary Image"
+        data-text="The primary image will be treated as the featured image for Facebook, for NPR One, and for promoting the story on npr.org. Upload a primary image here or by using the Add Media button in the WYSIWYG. "></div>
+      </div>
 
-      <div class="block block--main block--bordered">
-        <h2 class="block__heading block__heading--dropdown">Publishing Options</h2>
+      <div class="block block--primary-media block--bordered">
+        <h2 class="block__heading block__heading--dropdown ">Primary Audio</h2>
+        <div class="dropdown-contents"><a href="#" class="btn btn--small">Upload Primary Audio</a></div>
+        <div class="help help--image"
+        data-title="Primary Audio"
+        data-text="The primary audio will be treated as the main audio for NPR One and... (?). Add it here or with the Add Media button in the WYSIWYG. "></div>
+      </div>
+
+      <div class="block block block--bordered">
+        <h2 class="block__heading block__heading--dropdown closed">Publishing Options</h2>
         <div class="dropdown-contents">
           <div class="block__subheading">Select where this story should be published to:</div>
           <ul class="selection-menu__list">
@@ -105,7 +129,7 @@
       </div>
 
       <div class="block block--options block--bordered">
-        <h3 class="block__heading block__heading--dropdown">Collaborations</h3>
+        <h3 class="block__heading block__heading--dropdown closed">Collaborations</h3>
         <div class="dropdown-contents"><div class="block__subheading">Organizations that can edit this story:</div>
         <ul class="selection-menu__list">
           <li class="selection-menu__item"><label><input type="checkbox" checked class="selection-menu__checkbox">kuow.org</label></li>
@@ -118,23 +142,9 @@
         data-title="Collaborations"
         data-text="A station can collaborate with other stations or organizations — e.g. with RJCs or LJCs. Manage collaboration settings on a case-by-case basis here."></div>
       </div>
-
-      <div class="block block--primary-media block--bordered">
-        <h2 class="block__heading block__heading--dropdown  ">Primary Image</h2>
-        <div class="dropdown-contents"><a href="#" class="btn btn--small">Upload Primary Image</a></div>
-        <div class="help help--image"
-        data-title="Primary Image"
-        data-text="The primary image will be treated as the featured image for Facebook, for NPR One, and for promoting the story on npr.org. Upload a primary image here or by using the Add Media button in the WYSIWYG. "></div>
-      </div>
-      <div class="block block--primary-media block--bordered">
-        <h2 class="block__heading block__heading--dropdown ">Primary Audio</h2>
-        <div class="dropdown-contents"><a href="#" class="btn btn--small">Upload Primary Audio</a></div>
-        <div class="help help--image"
-        data-title="Primary Audio"
-        data-text="The primary audio will be treated as the main audio for NPR One and... (?). Add it here or with the Add Media button in the WYSIWYG. "></div>
-      </div>
+      
       <div class="block block--associations block--bordered">
-        <h2 class="block__heading block__heading--dropdown ">Associations</h2>
+        <h2 class="block__heading block__heading--dropdown closed">Associations</h2>
         <div class="dropdown-contents"><ul class="bylines-list">
           <li class="bylines-item">Bylines: <a href="#">Adam Kiryk</a> | <a href="#">Edit</a></li>
         </ul></div>

@@ -1299,16 +1299,18 @@ body {
 }
 
 .super-clean__options {
+  cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   color: #5979a3;
   position: absolute;
   right: 0;
-  top: 135px;
+  top: 100px;
   z-index: 99;
+  color: #aaa;
 }
 
-.super-clean__category {
+.super-clean__btn {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -1316,7 +1318,7 @@ body {
   cursor: pointer;
 }
 
-.super-clean__category:after {
+.super-clean__btn--dd:after {
   content: '▾';
   margin-left: 5px;
 }
