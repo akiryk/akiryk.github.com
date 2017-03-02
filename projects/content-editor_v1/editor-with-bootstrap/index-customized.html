@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Bootstrap- CUSTOMIZED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/more-custom.css">
+</head>
+<body>
+
+  <header class="header header--narrow" id="header">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse custom-navbar">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">NPR Stations Portal</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">New Story <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <span class="navbar-text">Logged in: <a href="#">Adam Kiryk</a></span>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row" id="replace">
+      <div class="col-md-8">
+        <div class="wysiwyg">
+          <div class="form-group">
+            <div class="btn-group">
+              <button type="button" class="btn">Choose Category</button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Arts</a>
+                <a class="dropdown-item" href="#">News</a>
+                <a class="dropdown-item" href="#">Science</a>
+                <a class="dropdown-item" href="#">Business</a>
+                <a class="dropdown-item" href="#">World</a>
+                <a class="dropdown-item" href="#">Nation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Local: Politics</a>
+                <a class="dropdown-item" href="#">Local: Entertainment</a>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div contenteditable="true" placeholder="Write a headline" class="form-control custom-headline"></div>
+          </div>
+
+          <div class="form-group">
+            <div contenteditable="true" placeholder="Now tell your story..." class="form-control custom-body"></div>
+          </div>
+
+          <div class="custom-small-text custom-quiet-box">
+            <span class="wysiwyg__number">0</span> characters | <span class="wysiwyg__number">0</span> words | <span class="wysiwyg__number">0</span> minute read
+          </div> <!-- end -->
+        </div> <!-- other -->
+        <!-- here -->
+      </div>
+
+      <div class="col-md-4">
+      
+        <div class="card custom-card">
+          <div class="card-block">
+            <h5 class="card-title" hidden>Publish, Save, Schedule, or Delete</h4>
+            <div class="row custom-block">
+              <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-block">Publish</button>
+              </div>
+              <div class="col-md-6">
+                <button type="button" class="btn btn-block">Schedule</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-9">
+                <p class="card-text custom-small-text"> <span class="timestamp">Saved, 1:22<span class="timestamp__seconds">:23</span>pm, 1/27/2017</span></p>
+              </div>
+               <div class="col-md-3">
+                <p class="card-text custom-small-text"><a href="#" class="card-link">Archive</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card custom-card">
+          <div class="card-block">
+            <h5 class="block__heading block__heading--dropdown closed ">Primary Image</h5>
+            <div class="dropdown-contents"><button href="#" class="btn btn-sm">Upload Primary Image</button></div>
+          </div>
+        </div>
+        <div class="card custom-card">
+          <div class="card-block">
+            <h5 class="block__heading block__heading--dropdown closed ">Primary Audio</h5>
+            <div class="dropdown-contents"><button href="#" class="btn btn-sm">Upload Primary Audio</button></div>
+          </div>
+        </div>
+        <div class="card custom-card">
+          <div class="card-block">
+            <h5 class="block__heading block__heading--dropdown closed ">Byline(s)</h5>
+            <div class="dropdown-contents">
+              <a href="#">Adam Kiryk</a> | <a href="#">Edit</a>
+            </div>
+          </div>
+        </div>
+        <div class="card custom-card">
+          <div class="card-block">
+            <h5 class="block__heading block__heading--dropdown closed">Teaser</h5>
+            <div class="form-group">
+              <div contenteditable="true"  class="form-control custom-teaser"></div>
+            </div>
+            <div class="custom-small-text">
+              Max character count: 150
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

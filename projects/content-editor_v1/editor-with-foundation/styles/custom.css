@@ -1,0 +1,13 @@
+.custom-top-bar {
+  margin-bottom: 1rem;
+}
+
+.custom-headline {
+  font-size: 32px;
+  padding: 2rem 1rem;
+}
+
+.custom-body {
+  min-height: 300px;
+  padding: 1rem;
+}

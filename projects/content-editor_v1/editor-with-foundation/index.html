@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/foundation.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+  <script src="js/vendor/jquery.js"></script>
+</head>
+<body>
+
+  <header class="" id="">
+    <div class="top-bar custom-top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text"><a href="../index.html">NPR Stations Portal</a></li>
+          <li>
+            <a href="#">New Story</a>
+          </li>
+          <li><a href="#">All Stories</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li>Logged in:</li>
+          <li><a href="#">Adam Kiryk</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="row" id="replace">
+    <div class="small-8 columns">
+      <div class="wysiwyg">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-label="Item 1" data-is-click="false">
+            <a href="#Item-1">Choose Category</a>
+            <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu">
+              <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#Item-1A">Arts</a></li>
+              <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" aria-label="Item 1B">
+                <a href="#Item-1B">News</a>
+              </li>
+              <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                <a href="#Item-1C">Science</a>
+              </li>
+              <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                <a href="#Item-1C">Business</a>
+              </li>
+              <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                <a href="#Item-1C">World</a>
+              </li>
+              <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                <a href="#Item-1C">Nation</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <input placeholder="Write a headline" type="text" class="custom-headline"/>
+        <textarea placeholder="Now tell your story..." class="custom-body"></textarea>
+        <p class="help-text"><span class="wysiwyg__number">0</span> characters | <span class="wysiwyg__number">0</span> words | <span class="wysiwyg__number">0</span> minute read</p>
+      </div> <!-- other -->
+      <!-- here -->
+    </div>
+
+    <div class="small-4 columns">
+      <div class="card">
+        <div class="card-section">
+          <h5 class="card-title" hidden>Publish, Save, Schedule, or Delete</h4>
+          <div class="expanded button-group">
+            <a class="button">Publish</a>
+            <a class="hollow button">Schedule</a>
+          </div>
+          <div class="row">
+            <div class="small-9 columns">
+              <p class="help-text"> <span class="timestamp">Saved, 1:22<span class="timestamp__seconds">:23</span>pm, 1/27/2017</span></p>
+            </div>
+             <div class="small-3 columns">
+              <p class="help-text"><a href="#" class="card-link">Archive</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-section">
+          <h5>Primary Image</h5>
+          <a href="#" class="button hollow small">Upload Primary Image</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-section">
+          <h5>Primary Audio</h5>
+          <a href="#" class="button hollow small">Upload Primary Audio</a>
+        </div>
+      </div>
+       <div class="card">
+        <div class="card-section">
+          <h5>Bylines</h5>
+          <a href="#">Adam Kiryk</a> | <a href="#">Edit</a>
+        </div>
+      </div>
+       <div class="card">
+        <div class="card-section">
+          <h5>Teaser</h5>
+          <textarea class="form-control custom-teaser"></textarea>
+          <p class="help-text">
+            Max character count: 150
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

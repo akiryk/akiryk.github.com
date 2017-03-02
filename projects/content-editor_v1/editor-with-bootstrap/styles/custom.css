@@ -1,0 +1,39 @@
+body {
+  background-color: #fdfdfd;
+}
+
+.custom-headline {
+  font-size: 32px;
+}
+
+.custom-body {
+  min-height: 300px;
+}
+
+.custom-teaser {
+  min-height: 100px;
+}
+
+.custom-card {
+  margin-bottom: 1rem;
+}
+
+.custom-small-text {
+  font-size: 14px;
+  color: #999;
+}
+
+.custom-block {
+  margin-bottom: 1rem;
+}
+
+.custom-navbar {
+  margin-bottom: 2rem;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: #aaa;
+  font-weight: 300;
+}

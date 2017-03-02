@@ -1,0 +1,98 @@
+body {
+  background-color: #fdfdfd;
+  font-family: 'Open Sans';
+}
+
+button, 
+input,
+optgroup,
+select {
+  font-family: 'Open Sans';
+}
+
+a {
+  color: #0974ab;
+}
+
+.btn {
+  background-color: #f2f7f9;
+  border-color: #c3dce9;
+}
+
+.btn-primary {
+  background-color: #0974ab;
+  border-color: #0974ab;
+}
+
+.btn-primary:hover {
+  background-color: #014d73;
+  border-color: #014d73;
+}
+
+.btn-outline-primary {
+  border-color: #0974ab;
+  color: #0974ab;
+}
+
+.btn-outline-primary:hover {
+  background-color: #e2ebef;
+  border-color: #014d73;
+  color: #014d73;
+}
+
+.custom-headline {
+  background-color: #fdfdfd;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-left: 0;
+}
+
+.custom-body {
+  background-color: #fdfdfd;
+  border: none;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  min-height: 300px;
+  padding-left: 0;
+}
+
+.custom-teaser {
+  min-height: 100px;
+}
+
+.custom-card {
+  margin-bottom: 1rem;
+}
+
+.custom-small-text {
+  font-size: 14px;
+  color: #999;
+}
+
+.custom-quiet-box {
+  background-color: #f4f4f4;
+  padding: .25rem .75rem;
+  border-radius: 4px;
+}
+
+.custom-block {
+  margin-bottom: 1rem;
+}
+
+.custom-navbar {
+  margin-bottom: 2rem;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: #aaa;
+  font-weight: 200;
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
